@@ -24,11 +24,19 @@ export function RosterHero({
         newWarband["points"] =
           newWarband["points"] - newWarband.hero["pointsTotal"];
         if (newWarband.hero.unit_type == "Siege Engine") {
-          newWarband.num_units =
-            newWarband.num_units - newWarband.hero.siege_crew;
+          newWarband.hero.options.map((option) => {
+            if (option.option == "Additional Crew") {
+              console.log(newWarband.hero.siege_crew)
+              console.log(option.opt_quantity)
+              newWarband.num_units = newWarband.num_units - newWarband.hero.siege_crew - option.opt_quantity;
+              newRoster["num_units"] = newRoster["num_units"] - newWarband.hero.siege_crew - option.opt_quantity;
+            }
+          });
+        } else {
+          newRoster["num_units"] = 
+            newRoster["num_units"] - 1;
         }
         newWarband["max_units"] = "-";
-        newRoster["num_units"] = newRoster["num_units"] - 1;
         newRoster["points"] =
           newRoster["points"] - newWarband.hero["pointsTotal"];
         newWarband.hero = null;

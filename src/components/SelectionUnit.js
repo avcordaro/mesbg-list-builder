@@ -29,6 +29,9 @@ export function SelectionUnit({
         newRoster.warbands[warbandNumFocus].num_units =
           newRoster.warbands[warbandNumFocus].num_units +
           newUnitData.siege_crew;
+        newRoster.num_units = newRoster.num_units + newUnitData.siege_crew;
+      } else {
+        newRoster.num_units = newRoster.num_units + 1;
       }
     } else {
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
@@ -39,8 +42,8 @@ export function SelectionUnit({
         newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
       newRoster.warbands[warbandNumFocus].num_units =
         newRoster.warbands[warbandNumFocus].num_units + 1;
+      newRoster.num_units = newRoster.num_units + 1;
     }
-    newRoster.num_units = newRoster.num_units + 1;
     newRoster.points = newRoster.points + newUnitData.base_points;
     newRoster.bow_count =
       newRoster.bow_count + (unitData.inc_bow_count ? 1 : 0);

@@ -80,6 +80,12 @@ export function OptionHero({
               newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
               newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
               newOption['opt_quantity'] = newQuantity
+              if (option.option == "Additional Crew") {
+                newRoster['num_units'] = newRoster['num_units'] - option.opt_quantity
+                newRoster['num_units'] = newRoster['num_units'] + newQuantity
+                newWarband['num_units'] = newWarband['num_units'] - option.opt_quantity
+                newWarband['num_units'] = newWarband['num_units'] + newQuantity
+              }
             }
             return newOption
           });
