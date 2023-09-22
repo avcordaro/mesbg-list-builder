@@ -99,7 +99,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" className="justify-content-between">
+      <Navbar style={{ minWidth: "1750px" }} bg="dark" data-bs-theme="dark" className="justify-content-between">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
