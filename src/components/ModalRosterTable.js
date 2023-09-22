@@ -1,0 +1,85 @@
+import Stack from "react-bootstrap/Stack";
+import Modal from 'react-bootstrap/Modal'; 
+import Table from 'react-bootstrap/Table';
+
+export function ModalRosterTable({
+  roster,
+  showRosterTable,
+  setShowRosterTable
+}) {
+
+  return (
+    <Modal show={showRosterTable} onHide={() => setShowRosterTable(false)} size="xl" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <Stack direction="horizontal" gap={3}>
+                <h5>Total Points: <b>{roster.points}</b></h5>
+                <h5>Total Units: <b>{roster.num_units}</b></h5>
+                <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
+                <h5>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
+                <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "text-warning" : ""}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
+              </Stack>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {showRosterTable &&
+            <>
+              <Table style={{verticalAlign: "middle"}}size="sm" bordered striped>
+                <thead>
+                  <tr>
+                    <th>Warband</th>
+                    
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Options</th>
+                    <th>Quantity</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {roster.warbands.map((warband) => (
+                      <>
+                        {warband.hero != null &&
+                          <tr>
+                            <td>{warband.num}</td>
+                            
+                            <td>{warband.hero.name}</td>
+                            <td>{warband.hero.pointsPerUnit}</td>
+                            <td>
+                              {warband.hero.options.map((option) => (
+                                option.opt_quantity > 0 ? option.option : ""
+                              )).filter((opt) => (opt != "")).join(", ")}
+                            </td>
+                            <td>{warband.hero.quantity}</td>
+                            <td>{warband.hero.pointsTotal}</td>
+                          </tr>
+                        }
+                        {warband.units.map((unit) => (
+                          <>
+                          {unit.name != null &&
+                            <tr>
+                              <td>{warband.num}</td>
+                              
+                              <td>{unit.name}</td>
+                              <td>{unit.pointsPerUnit}</td>
+                              <td>
+                                {unit.options.map((option) => (
+                                  option.opt_quantity > 0 ? option.option : ""
+                                )).filter((opt) => (opt != "")).join(", ")}
+                              </td>
+                              <td>{unit.quantity}</td>
+                              <td>{unit.pointsTotal}</td>
+                            </tr>
+                          }
+                          </>
+                        ))}
+                      </>
+                    ))}
+                </tbody>
+              </Table>
+            </>
+          }
+        </Modal.Body>
+      </Modal>
+  )
+}

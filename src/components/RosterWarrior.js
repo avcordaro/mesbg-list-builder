@@ -1,0 +1,211 @@
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { OptionWarrior } from "./OptionWarrior.js"
+import { FaPlus, FaMinus } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
+import { HiDuplicate } from "react-icons/hi";
+import { BsFillPersonVcardFill } from "react-icons/bs";
+import { v4 as uuid } from "uuid";
+
+export function RosterWarrior({
+  warbandNum,
+  unitData,
+  roster,
+  setRoster,
+  setShowCardModal,
+  setCardUnitData,
+}) {
+  const handleIncrement = () => {
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNum) {
+        let newUnits = newWarband.units.map((_unit) => {
+          let newUnit = { ..._unit };
+          if (newUnit.id == unitData.id) {
+            newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+            newWarband["points"] =
+              newWarband["points"] - newUnit["pointsTotal"];
+            newUnit["quantity"] = newUnit["quantity"] + 1;
+            newUnit["pointsTotal"] =
+              newUnit["quantity"] * newUnit["pointsPerUnit"];
+            newWarband["points"] =
+              newWarband["points"] + newUnit["pointsTotal"];
+            newWarband["num_units"] = newWarband["num_units"] + 1;
+            newRoster["num_units"] = newRoster["num_units"] + 1;
+            newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+            newRoster["bow_count"] =
+              newRoster["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
+          }
+          return newUnit;
+        });
+        newWarband.units = newUnits;
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    setRoster(newRoster);
+  };
+  const handleDecrement = () => {
+    if (unitData.quantity > 1) {
+      let newRoster = { ...roster };
+      let newWarbands = newRoster.warbands.map((warband) => {
+        let newWarband = { ...warband };
+        if (newWarband.num == warbandNum) {
+          let newUnits = newWarband.units.map((_unit) => {
+            let newUnit = { ..._unit };
+            if (newUnit.id == unitData.id) {
+              newRoster["points"] =
+                newRoster["points"] - newUnit["pointsTotal"];
+              newWarband["points"] =
+                newWarband["points"] - newUnit["pointsTotal"];
+              newUnit["quantity"] = newUnit["quantity"] - 1;
+              newUnit["pointsTotal"] =
+                newUnit["quantity"] * newUnit["pointsPerUnit"];
+              newWarband["points"] =
+                newWarband["points"] + newUnit["pointsTotal"];
+              newWarband["num_units"] = newWarband["num_units"] - 1;
+              newRoster["num_units"] = newRoster["num_units"] - 1;
+              newRoster["points"] =
+                newRoster["points"] + newUnit["pointsTotal"];
+              newRoster["bow_count"] =
+                newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
+            }
+            return newUnit;
+          });
+          newWarband.units = newUnits;
+        }
+        return newWarband;
+      });
+      newRoster.warbands = newWarbands;
+      setRoster(newRoster);
+    }
+  };
+  const handleDelete = () => {
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNum) {
+        let newUnits = newWarband.units.map((_unit) => {
+          let newUnit = { ..._unit };
+          if (newUnit.id == unitData.id) {
+            newWarband["points"] =
+              newWarband["points"] - newUnit["pointsTotal"];
+            newWarband["num_units"] =
+              newWarband["num_units"] - newUnit["quantity"];
+            newRoster["num_units"] =
+              newRoster["num_units"] - newUnit["quantity"];
+            newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+            newRoster["bow_count"] =
+              newRoster["bow_count"] -
+              (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+          }
+          return newUnit;
+        });
+        newUnits = newUnits.filter((data) => data.id != unitData.id);
+        newWarband.units = newUnits;
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    setRoster(newRoster);
+  };
+
+  const handleDuplicate = () => {
+    let newRoster = { ...roster };
+    let newUnit = { ...unitData };
+    newUnit["id"] = uuid();
+    newRoster.warbands[warbandNum - 1].units.push(newUnit);
+    newRoster.warbands[warbandNum - 1]["num_units"] =
+      newRoster.warbands[warbandNum - 1]["num_units"] + newUnit["quantity"];
+    newRoster.warbands[warbandNum - 1]["points"] =
+      newRoster.warbands[warbandNum - 1]["points"] + newUnit["pointsTotal"];
+    newRoster["num_units"] = newRoster["num_units"] + newUnit["quantity"];
+    newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+    newRoster["bow_count"] =
+      newRoster["bow_count"] +
+      (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+    setRoster(newRoster);
+  };
+
+  const handleCardClick = (e) => {
+    e.stopPropagation();
+    setCardUnitData(unitData);
+    setShowCardModal(true);
+  };
+
+  return (
+    <Card style={{ width: "1100px" }} className="p-2 m-1" bg={"light"}>
+      <Stack direction="horizontal" gap={3}>
+        <img
+          className="profile"
+          src={require(
+            "../images/" +
+              unitData.faction +
+              "/pictures/" +
+              unitData.name +
+              ".png",
+          )}
+        />
+        <Stack>
+          <Stack direction="horizontal" gap={3}>
+            <p>
+              <b>{unitData.name}</b>
+            </p>
+            <p className="ms-auto" style={{ paddingRight: "10px" }}>
+              Points: <b>{unitData.pointsTotal}</b>
+            </p>
+          </Stack>
+          <Stack direction="horizontal" gap={3}>
+            {unitData.options[0].option != "None" && (
+              <Form>
+                {unitData.options.map((option) => (
+                  <OptionWarrior
+                    key={uuid()}
+                    roster={roster}
+                    setRoster={setRoster}
+                    warbandNum={warbandNum}
+                    unit={unitData}
+                    option={option}
+                  />
+                ))}
+              </Form>
+            )}
+            <Stack direction="horizontal" gap={3} className="ms-auto mt-auto">
+              <Button
+                className="border"
+                variant={"secondary"}
+                onClick={handleCardClick}
+              >
+                <BsFillPersonVcardFill />
+              </Button>
+              <>
+                <Button onClick={handleDecrement}>
+                  <FaMinus />
+                </Button>
+                <p className="mt-3">
+                  <b>{unitData.quantity}</b>
+                </p>
+                <Button onClick={handleIncrement}>
+                  <FaPlus />
+                </Button>
+              </>
+              <Button onClick={handleDuplicate} variant={"info"}>
+                <HiDuplicate />
+              </Button>
+              <Button
+                style={{ marginRight: "10px" }}
+                variant={"warning"}
+                onClick={handleDelete}
+              >
+                <ImCross />
+              </Button>
+            </Stack>
+          </Stack>
+        </Stack>
+      </Stack>
+    </Card>
+  );
+}
