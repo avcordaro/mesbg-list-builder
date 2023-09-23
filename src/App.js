@@ -82,7 +82,6 @@ export default function App() {
     setRoster(newRoster);
     setHeroSelection(false);
     setDisplaySelection(false);
-    console.log(JSON.stringify(roster))
   };
 
   const handleExportJSON = () => {
