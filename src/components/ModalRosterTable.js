@@ -28,12 +28,11 @@ export function ModalRosterTable({
                 <thead>
                   <tr>
                     <th>Warband</th>
-                    
                     <th>Name</th>
-                    <th>Points</th>
                     <th>Options</th>
+                    <th>Per Unit</th>
                     <th>Quantity</th>
-                    <th>Cost</th>
+                    <th>Points</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -42,14 +41,13 @@ export function ModalRosterTable({
                         {warband.hero != null &&
                           <tr>
                             <td>{warband.num}</td>
-                            
                             <td>{warband.hero.name}</td>
-                            <td>{warband.hero.pointsPerUnit}</td>
                             <td>
                               {warband.hero.options.map((option) => (
                                 option.opt_quantity > 0 ? option.option : ""
                               )).filter((opt) => (opt != "")).join(", ")}
                             </td>
+                            <td>{warband.hero.pointsPerUnit}</td>
                             <td>{warband.hero.quantity}</td>
                             <td>{warband.hero.pointsTotal}</td>
                           </tr>
@@ -59,14 +57,13 @@ export function ModalRosterTable({
                           {unit.name != null &&
                             <tr>
                               <td>{warband.num}</td>
-                              
                               <td>{unit.name}</td>
-                              <td>{unit.pointsPerUnit}</td>
                               <td>
                                 {unit.options.map((option) => (
                                   option.opt_quantity > 0 ? option.option : ""
                                 )).filter((opt) => (opt != "")).join(", ")}
                               </td>
+                              <td>{unit.pointsPerUnit}</td>
                               <td>{unit.quantity}</td>
                               <td>{unit.pointsTotal}</td>
                             </tr>
