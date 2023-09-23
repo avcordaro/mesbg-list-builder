@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.eec86876.css",
-    "main.js": "/mesbg-list-builder/static/js/main.1985e159.js",
+    "main.js": "/mesbg-list-builder/static/js/main.c0ef90f9.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Khamul.jpg": "/mesbg-list-builder/static/media/Khamul.0eba7a57e99f68415d5a.jpg",
@@ -289,10 +289,10 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.eec86876.css.map": "/mesbg-list-builder/static/css/main.eec86876.css.map",
-    "main.1985e159.js.map": "/mesbg-list-builder/static/js/main.1985e159.js.map"
+    "main.c0ef90f9.js.map": "/mesbg-list-builder/static/js/main.c0ef90f9.js.map"
   },
   "entrypoints": [
     "static/css/main.eec86876.css",
-    "static/js/main.1985e159.js"
+    "static/js/main.c0ef90f9.js"
   ]
 }
