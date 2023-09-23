@@ -23,7 +23,7 @@ export function OptionWarrior({
                   newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                   newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - option.points
                   newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                  if (newUnit['default_bow'] == false) {
+                  if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true) {
                     newUnit['inc_bow_count'] = option.is_bow ? false : true
                   }
                   newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
