@@ -155,7 +155,7 @@ export function RosterWarrior({
               <b>{unitData.name}</b>
             </p>
             <p className="ms-auto" style={{ paddingRight: "10px" }}>
-              Points: <b>{unitData.pointsTotal}</b>
+              Points: <b>{unitData.pointsTotal}</b>{" (per unit: " + unitData.pointsPerUnit + ")"}
             </p>
           </Stack>
           <Stack direction="horizontal" gap={3}>
