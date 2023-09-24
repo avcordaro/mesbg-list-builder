@@ -15,21 +15,27 @@ import { RosterHero } from "./components/RosterHero.js"
 import { RosterWarrior } from "./components/RosterWarrior.js"
 import { ModalRosterTable } from "./components/ModalRosterTable.js"
 import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";  
+import { FaTableList } from "react-icons/fa6";  
 import { MdDelete } from "react-icons/md";
+import { BiLinkAlt } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
+  const queryParams = new URLSearchParams(window.location.search)
   const faction_list = new Set(mesbg_data.map((data) => data.faction));
   const [faction, setFaction] = useState("Minas Tirith");
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: []});
+  const [roster, setRoster] = useState(queryParams.size == 1 ? 
+    JSON.parse(queryParams.get("roster").replaceAll("%22", '"').replaceAll("%20", " ")) 
+    : 
+    {num_units: 0, points: 0, bow_count: 0, warbands: []}
+  );
   const [displaySelection, setDisplaySelection] = useState(false);
-  const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false); 
   const [cardUnitData, setCardUnitData] = useState(null); 
@@ -84,16 +90,10 @@ export default function App() {
     setDisplaySelection(false);
   };
 
-  const handleExportJSON = () => {
-    navigator.clipboard.writeText(JSON.stringify(roster))
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href + "?roster=" + JSON.stringify(roster))
     setExportAlert(true)
     window.setTimeout(()=>(setExportAlert(false)), 3000)
-  }
-
-  const handleImportJSON = (e) => {
-    e.preventDefault()
-    setRoster(JSON.parse(JSONImport))
-    setJSONImport("")
   }
 
   return (
@@ -107,17 +107,11 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.0.0
+                version 1.1.0
               </p>
             </Stack>
           </Stack>
         </Navbar.Brand>
-        <Form onSubmit={handleImportJSON} className="me-4">
-          <Stack direction="horizontal" gap={3}>             
-            <Form.Control style={{ width: "400px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value)}/>
-            <Button onClick={handleImportJSON} type="submit">Import JSON</Button>
-          </Stack>
-        </Form>
       </Navbar>
       <div className="m-4">
         <div className="optionsList border position-fixed">
@@ -181,7 +175,7 @@ export default function App() {
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
           <Alert style={{ width: "1130px" }} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
-            JSON copied to clipboard.
+            URL link copied to clipboard.
           </Alert>
           <Stack style={{ width: "1130px" }} direction="horizontal" gap={3}>
             <h4>
@@ -192,8 +186,8 @@ export default function App() {
             <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
             <h5>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
             <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "text-warning" : ""}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
-            <Button onClick={() => handleExportJSON()}>Export JSON</Button>
-            <Button onClick={() => setShowRosterTable(true)}>Roster Table</Button>
+            <Button onClick={() => handleCopyLink()}><BiLinkAlt /> Copy Link</Button>
+            <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
           </Stack>
           {roster.warbands.map((warband) => (
             <Card
