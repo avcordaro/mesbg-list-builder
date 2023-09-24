@@ -18,7 +18,7 @@ import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";  
 import { FaTableList } from "react-icons/fa6";  
 import { MdDelete } from "react-icons/md";
-import { BiLinkAlt } from "react-icons/bi";
+import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -126,7 +126,7 @@ export default function App() {
         <Form onSubmit={handleImportJSON} className="me-4">
           <Stack direction="horizontal" gap={3}>             
             <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value)}/>
-            <Button onClick={handleImportJSON} type="submit">Import JSON</Button>
+            <Button onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
           </Stack>
         </Form>
       </Navbar>
