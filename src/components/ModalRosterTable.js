@@ -44,7 +44,8 @@ export function ModalRosterTable({
                             <td>{warband.hero.name}</td>
                             <td>
                               {warband.hero.options.map((option) => (
-                                option.opt_quantity > 0 ? option.option : ""
+                                option.opt_quantity > 0 ? (option.max > 1 ? 
+                                  option.opt_quantity + " " + option.option : option.option) : ""
                               )).filter((opt) => (opt != "")).join(", ")}
                             </td>
                             <td>{warband.hero.pointsPerUnit}</td>

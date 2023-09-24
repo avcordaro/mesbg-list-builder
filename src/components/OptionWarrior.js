@@ -27,6 +27,7 @@ export function OptionWarrior({
                     newUnit['inc_bow_count'] = option.is_bow ? false : true
                   }
                   newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+                  newWarband['bow_count'] = newWarband['bow_count'] - ((option.is_bow ? 1 : 0) * newUnit['quantity'])
                   newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
                   newRoster['bow_count'] = newRoster['bow_count'] - ((option.is_bow ? 1 : 0) * newUnit['quantity'])
                   newOption['opt_quantity'] = 0
@@ -60,6 +61,7 @@ export function OptionWarrior({
                     newUnit['inc_bow_count'] = option.is_bow ? true : false
                   }
                   newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+                  newWarband['bow_count'] = newWarband['bow_count'] + ((option.is_bow ? 1 : 0) * newUnit['quantity'])
                   newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
                   newRoster['bow_count'] = newRoster['bow_count'] + ((option.is_bow ? 1 : 0) * newUnit['quantity'])
                   newOption['opt_quantity'] = 1

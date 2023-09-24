@@ -49,6 +49,7 @@ export default function App() {
       points: 0,
       num_units: 0,
       max_units: "-",
+      bow_count: 0,
       hero: null,
       units: [],
     };
@@ -62,7 +63,8 @@ export default function App() {
     newRoster.warbands.map((warband) => {
       if (warband.num == warbandNum) {
         newRoster['points'] = newRoster['points'] - warband['points']
-        newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero == null ? 0 : 1)
+        newRoster['bow_count'] = newRoster['bow_count'] - warband['bow_count']
+        newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero != null && warband.hero.unit_type != "Siege Engine" ? 1 : 0)
       }
     });
     let newWarbands = newRoster.warbands.filter((data) => data.num != warbandNum);
@@ -100,7 +102,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar style={{ minWidth: "1800px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
+      <Navbar style={{ minWidth: "1900px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
@@ -109,7 +111,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.2.0
+                version 1.3.0
               </p>
             </Stack>
             <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
@@ -208,6 +210,9 @@ export default function App() {
                 </Card.Text>
                 <Card.Text className="ms-5">
                   Points: <b>{warband.points}</b>
+                </Card.Text>
+                <Card.Text className="ms-5">
+                  Bows: <b>{warband.bow_count}</b>
                 </Card.Text>
                 <Button
                   onClick={() => handleDeleteWarband(warband.num)}
