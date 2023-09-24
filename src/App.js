@@ -20,23 +20,18 @@ import { FaTableList } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
 import { BiLinkAlt } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
-import { stringify, parse } from 'zipson';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const queryParams = new URLSearchParams(window.location.search)
   const faction_list = new Set(mesbg_data.map((data) => data.faction));
   const [faction, setFaction] = useState("Minas Tirith");
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState(queryParams.size == 1 ? 
-    parse(queryParams.get("roster").replaceAll("%22", '"').replaceAll("%20", " ")) 
-    : 
-    {num_units: 0, points: 0, bow_count: 0, warbands: []}
-  );
+  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: []});
   const [displaySelection, setDisplaySelection] = useState(false);
+  const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false); 
   const [cardUnitData, setCardUnitData] = useState(null); 
@@ -91,15 +86,21 @@ export default function App() {
     setDisplaySelection(false);
   };
 
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href + "?roster=" + stringify(roster))
+  const handleExportJSON = () => {
+    navigator.clipboard.writeText(JSON.stringify(roster))
     setExportAlert(true)
     window.setTimeout(()=>(setExportAlert(false)), 3000)
   }
 
+  const handleImportJSON = (e) => {
+    e.preventDefault()
+    setRoster(JSON.parse(JSONImport))
+    setJSONImport("")
+  }
+
   return (
     <div>
-      <Navbar style={{ minWidth: "1750px" }} bg="dark" data-bs-theme="dark" className="justify-content-between sticky-nav">
+      <Navbar style={{ minWidth: "1800px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
@@ -111,15 +112,21 @@ export default function App() {
                 version 1.2.0
               </p>
             </Stack>
-            <h5 className="mb-0" style={{ marginLeft: "350px"}}>Total Points: <b>{roster.points}</b></h5>
+            <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
             <h5 className="mb-0">Total Units: <b>{roster.num_units}</b></h5>
             <h5 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
             <h5 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
             <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "mb-0 text-warning" : "mb-0"}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
-            <Button onClick={() => handleCopyLink()}><BiLinkAlt /> Copy Link</Button>
+            <Button onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
             <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
           </Stack>
         </Navbar.Brand>
+        <Form onSubmit={handleImportJSON} className="me-4">
+          <Stack direction="horizontal" gap={3}>             
+            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value)}/>
+            <Button onClick={handleImportJSON} type="submit">Import JSON</Button>
+          </Stack>
+        </Form>
       </Navbar>
       <div className="m-4">
         <div className="optionsList border border-4 rounded position-fixed">
