@@ -60,7 +60,7 @@ export function SelectionUnit({
   return (
     <Button
       variant="light"
-      style={{ width: "457px", textAlign: "left" }}
+      style={{ width: "461px", textAlign: "left" }}
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>

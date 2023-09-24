@@ -98,7 +98,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar style={{ minWidth: "1750px" }} bg="dark" data-bs-theme="dark" className="justify-content-between">
+      <Navbar style={{ minWidth: "1750px" }} bg="dark" data-bs-theme="dark" className="justify-content-between sticky-nav">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
@@ -107,14 +107,21 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.1.0
+                version 1.2.0
               </p>
             </Stack>
+            <h5 className="mb-0" style={{ marginLeft: "350px"}}>Total Points: <b>{roster.points}</b></h5>
+            <h5 className="mb-0">Total Units: <b>{roster.num_units}</b></h5>
+            <h5 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
+            <h5 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
+            <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "mb-0 text-warning" : "mb-0"}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
+            <Button onClick={() => handleCopyLink()}><BiLinkAlt /> Copy Link</Button>
+            <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
           </Stack>
         </Navbar.Brand>
       </Navbar>
       <div className="m-4">
-        <div className="optionsList border position-fixed">
+        <div className="optionsList border border-4 rounded position-fixed">
           {displaySelection && (
             <Stack gap={2}>
               <DropdownButton
@@ -124,7 +131,7 @@ export default function App() {
               >
                 {[...faction_list].map((f) => (
                   <Dropdown.Item
-                    style={{ width: "455px", textAlign: "center" }}
+                    style={{ width: "458px", textAlign: "center" }}
                     eventKey={f}
                   >
                     {f}
@@ -174,21 +181,9 @@ export default function App() {
           )}
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
-          <Alert style={{ width: "1130px" }} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
+          <Alert style={{ width: "1130px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
             URL link copied to clipboard.
           </Alert>
-          <Stack style={{ width: "1130px" }} direction="horizontal" gap={3}>
-            <h4>
-              <b>Army Roster</b>
-            </h4>
-            <h5 className="ms-auto">Total Points: <b>{roster.points}</b></h5>
-            <h5>Total Units: <b>{roster.num_units}</b></h5>
-            <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
-            <h5>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
-            <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "text-warning" : ""}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
-            <Button onClick={() => handleCopyLink()}><BiLinkAlt /> Copy Link</Button>
-            <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
-          </Stack>
           {roster.warbands.map((warband) => (
             <Card
               style={{ width: "1130px" }}
@@ -275,6 +270,7 @@ export default function App() {
           <Button onClick={() => handleNewWarband()} style={{ width: "1130px" }}>
             Add Warband <FaPlus />
           </Button>
+          
         </Stack>
       </div>
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)} size="xl" centered>
