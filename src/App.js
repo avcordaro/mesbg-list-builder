@@ -92,7 +92,6 @@ export default function App() {
   };
 
   const handleCopyLink = () => {
-    console.log(JSON.stringify(roster))
     navigator.clipboard.writeText(window.location.href + "?roster=" + stringify(roster))
     setExportAlert(true)
     window.setTimeout(()=>(setExportAlert(false)), 3000)
