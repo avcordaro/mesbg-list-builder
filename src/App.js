@@ -20,6 +20,7 @@ import { FaTableList } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
 import { BiLinkAlt } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
+import { stringify, parse } from 'zipson';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -31,7 +32,7 @@ export default function App() {
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
   const [roster, setRoster] = useState(queryParams.size == 1 ? 
-    JSON.parse(queryParams.get("roster").replaceAll("%22", '"').replaceAll("%20", " ")) 
+    parse(queryParams.get("roster").replaceAll("%22", '"').replaceAll("%20", " ")) 
     : 
     {num_units: 0, points: 0, bow_count: 0, warbands: []}
   );
@@ -91,7 +92,8 @@ export default function App() {
   };
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href + "?roster=" + JSON.stringify(roster))
+    console.log(JSON.stringify(roster))
+    navigator.clipboard.writeText(window.location.href + "?roster=" + stringify(roster))
     setExportAlert(true)
     window.setTimeout(()=>(setExportAlert(false)), 3000)
   }
