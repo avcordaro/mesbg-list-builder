@@ -192,7 +192,7 @@ export default function App() {
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
           <Alert style={{ width: "1130px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
-            URL link copied to clipboard.
+            JSON string copied to clipboard.
           </Alert>
           {roster.warbands.map((warband) => (
             <Card
