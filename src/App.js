@@ -125,7 +125,7 @@ export default function App() {
         </Navbar.Brand>
         <Form onSubmit={handleImportJSON} className="me-4">
           <Stack direction="horizontal" gap={3}>             
-            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value)}/>
+            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1'))}/>
             <Button onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
           </Stack>
         </Form>
