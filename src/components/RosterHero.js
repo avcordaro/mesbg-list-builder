@@ -8,6 +8,8 @@ import { ImCross } from "react-icons/im";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 
+/* Roster Hero components display the hero in each warband. */
+
 export function RosterHero({
   warbandNum,
   unitData,
@@ -17,17 +19,17 @@ export function RosterHero({
   setCardUnitData,
 }) {
   const handleDelete = () => {
+    // Removes the hero from being the warband's leader, and updates points and unit counts.
     let newRoster = { ...roster };
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num == warbandNum) {
         newWarband["points"] =
           newWarband["points"] - newWarband.hero["pointsTotal"];
+        // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
         if (newWarband.hero.unit_type == "Siege Engine") {
           newWarband.hero.options.map((option) => {
             if (option.option == "Additional Crew") {
-              console.log(newWarband.hero.siege_crew)
-              console.log(option.opt_quantity)
               newWarband.num_units = newWarband.num_units - newWarband.hero.siege_crew - option.opt_quantity;
               newRoster["num_units"] = newRoster["num_units"] - newWarband.hero.siege_crew - option.opt_quantity;
             }
@@ -48,6 +50,7 @@ export function RosterHero({
   };
 
   const handleCardClick = (e) => {
+    // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
     setShowCardModal(true);

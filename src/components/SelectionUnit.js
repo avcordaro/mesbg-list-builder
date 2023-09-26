@@ -4,6 +4,9 @@ import Badge from "react-bootstrap/Badge";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 
+/* The Selection Unit is the component used to display an individual unit in the unit selection list,
+which appears on the left hand side of the screen. */
+
 export function SelectionUnit({
   newWarriorFocus,
   setDisplaySelection,
@@ -16,11 +19,14 @@ export function SelectionUnit({
   setCardUnitData,
 }) {
   const handleClick = () => {
+    /* Handles the selection of a unit, which differs depending on whether the unit is a hero or a warrior. 
+    In both situations, the points, unit and bow counts are updated. */
     let newRoster = { ...roster };
     let newUnitData = { ...unitData };
     newUnitData["id"] = uuid();
 
     if (heroSelection) {
+      // If a hero unit is selected, it is set as the warband's hero leader. The max warband size is also updated.
       newRoster.warbands[warbandNumFocus].hero = newUnitData;
       newRoster.warbands[warbandNumFocus].points =
         newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
@@ -28,12 +34,13 @@ export function SelectionUnit({
       if (newUnitData.unit_type == "Siege Engine") {
         newRoster.warbands[warbandNumFocus].num_units =
           newRoster.warbands[warbandNumFocus].num_units +
-          newUnitData.siege_crew;
+          (newUnitData.siege_crew - 1);
         newRoster.num_units = newRoster.num_units + newUnitData.siege_crew;
       } else {
         newRoster.num_units = newRoster.num_units + 1;
       }
     } else {
+      // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
         warbandNumFocus
       ].units.filter((data) => data.id != newWarriorFocus);
@@ -54,6 +61,7 @@ export function SelectionUnit({
   };
 
   const handleCardClick = (e) => {
+    // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
     setShowCardModal(true);

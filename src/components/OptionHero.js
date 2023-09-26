@@ -2,6 +2,12 @@ import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
 import * as NumericInput from "react-numeric-input";
 
+/* Option Hero is the component used to display an individual gear options that each hero 
+has available.
+
+The core difference between Option Hero and Option Warrior components is
+that some hero options can be more than just a simple toggle (e.g. amount of Will points 
+you'd like for the Witch King). */
 export function OptionHero({
   roster,
   setRoster,
@@ -10,6 +16,8 @@ export function OptionHero({
   option
 }) {
   const handleToggle = (evt) => {
+    /* Update the roster state variable whenever the specific option is toggled on or off, 
+    including any changes to points and bow count. */
     let newRoster = { ...roster };
     if (option.opt_quantity == 1) {
       let newWarbands = newRoster.warbands.map((warband) => {
@@ -63,7 +71,13 @@ export function OptionHero({
     setRoster(newRoster);
   };
 
-  const handleQuantity = (newQuantity, nS, i) => {
+  const handleQuantity = (newQuantity, newQuantityString, input) => {
+    /* Handles updates for options that require a quantity, rather than a toggle. This includes
+    updating any changes to points and bow count when the quantity is changed. This function 
+    receives three inputs from the NumericInput field it's attached to:
+    newQuantity - the new value as an integer (what we're interested in)
+    newQuantityString - the new value as a string (not needed)
+    input - I'm unclear on what this arg provides (but also not needed) */
     let newRoster = { ...roster };
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
@@ -80,6 +94,7 @@ export function OptionHero({
               newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
               newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
               newOption['opt_quantity'] = newQuantity
+              // Siege engine additional crew must also increase unit counts.
               if (option.option == "Additional Crew") {
                 newRoster['num_units'] = newRoster['num_units'] - option.opt_quantity
                 newRoster['num_units'] = newRoster['num_units'] + newQuantity

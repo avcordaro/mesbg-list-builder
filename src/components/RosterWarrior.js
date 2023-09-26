@@ -9,6 +9,8 @@ import { HiDuplicate } from "react-icons/hi";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 
+/* Roster Warrior components display an individual warrior unit in a warband. */
+
 export function RosterWarrior({
   warbandNum,
   unitData,
@@ -18,6 +20,7 @@ export function RosterWarrior({
   setCardUnitData,
 }) {
   const handleIncrement = () => {
+    // Updates the roster state variable to handle increase to points, units and bow count totals.
     let newRoster = { ...roster };
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
@@ -50,7 +53,9 @@ export function RosterWarrior({
     newRoster.warbands = newWarbands;
     setRoster(newRoster);
   };
+
   const handleDecrement = () => {
+    // Updates the roster state variable to handle decrease to points, units and bow count totals.
     if (unitData.quantity > 1) {
       let newRoster = { ...roster };
       let newWarbands = newRoster.warbands.map((warband) => {
@@ -87,7 +92,9 @@ export function RosterWarrior({
       setRoster(newRoster);
     }
   };
+
   const handleDelete = () => {
+    // Updates the roster state variable to remove warrior unit, and handle adjustment to points, units and bow count totals.
     let newRoster = { ...roster };
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
@@ -121,6 +128,8 @@ export function RosterWarrior({
   };
 
   const handleDuplicate = () => {
+    /* Duplicates the warrior unit in the warband that this unit belongs to (but with a new unique ID). 
+    Also updates the roster state variable with adjustments to points, units and bow count totals. */
     let newRoster = { ...roster };
     let newUnit = { ...unitData };
     newUnit["id"] = uuid();
@@ -142,6 +151,7 @@ export function RosterWarrior({
   };
 
   const handleCardClick = (e) => {
+    // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
     setShowCardModal(true);

@@ -1,5 +1,8 @@
 import Form from "react-bootstrap/Form";
 
+/* Option Warrior is the component used to display an individual gear options that each 
+warrior has available. */
+
 export function OptionWarrior({
   roster,
   setRoster,
@@ -8,6 +11,8 @@ export function OptionWarrior({
   option
 }) {
   const handleToggle = (evt) => {
+    /* Update the roster state variable whenever the specific option is toggled on or off, 
+    including any changes to points and bow count. */
     let newRoster = { ...roster };
     if (option.opt_quantity == 1) {
       let newWarbands = newRoster.warbands.map((warband) => {

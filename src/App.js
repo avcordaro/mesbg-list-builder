@@ -37,11 +37,14 @@ export default function App() {
   const [cardUnitData, setCardUnitData] = useState(null); 
   const [showRosterTable, setShowRosterTable] = useState(false); 
   
-  const handleFaction = (e) => {
-    setFaction(e);
+  const handleFaction = (faction) => {
+    // Switch the 'faction' state variable to newly selected value
+    setFaction(faction);
   };
 
   const handleNewWarband = () => {
+    // Create a new empty warband dictionary and add to the roster
+
     let newRoster = { ...roster };
     let newWarband = {
       id: uuid(),
@@ -59,6 +62,7 @@ export default function App() {
   };
 
   const handleDeleteWarband = (warbandNum) => {
+    // Substract the warband's points, bows and unit counts from the overall roster
     let newRoster = { ...roster };
     newRoster.warbands.map((warband) => {
       if (warband.num == warbandNum) {
@@ -67,6 +71,7 @@ export default function App() {
         newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero != null && warband.hero.unit_type != "Siege Engine" ? 1 : 0)
       }
     });
+    // Remove the warband from the roster, and for all warbands that appear below the one being deleted, shift their warband number down by 1
     let newWarbands = newRoster.warbands.filter((data) => data.num != warbandNum);
     newWarbands = newWarbands.map((warband) => {
       let newWarband = { ...warband };
@@ -81,6 +86,7 @@ export default function App() {
   };
 
   const handleNewWarrior = (warbandNum) => {
+    // Add an empty placeholder dictionary for the new unit (it will be replaced by the actual warrior that gets selected)
     let newRoster = { ...roster };
     newRoster.warbands[warbandNum - 1].units.push({ id: uuid(), name: null });
     setRoster(newRoster);
@@ -89,15 +95,25 @@ export default function App() {
   };
 
   const handleExportJSON = () => {
+    /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard. 
+    Also notify them with an alert that fades away after 3 seconds. */
     navigator.clipboard.writeText(JSON.stringify(roster))
     setExportAlert(true)
     window.setTimeout(()=>(setExportAlert(false)), 3000)
   }
 
   const handleImportJSON = (e) => {
+    // Attempts to read the input, convert it to JSON, and assigns the JSON dictionary to the roster state variable. 
     e.preventDefault()
-    setRoster(JSON.parse(JSONImport))
-    setJSONImport("")
+    if(JSONImport) {
+      try {
+        setRoster(JSON.parse(JSONImport))
+        setJSONImport("")
+      }
+      catch(err) {
+        console.log(err)
+      }
+    }
   }
 
   return (
@@ -125,7 +141,7 @@ export default function App() {
         </Navbar.Brand>
         <Form onSubmit={handleImportJSON} className="me-4">
           <Stack direction="horizontal" gap={3}>             
-            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1'))}/>
+            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1').replaceAll('""', '"'))}/>
             <Button onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
           </Stack>
         </Form>

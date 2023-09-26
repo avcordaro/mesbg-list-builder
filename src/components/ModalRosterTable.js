@@ -2,6 +2,10 @@ import Stack from "react-bootstrap/Stack";
 import Modal from 'react-bootstrap/Modal'; 
 import Table from 'react-bootstrap/Table';
 
+/* Modal Roster Table is the component used to populate the pop-up modal which appears 
+after the user clicks the 'Roster Table' button. This component uses the full roster
+state variable (passed to it as an argument) to populate a table of the army. */
+
 export function ModalRosterTable({
   roster,
   showRosterTable,

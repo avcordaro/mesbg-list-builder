@@ -1,6 +1,9 @@
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 
+/* Default Hero Unit components appear inside Warbands as the first unit card, 
+before the user selects the hero they would like to lead that warband. */
+
 export function DefaultHeroUnit({
   setHeroSelection,
   setDisplaySelection,
@@ -8,6 +11,8 @@ export function DefaultHeroUnit({
   setWarbandNumFocus,
 }) {
   const handleClick = () => {
+    /* Updates state variables to identify that a hero is being chosen, the warband that hero
+    belongs to, and that the unit selection menu should be display */
     setHeroSelection(true);
     setDisplaySelection(true);
     setWarbandNumFocus(warbandNum - 1);
