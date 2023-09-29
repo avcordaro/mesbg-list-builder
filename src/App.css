@@ -9,8 +9,8 @@ img.table_profile {
 }
 
 img.profile_card {
-  width: 1000px;
-  height: 704px;
+  width: 100%;
+  height: 100%;
 }
 
 div.optionsList {
@@ -18,6 +18,7 @@ div.optionsList {
   width: 510px;
   overflow-y: auto;
   padding: 10px;
+  z-index:1000;
 }
 
 .dropdown-toggle {
@@ -32,5 +33,25 @@ svg {
 .sticky-nav {
   position: sticky;
   top: 0;
-  z-index:9999;
+  z-index: 1000;
+}
+
+.modal-backdrop {
+  --bs-backdrop-zindex: 1050;
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: 0.75;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100%;
+  height: 100%;
+  background-color: var(--bs-backdrop-bg);
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    min-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
 }

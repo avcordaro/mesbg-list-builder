@@ -147,7 +147,7 @@ export default function App() {
         </Form>
       </Navbar>
       <div className="m-4">
-        <div className="optionsList border border-4 rounded position-fixed">
+        <div className="optionsList border border-4 rounded position-fixed bg-white">
           {displaySelection && (
             <Stack gap={2}>
               <DropdownButton
