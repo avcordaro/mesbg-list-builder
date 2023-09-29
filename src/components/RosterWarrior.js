@@ -162,13 +162,14 @@ export function RosterWarrior({
       <Stack direction="horizontal" gap={3}>
         <img
           className="profile"
-          src={require(
-            "../images/" +
-              unitData.faction +
-              "/pictures/" +
-              unitData.name +
-              ".png",
-          )}
+          src={(() => {
+            try {
+              return require("../images/" + unitData.faction + "/pictures/" + unitData.name + ".png")
+            } 
+            catch (e) {
+              return require("../images/default.png")
+            }
+          })()}
         />
         <Stack>
           <Stack direction="horizontal" gap={3}>

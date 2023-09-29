@@ -312,11 +312,14 @@ export default function App() {
           {cardUnitData != null &&
             <img
               className="profile_card border border-secondary"
-              src={require("./images/" +
-                cardUnitData.faction +
-                "/cards/" +
-                cardUnitData.name +
-                ".jpg")}
+              src={(() => {
+                try {
+                  return require("./images/" + cardUnitData.faction + "/cards/" + cardUnitData.name + ".jpg")
+                } 
+                catch (e) {
+                  return require("./images/default_card.jpg")
+                }
+              })()}
             />
           }
         </Modal.Body>
