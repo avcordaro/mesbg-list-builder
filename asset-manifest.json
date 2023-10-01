@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.c6f18bbf.css",
-    "main.js": "/mesbg-list-builder/static/js/main.2438ee71.js",
+    "main.js": "/mesbg-list-builder/static/js/main.24723a56.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Helm Hammerhand.jpg": "/mesbg-list-builder/static/media/Helm Hammerhand.880f602201c5c68ef655.jpg",
@@ -103,7 +103,7 @@
     "static/media/Merry.jpg": "/mesbg-list-builder/static/media/Merry.c6c127d58a6d44170b8c.jpg",
     "static/media/Arwen.jpg": "/mesbg-list-builder/static/media/Arwen.1b0253327236d16681d8.jpg",
     "static/media/Anborn.jpg": "/mesbg-list-builder/static/media/Anborn.abc8141f13c5c5636f29.jpg",
-    "static/media/Grimbold.jpg": "/mesbg-list-builder/static/media/Grimbold.b87d86e25d7ad78f9c98.jpg",
+    "static/media/Grimbold.jpg": "/mesbg-list-builder/static/media/Grimbold.586e0e292bc7585ad710.jpg",
     "static/media/Mouth of Sauron.jpg": "/mesbg-list-builder/static/media/Mouth of Sauron.17cb13f4cff12d73ae4e.jpg",
     "static/media/Hasharin.jpg": "/mesbg-list-builder/static/media/Hasharin.94c580a7839cdf7dac9d.jpg",
     "static/media/Ingold.jpg": "/mesbg-list-builder/static/media/Ingold.a35dcbdc932ec26ec642.jpg",
@@ -340,10 +340,10 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.c6f18bbf.css.map": "/mesbg-list-builder/static/css/main.c6f18bbf.css.map",
-    "main.2438ee71.js.map": "/mesbg-list-builder/static/js/main.2438ee71.js.map"
+    "main.24723a56.js.map": "/mesbg-list-builder/static/js/main.24723a56.js.map"
   },
   "entrypoints": [
     "static/css/main.c6f18bbf.css",
-    "static/js/main.2438ee71.js"
+    "static/js/main.24723a56.js"
   ]
 }
