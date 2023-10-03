@@ -68,7 +68,18 @@ export default function App() {
       if (warband.num == warbandNum) {
         newRoster['points'] = newRoster['points'] - warband['points']
         newRoster['bow_count'] = newRoster['bow_count'] - warband['bow_count']
-        newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero != null && warband.hero.unit_type != "Siege Engine" ? 1 : 0)
+        
+        // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
+        if (warband.hero.unit_type == "Siege Engine") {
+          newRoster["num_units"] = newRoster["num_units"] - warband.hero.siege_crew;
+          warband.hero.options.map((option) => {
+            if (option.option == "Additional Crew") {
+              newRoster["num_units"] = newRoster["num_units"] - option.opt_quantity;
+            }
+          });
+        } else {
+          newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero != null ? 1 : 0)
+        }
       }
     });
     // Remove the warband from the roster, and for all warbands that appear below the one being deleted, shift their warband number down by 1

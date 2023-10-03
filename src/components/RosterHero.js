@@ -28,10 +28,12 @@ export function RosterHero({
           newWarband["points"] - newWarband.hero["pointsTotal"];
         // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
         if (newWarband.hero.unit_type == "Siege Engine") {
+          newWarband.num_units = newWarband.num_units - (newWarband.hero.siege_crew - 1);
+          newRoster["num_units"] = newRoster["num_units"] - newWarband.hero.siege_crew;
           newWarband.hero.options.map((option) => {
             if (option.option == "Additional Crew") {
-              newWarband.num_units = newWarband.num_units - newWarband.hero.siege_crew - option.opt_quantity;
-              newRoster["num_units"] = newRoster["num_units"] - newWarband.hero.siege_crew - option.opt_quantity;
+              newWarband.num_units = newWarband.num_units - option.opt_quantity;
+              newRoster["num_units"] = newRoster["num_units"] - option.opt_quantity;
             }
           });
         } else {

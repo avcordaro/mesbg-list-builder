@@ -39,7 +39,7 @@ df_merged['max'].fillna(1, inplace=True)
 df_merged['opt_quantity'].fillna(0, inplace=True)
 df_merged_options = df_merged.groupby(['faction', 'name', 'unit_type', 'base_points', 'default_bow', 'inc_bow_count', 'siege_crew', 'quantity', 'pointsPerUnit', 'pointsTotal', 'warband_size'])\
   .apply(lambda x: x[['option_id', 'option', 'points', 'is_bow', 'min', 'max', 'opt_quantity']].to_dict(orient='records')).reset_index(name='options')
-df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'name'])
+df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
 json_dict = df_merged_options.to_dict(orient='records')
 
 with open('mesbg_data.json', 'w') as f:
