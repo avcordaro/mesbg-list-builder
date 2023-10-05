@@ -122,8 +122,7 @@ export function OptionHero({
       </Stack>
       :
       <Form.Check
-        type="radio"
-        name="option"
+        type="switch"
         label={option.option + " (" + option.points + " points)"}
         checked={option.opt_quantity == 1}
         onChange={handleToggle}
