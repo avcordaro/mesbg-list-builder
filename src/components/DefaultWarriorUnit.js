@@ -14,14 +14,22 @@ export function DefaultWarriorUnit({
   setDisplaySelection,
   warbandNum,
   setWarbandNumFocus,
+  setTabSelection,
+  factionSelection,
+  setFactionSelection
 }) {
   const handleClick = (e) => {
     /* Updates state variables to identify that a warrior (not a hero) is being chosen, 
-    the warband that warrior belongs to, and that the unit selection menu should be display */
+    the warband that warrior belongs to, and that the correct unit selection menu should be displayed */
     setHeroSelection(false);
     setDisplaySelection(true);
     setWarbandNumFocus(warbandNum - 1);
     setNewWarriorFocus(unitData.id);
+    let newFaction = { ...factionSelection };
+    let f_type = roster.warbands[warbandNum - 1].hero.faction_type;
+    newFaction[f_type] = roster.warbands[warbandNum - 1].hero.faction;
+    setFactionSelection(newFaction);
+    setTabSelection(f_type);
   };
 
   const handleDelete = (e) => {

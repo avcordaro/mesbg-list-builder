@@ -8,6 +8,9 @@ import Form from "react-bootstrap/Form";
 import Navbar from "react-bootstrap/Navbar";
 import Alert from "react-bootstrap/Alert";
 import Modal from 'react-bootstrap/Modal';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import Badge from "react-bootstrap/Badge";
 import { SelectionUnit } from "./components/SelectionUnit.js"
 import { DefaultHeroUnit } from "./components/DefaultHeroUnit.js"
 import { DefaultWarriorUnit } from "./components/DefaultWarriorUnit.js"
@@ -24,8 +27,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const faction_list = new Set(mesbg_data.map((data) => data.faction));
-  const [faction, setFaction] = useState("Minas Tirith");
+  const faction_lists = {
+    "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
+    "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction))
+  }
+  const [factionSelection, setFactionSelection] = useState({
+    "Good Army": "Minas Tirith",
+    "Evil Army": "Mordor",
+  });
+  const [tabSelection, setTabSelection] = useState("Good Army");
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
@@ -37,9 +47,11 @@ export default function App() {
   const [cardUnitData, setCardUnitData] = useState(null); 
   const [showRosterTable, setShowRosterTable] = useState(false); 
   
-  const handleFaction = (faction) => {
-    // Switch the 'faction' state variable to newly selected value
-    setFaction(faction);
+  const handleFaction = (f_type, f) => {
+    // Update the faction selection state variable to newly selected value
+    let newFaction = { ...factionSelection }
+    newFaction[f_type] = f
+    setFactionSelection(newFaction);
   };
 
   const handleNewWarband = () => {
@@ -70,7 +82,7 @@ export default function App() {
         newRoster['bow_count'] = newRoster['bow_count'] - warband['bow_count']
         
         // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
-        if (warband.hero.unit_type == "Siege Engine") {
+        if (warband.hero && warband.hero.unit_type == "Siege Engine") {
           newRoster["num_units"] = newRoster["num_units"] - warband.hero.siege_crew;
           warband.hero.options.map((option) => {
             if (option.option == "Additional Crew") {
@@ -138,7 +150,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.3.0
+                version 1.4.0
               </p>
             </Stack>
             <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
@@ -160,61 +172,68 @@ export default function App() {
       <div className="m-4">
         <div className="optionsList border border-4 rounded position-fixed bg-white">
           {displaySelection && (
-            <Stack gap={2}>
-              <DropdownButton
-                className="dropDownButton"
-                title={faction + " "}
-                onSelect={handleFaction}
-              >
-                {[...faction_list].map((f) => (
-                  <Dropdown.Item
-                    style={{ width: "458px", textAlign: "center" }}
-                    eventKey={f}
-                  >
-                    {f}
-                  </Dropdown.Item>
+              <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
+                {Object.keys(faction_lists).map((f_type) => ( 
+                  <Tab eventKey={f_type} title={f_type} disabled={!heroSelection}>
+                    <Stack gap={2}>
+                      <DropdownButton
+                        className="dropDownButton mt-3"
+                        title={factionSelection[f_type] + " "}
+                        onSelect={(e) => handleFaction(f_type, e)}
+                        disabled={!heroSelection}
+                      >
+                      {[...faction_lists[f_type]].map((f) => (
+                        <Dropdown.Item
+                          style={{ width: "458px", textAlign: "center" }}
+                          eventKey={f}
+                        >
+                          {f}
+                        </Dropdown.Item>
+                      ))}
+                      </DropdownButton>
+                      {heroSelection
+                        ? mesbg_data
+                            .filter(
+                              (data) =>
+                                data.faction == factionSelection[f_type] && data.unit_type != "Warrior"
+                            )
+                            .map((row) => (
+                              <SelectionUnit
+                                key={uuid()}
+                                newWarriorFocus={newWarriorFocus}
+                                setDisplaySelection={setDisplaySelection}
+                                heroSelection={heroSelection}
+                                unitData={row}
+                                roster={roster}
+                                setRoster={setRoster}
+                                warbandNumFocus={warbandNumFocus}
+                                setShowCardModal={setShowCardModal}
+                                setCardUnitData={setCardUnitData}
+                              />
+                            ))
+                        : mesbg_data
+                            .filter(
+                              (data) =>
+                                data.faction == factionSelection[f_type] && data.unit_type == "Warrior"
+                            )
+                            .map((row) => (
+                              <SelectionUnit
+                                key={uuid()}
+                                newWarriorFocus={newWarriorFocus}
+                                setDisplaySelection={setDisplaySelection}
+                                heroSelection={heroSelection}
+                                unitData={row}
+                                roster={roster}
+                                setRoster={setRoster}
+                                warbandNumFocus={warbandNumFocus}
+                                setShowCardModal={setShowCardModal}
+                                setCardUnitData={setCardUnitData}
+                              />
+                      ))}
+                    </Stack>
+                  </Tab>
                 ))}
-              </DropdownButton>
-              {heroSelection
-                ? mesbg_data
-                    .filter(
-                      (data) =>
-                        data.faction == faction && data.unit_type != "Warrior"
-                    )
-                    .map((row) => (
-                      <SelectionUnit
-                        key={uuid()}
-                        newWarriorFocus={newWarriorFocus}
-                        setDisplaySelection={setDisplaySelection}
-                        heroSelection={heroSelection}
-                        unitData={row}
-                        roster={roster}
-                        setRoster={setRoster}
-                        warbandNumFocus={warbandNumFocus}
-                        setShowCardModal={setShowCardModal}
-                        setCardUnitData={setCardUnitData}
-                      />
-                    ))
-                : mesbg_data
-                    .filter(
-                      (data) =>
-                        data.faction == faction && data.unit_type == "Warrior"
-                    )
-                    .map((row) => (
-                      <SelectionUnit
-                        key={uuid()}
-                        newWarriorFocus={newWarriorFocus}
-                        setDisplaySelection={setDisplaySelection}
-                        heroSelection={heroSelection}
-                        unitData={row}
-                        roster={roster}
-                        setRoster={setRoster}
-                        warbandNumFocus={warbandNumFocus}
-                        setShowCardModal={setShowCardModal}
-                        setCardUnitData={setCardUnitData}
-                      />
-                    ))}
-            </Stack>
+              </Tabs>
           )}
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
@@ -229,7 +248,16 @@ export default function App() {
               text={"light"}
             >
               <Stack direction="horizontal">
-                <Card.Text className="ms-2">
+                {warband.hero ?
+                  <Card.Text className="ms-2" style={{fontSize: 20}}>
+                    <Badge bg="dark">{warband.hero.faction}</Badge>
+                  </Card.Text>
+                  :
+                  <Card.Text className="ms-2" style={{fontSize: 20}}>
+                    <Badge bg="dark">[Faction]</Badge>
+                  </Card.Text>
+                }
+                <Card.Text className="ms-5">
                   Warband: <b>{warband.num}</b>
                 </Card.Text>
                 <Card.Text className={warband.num_units > warband.max_units ? "ms-5 text-warning" : "ms-5"}>
@@ -282,6 +310,9 @@ export default function App() {
                       setDisplaySelection={setDisplaySelection}
                       warbandNum={warband.num}
                       setWarbandNumFocus={setWarbandNumFocus}
+                      setTabSelection={setTabSelection}
+                      factionSelection={factionSelection}
+                      setFactionSelection={setFactionSelection}
                     />
                   ) : (
                     <RosterWarrior
