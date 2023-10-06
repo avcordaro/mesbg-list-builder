@@ -13,6 +13,11 @@ img.profile_card {
   height: 100%;
 }
 
+img.faction_logo {
+  width: 35px;
+  height: 35px;
+}
+
 div.optionsList {
   height: 650px;
   width: 510px;

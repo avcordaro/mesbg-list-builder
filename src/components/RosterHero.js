@@ -65,7 +65,7 @@ export function RosterHero({
           className="profile"
           src={(() => {
             try {
-              return require("../images/" + unitData.faction + "/pictures/" + unitData.name + ".png")
+              return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
             } 
             catch (e) {
               return require("../images/default.png")

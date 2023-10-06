@@ -29,11 +29,15 @@ import "./App.css";
 export default function App() {
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
-    "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction))
+    "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
+    "Good LL": new Set(mesbg_data.filter(data => data.faction_type == "Good LL").map((data) => data.faction)),    
+    "Evil LL": new Set(mesbg_data.filter(data => data.faction_type == "Evil LL").map((data) => data.faction))
   }
   const [factionSelection, setFactionSelection] = useState({
     "Good Army": "Minas Tirith",
     "Evil Army": "Mordor",
+    "Good LL": "The Return of the King",
+    "Evil LL": "Host of the Dragon Emperor"
   });
   const [tabSelection, setTabSelection] = useState("Good Army");
   const [heroSelection, setHeroSelection] = useState(false);
@@ -150,7 +154,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.4.0
+                version 1.5.0
               </p>
             </Stack>
             <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
@@ -187,7 +191,7 @@ export default function App() {
                           style={{ width: "458px", textAlign: "center" }}
                           eventKey={f}
                         >
-                          {f}
+                          <img className="faction_logo" src={require("./images/faction_logos/" + f + ".png")} />{" " + f}
                         </Dropdown.Item>
                       ))}
                       </DropdownButton>
@@ -250,6 +254,7 @@ export default function App() {
               <Stack direction="horizontal">
                 {warband.hero ?
                   <Card.Text className="ms-2" style={{fontSize: 20}}>
+
                     <Badge bg="dark">{warband.hero.faction}</Badge>
                   </Card.Text>
                   :
@@ -356,7 +361,7 @@ export default function App() {
               className="profile_card border border-secondary"
               src={(() => {
                 try {
-                  return require("./images/" + cardUnitData.faction + "/cards/" + cardUnitData.name + ".jpg")
+                  return require("./images/" + cardUnitData.profile_origin + "/cards/" + cardUnitData.name + ".jpg")
                 } 
                 catch (e) {
                   return require("./images/default_card.jpg")

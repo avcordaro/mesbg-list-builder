@@ -78,7 +78,7 @@ export function SelectionUnit({
           className="profile"
           src={require(
             "../images/" +
-              unitData.faction +
+              unitData.profile_origin +
               "/pictures/" +
               unitData.name +
               ".png",
