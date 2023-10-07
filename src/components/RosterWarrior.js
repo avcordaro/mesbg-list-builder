@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 import { OptionWarrior } from "./OptionWarrior.js"
 import { FaPlus, FaMinus } from "react-icons/fa";
@@ -176,8 +177,13 @@ export function RosterWarrior({
             <p>
               <b>{unitData.name}</b>
             </p>
+            {unitData.unit_type != "Warrior" && 
+              <Badge style={{ marginBottom: "12px" }} bg="dark">
+                {unitData.unit_type}
+              </Badge>
+            }
             <p className="ms-auto" style={{ paddingRight: "10px" }}>
-              Points: <b>{unitData.pointsTotal}</b>{" (per unit: " + unitData.pointsPerUnit + ")"}
+              Points: <b>{unitData.pointsTotal}</b>{unitData.unit_type == "Warrior" && " (per unit: " + unitData.pointsPerUnit + ")"}
             </p>
           </Stack>
           <Stack direction="horizontal" gap={3}>
@@ -203,20 +209,24 @@ export function RosterWarrior({
               >
                 <BsFillPersonVcardFill />
               </Button>
-              <>
-                <Button onClick={handleDecrement}>
-                  <FaMinus />
-                </Button>
-                <p className="mt-3">
-                  <b>{unitData.quantity}</b>
-                </p>
-                <Button onClick={handleIncrement}>
-                  <FaPlus />
-                </Button>
-              </>
-              <Button onClick={handleDuplicate} variant={"info"}>
-                <HiDuplicate />
-              </Button>
+              {unitData.unit_type == "Warrior" &&
+                <>
+                  <>
+                    <Button onClick={handleDecrement}>
+                      <FaMinus />
+                    </Button>
+                    <p className="mt-3">
+                      <b>{unitData.quantity}</b>
+                    </p>
+                    <Button onClick={handleIncrement}>
+                      <FaPlus />
+                    </Button>
+                  </>
+                  <Button onClick={handleDuplicate} variant={"info"}>
+                    <HiDuplicate />
+                  </Button>
+                </>
+              }
               <Button
                 style={{ marginRight: "10px" }}
                 variant={"warning"}
