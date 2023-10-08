@@ -17,7 +17,7 @@ import { DefaultWarriorUnit } from "./components/DefaultWarriorUnit.js"
 import { RosterHero } from "./components/RosterHero.js"
 import { RosterWarrior } from "./components/RosterWarrior.js"
 import { ModalRosterTable } from "./components/ModalRosterTable.js"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaPlus } from "react-icons/fa";  
 import { FaTableList } from "react-icons/fa6";  
 import { MdDelete } from "react-icons/md";
@@ -49,8 +49,23 @@ export default function App() {
   const [exportAlert, setExportAlert] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false); 
   const [cardUnitData, setCardUnitData] = useState(null); 
-  const [showRosterTable, setShowRosterTable] = useState(false); 
+  const [showRosterTable, setShowRosterTable] = useState(false);
+  const [factionType, setFactionType] = useState("");
   
+  useEffect(() => {
+    let faction_types = roster.warbands.map((warband) => {
+      if (warband.hero) {
+        return warband.hero.faction_type
+      }
+    })
+    faction_types = faction_types.filter((e) => e !== undefined)
+    if (faction_types.length == 0) {
+      setFactionType("");
+    } else {
+      setFactionType(faction_types[0]);
+    }
+  });
+
   const handleFaction = (f_type, f) => {
     // Update the faction selection state variable to newly selected value
     let newFaction = { ...factionSelection }
@@ -178,13 +193,13 @@ export default function App() {
           {displaySelection && (
               <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
                 {Object.keys(faction_lists).map((f_type) => ( 
-                  <Tab eventKey={f_type} title={f_type} disabled={!heroSelection}>
+                  <Tab eventKey={f_type} title={f_type} disabled={!heroSelection || (factionType != "" && factionType != f_type)}>
                     <Stack gap={2}>
                       <DropdownButton
                         className="dropDownButton mt-3"
                         title={factionSelection[f_type] + " "}
                         onSelect={(e) => handleFaction(f_type, e)}
-                        disabled={!heroSelection}
+                        disabled={!heroSelection || factionType.includes("LL")}
                       >
                       {[...faction_lists[f_type]].map((f) => (
                         <Dropdown.Item

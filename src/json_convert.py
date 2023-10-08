@@ -41,7 +41,18 @@ df_merged['opt_quantity'].fillna(0, inplace=True)
 df_merged_options = df_merged.groupby(['faction_type', 'faction', 'profile_origin', 'name', 'unit_type', 'base_points', 'default_bow', 'inc_bow_count', 'siege_crew', 'quantity', 'pointsPerUnit', 'pointsTotal', 'warband_size'])\
   .apply(lambda x: x[['option_id', 'option', 'points', 'is_bow', 'min', 'max', 'opt_quantity']].to_dict(orient='records')).reset_index(name='options')
 df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
-json_dict = df_merged_options.to_dict(orient='records')
+json_dict = df_merged_options.to_json(orient='records', indent=2)
 
 with open('mesbg_data.json', 'w') as f:
-    json.dump(json_dict, f)
+    f.write(json_dict)
+
+df_faction = pd.read_excel('faction_data.xlsx')
+df_faction.index = df_faction.name
+df_faction = df_faction[['armyBonus', 'primaryAllies', 'secondaryAllies']]
+df_faction['primaryAllies'] = df_faction['primaryAllies'].fillna("[]")
+df_faction['secondaryAllies'] = df_faction['secondaryAllies'].fillna("[]")
+df_faction['primaryAllies'] = df_faction['primaryAllies'].apply(eval)
+df_faction['secondaryAllies'] = df_faction['secondaryAllies'].apply(eval)
+
+with open('faction_data.json', 'w') as f:
+    f.write(df_faction.to_json(orient="index", indent=2))

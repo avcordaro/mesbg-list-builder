@@ -1,0 +1,1090 @@
+{
+  "Rohan":{
+    "armyBonus":"<b>\"Ride for Ruin and the World's Ending!\"<\/b> - Friendly Rohan Cavalry models gain + 1 Strength on a turn in which they Charge.",
+    "primaryAllies":[
+      "The Fiefdoms",
+      "Lothlorien",
+      "Minas Tirith",
+      "Wildmen of Druadan"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fellowship",
+      "Halls of Thranduil",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "The Shire",
+      "The White Council"
+    ]
+  },
+  "Mordor":{
+    "armyBonus":"<b>\"Our Enemy is Ready, His full Strength gathered\"<\/b> - Whilst you have more models on the board than your opponent, friendly Mordor Warrior models gain + 1 Courage and may re-roll ls To Wound when making Strikes.",
+    "primaryAllies":[
+      "The Easterlings",
+      "The Serpent Horde"
+    ],
+    "secondaryAllies":[
+      "Corsairs of Umbar",
+      "Dark Denizens of Mirkwood",
+      "Far Harad",
+      "Isengard",
+      "Moria",
+      "Variags of Khand"
+    ]
+  },
+  "Rivendell":{
+    "armyBonus":"<b>\"Tangado Haid, leithio i philinn!\"<\/b> - While within 6\" of the army's leader, friendly Rivendell models may re-roll failed To Hit rolls when making shooting attacks in a turn in which they do not move.",
+    "primaryAllies":[
+      "The Fellowship",
+      "Lothlorien",
+      "Numenor",
+      "The White Council"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Survivors of Lake-town",
+      "Thorin's Company",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Riders of Theoden":{
+    "armyBonus":"<b>\"Ride for Ruin and the World's Ending!\"<\/b> - Friendly Rohan Cavalry models gain +1 Strength on a turn in which they Charge.\n\n<b>\"Death!\"<\/b> - Once per game, at the start of any Fight phase, so long as he is alive and on the battlefield, Th\u00e9oden can declare that he is using this ability. Every friendly Rohan Hero within 12\" may declare either a Heroic Combat or Heroic Strike (if able without expending Might points to do so.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Fellowship":{
+    "armyBonus":"<b>\"You have my sword.\"<\/b> - Friendly As long as Frodo is alive and on the table (or escapes the board in Scenarios where this applies), all models from The Fellowship army list gain the Fearless special rule. Additionally, a force that consists solely of models from The Fellowship army list will never be considered broken if Frodo is alive and on the table (or escapes the board in Scenarios where this applies).",
+    "primaryAllies":[
+      "Lothlorien",
+      "The Misty Mountains",
+      "Rivendell"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Minas Tirith",
+      "The Rangers",
+      "Rohan",
+      "The Shire",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "The Rangers":{
+    "armyBonus":"<b>\"They're dangerous folk, wandering the wilds\"<\/b> - All models from this army list gain the Woodland Creature special rule, and the Rangers of the North and Dunedain may benefit from the Stand Fast! of Arathorn, Halbarad and Aragorn - Strider. Additionally, the Rangers of the North and the Dunedain increase their Attacks value to 2, while they have the Infantry keyword.",
+    "primaryAllies":[
+      "The Dead of Dunharrow",
+      "The Shire"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "Rohan",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Minas Tirith":{
+    "armyBonus":"<b>\"You are Men of Gondor. Whatever comes throught that Gate, you will stand your Ground!\"<\/b> - Friendly Gondor models from this army list increase their Courage value by 1.",
+    "primaryAllies":[
+      "The Dead of Dunharrow",
+      "The Fiefdoms",
+      "Rohan"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "The Fellowship",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "The Shire",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Army of Thror":{
+    "armyBonus":"<b>\"Thror ruled with utter surety, never doubting his house would endure\"<\/b> - Friendly Erebor Dwarf models count as being in range of a banner if Thror is within 6.",
+    "primaryAllies":[
+      "Garrison of Dale",
+      "The Iron Hills"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Rivendell",
+      "The White Council"
+    ]
+  },
+  "The Grey Company":{
+    "armyBonus":"<b>\"Passing of the Grey Company\"<\/b> - All models from this army list gain the Woodland Creature special rule, and Rangers of the North may benefit from the Stand Fast! of Aragorn, Legolas, Gimli, Halbarad, and Elladan & Elrohir. Additionally, Rangers of the North increase their Attacks value to 2 whilst they have the Infantry keyword.\n \n <b>\"The Grey Company\"<\/b> - A Grey Company army is always deployed as a single warband, regardless of the number of models, with Aragorn as the warband's captain.\n \n <b>\"The Heir of Isildur\"<\/b> - Aragorn does not have to pay any points for And\u00faril, Flame of the West, he automatically has this upgrade - it is free.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Riders of Eomer":{
+    "armyBonus":"<b>\"To the King!\" - Friendly Rohan Cavalry models within 12\"<\/b> of Eomer gain +1 Strength on a turn in which they Charge.\n \n <b>\"Look to the Sun\"<\/b> - Once per battle, so long as Gandalf is alive and in your force, you can declare that you are using this ability at the start of any friendly Move phase. Until the end of the turn, enemy models that are Engaged with, or supporting a model Engaged with, any friendly Cavalry models that made a Charge that turn suffer a penalty of -1 to their Duel rolls.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Angmar":{
+    "armyBonus":"<b>\"If that fell Kingdom should rise again, Rivendell, Lorien, The Shire, even Gondor itself shall fall.\"<\/b> - Friendly Angmar Orc models within 3\" of a friendly Spirit Hero model gain the Terror special rule.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Desolator of the North",
+      "Moria"
+    ]
+  },
+  "The Iron Hills":{
+    "armyBonus":"<b>\"Ironfoot has come!\"<\/b> - In Scenarios where you roll for additional forces to arrive (such as those that use the Reinforcements rule), you may modify your own Reinforcements rolls for warbands from this army list by +1 or -1. In Scenarios where you roll to see which part of the board your warbands deploy in, you may modify the dice roll by +1 or -1. Additionally, D\u00e1in Ironfoot, Lord of the Iron Hills receives the Master of Battle 4+ special rule.",
+    "primaryAllies":[
+      "Army of Thror",
+      "Halls of Thranduil",
+      "Survivors of Lake-town"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "Thorin's Company",
+      "The White Council"
+    ]
+  },
+  "Isengard":{
+    "armyBonus":"<b>\"You do not know Pain, you do not know Fear!\"<\/b> - Friendly Isengard models do not start to take Courage tests for being Broken until at least 66% of the force's models have been removed as casualties. Additionally, Lutrz, Ugl\u00fak, Mauh\u00far, Vrask\u00fb, Uruk-hai Scout Captains, Uruk-hai Scouts gain the Woodland Creature special rule.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Corsairs of Umbar",
+      "The Easterlings",
+      "Far Harad",
+      "Mordor",
+      "Moria",
+      "The Serpent Horde",
+      "Variags of Khand"
+    ]
+  },
+  "Lurtz's Scouts":{
+    "armyBonus":"<b>\"A Worthy Foe\"<\/b> - Lurtz may declare a Heroic Challenge against any Hero model regardless of Heroic Tier. Additionally, if Lurtz declares a Heroic Challenge, and the targetted Hero declines then Lurtz regains the Might point spent in declaring the Heroic Challenge.\n\n <b>\"Relentless March\"<\/b> - If your army includes Mauh\u00far then any Uruk-hai Scouts in your force may be upgraded to Mauh\u00far's Marauders rather than just the ones in Mauh\u00far's warband - this upgrade is free rather than costing 1 point per model. Additionally, Lurtz, Ugl\u00fak, Uruk-hai Scout Captains and Uruk-hai Drummers increase their Move value to 8\".\n\n <b>\"Shield Throw\" -\"<\/b> Once per game, Lurtz can choose to use his shield as a throwing weapon. This has a Strength of 4, and any Man-sized (or smaller) model hit by the shield is automatically knocked Prone. Once Lurtz has thrown his shield he no longer carries it and cannot use it for the remainder of the battle. Note that even though he no longer has a shield, Lurtz's Defence will not be reduced.\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Ugluk's Scouts":{
+    "armyBonus":"Only Orc Hero models may lead Orc Warrior models.\n\nOnly Uruk-hai Hero models may lead Uruk-hai Warrior models.\n\n<b>\"Their Pace has Quickened\"<\/b> - If your army includes Mauh\u00far then any Uruk-hai Scouts in your force may be upgraded to Mauh\u00far's Marauders rather than just the ones in Mauh\u00far's warband - this upgrade is free rather than costing 1 point per model. Additionally, Ugl\u00fak, Uruk-hai Scout Captains and Uruk-hai Drummers increase their Move value to 8\".\n\n <b>\"Make Haste to Isengard\"<\/b> - Friendly models gain the Woodland Creature special rule.\n\n <b>\"Animosity\"<\/b> - Friendly Orc models gain a bonus of+1 To Wound in the Fight phase if they are involved in the same fight as a friendly Uruk-hai model. Friendly Uruk-hai models gain a bonus of +1 To Wound in the Fight phase if they are involved in the same fight as a friendly Orc model. \n\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Wolves of Isengard":{
+    "armyBonus":"Friendly models gain the Isengard Keyword. Additionally, any Orc Shamans in a Wolves of Isengard force change their Fury (Mordor Orc) Magical Power to Fury (Isengard Orc).\n\n<b>\"Leader of the Pack\"<\/b> - Sharku may declare a Heroic Combat each turn without expending Might.\n\n <b>\"Ambush\"<\/b> - In Scenarios that use the Maelstrom of Battle special rule, a Wolves of Isengard force may choose to automatically win or lose Priority on the first turn. However, if both forces have special rules that allow them to do this, roll for Priority as normal. Additionally, models from this force may Charge in the same turn in which they enter the board, even if they may not normally be allowed to do so. Should a model entering the board in this manner fail a Courage test to charge a Terror causing enemy, the model may still move onto the board as normal, but may not Charge anything that turn.\n\n <b>\"Scouts\"<\/b> - At the start of the game, after both sides have deployed but before the first Priority has been rolled, select up to D6 friendly Warrior models in your force. The selected models may immediately make a move as if it were the Move phase, and then Shoot as if it were the Shoot phase (if able). During this additional move, the selected models may not move within 1\" of an enemy model, and therefore may not Charge. In scenarios where you roll for additional models to arrive, such as those that use the Reinforcements or Maelstrom of Battle special rule, the selected D6 models may roll to enter the board before the first turn of the game, re-rolling any results that would cause them to not enter the board until they come onto the board; trear each model as an individual warband.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Garrison of Dale":{
+    "armyBonus":"<b>\"Girion, lord of the city, rallied his bowmen to fire upon the beast\"<\/b> - Captains of Dale and Warriors of Dale have their Shoot value improved to 3+.",
+    "primaryAllies":[
+      "Army of Thror"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "The White Council"
+    ]
+  },
+  "The Army of Gothmog":{
+    "armyBonus":"<b>\"The Destruction of Men\"<\/b> - The range of Gothmog's The Age of Men is Over special rule is increased to 12\". Additionally, the range of Gothmog's The Time of the Orc has Come special rule is increased to battlefield-wide.\n\n <b>\"Tyrannical Rule:\"<\/b> - Friendly Mordor Orc Hero models may benefit from Gothmog's Stand Fast!\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Black Gate Opens":{
+    "armyBonus":"<b>\"Greatest of the Trolls\"<\/b> - The Mordor Troll Chieftain that is your leader gains the Fearless special rule and an additional point of Might, Will and Fate.\n\n <b>\"The Hordes of Mordor\"<\/b> - Mordor Orc models gain a bonus of +1 To Wound in a Duel in which they outnumber their opponent in the Fight. Note that supporting models do not count for either side for the purpose of this rule.\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Dead of Dunharrow":{
+    "armyBonus":"<b>\"The Dead do not suffer the Living to pass\"<\/b> - The King of the Dead gains the Harbinger of Evil special rule. Additionally, warbands from this army that contain eight or more models, do not need a Hero to be the Captain of the Warband. Instead, one of the Warrior models within the warband takes on the role of the warband's Captain for the purpose of deployment.",
+    "primaryAllies":[
+      "Minas Tirith",
+      "The Rangers"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "The Return of the King":{
+    "armyBonus":"<b>\"The King of the Dead\"<\/b> - The King of the Dead gains the Harbinger of Evil special rule.\n\n <b>\"The Heir of Isildur\"<\/b> - Aragorn does not have to pay any points for And\u00faril, Flame of the West, he automatically has this upgrade - it is free.\n\n <b>\"Fight for us and Regain Your Honor\"<\/b> - Spirit models from this army list count as being in range of a banner if Aragorn is within 6\".\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Barad Dur":{
+    "armyBonus":"<b>\"The Power of the Ring Could not be Undone\"<\/b> - Sauron's warband size is increased to 24. Additionally, a force that contains solely of models from the Barad-d\u00fbr army list will never be considered Broken if Sauron has 3 or more Wounds remaining. \n Should Sauron have 2 or fewer Wounds remaining, the army will break as normal. Should Sauron be slain, the army will immediately count as being Broken.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Desolator of the North"
+    ]
+  },
+  "Azog's Legion":{
+    "armyBonus":"<b>\"Let the Legions Come Forth!\" <\/b> - If either Azog or Bolg is the leader of your force then they gain the Master of Battle special rule.",
+    "primaryAllies":[
+      "Azog's Hunters",
+      "Dark Powers of Dol Guldur"
+    ],
+    "secondaryAllies":[
+      "Dark Denizens of Mirkwood",
+      "Goblin-town",
+      "Moria"
+    ]
+  },
+  "Azog's Hunters":{
+    "armyBonus":"<b>\"They Strike in the Wee Small Hours When Everyone's Asleep\"<\/b> - The Azog's Hunters army list may include 50% bows rather than 33%. Additionally, all models in the Azog's Hunters army list have their Shoot value improved by 1.",
+    "primaryAllies":[
+      "Azog's Legion",
+      "Dark Powers of Dol Guldur"
+    ],
+    "secondaryAllies":[
+      "Dark Denizens of Mirkwood",
+      "Desolator of the North",
+      "Goblin-town",
+      "Moria",
+      "The Trolls"
+    ]
+  },
+  "Breaking of the Fellowship":{
+    "armyBonus":"<b>\"You have my sword.\"<\/b> - As long as Frodo is alive and on the table (or escapes the board in Scenarios where this applies), all models from The Fellowship army list gain the Fearless special rule. Additionally, a force that consists solely of models from The Fellowship army list will never be considered broken if Frodo is alive and on the table (or escapes the board in Scenarios where this applies).\n \n <b>\"The Bond of Fellowship\"<\/b> - Models from this Legendary Legion count as in range of a banner if there is another friendly model within 3\".\n \n <b>\"Blessing of Galadriel\"<\/b> - Friendly models always count as having had the Fortify Spirit Magical Power cast upon them. This is always in effect, even if their Will points have been reduced to 0.\n \n <b>\"Gifts of Galadriel\"<\/b> - Each member of the Fellowship will gain the item listed below:\nFrodo - Light of Erendil: Each turn Frodo may use a single \"Free\" Will point to attempt to cast the Blinding Light Magical Power. This is cast on a 3+ and cannot be Channeled. Frodo cannot use this if he is wearing the Ring.\nSam - Elven Rope: Sam always counts as rolling a 6 for any Climb, Jump, or Leap tests that he has to make.\nMerry & Pippin - Daggers of the Noldorin: Merry & Pippin may re-roll any failed To Wound rolls in combat.\nAragorn - Elven Dagger: This is an Elven-made dagger with the Uruk-Hai bane special rule.\nLegolas - Bow of the Galadhrim: Whilst within 3\" of a friendly model, Legolas may re-roll any failed To Hit rolls when shooting.\nGimli - Galadriel's Locks: Gimli may re-roll all dice in a Duel roll. Gimli may only use this ability three times per game.\nBoromir - Golden Belt: Boromir gains the Woodland Creature special rule.\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Theodred's Guard":{
+    "armyBonus":"<b>\"Protect the Prince\"<\/b> - All models in this force gain the Sword Protector (Theodred) special rule.\n \n <b>\"Riders of Theodred!\"<\/b> - Captains of Rohan, Riders of Rohan and Rohan Royal Guard treat Th\u00e9odred as if he were Th\u00e9oden for the purpose of their Arise Riders of Th\u00e9oden special rule.\n \n <b>\"Fight in Ranks!\"<\/b> - Friendly Rohan Infantry models armed with throwing spears spears may use them as standard spears in addition to their normal use. However, if a model uses their spear as a throwing spear in a turn, they cannot use it as a standard spear in the same turn. ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Defenders of Helm's Deep":{
+    "armyBonus":"A Defenders of Helm's Deep Legendary Legion may only have a maximum of 33% of its models with the Lorien Keyword.\n\n<b>\"Fight in Ranks!\"<\/b> - Friendly Rohan Infantry models armed with throwing spears spears may use them as standard spears in addition to their normal use. \n However, if a model uses their spear as a throwing spear in a turn, they cannot use it as a standard spear in the same turn. \n \n <b>\"Give them a Volley\"<\/b> - Models from this Legendary Legion armed with either a bow, longbow or Elf bow may increase the range of their type of bow from 24\" to 30\", provided they have not moved that turn.\n \n <b>\"Fall Back to the keep!\"<\/b> - If this force is Broken, then Warrior models from this force add 1 to their Courage value. Additionally, if this force is Broken, friendly Warrior models may re-roll failed Courage tests whilst they are within 6\" of Th\u00e9oden.\n",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Goblin-Town":{
+    "armyBonus":"<b>\"Down down down in Goblin-town\"<\/b> - Each Goblin Hero model may increase their maximum warband size by six models.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Azog's Hunters",
+      "Azog's Legion",
+      "Dark Denizens of Mirkwood",
+      "Dark Powers of Dol Guldur",
+      "Desolator of the North",
+      "Moria",
+      "The Trolls"
+    ]
+  },
+  "The Kingdom of Khazad-Dum":{
+    "armyBonus":"<b>\"The Wealth of Moria lay not in Gold or Jewels, but in Mithril\"<\/b> - Friendly Dwarf models with either the Khazad-Dum or Moria keyword may re-roll To Wound rolls of a 1 when fighting in close combat.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Kingdom of Moria":{
+    "armyBonus":"<b>\"The Wealth of Moria lay not in Gold or Jewels, but in Mithril\"<\/b> - Friendly Dwarf models with either the Khazad-Dum or Moria keyword may re-roll To Wound rolls of a 1 when fighting in close combat.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Easterlings":{
+    "armyBonus":"<b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to. If there is an Easterling contingent as part of an army that contains an alliance, this Army Bonus is only in effect if 25% or more of the total models in the army have the Easterling keyword.",
+    "primaryAllies":[
+      "Mordor",
+      "Variags of Khand"
+    ],
+    "secondaryAllies":[
+      "Corsairs of Umbar",
+      "Far Harad",
+      "Isengard",
+      "Moria",
+      "The Serpent Horde",
+      "Variags of Khand"
+    ]
+  },
+  "The Host of the Dragon Emperor":{
+    "armyBonus":"<b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to.\n \n<b>\"The Dragon Cults\"<\/b> - Easterling Warriors and Easterling Kataphrakts in warbands led by the Dragon Emperor or Easterling Dragon Knights do not need to pay the points to be upgraded to Black Dragons - this upgrade is free.\n\n<b>\"Heroes of the Easterlings\"<\/b> - Easterling Hero models may re-roll a D6 in a Duel roll.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Variags of Khand":{
+    "armyBonus":"<b>\"The Khandish Hosts\"<\/b> - Khandish Horsemen and Khandish Charioteers do not count towards the force's Bow Limit.",
+    "primaryAllies":[
+      "The Easterlings"
+    ],
+    "secondaryAllies":[
+      "Corsairs of Umbar",
+      "Far Harad",
+      "Isengard",
+      "Mordor",
+      "Moria",
+      "The Serpent Horde"
+    ]
+  },
+  "Wildmen of Druadan":{
+    "armyBonus":"<b>\"Wild men have Long Ears and Long Eyes; know all Paths\"<\/b> - Models from this army list gain the Mountain Dweller special rule. Additionally, enemy models do not gain any benefits from the Stalk Unseen special rule, or any suchs special rules thatg ive similar benefits, against models from this army list. Additionally, warbands from this army list, that contain between 9 and 12 models, do not need a Hero to be the captain of the warband. Instead, one of the Warrior models within the warband takes on the role of the warband's captain for the purpose of deployment.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Paths of the Druadan":{
+    "armyBonus":"A Paths of the Dr\u00faadan force must always include Th\u00e9oden, King of Rohan, who is always the army's leader.\n\nA Paths of the Druadan force must always include Ghan-buri-Ghan and a full warband of Woses Warriors. Ghan-buri-Ghan is the only Hero that can include Woses Warriors in his warband.\n\nRiders of Rohan within this Legendary Legion do not count towards your force's Bow Limit.\n \n <b>\"Waypoints\"<\/b> - At the start of the game, before either side has deployed, this Legendary Legion's controlling player may place three 25mm Waypoint Markers anywhere on the board. Whilst within 6\" of a friendly Waypoint Marker, friendly Rohan models do not suffer any penalties for moving, or charging, through difficult terrain.\n \n <b>\"Kill Orc-folk\"<\/b> - Friendly models may re-roll 1s To Wound when making strikes against any Orc, Goblin or Uruk-hai model.\n \n <b>\"Know All Paths\"<\/b> - If, during the Move phase, models from both sides have declared a Heroic Move and a roll-off is required to see which side's Heroic Move happens first, this force will gain a bonus to that roll. If they would normally win the roll-off on a 4+, they will instead win the roll-off on a 3+. If they would normally win the roll-off on a 1, 2 or 3, they will instead win the roll-off on a 1, 2, 3 or 4.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Erebor Reclaimed":{
+    "armyBonus":"<b>\"Will you follow me, one last time?\"<\/b> - All friendly Erebor Dwarf models from this army list gain the Du Bekar special rule. \n \n <b>\"Du Bekar\"<\/b> - A model with this special rule counts as being in range of a banner if they are within 6\" of Thorin Oakenshield, King Under the Mountain.",
+    "primaryAllies":[
+      "Halls of Thranduil",
+      "Survivors of Lake-town"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Fangorn",
+      "The Iron Hills",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "The White Council"
+    ]
+  },
+  "Thorin's Company":{
+    "armyBonus":"<b>\"I would take each and every one of these Dwarves over an army from the Iron Hills, for when I called upon them, they answered\"<\/b> - Models from this army list may re-roll To Wound rolls of a 1 whilst within 3\" of Thorin Oakenshield.",
+    "primaryAllies":[
+      "Army of Lake-town",
+      "The Misty Mountains"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "Lothlorien",
+      "Radagast's Alliance",
+      "Rivendell",
+      "Survivors of Lake-town",
+      "The White Council"
+    ]
+  },
+  "The Army of Dale":{
+    "armyBonus":"<b>\"Skilled Bowmen\"<\/b> - Captains of Dale and Warriors of Dale have their Shoot value improved to 3+.\n \n <b>\"Protect the King!\"<\/b> - Friendly Dale models gain the Sworn Protector (Brand) special rule.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Defenders of Erebor":{
+    "armyBonus":"<b>\"Longstanding Alliance\"<\/b> - Dale models within 1\" of a friendly Erebor model re-roll 1s To Wound during the Fight phase. Additionally, Erebor models within 1\" of a friendly Dale model re-roll 1s To Wound during the fight phase.\n \n <b>\"A Bond Forged in War\"<\/b> - If either D\u00e1in or Brand would be Trapped at the start of the Fight phase, then the other may declare a Heroic Combat without spending Might.\n If successful, they must join their Trapped ally's fight if possible. If this is not possible, then they must move as close as possible to their Trapped ally.\n \n <b>\"The Heirs to the Kingdoms\"<\/b> - If either Thorin III Stonehelm or Bard II would be Trapped at the start of the Fight phase, then the other may declare a Heroic Combat\n without spending Might. If successful, they must join their Trapped ally's fight if possible. If this is not possible, then they must move as close as possible to their Trapped ally.\n \n <b>\"Royal Bloodlines\"<\/b> - Friendly models within 3\" of Dain Ironfoot, Thorin III Stonehelm, Brand, King of Dale and Bard II, Prince of Dale count as being in range of a banner.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Army of Dunland":{
+    "armyBonus":"<b>\"Death to the Forgoil!\"<\/b> - Friendly Dunlending models gain the Hatred (Rohan) special rule.\n \n <b>\"Dunlending Pride\"<\/b> - The range of banners in this army is increased to 6\".\n \n <b>\"Dunlending War Cry\"<\/b> - Once per game, at the start of any Fight phase, Thrydan can declare that he is using this ability. Until the end of the turn, friendly Dunlending models within 12\" of Thrydan gain a bonus of +1 To Wound when making strikes.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Numenor":{
+    "armyBonus":"<b>\"One by One the Free Lands of Middle-Earth fell to the Power of the Ring. But there were some who resisted.\"<\/b> - Friendly Numenor models from this army list increase their Courage value by 1.",
+    "primaryAllies":[
+      "Rivendell"
+    ],
+    "secondaryAllies":[
+      "The Fellowship",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains"
+    ]
+  },
+  "Helm's Guard":{
+    "armyBonus":"<b>\"Defend the Suthburg!<\/b> - Friendly Rohan Infantry models armed with throwing spears may use them as standard spears in addition to their normal use. However, if a model uses their spear as a throwing spear in a turn, they cannot use it as a standard spear in the same turn.\n \n<b>\"The King of Rohan\"<\/b> - Helm Hammerhand gains the Mighty Hero special rule. Additionally, Helm Hammerhand may declare a Heroic Combat each turn without spending Might.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Lothlorien":{
+    "armyBonus":"<b>\"They say a great Sorceress lives in these woods...\"<\/b> - Friendly Lorien models gain the Resistant to Magic special rule. ",
+    "primaryAllies":[
+      "The Fellowship",
+      "Rivendell",
+      "Rohan"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Numenor",
+      "Radagast's Alliance",
+      "The Rangers",
+      "The Shire",
+      "Survivors of Lake-town",
+      "Thorin's Company",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Fangorn":{
+    "armyBonus":"<b>\"Don't be Hasty\"<\/b>: Ent models from this army list gain the Fearless special rule. Additionally, Ent models are completely unaffected by any Magical Powers or special rules that would prevent them from moving or move them against their will (the only exception is that they will still take the hit from a Sorcerrous Blast, but it will suffer no further effects). Additionally, Ent models are completely unaffected by the Nature's Wrath and Wrath of Bruinen Magical Powers.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Numenor",
+      "Radagast's Alliance",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Survivors of Lake-town",
+      "Thorin's Company",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Survivors of Lake-town":{
+    "armyBonus":"<b>\"Any man who wants to give their last, follow me!\"<\/b> - Bard the Bowman's Stand Fast! will affect other Lake-town Hero models. Additionally, Bard the Bowman's Saviour of Lake-town special rule has its range increased to 12\" instead of 6\".",
+    "primaryAllies":[
+      "Erebor Reclaimed",
+      "Halls of Thranduil",
+      "The Iron Hills"
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "Thorin's Company",
+      "The White Council"
+    ]
+  },
+  "Army of Lake-town":{
+    "armyBonus":"<b>\"The Master's Purse-strings\"<\/b> - The Master of Lake-town's Moneybags special rule has a range of 12\" rather than 6\".",
+    "primaryAllies":[
+      "Thorin's Company"
+    ],
+    "secondaryAllies":[
+      "Erebor Reclaimed",
+      "Fangorn",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "Rivendell",
+      "The White Council"
+    ]
+  },
+  "Halls of Thranduil":{
+    "armyBonus":"<b>\"The Elves of Mirkwood are not like their kin. They are less wise, and more dangerous\"<\/b> - Mirkwood Rangers from this force do not count towards the army's Bow Limit. Additionally, whilst they are within 3\" of Thranduil, all Palace Guard Captains, Mirkwood Elf Captains, Palace Guard, Mirkwood Cavalry and Mirkwood Elves will also gain +1 to their To Wound rolls when making Strikes.",
+    "primaryAllies":[
+      "Erebor Reclaimed",
+      "The Iron Hills",
+      "Survivors of Lake-town"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "The Kingdom of Khazad-Dum",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Numenor",
+      "Radagast's Alliance",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Thorin's Company",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Desolator of the North":{
+    "armyBonus":"The Desolator of the North army list does not get a special rule - having a massive fire-breathing Dragon is a deadly enough bonus as it is!",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Angmar",
+      "Azog's Hunters",
+      "Barad-dur",
+      "Dark Denizens of Mirkwood",
+      "Dark Powers of Dol Guldur",
+      "Goblin-town",
+      "Moria",
+      "The Trolls"
+    ]
+  },
+  "Moria":{
+    "armyBonus":"<b>\"We cannot get out, they are coming\"<\/b> - Friendly Moria Goblin models involved in a Fight where their opponent is Trapped receive a bonus of +1 to their Fight value.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Angmar",
+      "Azog's Hunters",
+      "Azog's Legion",
+      "Corsairs of Umbar",
+      "Dark Denizens of Mirkwood",
+      "Dark Powers of Dol Guldur",
+      "Desolator of the North",
+      "The Easterlings",
+      "Far Harad",
+      "Goblin-town",
+      "Isengard",
+      "Mordor",
+      "The Serpent Horde",
+      "The Trolls",
+      "Variags of Khand"
+    ]
+  },
+  "The Fiefdoms":{
+    "armyBonus":"<b>\"For the White City!\"<\/b> - Special rules marked with an '*' affect all models from this army list, not just the ones listed.",
+    "primaryAllies":[
+      "Minas Tirith",
+      "Rohan"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fellowship",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "The Shire",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Assault on Helm's Deep":{
+    "armyBonus":"<b>\"You do not know Pain, you do not know Fear!\"<\/b> - Friendly Isengard models do not start to take Courage tests for being Broken until at least 66% of the force's models have been removed as casualties. \n \n <b>\"Commander of the Uruk-hai\"<\/b> - The Uruk-hai Captain chosen as your leader increases their Attacks and Wounds characteristics to 3 each.\n \n <b>\"The Isengard Hordes\"<\/b> - Hero models from this force increase the number of models they can include in their warband by 6.\n \n <b>\"Break the Walls\"<\/b> - Isengard Ballistae from this army list may re-roll results of 1 on To Hit and Scatter rolls during the Shoot phase. Additionally, whenever a demolition charge from your army is detonated, you may roll two dice rather than one and pick either result.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Black Riders":{
+    "armyBonus":"<b>\"Terror in the Night\"<\/b> - A model in range of between four and six models from this force with the Harbinger of Evil special rule suffers an additional -1 to their Courage value. A model in range of between seven and nine models from this force with the Harbinger of Evil special rule suffers an additional -2 to their Courage value.\n \n <b>\"Screech of the Nazgul\"<\/b> - Each Ringwraith can, once per game, cast the Channelled version of the Transfix Magical Power without declaring a Heroic Channelling. This Magical Power is automatically cast, counting the result as a 6, and no Will points are expended. Target models can make a Resist test as normal. Make sure to note which of the Ringwraith models have used this ability as each Ringwraith can only use this ability once per game.\n \n <b>\"The Will of Sauron\"<\/b> - Friendly Ringwraith models do not lose a Will point for being in combat as per their Will of Evil special rule.\n \n <b>\"Hunt the Ringbearer\"<\/b> - At the start of the Fight phase, before other Heroic Actions are declared, if it would be possible for a friendly Ringwraith model to Charge an enemy model with the One Ring following a successful Heroic Combat, that Ringwraith model may declare a Heroic Combat without spending Might. Only one Ringwraith can declare a \"free\" Heroic Combat in this way per turn If successful, the Ringwraith that declared the Heroic Combat must Charge the enemy model with the One Ring, though any other models that move as part of the Heroic Combat may act as normal. The player who declared this \"free\" Heroic Combat automatically wins the roll-off to see which Heroic Combat goes first (if applicable), though they must select this \"free\" Heroic Combat before any others.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Radagast's Alliance":{
+    "armyBonus":"<b>\"The Eagles are coming!\"<\/b> - Eagle models from this army list gain a bonus of +1 to their Strength on a turn in which they charged.",
+    "primaryAllies":[
+      "The Misty Mountains"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "Lothlorien",
+      "The Rangers",
+      "Rivendell",
+      "Survivors of Lake-town",
+      "Thorin's Company",
+      "The White Council"
+    ]
+  },
+  "The White Council":{
+    "armyBonus":"<b>\"Are you in need of assistance?\"<\/b> - A member of the White Council from this army list adds +1 to the dice roll when attempting to Resist magic, so long as there is another member of the White Council from this army list within 6\".",
+    "primaryAllies":[
+      "Rivendell"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Radagast's Alliance",
+      "The Rangers",
+      "Rohan",
+      "The Shire",
+      "Survivors of Lake-town",
+      "Thorin's Company",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Depths of Moria":{
+    "armyBonus":"<b>\"Shadow...\"<\/b> - Shooting attacks that target the Balrog will only ever hit on a 5 or more.\n \n <b>\"...and Flame\"<\/b> - Once per game, at the start of any Shoot phase, the Balrog may select a single enemy model within 3\" of it and roll a D6. On a 2+, that model is immediately Set Ablaze. This is an Active ability. After the Balrog has used this ability, it no longer benefits from the 'Shadow...' ability provided by this Legendary Legion.\n \n <b>\"Dominion of the Balrog\"<\/b> - Friendly Goblin models within 6\" of the Balrog gain a bonus of +1 to their Fight value. Additionally, this army will never be considered Broken so long as the Balrog has 6 or more Wounds remaining. Should the Balrog have 5 or fewer Wounds remaining, then the army will Break as normal. If the Balrog is slain, the army will immediately count as Broken.\n \n <b>\"Drums in the Deep\"<\/b> - The effects of a Moria Goblin or Moria Blackshield Drum are increased from 18\" to battlefield wide. Additionally, so long as the Drum and at least one Drummer are alive, then the Drum will count as a banner for the purposes of Victory Points in Scenarios that award Victory Points for having a banner left alive.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Misty Mountains":{
+    "armyBonus":"<b>\"The Eagles are coming!\"<\/b> - Eagle models from this army list gain a bonus of+ 1 to their Strength on a turn in which they charged.",
+    "primaryAllies":[
+      "The Fellowship",
+      "Radagast's Alliance",
+      "Thorin's Company"
+    ],
+    "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed",
+      "Fangorn",
+      "The Fiefdoms",
+      "Garrison of Dale",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "Numenor",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Survivors of Lake-town",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "Cirith Ungol":{
+    "armyBonus":"Only Orc Hero models may lead Orc Warrior models.\n\nOnly Uruk-hai Hero models may lead Uruk-hai Warrior models.\n\n<b>\"Animosity\"<\/b> - Friendly Orc models gain a bonus of +1 To Wound in the Fight phase if they are involved in the same fight as a friendly Uruk-hai model. Friendly Uruk-hai models gain a bonus of +1 To Wound in the Fight phase if they are involved in the same fight as a friendly Orc model.\n\n <b>\"Rivals for Power\"<\/b> - Keep track of how many models Gorbag and Shagrat have each killed. If at any point one of them has fewer kills than the other, that model may re-roll a single D6 when making a Duel roll.\n\n <b>\"She Hungers for Sweeter Meats\"<\/b> - Shelob adds 1 to her Attack characteristic when involved in a fight with an enemy Man, Elf, Dwarf or Hobbit model.\n\n <b>\"She is Always Hungry\"<\/b> - At the start of her Move phase, so long as she is not Engaged in a Fight, Shelob can choose to kill and remove a friendly model within 1\" of her from the board. If she does so, Shelob can re-roll any number of dice when making a Duel roll.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Beornings":{
+    "armyBonus":"If a Beornings force includes both Beorn and Grimbeorn, then Beorn will automatically be the leader.\n\nFriendly models may benefit from Beorn's Heroic Actions. Additionally, Beorning models may benefit from Beorn's Stand Fast!\n\n<b>\"Great Resilience\"<\/b> - Whenever a friendly Bear model suffers a Wound, roll a D6. On the roll of a natural 6 the Wound is ignored just as if a point of Fate had been spent.\n\n <b>\"Charge of the Bear\"<\/b> - Whilst they have the Bear keyword, Beorn and Grimbeorn gain the Monstrous Charge special rule.\n\n <b>\"Natural Resistance\"<\/b> - Friendly models gain the Resistant to Magic special rule.\n \"Fuelled by Fury - Beorn and Grimbeorn do not need to roll for their Skin-changer special rule; they can transform at will.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Serpent Horde":{
+    "armyBonus":"<b>\"The Scorpion's Sting\"<\/b> - A serpent Horde army may have 50% of its warriors armed with bows. Additionally, all Haradrim Warriors and Raiders may apply the Poisoned Weapons special rule to all of their weapons.",
+    "primaryAllies":[
+      "Corsairs of Umbar",
+      "Far Harad",
+      "Mordor"
+    ],
+    "secondaryAllies":[
+      "The Easterlings",
+      "Isengard",
+      "Moria",
+      "Variags of Khand"
+    ]
+  },
+  "Corsairs of Umbar":{
+    "armyBonus":"<b>\"The Corsairs are upon us! It is the last Stroke of Doom!\"<\/b> - Corsair models gain the Backstabbers special rule.",
+    "primaryAllies":[
+      "The Serpent Horde"
+    ],
+    "secondaryAllies":[
+      "The Easterlings",
+      "Far Harad",
+      "Isengard",
+      "Mordor",
+      "Moria",
+      "Variags of Khand"
+    ]
+  },
+  "Vanquishers of the Necromancer":{
+    "armyBonus":"<b>\"Are you in need of Assistance?\" - Friendly models gain a bonus of +1 to Resist tests if they are within 6\"<\/b> of another friendly model.\n\n <b>\"Masters of Magic\"<\/b> - Friendly models may still attempt to cast Magical Powers even if they are already engaged in combat.\n\n <b>\"Meddle not in the Affairs of Wizards\"<\/b> - The Attacks characteristic of Wizard models in this Legendary Legion is always equal to their remaining Wounds.\n\n <b>\"Lady of the Golden Wood\"<\/b> - Galadriel may target any enemy model with the Banishment Magical Power as if it were a Spirit model. Non-Spirit models targeted by Galadriel's Banishment gain a single 'free'\u2019' point of Will to immediately Resist this Magical Power. Additionally, friendly models within 3\" of Galadriel gain Resistant to Magic. \n\n <b>\"The Grey Wanderer\"<\/b> - Gandalf gains the Fearless special rule. Furthermore, friendly models within 3\" of Gandalf cannot have their Courage value reduced by enemy Magical Powers or special rules.\n\n <b>\"Lord of Imladris\"<\/b> - Elrond may declare a Heroic Strike every Fight phase without expending Might. Additionally, other friendly models within 3\" of Elrond count as being in range of a banner.\n\n <b>\"Wisest of the Istari\"<\/b> - Saruman can attempt to cast two Magical Powers each turn rather than one, but may not attempt to cast the same Magical Power twice or target the same model twice. Additionally, when other friendly models within 3\" of Saruman attempt to cast a Magical Power, they may re-roll a single D6 as part of the casting attempt.\n\n <b>\"Protector of the Greenwood\"<\/b> - Once each turn, at any point in his Move phase, Radagast may choose a single model in base contact with him and roll a D6. On a 4 or 5, the chosen model regains a Wound lost earlier in the battle; on a 6, the model regains all of its lost Wounds. Additionally, friendly models within 3\" of Radagast may move through difficult terrain without penalty.\n\n <b>\"Go Back to the Void, from Whence You Came!\"<\/b> - Once per game, if Galadriel has at least 1 Will point remaining, Galadriel may choose to exert her full power instead of casting a Magical Power. If she does so, then she immediately casts the channelled version of the Banishment Magical Power, which cannot be resisted. Models may use Fate to prevent these Wounds individually as normal. However, immediately after casting the Banishment Magical Power in this way, place Galadriel prone and reduce her Will to 0. Additionally, for the rest of the battle she does not benefit from her The Lady of Lothl\u00f3rien and War Aspect special rules.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Rangers of Mirkwood":{
+    "armyBonus":"A Rangers of Mirkwood force must contain either Legolas Greenleaf, Prince ofMirkwood, or Tauriel.\n\n A Rangers of Mirkwood force may have 100% of its models armed with bows.\n\n <b>\"Knife Mastery\"<\/b> - Friendly models may re-roll 1s ToWound when making strikes. Additionally, friendly models may use the Shielding special rule even though they are not armed with a shield; however, if they elect to shield, they may not use their Knife Fighters or Blade Mistress special rules.\n\n <b>\"The Prince of Mirkwood\"<\/b> - Legolas gains the Knife Fighters special rule when part of this Legendary Legion.\n\n <b>\"Knife Fighters\"<\/b> - Mirkwood Rangers receive an additional Attack for each enemy model they are Engaged in combat with after the first (to a maximum of 3 bonus Attacks). This bonus is determined at the start of each fight, and lasts until all Strikes from that fight have been resolved.\n\n <b>\"Clear the Nests\"<\/b> - Friendly models gain the Hatred (Spider) special rule.\n\n <b>\"Masters of the Forest\"<\/b> - Whenever a friendly model that is within 1\" of a tree or within a piece of woodland terrain suffers a Wound, roll a D6. On the roll of a natural 6 that Wound is ignored exactly as if a point of Fate had been spent.\n\n <b>\"Silent Ambush\"<\/b> - In Scenarios where you roll for additional forces to arrive (such as those that use the Reinforcements rule), you receive a bonus of+1 to the dice roll for warbands from this Legendary Legion. In Scenarios where you roll to see which part of the board your warbands deploy in, you may modify the dice roll by +1 or -1.\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Arnor":{
+    "armyBonus":"<b>\"Protect the King\"<\/b> - Friendly Arnor models automatically pass courage tests whilst within 6\" of Arvedui, Last King of Arnor.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Fangorn",
+      "Halls of Thranduil",
+      "The Kingdom of Khazad-Dum",
+      "Lothlorien",
+      "The Misty Mountains",
+      "Rivendell"
+    ]
+  },
+  "Dark Powers of Dol Guldur":{
+    "armyBonus":"<b>\"His Spirit has lost none of its Potency\"<\/b> - Whenever the Necromancer of Dol Guldur attempts to cast a Magical Power, by expending one or more Will points, he automatically adds an extra free Will point to the Casting test.",
+    "primaryAllies":[
+      "Azog's Hunters",
+      "Azog's Legion"
+    ],
+    "secondaryAllies":[
+      "Dark Denizens of Mirkwood",
+      "Desolator of the North",
+      "Goblin-town",
+      "Mordor",
+      "Moria",
+      "The Trolls"
+    ]
+  },
+  "Rise of the Necromancer":{
+    "armyBonus":"<b>\"His Spirit has lost none of its Potency\"<\/b> - Whenever the Necromancer of Dol Guldur attempts to cast a Magical Power, by expending one or more Will points, he automatically adds an extra free Will point to the Casting test.\n \n <b>\"Power of the Necromancer\"<\/b> - Friendly models gain the Resistant o Magic special rule. Additionally, the Necromancer can attempt to cast two Magical Powers each turn rather than one. However, he may not attempt to cast the same Magical Power twice or target the same enemy model twice.\n \n <b>\"The Dark Lord Returns\"<\/b> - The Necromancer of Dol Guldur increases his Attacks Characteristic to 2 when part of this Legendary Legion.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Far Harad":{
+    "armyBonus":"<b>\"Warrior Pride\"<\/b> - Mahud Warrior models that are within 6\" of a friendly Mahud Hero model that is engaged in combat automatically pass all Courage tests they are required to make.",
+    "primaryAllies":[
+      "The Serpent Horde"
+    ],
+    "secondaryAllies":[
+      "Corsairs of Umbar",
+      "The Easterlings",
+      "Isengard",
+      "Mordor",
+      "Moria",
+      "Variags of Khand"
+    ]
+  },
+  "Assault on Lothlorien":{
+    "armyBonus":"An Assault on Lothl\u00f3rien force must always include Muzg\u00far and at least one named Goblin Hero model.\n\nOnly Orc Hero models may lead Orc Warrior models. Only Goblin Hero models may lead Goblin Warrior models.\n\nSpider models may only be included in warbands led by Dr\u00fbzhag or Ashr\u00e2k.\n\nIn this Legendary Legion, Muzg\u00far, Dr\u00fbzhag and Ashr\u00e2k are Heroes of Valour, and Shamans are Heroes of Fortitude.\n\n<b>\"Cover of Darkness\"<\/b> - Any battle featuring this Legendary Legion takes place at night. As such, due to the reduced visibility, models cannot be targeted by shooting, Magical Powers or special abilities over 12\" away. However, as it is much harder to avoid a shot in the dark, all shooting attacks gain a bonus of +1 when rolling To Wound. Siege Engines may still target enemy models more than 12\" away, however in this situation they will only ever hit on the roll of a 6. Models with the Cave Dweller special rule can see as normal.\n\n<b>\"Ruthless Savagery\"<\/b> - Friendly Orc and Goblin models gain a bonus of +1 To Wound in a fight in which the opposing model is outnumbered. Note that supporting models do not count for either side for the purpose of this rule.\n\n<b>\"Dark Magics\"<\/b> - Friendly models may re-roll any number of D6 when making a Casting roll.\n\n<b>\"Venom-back Spiders\"<\/b> - If your force contains Ashr\u00e2k then all Giant Spiders in your force can be upgraded to Venom-back Spiders for free.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Shire":{
+    "armyBonus":"<b>\"Fear! Fire! Foes!\"<\/b> - Hobbit models from this army list gain the Woodland Creature Special Rule.",
+    "primaryAllies":[
+      "Rivendell"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rohan",
+      "The Shire",
+      "The White Council",
+      "Wildmen of Druadan"
+    ]
+  },
+  "The Men of the West":{
+    "armyBonus":"All models in this force must have the Infantry keyword. No Cavalry models are available.\n\nOnly Gondor Hero models may lead Gondor Warrior models. Only Rohan Hero models may lead Rohan Warrior models.\n\n<b>\"This Day We Fight!\"<\/b> - Whilst Aragorn, King Elessar, is alive and on the battlefield, all models from this army list automatically pass all Courage tests that they are required to make.\n\n<b>\"For Frodo!\"<\/b> - Once per game, at the start of any Fight phase, so long as he is alive and on the battlefield, Aragorn can declare he is using this ability. Friendly models within 12\" increase their Fight value by 1 until the end of the turn.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Rangers of Ithilien":{
+    "armyBonus":"A Rangers of Ithilien force must always include Faramir, Captain of Gondor, who is always the army\u2019s leader.\n\nSamwise Gamgee can only be included in your force if Frodo Baggins is also included. \n\nSm\u00e9agol may only be included in your force if both Frodo and Sam are included.\n\nFrodo, Sam and Sm\u00e9agol may not lead Warrior models in this force.\n\n<b>\"Faramir's Rangers\"<\/b> - Rangers of Gondor in warbands lead by Faramir, Madril or Damrod do not count toward this force's Bow Limit.\n\n<b>\"Captured by Gondor\"<\/b> - Frodo, Sam and Smeagol must either be deployed together as one warband, or included as part of Faramir's warband.\n\n<b>\"Experienced Trackers\"<\/b> - Rangers of Gondor from this army list gain the Woodland Creature special rule.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Grand Army of the South":{
+    "armyBonus":"A Grand Army of the South force must always include either Sulad\u00e2n the Serpent Lord or the M\u00fbmak War Leader (it may have both if you wish).\n\nOnly Mah\u00fbd Hero models may lead Mah\u00fbd Warrior models.\n\nAt least 50% of the models in a Grand Army of the South force must have the Haradrim keyword.\n\nYour force must include at least one Mumak model.\n\n<b>\"Hail of Poisoned Arrows\"<\/b> - A Grand Army of the South force may have 50% of its Warrior models armed with bows.\n\n<b>\"The Making of a King\"<\/b> - You army\u2019s leader may declare a free Heroic Action at the start of any Fight phase in which they are Engaged in combat with the enemy leader. If the M\u00fbmak War Leader is your leader, he may still use this ability whilst atop his Royal War M\u00fbmak, in which case the M\u00fbmak will be affected as if it had been the one to declare the Heroic Action.\n\n<b>\"War Beasts of the South\"<\/b> - All M\u00fbmak models in your force gain the Harbinger of Evil special rule.\n\n<b>\"Warrior Pride\"<\/b> - Mah\u00fbd Warrior models that are within 6\" of a friendly Mah\u00fbd Hero model that is Engaged in combat automatically pass all Courage tests they are required to make.\n ",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Dark Denizens of Mirkwood":{
+    "armyBonus":"<b>\"Beasts of Mirkwood\"<\/b> - So long as your army includes the Spider Queen, warbands composed entirely of Warg models do not need a Hero to lead them if they number six or more models; warbands composed entirely of Spider models do not need a Hero to lead them if they number two or more models; and warbands composed of a mixture of models do not need a Hero to lead them if they number ten or more models. Instead, one Warrior within the warband takes on the role of the warband\u2019s captain for the purpose of deployment.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Azog's Hunters",
+      "Azog's Legion",
+      "Dark Powers of Dol Guldur",
+      "Desolator of the North",
+      "Goblin-town",
+      "Mordor",
+      "Moria",
+      "The Trolls"
+    ]
+  },
+  "Fell Beings of Mirkwood":{
+    "armyBonus":"<b>\"Through the Forest\"<\/b> - Friendly Infantry models gain the Woodland Creature special rule.\n\n<b>\"Death to the Elves\"<\/b> - Friendly models gain the Hatred (Elf) special rule.\n\n<b>\"The War Leader\"<\/b> - Razgush gains a bonus of +1 to his Fight falue when engaged with an enemy Elf models.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Trolls":{
+    "armyBonus":"<b>\"Hold his toes over the fire, make him squeal\"<\/b> \u2013 You may include the Campfire in your army without having to pay the points for it. Additionally, the Three Trolls will treat the Campfire as a banner in addition to all other effects it would usually provide.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+      "Azog's Hunters",
+      "Dark Denizens of Mirkwood",
+      "Dark Powers of Dol Guldur",
+      "Desolator o the North",
+      "Goblin-town",
+      "Moria"
+    ]
+  },
+  "Pits of Dol Guldur":{
+    "armyBonus":"<b>\"Surprise Attack\"<\/b> \u2013 Once per game, before Priority is determined, so long as he is alive and on the battlefield, Azog can declare that he is using this ability. If he does so, do not roll for Priority. Instead, Azog\u2019s controlling player will automatically win the Priority roll. Additionally, enemy models may not declare Heroic Moves in the following Move phase.\n\n<b>\"Magical Void\"<\/b>- Friendly models gain the Resistant to Magic special rule.\n\n<b>\"Fury of the Pale Orc\"<\/b> - Azog may declare a Heroic Combat each turn without spending Might.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Sharkey's Rogues":{
+    "armyBonus":"<b>\"You do what Sharkey says!\"<\/b> \u2013 Sharkey\u2019s Stand Fast! affects the entire battlefield. Additionally, a force (or allied contingent) that contains models solely from the Sharkey\u2019s Rogues list may include warbands of 10-12 Ruffians without the need for a Hero to lead them. In these warbands, nominate a single Warrior model within the warband as the captain for the purposes of deployment, etc.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "The Chief's Ruffians":{
+    "armyBonus":"<b>\"You do what Sharkey says!\"<\/b> - Sharkey's Stand Fast! affects the entire battlefield.\n Sharkey's Wrath - Sharkey gains the Hatred (Hobbit) special rule.\n \n<b>\"The Chief's Whips\"<\/b> - Ruffian models gain +1 to hit when using a whip.\n \n<b>\"The Chief's Command\"<\/b> - Ruffian models within 6\" of Sharky may use his courage value instead of their own when making Courage tests.\n \n<b>\"Strength in Numbers\"<\/b> - Whilst this force is not broken, Ruffian models gain +1 to their Courage value.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Defenders of the Shire":{
+    "armyBonus":"<b>\"Fear! Fire! Foes!\"<\/b> - Friendly Hobbit models gain the Woodland Creature special rule.\n\n<b>\"Heroes of the Shire\"<\/b> - Friendly Hobbit Hero models may benefit from the Stand Fast! of Merry.\n\n<b>\"Laying in Wait\"<\/b> - After both sides have deployed, but before the first turn of the game begins, a player using a Defenders of the Shire force may place eight 25mm Trap markers on the board: two each of Snare Trap, Tripwire Trap, Pitfall Trap and Dummy Trap markers following the rules given on page 64.\n\n<b>\"Ambush!\"<\/b> - At the start of the game, before any models are deployed, you may select a single warband led by a Hobbit Hero that is not Frodo, Sam, Merry or Pippin. That warband is ambushing and does not deploy on the board as normal. Instead, once both players have completed their third Move phase, the ambushing warband must choose one of the following:\n1. Move onto the board from any board edge via the rules for Reinforcements.\n2. Deploy in, or within 1\" of, a wood, building, rocky outcrop, or other similar piece of terrain that Hobbits could hide in. A degree of common sense is required when deciding which pieces of terrain the Hobbits can ambush from \u2013 Hobbits shouldn\u2019t be leaping out from behind a single rock or from a river! It is best to decide with your opponent before the game which pieces of terrain your Hobbits can ambush from. Models deployed in this way may not be placed within the Control Zones of any enemy models. Models that enter the board in this way cannot move any further that turn, and count as having moved half of their Move allowance for the purposes of shooting.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  },
+  "Wanderers in the Wild":{
+    "armyBonus":"As the Wanderers in the Wild are not an army, and not even really a fighting force, there is no Army Bonus for them.",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
+    ]
+  }
+}

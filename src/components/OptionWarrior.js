@@ -91,6 +91,7 @@ export function OptionWarrior({
       type="switch"
       label={option.option + " (" + option.points + " points)"}
       checked={option.opt_quantity == 1}
+      disabled={option.min == option.max}
       onChange={handleToggle}
     />
   );

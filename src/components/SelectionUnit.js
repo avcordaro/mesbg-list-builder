@@ -18,6 +18,41 @@ export function SelectionUnit({
   setShowCardModal,
   setCardUnitData,
 }) {
+
+  const deleteInvalidUnit = (newRoster, unit_id) => {
+    /* If a new hero is selected and warrior units already exist in this warband belonging to the warband, 
+    they must be deleted and their points, bow count etc. removed from the roster.*/
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNumFocus + 1) {
+        let newUnits = newWarband.units.map((_unit) => {
+          let newUnit = { ..._unit };
+          if (newUnit.id == unit_id) {
+            newWarband["points"] =
+              newWarband["points"] - newUnit["pointsTotal"];
+            newWarband["num_units"] =
+              newWarband["num_units"] - newUnit["quantity"];
+            newWarband["bow_count"] =
+              newWarband["bow_count"] -
+              (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+            newRoster["num_units"] =
+              newRoster["num_units"] - newUnit["quantity"];
+            newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+            newRoster["bow_count"] =
+              newRoster["bow_count"] -
+              (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+          }
+          return newUnit;
+        });
+        newUnits = newUnits.filter((data) => data.id != unit_id);
+        newWarband.units = newUnits;
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    return newRoster
+  };
+
   const handleClick = () => {
     /* Handles the selection of a unit, which differs depending on whether the unit is a hero or a warrior. 
     In both situations, the points, unit and bow counts are updated. */
@@ -39,6 +74,12 @@ export function SelectionUnit({
       } else {
         newRoster.num_units = newRoster.num_units + 1;
       }
+      // Delete any warrior units in this warband not from the same faction as the hero.
+      newRoster.warbands[warbandNumFocus].units.map((unit) => {
+        if (unit.faction != newUnitData.faction) {
+          newRoster = deleteInvalidUnit(newRoster, unit.id);
+        }
+      });
     } else {
       // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
