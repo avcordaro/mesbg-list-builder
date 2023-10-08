@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.32d06051.css",
-    "main.js": "/mesbg-list-builder/static/js/main.61abff07.js",
+    "main.js": "/mesbg-list-builder/static/js/main.3da00832.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Helm Hammerhand.jpg": "/mesbg-list-builder/static/media/Helm Hammerhand.880f602201c5c68ef655.jpg",
@@ -175,7 +175,7 @@
     "static/media/Uruk-Hai Captain.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Captain.8d38984e67ae8282f911.jpg",
     "static/media/Haradrim Raider.jpg": "/mesbg-list-builder/static/media/Haradrim Raider.1efd5f0df56c9fa4bccf.jpg",
     "static/media/Warrior of the Dead.jpg": "/mesbg-list-builder/static/media/Warrior of the Dead.d7968db30140fa266fc6.jpg",
-    "static/media/Grisknak.jpg": "/mesbg-list-builder/static/media/Grisknak.d8887064a0c5d7c68569.jpg",
+    "static/media/Grishnak.jpg": "/mesbg-list-builder/static/media/Grishnak.d8887064a0c5d7c68569.jpg",
     "static/media/High Elf Warrior.jpg": "/mesbg-list-builder/static/media/High Elf Warrior.96ad2ffe40e8bc46c599.jpg",
     "static/media/Damrod.jpg": "/mesbg-list-builder/static/media/Damrod.9940113dc9a54ba9b1b6.jpg",
     "static/media/Dwarf Captain.jpg": "/mesbg-list-builder/static/media/Dwarf Captain.52bf581e0a569df650c8.jpg",
@@ -312,7 +312,7 @@
     "static/media/Gondor Battlecry Trebuchet.png": "/mesbg-list-builder/static/media/Gondor Battlecry Trebuchet.00a52e12e728ce06e185.png",
     "static/media/Rohan Royal Guard.png": "/mesbg-list-builder/static/media/Rohan Royal Guard.ecbf37b17090af1420e1.png",
     "static/media/Warrior of the Dead.png": "/mesbg-list-builder/static/media/Warrior of the Dead.2da196348a69a67732aa.png",
-    "static/media/Grisknak.png": "/mesbg-list-builder/static/media/Grisknak.29f65942cb7c7ac12d01.png",
+    "static/media/Grishnak.png": "/mesbg-list-builder/static/media/Grishnak.29f65942cb7c7ac12d01.png",
     "static/media/Axeman of Lossarnach.png": "/mesbg-list-builder/static/media/Axeman of Lossarnach.824db5ca8f6c48efbd4e.png",
     "static/media/Theodred.png": "/mesbg-list-builder/static/media/Theodred.0c93b824f8b5510011e6.png",
     "static/media/Celeborn.png": "/mesbg-list-builder/static/media/Celeborn.e1e31c994c5808689203.png",
@@ -433,10 +433,10 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.32d06051.css.map": "/mesbg-list-builder/static/css/main.32d06051.css.map",
-    "main.61abff07.js.map": "/mesbg-list-builder/static/js/main.61abff07.js.map"
+    "main.3da00832.js.map": "/mesbg-list-builder/static/js/main.3da00832.js.map"
   },
   "entrypoints": [
     "static/css/main.32d06051.css",
-    "static/js/main.61abff07.js"
+    "static/js/main.3da00832.js"
   ]
 }
