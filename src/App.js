@@ -227,7 +227,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 1.5.0
+                version 2.0.0
               </p>
             </Stack>
             <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
