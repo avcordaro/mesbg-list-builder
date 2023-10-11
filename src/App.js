@@ -1,4 +1,5 @@
 import mesbg_data from "./mesbg_data.json";
+import faction_data from "./faction_data.json";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -21,6 +22,7 @@ import React, { useState, useEffect } from "react";
 import { FaPlus } from "react-icons/fa";  
 import { FaTableList } from "react-icons/fa6";  
 import { MdDelete } from "react-icons/md";
+import { FcCheckmark } from "react-icons/fc";
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,8 +39,15 @@ export default function App() {
     "Good Army": "Minas Tirith",
     "Evil Army": "Mordor",
     "Good LL": "The Return of the King",
-    "Evil LL": "Host of the Dragon Emperor"
+    "Evil LL": "The Host of the Dragon Emperor"
   });
+  const allianceColours = {
+    "Historical": "success",
+    "Convenient": "warning",
+    "Impossible": "danger",
+    "Legendary Legion": "info",
+    "n/a": "secondary"
+  }
   const [tabSelection, setTabSelection] = useState("Good Army");
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
@@ -51,20 +60,69 @@ export default function App() {
   const [cardUnitData, setCardUnitData] = useState(null); 
   const [showRosterTable, setShowRosterTable] = useState(false);
   const [factionType, setFactionType] = useState("");
+  const [factionList, setFactionList] = useState([]);
+  const [allianceLevel, setAllianceLevel] = useState("n/a");
   
   useEffect(() => {
+    // Every time roster is updated, update the faction type of the army roster e.g. Good Army
     let faction_types = roster.warbands.map((warband) => {
       if (warband.hero) {
         return warband.hero.faction_type
       }
     })
     faction_types = faction_types.filter((e) => e !== undefined)
-    if (faction_types.length == 0) {
-      setFactionType("");
-    } else {
-      setFactionType(faction_types[0]);
+    let faction_type = faction_types.length == 0 ? "" : faction_types[0]
+    setFactionType(faction_type);
+
+    // Every time roster is updated, update the list of unique factions currently in the roster.
+    let factions = roster.warbands.map(warband => {
+      if (warband.hero) {
+        return warband.hero.faction
+      }
+    });
+    factions = new Set(factions.filter((e) => e !== undefined));
+    factions = [...factions]
+    setFactionList(factions);
+    calculateAllianceLevel(factions, faction_type)
+  }, [roster]);
+
+  const checkAlliance = (army_A, army_B) => {
+    // Checks the alliance level between two given armies
+    if (faction_data[army_A]['primaryAllies'].includes(army_B)) {
+      return 'Historical'
+    } else if (faction_data[army_A]['secondaryAllies'].includes(army_B)){
+      return 'Convenient'
     }
-  });
+    return 'Impossible'
+  };
+
+  const calculateAllianceLevel = (_factionList, _factionType) => {
+    // Calculates overall alliance level for current army roster selection
+    if (_factionType.includes('LL')) {
+      setAllianceLevel('Legendary Legion');
+    }
+    else if (_factionList.length == 0) {
+      // If no factions currently selected
+      setAllianceLevel('n/a');
+    }
+    else if (_factionList.length == 1) {
+      // If just one faction selected
+      setAllianceLevel('Historical');
+    } else {
+      // Create all possible pairs from the list of factions
+      let faction_pairs = _factionList.flatMap((v, i) => _factionList.slice(i+1).map(w => [v, w]));
+      // Calculate the alliance level for each pair
+      let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1]))
+      // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
+      if (pairs_alliances.includes('Impossible')) {
+        setAllianceLevel('Impossible');
+      } else if (pairs_alliances.includes('Convenient')) {
+        setAllianceLevel('Convenient');
+      } else {
+        setAllianceLevel('Historical');
+      }
+    }
+  }
 
   const handleFaction = (f_type, f) => {
     // Update the faction selection state variable to newly selected value
@@ -190,70 +248,91 @@ export default function App() {
       </Navbar>
       <div className="m-4">
         <div className="optionsList border border-4 rounded position-fixed bg-white">
-          {displaySelection && (
-              <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
-                {Object.keys(faction_lists).map((f_type) => ( 
-                  <Tab eventKey={f_type} title={f_type} disabled={!heroSelection || (factionType != "" && factionType != f_type)}>
-                    <Stack gap={2}>
-                      <DropdownButton
-                        className="dropDownButton mt-3"
-                        title={factionSelection[f_type] + " "}
-                        onSelect={(e) => handleFaction(f_type, e)}
-                        disabled={!heroSelection || factionType.includes("LL")}
+          {displaySelection ?
+            <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
+              {Object.keys(faction_lists).map((f_type) => ( 
+                <Tab eventKey={f_type} title={f_type} disabled={!heroSelection || (factionType != "" && factionType != f_type)}>
+                  <Stack gap={2}>
+                    <DropdownButton
+                      className="dropDownButton mt-3"
+                      title={factionSelection[f_type] + " "}
+                      onSelect={(e) => handleFaction(f_type, e)}
+                      disabled={!heroSelection || factionType.includes("LL")}
+                    >
+                    {[...faction_lists[f_type]].map((f) => (
+                      <Dropdown.Item
+                        style={{ width: "458px", textAlign: "center" }}
+                        eventKey={f}
                       >
-                      {[...faction_lists[f_type]].map((f) => (
-                        <Dropdown.Item
-                          style={{ width: "458px", textAlign: "center" }}
-                          eventKey={f}
-                        >
-                          <img className="faction_logo" src={require("./images/faction_logos/" + f + ".png")} />{" " + f}
-                        </Dropdown.Item>
-                      ))}
-                      </DropdownButton>
-                      {heroSelection
-                        ? mesbg_data
-                            .filter(
-                              (data) =>
-                                data.faction == factionSelection[f_type] && data.unit_type != "Warrior"
-                            )
-                            .map((row) => (
-                              <SelectionUnit
-                                key={uuid()}
-                                newWarriorFocus={newWarriorFocus}
-                                setDisplaySelection={setDisplaySelection}
-                                heroSelection={heroSelection}
-                                unitData={row}
-                                roster={roster}
-                                setRoster={setRoster}
-                                warbandNumFocus={warbandNumFocus}
-                                setShowCardModal={setShowCardModal}
-                                setCardUnitData={setCardUnitData}
-                              />
-                            ))
-                        : mesbg_data
-                            .filter(
-                              (data) =>
-                                data.faction == factionSelection[f_type] && ["Warrior", "Independent Hero"].includes(data.unit_type)
-                            )
-                            .map((row) => (
-                              <SelectionUnit
-                                key={uuid()}
-                                newWarriorFocus={newWarriorFocus}
-                                setDisplaySelection={setDisplaySelection}
-                                heroSelection={heroSelection}
-                                unitData={row}
-                                roster={roster}
-                                setRoster={setRoster}
-                                warbandNumFocus={warbandNumFocus}
-                                setShowCardModal={setShowCardModal}
-                                setCardUnitData={setCardUnitData}
-                              />
-                      ))}
-                    </Stack>
-                  </Tab>
-                ))}
-              </Tabs>
-          )}
+                        <img className="faction_logo" src={require("./images/faction_logos/" + f + ".png")} />{" " + f}
+                      </Dropdown.Item>
+                    ))}
+                    </DropdownButton>
+                    {heroSelection
+                      ? mesbg_data
+                          .filter(
+                            (data) =>
+                              data.faction == factionSelection[f_type] && data.unit_type != "Warrior"
+                          )
+                          .map((row) => (
+                            <SelectionUnit
+                              key={uuid()}
+                              newWarriorFocus={newWarriorFocus}
+                              setDisplaySelection={setDisplaySelection}
+                              heroSelection={heroSelection}
+                              unitData={row}
+                              roster={roster}
+                              setRoster={setRoster}
+                              warbandNumFocus={warbandNumFocus}
+                              setShowCardModal={setShowCardModal}
+                              setCardUnitData={setCardUnitData}
+                            />
+                          ))
+                      : mesbg_data
+                          .filter(
+                            (data) =>
+                              data.faction == factionSelection[f_type] && ["Warrior", "Independent Hero"].includes(data.unit_type)
+                          )
+                          .map((row) => (
+                            <SelectionUnit
+                              key={uuid()}
+                              newWarriorFocus={newWarriorFocus}
+                              setDisplaySelection={setDisplaySelection}
+                              heroSelection={heroSelection}
+                              unitData={row}
+                              roster={roster}
+                              setRoster={setRoster}
+                              warbandNumFocus={warbandNumFocus}
+                              setShowCardModal={setShowCardModal}
+                              setCardUnitData={setCardUnitData}
+                            />
+                    ))}
+                  </Stack>
+                </Tab>
+              ))}
+            </Tabs>
+            :
+            <div className="p-2">
+              <Stack direction="horizontal" gap={3}>
+                <h5>Alliance Level:</h5> 
+                <h4><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h4>
+              </Stack>
+              <br />
+              <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
+                Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) && <FcCheckmark />}
+              </h5> 
+              <hr/>
+              {factionList.map((f) => (
+                <div >
+                  <h5 className="mt-4"><Badge bg={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "dark" : "secondary"}>{f}</Badge></h5>
+                  <div 
+                    className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"} 
+                    dangerouslySetInnerHTML={{__html: faction_data[f]['armyBonus']}} 
+                  />
+                </div>
+              ))}
+            </div>
+          }
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
           <Alert style={{ width: "1130px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
@@ -386,7 +465,7 @@ export default function App() {
           }
         </Modal.Body>
       </Modal>
-      <ModalRosterTable roster={roster} showRosterTable={showRosterTable} setShowRosterTable={setShowRosterTable} />
+      <ModalRosterTable allianceLevel={allianceLevel} allianceColour={allianceColours[allianceLevel]} roster={roster} showRosterTable={showRosterTable} setShowRosterTable={setShowRosterTable} />
     </div>
   );
 }

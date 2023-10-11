@@ -1,12 +1,14 @@
 import Stack from "react-bootstrap/Stack";
 import Modal from 'react-bootstrap/Modal'; 
 import Table from 'react-bootstrap/Table';
-
+import Badge from "react-bootstrap/Badge";
 /* Modal Roster Table is the component used to populate the pop-up modal which appears 
 after the user clicks the 'Roster Table' button. This component uses the full roster
 state variable (passed to it as an argument) to populate a table of the army. */
 
 export function ModalRosterTable({
+  allianceLevel,
+  allianceColour,
   roster,
   showRosterTable,
   setShowRosterTable
@@ -17,6 +19,7 @@ export function ModalRosterTable({
         <Modal.Header closeButton>
           <Modal.Title>
             <Stack direction="horizontal" gap={3}>
+                <h5 >Alliance level: <Badge bg={allianceColour}>{allianceLevel}</Badge></h5>
                 <h5>Total Points: <b>{roster.points}</b></h5>
                 <h5>Total Units: <b>{roster.num_units}</b></h5>
                 <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>

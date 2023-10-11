@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import re
 
 warband_sizes = {
   "Hero of Legend": 18,
@@ -49,6 +50,7 @@ with open('mesbg_data.json', 'w') as f:
 df_faction = pd.read_excel('faction_data.xlsx')
 df_faction.index = df_faction.name
 df_faction = df_faction[['armyBonus', 'primaryAllies', 'secondaryAllies']]
+df_faction['armyBonus'] = df_faction['armyBonus'].apply(lambda x: re.sub('\n', '<br/>', x))
 df_faction['primaryAllies'] = df_faction['primaryAllies'].fillna("[]")
 df_faction['secondaryAllies'] = df_faction['secondaryAllies'].fillna("[]")
 df_faction['primaryAllies'] = df_faction['primaryAllies'].apply(eval)
