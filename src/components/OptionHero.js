@@ -67,8 +67,40 @@ export function OptionHero({
         return newWarband;
       });
       newRoster.warbands = newWarbands
+      if (option.type != null) {
+        newRoster = toggleOffSameTypes(newRoster);
+      }
     }
     setRoster(newRoster);
+  };
+
+  const toggleOffSameTypes = (newRoster) => {
+    /* Some options should not be selected simultaneously due to being the same type, e.g. Horse and Armoured Horse
+    This function will toggle off any options of the same type as the option just selected. */
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNum) {
+        let newHero = { ...newWarband.hero }
+        let newOptions = newHero.options.map((_option) => {
+            let newOption = { ..._option };
+            if(newOption.opt_quantity == 1 && newOption.option_id != option.option_id && newOption.type == option.type) {
+              newRoster['points'] = newRoster['points'] - newHero['pointsTotal']
+              newWarband['points'] = newWarband['points'] - newHero['pointsTotal'];
+              newHero['pointsPerUnit'] = newHero['pointsPerUnit'] - newOption.points
+              newHero['pointsTotal'] = newHero['pointsPerUnit']
+              newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
+              newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
+              newOption['opt_quantity'] = 0
+            }
+            return newOption
+          });
+        newHero.options = newOptions
+        newWarband.hero = newHero
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    return newRoster;
   };
 
   const handleQuantity = (newQuantity, newQuantityString, input) => {

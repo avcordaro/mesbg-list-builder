@@ -61,6 +61,8 @@ export default function App() {
   const [showRosterTable, setShowRosterTable] = useState(false);
   const [factionType, setFactionType] = useState("");
   const [factionList, setFactionList] = useState([]);
+  const [factionBowCounts, setFactionBowCounts] = useState({});
+  const [factionModelCounts, setFactionModelCounts] = useState({});
   const [allianceLevel, setAllianceLevel] = useState("n/a");
   
   useEffect(() => {
@@ -84,6 +86,32 @@ export default function App() {
     factions = [...factions]
     setFactionList(factions);
     calculateAllianceLevel(factions, faction_type)
+
+    // Every time roster is updated, update count of bows per faction
+    let bowCounts = roster.warbands.reduce((counter, warband) => {
+      if (warband.hero) {
+        let f = warband.hero.faction;
+        if (!counter.hasOwnProperty(f)) {
+          counter[f] = 0;
+        }
+        counter[f] = counter[f] + warband.bow_count;        
+      }
+      return counter;
+    }, {});
+    setFactionBowCounts(bowCounts);
+
+    // Every time roster is updated, update count of models per faction
+    let modelCounts = roster.warbands.reduce((counter, warband) => {
+      if (warband.hero) {
+        let f = warband.hero.faction;
+        if (!counter.hasOwnProperty(f)) {
+          counter[f] = 0;
+        }
+        counter[f] = counter[f] + warband.num_units + 1;        
+      }
+      return counter;
+    }, {});
+    setFactionModelCounts(modelCounts);
   }, [roster]);
 
   const checkAlliance = (army_A, army_B) => {
@@ -234,7 +262,7 @@ export default function App() {
             <h5 className="mb-0">Total Units: <b>{roster.num_units}</b></h5>
             <h5 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
             <h5 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
-            <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "mb-0 text-warning" : "mb-0"}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
+            <h5 className="mb-0">Bows: <b>{roster.bow_count}</b></h5>
             <Button onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
             <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
           </Stack>
@@ -313,24 +341,32 @@ export default function App() {
             </Tabs>
             :
             <div className="p-2">
-              <Stack direction="horizontal" gap={3}>
+              <h5>Bow Counts</h5> 
+              <hr/>
+              {factionList.map((f) => (
+                <p><b>{f}:</b> {factionBowCounts[f]} / {factionModelCounts[f]} ({Math.round(factionBowCounts[f] / factionModelCounts[f] * 100)}%)</p>
+              ))}
+              <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
                 <h5>Alliance Level:</h5> 
                 <h4><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h4>
               </Stack>
-              <br />
               <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
-                Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) && <FcCheckmark />}
-              </h5> 
+                  Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) && <FcCheckmark />}
+              </h5>
               <hr/>
               {factionList.map((f) => (
                 <div >
-                  <h5 className="mt-4"><Badge bg={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "dark" : "secondary"}>{f}</Badge></h5>
+                  <h5 className="mt-4">
+                    <Badge bg={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "dark" : "secondary"}>
+                      {f}
+                    </Badge>
+                  </h5>
                   <div 
                     className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"} 
                     dangerouslySetInnerHTML={{__html: faction_data[f]['armyBonus']}} 
                   />
                 </div>
-              ))}
+              ))}  
             </div>
           }
         </div>

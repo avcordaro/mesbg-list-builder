@@ -28,7 +28,7 @@ export function OptionWarrior({
                   newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                   newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - option.points
                   newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                  if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && option.is_bow) {
+                  if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && option.type == 'bow') {
                     newUnit['inc_bow_count'] = false
                     newWarband['bow_count'] = newWarband['bow_count'] - newUnit['quantity']
                     newRoster['bow_count'] = newRoster['bow_count'] - newUnit['quantity']
@@ -62,7 +62,7 @@ export function OptionWarrior({
                   newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                   newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] + option.points
                   newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                  if (newUnit['default_bow'] == false && option.is_bow) {
+                  if (newUnit['default_bow'] == false && option.type == 'bow') {
                     newUnit['inc_bow_count'] = true
                     newWarband['bow_count'] = newWarband['bow_count'] + newUnit['quantity']
                     newRoster['bow_count'] = newRoster['bow_count'] + newUnit['quantity']
@@ -82,8 +82,50 @@ export function OptionWarrior({
         return newWarband;
       });
       newRoster.warbands = newWarbands
+      if (option.type != null) {
+        newRoster = toggleOffSameTypes(newRoster);
+      }
     }
     setRoster(newRoster);
+  };
+
+  const toggleOffSameTypes = (newRoster) => {
+    /* Some options should not be selected simultaneously due to being the same type, e.g. Horse and Armoured Horse
+    This function will toggle off any options of the same type as the option just selected. */
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNum) {
+        let newUnits = newWarband.units.map((_unit) => {
+          let newUnit = { ..._unit };
+          if(newUnit.id == unit.id) {
+            let newOptions = newUnit.options.map((_option) => {
+              let newOption = { ..._option };
+              if(newOption.opt_quantity == 1 && newOption.option_id != option.option_id && newOption.type == option.type) {
+                newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
+                newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+                newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
+                newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
+                if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && newOption.type == 'bow') {
+                  newUnit['inc_bow_count'] = false
+                  newWarband['bow_count'] = newWarband['bow_count'] - newUnit['quantity']
+                  newRoster['bow_count'] = newRoster['bow_count'] - newUnit['quantity']
+                }
+                newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+                newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
+                newOption['opt_quantity'] = 0
+              }
+              return newOption
+            });
+            newUnit.options = newOptions
+          }
+          return newUnit
+        });
+        newWarband.units = newUnits
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    return newRoster;
   };
 
   return (

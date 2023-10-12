@@ -24,7 +24,7 @@ export function ModalRosterTable({
                 <h5>Total Units: <b>{roster.num_units}</b></h5>
                 <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
                 <h5>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
-                <h5 className={roster.bow_count > Math.ceil(0.333 * roster.num_units) ? "text-warning" : ""}>Bows: <b>{roster.bow_count} / {Math.ceil(0.333 * roster.num_units)}</b></h5>
+                <h5>Bows: <b>{roster.bow_count}</b></h5>
               </Stack>
           </Modal.Title>
         </Modal.Header>
