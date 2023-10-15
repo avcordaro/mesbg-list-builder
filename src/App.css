@@ -9,7 +9,7 @@ img.table_profile {
 }
 
 img.profile_card {
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 
@@ -19,7 +19,7 @@ img.faction_logo {
 }
 
 div.optionsList {
-  height: 650px;
+  height: 550px;
   width: 510px;
   overflow-y: auto;
   padding: 10px;

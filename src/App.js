@@ -56,7 +56,8 @@ export default function App() {
   const [displaySelection, setDisplaySelection] = useState(false);
   const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
-  const [showCardModal, setShowCardModal] = useState(false); 
+  const [showCardModal, setShowCardModal] = useState(false);
+  const [showImportModal, setShowImportModal] = useState(false); 
   const [cardUnitData, setCardUnitData] = useState(null); 
   const [showRosterTable, setShowRosterTable] = useState(false);
   const [factionType, setFactionType] = useState("");
@@ -235,8 +236,9 @@ export default function App() {
     e.preventDefault()
     if(JSONImport) {
       try {
-        setRoster(JSON.parse(JSONImport))
-        setJSONImport("")
+        setRoster(JSON.parse(JSONImport));
+        setShowImportModal(false);
+        setJSONImport("");
       }
       catch(err) {
         console.log(err)
@@ -246,7 +248,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar style={{ minWidth: "1900px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
+      <Navbar style={{ minWidth: "1500px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
@@ -255,24 +257,19 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.0.0
+                version 2.2.0
               </p>
             </Stack>
-            <h5 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h5>
-            <h5 className="mb-0">Total Units: <b>{roster.num_units}</b></h5>
-            <h5 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
-            <h5 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
-            <h5 className="mb-0">Bows: <b>{roster.bow_count}</b></h5>
+            <h6 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h6>
+            <h6 className="mb-0">Total Units: <b>{roster.num_units}</b></h6>
+            <h6 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
+            <h6 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
+            <h6 className="mb-0">Bows: <b>{roster.bow_count}</b></h6>
+            <Button className="ms-2" onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
             <Button onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
-            <Button onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
+            <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
           </Stack>
         </Navbar.Brand>
-        <Form onSubmit={handleImportJSON} className="me-4">
-          <Stack direction="horizontal" gap={3}>             
-            <Form.Control style={{ width: "200px" }} value={JSONImport} onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1').replaceAll('""', '"'))}/>
-            <Button onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
-          </Stack>
-        </Form>
       </Navbar>
       <div className="m-4">
         <div className="optionsList border border-4 rounded position-fixed bg-white">
@@ -348,7 +345,7 @@ export default function App() {
               ))}
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
                 <h5>Alliance Level:</h5> 
-                <h4><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h4>
+                <h5><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h5>
               </Stack>
               <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
                   Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) && <FcCheckmark />}
@@ -371,12 +368,12 @@ export default function App() {
           }
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
-          <Alert style={{ width: "1130px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
+          <Alert style={{ width: "950px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
             JSON string copied to clipboard.
           </Alert>
           {roster.warbands.map((warband) => (
             <Card
-              style={{ width: "1130px" }}
+              style={{ width: "950px" }}
               className="p-2"
               bg={"secondary"}
               text={"light"}
@@ -466,14 +463,14 @@ export default function App() {
                   onClick={() => handleNewWarrior(warband.num)}
                   variant={"info"}
                   className="m-1"
-                  style={{ width: "1100px" }}
+                  style={{ width: "920px" }}
                 >
                   Add Unit <FaPlus />
                 </Button>
              }
             </Card>
           ))}
-          <Button onClick={() => handleNewWarband()} style={{ width: "1130px" }}>
+          <Button onClick={() => handleNewWarband()} style={{ width: "950px" }}>
             Add Warband <FaPlus />
           </Button>
           
@@ -499,6 +496,23 @@ export default function App() {
               })()}
             />
           }
+        </Modal.Body>
+      </Modal>
+      <Modal show={showImportModal} onHide={() => setShowImportModal(false)} size="lg" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            Import JSON
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form style={{"textAlign": "right"}} onSubmit={handleImportJSON} className="me-4">        
+            <Form.Control 
+              value={JSONImport} 
+              onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1').replaceAll('""', '"'))}
+              placeholder="Paste your army roster JSON string..."
+            />
+            <Button className="ms-auto mt-3" onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
+          </Form>
         </Modal.Body>
       </Modal>
       <ModalRosterTable allianceLevel={allianceLevel} allianceColour={allianceColours[allianceLevel]} roster={roster} showRosterTable={showRosterTable} setShowRosterTable={setShowRosterTable} />

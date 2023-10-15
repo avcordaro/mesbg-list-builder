@@ -59,7 +59,7 @@ export function RosterHero({
   };
 
   return (
-    <Card style={{ width: "1100px" }} className="p-2 m-1" bg={"light"}>
+    <Card style={{ width: "920px" }} className="p-2 m-1" bg={"light"}>
       <Stack direction="horizontal" gap={3}>
         <img
           className="profile"

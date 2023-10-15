@@ -47,7 +47,7 @@ export function DefaultWarriorUnit({
     <Button
       variant="light"
       className="p-2 m-1"
-      style={{ width: "1100px", textAlign: "left" }}
+      style={{ width: "920px", textAlign: "left" }}
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>
