@@ -37,10 +37,10 @@ export function RosterWarrior({
               newUnit["quantity"] * newUnit["pointsPerUnit"];
             newWarband["points"] =
               newWarband["points"] + newUnit["pointsTotal"];
-            newWarband["num_units"] = newWarband["num_units"] + 1;
+            newWarband["num_units"] = newWarband["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
             newWarband["bow_count"] =
               newWarband["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
-            newRoster["num_units"] = newRoster["num_units"] + 1;
+            newRoster["num_units"] = newRoster["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
             newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
             newRoster["bow_count"] =
               newRoster["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
@@ -74,10 +74,10 @@ export function RosterWarrior({
                 newUnit["quantity"] * newUnit["pointsPerUnit"];
               newWarband["points"] =
                 newWarband["points"] + newUnit["pointsTotal"];
-              newWarband["num_units"] = newWarband["num_units"] - 1;
+              newWarband["num_units"] = newWarband["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
               newWarband["bow_count"] =
                 newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
-              newRoster["num_units"] = newRoster["num_units"] - 1;
+              newRoster["num_units"] = newRoster["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
               newRoster["points"] =
                 newRoster["points"] + newUnit["pointsTotal"];
               newRoster["bow_count"] =
@@ -106,12 +106,12 @@ export function RosterWarrior({
             newWarband["points"] =
               newWarband["points"] - newUnit["pointsTotal"];
             newWarband["num_units"] =
-              newWarband["num_units"] - newUnit["quantity"];
+              newWarband["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
             newWarband["bow_count"] =
               newWarband["bow_count"] -
               (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
             newRoster["num_units"] =
-              newRoster["num_units"] - newUnit["quantity"];
+              newRoster["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
             newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
             newRoster["bow_count"] =
               newRoster["bow_count"] -

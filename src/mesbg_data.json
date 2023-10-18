@@ -1618,6 +1618,32 @@
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
+    "name":"Uruk-Hai Demolition Team",
+    "unit_type":"Warrior",
+    "base_points":80,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":3,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0100",
+        "option":"Equip additional Flaming Brand",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "faction_type":"Evil Army",
+    "faction":"Isengard",
+    "profile_origin":"Isengard",
     "name":"Crebain",
     "unit_type":"Warrior",
     "base_points":20,
@@ -2045,32 +2071,6 @@
       {
         "option_id":"OPT0117",
         "option":"Two-Handed Axe",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "faction_type":"Evil Army",
-    "faction":"Isengard",
-    "profile_origin":"Isengard",
-    "name":"Uruk-Hai Demolition Team",
-    "unit_type":"Siege Engine",
-    "base_points":80,
-    "default_bow":false,
-    "inc_bow_count":false,
-    "siege_crew":3,
-    "quantity":1,
-    "pointsPerUnit":80,
-    "pointsTotal":80,
-    "warband_size":6,
-    "options":[
-      {
-        "option_id":"OPT0100",
-        "option":"Equip additional Flaming Brand",
         "points":1.0,
         "type":null,
         "min":0.0,

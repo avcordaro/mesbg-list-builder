@@ -257,10 +257,10 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.2.0
+                version 2.2.1 <i>(updated 18/10/23)</i>
               </p>
             </Stack>
-            <h6 className="mb-0" style={{ marginLeft: "50px"}}>Total Points: <b>{roster.points}</b></h6>
+            <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
             <h6 className="mb-0">Total Units: <b>{roster.num_units}</b></h6>
             <h6 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
             <h6 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
