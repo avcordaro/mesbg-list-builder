@@ -21,7 +21,7 @@ unit_type_order = [
   "Siege Engine"
 ]
 
-df_models = pd.read_excel("mesbg_models.xlsx")
+df_models = pd.read_excel("mesbg_data.xlsx", sheet_name="models")
 df_models['quantity'] = 1
 df_models['pointsPerUnit'] = df_models['base_points']
 df_models['pointsTotal'] = df_models['base_points']
@@ -29,7 +29,8 @@ df_models['warband_size'] = df_models['unit_type'].map(warband_sizes)
 df_models.loc[df_models.name == "Sauron", 'warband_size'] = 24
 df_models['inc_bow_count'] = df_models['default_bow']
 df_models.unit_type = pd.Categorical(df_models.unit_type, categories=unit_type_order)
-df_options = pd.read_excel("mesbg_options.xlsx")
+
+df_options = pd.read_excel("mesbg_data.xlsx", sheet_name="options")
 df_options['opt_quantity'] = df_options['min']
 df_merged = df_models.merge(df_options, on=['faction', 'name'], how='left')
 df_merged['option_id'].fillna("None", inplace=True)
@@ -46,7 +47,7 @@ json_dict = df_merged_options.to_json(orient='records', indent=2)
 with open('mesbg_data.json', 'w') as f:
     f.write(json_dict)
 
-df_faction = pd.read_excel('faction_data.xlsx')
+df_faction = pd.read_excel("mesbg_data.xlsx", sheet_name="factions")
 df_faction.index = df_faction.name
 df_faction = df_faction[['armyBonus', 'primaryAllies', 'secondaryAllies']]
 df_faction['armyBonus'] = df_faction['armyBonus'].apply(lambda x: re.sub('\n', '<br/>', x))
