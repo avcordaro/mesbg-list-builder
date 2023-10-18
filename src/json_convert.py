@@ -39,7 +39,7 @@ df_merged['points'].fillna("None", inplace=True)
 df_merged['min'].fillna(0, inplace=True)
 df_merged['max'].fillna(1, inplace=True)
 df_merged['opt_quantity'].fillna(0, inplace=True)
-df_merged_options = df_merged.groupby(['faction_type', 'faction', 'profile_origin', 'name', 'unit_type', 'base_points', 'default_bow', 'inc_bow_count', 'siege_crew', 'quantity', 'pointsPerUnit', 'pointsTotal', 'warband_size'])\
+df_merged_options = df_merged.groupby(['model_id', 'faction_type', 'faction', 'profile_origin', 'name', 'unit_type', 'base_points', 'default_bow', 'inc_bow_count', 'siege_crew', 'quantity', 'pointsPerUnit', 'pointsTotal', 'warband_size'])\
   .apply(lambda x: x[['option_id', 'option', 'points', 'type', 'min', 'max', 'opt_quantity']].to_dict(orient='records')).reset_index(name='options')
 df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
 json_dict = df_merged_options.to_json(orient='records', indent=2)
@@ -58,3 +58,11 @@ df_faction['secondaryAllies'] = df_faction['secondaryAllies'].apply(eval)
 
 with open('faction_data.json', 'w') as f:
     f.write(df_faction.to_json(orient="index", indent=2))
+
+df_hero_constraints = pd.read_excel("mesbg_data.xlsx", sheet_name="hero_constraints")
+df_hero_constraints['valid_warband_units'] = df_hero_constraints['valid_warband_units'].apply(eval)
+df_hero_constraints['special_unit_options'] = df_hero_constraints['special_unit_options'].apply(eval)
+df_hero_constraints = df_hero_constraints.groupby('hero_model_id').apply(lambda x: x[['valid_warband_units', 'special_unit_options']].to_dict(orient='records'))
+
+with open('hero_constraint_data.json', 'w') as f:
+    f.write(df_hero_constraints.to_json(orient="index", indent=2))

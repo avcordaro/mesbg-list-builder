@@ -1,0 +1,2916 @@
+{
+  "[angmar] the_dwimmerlaik":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] the_tainted":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] witch_king":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] black_numenorean_marshall":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] mordor_troll_chieftan":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] orc_captain":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] orc_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] orc_taskmaster":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] ringwraith":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] sauron":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] shelob":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[barad-dur] witch_king":[
+    {
+      "valid_warband_units":[
+        "[barad-dur] orc_drummer",
+        "[barad-dur] mordor_troll",
+        "[barad-dur] morgul_knight",
+        "[barad-dur] warg_rider",
+        "[barad-dur] black_numenorean",
+        "[barad-dur] orc_tracker",
+        "[barad-dur] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[halls_of_thranduil] thranduil":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] dunlending_chieftan":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] frida_tallspear":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] gorulf_ironskin":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] grima":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] lurtz":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] mauhur":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+        "Marauder Upgrade"
+      ]
+    }
+  ],
+  "[isengard] orc_captain":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] saruman":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] sharku":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] snaga":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] thrydan_wolfsbane":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] ugluk":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] uruk-hai_captain":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] uruk-hai_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] uruk-hai_scout_captain":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] uruk-hai_shaman":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] vrasku":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[isengard] wild_man_oathmaker":[
+    {
+      "valid_warband_units":[
+        "[isengard] uruk-hai_drummer",
+        "[isengard] grima",
+        "[isengard] uruk-hai_demolition_team",
+        "[isengard] isengard_troll",
+        "[isengard] crebain",
+        "[isengard] uruk-hai_berserker",
+        "[isengard] feral_uruk-hai",
+        "[isengard] dunlending_horseman",
+        "[isengard] dunlending_huscarl",
+        "[isengard] warg_rider",
+        "[isengard] uruk-hai_warrior",
+        "[isengard] uruk-hai_scout",
+        "[isengard] dunlending_warrior",
+        "[isengard] wild_man_of_dunland",
+        "[isengard] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] celeborn":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] galadhrim_captain":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] galadhrim_stormcaller":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] galadriel":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] haldir":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] orophin":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] rumil":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lothlorien] wood_elf_captain":[
+    {
+      "valid_warband_units":[
+        "[lothlorien] wood_elf_sentinel",
+        "[lothlorien] galadhrim_knight",
+        "[lothlorien] guard_of_the_galadhrim_court",
+        "[lothlorien] galadhrim_warrior",
+        "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] anborn":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] aragorn,_king_elessar":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] beregond":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] boromir":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] captain_of_minas_tirith":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] cirion":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] damrod":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] denethor":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] faramir":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] gandalf_the_white":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] hurin":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] ingold":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] irolas":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] king_of_men":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] knight_of_the_white_tower":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] mablung":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] madril":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] pippin",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] pippin":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] black_guard_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] black_numenorean_marshall":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] captain_of_the_black_guard":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] gorbag":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] goroth":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] gothmog":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] gothmog's_enforcer":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] great_beast_of_gorgoroth":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] grishnak":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] guritz":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] kardush":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] khamul":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] morannon_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] mordor_troll_chieftan":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] mordor_uruk-hai_captain":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] mouth_of_sauron":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] muzgur":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] orc_captain":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] orc_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] orc_taskmaster":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] razgush":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] ringwraith":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] shagrat":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] shelob":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_betrayer":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_dark_marshall":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_dwimmerlaik":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_knight_of_umbar":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_shadow_lord":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_tainted":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] the_undying":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] witch_king":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[mordor] zagdush":[
+    {
+      "valid_warband_units":[
+        "[mordor] black_guard_drummer",
+        "[mordor] orc_drummer",
+        "[mordor] mordor_troll",
+        "[mordor] morgul_knight",
+        "[mordor] black_guard_of_barad-dur",
+        "[mordor] warg_rider",
+        "[mordor] morgul_stalker",
+        "[mordor] black_numenorean",
+        "[mordor] mordor_uruk-hai",
+        "[mordor] morannon_orc",
+        "[mordor] orc_warrior",
+        "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] arwen":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] cirdan":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] elladan_&_elrohir":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] elrond":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] erestor":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] gil-galad":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+        "King's Guard Upgrade"
+      ]
+    }
+  ],
+  "[rivendell] gildor_inglorion":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+        "Noldorin Exiles Upgrade"
+      ]
+    }
+  ],
+  "[rivendell] glorfindel":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] high_elf_captain":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] high_elf_stormcaller":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] lindir":[
+    {
+      "valid_warband_units":[
+        "[rivendell] rivendell_knight",
+        "[rivendell] high_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] aldor":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] deorwine":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] dernhelm":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] elfhelm":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] eomer":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] eorl_the_young":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] eowyn":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] erkenbrand":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+        "Westfold Redshield Upgrade"
+      ]
+    }
+  ],
+  "[rohan] gamling":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] grimbold":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] haleth":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] hama":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] helm_hammerhand":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] king's_huntsman":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] merry":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] theoden":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rohan] theodred":[
+    {
+      "valid_warband_units":[
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] merry",
+        "[rohan] son_of_eorl",
+        "[rohan] rider_of_rohan",
+        "[rohan] rohan_royal_guard",
+        "[rohan] rohan_outrider",
+        "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_dead_of_dunharrow] herald_of_the_dead":[
+    {
+      "valid_warband_units":[
+        "[the_dead_of_dunharrow] rider_of_the_dead",
+        "[the_dead_of_dunharrow] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_dead_of_dunharrow] the_king_of_the_dead":[
+    {
+      "valid_warband_units":[
+        "[the_dead_of_dunharrow] rider_of_the_dead",
+        "[the_dead_of_dunharrow] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_dead_of_dunharrow] warrior_of_the_dead":[
+    {
+      "valid_warband_units":[
+        "[the_dead_of_dunharrow] rider_of_the_dead",
+        "[the_dead_of_dunharrow] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    },
+    {
+      "valid_warband_units":[
+        "[the_dead_of_dunharrow] rider_of_the_dead",
+        "[the_dead_of_dunharrow] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] amdur":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] brorgir":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] easterling_captain":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] easterling_dragon_knight":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] easterling_war_priest":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] khamul":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] rutabi":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_easterlings] the_dragon_emperor":[
+    {
+      "valid_warband_units":[
+        "[the_easterlings] rhunish_war_drake",
+        "[the_easterlings] easterling_kataphrakts",
+        "[the_easterlings] dragon_cult_acolyte",
+        "[the_easterlings] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] bill_the_pony":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] boromir_of_gondor":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] frodo_baggins":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] gandalf_the_grey":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] gimli":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] legolas":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] meriadoc_brandybuck":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] peregrin_took":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] samwise_gamgee":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] smeagol":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] smeagol",
+        "[the_fellowship] bill_the_pony",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fiefdoms] angbor_the_fearless":[
+    {
+      "valid_warband_units":[
+        "[the_fiefdoms] knight_of_dol_amroth",
+        "[the_fiefdoms] axeman_of_lossarnach",
+        "[the_fiefdoms] man-at-arms_of_dol_amroth",
+        "[the_fiefdoms] blackroot_vale_archer",
+        "[the_fiefdoms] clansman_of_lamedon"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fiefdoms] captain_of_dol_amroth":[
+    {
+      "valid_warband_units":[
+        "[the_fiefdoms] knight_of_dol_amroth",
+        "[the_fiefdoms] axeman_of_lossarnach",
+        "[the_fiefdoms] man-at-arms_of_dol_amroth",
+        "[the_fiefdoms] blackroot_vale_archer",
+        "[the_fiefdoms] clansman_of_lamedon"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fiefdoms] duinhir":[
+    {
+      "valid_warband_units":[
+        "[the_fiefdoms] knight_of_dol_amroth",
+        "[the_fiefdoms] axeman_of_lossarnach",
+        "[the_fiefdoms] man-at-arms_of_dol_amroth",
+        "[the_fiefdoms] blackroot_vale_archer",
+        "[the_fiefdoms] clansman_of_lamedon"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fiefdoms] forlong_the_fat":[
+    {
+      "valid_warband_units":[
+        "[the_fiefdoms] knight_of_dol_amroth",
+        "[the_fiefdoms] axeman_of_lossarnach",
+        "[the_fiefdoms] man-at-arms_of_dol_amroth",
+        "[the_fiefdoms] blackroot_vale_archer",
+        "[the_fiefdoms] clansman_of_lamedon"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fiefdoms] prince_imrahil":[
+    {
+      "valid_warband_units":[
+        "[the_fiefdoms] knight_of_dol_amroth",
+        "[the_fiefdoms] axeman_of_lossarnach",
+        "[the_fiefdoms] man-at-arms_of_dol_amroth",
+        "[the_fiefdoms] blackroot_vale_archer",
+        "[the_fiefdoms] clansman_of_lamedon"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] brorgir":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] easterling_captain":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] easterling_dragon_knight":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] easterling_war_priest":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] rutabi":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_host_of_the_dragon_emperor] the_dragon_emperor":[
+    {
+      "valid_warband_units":[
+        "[the_host_of_the_dragon_emperor] rhunish_war_drake",
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
+        "[the_host_of_the_dragon_emperor] easterling_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] durin":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+        "Heathguard Upgrade"
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] dwarf_captain":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] dwarf_king":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] king's_champion":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] mardin":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_khazad-dum] shieldbearer":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] balin":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] dwarf_captain":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] dwarf_king":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] floi_stonehand":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] gimli":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] king's_champion":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] shieldbearer":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_return_of_the_king] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[the_return_of_the_king] rider_of_the_dead",
+        "[the_return_of_the_king] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_return_of_the_king] gimli":[
+    {
+      "valid_warband_units":[
+        "[the_return_of_the_king] rider_of_the_dead",
+        "[the_return_of_the_king] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_return_of_the_king] herald_of_the_dead":[
+    {
+      "valid_warband_units":[
+        "[the_return_of_the_king] rider_of_the_dead",
+        "[the_return_of_the_king] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_return_of_the_king] legolas":[
+    {
+      "valid_warband_units":[
+        "[the_return_of_the_king] rider_of_the_dead",
+        "[the_return_of_the_king] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_return_of_the_king] the_king_of_the_dead":[
+    {
+      "valid_warband_units":[
+        "[the_return_of_the_king] rider_of_the_dead",
+        "[the_return_of_the_king] warrior_of_the_dead"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] haradrim_chieftan":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] haradrim_king":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] hasharin":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] suladan":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] the_betrayer":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] the_golden_king":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ]
+}

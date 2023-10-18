@@ -1,4 +1,5 @@
 import Form from "react-bootstrap/Form";
+import hero_constraint_data from "../hero_constraint_data.json";
 
 /* Option Warrior is the component used to display an individual gear options that each 
 warrior has available. */
@@ -133,7 +134,7 @@ export function OptionWarrior({
       type="switch"
       label={option.option + " (" + option.points + " points)"}
       checked={option.opt_quantity == 1}
-      disabled={option.min == option.max}
+      disabled={(option.min == option.max) || (option.type == "upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_unit_options'].includes(option.option)) }
       onChange={handleToggle}
     />
   );

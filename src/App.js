@@ -1,5 +1,6 @@
 import mesbg_data from "./mesbg_data.json";
 import faction_data from "./faction_data.json";
+import hero_constraint_data from "./hero_constraint_data.json";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -257,7 +258,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.2.1 <i>(updated 18/10/23)</i>
+                version 2.2.2 <i>(updated 18/10/23)</i>
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -316,7 +317,7 @@ export default function App() {
                       : mesbg_data
                           .filter(
                             (data) =>
-                              data.faction == factionSelection[f_type] && ["Warrior", "Independent Hero"].includes(data.unit_type)
+                              hero_constraint_data[roster.warbands[warbandNumFocus].hero.model_id][0]['valid_warband_units'].includes(data.model_id)
                           )
                           .map((row) => (
                             <SelectionUnit

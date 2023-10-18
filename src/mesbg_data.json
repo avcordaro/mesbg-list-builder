@@ -1,5 +1,6 @@
 [
   {
+    "model_id":"[angmar] witch_king",
     "faction_type":"Evil Army",
     "faction":"Angmar",
     "profile_origin":"Barad-dur",
@@ -107,6 +108,7 @@
     ]
   },
   {
+    "model_id":"[angmar] the_dwimmerlaik",
     "faction_type":"Evil Army",
     "faction":"Angmar",
     "profile_origin":"Angmar",
@@ -160,6 +162,7 @@
     ]
   },
   {
+    "model_id":"[angmar] the_tainted",
     "faction_type":"Evil Army",
     "faction":"Angmar",
     "profile_origin":"Angmar",
@@ -213,6 +216,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] sauron",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -239,6 +243,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] witch_king",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -346,6 +351,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] mordor_troll_chieftan",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -372,6 +378,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] black_numenorean_marshall",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -416,6 +423,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] ringwraith",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -487,6 +495,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_taskmaster",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -513,6 +522,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_captain",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -557,6 +567,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_shaman",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -583,6 +594,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] shelob",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -609,6 +621,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_drummer",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -635,6 +648,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] mordor_troll",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -661,6 +675,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] morgul_knight",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -696,6 +711,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] warg_rider",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -749,6 +765,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] black_numenorean",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -784,6 +801,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_tracker",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -810,6 +828,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] orc_warrior",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -872,6 +891,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] mordor_war_catapult",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -925,6 +945,7 @@
     ]
   },
   {
+    "model_id":"[barad-dur] mordor_siege_bow",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
@@ -969,6 +990,7 @@
     ]
   },
   {
+    "model_id":"[halls_of_thranduil] thranduil",
     "faction_type":"Good Army",
     "faction":"Halls of Thranduil",
     "profile_origin":"Halls of Thranduil",
@@ -1040,6 +1062,7 @@
     ]
   },
   {
+    "model_id":"[isengard] saruman",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1066,6 +1089,7 @@
     ]
   },
   {
+    "model_id":"[isengard] lurtz",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1092,6 +1116,7 @@
     ]
   },
   {
+    "model_id":"[isengard] thrydan_wolfsbane",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1118,6 +1143,7 @@
     ]
   },
   {
+    "model_id":"[isengard] gorulf_ironskin",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1144,6 +1170,7 @@
     ]
   },
   {
+    "model_id":"[isengard] frida_tallspear",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1170,6 +1197,7 @@
     ]
   },
   {
+    "model_id":"[isengard] ugluk",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1196,6 +1224,7 @@
     ]
   },
   {
+    "model_id":"[isengard] vrasku",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1222,6 +1251,7 @@
     ]
   },
   {
+    "model_id":"[isengard] mauhur",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1248,6 +1278,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_captain",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1292,6 +1323,7 @@
     ]
   },
   {
+    "model_id":"[isengard] dunlending_chieftan",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1327,6 +1359,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_scout_captain",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1371,6 +1404,7 @@
     ]
   },
   {
+    "model_id":"[isengard] wild_man_oathmaker",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1397,6 +1431,7 @@
     ]
   },
   {
+    "model_id":"[isengard] sharku",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1432,6 +1467,7 @@
     ]
   },
   {
+    "model_id":"[isengard] snaga",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1458,6 +1494,7 @@
     ]
   },
   {
+    "model_id":"[isengard] orc_captain",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Barad-dur",
@@ -1502,6 +1539,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_shaman",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1528,6 +1566,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_drummer",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1554,6 +1593,7 @@
     ]
   },
   {
+    "model_id":"[isengard] grima",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1580,6 +1620,7 @@
     ]
   },
   {
+    "model_id":"[isengard] isengard_troll",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1615,6 +1656,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_demolition_team",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1641,6 +1683,7 @@
     ]
   },
   {
+    "model_id":"[isengard] crebain",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1667,6 +1710,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_berserker",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1693,6 +1737,7 @@
     ]
   },
   {
+    "model_id":"[isengard] feral_uruk-hai",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1719,6 +1764,7 @@
     ]
   },
   {
+    "model_id":"[isengard] dunlending_horseman",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1745,6 +1791,7 @@
     ]
   },
   {
+    "model_id":"[isengard] dunlending_huscarl",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1771,6 +1818,7 @@
     ]
   },
   {
+    "model_id":"[isengard] warg_rider",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Barad-dur",
@@ -1824,6 +1872,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_warrior",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1877,6 +1926,7 @@
     ]
   },
   {
+    "model_id":"[isengard] uruk-hai_scout",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1926,19 +1976,11 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0105",
-        "option":"Marauder Upgrade - FREE",
-        "points":0.0,
-        "type":"upgrade",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
       }
     ]
   },
   {
+    "model_id":"[isengard] dunlending_warrior",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -1992,6 +2034,7 @@
     ]
   },
   {
+    "model_id":"[isengard] orc_warrior",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Barad-dur",
@@ -2054,6 +2097,7 @@
     ]
   },
   {
+    "model_id":"[isengard] wild_man_of_dunland",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -2080,6 +2124,7 @@
     ]
   },
   {
+    "model_id":"[isengard] isengard_assault_ballista",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
@@ -2124,6 +2169,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] galadriel",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2150,6 +2196,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] celeborn",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2194,6 +2241,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] orophin",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2220,6 +2268,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] rumil",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2246,6 +2295,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] galadhrim_captain",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2290,6 +2340,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] haldir",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2334,6 +2385,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] wood_elf_captain",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2378,6 +2430,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] galadhrim_stormcaller",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2404,6 +2457,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] wood_elf_sentinel",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2430,6 +2484,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] galadhrim_knight",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2474,6 +2529,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] guard_of_the_galadhrim_court",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2500,6 +2556,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] galadhrim_warrior",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2571,6 +2628,7 @@
     ]
   },
   {
+    "model_id":"[lothlorien] wood_elf_warrior",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
     "profile_origin":"Lothlorien",
@@ -2623,9 +2681,9 @@
       },
       {
         "option_id":"OPT0146",
-        "option":"Noldorin Exiles",
+        "option":"Noldorin Exiles Upgrade",
         "points":1.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -2633,6 +2691,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] aragorn,_king_elessar",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2659,6 +2718,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] gandalf_the_white",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2685,6 +2745,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] boromir",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2738,6 +2799,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] faramir",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2809,6 +2871,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] hurin",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2835,6 +2898,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] denethor",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2861,6 +2925,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] ingold",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2887,6 +2952,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] irolas",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2913,6 +2979,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] king_of_men",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -2975,6 +3042,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] knight_of_the_white_tower",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3001,6 +3069,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] cirion",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3027,6 +3096,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] madril",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3053,6 +3123,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] captain_of_minas_tirith",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3106,6 +3177,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] anborn",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3132,6 +3204,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] mablung",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3158,6 +3231,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] beregond",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3184,6 +3258,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] damrod",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3210,6 +3285,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] pippin",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3236,6 +3312,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] knight_of_minas_tirith",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3271,6 +3348,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] guard_of_the_fountain_court",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3306,6 +3384,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] citadel_guard",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3341,6 +3420,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] osgiliath_veteran",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3385,6 +3465,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] ranger_of_gondor",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3411,6 +3492,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] warrior_of_minas_tirith",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3473,6 +3555,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] gondor_battlecry_trebuchet",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3517,6 +3600,7 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] avenger_bolt_thrower",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
@@ -3561,6 +3645,7 @@
     ]
   },
   {
+    "model_id":"[mordor] witch_king",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -3668,6 +3753,7 @@
     ]
   },
   {
+    "model_id":"[mordor] gothmog",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3703,6 +3789,7 @@
     ]
   },
   {
+    "model_id":"[mordor] khamul",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3756,6 +3843,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_betrayer",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3800,6 +3888,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_dark_marshall",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3853,6 +3942,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_dwimmerlaik",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Angmar",
@@ -3906,6 +3996,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_knight_of_umbar",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3950,6 +4041,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_shadow_lord",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -3994,6 +4086,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_tainted",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Angmar",
@@ -4047,6 +4140,7 @@
     ]
   },
   {
+    "model_id":"[mordor] the_undying",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4091,6 +4185,7 @@
     ]
   },
   {
+    "model_id":"[mordor] razgush",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4117,6 +4212,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mouth_of_sauron",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4143,6 +4239,7 @@
     ]
   },
   {
+    "model_id":"[mordor] great_beast_of_gorgoroth",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4169,6 +4266,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_troll_chieftan",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4195,6 +4293,7 @@
     ]
   },
   {
+    "model_id":"[mordor] shagrat",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4230,6 +4329,7 @@
     ]
   },
   {
+    "model_id":"[mordor] goroth",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4256,6 +4356,7 @@
     ]
   },
   {
+    "model_id":"[mordor] muzgur",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4282,6 +4383,7 @@
     ]
   },
   {
+    "model_id":"[mordor] black_numenorean_marshall",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4326,6 +4428,7 @@
     ]
   },
   {
+    "model_id":"[mordor] captain_of_the_black_guard",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4352,6 +4455,7 @@
     ]
   },
   {
+    "model_id":"[mordor] gothmog's_enforcer",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4378,6 +4482,7 @@
     ]
   },
   {
+    "model_id":"[mordor] guritz",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4404,6 +4509,7 @@
     ]
   },
   {
+    "model_id":"[mordor] kardush",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4430,6 +4536,7 @@
     ]
   },
   {
+    "model_id":"[mordor] zagdush",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4456,6 +4563,7 @@
     ]
   },
   {
+    "model_id":"[mordor] gorbag",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4482,6 +4590,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_uruk-hai_captain",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4526,6 +4635,7 @@
     ]
   },
   {
+    "model_id":"[mordor] ringwraith",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4597,6 +4707,7 @@
     ]
   },
   {
+    "model_id":"[mordor] grishnak",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4623,6 +4734,7 @@
     ]
   },
   {
+    "model_id":"[mordor] morannon_orc_captain",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4658,6 +4770,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_taskmaster",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4684,6 +4797,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_captain",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4728,6 +4842,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_shaman",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4754,6 +4869,7 @@
     ]
   },
   {
+    "model_id":"[mordor] shelob",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4780,6 +4896,7 @@
     ]
   },
   {
+    "model_id":"[mordor] black_guard_drummer",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4806,6 +4923,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_drummer",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4832,6 +4950,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_troll",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4858,6 +4977,7 @@
     ]
   },
   {
+    "model_id":"[mordor] morgul_knight",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4893,6 +5013,7 @@
     ]
   },
   {
+    "model_id":"[mordor] black_guard_of_barad-dur",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4919,6 +5040,7 @@
     ]
   },
   {
+    "model_id":"[mordor] warg_rider",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -4972,6 +5094,7 @@
     ]
   },
   {
+    "model_id":"[mordor] morgul_stalker",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -4998,6 +5121,7 @@
     ]
   },
   {
+    "model_id":"[mordor] black_numenorean",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -5033,6 +5157,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_uruk-hai",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -5086,6 +5211,7 @@
     ]
   },
   {
+    "model_id":"[mordor] morannon_orc",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Mordor",
@@ -5130,6 +5256,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_tracker",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -5156,6 +5283,7 @@
     ]
   },
   {
+    "model_id":"[mordor] orc_warrior",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -5218,6 +5346,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_war_catapult",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -5271,6 +5400,7 @@
     ]
   },
   {
+    "model_id":"[mordor] mordor_siege_bow",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
@@ -5315,6 +5445,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] elrond",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5350,6 +5481,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] gil-galad",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5385,6 +5517,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] glorfindel",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5420,6 +5553,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] elladan_&_elrohir",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5473,6 +5607,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] erestor",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5499,6 +5634,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] cirdan",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5525,6 +5661,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] high_elf_captain",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5578,6 +5715,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] gildor_inglorion",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5604,6 +5742,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] lindir",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5639,6 +5778,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] arwen",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5683,6 +5823,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] high_elf_stormcaller",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5709,6 +5850,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] rivendell_knight",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5753,6 +5895,7 @@
     ]
   },
   {
+    "model_id":"[rivendell] high_elf_warrior",
     "faction_type":"Good Army",
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
@@ -5816,7 +5959,7 @@
         "option_id":"OPT0307",
         "option":"King's Guard Upgrade",
         "points":1.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -5824,6 +5967,7 @@
     ]
   },
   {
+    "model_id":"[rohan] helm_hammerhand",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -5850,6 +5994,7 @@
     ]
   },
   {
+    "model_id":"[rohan] theoden",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -5903,6 +6048,7 @@
     ]
   },
   {
+    "model_id":"[rohan] eorl_the_young",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -5929,6 +6075,7 @@
     ]
   },
   {
+    "model_id":"[rohan] eomer",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -5982,6 +6129,7 @@
     ]
   },
   {
+    "model_id":"[rohan] theodred",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6026,6 +6174,7 @@
     ]
   },
   {
+    "model_id":"[rohan] deorwine",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6052,6 +6201,7 @@
     ]
   },
   {
+    "model_id":"[rohan] erkenbrand",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6078,6 +6228,7 @@
     ]
   },
   {
+    "model_id":"[rohan] elfhelm",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6104,6 +6255,7 @@
     ]
   },
   {
+    "model_id":"[rohan] grimbold",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6130,6 +6282,7 @@
     ]
   },
   {
+    "model_id":"[rohan] gamling",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6165,6 +6318,7 @@
     ]
   },
   {
+    "model_id":"[rohan] hama",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6200,6 +6354,7 @@
     ]
   },
   {
+    "model_id":"[rohan] captain_of_rohan",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6262,6 +6417,7 @@
     ]
   },
   {
+    "model_id":"[rohan] dernhelm",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6288,6 +6444,7 @@
     ]
   },
   {
+    "model_id":"[rohan] king's_huntsman",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6314,6 +6471,7 @@
     ]
   },
   {
+    "model_id":"[rohan] eowyn",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6367,6 +6525,7 @@
     ]
   },
   {
+    "model_id":"[rohan] aldor",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6393,6 +6552,7 @@
     ]
   },
   {
+    "model_id":"[rohan] haleth",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6419,6 +6579,7 @@
     ]
   },
   {
+    "model_id":"[rohan] merry",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6463,6 +6624,7 @@
     ]
   },
   {
+    "model_id":"[rohan] son_of_eorl",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6489,6 +6651,7 @@
     ]
   },
   {
+    "model_id":"[rohan] rider_of_rohan",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6532,9 +6695,9 @@
       },
       {
         "option_id":"OPT0341",
-        "option":"Westfold Redshield",
+        "option":"Westfold Redshield Upgrade",
         "points":1.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -6542,6 +6705,7 @@
     ]
   },
   {
+    "model_id":"[rohan] rohan_royal_guard",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6586,6 +6750,7 @@
     ]
   },
   {
+    "model_id":"[rohan] rohan_outrider",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6612,6 +6777,7 @@
     ]
   },
   {
+    "model_id":"[rohan] warrior_of_rohan",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
@@ -6683,6 +6849,7 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] the_king_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -6709,6 +6876,7 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] herald_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -6735,6 +6903,7 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] warrior_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -6779,6 +6948,7 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] rider_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -6805,6 +6975,7 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] warrior_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -6849,6 +7020,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] the_dragon_emperor",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -6875,6 +7047,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] amdur",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -6901,6 +7074,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] khamul",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"Mordor",
@@ -6954,6 +7128,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] rutabi",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -6980,6 +7155,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] brorgir",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7006,6 +7182,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] easterling_war_priest",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7032,6 +7209,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] easterling_captain",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7076,6 +7254,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] easterling_dragon_knight",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7102,6 +7281,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] rhunish_war_drake",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7128,6 +7308,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] easterling_kataphrakts",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7172,6 +7353,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] dragon_cult_acolyte",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7198,6 +7380,7 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] easterling_warrior",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
@@ -7260,6 +7443,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] gandalf_the_grey",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7295,6 +7479,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] aragorn,_strider",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7357,6 +7542,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] gimli",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7383,6 +7569,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] legolas",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7427,6 +7614,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] boromir_of_gondor",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7471,6 +7659,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] frodo_baggins",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7515,6 +7704,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] samwise_gamgee",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7541,6 +7731,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] meriadoc_brandybuck",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7567,6 +7758,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] peregrin_took",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7593,6 +7785,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] smeagol",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7619,6 +7812,7 @@
     ]
   },
   {
+    "model_id":"[the_fellowship] bill_the_pony",
     "faction_type":"Good Army",
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
@@ -7645,6 +7839,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] prince_imrahil",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7680,6 +7875,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] forlong_the_fat",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7706,6 +7902,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] angbor_the_fearless",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7732,6 +7929,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] duinhir",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7758,6 +7956,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] captain_of_dol_amroth",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7793,6 +7992,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] knight_of_dol_amroth",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7846,6 +8046,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] axeman_of_lossarnach",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7872,6 +8073,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] man-at-arms_of_dol_amroth",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7898,6 +8100,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] blackroot_vale_archer",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7942,6 +8145,7 @@
     ]
   },
   {
+    "model_id":"[the_fiefdoms] clansman_of_lamedon",
     "faction_type":"Good Army",
     "faction":"The Fiefdoms",
     "profile_origin":"The Fiefdoms",
@@ -7968,6 +8172,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] the_dragon_emperor",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -7994,6 +8199,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] rutabi",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8020,6 +8226,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] brorgir",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8046,6 +8253,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_war_priest",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8072,6 +8280,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_captain",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8116,6 +8325,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_dragon_knight",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8142,6 +8352,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] rhunish_war_drake",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8168,6 +8379,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_kataphrakts",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8221,6 +8433,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8247,6 +8460,7 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_warrior",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
@@ -8318,6 +8532,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] durin",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8344,6 +8559,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] king's_champion",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8370,6 +8586,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] dwarf_king",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8405,6 +8622,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] mardin",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8431,6 +8649,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] dwarf_captain",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8475,6 +8694,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] shieldbearer",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8501,6 +8721,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] vault_warden_team",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8527,6 +8748,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] iron_guard",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8553,6 +8775,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] khazad_guard",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8569,9 +8792,9 @@
     "options":[
       {
         "option_id":"OPT0445",
-        "option":"Heathguard",
+        "option":"Heathguard Upgrade",
         "points":2.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -8579,6 +8802,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] dwarf_ranger",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8623,6 +8847,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] dwarf_warrior",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8685,6 +8910,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] dwarf_ballista",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8729,6 +8955,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] balin",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8755,6 +8982,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] gimli",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Fellowship",
@@ -8781,6 +9009,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] king's_champion",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8807,6 +9036,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] dwarf_king",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8842,6 +9072,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] floi_stonehand",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8868,6 +9099,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] dwarf_captain",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8912,6 +9144,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] shieldbearer",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8938,6 +9171,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] vault_warden_team",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8964,6 +9198,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] iron_guard",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -8990,6 +9225,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] khazad_guard",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -9005,9 +9241,9 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0463",
-        "option":"Heathguard",
-        "points":2.0,
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -9016,6 +9252,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] dwarf_ranger",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -9060,6 +9297,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] dwarf_warrior",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -9122,6 +9360,7 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_moria] dwarf_ballista",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
@@ -9166,6 +9405,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] aragorn,_strider",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Fellowship",
@@ -9201,6 +9441,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] gimli",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Fellowship",
@@ -9227,6 +9468,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] legolas",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Fellowship",
@@ -9262,6 +9504,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] the_king_of_the_dead",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Dead of Dunharrow",
@@ -9288,6 +9531,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] herald_of_the_dead",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Dead of Dunharrow",
@@ -9314,6 +9558,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] rider_of_the_dead",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Dead of Dunharrow",
@@ -9340,6 +9585,7 @@
     ]
   },
   {
+    "model_id":"[the_return_of_the_king] warrior_of_the_dead",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
     "profile_origin":"The Dead of Dunharrow",
@@ -9384,6 +9630,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] suladan",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9419,6 +9666,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] the_golden_king",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9445,6 +9693,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] the_betrayer",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"Mordor",
@@ -9489,6 +9738,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] hasharin",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9524,6 +9774,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] haradrim_king",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9568,6 +9819,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] haradrim_chieftan",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9603,6 +9855,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] serpent_rider",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9629,6 +9882,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] haradrim_raider",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9673,6 +9927,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] abrakhan_merchant_guard",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9699,6 +9954,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] watcher_of_karna",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9734,6 +9990,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] serpent_guard",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
@@ -9760,6 +10017,7 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] haradrim_warrior",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
