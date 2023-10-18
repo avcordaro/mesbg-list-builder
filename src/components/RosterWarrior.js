@@ -136,13 +136,13 @@ export function RosterWarrior({
     newUnit["id"] = uuid();
     newRoster.warbands[warbandNum - 1].units.push(newUnit);
     newRoster.warbands[warbandNum - 1]["num_units"] =
-      newRoster.warbands[warbandNum - 1]["num_units"] + newUnit["quantity"];
+      newRoster.warbands[warbandNum - 1]["num_units"] + ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
     newRoster.warbands[warbandNum - 1]["points"] =
       newRoster.warbands[warbandNum - 1]["points"] + newUnit["pointsTotal"];
     newRoster.warbands[warbandNum - 1]["bow_count"] =
       newRoster.warbands[warbandNum - 1]["bow_count"] +
       (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-    newRoster["num_units"] = newRoster["num_units"] + newUnit["quantity"];
+    newRoster["num_units"] = newRoster["num_units"] + ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
     newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
     newRoster["bow_count"] =
       newRoster["bow_count"] +
