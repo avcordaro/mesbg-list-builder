@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.28b8cbac.css",
-    "main.js": "/mesbg-list-builder/static/js/main.bf3883a0.js",
+    "main.js": "/mesbg-list-builder/static/js/main.a6f496cd.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Helm Hammerhand.jpg": "/mesbg-list-builder/static/media/Helm Hammerhand.880f602201c5c68ef655.jpg",
@@ -16,7 +16,8 @@
     "static/media/Easterling Captain.jpg": "/mesbg-list-builder/static/media/Easterling Captain.3d28b33348a98b740912.jpg",
     "static/media/Grima.jpg": "/mesbg-list-builder/static/media/Grima.03344cd6051a3348e86c.jpg",
     "static/media/King's Champion.jpg": "/mesbg-list-builder/static/media/King's Champion.fba5302db52ba408f589.jpg",
-    "static/media/Easterling Kataphrakts.jpg": "/mesbg-list-builder/static/media/Easterling Kataphrakts.4e75f3722afe298f605e.jpg",
+    "static/media/Black Dragon Kataphrakt.jpg": "/mesbg-list-builder/static/media/Black Dragon Kataphrakt.4e75f3722afe298f605e.jpg",
+    "static/media/Easterling Kataphrakt.jpg": "/mesbg-list-builder/static/media/Easterling Kataphrakt.4e75f3722afe298f605e.jpg",
     "static/media/Eowyn.jpg": "/mesbg-list-builder/static/media/Eowyn.a023b7419bcb0133fc7c.jpg",
     "static/media/The Tainted.jpg": "/mesbg-list-builder/static/media/The Tainted.b2a5ac031f56220293df.jpg",
     "static/media/Kardush.jpg": "/mesbg-list-builder/static/media/Kardush.7d47077413bb16a0e491.jpg",
@@ -59,6 +60,7 @@
     "static/media/Rutabi.jpg": "/mesbg-list-builder/static/media/Rutabi.cb1b68f9332b7271e556.jpg",
     "static/media/Wood Elf Sentinel.jpg": "/mesbg-list-builder/static/media/Wood Elf Sentinel.c5096bcb8e1bf9027c5b.jpg",
     "static/media/Faramir.jpg": "/mesbg-list-builder/static/media/Faramir.8b532a6e5b0db06bdec6.jpg",
+    "static/media/Black Dragon Warrior.jpg": "/mesbg-list-builder/static/media/Black Dragon Warrior.8a05c51e967ae6a15f5f.jpg",
     "static/media/Easterling Warrior.jpg": "/mesbg-list-builder/static/media/Easterling Warrior.8a05c51e967ae6a15f5f.jpg",
     "static/media/Gandalf the Grey.jpg": "/mesbg-list-builder/static/media/Gandalf the Grey.11bdc2bc6e4d26876750.jpg",
     "static/media/Snaga.jpg": "/mesbg-list-builder/static/media/Snaga.f95415e25e3ae5582b50.jpg",
@@ -240,6 +242,7 @@
     "static/media/Mordor Troll Chieftan.png": "/mesbg-list-builder/static/media/Mordor Troll Chieftan.4127feaab948b85fa3ef.png",
     "static/media/Helm Hammerhand.png": "/mesbg-list-builder/static/media/Helm Hammerhand.213a5a397e54d30a5215.png",
     "static/media/Dwarf Ballista.png": "/mesbg-list-builder/static/media/Dwarf Ballista.ecfa17ffdedf70ea8234.png",
+    "static/media/Black Dragon Warrior.png": "/mesbg-list-builder/static/media/Black Dragon Warrior.64993507e0e29e292235.png",
     "static/media/Easterling Warrior.png": "/mesbg-list-builder/static/media/Easterling Warrior.64993507e0e29e292235.png",
     "static/media/Haradrim King.png": "/mesbg-list-builder/static/media/Haradrim King.f94d99524f1888219bc3.png",
     "static/media/Captain of the Black Guard.png": "/mesbg-list-builder/static/media/Captain of the Black Guard.b37f5e7da08e53411e76.png",
@@ -305,7 +308,8 @@
     "static/media/Easterling Captain.png": "/mesbg-list-builder/static/media/Easterling Captain.69c0bbf424d80a9ef9af.png",
     "static/media/Elrond.png": "/mesbg-list-builder/static/media/Elrond.45466363ba86c1554a1b.png",
     "static/media/Muzgur.png": "/mesbg-list-builder/static/media/Muzgur.dae70c275b67584eb47a.png",
-    "static/media/Easterling Kataphrakts.png": "/mesbg-list-builder/static/media/Easterling Kataphrakts.bcec7e23b18750b3148b.png",
+    "static/media/Black Dragon Kataphrakt.png": "/mesbg-list-builder/static/media/Black Dragon Kataphrakt.bcec7e23b18750b3148b.png",
+    "static/media/Easterling Kataphrakt.png": "/mesbg-list-builder/static/media/Easterling Kataphrakt.bcec7e23b18750b3148b.png",
     "static/media/Orc Shaman.png": "/mesbg-list-builder/static/media/Orc Shaman.a97191d35e849d8b4945.png",
     "static/media/Khazad Guard.png": "/mesbg-list-builder/static/media/Khazad Guard.2a8922e7a3a3174a4e74.png",
     "static/media/Watcher of Karna.png": "/mesbg-list-builder/static/media/Watcher of Karna.962518d3982de72f280d.png",
@@ -433,10 +437,10 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.28b8cbac.css.map": "/mesbg-list-builder/static/css/main.28b8cbac.css.map",
-    "main.bf3883a0.js.map": "/mesbg-list-builder/static/js/main.bf3883a0.js.map"
+    "main.a6f496cd.js.map": "/mesbg-list-builder/static/js/main.a6f496cd.js.map"
   },
   "entrypoints": [
     "static/css/main.28b8cbac.css",
-    "static/js/main.bf3883a0.js"
+    "static/js/main.a6f496cd.js"
   ]
 }
