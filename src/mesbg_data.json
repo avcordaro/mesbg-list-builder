@@ -1375,7 +1375,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0106",
+        "option_id":"OPT0105",
         "option":"Uruk-Hai Bow",
         "points":5.0,
         "type":null,
@@ -1384,7 +1384,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0107",
+        "option_id":"OPT0106",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -1393,7 +1393,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0108",
+        "option_id":"OPT0107",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -1598,7 +1598,7 @@
     "faction":"Isengard",
     "profile_origin":"Isengard",
     "name":"Grima",
-    "unit_type":"Independent Hero",
+    "unit_type":"Independent Hero*",
     "base_points":25,
     "default_bow":false,
     "inc_bow_count":false,
@@ -1606,7 +1606,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0077",
@@ -1834,7 +1834,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0113",
+        "option_id":"OPT0112",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -1843,7 +1843,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0114",
+        "option_id":"OPT0113",
         "option":"Orc Bow",
         "points":1.0,
         "type":"bow",
@@ -1852,7 +1852,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0115",
+        "option_id":"OPT0114",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -1861,7 +1861,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0116",
+        "option_id":"OPT0115",
         "option":"Throwing Spears",
         "points":1.0,
         "type":null,
@@ -1888,7 +1888,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0109",
+        "option_id":"OPT0108",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -1897,7 +1897,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0110",
+        "option_id":"OPT0109",
         "option":"Crossbow",
         "points":2.0,
         "type":"bow",
@@ -1906,7 +1906,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0111",
+        "option_id":"OPT0110",
         "option":"Pike",
         "points":1.0,
         "type":null,
@@ -1915,7 +1915,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0112",
+        "option_id":"OPT0111",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -2113,7 +2113,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0117",
+        "option_id":"OPT0116",
         "option":"Two-Handed Axe",
         "points":1.0,
         "type":null,
@@ -2185,7 +2185,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0133",
+        "option_id":"OPT0132",
         "option":"Mirror of Galadriel",
         "points":25.0,
         "type":null,
@@ -2212,7 +2212,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0118",
+        "option_id":"OPT0117",
         "option":"Heavy Armour",
         "points":10.0,
         "type":"armour",
@@ -2221,7 +2221,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0119",
+        "option_id":"OPT0118",
         "option":"Elven-made Hand-and-a-Half Sword",
         "points":5.0,
         "type":null,
@@ -2230,7 +2230,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0120",
+        "option_id":"OPT0119",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -2284,7 +2284,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0138",
+        "option_id":"OPT0137",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -2311,7 +2311,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0121",
+        "option_id":"OPT0120",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -2320,7 +2320,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0122",
+        "option_id":"OPT0121",
         "option":"Elf Bow",
         "points":5.0,
         "type":null,
@@ -2329,7 +2329,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0123",
+        "option_id":"OPT0122",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -2356,7 +2356,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0135",
+        "option_id":"OPT0134",
         "option":"Heavy Armour",
         "points":10.0,
         "type":"armour",
@@ -2365,7 +2365,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0136",
+        "option_id":"OPT0135",
         "option":"Elf Bow",
         "points":5.0,
         "type":null,
@@ -2374,7 +2374,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0137",
+        "option_id":"OPT0136",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -2401,7 +2401,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0139",
+        "option_id":"OPT0138",
         "option":"Elf Bow",
         "points":5.0,
         "type":null,
@@ -2410,7 +2410,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0140",
+        "option_id":"OPT0139",
         "option":"Throwing Daggers",
         "points":5.0,
         "type":null,
@@ -2419,7 +2419,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0141",
+        "option_id":"OPT0140",
         "option":"Wood Elf Spear",
         "points":5.0,
         "type":null,
@@ -2500,7 +2500,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0124",
+        "option_id":"OPT0123",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -2509,7 +2509,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0125",
+        "option_id":"OPT0124",
         "option":"Elf Bow",
         "points":2.0,
         "type":"bow",
@@ -2518,7 +2518,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0126",
+        "option_id":"OPT0125",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -2545,7 +2545,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0134",
+        "option_id":"OPT0133",
         "option":"Replace Pike with Banner",
         "points":25.0,
         "type":null,
@@ -2572,7 +2572,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0127",
+        "option_id":"OPT0126",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -2581,7 +2581,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0128",
+        "option_id":"OPT0127",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -2590,7 +2590,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0129",
+        "option_id":"OPT0128",
         "option":"Elf Bow",
         "points":2.0,
         "type":"bow",
@@ -2599,7 +2599,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0130",
+        "option_id":"OPT0129",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -2608,7 +2608,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0131",
+        "option_id":"OPT0130",
         "option":"Galadhrim Guard Upgrade",
         "points":1.0,
         "type":null,
@@ -2617,7 +2617,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0132",
+        "option_id":"OPT0131",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -2644,7 +2644,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0142",
+        "option_id":"OPT0141",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -2653,7 +2653,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0143",
+        "option_id":"OPT0142",
         "option":"Elf Bow",
         "points":2.0,
         "type":"bow",
@@ -2662,7 +2662,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0144",
+        "option_id":"OPT0143",
         "option":"Throwing Daggers",
         "points":1.0,
         "type":null,
@@ -2671,19 +2671,10 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0145",
+        "option_id":"OPT0144",
         "option":"Wood Elf Spear",
         "points":1.0,
         "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0146",
-        "option":"Noldorin Exiles Upgrade",
-        "points":1.0,
-        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -2707,7 +2698,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0147",
+        "option_id":"OPT0145",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -2734,7 +2725,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0168",
+        "option_id":"OPT0166",
         "option":"Shadowfax",
         "points":20.0,
         "type":"mount",
@@ -2761,7 +2752,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0152",
+        "option_id":"OPT0150",
         "option":"The Banner of Minas Tirith",
         "points":40.0,
         "type":null,
@@ -2770,7 +2761,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0153",
+        "option_id":"OPT0151",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -2779,7 +2770,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0154",
+        "option_id":"OPT0152",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -2788,7 +2779,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0155",
+        "option_id":"OPT0153",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -2815,7 +2806,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0162",
+        "option_id":"OPT0160",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -2824,7 +2815,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0163",
+        "option_id":"OPT0161",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -2833,7 +2824,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0164",
+        "option_id":"OPT0162",
         "option":"Bow",
         "points":5.0,
         "type":null,
@@ -2842,7 +2833,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0165",
+        "option_id":"OPT0163",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -2851,7 +2842,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0166",
+        "option_id":"OPT0164",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -2860,7 +2851,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0167",
+        "option_id":"OPT0165",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -2887,7 +2878,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0174",
+        "option_id":"OPT0172",
         "option":"Horse",
         "points":15.0,
         "type":"mount",
@@ -2995,7 +2986,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0175",
+        "option_id":"OPT0173",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -3004,7 +2995,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0176",
+        "option_id":"OPT0174",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3013,7 +3004,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0177",
+        "option_id":"OPT0175",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -3022,7 +3013,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0178",
+        "option_id":"OPT0176",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -3031,7 +3022,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0179",
+        "option_id":"OPT0177",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -3139,7 +3130,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0156",
+        "option_id":"OPT0154",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3148,7 +3139,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0157",
+        "option_id":"OPT0155",
         "option":"Bow",
         "points":5.0,
         "type":null,
@@ -3157,7 +3148,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0158",
+        "option_id":"OPT0156",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -3166,7 +3157,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0159",
+        "option_id":"OPT0157",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -3247,7 +3238,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0151",
+        "option_id":"OPT0149",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -3301,7 +3292,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0185",
+        "option_id":"OPT0183",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -3328,7 +3319,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0180",
+        "option_id":"OPT0178",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -3337,7 +3328,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0181",
+        "option_id":"OPT0179",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -3364,7 +3355,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0172",
+        "option_id":"OPT0170",
         "option":"Swap Spear with Banner",
         "points":25.0,
         "type":null,
@@ -3373,7 +3364,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0173",
+        "option_id":"OPT0171",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -3400,7 +3391,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0160",
+        "option_id":"OPT0158",
         "option":"Horse",
         "points":7.0,
         "type":"mount",
@@ -3409,7 +3400,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0161",
+        "option_id":"OPT0159",
         "option":"Swap Spear for Longbow",
         "points":1.0,
         "type":"bow",
@@ -3436,7 +3427,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0182",
+        "option_id":"OPT0180",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -3445,7 +3436,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0183",
+        "option_id":"OPT0181",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -3454,7 +3445,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0184",
+        "option_id":"OPT0182",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -3481,7 +3472,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0186",
+        "option_id":"OPT0184",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -3508,7 +3499,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0187",
+        "option_id":"OPT0185",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -3517,7 +3508,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0188",
+        "option_id":"OPT0186",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -3526,7 +3517,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0189",
+        "option_id":"OPT0187",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -3535,7 +3526,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0190",
+        "option_id":"OPT0188",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -3544,7 +3535,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0191",
+        "option_id":"OPT0189",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -3571,7 +3562,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0169",
+        "option_id":"OPT0167",
         "option":"Minas Tirith Engineer Captain",
         "points":50.0,
         "type":null,
@@ -3580,7 +3571,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0170",
+        "option_id":"OPT0168",
         "option":"Flaming Ammunition",
         "points":15.0,
         "type":null,
@@ -3589,7 +3580,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0171",
+        "option_id":"OPT0169",
         "option":"Additional Crew",
         "points":7.0,
         "type":null,
@@ -3616,7 +3607,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0148",
+        "option_id":"OPT0146",
         "option":"Minas Tirith Engineer Captain",
         "points":40.0,
         "type":null,
@@ -3625,7 +3616,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0149",
+        "option_id":"OPT0147",
         "option":"Swift Reload",
         "points":20.0,
         "type":null,
@@ -3634,7 +3625,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0150",
+        "option_id":"OPT0148",
         "option":"Additional Crew",
         "points":7.0,
         "type":null,
@@ -3661,7 +3652,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0275",
+        "option_id":"OPT0273",
         "option":"Armoured Fell Beast",
         "points":75.0,
         "type":"mount",
@@ -3670,7 +3661,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0276",
+        "option_id":"OPT0274",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -3679,7 +3670,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0277",
+        "option_id":"OPT0275",
         "option":"Crown of Morgul",
         "points":25.0,
         "type":null,
@@ -3688,7 +3679,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0278",
+        "option_id":"OPT0276",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -3697,7 +3688,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0279",
+        "option_id":"OPT0277",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3706,7 +3697,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0280",
+        "option_id":"OPT0278",
         "option":"Morgul Blade",
         "points":10.0,
         "type":null,
@@ -3715,7 +3706,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0281",
+        "option_id":"OPT0279",
         "option":"Two-Handed Flail",
         "points":5.0,
         "type":null,
@@ -3724,7 +3715,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0282",
+        "option_id":"OPT0280",
         "option":"Might",
         "points":5.0,
         "type":null,
@@ -3733,7 +3724,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0283",
+        "option_id":"OPT0281",
         "option":"Will",
         "points":5.0,
         "type":null,
@@ -3742,7 +3733,7 @@
         "opt_quantity":10.0
       },
       {
-        "option_id":"OPT0284",
+        "option_id":"OPT0282",
         "option":"Fate",
         "points":5.0,
         "type":null,
@@ -3769,7 +3760,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0199",
+        "option_id":"OPT0197",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -3778,7 +3769,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0200",
+        "option_id":"OPT0198",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -3805,7 +3796,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0202",
+        "option_id":"OPT0200",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -3814,7 +3805,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0203",
+        "option_id":"OPT0201",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -3823,7 +3814,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0204",
+        "option_id":"OPT0202",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -3832,7 +3823,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0205",
+        "option_id":"OPT0203",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3859,7 +3850,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0247",
+        "option_id":"OPT0245",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -3868,7 +3859,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0248",
+        "option_id":"OPT0246",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -3877,7 +3868,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0249",
+        "option_id":"OPT0247",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3904,7 +3895,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0250",
+        "option_id":"OPT0248",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -3913,7 +3904,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0251",
+        "option_id":"OPT0249",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -3922,7 +3913,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0252",
+        "option_id":"OPT0250",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -3931,7 +3922,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0253",
+        "option_id":"OPT0251",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -3958,7 +3949,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0254",
+        "option_id":"OPT0252",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -3967,7 +3958,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0255",
+        "option_id":"OPT0253",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -3976,7 +3967,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0256",
+        "option_id":"OPT0254",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -3985,7 +3976,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0257",
+        "option_id":"OPT0255",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4012,7 +4003,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0258",
+        "option_id":"OPT0256",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -4021,7 +4012,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0259",
+        "option_id":"OPT0257",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -4030,7 +4021,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0260",
+        "option_id":"OPT0258",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4057,7 +4048,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0261",
+        "option_id":"OPT0259",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -4066,7 +4057,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0262",
+        "option_id":"OPT0260",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -4075,7 +4066,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0263",
+        "option_id":"OPT0261",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4102,7 +4093,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0264",
+        "option_id":"OPT0262",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -4111,7 +4102,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0265",
+        "option_id":"OPT0263",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -4120,7 +4111,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0266",
+        "option_id":"OPT0264",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -4129,7 +4120,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0267",
+        "option_id":"OPT0265",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4156,7 +4147,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0268",
+        "option_id":"OPT0266",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -4165,7 +4156,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0269",
+        "option_id":"OPT0267",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -4174,7 +4165,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0270",
+        "option_id":"OPT0268",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4228,7 +4219,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0228",
+        "option_id":"OPT0226",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -4309,7 +4300,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0245",
+        "option_id":"OPT0243",
         "option":"Shield of Cirith Ungol",
         "points":10.0,
         "type":null,
@@ -4318,7 +4309,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0246",
+        "option_id":"OPT0244",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -4399,7 +4390,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0195",
+        "option_id":"OPT0193",
         "option":"Armoured Horse",
         "points":10.0,
         "type":"mount",
@@ -4408,7 +4399,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0196",
+        "option_id":"OPT0194",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -4417,7 +4408,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0197",
+        "option_id":"OPT0195",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -4579,7 +4570,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0198",
+        "option_id":"OPT0196",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -4606,7 +4597,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0219",
+        "option_id":"OPT0217",
         "option":"Orc Bow",
         "points":5.0,
         "type":null,
@@ -4615,7 +4606,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0220",
+        "option_id":"OPT0218",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -4624,7 +4615,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0221",
+        "option_id":"OPT0219",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -4651,7 +4642,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0239",
+        "option_id":"OPT0237",
         "option":"Armoured Fell Beast",
         "points":75.0,
         "type":"mount",
@@ -4660,7 +4651,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0240",
+        "option_id":"OPT0238",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -4669,7 +4660,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0241",
+        "option_id":"OPT0239",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -4678,7 +4669,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0242",
+        "option_id":"OPT0240",
         "option":"Might",
         "points":5.0,
         "type":null,
@@ -4687,7 +4678,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0243",
+        "option_id":"OPT0241",
         "option":"Will",
         "points":5.0,
         "type":null,
@@ -4696,7 +4687,7 @@
         "opt_quantity":7.0
       },
       {
-        "option_id":"OPT0244",
+        "option_id":"OPT0242",
         "option":"Fate",
         "points":5.0,
         "type":null,
@@ -4750,7 +4741,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0209",
+        "option_id":"OPT0207",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -4759,7 +4750,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0210",
+        "option_id":"OPT0208",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -4813,7 +4804,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0229",
+        "option_id":"OPT0227",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -4822,7 +4813,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0230",
+        "option_id":"OPT0228",
         "option":"Orc Bow",
         "points":5.0,
         "type":null,
@@ -4831,7 +4822,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0231",
+        "option_id":"OPT0229",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -4858,7 +4849,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0232",
+        "option_id":"OPT0230",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -4966,7 +4957,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0214",
+        "option_id":"OPT0212",
         "option":"War Drum (Mordor)",
         "points":30.0,
         "type":null,
@@ -4993,7 +4984,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0226",
+        "option_id":"OPT0224",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -5002,7 +4993,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0227",
+        "option_id":"OPT0225",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5029,7 +5020,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0192",
+        "option_id":"OPT0190",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5056,7 +5047,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0271",
+        "option_id":"OPT0269",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5065,7 +5056,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0272",
+        "option_id":"OPT0270",
         "option":"Orc Bow",
         "points":1.0,
         "type":"bow",
@@ -5074,7 +5065,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0273",
+        "option_id":"OPT0271",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5083,7 +5074,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0274",
+        "option_id":"OPT0272",
         "option":"Throwing Spears",
         "points":1.0,
         "type":null,
@@ -5137,7 +5128,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0193",
+        "option_id":"OPT0191",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -5146,7 +5137,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0194",
+        "option_id":"OPT0192",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5173,7 +5164,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0215",
+        "option_id":"OPT0213",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5182,7 +5173,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0216",
+        "option_id":"OPT0214",
         "option":"Orc Bow",
         "points":1.0,
         "type":null,
@@ -5191,7 +5182,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0217",
+        "option_id":"OPT0215",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5200,7 +5191,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0218",
+        "option_id":"OPT0216",
         "option":"Two-Handed Mace",
         "points":1.0,
         "type":null,
@@ -5227,7 +5218,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0206",
+        "option_id":"OPT0204",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5236,7 +5227,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0207",
+        "option_id":"OPT0205",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5245,7 +5236,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0208",
+        "option_id":"OPT0206",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -5272,7 +5263,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0233",
+        "option_id":"OPT0231",
         "option":"Warg",
         "points":7.0,
         "type":"mount",
@@ -5299,7 +5290,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0234",
+        "option_id":"OPT0232",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5308,7 +5299,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0235",
+        "option_id":"OPT0233",
         "option":"Orc Bow",
         "points":1.0,
         "type":"bow",
@@ -5317,7 +5308,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0236",
+        "option_id":"OPT0234",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5326,7 +5317,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0237",
+        "option_id":"OPT0235",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -5335,7 +5326,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0238",
+        "option_id":"OPT0236",
         "option":"Two-Handed Weapon",
         "points":1.0,
         "type":null,
@@ -5362,7 +5353,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0222",
+        "option_id":"OPT0220",
         "option":"Orc Engineer Captain",
         "points":40.0,
         "type":null,
@@ -5371,7 +5362,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0223",
+        "option_id":"OPT0221",
         "option":"Flaming Ammunition",
         "points":15.0,
         "type":null,
@@ -5380,7 +5371,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0224",
+        "option_id":"OPT0222",
         "option":"Severed heads",
         "points":5.0,
         "type":null,
@@ -5389,7 +5380,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0225",
+        "option_id":"OPT0223",
         "option":"Additional Crew",
         "points":5.0,
         "type":null,
@@ -5416,7 +5407,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0211",
+        "option_id":"OPT0209",
         "option":"Orc Engineer Captain",
         "points":40.0,
         "type":null,
@@ -5425,7 +5416,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0212",
+        "option_id":"OPT0210",
         "option":"Flaming Ammunition",
         "points":15.0,
         "type":null,
@@ -5434,7 +5425,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0213",
+        "option_id":"OPT0211",
         "option":"Additional Crew",
         "points":5.0,
         "type":null,
@@ -5461,7 +5452,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0292",
+        "option_id":"OPT0290",
         "option":"Heavy Armour",
         "points":10.0,
         "type":"armour",
@@ -5470,7 +5461,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0293",
+        "option_id":"OPT0291",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -5497,7 +5488,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0294",
+        "option_id":"OPT0292",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -5506,7 +5497,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0295",
+        "option_id":"OPT0293",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -5533,7 +5524,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0296",
+        "option_id":"OPT0294",
         "option":"Armour of Gondolin",
         "points":15.0,
         "type":"armour",
@@ -5542,7 +5533,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0297",
+        "option_id":"OPT0295",
         "option":"Asfaloth",
         "points":10.0,
         "type":"mount",
@@ -5569,7 +5560,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0288",
+        "option_id":"OPT0286",
         "option":"Horses",
         "points":20.0,
         "type":"mount",
@@ -5578,7 +5569,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0289",
+        "option_id":"OPT0287",
         "option":"Heavy Armour",
         "points":10.0,
         "type":"armour",
@@ -5587,7 +5578,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0290",
+        "option_id":"OPT0288",
         "option":"Elf Bows",
         "points":10.0,
         "type":null,
@@ -5596,7 +5587,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0291",
+        "option_id":"OPT0289",
         "option":"Elven Cloaks",
         "points":10.0,
         "type":null,
@@ -5677,7 +5668,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0298",
+        "option_id":"OPT0296",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -5686,7 +5677,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0299",
+        "option_id":"OPT0297",
         "option":"Elf Bow",
         "points":5.0,
         "type":null,
@@ -5695,7 +5686,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0300",
+        "option_id":"OPT0298",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -5704,7 +5695,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0301",
+        "option_id":"OPT0299",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -5758,7 +5749,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0308",
+        "option_id":"OPT0306",
         "option":"Heavy Armour",
         "points":10.0,
         "type":"armour",
@@ -5767,7 +5758,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0309",
+        "option_id":"OPT0307",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -5794,7 +5785,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0285",
+        "option_id":"OPT0283",
         "option":"Asfaloth",
         "points":10.0,
         "type":"mount",
@@ -5803,7 +5794,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0286",
+        "option_id":"OPT0284",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -5812,7 +5803,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0287",
+        "option_id":"OPT0285",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -5866,7 +5857,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0310",
+        "option_id":"OPT0308",
         "option":"War horn",
         "points":30.0,
         "type":null,
@@ -5875,7 +5866,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0311",
+        "option_id":"OPT0309",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5884,7 +5875,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0312",
+        "option_id":"OPT0310",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5911,7 +5902,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0302",
+        "option_id":"OPT0300",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -5920,7 +5911,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0303",
+        "option_id":"OPT0301",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -5929,7 +5920,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0304",
+        "option_id":"OPT0302",
         "option":"Elf Bow",
         "points":2.0,
         "type":"bow",
@@ -5938,7 +5929,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0305",
+        "option_id":"OPT0303",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -5947,7 +5938,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0306",
+        "option_id":"OPT0304",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -5956,13 +5947,76 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0307",
+        "option_id":"OPT0305",
         "option":"King's Guard Upgrade",
         "points":1.0,
         "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rivendell] wood_elf_warrior",
+    "faction_type":"Good Army",
+    "faction":"Rivendell",
+    "profile_origin":"Lothlorien",
+    "name":"Wood Elf Warrior",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0490",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0491",
+        "option":"Elf Bow",
+        "points":2.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0492",
+        "option":"Throwing Daggers",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0493",
+        "option":"Wood Elf Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0494",
+        "option":"Noldorin Exiles Upgrade",
+        "points":1.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
       }
     ]
   },
@@ -5983,7 +6037,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0334",
+        "option_id":"OPT0332",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6010,7 +6064,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0346",
+        "option_id":"OPT0344",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -6019,7 +6073,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0347",
+        "option_id":"OPT0345",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6028,7 +6082,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0348",
+        "option_id":"OPT0346",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -6037,7 +6091,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0349",
+        "option_id":"OPT0347",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6091,7 +6145,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0321",
+        "option_id":"OPT0319",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -6100,7 +6154,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0322",
+        "option_id":"OPT0320",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6109,7 +6163,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0323",
+        "option_id":"OPT0321",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6118,7 +6172,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0324",
+        "option_id":"OPT0322",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -6145,7 +6199,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0350",
+        "option_id":"OPT0348",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6154,7 +6208,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0351",
+        "option_id":"OPT0349",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6163,7 +6217,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0352",
+        "option_id":"OPT0350",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -6190,7 +6244,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0318",
+        "option_id":"OPT0316",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6217,7 +6271,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0329",
+        "option_id":"OPT0327",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6244,7 +6298,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0320",
+        "option_id":"OPT0318",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6298,7 +6352,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0330",
+        "option_id":"OPT0328",
         "option":"Royal Standard of Rohan",
         "points":50.0,
         "type":null,
@@ -6307,7 +6361,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0331",
+        "option_id":"OPT0329",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6334,7 +6388,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0332",
+        "option_id":"OPT0330",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6343,7 +6397,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0333",
+        "option_id":"OPT0331",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6370,7 +6424,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0313",
+        "option_id":"OPT0311",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6379,7 +6433,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0314",
+        "option_id":"OPT0312",
         "option":"Bow",
         "points":5.0,
         "type":"bow",
@@ -6388,7 +6442,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0315",
+        "option_id":"OPT0313",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -6397,7 +6451,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0316",
+        "option_id":"OPT0314",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6406,7 +6460,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0317",
+        "option_id":"OPT0315",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -6433,7 +6487,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0319",
+        "option_id":"OPT0317",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -6487,7 +6541,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0325",
+        "option_id":"OPT0323",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -6496,7 +6550,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0326",
+        "option_id":"OPT0324",
         "option":"Armour",
         "points":5.0,
         "type":"armour",
@@ -6505,7 +6559,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0327",
+        "option_id":"OPT0325",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6514,7 +6568,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0328",
+        "option_id":"OPT0326",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -6595,7 +6649,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0335",
+        "option_id":"OPT0333",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -6604,7 +6658,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0336",
+        "option_id":"OPT0334",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -6613,7 +6667,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0337",
+        "option_id":"OPT0335",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -6667,7 +6721,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0338",
+        "option_id":"OPT0336",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -6676,7 +6730,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0339",
+        "option_id":"OPT0337",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -6685,7 +6739,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0340",
+        "option_id":"OPT0338",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -6694,7 +6748,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0341",
+        "option_id":"OPT0339",
         "option":"Westfold Redshield Upgrade",
         "points":1.0,
         "type":"upgrade",
@@ -6721,7 +6775,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0343",
+        "option_id":"OPT0341",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -6730,7 +6784,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0344",
+        "option_id":"OPT0342",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -6739,7 +6793,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0345",
+        "option_id":"OPT0343",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -6766,7 +6820,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0342",
+        "option_id":"OPT0340",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -6793,7 +6847,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0353",
+        "option_id":"OPT0351",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -6802,7 +6856,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0354",
+        "option_id":"OPT0352",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -6811,7 +6865,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0355",
+        "option_id":"OPT0353",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -6820,7 +6874,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0356",
+        "option_id":"OPT0354",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -6829,7 +6883,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0357",
+        "option_id":"OPT0355",
         "option":"Helminga",
         "points":1.0,
         "type":null,
@@ -6838,7 +6892,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0358",
+        "option_id":"OPT0356",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -6919,7 +6973,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0359",
+        "option_id":"OPT0357",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -6928,7 +6982,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0360",
+        "option_id":"OPT0358",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -6937,7 +6991,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0361",
+        "option_id":"OPT0359",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -6991,7 +7045,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0359",
+        "option_id":"OPT0357",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -7000,7 +7054,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0360",
+        "option_id":"OPT0358",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -7009,7 +7063,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0361",
+        "option_id":"OPT0359",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -7063,7 +7117,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0362",
+        "option_id":"OPT0360",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7090,7 +7144,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0376",
+        "option_id":"OPT0374",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -7099,7 +7153,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0377",
+        "option_id":"OPT0375",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -7108,7 +7162,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0378",
+        "option_id":"OPT0376",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7117,7 +7171,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0379",
+        "option_id":"OPT0377",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7198,7 +7252,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0370",
+        "option_id":"OPT0368",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7225,7 +7279,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0363",
+        "option_id":"OPT0361",
         "option":"Swap Glaive for Armoured Horse & Sword",
         "points":25.0,
         "type":null,
@@ -7234,7 +7288,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0364",
+        "option_id":"OPT0362",
         "option":"Bow",
         "points":5.0,
         "type":null,
@@ -7243,7 +7297,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0365",
+        "option_id":"OPT0363",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -7270,7 +7324,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0366",
+        "option_id":"OPT0364",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7308,11 +7362,56 @@
     ]
   },
   {
-    "model_id":"[the_easterlings] easterling_kataphrakts",
+    "model_id":"[the_easterlings] black_dragon_kataphrakt",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
-    "name":"Easterling Kataphrakts",
+    "name":"Black Dragon Kataphrakt",
+    "unit_type":"Warrior",
+    "base_points":16,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":16,
+    "pointsTotal":16,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0495",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0496",
+        "option":"War Drum (Easterling)",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0497",
+        "option":"Black Dragon Upgrade",
+        "points":2.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_easterlings] easterling_kataphrakt",
+    "faction_type":"Evil Army",
+    "faction":"The Easterlings",
+    "profile_origin":"The Easterlings",
+    "name":"Easterling Kataphrakt",
     "unit_type":"Warrior",
     "base_points":14,
     "default_bow":false,
@@ -7324,7 +7423,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0367",
+        "option_id":"OPT0365",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -7333,7 +7432,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0368",
+        "option_id":"OPT0366",
         "option":"War Drum (Easterling)",
         "points":15.0,
         "type":null,
@@ -7342,7 +7441,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0369",
+        "option_id":"OPT0367",
         "option":"Black Dragon Upgrade",
         "points":2.0,
         "type":"upgrade",
@@ -7380,6 +7479,69 @@
     ]
   },
   {
+    "model_id":"[the_easterlings] black_dragon_warrior",
+    "faction_type":"Evil Army",
+    "faction":"The Easterlings",
+    "profile_origin":"The Easterlings",
+    "name":"Black Dragon Warrior",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0498",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0499",
+        "option":"Black Dragon Upgrade",
+        "points":2.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0500",
+        "option":"Pike",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0501",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0502",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_easterlings] easterling_warrior",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
@@ -7396,7 +7558,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0371",
+        "option_id":"OPT0369",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -7405,7 +7567,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0372",
+        "option_id":"OPT0370",
         "option":"Black Dragon Upgrade",
         "points":2.0,
         "type":"upgrade",
@@ -7414,7 +7576,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0373",
+        "option_id":"OPT0371",
         "option":"Pike",
         "points":1.0,
         "type":null,
@@ -7423,7 +7585,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0374",
+        "option_id":"OPT0372",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -7432,7 +7594,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0375",
+        "option_id":"OPT0373",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -7459,7 +7621,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0391",
+        "option_id":"OPT0389",
         "option":"Cart",
         "points":25.0,
         "type":null,
@@ -7468,7 +7630,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0392",
+        "option_id":"OPT0390",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7495,7 +7657,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0380",
+        "option_id":"OPT0378",
         "option":"Anduril Flame of the West",
         "points":40.0,
         "type":null,
@@ -7504,7 +7666,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0381",
+        "option_id":"OPT0379",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7513,7 +7675,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0382",
+        "option_id":"OPT0380",
         "option":"Armour",
         "points":5.0,
         "type":"armour",
@@ -7522,7 +7684,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0383",
+        "option_id":"OPT0381",
         "option":"Bow",
         "points":5.0,
         "type":null,
@@ -7531,7 +7693,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0384",
+        "option_id":"OPT0382",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7558,7 +7720,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0393",
+        "option_id":"OPT0391",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7585,7 +7747,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0394",
+        "option_id":"OPT0392",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7594,7 +7756,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0395",
+        "option_id":"OPT0393",
         "option":"Armour",
         "points":5.0,
         "type":"armour",
@@ -7603,7 +7765,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0396",
+        "option_id":"OPT0394",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7630,7 +7792,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0385",
+        "option_id":"OPT0383",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7639,7 +7801,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0386",
+        "option_id":"OPT0384",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7648,7 +7810,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0387",
+        "option_id":"OPT0385",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -7675,7 +7837,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0388",
+        "option_id":"OPT0386",
         "option":"Mithril Coat",
         "points":15.0,
         "type":null,
@@ -7684,7 +7846,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0389",
+        "option_id":"OPT0387",
         "option":"Sting",
         "points":5.0,
         "type":null,
@@ -7693,7 +7855,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0390",
+        "option_id":"OPT0388",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7720,7 +7882,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0399",
+        "option_id":"OPT0397",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7747,7 +7909,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0397",
+        "option_id":"OPT0395",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7774,7 +7936,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0398",
+        "option_id":"OPT0396",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -7790,7 +7952,7 @@
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
     "name":"Smeagol",
-    "unit_type":"Independent Hero",
+    "unit_type":"Independent Hero*",
     "base_points":30,
     "default_bow":false,
     "inc_bow_count":false,
@@ -7798,7 +7960,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -7817,7 +7979,7 @@
     "faction":"The Fellowship",
     "profile_origin":"The Fellowship",
     "name":"Bill the Pony",
-    "unit_type":"Independent Hero",
+    "unit_type":"Independent Hero*",
     "base_points":25,
     "default_bow":false,
     "inc_bow_count":false,
@@ -7825,7 +7987,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -7855,7 +8017,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0412",
+        "option_id":"OPT0410",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7864,7 +8026,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0413",
+        "option_id":"OPT0411",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -7891,7 +8053,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0406",
+        "option_id":"OPT0404",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -7972,7 +8134,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0404",
+        "option_id":"OPT0402",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -7981,7 +8143,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0405",
+        "option_id":"OPT0403",
         "option":"Lance",
         "points":5.0,
         "type":null,
@@ -8008,7 +8170,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0407",
+        "option_id":"OPT0405",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -8017,7 +8179,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0408",
+        "option_id":"OPT0406",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -8026,7 +8188,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0409",
+        "option_id":"OPT0407",
         "option":"Armoured Horse",
         "points":8.0,
         "type":"mount",
@@ -8035,7 +8197,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0410",
+        "option_id":"OPT0408",
         "option":"Lance",
         "points":1.0,
         "type":null,
@@ -8062,7 +8224,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0400",
+        "option_id":"OPT0398",
         "option":"Elven Cloak",
         "points":25.0,
         "type":null,
@@ -8089,7 +8251,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0411",
+        "option_id":"OPT0409",
         "option":"Replace Pike with Banner",
         "points":25.0,
         "type":null,
@@ -8116,7 +8278,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0401",
+        "option_id":"OPT0399",
         "option":"War horn",
         "points":30.0,
         "type":null,
@@ -8125,7 +8287,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0402",
+        "option_id":"OPT0400",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -8134,7 +8296,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0403",
+        "option_id":"OPT0401",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -8269,7 +8431,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0422",
+        "option_id":"OPT0420",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -8296,7 +8458,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0414",
+        "option_id":"OPT0412",
         "option":"Swap Glaive for Armoured Horse & Sword",
         "points":25.0,
         "type":null,
@@ -8305,7 +8467,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0415",
+        "option_id":"OPT0413",
         "option":"Bow",
         "points":5.0,
         "type":null,
@@ -8314,7 +8476,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0416",
+        "option_id":"OPT0414",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -8341,7 +8503,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0417",
+        "option_id":"OPT0415",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -8379,11 +8541,11 @@
     ]
   },
   {
-    "model_id":"[the_host_of_the_dragon_emperor] easterling_kataphrakts",
+    "model_id":"[the_host_of_the_dragon_emperor] black_dragon_kataphrakt",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
     "profile_origin":"The Easterlings",
-    "name":"Easterling Kataphrakts",
+    "name":"Black Dragon Kataphrakt",
     "unit_type":"Warrior",
     "base_points":14,
     "default_bow":false,
@@ -8395,7 +8557,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0418",
+        "option_id":"OPT0503",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -8404,7 +8566,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0419",
+        "option_id":"OPT0504",
         "option":"War Drum (Easterling)",
         "points":15.0,
         "type":null,
@@ -8413,7 +8575,52 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0420",
+        "option_id":"OPT0505",
+        "option":"Black Dragon Upgrade - FREE",
+        "points":0.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_kataphrakt",
+    "faction_type":"Evil LL",
+    "faction":"The Host of the Dragon Emperor",
+    "profile_origin":"The Easterlings",
+    "name":"Easterling Kataphrakt",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0416",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0417",
+        "option":"War Drum (Easterling)",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0418",
         "option":"Black Dragon Upgrade",
         "points":2.0,
         "type":"upgrade",
@@ -8422,7 +8629,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0421",
+        "option_id":"OPT0419",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
         "type":"upgrade",
@@ -8460,6 +8667,69 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] black_dragon_warrior",
+    "faction_type":"Evil LL",
+    "faction":"The Host of the Dragon Emperor",
+    "profile_origin":"The Easterlings",
+    "name":"Black Dragon Warrior",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0506",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0507",
+        "option":"Pike",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0508",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0509",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0510",
+        "option":"Black Dragon Upgrade - FREE",
+        "points":0.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_host_of_the_dragon_emperor] easterling_warrior",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
@@ -8476,7 +8746,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0423",
+        "option_id":"OPT0421",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -8485,7 +8755,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0424",
+        "option_id":"OPT0422",
         "option":"Black Dragon Upgrade",
         "points":2.0,
         "type":"upgrade",
@@ -8494,7 +8764,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0425",
+        "option_id":"OPT0423",
         "option":"Pike",
         "points":1.0,
         "type":null,
@@ -8503,7 +8773,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0426",
+        "option_id":"OPT0424",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -8512,7 +8782,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0427",
+        "option_id":"OPT0425",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -8521,7 +8791,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0428",
+        "option_id":"OPT0426",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
         "type":"upgrade",
@@ -8602,7 +8872,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0435",
+        "option_id":"OPT0433",
         "option":"Throwing Axes",
         "points":5.0,
         "type":null,
@@ -8611,7 +8881,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0436",
+        "option_id":"OPT0434",
         "option":"Two-Handed Axe",
         "points":5.0,
         "type":null,
@@ -8665,7 +8935,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0432",
+        "option_id":"OPT0430",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -8674,7 +8944,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0433",
+        "option_id":"OPT0431",
         "option":"Throwing Axes",
         "points":5.0,
         "type":null,
@@ -8683,7 +8953,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0434",
+        "option_id":"OPT0432",
         "option":"Two-Handed Axe",
         "points":5.0,
         "type":null,
@@ -8791,7 +9061,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0445",
+        "option_id":"OPT0443",
         "option":"Heathguard Upgrade",
         "points":2.0,
         "type":"upgrade",
@@ -8818,7 +9088,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0437",
+        "option_id":"OPT0435",
         "option":"Dwarf Longbow",
         "points":1.0,
         "type":"bow",
@@ -8827,7 +9097,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0438",
+        "option_id":"OPT0436",
         "option":"Throwing Axes",
         "points":1.0,
         "type":null,
@@ -8836,7 +9106,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0439",
+        "option_id":"OPT0437",
         "option":"Two-Handed Axe",
         "points":1.0,
         "type":null,
@@ -8863,7 +9133,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0440",
+        "option_id":"OPT0438",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -8872,7 +9142,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0441",
+        "option_id":"OPT0439",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -8881,7 +9151,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0442",
+        "option_id":"OPT0440",
         "option":"Dwarf Bow",
         "points":1.0,
         "type":"bow",
@@ -8890,7 +9160,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0443",
+        "option_id":"OPT0441",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -8899,7 +9169,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0444",
+        "option_id":"OPT0442",
         "option":"Two-Handed Axe & Dagger",
         "points":1.0,
         "type":null,
@@ -8926,7 +9196,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0429",
+        "option_id":"OPT0427",
         "option":"Dwarf Engineer Captain",
         "points":40.0,
         "type":null,
@@ -8935,7 +9205,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0430",
+        "option_id":"OPT0428",
         "option":"Flaming Ammunition",
         "points":20.0,
         "type":null,
@@ -8944,7 +9214,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0431",
+        "option_id":"OPT0429",
         "option":"Additional Crew",
         "points":7.0,
         "type":null,
@@ -8998,7 +9268,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0462",
+        "option_id":"OPT0460",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -9052,7 +9322,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0452",
+        "option_id":"OPT0450",
         "option":"Throwing Axes",
         "points":5.0,
         "type":null,
@@ -9061,7 +9331,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0453",
+        "option_id":"OPT0451",
         "option":"Two-Handed Axe",
         "points":5.0,
         "type":null,
@@ -9115,7 +9385,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0449",
+        "option_id":"OPT0447",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -9124,7 +9394,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0450",
+        "option_id":"OPT0448",
         "option":"Throwing Axes",
         "points":5.0,
         "type":null,
@@ -9133,7 +9403,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0451",
+        "option_id":"OPT0449",
         "option":"Two-Handed Axe",
         "points":5.0,
         "type":null,
@@ -9268,7 +9538,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0454",
+        "option_id":"OPT0452",
         "option":"Dwarf Longbow",
         "points":1.0,
         "type":"bow",
@@ -9277,7 +9547,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0455",
+        "option_id":"OPT0453",
         "option":"Throwing Axes",
         "points":1.0,
         "type":null,
@@ -9286,7 +9556,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0456",
+        "option_id":"OPT0454",
         "option":"Two-Handed Axe",
         "points":1.0,
         "type":null,
@@ -9313,7 +9583,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0457",
+        "option_id":"OPT0455",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -9322,7 +9592,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0458",
+        "option_id":"OPT0456",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -9331,7 +9601,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0459",
+        "option_id":"OPT0457",
         "option":"Dwarf Bow",
         "points":1.0,
         "type":"bow",
@@ -9340,7 +9610,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0460",
+        "option_id":"OPT0458",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -9349,7 +9619,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0461",
+        "option_id":"OPT0459",
         "option":"Two-Handed Axe & Dagger",
         "points":1.0,
         "type":null,
@@ -9376,7 +9646,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT0446",
+        "option_id":"OPT0444",
         "option":"Dwarf Engineer Captain",
         "points":40.0,
         "type":null,
@@ -9385,7 +9655,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0447",
+        "option_id":"OPT0445",
         "option":"Flaming Ammunition",
         "points":20.0,
         "type":null,
@@ -9394,7 +9664,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0448",
+        "option_id":"OPT0446",
         "option":"Additional Crew",
         "points":7.0,
         "type":null,
@@ -9421,7 +9691,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0464",
+        "option_id":"OPT0461",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -9430,7 +9700,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0465",
+        "option_id":"OPT0462",
         "option":"Anduril Flame of the West - FREE",
         "points":0.0,
         "type":null,
@@ -9457,7 +9727,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0466",
+        "option_id":"OPT0463",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -9484,7 +9754,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0467",
+        "option_id":"OPT0464",
         "option":"Armour",
         "points":5.0,
         "type":"armour",
@@ -9493,7 +9763,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0468",
+        "option_id":"OPT0465",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -9601,7 +9871,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0469",
+        "option_id":"OPT0466",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -9610,7 +9880,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0470",
+        "option_id":"OPT0467",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -9619,7 +9889,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0471",
+        "option_id":"OPT0468",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -9646,7 +9916,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT0486",
+        "option_id":"OPT0483",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -9655,7 +9925,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0487",
+        "option_id":"OPT0484",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -9709,7 +9979,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0488",
+        "option_id":"OPT0485",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -9718,7 +9988,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0489",
+        "option_id":"OPT0486",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -9727,7 +9997,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0490",
+        "option_id":"OPT0487",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -9754,7 +10024,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0484",
+        "option_id":"OPT0481",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -9763,7 +10033,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0485",
+        "option_id":"OPT0482",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -9790,7 +10060,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0474",
+        "option_id":"OPT0471",
         "option":"Horse",
         "points":15.0,
         "type":"mount",
@@ -9799,7 +10069,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0475",
+        "option_id":"OPT0472",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -9808,7 +10078,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0476",
+        "option_id":"OPT0473",
         "option":"War Spear",
         "points":5.0,
         "type":null,
@@ -9835,7 +10105,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0472",
+        "option_id":"OPT0469",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -9844,7 +10114,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0473",
+        "option_id":"OPT0470",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -9898,7 +10168,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0477",
+        "option_id":"OPT0474",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -9907,7 +10177,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0478",
+        "option_id":"OPT0475",
         "option":"Bow with Poisoned Arrows",
         "points":1.0,
         "type":"bow",
@@ -9916,7 +10186,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0479",
+        "option_id":"OPT0476",
         "option":"War Spear",
         "points":1.0,
         "type":null,
@@ -9970,7 +10240,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0491",
+        "option_id":"OPT0488",
         "option":"Bow with Poisoned Arrows",
         "points":0.0,
         "type":"bow",
@@ -9979,7 +10249,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0492",
+        "option_id":"OPT0489",
         "option":"Twin Blades",
         "points":0.0,
         "type":null,
@@ -10033,7 +10303,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0480",
+        "option_id":"OPT0477",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -10042,7 +10312,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0481",
+        "option_id":"OPT0478",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -10051,7 +10321,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0482",
+        "option_id":"OPT0479",
         "option":"Bow with Poisoned Arrows",
         "points":1.0,
         "type":"bow",
@@ -10060,7 +10330,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0483",
+        "option_id":"OPT0480",
         "option":"Spear",
         "points":1.0,
         "type":null,

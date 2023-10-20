@@ -298,7 +298,7 @@ export default function App() {
                       ? mesbg_data
                           .filter(
                             (data) =>
-                              data.faction == factionSelection[f_type] && data.unit_type != "Warrior"
+                              data.faction == factionSelection[f_type] && !['Indenpendent Hero*', 'Warrior'].includes(data.unit_type)
                           )
                           .map((row) => (
                             <SelectionUnit
@@ -459,7 +459,7 @@ export default function App() {
                     />
                   )
                 )}
-              {(warband.hero != null && warband.hero.unit_type != "Independent Hero" && warband.hero.unit_type != "Siege Engine") &&
+              {(warband.hero != null && !['Independent Hero', 'Independent Hero*', 'Siege Enginge'].includes(warband.hero.unit_type))  &&
                 <Button
                   onClick={() => handleNewWarrior(warband.num)}
                   variant={"info"}
