@@ -1,8 +1,96 @@
 {
+  "[angmar] angmar_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] angmar_orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] barrow-wight":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] buhrdur":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] gulavhar":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] shade":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[angmar] the_dwimmerlaik":[
     {
       "valid_warband_units":[
-
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
       ],
       "special_unit_options":[
 
@@ -12,7 +100,23 @@
   "[angmar] the_tainted":[
     {
       "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
 
+      ]
+    },
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
       ],
       "special_unit_options":[
 
@@ -22,7 +126,11 @@
   "[angmar] witch_king":[
     {
       "valid_warband_units":[
-
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
       ],
       "special_unit_options":[
 

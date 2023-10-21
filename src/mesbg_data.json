@@ -108,6 +108,33 @@
     ]
   },
   {
+    "model_id":"[angmar] gulavhar",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Gulavhar",
+    "unit_type":"Hero of Valour",
+    "base_points":200,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":200,
+    "pointsTotal":200,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[angmar] the_dwimmerlaik",
     "faction_type":"Evil Army",
     "faction":"Angmar",
@@ -209,6 +236,357 @@
         "option":"Horse",
         "points":10.0,
         "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] buhrdur",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Buhrdur",
+    "unit_type":"Hero of Valour",
+    "base_points":110,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":110,
+    "pointsTotal":110,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] shade",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Shade",
+    "unit_type":"Hero of Fortitude",
+    "base_points":100,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] barrow-wight",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Barrow-wight",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] angmar_orc_captain",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Angmar Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0511",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0512",
+        "option":"Orc bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0513",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] angmar_orc_shaman",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Angmar Orc Shaman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0514",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] cave_troll",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Cave Troll",
+    "unit_type":"Warrior",
+    "base_points":75,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] dead_marsh_spectre",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Dead Marsh Spectre",
+    "unit_type":"Warrior",
+    "base_points":15,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":15,
+    "pointsTotal":15,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] angmar_warg_rider",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Angmar Warg Rider",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0520",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0521",
+        "option":"Orc bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0522",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0523",
+        "option":"Throwing Spears",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] wild_warg",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Wild Warg",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] angmar_orc_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Angmar Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0515",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0516",
+        "option":"Orc bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0517",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0518",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0519",
+        "option":"Two-Handed Weapon",
+        "points":1.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
