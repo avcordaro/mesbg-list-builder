@@ -55,6 +55,20 @@
       ]
     }
   ],
+  "[angmar] golfimbul":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[angmar] gulavhar":[
     {
       "valid_warband_units":[
@@ -110,6 +124,20 @@
 
       ]
     },
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[angmar] wild_warg_chieftain":[
     {
       "valid_warband_units":[
         "[angmar] cave_troll",
@@ -1742,6 +1770,225 @@
         "[mordor] morannon_orc",
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] ashrak":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] cave_drake":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] dragon":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] druzhag":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] durburz":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] groblog":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] moria_blackshield_captain":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] moria_blackshield_shaman":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] moria_goblin_captain":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] moria_goblin_shaman":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] the_balrog":[
+    {
+      "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] wild_warg",
+        "[moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[moria] the_watcher_in_the_water":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_unit_options":[
 

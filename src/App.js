@@ -298,7 +298,7 @@ export default function App() {
                       ? mesbg_data
                           .filter(
                             (data) =>
-                              data.faction == factionSelection[f_type] && !['Indenpendent Hero*', 'Warrior'].includes(data.unit_type)
+                              data.faction == factionSelection[f_type] && !['Independent Hero*', 'Warrior'].includes(data.unit_type)
                           )
                           .map((row) => (
                             <SelectionUnit
