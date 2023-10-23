@@ -59,7 +59,9 @@ export function SelectionUnit({
     let newRoster = { ...roster };
     let newUnitData = { ...unitData };
     newUnitData["id"] = uuid();
-
+    if (unitData.unique) {
+      newRoster.uniqueModels.push(unitData.model_id);
+    }
     if (heroSelection) {
       // If a hero unit is selected, it is set as the warband's hero leader. The max warband size is also updated.
       newRoster.warbands[warbandNumFocus].hero = newUnitData;

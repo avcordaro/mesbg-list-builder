@@ -42,8 +42,30 @@ df_merged['points'].fillna("None", inplace=True)
 df_merged['min'].fillna(0, inplace=True)
 df_merged['max'].fillna(1, inplace=True)
 df_merged['opt_quantity'].fillna(0, inplace=True)
-df_merged_options = df_merged.groupby(['model_id', 'faction_type', 'faction', 'profile_origin', 'name', 'unit_type', 'base_points', 'default_bow', 'inc_bow_count', 'siege_crew', 'quantity', 'pointsPerUnit', 'pointsTotal', 'warband_size'])\
-  .apply(lambda x: x[['option_id', 'option', 'points', 'type', 'min', 'max', 'opt_quantity']].to_dict(orient='records')).reset_index(name='options')
+df_merged_options = df_merged.groupby([
+  'model_id', 
+  'faction_type', 
+  'faction', 
+  'profile_origin', 
+  'name', 'unit_type', 
+  'base_points', 
+  'default_bow', 
+  'unique', 
+  'inc_bow_count', 
+  'siege_crew', 
+  'quantity', 
+  'pointsPerUnit', 
+  'pointsTotal', 
+  'warband_size'
+]).apply(lambda x: x[[
+  'option_id', 
+  'option', 
+  'points', 
+  'type', 
+  'min', 
+  'max', 
+  'opt_quantity'
+]].to_dict(orient='records')).reset_index(name='options')
 df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
 json_dict = df_merged_options.to_json(orient='records', indent=2)
 

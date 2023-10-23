@@ -53,7 +53,7 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: []});
+  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: [], uniqueModels: []});
   const [displaySelection, setDisplaySelection] = useState(false);
   const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
@@ -181,8 +181,16 @@ export default function App() {
   };
 
   const handleDeleteWarband = (warbandNum) => {
-    // Substract the warband's points, bows and unit counts from the overall roster
     let newRoster = { ...roster };
+    // Handle removal of any unique heroes (who can only be selected once in an army)
+    let model_ids = newRoster.warbands[warbandNum - 1].units.map(data => data.model_id);
+    if (newRoster.warbands[warbandNum - 1].hero) {
+      model_ids.push(newRoster.warbands[warbandNum - 1].hero.model_id);
+    }
+    let newUniqueModels = newRoster.uniqueModels.filter(data => !model_ids.includes(data));
+    newRoster.uniqueModels = newUniqueModels;
+
+    // Substract the warband's points, bows and unit counts from the overall roster
     newRoster.warbands.map((warband) => {
       if (warband.num == warbandNum) {
         newRoster['points'] = newRoster['points'] - warband['points']
@@ -299,6 +307,7 @@ export default function App() {
                           .filter(
                             (data) =>
                               data.faction == factionSelection[f_type] && !['Independent Hero*', 'Warrior'].includes(data.unit_type)
+                              && !(data.unique && roster.uniqueModels.includes(data.model_id))
                           )
                           .map((row) => (
                             <SelectionUnit
@@ -318,6 +327,7 @@ export default function App() {
                           .filter(
                             (data) =>
                               hero_constraint_data[roster.warbands[warbandNumFocus].hero.model_id][0]['valid_warband_units'].includes(data.model_id)
+                              && !(data.unique && roster.uniqueModels.includes(data.model_id))
                           )
                           .map((row) => (
                             <SelectionUnit
