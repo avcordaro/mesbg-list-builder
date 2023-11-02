@@ -266,7 +266,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.4.0 <i>(updated 23/10/23)</i>
+                version 2.4.1 <i>(updated 02/11/23)</i>
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
