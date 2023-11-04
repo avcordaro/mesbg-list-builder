@@ -134,7 +134,7 @@ export function OptionWarrior({
       type="switch"
       label={option.option + " (" + option.points + " points)"}
       checked={option.opt_quantity == 1}
-      disabled={(option.min == option.max) || (option.type == "upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_unit_options'].includes(option.option)) }
+      disabled={(option.min == option.max) || !roster.warbands[warbandNum - 1].hero || (option.type == "upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_unit_options'].includes(option.option)) }
       onChange={handleToggle}
     />
   );
