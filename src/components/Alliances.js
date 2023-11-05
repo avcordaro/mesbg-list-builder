@@ -10,7 +10,7 @@ export function Alliances({ showAlliances, setShowAlliances, factionList }) {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <p className="pb-3">
-          Historical alliances keep their army bonuses, whereas Convenient and Impossible allies lose all army bonuses.
+          Historical allies keep their army bonuses, whereas Convenient and Impossible allies lose all army bonuses.
         </p>
         {factionList.map((f) => {
           return (

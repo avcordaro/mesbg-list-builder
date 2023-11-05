@@ -361,7 +361,7 @@ export default function App() {
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
                 <h5>Alliance Level:</h5> 
                 <h5><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h5>
-                <Button variant="light" className="ms-auto" onClick={() => setShowAlliances(true)} disabled={!factionList.length}><LuSwords /> Alliances</Button>
+                <Button variant="light" className="ms-auto border" onClick={() => setShowAlliances(true)} disabled={!factionList.length || factionType.includes('LL')}><LuSwords /> Alliances</Button>
               </Stack>
               <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
                   Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) ? <FcCheckmark /> : <b><RxCross1 className="text-danger"/></b>}
