@@ -119,13 +119,14 @@ export function SelectionUnit({
       <Stack direction="horizontal" gap={3}>
         <img
           className="profile"
-          src={require(
-            "../images/" +
-              unitData.profile_origin +
-              "/pictures/" +
-              unitData.name +
-              ".png",
-          )}
+          src={(() => {
+            try {
+              return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
+            } 
+            catch (e) {
+              return require("../images/default.png")
+            }
+          })()}
         />
         <p>
           <b>{unitData.name}</b>

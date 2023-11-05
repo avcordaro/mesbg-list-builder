@@ -19,11 +19,14 @@ import { DefaultWarriorUnit } from "./components/DefaultWarriorUnit.js"
 import { RosterHero } from "./components/RosterHero.js"
 import { RosterWarrior } from "./components/RosterWarrior.js"
 import { ModalRosterTable } from "./components/ModalRosterTable.js"
+import { Alliances } from "./components/Alliances.js"
 import React, { useState, useEffect } from "react";
 import { FaPlus } from "react-icons/fa";  
 import { FaTableList } from "react-icons/fa6";  
 import { MdDelete } from "react-icons/md";
 import { FcCheckmark } from "react-icons/fc";
+import { LuSwords } from "react-icons/lu";
+import { RxCross1 } from "react-icons/rx";
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -66,6 +69,7 @@ export default function App() {
   const [factionBowCounts, setFactionBowCounts] = useState({});
   const [factionModelCounts, setFactionModelCounts] = useState({});
   const [allianceLevel, setAllianceLevel] = useState("n/a");
+  const [showAlliances, setShowAlliances] = useState(false);
   
   useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
@@ -266,7 +270,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.5.0 (updated 04-Nov-23)
+                version 2.6.0 (updated 05-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -357,9 +361,10 @@ export default function App() {
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
                 <h5>Alliance Level:</h5> 
                 <h5><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h5>
+                <Button variant="light" className="ms-auto" onClick={() => setShowAlliances(true)} disabled={!factionList.length}><LuSwords /> Alliances</Button>
               </Stack>
               <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
-                  Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) && <FcCheckmark />}
+                  Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) ? <FcCheckmark /> : <b><RxCross1 className="text-danger"/></b>}
               </h5>
               <hr/>
               {factionList.map((f) => (
@@ -527,6 +532,7 @@ export default function App() {
         </Modal.Body>
       </Modal>
       <ModalRosterTable allianceLevel={allianceLevel} allianceColour={allianceColours[allianceLevel]} roster={roster} showRosterTable={showRosterTable} setShowRosterTable={setShowRosterTable} />
+      <Alliances showAlliances={showAlliances} setShowAlliances={setShowAlliances} factionList={factionList} />
     </div>
   );
 }
