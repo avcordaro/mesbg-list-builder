@@ -313,6 +313,144 @@
       ]
     }
   ],
+  "[corsairs_of_umbar] black_numenorean_marshall":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] corsair_bo'sun":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] corsair_captain":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] dalamyr,_fleetmaster_of_umbar":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] delgamar,_gatemaster_of_umbar":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] hasharin":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[corsairs_of_umbar] the_knight_of_umbar":[
+    {
+      "valid_warband_units":[
+        "[corsairs_of_umbar] corsair_arbalester",
+        "[corsairs_of_umbar] corsair_of_umbar",
+        "[corsairs_of_umbar] corsair_reaver",
+        "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[far_harad] mahud_king":[
+    {
+      "valid_warband_units":[
+        "[far_harad] half_troll",
+        "[far_harad] mahud_raider",
+        "[far_harad] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[far_harad] mahud_tribesmaster":[
+    {
+      "valid_warband_units":[
+        "[far_harad] half_troll",
+        "[far_harad] mahud_raider",
+        "[far_harad] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[far_harad] the_mumak_war_leader":[
+    {
+      "valid_warband_units":[
+        "[far_harad] half_troll",
+        "[far_harad] mahud_warrior",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[far_harad] war_mumak_of_far_harad":[
+    {
+      "valid_warband_units":[
+        "[far_harad] half_troll",
+        "[far_harad] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[halls_of_thranduil] thranduil":[
     {
       "valid_warband_units":[
@@ -827,7 +965,7 @@
   "[minas_tirith] anborn":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -843,7 +981,7 @@
   "[minas_tirith] aragorn,_king_elessar":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -859,7 +997,7 @@
   "[minas_tirith] beregond":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -875,7 +1013,7 @@
   "[minas_tirith] boromir":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -891,7 +1029,7 @@
   "[minas_tirith] captain_of_minas_tirith":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -907,7 +1045,7 @@
   "[minas_tirith] cirion":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -923,7 +1061,7 @@
   "[minas_tirith] damrod":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -939,7 +1077,7 @@
   "[minas_tirith] denethor":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -955,7 +1093,7 @@
   "[minas_tirith] faramir":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -971,7 +1109,7 @@
   "[minas_tirith] gandalf_the_white":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -987,7 +1125,7 @@
   "[minas_tirith] hurin":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1003,7 +1141,7 @@
   "[minas_tirith] ingold":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1019,7 +1157,7 @@
   "[minas_tirith] irolas":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1035,7 +1173,7 @@
   "[minas_tirith] king_of_men":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1051,7 +1189,7 @@
   "[minas_tirith] knight_of_the_white_tower":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1067,7 +1205,7 @@
   "[minas_tirith] mablung":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1083,7 +1221,7 @@
   "[minas_tirith] madril":[
     {
       "valid_warband_units":[
-        "[minas_tirith] pippin",
+        "[minas_tirith] peregrin_took",
         "[minas_tirith] knight_of_minas_tirith",
         "[minas_tirith] guard_of_the_fountain_court",
         "[minas_tirith] citadel_guard",
@@ -1096,7 +1234,7 @@
       ]
     }
   ],
-  "[minas_tirith] pippin":[
+  "[minas_tirith] peregrin_took":[
     {
       "valid_warband_units":[
 
@@ -2132,7 +2270,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2149,7 +2287,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2166,7 +2304,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2183,7 +2321,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2200,7 +2338,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2217,7 +2355,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2234,7 +2372,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2251,7 +2389,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2268,7 +2406,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2285,7 +2423,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2312,7 +2450,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2329,7 +2467,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2346,7 +2484,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2358,7 +2496,7 @@
       ]
     }
   ],
-  "[rohan] merry":[
+  "[rohan] meriadoc_brandybuck":[
     {
       "valid_warband_units":[
 
@@ -2373,7 +2511,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -2390,7 +2528,7 @@
       "valid_warband_units":[
         "[rohan] aldor",
         "[rohan] haleth",
-        "[rohan] merry",
+        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
@@ -3149,7 +3287,37 @@
       ]
     }
   ],
+  "[the_serpent_horde] haradrim_taskmaster":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[the_serpent_horde] hasharin":[
+    {
+      "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] raza,_fang_of_the_serpent":[
     {
       "valid_warband_units":[
         "[the_serpent_horde] serpent_rider",
@@ -3200,6 +3368,18 @@
         "[the_serpent_horde] serpent_rider",
         "[the_serpent_horde] haradrim_raider",
         "[the_serpent_horde] abrakhan_merchant_guard",
+        "[the_serpent_horde] watcher_of_karna",
+        "[the_serpent_horde] serpent_guard",
+        "[the_serpent_horde] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_serpent_horde] war_mumak_of_harad":[
+    {
+      "valid_warband_units":[
         "[the_serpent_horde] watcher_of_karna",
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
@@ -3464,6 +3644,30 @@
         "[the_shire] hobbit_militia",
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[variags_of_khand] khandish_chieftain":[
+    {
+      "valid_warband_units":[
+        "[variags_of_khand] khandish_charioteer",
+        "[variags_of_khand] khandish_horseman",
+        "[variags_of_khand] khandish_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[variags_of_khand] khandish_king":[
+    {
+      "valid_warband_units":[
+        "[variags_of_khand] khandish_charioteer",
+        "[variags_of_khand] khandish_horseman",
+        "[variags_of_khand] khandish_warrior"
       ],
       "special_unit_options":[
 

@@ -1456,6 +1456,780 @@
     ]
   },
   {
+    "model_id":"[corsairs_of_umbar] dalamyr,_fleetmaster_of_umbar",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Dalamyr, Fleetmaster of Umbar",
+    "unit_type":"Hero of Legend",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] the_knight_of_umbar",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Mordor",
+    "name":"The Knight of Umbar",
+    "unit_type":"Hero of Valour",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0592",
+        "option":"Armoured Fell Beast",
+        "points":70.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0593",
+        "option":"Fell Beast",
+        "points":50.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0594",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] hasharin",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"The Serpent Horde",
+    "name":"Hasharin",
+    "unit_type":"Hero of Valour",
+    "base_points":80,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0595",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0596",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] delgamar,_gatemaster_of_umbar",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Delgamar, Gatemaster of Umbar",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] black_numenorean_marshall",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Barad-dur",
+    "name":"Black Numenorean Marshall",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0597",
+        "option":"Armoured Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0598",
+        "option":"Lance",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0599",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] corsair_captain",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0552",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0553",
+        "option":"Crossbow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0554",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0555",
+        "option":"Two-Handed Axe",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] corsair_bo'sun",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair Bo'sun",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0547",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0548",
+        "option":"Crossbow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0549",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0550",
+        "option":"Two-Handed Axe",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0551",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] black_numenorean",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Barad-dur",
+    "name":"Black Numenorean",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0600",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0601",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] corsair_arbalester",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair Arbalester",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] corsair_reaver",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair Reaver",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[corsairs_of_umbar] corsair_of_umbar",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair of Umbar",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0556",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0557",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0558",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] the_mumak_war_leader",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"The Mumak War Leader",
+    "unit_type":"Hero of Legend",
+    "base_points":400,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":400,
+    "pointsTotal":400,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] war_mumak_of_far_harad",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"War Mumak of Far Harad",
+    "unit_type":"Hero of Fortitude",
+    "base_points":300,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":300,
+    "pointsTotal":300,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0579",
+        "option":"Gnarled Hide",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0580",
+        "option":"Rocks",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0581",
+        "option":"Sigils of Defiance",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0582",
+        "option":"Tusk Weapons",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0583",
+        "option":"Foul Temperament",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0584",
+        "option":"Rappelling Lines",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] mahud_king",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Mahud King",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0565",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0566",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0567",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0568",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] mahud_tribesmaster",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Tribesmaster",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0572",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0573",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0574",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0575",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] half_troll",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Half Troll",
+    "unit_type":"Warrior",
+    "base_points":23,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":23,
+    "pointsTotal":23,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] mahud_raider",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Raider",
+    "unit_type":"Warrior",
+    "base_points":17,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":17,
+    "pointsTotal":17,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0569",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0570",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0571",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[far_harad] mahud_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Warrior",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0576",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0577",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0578",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[halls_of_thranduil] thranduil",
     "faction_type":"Good Army",
     "faction":"Halls of Thranduil",
@@ -3805,11 +4579,11 @@
     ]
   },
   {
-    "model_id":"[minas_tirith] pippin",
+    "model_id":"[minas_tirith] peregrin_took",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
     "profile_origin":"Minas Tirith",
-    "name":"Pippin",
+    "name":"Peregrin Took",
     "unit_type":"Independent Hero",
     "base_points":25,
     "default_bow":false,
@@ -7891,11 +8665,11 @@
     ]
   },
   {
-    "model_id":"[rohan] merry",
+    "model_id":"[rohan] meriadic_brandybuck",
     "faction_type":"Good Army",
     "faction":"Rohan",
     "profile_origin":"Rohan",
-    "name":"Merry",
+    "name":"Meriadic Brandybuck",
     "unit_type":"Independent Hero",
     "base_points":25,
     "default_bow":false,
@@ -7908,27 +8682,9 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0352",
-        "option":"Elven Cloak",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0353",
-        "option":"Pony",
-        "points":5.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0354",
-        "option":"Shield",
-        "points":5.0,
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -11359,6 +12115,88 @@
     ]
   },
   {
+    "model_id":"[the_serpent_horde] war_mumak_of_harad",
+    "faction_type":"Evil Army",
+    "faction":"The Serpent Horde",
+    "profile_origin":"The Serpent Horde",
+    "name":"War Mumak of Harad",
+    "unit_type":"Hero of Fortitude",
+    "base_points":275,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":275,
+    "pointsTotal":275,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0585",
+        "option":"Gnarled Hide",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0586",
+        "option":"Mahud Beastmaster Chieftain",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0587",
+        "option":"Rocks",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0588",
+        "option":"Sigils of Defiance",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0589",
+        "option":"Tusk Weapons",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0590",
+        "option":"Foul Temperament",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0591",
+        "option":"Rappelling Lines",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_serpent_horde] hasharin",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
@@ -11388,6 +12226,34 @@
         "option_id":"OPT0517",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_serpent_horde] raza,_fang_of_the_serpent",
+    "faction_type":"Evil Army",
+    "faction":"The Serpent Horde",
+    "profile_origin":"The Serpent Horde",
+    "name":"Raza, Fang of the Serpent",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -11471,6 +12337,34 @@
         "option_id":"OPT0505",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_serpent_horde] haradrim_taskmaster",
+    "faction_type":"Evil Army",
+    "faction":"The Serpent Horde",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim Taskmaster",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -12447,6 +13341,164 @@
         "option":"Battlin' Brandybucks",
         "points":1.0,
         "type":"upgrade",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[variags_of_khand] khandish_king",
+    "faction_type":"Evil Army",
+    "faction":"Variags of Khand",
+    "profile_origin":"Variags of Khand",
+    "name":"Khandish King",
+    "unit_type":"Hero of Valour",
+    "base_points":95,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":95,
+    "pointsTotal":95,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0562",
+        "option":"Khandish Chariot",
+        "points":30.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0563",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[variags_of_khand] khandish_chieftain",
+    "faction_type":"Evil Army",
+    "faction":"Variags of Khand",
+    "profile_origin":"Variags of Khand",
+    "name":"Khandish Chieftain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0560",
+        "option":"Khandish Chariot",
+        "points":30.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0561",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[variags_of_khand] khandish_charioteer",
+    "faction_type":"Evil Army",
+    "faction":"Variags of Khand",
+    "profile_origin":"Variags of Khand",
+    "name":"Khandish Charioteer",
+    "unit_type":"Warrior",
+    "base_points":30,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0559",
+        "option":"Swap Axe for Bow",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[variags_of_khand] khandish_horseman",
+    "faction_type":"Evil Army",
+    "faction":"Variags of Khand",
+    "profile_origin":"Variags of Khand",
+    "name":"Khandish Horseman",
+    "unit_type":"Warrior",
+    "base_points":13,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":13,
+    "pointsTotal":13,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[variags_of_khand] khandish_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Variags of Khand",
+    "profile_origin":"Variags of Khand",
+    "name":"Khandish Warrior",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0564",
+        "option":"Swap Axe for Bow",
+        "points":0.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
