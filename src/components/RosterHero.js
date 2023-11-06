@@ -45,6 +45,8 @@ export function RosterHero({
         newRoster["points"] =
           newRoster["points"] - newWarband.hero["pointsTotal"];
         newWarband.hero = null;
+        let newUnits = newWarband.units.filter(_unit => _unit.name != null)
+        newWarband.units = newUnits
       }
       return newWarband;
     });

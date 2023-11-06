@@ -27,6 +27,7 @@ import { MdDelete } from "react-icons/md";
 import { FcCheckmark } from "react-icons/fc";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
+import { ImCross } from "react-icons/im";
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -270,7 +271,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.6.0 (updated 05-Nov-23)
+                version 2.6.1 (updated 06-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -287,6 +288,8 @@ export default function App() {
       <div className="m-4">
         <div className="optionsList border border-4 rounded position-fixed bg-white">
           {displaySelection ?
+            <>
+            <Button variant="light" className="ms-2 border" style={{float: "right"}} onClick={() => setDisplaySelection(false)}><ImCross /></Button>
             <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
               {Object.keys(faction_lists).map((f_type) => ( 
                 <Tab eventKey={f_type} title={f_type} disabled={!heroSelection || (factionType != "" && factionType != f_type)}>
@@ -330,7 +333,8 @@ export default function App() {
                       : mesbg_data
                           .filter(
                             (data) =>
-                              hero_constraint_data[roster.warbands[warbandNumFocus].hero.model_id][0]['valid_warband_units'].includes(data.model_id)
+                              roster.warbands[warbandNumFocus].hero 
+                              && hero_constraint_data[roster.warbands[warbandNumFocus].hero.model_id][0]['valid_warband_units'].includes(data.model_id)
                               && !(data.unique && roster.uniqueModels.includes(data.model_id))
                           )
                           .map((row) => (
@@ -351,6 +355,7 @@ export default function App() {
                 </Tab>
               ))}
             </Tabs>
+            </>
             :
             <div className="p-2">
               <h5>Bow Counts</h5> 
