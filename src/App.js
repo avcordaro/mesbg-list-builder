@@ -262,7 +262,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar style={{ minWidth: "1500px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
+      <Navbar style={{ minWidth: "1525px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
