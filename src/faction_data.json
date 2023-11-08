@@ -805,7 +805,7 @@
     ]
   },
   "The Misty Mountains":{
-    "armyBonus":"<b>\"The Eagles are coming!\"<\/b> - Eagle models from this army list gain a bonus of+ 1 to their Strength on a turn in which they charged.",
+    "armyBonus":"<b>\"The Eagles are coming!\"<\/b> - Eagle models from this army list gain a bonus of +1 to their Strength on a turn in which they charged.",
     "primaryAllies":[
       "The Fellowship",
       "Radagast's Alliance",

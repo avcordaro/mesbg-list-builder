@@ -165,6 +165,39 @@
       ]
     }
   ],
+  "[arnor] arvedui,_last_king_of_arnor":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[arnor] captain_of_arnor":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[arnor] malbeth_the_seer":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[barad-dur] black_numenorean_marshall":[
     {
       "valid_warband_units":[
@@ -398,6 +431,36 @@
         "[corsairs_of_umbar] corsair_of_umbar",
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[fangorn] beechbone":[
+    {
+      "valid_warband_units":[
+        "[fangorn] ent"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[fangorn] quickbeam":[
+    {
+      "valid_warband_units":[
+        "[fangorn] ent"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[fangorn] treebeard":[
+    {
+      "valid_warband_units":[
+        "[fangorn] ent"
       ],
       "special_unit_options":[
 
@@ -2133,6 +2196,36 @@
       ]
     }
   ],
+  "[numenor] captain_of_numenor":[
+    {
+      "valid_warband_units":[
+        "[numenor] warrior_of_numenor"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[numenor] elendil":[
+    {
+      "valid_warband_units":[
+        "[numenor] warrior_of_numenor"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[numenor] isildur":[
+    {
+      "valid_warband_units":[
+        "[numenor] warrior_of_numenor"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[rivendell] arwen":[
     {
       "valid_warband_units":[
@@ -2534,6 +2627,76 @@
         "[rohan] rohan_royal_guard",
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] harry_goatleaf":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] lotho_sackville-baggins":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] rowan_thistlewood,_ruffian_enforcer":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] ruffian_cpt":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] sharkey_and_worm":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] sid_briarthorn,_ruffian_chief":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[sharkey's_rogues] ted_sandyman":[
+    {
+      "valid_warband_units":[
+        "[the_shire] hobbit_militia"
       ],
       "special_unit_options":[
 
@@ -2948,8 +3111,7 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
       "special_unit_options":[
-        "Black Dragon Upgrade",
-        "Black Dragon Upgrade - FREE"
+        "Black Dragon Upgrade"
       ]
     }
   ],
@@ -2962,8 +3124,7 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
       "special_unit_options":[
-        "Black Dragon Upgrade",
-        "Black Dragon Upgrade - FREE"
+        "Black Dragon Upgrade"
       ]
     }
   ],
@@ -2987,8 +3148,7 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
       "special_unit_options":[
-        "Black Dragon Upgrade",
-        "Black Dragon Upgrade - FREE"
+        "Black Dragon Upgrade"
       ]
     }
   ],
@@ -3001,8 +3161,7 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
       "special_unit_options":[
-        "Black Dragon Upgrade",
-        "Black Dragon Upgrade - FREE"
+        "Black Dragon Upgrade"
       ]
     }
   ],
@@ -3196,6 +3355,69 @@
         "[the_kingdom_of_moria] khazad_guard",
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_misty_mountains] gwaihir":[
+    {
+      "valid_warband_units":[
+        "[the_misty_mountains] great_eagle"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_rangers] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[the_rangers] dunedain",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_rangers] arathorn":[
+    {
+      "valid_warband_units":[
+        "[the_rangers] dunedain",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_rangers] dunedain":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_rangers] halbarad":[
+    {
+      "valid_warband_units":[
+        "[the_rangers] dunedain",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_rangers] ranger_of_the_north":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_unit_options":[
 
@@ -3416,6 +3638,19 @@
     }
   ],
   "[the_shire] bilbo_baggins":[
+    {
+      "valid_warband_units":[
+        "[the_shire] hobbit_archer",
+        "[the_shire] hobbit_militia",
+        "[the_shire] rosie_cotton",
+        "[the_shire] hobbit_shirriff"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_shire] dunedain":[
     {
       "valid_warband_units":[
         "[the_shire] hobbit_archer",
@@ -3668,6 +3903,26 @@
         "[variags_of_khand] khandish_charioteer",
         "[variags_of_khand] khandish_horseman",
         "[variags_of_khand] khandish_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[wildmen_of_druadan] ghan-buri-ghan":[
+    {
+      "valid_warband_units":[
+        "[wildmen_of_druadan] woses_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[wildmen_of_druadan] woses_warrior_cpt":[
+    {
+      "valid_warband_units":[
+        "[wildmen_of_druadan] woses_warrior"
       ],
       "special_unit_options":[
 

@@ -68,7 +68,7 @@ export function SelectionUnit({
       newRoster.warbands[warbandNumFocus].points =
         newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
       newRoster.warbands[warbandNumFocus].max_units = newUnitData.warband_size;
-      if (newUnitData.unit_type == "Siege Engine") {
+      if (newRoster.warbands[warbandNumFocus].hero.siege_crew > 0) {
         newRoster.warbands[warbandNumFocus].num_units =
           newRoster.warbands[warbandNumFocus].num_units +
           (newUnitData.siege_crew - 1);

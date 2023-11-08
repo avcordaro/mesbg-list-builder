@@ -664,6 +664,146 @@
     ]
   },
   {
+    "model_id":"[arnor] arvedui,_last_king_of_arnor",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Arvedui, Last King of Arnor",
+    "unit_type":"Hero of Valour",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] malbeth_the_seer",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Malbeth the Seer",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] captain_of_arnor",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Captain of Arnor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0602",
+        "option":"Swap Shield for Bow",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] warrior_of_arnor",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Warrior of Arnor",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0621",
+        "option":"Swap Spear and Shield for Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] hobbit_archer",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"The Shire",
+    "name":"Hobbit Archer",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0627",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[barad-dur] sauron",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
@@ -1891,6 +2031,118 @@
         "option_id":"OPT0558",
         "option":"Spear",
         "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[fangorn] treebeard",
+    "faction_type":"Good Army",
+    "faction":"Fangorn",
+    "profile_origin":"Fangorn",
+    "name":"Treebeard",
+    "unit_type":"Hero of Legend",
+    "base_points":190,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":190,
+    "pointsTotal":190,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0620",
+        "option":"Merry & Pippin",
+        "points":10.0,
+        "type":"treebeard_m&p",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[fangorn] beechbone",
+    "faction_type":"Good Army",
+    "faction":"Fangorn",
+    "profile_origin":"Fangorn",
+    "name":"Beechbone",
+    "unit_type":"Hero of Fortitude",
+    "base_points":160,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[fangorn] quickbeam",
+    "faction_type":"Good Army",
+    "faction":"Fangorn",
+    "profile_origin":"Fangorn",
+    "name":"Quickbeam",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[fangorn] ent",
+    "faction_type":"Good Army",
+    "faction":"Fangorn",
+    "profile_origin":"Fangorn",
+    "name":"Ent",
+    "unit_type":"Warrior",
+    "base_points":120,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -7437,6 +7689,208 @@
     ]
   },
   {
+    "model_id":"[numenor] elendil",
+    "faction_type":"Good Army",
+    "faction":"Numenor",
+    "profile_origin":"Numenor",
+    "name":"Elendil",
+    "unit_type":"Hero of Legend",
+    "base_points":185,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":185,
+    "pointsTotal":185,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0609",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0610",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[numenor] isildur",
+    "faction_type":"Good Army",
+    "faction":"Numenor",
+    "profile_origin":"Numenor",
+    "name":"Isildur",
+    "unit_type":"Hero of Valour",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0613",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0614",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0615",
+        "option":"The Ring",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[numenor] captain_of_numenor",
+    "faction_type":"Good Army",
+    "faction":"Numenor",
+    "profile_origin":"Numenor",
+    "name":"Captain of Numenor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0603",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0604",
+        "option":"Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0605",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0606",
+        "option":"Lance",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0607",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[numenor] warrior_of_numenor",
+    "faction_type":"Good Army",
+    "faction":"Numenor",
+    "profile_origin":"Numenor",
+    "name":"Warrior of Numenor",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0622",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0623",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0624",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0625",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[rivendell] elrond",
     "faction_type":"Good Army",
     "faction":"Rivendell",
@@ -7558,7 +8012,7 @@
     "default_bow":false,
     "unique":true,
     "inc_bow_count":false,
-    "siege_crew":0,
+    "siege_crew":2,
     "quantity":1,
     "pointsPerUnit":160,
     "pointsTotal":160,
@@ -8916,6 +9370,276 @@
         "option":"Bow",
         "points":1.0,
         "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] sharkey_and_worm",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Sharkey and Worm",
+    "unit_type":"Hero of Legend",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] sid_briarthorn,_ruffian_chief",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Sid Briarthorn, Ruffian Chief",
+    "unit_type":"Hero of Valour",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] rowan_thistlewood,_ruffian_enforcer",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Rowan Thistlewood, Ruffian Enforcer",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] bill_ferny",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Bill Ferny",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] lotho_sackville-baggins",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"The Shire",
+    "name":"Lotho Sackville-Baggins",
+    "unit_type":"Hero of Fortitude",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] ted_sandyman",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Ted Sandyman",
+    "unit_type":"Hero of Fortitude",
+    "base_points":20,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] ruffian_cpt",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Ruffian",
+    "unit_type":"Hero of Fortitude",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0618",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0619",
+        "option":"Whip",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] harry_goatleaf",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Harry Goatleaf",
+    "unit_type":"Minor Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[sharkey's_rogues] ruffian",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Ruffian",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0618",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0619",
+        "option":"Whip",
+        "points":1.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -11772,6 +12496,256 @@
     ]
   },
   {
+    "model_id":"[the_misty_mountains] gwaihir",
+    "faction_type":"Good Army",
+    "faction":"The Misty Mountains",
+    "profile_origin":"The Misty Mountains",
+    "name":"Gwaihir",
+    "unit_type":"Hero of Legend",
+    "base_points":150,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":150,
+    "pointsTotal":150,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_misty_mountains] great_eagle",
+    "faction_type":"Good Army",
+    "faction":"The Misty Mountains",
+    "profile_origin":"The Misty Mountains",
+    "name":"Great Eagle",
+    "unit_type":"Warrior",
+    "base_points":100,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_rangers] aragorn,_strider",
+    "faction_type":"Good Army",
+    "faction":"The Rangers",
+    "profile_origin":"The Fellowship",
+    "name":"Aragorn, Strider",
+    "unit_type":"Hero of Valour",
+    "base_points":160,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0628",
+        "option":"Anduril Flame of the West",
+        "points":40.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0629",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0630",
+        "option":"Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0631",
+        "option":"Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0632",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_rangers] arathorn",
+    "faction_type":"Good Army",
+    "faction":"The Rangers",
+    "profile_origin":"The Rangers",
+    "name":"Arathorn",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_rangers] halbarad",
+    "faction_type":"Good Army",
+    "faction":"The Rangers",
+    "profile_origin":"The Rangers",
+    "name":"Halbarad",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0611",
+        "option":"Banner of Arwen Evenstar",
+        "points":40.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0612",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_rangers] ranger_of_the_north",
+    "faction_type":"Good Army",
+    "faction":"The Rangers",
+    "profile_origin":"The Rangers",
+    "name":"Ranger of the North",
+    "unit_type":"Independent Hero",
+    "base_points":30,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0616",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0617",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_rangers] dunedain",
+    "faction_type":"Good Army",
+    "faction":"The Rangers",
+    "profile_origin":"The Rangers",
+    "name":"Dunedain",
+    "unit_type":"Independent Hero",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0608",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_return_of_the_king] aragorn,_strider",
     "faction_type":"Good LL",
     "faction":"The Return of the King",
@@ -13199,6 +14173,34 @@
     ]
   },
   {
+    "model_id":"[the_shire] dunedain",
+    "faction_type":"Good Army",
+    "faction":"The Shire",
+    "profile_origin":"The Rangers",
+    "name":"Dunedain",
+    "unit_type":"Independent Hero",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0626",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_shire] rosie_cotton",
     "faction_type":"Good Army",
     "faction":"The Shire",
@@ -13498,6 +14500,90 @@
         "option_id":"OPT0564",
         "option":"Swap Axe for Bow",
         "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wildmen_of_druadan] ghan-buri-ghan",
+    "faction_type":"Good Army",
+    "faction":"Wildmen of Druadan",
+    "profile_origin":"Wildmen of Druadan",
+    "name":"Ghan-Buri-Ghan",
+    "unit_type":"Hero of Valour",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wildmen_of_druadan] woses_warrior_cpt",
+    "faction_type":"Good Army",
+    "faction":"Wildmen of Druadan",
+    "profile_origin":"Wildmen of Druadan",
+    "name":"Woses Warrior",
+    "unit_type":"Hero of Fortitude",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wildmen_of_druadan] woses_warrior",
+    "faction_type":"Good Army",
+    "faction":"Wildmen of Druadan",
+    "profile_origin":"Wildmen of Druadan",
+    "name":"Woses Warrior",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
