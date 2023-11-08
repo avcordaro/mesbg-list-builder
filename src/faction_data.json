@@ -444,10 +444,21 @@
   "Wildmen of Druadan":{
     "armyBonus":"<b>\"Wild men have Long Ears and Long Eyes; know all Paths\"<\/b> - Models from this army list gain the Mountain Dweller special rule. Additionally, enemy models do not gain any benefits from the Stalk Unseen special rule, or any suchs special rules thatg ive similar benefits, against models from this army list. Additionally, warbands from this army list, that contain between 9 and 12 models, do not need a Hero to be the captain of the warband. Instead, one of the Warrior models within the warband takes on the role of the warband's captain for the purpose of deployment.",
     "primaryAllies":[
-
+      "Rohan"
     ],
     "secondaryAllies":[
-
+      "The Dead of Dunharrow",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "The Shire",
+      "The White Council"
     ]
   },
   "Paths of the Druadan":{
