@@ -9647,6 +9647,34 @@
     ]
   },
   {
+    "model_id":"[sharkey's_rogues] hobbit_militia",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"The Shire",
+    "name":"Hobbit Militia",
+    "unit_type":"Warrior",
+    "base_points":4,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":4,
+    "pointsTotal":4,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_dead_of_dunharrow] the_king_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
