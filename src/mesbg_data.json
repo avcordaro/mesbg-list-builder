@@ -4148,7 +4148,7 @@
         "option_id":"OPT0144",
         "option":"Galadhrim Guard Upgrade",
         "points":1.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
