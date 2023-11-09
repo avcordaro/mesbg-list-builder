@@ -34,7 +34,7 @@ export function OptionHero({
                 newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
                 newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
                 newOption['opt_quantity'] = 0
-                if(newOption.type="treebeard_m&p") {
+                if(newOption.type == "treebeard_m&p") {
                   newRoster['num_units'] = newRoster['num_units'] - 2;
                   newWarband['num_units'] = newWarband['num_units'] - 2;
                 }
@@ -62,7 +62,7 @@ export function OptionHero({
                 newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
                 newRoster['points'] = newRoster['points'] + newHero['pointsTotal'];
                 newOption['opt_quantity'] = 1;
-                if(newOption.type="treebeard_m&p") {
+                if(newOption.type == "treebeard_m&p") {
                   newRoster['num_units'] = newRoster['num_units'] + 2;
                   newWarband['num_units'] = newWarband['num_units'] + 2;
                 }
