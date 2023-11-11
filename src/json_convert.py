@@ -74,7 +74,7 @@ with open('mesbg_data.json', 'w') as f:
 
 df_faction = pd.read_excel("mesbg_data.xlsx", sheet_name="factions")
 df_faction.index = df_faction.name
-df_faction = df_faction[['armyBonus', 'primaryAllies', 'secondaryAllies']]
+df_faction = df_faction[['armyBonus', 'primaryAllies', 'secondaryAllies', 'bow_limit']]
 df_faction['armyBonus'] = df_faction['armyBonus'].apply(lambda x: re.sub('\n', '<br/>', x))
 df_faction['primaryAllies'] = df_faction['primaryAllies'].fillna("[]")
 df_faction['secondaryAllies'] = df_faction['secondaryAllies'].fillna("[]")
@@ -91,3 +91,10 @@ df_hero_constraints = df_hero_constraints.groupby('hero_model_id').apply(lambda 
 
 with open('hero_constraint_data.json', 'w') as f:
     f.write(df_hero_constraints.to_json(orient="index", indent=2))
+
+df_warning_rules = pd.read_excel("mesbg_data.xlsx", sheet_name="warning_rules")
+df_warning_rules['dependencies'] = df_warning_rules['dependencies'].apply(eval)
+df_warning_rules = df_warning_rules.groupby('subject').apply(lambda x: x[['type', 'dependencies', 'warning']].to_dict(orient='records'))
+
+with open('warning_rules.json', 'w') as f:
+    f.write(df_warning_rules.to_json(orient="index", indent=2))

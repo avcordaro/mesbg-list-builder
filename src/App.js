@@ -1,6 +1,7 @@
 import mesbg_data from "./mesbg_data.json";
 import faction_data from "./faction_data.json";
 import hero_constraint_data from "./hero_constraint_data.json";
+import warning_rules from "./warning_rules.json";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -28,6 +29,7 @@ import { FcCheckmark } from "react-icons/fc";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
 import { ImCross } from "react-icons/im";
+import { IoWarningOutline } from "react-icons/io5"; 
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -71,6 +73,7 @@ export default function App() {
   const [factionModelCounts, setFactionModelCounts] = useState({});
   const [allianceLevel, setAllianceLevel] = useState("n/a");
   const [showAlliances, setShowAlliances] = useState(false);
+  const [warnings, setWarnings] = useState([]);
   
   useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
@@ -119,7 +122,39 @@ export default function App() {
       return counter;
     }, {});
     setFactionModelCounts(modelCounts);
+
+    checkWarnings(factions);
   }, [roster]);
+
+  const checkWarnings = (faction_list) => {
+    let newWarnings = []
+    roster.uniqueModels.map(model_id => {
+      if (model_id in warning_rules) {
+        let rules = warning_rules[model_id]
+        rules.map(rule => {
+          let intersection = rule.dependencies.filter(x => roster.uniqueModels.includes(x));
+          if (rule['type'] == 'requires' && intersection.length != rule.dependencies.length) {
+            newWarnings.push(rule.warning);
+          } 
+          if (rule['type'] == 'incompatible' && intersection.length > 0) {
+            newWarnings.push(rule.warning);
+          }
+        });
+      }
+    });
+    faction_list.map(faction => {
+      if (faction in warning_rules) {
+        let rules = warning_rules[faction]
+        rules.map(rule => {
+          let intersection = rule.dependencies.filter(x => roster.uniqueModels.includes(x));
+          if (rule['type'] == 'compulsory' && intersection.length == 0) {
+            newWarnings.push(rule.warning);
+          }
+        });
+      }
+    });
+    setWarnings(newWarnings);
+  };
 
   const checkAlliance = (army_A, army_B) => {
     // Checks the alliance level between two given armies
@@ -358,19 +393,28 @@ export default function App() {
             </>
             :
             <div className="p-2">
-              <h5>Bow Counts</h5> 
+              {warnings.length > 0 && 
+                <>
+                  <h6><IoWarningOutline /> Warnings</h6> 
+                  <hr/>
+                  {warnings.map(w => (<p className="text-danger">{w}</p>))}
+                </>
+              }
+              <h6>Bow Counts</h6> 
               <hr/>
               {factionList.map((f) => (
-                <p><b>{f}:</b> {factionBowCounts[f]} / {factionModelCounts[f]} ({Math.round(factionBowCounts[f] / factionModelCounts[f] * 100)}%)</p>
+                <p className={Math.round(factionBowCounts[f] / factionModelCounts[f] * 100) / 100 > faction_data[f]['bow_limit'] ? 'text-danger' : 'text-dark'}>
+                  <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit)"} {factionBowCounts[f]} / {factionModelCounts[f]} -- <b>{Math.round(factionBowCounts[f] / factionModelCounts[f] * 100)}%</b>
+                </p>
               ))}
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
-                <h5>Alliance Level:</h5> 
+                <h6>Alliance Level:</h6> 
                 <h5><Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge></h5>
                 <Button variant="light" className="ms-auto border" onClick={() => setShowAlliances(true)} disabled={!factionList.length || factionType.includes('LL')}><LuSwords /> Alliances</Button>
               </Stack>
-              <h5 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
+              <h6 className={['Historical', 'Legendary Legion'].includes(allianceLevel) ? "text-body" : "text-secondary"}>
                   Army Bonuses {['Historical', 'Legendary Legion'].includes(allianceLevel) ? <FcCheckmark /> : <b><RxCross1 className="text-danger"/></b>}
-              </h5>
+              </h6>
               <hr/>
               {factionList.map((f) => (
                 <div >

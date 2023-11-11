@@ -2725,16 +2725,7 @@
       ]
     }
   ],
-  "[the_dead_of_dunharrow] warrior_of_the_dead":[
-    {
-      "valid_warband_units":[
-        "[the_dead_of_dunharrow] rider_of_the_dead",
-        "[the_dead_of_dunharrow] warrior_of_the_dead"
-      ],
-      "special_unit_options":[
-
-      ]
-    },
+  "[the_dead_of_dunharrow] warrior_of_the_dead_cpt":[
     {
       "valid_warband_units":[
         "[the_dead_of_dunharrow] rider_of_the_dead",
@@ -2858,7 +2849,27 @@
         "[the_fellowship] gimli",
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_fellowship] arwen":[
+    {
+      "valid_warband_units":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee",
+        "[the_fellowship] gandalf_the_grey",
+        "[the_fellowship] aragorn,_strider",
+        "[the_fellowship] legolas",
+        "[the_fellowship] gimli",
+        "[the_fellowship] boromir_of_gondor",
+        "[the_fellowship] meriadoc_brandybuck",
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -2886,7 +2897,8 @@
         "[the_fellowship] gimli",
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -2905,7 +2917,8 @@
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] smeagol",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -2923,7 +2936,8 @@
         "[the_fellowship] gimli",
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -2941,7 +2955,8 @@
         "[the_fellowship] gimli",
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -2959,7 +2974,8 @@
         "[the_fellowship] gimli",
         "[the_fellowship] boromir_of_gondor",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 
@@ -3015,7 +3031,8 @@
         "[the_fellowship] smeagol",
         "[the_fellowship] bill_the_pony",
         "[the_fellowship] meriadoc_brandybuck",
-        "[the_fellowship] peregrin_took"
+        "[the_fellowship] peregrin_took",
+        "[the_fellowship] arwen"
       ],
       "special_unit_options":[
 

@@ -1,0 +1,21 @@
+{
+  "[the_fellowship] arwen":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[the_fellowship] aragorn,_strider"
+      ],
+      "warning":"Arwen cannot be chosen unless Aragorn, Strider is in your force."
+    }
+  ],
+  "[the_fellowship] smeagol":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[the_fellowship] frodo_baggins",
+        "[the_fellowship] samwise_gamgee"
+      ],
+      "warning":"Smeagol may only be included in a warband that contains only Frodo and Sam."
+    }
+  ]
+}

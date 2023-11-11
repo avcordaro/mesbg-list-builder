@@ -2161,7 +2161,7 @@
     "default_bow":false,
     "unique":true,
     "inc_bow_count":false,
-    "siege_crew":0,
+    "siege_crew":2,
     "quantity":1,
     "pointsPerUnit":400,
     "pointsTotal":400,
@@ -2189,7 +2189,7 @@
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
-    "siege_crew":0,
+    "siege_crew":2,
     "quantity":1,
     "pointsPerUnit":300,
     "pointsTotal":300,
@@ -9731,7 +9731,7 @@
     ]
   },
   {
-    "model_id":"[the_dead_of_dunharrow] warrior_of_the_dead",
+    "model_id":"[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",
     "profile_origin":"The Dead of Dunharrow",
@@ -10681,6 +10681,52 @@
     "options":[
       {
         "option_id":"OPT0424",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_fellowship] arwen",
+    "faction_type":"Good Army",
+    "faction":"The Fellowship",
+    "profile_origin":"Rivendell",
+    "name":"Arwen",
+    "unit_type":"Minor Hero",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0633",
+        "option":"Asfaloth",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0634",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0635",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -13127,7 +13173,7 @@
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
-    "siege_crew":0,
+    "siege_crew":2,
     "quantity":1,
     "pointsPerUnit":275,
     "pointsTotal":275,
