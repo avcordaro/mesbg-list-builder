@@ -1,4 +1,105 @@
 {
+  "[minas_tirith] aragorn,_king_elessar":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[minas_tirith] boromir",
+        "[minas_tirith] denethor"
+      ],
+      "warning":"Aragorn, King Elessar cannot be included in the same force as Boromir or Denethor."
+    }
+  ],
+  "[minas_tirith] king_of_men":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[minas_tirith] ingold",
+        "[minas_tirith] irolas",
+        "[minas_tirith] cirion",
+        "[minas_tirith] madril",
+        "[minas_tirith] aragorn,_king_elessar",
+        "[minas_tirith] gandalf_the_white",
+        "[minas_tirith] boromir",
+        "[minas_tirith] faramir",
+        "[minas_tirith] hurin",
+        "[minas_tirith] denethor",
+        "[minas_tirith] peregrin_took",
+        "[minas_tirith] anborn",
+        "[minas_tirith] mablung",
+        "[minas_tirith] beregond",
+        "[minas_tirith] damrod"
+      ],
+      "warning":"The King of Men cannot be included in the same force as any other named Gondor Hero models."
+    }
+  ],
+  "[rivendell] gil-galad":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[rivendell] lindir",
+        "[rivendell] arwen",
+        "[rivendell] elladan_&_elrohir",
+        "[rivendell] bilbo_baggins"
+      ],
+      "warning":"If Gil-Galad is included in the same force as either Arwen, Lindir, Elladan & Elrohir or Bilbo Baggins, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[rohan] dernhelm":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[rohan] meriadoc_brandybuck",
+        "[rohan] eowyn"
+      ],
+      "warning":"You may only include Dernhelm if your force does not already include either Eowyn or Merry."
+    }
+  ],
+  "[rohan] eorl_the_young":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[rohan] deorwine",
+        "[rohan] erkenbrand",
+        "[rohan] elfhelm",
+        "[rohan] grimbold",
+        "[rohan] gamling",
+        "[rohan] hama",
+        "[rohan] helm_hammerhand",
+        "[rohan] theoden",
+        "[rohan] eomer",
+        "[rohan] theodred",
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] meriadoc_brandybuck",
+        "[rohan] dernhelm",
+        "[rohan] eowyn"
+      ],
+      "warning":"If Eorl the Young is included in the same force as any named Rohan Hero models, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[rohan] helm_hammerhand":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[rohan] deorwine",
+        "[rohan] erkenbrand",
+        "[rohan] elfhelm",
+        "[rohan] grimbold",
+        "[rohan] gamling",
+        "[rohan] hama",
+        "[rohan] theoden",
+        "[rohan] eorl_the_young",
+        "[rohan] eomer",
+        "[rohan] theodred",
+        "[rohan] aldor",
+        "[rohan] haleth",
+        "[rohan] meriadoc_brandybuck",
+        "[rohan] dernhelm",
+        "[rohan] eowyn"
+      ],
+      "warning":"If Helm Hammerhand is included in the same force as any named Rohan Hero models, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
   "[the_fellowship] arwen":[
     {
       "type":"requires",
@@ -16,6 +117,76 @@
         "[the_fellowship] samwise_gamgee"
       ],
       "warning":"Smeagol may only be included in a warband that contains only Frodo and Sam."
+    }
+  ],
+  "[the_rangers] arathorn":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[the_rangers] aragorn,_strider"
+      ],
+      "warning":"If Arathorn is included in the same force as Aragorn, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[the_shire] bandobras_took":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[the_shire] gandalf_the_grey",
+        "[the_shire] baldo_tulpenny",
+        "[the_shire] bilbo_baggins",
+        "[the_shire] farmer_maggot",
+        "[the_shire] farmer_tolman_cotton",
+        "[the_shire] folco_boffin",
+        "[the_shire] fredegar_bolger",
+        "[the_shire] frodo_of_the_nine_fingers",
+        "[the_shire] grip,_fang_and_wolf",
+        "[the_shire] hamfast_'gaffer'_gamgee",
+        "[the_shire] holfoot_bracegirdle",
+        "[the_shire] lobelia_sackville-baggins",
+        "[the_shire] lotho_sackville-baggins",
+        "[the_shire] meriadoc,_captain_of_the_shire",
+        "[the_shire] paladin_took",
+        "[the_shire] peregrin,_captain_of_the_shire",
+        "[the_shire] robin_smallburrow",
+        "[the_shire] rosie_cotton",
+        "[the_shire] samwise_the_brave",
+        "[the_shire] will_whitfoot"
+      ],
+      "warning":"If Bandobras Took is included in the same force as any named Hobbit Hero models, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[the_shire] bilbo_baggins":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[the_shire] frodo_of_the_nine_fingers",
+        "[the_shire] meriadoc,_captain_of_the_shire",
+        "[the_shire] peregrin,_captain_of_the_shire",
+        "[the_shire] samwise_the_brave"
+      ],
+      "warning":"If Bilbo is included in the same force as Frodo, Sam, Merry or Pippin, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[the_shire] dunedain":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[the_shire] gandalf_the_grey"
+      ],
+      "warning":"Dunedain may only be taken if your force also includes Gandalf."
+    }
+  ],
+  "[the_shire] gandalf_the_grey":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[the_shire] frodo_of_the_nine_fingers",
+        "[the_shire] meriadoc,_captain_of_the_shire",
+        "[the_shire] peregrin,_captain_of_the_shire",
+        "[the_shire] samwise_the_brave"
+      ],
+      "warning":"Gandalf may not be included in the same force as Frodo, Sam, Merry or Pippin."
     }
   ]
 }

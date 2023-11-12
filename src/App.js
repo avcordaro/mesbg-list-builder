@@ -59,7 +59,8 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: [], uniqueModels: []});
+  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: []});
+  const [uniqueModels, setUniqueModels] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
   const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
@@ -123,16 +124,34 @@ export default function App() {
     }, {});
     setFactionModelCounts(modelCounts);
 
-    checkWarnings(factions);
+    let newUniqueModels = getAllUniqueModels()
+    setUniqueModels(newUniqueModels);
+
+    checkWarnings(newUniqueModels, factions);
   }, [roster]);
 
-  const checkWarnings = (faction_list) => {
+  const getAllUniqueModels = () => {
+    let newUniqueModels = new Set()
+    roster.warbands.map((_warband) => {
+      if (_warband.hero) {
+        newUniqueModels.add(_warband.hero.model_id);
+      }
+      _warband.units.map((_unit) => {
+        if (_unit.name != null) {
+          newUniqueModels.add(_unit.model_id);
+        }
+      });
+    });
+    return [ ...newUniqueModels ]
+  }
+
+  const checkWarnings = (_uniqueModels, faction_list) => {
     let newWarnings = []
-    roster.uniqueModels.map(model_id => {
+    _uniqueModels.map(model_id => {
       if (model_id in warning_rules) {
         let rules = warning_rules[model_id]
         rules.map(rule => {
-          let intersection = rule.dependencies.filter(x => roster.uniqueModels.includes(x));
+          let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
           if (rule['type'] == 'requires' && intersection.length != rule.dependencies.length) {
             newWarnings.push(rule.warning);
           } 
@@ -146,7 +165,7 @@ export default function App() {
       if (faction in warning_rules) {
         let rules = warning_rules[faction]
         rules.map(rule => {
-          let intersection = rule.dependencies.filter(x => roster.uniqueModels.includes(x));
+          let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
           if (rule['type'] == 'compulsory' && intersection.length == 0) {
             newWarnings.push(rule.warning);
           }
@@ -227,8 +246,6 @@ export default function App() {
     if (newRoster.warbands[warbandNum - 1].hero) {
       model_ids.push(newRoster.warbands[warbandNum - 1].hero.model_id);
     }
-    let newUniqueModels = newRoster.uniqueModels.filter(data => !model_ids.includes(data));
-    newRoster.uniqueModels = newUniqueModels;
 
     // Substract the warband's points, bows and unit counts from the overall roster
     newRoster.warbands.map((warband) => {
@@ -306,7 +323,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.7.3 (updated 12-Nov-23)
+                version 2.8.0 (updated 12-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -349,7 +366,7 @@ export default function App() {
                           .filter(
                             (data) =>
                               data.faction == factionSelection[f_type] && !['Independent Hero*', 'Warrior'].includes(data.unit_type)
-                              && !(data.unique && roster.uniqueModels.includes(data.model_id))
+                              && !(data.unique && uniqueModels.includes(data.model_id))
                           )
                           .map((row) => (
                             <SelectionUnit
@@ -360,6 +377,7 @@ export default function App() {
                               unitData={row}
                               roster={roster}
                               setRoster={setRoster}
+                              uniqueModels={uniqueModels}
                               warbandNumFocus={warbandNumFocus}
                               setShowCardModal={setShowCardModal}
                               setCardUnitData={setCardUnitData}
@@ -370,7 +388,7 @@ export default function App() {
                             (data) =>
                               roster.warbands[warbandNumFocus].hero 
                               && hero_constraint_data[roster.warbands[warbandNumFocus].hero.model_id][0]['valid_warband_units'].includes(data.model_id)
-                              && !(data.unique && roster.uniqueModels.includes(data.model_id))
+                              && !(data.unique && uniqueModels.includes(data.model_id))
                           )
                           .map((row) => (
                             <SelectionUnit
@@ -381,6 +399,7 @@ export default function App() {
                               unitData={row}
                               roster={roster}
                               setRoster={setRoster}
+                              uniqueModels={uniqueModels}
                               warbandNumFocus={warbandNumFocus}
                               setShowCardModal={setShowCardModal}
                               setCardUnitData={setCardUnitData}

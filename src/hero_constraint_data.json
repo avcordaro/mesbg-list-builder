@@ -722,19 +722,7 @@
   "[isengard] snaga":[
     {
       "valid_warband_units":[
-        "[isengard] uruk-hai_drummer",
-        "[isengard] uruk-hai_demolition_team",
-        "[isengard] isengard_troll",
-        "[isengard] crebain",
-        "[isengard] uruk-hai_berserker",
-        "[isengard] feral_uruk-hai",
-        "[isengard] dunlending_horseman",
-        "[isengard] dunlending_huscarl",
         "[isengard] warg_rider",
-        "[isengard] uruk-hai_warrior",
-        "[isengard] uruk-hai_scout",
-        "[isengard] dunlending_warrior",
-        "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
       "special_unit_options":[
@@ -2230,7 +2218,18 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rivendell] bilbo_baggins":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_unit_options":[
 
@@ -2241,7 +2240,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2252,7 +2252,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2263,7 +2264,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2274,7 +2276,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2285,7 +2288,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
         "King's Guard Upgrade"
@@ -2297,7 +2301,8 @@
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
         "[rivendell] high_elf_warrior",
-        "[rivendell] wood_elf_warrior"
+        "[rivendell] wood_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
         "Noldorin Exiles Upgrade"
@@ -2308,7 +2313,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2319,7 +2325,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2330,7 +2337,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 
@@ -2341,7 +2349,8 @@
     {
       "valid_warband_units":[
         "[rivendell] rivendell_knight",
-        "[rivendell] high_elf_warrior"
+        "[rivendell] high_elf_warrior",
+        "[rivendell] bilbo_baggins"
       ],
       "special_unit_options":[
 

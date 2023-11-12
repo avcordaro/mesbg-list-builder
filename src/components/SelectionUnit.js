@@ -14,6 +14,7 @@ export function SelectionUnit({
   unitData,
   roster,
   setRoster,
+  uniqueModels,
   warbandNumFocus,
   setShowCardModal,
   setCardUnitData,
@@ -59,9 +60,6 @@ export function SelectionUnit({
     let newRoster = { ...roster };
     let newUnitData = { ...unitData };
     newUnitData["id"] = uuid();
-    if (unitData.unique) {
-      newRoster.uniqueModels.push(unitData.model_id);
-    }
     if (heroSelection) {
       // If a hero unit is selected, it is set as the warband's hero leader. The max warband size is also updated.
       newRoster.warbands[warbandNumFocus].hero = newUnitData;
@@ -89,7 +87,8 @@ export function SelectionUnit({
       });
     } else {
       // Specific logic for when Elrond is chosen to modify bow count with Rivendell Knights
-      if (newUnitData.model_id == '[rivendell] rivendell_knight' && newRoster.uniqueModels.includes('[rivendell] elrond')) {
+      console.log(uniqueModels)
+      if (newUnitData.model_id == '[rivendell] rivendell_knight' && uniqueModels.includes('[rivendell] elrond')) {
         newUnitData["inc_bow_count"] = false;
       }
       // If a warrior unit is selected, it is appended to the warband's list of units.

@@ -97,7 +97,6 @@ export function RosterWarrior({
   const handleDelete = () => {
     // Updates the roster state variable to remove warrior unit, and handle adjustment to points, units and bow count totals.
     let newRoster = { ...roster };
-    let newUniqueModels = newRoster.uniqueModels.filter((data) => data != unitData.model_id);
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num == warbandNum) {
@@ -125,7 +124,6 @@ export function RosterWarrior({
       }
       return newWarband;
     });
-    newRoster.uniqueModels = newUniqueModels;
     newRoster.warbands = newWarbands;
     setRoster(newRoster);
   };

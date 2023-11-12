@@ -25,7 +25,6 @@ export function RosterHero({
     if (unitData.model_id == '[rivendell] elrond') {
         newRoster = handleRivendellElrond(newRoster);
     }
-    let newUniqueModels = newRoster.uniqueModels.filter((data) => data != unitData.model_id);
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num == warbandNum) {
@@ -56,7 +55,6 @@ export function RosterHero({
       }
       return newWarband;
     });
-    newRoster.uniqueModels = newUniqueModels;
     newRoster.warbands = newWarbands;
     setRoster(newRoster);
   };
