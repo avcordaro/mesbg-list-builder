@@ -76,6 +76,11 @@ export function SelectionUnit({
       } else {
         newRoster.num_units = newRoster.num_units + 1;
       }
+
+      // Specific logic for when Elrond is chosen to modify bow count with Rivendell Knights
+      if (newUnitData.model_id == '[rivendell] elrond') {
+        newRoster = handleRivendellElrond(newRoster);
+      }
       // Delete any warrior units in this warband not from the same faction as the hero.
       newRoster.warbands[warbandNumFocus].units.map((unit) => {
         if (unit.faction != newUnitData.faction) {
@@ -83,6 +88,10 @@ export function SelectionUnit({
         }
       });
     } else {
+      // Specific logic for when Elrond is chosen to modify bow count with Rivendell Knights
+      if (newUnitData.model_id == '[rivendell] rivendell_knight' && newRoster.uniqueModels.includes('[rivendell] elrond')) {
+        newUnitData["inc_bow_count"] = false;
+      }
       // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
         warbandNumFocus
@@ -91,14 +100,14 @@ export function SelectionUnit({
       newRoster.warbands[warbandNumFocus].points =
         newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
       newRoster.warbands[warbandNumFocus].num_units =
-        newRoster.warbands[warbandNumFocus].num_units + (unitData.siege_crew ? unitData.siege_crew : 1);
+        newRoster.warbands[warbandNumFocus].num_units + (newUnitData.siege_crew ? newUnitData.siege_crew : 1);
       newRoster.warbands[warbandNumFocus].bow_count =
-      newRoster.warbands[warbandNumFocus].bow_count + (unitData.inc_bow_count ? 1 : 0);
-      newRoster.num_units = newRoster.num_units + (unitData.siege_crew ? unitData.siege_crew : 1);
+      newRoster.warbands[warbandNumFocus].bow_count + (newUnitData.inc_bow_count ? 1 : 0);
+      newRoster.num_units = newRoster.num_units + (newUnitData.siege_crew ? newUnitData.siege_crew : 1);
     }
     newRoster.points = newRoster.points + newUnitData.base_points;
     newRoster.bow_count =
-      newRoster.bow_count + (unitData.inc_bow_count ? 1 : 0);
+      newRoster.bow_count + (newUnitData.inc_bow_count ? 1 : 0);
     setRoster(newRoster);
     setDisplaySelection(false);
   };
@@ -108,6 +117,27 @@ export function SelectionUnit({
     e.stopPropagation();
     setCardUnitData(unitData);
     setShowCardModal(true);
+  };
+
+  const handleRivendellElrond = (newRoster) => {
+    /* If Elrond is selected for Rivendell, all Rivendell Knights in the army no longer count towards the Bow Limit.*/
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newUnits = newWarband.units.map((_unit) => {
+        let newUnit = { ..._unit };
+        console.log(newUnit)
+        if (newUnit.model_id == '[rivendell] rivendell_knight') {
+          newWarband["bow_count"] = newWarband["bow_count"] - (1 * newUnit["quantity"]);
+          newRoster["bow_count"] = newRoster["bow_count"] - (1 * newUnit["quantity"]);
+          newUnit["inc_bow_count"] = false;
+        }
+        return newUnit;
+      });
+      newWarband.units = newUnits;
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    return newRoster
   };
 
   return (

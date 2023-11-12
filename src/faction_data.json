@@ -37,7 +37,7 @@
     "bow_limit":0.33
   },
   "Rivendell":{
-    "armyBonus":"<b>\"Tangado Haid, leithio i philinn!\"<\/b> - While within 6\" of the army's leader, friendly Rivendell models may re-roll failed To Hit rolls when making shooting attacks in a turn in which they do not move.",
+    "armyBonus":"<b>\"Tangado Haid, leithio i philinn!\"<\/b> - While within 6\" of the army's leader, friendly Rivendell models may re-roll failed To Hit rolls when making shooting attacks in a turn in which they do not move. If your army contains Elrond, then Rivendell Knights do not count towards your Bow Limit.",
     "primaryAllies":[
       "The Fellowship",
       "Lothlorien",

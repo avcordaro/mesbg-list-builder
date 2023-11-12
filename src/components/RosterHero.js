@@ -21,6 +21,10 @@ export function RosterHero({
   const handleDelete = () => {
     // Removes the hero from being the warband's leader, and updates points and unit counts.
     let newRoster = { ...roster };
+    // Specific logic for when Elrond is removed to modify bow count with Rivendell Knights
+    if (unitData.model_id == '[rivendell] elrond') {
+        newRoster = handleRivendellElrond(newRoster);
+    }
     let newUniqueModels = newRoster.uniqueModels.filter((data) => data != unitData.model_id);
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
@@ -62,6 +66,27 @@ export function RosterHero({
     e.stopPropagation();
     setCardUnitData(unitData);
     setShowCardModal(true);
+  };
+
+  const handleRivendellElrond = (newRoster) => {
+    /* If Elrond is selected for Rivendell, all Rivendell Knights in the army no longer count towards the Bow Limit.*/
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newUnits = newWarband.units.map((_unit) => {
+        let newUnit = { ..._unit };
+        console.log(newUnit)
+        if (newUnit.model_id == '[rivendell] rivendell_knight') {
+          newWarband["bow_count"] = newWarband["bow_count"] + (1 * newUnit["quantity"]);
+          newRoster["bow_count"] = newRoster["bow_count"] + (1 * newUnit["quantity"]);
+          newUnit["inc_bow_count"] = true;
+        }
+        return newUnit;
+      });
+      newWarband.units = newUnits;
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    return newRoster
   };
 
   return (
