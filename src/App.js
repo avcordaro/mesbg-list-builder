@@ -32,6 +32,8 @@ import { ImCross } from "react-icons/im";
 import { IoWarningOutline } from "react-icons/io5"; 
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
+import JSZip from "jszip";
+import { saveAs } from "file-saver";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -129,6 +131,31 @@ export default function App() {
 
     checkWarnings(newUniqueModels, factions);
   }, [roster]);
+
+  const downloadProfileCards = async () => {
+    let profileCards = new Set()
+    roster.warbands.map((_warband) => {
+      if (_warband.hero) {
+        profileCards.add([_warband.hero.faction, _warband.hero.name]);
+      }
+      _warband.units.map((_unit) => {
+        if (_unit.name != null) {
+          profileCards.add([_unit.faction, _unit.name]);
+        }
+      });
+    });
+    profileCards = [ ...profileCards ]
+
+    const zip = new JSZip();
+    for (const card of profileCards) {
+      const blob = await fetch(require('./images/' + card[0] + /cards/ + card[1] + ".jpg")).then(res => res.blob());
+      zip.file(card[1] + ".jpg", blob, {binary:true});
+    }
+    zip.generateAsync({type: "blob"}).then((blob) => {
+      let ts = new Date()
+      saveAs(blob, "MESBG-Army-Profiles-" + ts.toISOString().substring(0, 19) + ".zip");
+    });
+  }
 
   const getAllUniqueModels = () => {
     let newUniqueModels = new Set()
@@ -323,7 +350,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.8.0 (updated 12-Nov-23)
+                version 2.9.0 (updated 12-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -331,8 +358,8 @@ export default function App() {
             <h6 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
             <h6 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
             <h6 className="mb-0">Bows: <b>{roster.bow_count}</b></h6>
-            <Button className="ms-2" onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
-            <Button onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
+            <Button className="ms-2" disabled={uniqueModels.length == 0} onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
+            <Button disabled={uniqueModels.length == 0} onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
             <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
           </Stack>
         </Navbar.Brand>
@@ -562,11 +589,15 @@ export default function App() {
       </div>
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)} size="xl" centered>
         <Modal.Header closeButton>
-          <Modal.Title>
-            {cardUnitData != null && "(" + cardUnitData.faction + ") " + cardUnitData.name}
-          </Modal.Title>
+          <div>
+            <h4>
+              <b>{cardUnitData != null && "(" + cardUnitData.faction + ") " + cardUnitData.name}</b>
+            </h4>
+            <h6>You can download a zip of all profile cards for your current army list by clicking <b className="text-primary">Roster Table > Profile Cards</b></h6>
+          </div>
         </Modal.Header>
         <Modal.Body style={{textAlign: "center"}}>
+
           {cardUnitData != null &&
             <img
               className="profile_card border border-secondary"
@@ -599,7 +630,13 @@ export default function App() {
           </Form>
         </Modal.Body>
       </Modal>
-      <ModalRosterTable allianceLevel={allianceLevel} allianceColour={allianceColours[allianceLevel]} roster={roster} showRosterTable={showRosterTable} setShowRosterTable={setShowRosterTable} />
+      <ModalRosterTable 
+        allianceLevel={allianceLevel} 
+        allianceColour={allianceColours[allianceLevel]} 
+        roster={roster} showRosterTable={showRosterTable} 
+        setShowRosterTable={setShowRosterTable} 
+        downloadProfileCards={downloadProfileCards}
+      />
       <Alliances showAlliances={showAlliances} setShowAlliances={setShowAlliances} factionList={factionList} />
     </div>
   );

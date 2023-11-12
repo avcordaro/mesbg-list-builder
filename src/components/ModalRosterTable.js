@@ -2,6 +2,9 @@ import Stack from "react-bootstrap/Stack";
 import Modal from 'react-bootstrap/Modal'; 
 import Table from 'react-bootstrap/Table';
 import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+import { FaDownload } from "react-icons/fa6";
+
 /* Modal Roster Table is the component used to populate the pop-up modal which appears 
 after the user clicks the 'Roster Table' button. This component uses the full roster
 state variable (passed to it as an argument) to populate a table of the army. */
@@ -11,21 +14,24 @@ export function ModalRosterTable({
   allianceColour,
   roster,
   showRosterTable,
-  setShowRosterTable
+  setShowRosterTable,
+  downloadProfileCards
 }) {
 
   return (
     <Modal show={showRosterTable} onHide={() => setShowRosterTable(false)} size="xl" centered>
         <Modal.Header closeButton>
-          <Modal.Title>
+          <Modal.Title className="w-100">
             <Stack direction="horizontal" gap={3}>
-                <h5 >Alliance level: <Badge bg={allianceColour}>{allianceLevel}</Badge></h5>
-                <h5>Total Points: <b>{roster.points}</b></h5>
-                <h5>Total Units: <b>{roster.num_units}</b></h5>
-                <h5>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h5>
-                <h5>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h5>
-                <h5>Bows: <b>{roster.bow_count}</b></h5>
-              </Stack>
+              <h6 >Alliance level:</h6>
+              <h5><Badge bg={allianceColour}>{allianceLevel}</Badge></h5>
+              <h6>Total Points: <b>{roster.points}</b></h6>
+              <h6>Total Units: <b>{roster.num_units}</b></h6>
+              <h6>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
+              <h6>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
+              <h6>Bows: <b>{roster.bow_count}</b></h6>
+              <Button className="ms-auto me-3" onClick={() => downloadProfileCards()}><FaDownload /> Profile Cards</Button>
+            </Stack>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -82,6 +88,8 @@ export function ModalRosterTable({
                     ))}
                 </tbody>
               </Table>
+              <div>
+              </div>
             </>
           }
         </Modal.Body>
