@@ -249,7 +249,6 @@ export default function App() {
 
   const handleNewWarband = () => {
     // Create a new empty warband dictionary and add to the roster
-
     let newRoster = { ...roster };
     let newWarband = {
       id: uuid(),
@@ -268,7 +267,6 @@ export default function App() {
 
   const handleDeleteWarband = (warbandNum) => {
     let newRoster = { ...roster };
-    // Handle removal of any unique heroes (who can only be selected once in an army)
     let model_ids = newRoster.warbands[warbandNum - 1].units.map(data => data.model_id);
     if (newRoster.warbands[warbandNum - 1].hero) {
       model_ids.push(newRoster.warbands[warbandNum - 1].hero.model_id);
