@@ -7891,6 +7891,478 @@
     ]
   },
   {
+    "model_id":"[rangers_of_ithilien] faramir",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Faramir",
+    "unit_type":"Hero of Valour",
+    "base_points":85.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":85.0,
+    "pointsTotal":85.0,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0640",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0641",
+        "option":"Bow",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] frodo_baggins",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"The Fellowship",
+    "name":"Frodo Baggins",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":85.0,
+    "pointsTotal":85.0,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0651",
+        "option":"Mithril Coat",
+        "points":15.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0652",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0653",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] madril",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Madril",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":55.0,
+    "pointsTotal":55.0,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] captain_of_minas_tirith",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Captain of Minas Tirith",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50.0,
+    "default_bow":0.0,
+    "unique":0.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":50.0,
+    "pointsTotal":50.0,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0636",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0637",
+        "option":"Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0638",
+        "option":"Lance",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0639",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] samwise_gamgee",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"The Fellowship",
+    "name":"Samwise Gamgee",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":45.0,
+    "pointsTotal":45.0,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0654",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] anborn",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Anborn",
+    "unit_type":"Minor Hero",
+    "base_points":35.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":35.0,
+    "pointsTotal":35.0,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] mablung",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Mablung",
+    "unit_type":"Minor Hero",
+    "base_points":35.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":35.0,
+    "pointsTotal":35.0,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] damrod",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Damrod",
+    "unit_type":"Minor Hero",
+    "base_points":25.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":25.0,
+    "pointsTotal":25.0,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] smeagol",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"The Fellowship",
+    "name":"Smeagol",
+    "unit_type":"Independent Hero*",
+    "base_points":30.0,
+    "default_bow":0.0,
+    "unique":1.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":30.0,
+    "pointsTotal":30.0,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] osgiliath_veteran",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Osgiliath Veteran",
+    "unit_type":"Warrior",
+    "base_points":8.0,
+    "default_bow":0.0,
+    "unique":0.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":8.0,
+    "pointsTotal":8.0,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0642",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0643",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0644",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] ranger_of_gondor",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Ranger of Gondor",
+    "unit_type":"Warrior",
+    "base_points":8.0,
+    "default_bow":1.0,
+    "unique":0.0,
+    "inc_bow_count":1.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":8.0,
+    "pointsTotal":8.0,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0645",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] ranger_of_gondor_free_bow",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Ranger of Gondor",
+    "unit_type":"Warrior",
+    "base_points":8.0,
+    "default_bow":0.0,
+    "unique":0.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":8.0,
+    "pointsTotal":8.0,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0645",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rangers_of_ithilien] warrior_of_minas_tirith",
+    "faction_type":"Good LL",
+    "faction":"Rangers of Ithilien",
+    "profile_origin":"Minas Tirith",
+    "name":"Warrior of Minas Tirith",
+    "unit_type":"Warrior",
+    "base_points":7.0,
+    "default_bow":0.0,
+    "unique":0.0,
+    "inc_bow_count":0.0,
+    "siege_crew":0.0,
+    "quantity":1,
+    "pointsPerUnit":7.0,
+    "pointsTotal":7.0,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0646",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0647",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0648",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0649",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0650",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[rivendell] elrond",
     "faction_type":"Good Army",
     "faction":"Rivendell",

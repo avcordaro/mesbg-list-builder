@@ -2214,6 +2214,113 @@
       ]
     }
   ],
+  "[rangers_of_ithilien] anborn":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor_free_bow"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] captain_of_minas_tirith":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] damrod":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor_free_bow"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] faramir":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor_free_bow",
+        "[rangers_of_ithilien] frodo_baggins",
+        "[rangers_of_ithilien] samwise_gamgee",
+        "[rangers_of_ithilien] smeagol"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] frodo_baggins":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] samwise_gamgee",
+        "[rangers_of_ithilien] smeagol"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] mablung":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor_free_bow"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] madril":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] osgiliath_veteran",
+        "[rangers_of_ithilien] warrior_of_minas_tirith",
+        "[rangers_of_ithilien] ranger_of_gondor_free_bow"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] samwise_gamgee":[
+    {
+      "valid_warband_units":[
+        "[rangers_of_ithilien] frodo_baggins",
+        "[rangers_of_ithilien] smeagol"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[rangers_of_ithilien] smeagol":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[rivendell] arwen":[
     {
       "valid_warband_units":[

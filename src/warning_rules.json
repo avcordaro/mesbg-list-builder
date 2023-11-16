@@ -1,4 +1,13 @@
 {
+  "Rangers of Ithilien":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rangers_of_ithilien] faramir"
+      ],
+      "warning":"This force must contain Faramir."
+    }
+  ],
   "[minas_tirith] aragorn,_king_elessar":[
     {
       "type":"incompatible",
@@ -30,6 +39,25 @@
         "[minas_tirith] damrod"
       ],
       "warning":"The King of Men cannot be included in the same force as any other named Gondor Hero models."
+    }
+  ],
+  "[rangers_of_Ithilien] samwise_gamgee":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[rangers_of_ithilien] frodo_baggins"
+      ],
+      "warning":"Sam may only be included if your force also contains both Frodo."
+    }
+  ],
+  "[rangers_of_ithilien] smeagol":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[rangers_of_ithilien] frodo_baggins",
+        "[rangers_of_ithilien] samwise_gamgee"
+      ],
+      "warning":"Smeagol may only be included if your force also contains both Frodo and Sam."
     }
   ],
   "[rivendell] gil-galad":[
