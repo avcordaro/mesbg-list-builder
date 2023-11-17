@@ -136,11 +136,11 @@ export default function App() {
     let profileCards = new Set()
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
-        profileCards.add([_warband.hero.faction, _warband.hero.name]);
+        profileCards.add([_warband.hero.profile_origin, _warband.hero.name]);
       }
       _warband.units.map((_unit) => {
         if (_unit.name != null) {
-          profileCards.add([_unit.faction, _unit.name]);
+          profileCards.add([_unit.profile_origin, _unit.name]);
         }
       });
     });
