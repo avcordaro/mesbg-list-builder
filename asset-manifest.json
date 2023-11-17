@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.277d315d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.569d35da.js",
+    "main.js": "/mesbg-list-builder/static/js/main.7785ac8d.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -176,9 +176,9 @@
     "static/media/King's Huntsman.jpg": "/mesbg-list-builder/static/media/King's Huntsman.0290cc365c505632b022.jpg",
     "static/media/Galadhrim Stormcaller.jpg": "/mesbg-list-builder/static/media/Galadhrim Stormcaller.69f094bd2c3f0d3308b4.jpg",
     "static/media/Thrydan Wolfsbane.jpg": "/mesbg-list-builder/static/media/Thrydan Wolfsbane.626c726610ae4f893d14.jpg",
-    "static/media/Aldor.jpg": "/mesbg-list-builder/static/media/Aldor.b7e4219e42ba7567281f.jpg",
     "static/media/Dweller in the Dark.jpg": "/mesbg-list-builder/static/media/Dweller in the Dark.b75c8288cd19acaf0062.jpg",
     "static/media/Dead Marsh Spectre.jpg": "/mesbg-list-builder/static/media/Dead Marsh Spectre.12b2b402c19841ad5473.jpg",
+    "static/media/Aldor.jpg": "/mesbg-list-builder/static/media/Aldor.eedc44fcca4591c24d14.jpg",
     "static/media/Rohan Royal Guard.jpg": "/mesbg-list-builder/static/media/Rohan Royal Guard.98647b7fb9c0f0fcd006.jpg",
     "static/media/Frodo Baggins.jpg": "/mesbg-list-builder/static/media/Frodo Baggins.52ea5f80588fdfe1190b.jpg",
     "static/media/Meriadoc Brandybuck.jpg": "/mesbg-list-builder/static/media/Meriadoc Brandybuck.fbbe7aafed69911c0998.jpg",
@@ -283,6 +283,8 @@
     "static/media/Uruk-Hai Drummer.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Drummer.d47c7f25af9e520e04c2.jpg",
     "static/media/Feral Uruk-Hai.jpg": "/mesbg-list-builder/static/media/Feral Uruk-Hai.4fa4f519bde61dbf806b.jpg",
     "static/media/Hobbit Archer.jpg": "/mesbg-list-builder/static/media/Hobbit Archer.df03572d86e31986426a.jpg",
+    "static/media/Tookish Hunters.jpg": "/mesbg-list-builder/static/media/Tookish Hunters.df03572d86e31986426a.jpg",
+    "static/media/Battlin' Brandybucks.jpg": "/mesbg-list-builder/static/media/Battlin' Brandybucks.9b0db0a93405fd70af3e.jpg",
     "static/media/Hobbit Militia.jpg": "/mesbg-list-builder/static/media/Hobbit Militia.9b0db0a93405fd70af3e.jpg",
     "static/media/Dwarf Warrior.jpg": "/mesbg-list-builder/static/media/Dwarf Warrior.f930bf8a48c6be51a838.jpg",
     "static/media/Osgiliath Veteran.jpg": "/mesbg-list-builder/static/media/Osgiliath Veteran.2c5f07b23cf2caf6d839.jpg",
@@ -361,6 +363,7 @@
     "static/media/Crebain.png": "/mesbg-list-builder/static/media/Crebain.ea36bdeacf094dc0a709.png",
     "static/media/Son of Eorl.png": "/mesbg-list-builder/static/media/Son of Eorl.22261c0c85b1cc452e54.png",
     "static/media/Hobbit Archer.png": "/mesbg-list-builder/static/media/Hobbit Archer.7354c32cd37bcb7146da.png",
+    "static/media/Tookish Hunters.png": "/mesbg-list-builder/static/media/Tookish Hunters.7354c32cd37bcb7146da.png",
     "static/media/Holfoot Bracegirdle.png": "/mesbg-list-builder/static/media/Holfoot Bracegirdle.62508f8e160a5b1092c9.png",
     "static/media/Peregrin, Captain of the Shire.png": "/mesbg-list-builder/static/media/Peregrin, Captain of the Shire.126cb6ada21ebaa74f1a.png",
     "static/media/Mordor Troll Chieftan.png": "/mesbg-list-builder/static/media/Mordor Troll Chieftan.4127feaab948b85fa3ef.png",
@@ -383,6 +386,7 @@
     "static/media/Woses Warrior.png": "/mesbg-list-builder/static/media/Woses Warrior.979a5a87844cbca8e688.png",
     "static/media/Uruk-Hai Scout Captain.png": "/mesbg-list-builder/static/media/Uruk-Hai Scout Captain.41c7cb784eeaf64288ad.png",
     "static/media/Damrod.png": "/mesbg-list-builder/static/media/Damrod.a8052d266b9e3eb2c699.png",
+    "static/media/Battlin' Brandybucks.png": "/mesbg-list-builder/static/media/Battlin' Brandybucks.4039eadfd67a77ad087f.png",
     "static/media/Hobbit Militia.png": "/mesbg-list-builder/static/media/Hobbit Militia.4039eadfd67a77ad087f.png",
     "static/media/Mordor War Catapult.png": "/mesbg-list-builder/static/media/Mordor War Catapult.db823e863dfb065966c1.png",
     "static/media/Galadhrim Knight.png": "/mesbg-list-builder/static/media/Galadhrim Knight.a2034c8b1a2bc82f1837.png",
@@ -641,13 +645,14 @@
     "static/media/Frodo Baggins.png": "/mesbg-list-builder/static/media/Frodo Baggins.114fa6649a44e433806a.png",
     "static/media/Harry Goatleaf.png": "/mesbg-list-builder/static/media/Harry Goatleaf.0a4b47efaab90e2cc8e6.png",
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
+    "static/media/Defenders of the Shire.png": "/mesbg-list-builder/static/media/Defenders of the Shire.8bd1b1afd25b97d97816.png",
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.277d315d.css.map": "/mesbg-list-builder/static/css/main.277d315d.css.map",
-    "main.569d35da.js.map": "/mesbg-list-builder/static/js/main.569d35da.js.map"
+    "main.7785ac8d.js.map": "/mesbg-list-builder/static/js/main.7785ac8d.js.map"
   },
   "entrypoints": [
     "static/css/main.277d315d.css",
-    "static/js/main.569d35da.js"
+    "static/js/main.7785ac8d.js"
   ]
 }
