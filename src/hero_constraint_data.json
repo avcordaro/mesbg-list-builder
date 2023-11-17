@@ -437,6 +437,152 @@
       ]
     }
   ],
+  "[defenders_of_helm's_deep] aldor":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] galadhrim_captain":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] gamling":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] gimli":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] haldir":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] haleth":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] king's_huntsman":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] legolas":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_helm's_deep] theoden":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_helm's_deep] galadhrim_warrior",
+        "[defenders_of_helm's_deep] aldor",
+        "[defenders_of_helm's_deep] haleth",
+        "[defenders_of_helm's_deep] rohan_royal_guard",
+        "[defenders_of_helm's_deep] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[fangorn] beechbone":[
     {
       "valid_warband_units":[
@@ -4330,6 +4476,58 @@
         "[the_shire] hobbit_militia",
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[theodred's_guard] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[theodred's_guard] rider_of_rohan",
+        "[theodred's_guard] rohan_royal_guard",
+        "[theodred's_guard] rohan_outrider",
+        "[theodred's_guard] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[theodred's_guard] elfhelm":[
+    {
+      "valid_warband_units":[
+        "[theodred's_guard] rider_of_rohan",
+        "[theodred's_guard] rohan_royal_guard",
+        "[theodred's_guard] rohan_outrider",
+        "[theodred's_guard] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[theodred's_guard] grimbold":[
+    {
+      "valid_warband_units":[
+        "[theodred's_guard] rider_of_rohan",
+        "[theodred's_guard] rohan_royal_guard",
+        "[theodred's_guard] rohan_outrider",
+        "[theodred's_guard] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+        "Helminga Upgrade"
+      ]
+    }
+  ],
+  "[theodred's_guard] theodred":[
+    {
+      "valid_warband_units":[
+        "[theodred's_guard] rider_of_rohan",
+        "[theodred's_guard] rohan_royal_guard",
+        "[theodred's_guard] rohan_outrider",
+        "[theodred's_guard] warrior_of_rohan"
       ],
       "special_unit_options":[
 

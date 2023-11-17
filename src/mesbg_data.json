@@ -2039,6 +2039,551 @@
     ]
   },
   {
+    "model_id":"[defenders_of_helm's_deep] theoden",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Theoden",
+    "unit_type":"Hero of Legend",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0727",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0728",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] aragorn,_strider",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"The Fellowship",
+    "name":"Aragorn, Strider",
+    "unit_type":"Hero of Valour",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0734",
+        "option":"Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] gimli",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"The Fellowship",
+    "name":"Gimli",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0737",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] legolas",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"The Fellowship",
+    "name":"Legolas",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0735",
+        "option":"Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0736",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] haldir",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Lothlorien",
+    "name":"Haldir",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0717",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":"armour",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0718",
+        "option":"Elf Bow",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0719",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] galadhrim_captain",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Lothlorien",
+    "name":"Galadhrim Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0710",
+        "option":"Elf Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0711",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] gamling",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Gamling",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0724",
+        "option":"Royal Standard of Rohan",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0720",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0721",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0722",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0723",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] king's_huntsman",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"King's Huntsman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] haleth",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Haleth",
+    "unit_type":"Independent Hero",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] aldor",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Aldor",
+    "unit_type":"Independent Hero",
+    "base_points":20,
+    "default_bow":true,
+    "unique":true,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] rohan_royal_guard",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Rohan Royal Guard",
+    "unit_type":"Warrior",
+    "base_points":10,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0725",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0726",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] galadhrim_warrior",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Lothlorien",
+    "name":"Galadhrim Warrior",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0712",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0713",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0714",
+        "option":"Elf Bow",
+        "points":2.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0715",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0716",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_helm's_deep] warrior_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Defenders of Helm's Deep",
+    "profile_origin":"Rohan",
+    "name":"Warrior of Rohan",
+    "unit_type":"Warrior",
+    "base_points":6,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":6,
+    "pointsTotal":6,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0729",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0730",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0731",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0732",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0733",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[fangorn] treebeard",
     "faction_type":"Good Army",
     "faction":"Fangorn",
@@ -9563,34 +10108,6 @@
     ]
   },
   {
-    "model_id":"[rohan] aldor",
-    "faction_type":"Good Army",
-    "faction":"Rohan",
-    "profile_origin":"Rohan",
-    "name":"Aldor",
-    "unit_type":"Independent Hero",
-    "base_points":65,
-    "default_bow":true,
-    "unique":true,
-    "inc_bow_count":true,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":65,
-    "pointsTotal":65,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[rohan] haleth",
     "faction_type":"Good Army",
     "faction":"Rohan",
@@ -9657,6 +10174,34 @@
         "option_id":"OPT0354",
         "option":"Shield",
         "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rohan] aldor",
+    "faction_type":"Good Army",
+    "faction":"Rohan",
+    "profile_origin":"Rohan",
+    "name":"Aldor",
+    "unit_type":"Independent Hero",
+    "base_points":20,
+    "default_bow":true,
+    "unique":true,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -16089,6 +16634,365 @@
       {
         "option_id":"OPT0535",
         "option":"Battlin' Brandybucks",
+        "points":1.0,
+        "type":"upgrade",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] theodred",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Theodred",
+    "unit_type":"Hero of Valour",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0751",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0752",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0753",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] elfhelm",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Elfhelm",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0743",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] grimbold",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Grimbold",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0738",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0739",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0740",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0741",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0742",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] rider_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rider of Rohan",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0744",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0745",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0746",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] rohan_royal_guard",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rohan Royal Guard",
+    "unit_type":"Warrior",
+    "base_points":10,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0748",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0749",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0750",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] rohan_outrider",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rohan Outrider",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0747",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[theodred's_guard] warrior_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Theodred's Guard",
+    "profile_origin":"Rohan",
+    "name":"Warrior of Rohan",
+    "unit_type":"Warrior",
+    "base_points":6,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":6,
+    "pointsTotal":6,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0754",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0755",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0756",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0757",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0758",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0759",
+        "option":"Helminga Upgrade",
         "points":1.0,
         "type":"upgrade",
         "min":0.0,

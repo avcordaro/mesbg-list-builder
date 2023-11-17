@@ -1,4 +1,13 @@
 {
+  "Defenders of Helm's Deep":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[defenders_of_helm's_deep] theoden"
+      ],
+      "warning":"This force must contain Theoden."
+    }
+  ],
   "Rangers of Ithilien":[
     {
       "type":"compulsory",
@@ -33,6 +42,15 @@
         "[the_riders_of_theoden] theoden"
       ],
       "warning":"This force must contain Theoden."
+    }
+  ],
+  "Theodred's Guard":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[theodred's_guard] theodred"
+      ],
+      "warning":"This force must contain Theodred."
     }
   ],
   "[minas_tirith] aragorn,_king_elessar":[
