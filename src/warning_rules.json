@@ -1,4 +1,13 @@
 {
+  "Breaking of the Fellowship":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[breaking_of_the_fellowship] aragorn,_strider"
+      ],
+      "warning":"This force must contain Aragorn."
+    }
+  ],
   "Defenders of Helm's Deep":[
     {
       "type":"compulsory",
@@ -6,6 +15,15 @@
         "[defenders_of_helm's_deep] theoden"
       ],
       "warning":"This force must contain Theoden."
+    }
+  ],
+  "Helm's Guard":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[helm's_guard] helm_hammerhand"
+      ],
+      "warning":"This force must contain Helm Hammerhand."
     }
   ],
   "Paths of the Druadan":[

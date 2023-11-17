@@ -346,6 +346,142 @@
       ]
     }
   ],
+  "[breaking_of_the_fellowship] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] boromir_of_gondor":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] frodo_baggins":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] gimli":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] legolas":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] meriadoc_brandybuck":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] peregrin_took":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[breaking_of_the_fellowship] samwise_gamgee":[
+    {
+      "valid_warband_units":[
+        "[breaking_of_the_fellowship] frodo_baggins",
+        "[breaking_of_the_fellowship] samwise_gamgee",
+        "[breaking_of_the_fellowship] aragorn,_strider",
+        "[breaking_of_the_fellowship] legolas",
+        "[breaking_of_the_fellowship] gimli",
+        "[breaking_of_the_fellowship] boromir_of_gondor",
+        "[breaking_of_the_fellowship] meriadoc_brandybuck",
+        "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[corsairs_of_umbar] black_numenorean_marshall":[
     {
       "valid_warband_units":[
@@ -664,6 +800,45 @@
     {
       "valid_warband_units":[
 
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[helm's_guard] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[helm's_guard] rider_of_rohan",
+        "[helm's_guard] rohan_royal_guard",
+        "[helm's_guard] rohan_outrider",
+        "[helm's_guard] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[helm's_guard] helm_hammerhand":[
+    {
+      "valid_warband_units":[
+        "[helm's_guard] rider_of_rohan",
+        "[helm's_guard] rohan_royal_guard",
+        "[helm's_guard] rohan_outrider",
+        "[helm's_guard] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[helm's_guard] king's_huntsman":[
+    {
+      "valid_warband_units":[
+        "[helm's_guard] rider_of_rohan",
+        "[helm's_guard] rohan_royal_guard",
+        "[helm's_guard] rohan_outrider",
+        "[helm's_guard] warrior_of_rohan"
       ],
       "special_unit_options":[
 

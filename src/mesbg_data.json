@@ -1596,6 +1596,257 @@
     ]
   },
   {
+    "model_id":"[breaking_of_the_fellowship] aragorn,_strider",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Aragorn, Strider",
+    "unit_type":"Hero of Valour",
+    "base_points":160,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0815",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] gimli",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Gimli",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0821",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] legolas",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Legolas",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0822",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] boromir_of_gondor",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Boromir of Gondor",
+    "unit_type":"Hero of Valour",
+    "base_points":95,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":95,
+    "pointsTotal":95,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0817",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0816",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] frodo_baggins",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Frodo Baggins",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0818",
+        "option":"Mithril Coat",
+        "points":15.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0819",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0820",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] samwise_gamgee",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Samwise Gamgee",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0825",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] meriadoc_brandybuck",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Meriadoc Brandybuck",
+    "unit_type":"Minor Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0823",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[breaking_of_the_fellowship] peregrin_took",
+    "faction_type":"Good LL",
+    "faction":"Breaking of the Fellowship",
+    "profile_origin":"The Fellowship",
+    "name":"Peregrin Took",
+    "unit_type":"Minor Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0824",
+        "option":"Elven Cloak - FREE",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
     "model_id":"[corsairs_of_umbar] dalamyr,_fleetmaster_of_umbar",
     "faction_type":"Evil Army",
     "faction":"Corsairs of Umbar",
@@ -3093,6 +3344,310 @@
         "option":"Elf Bow",
         "points":5.0,
         "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] helm_hammerhand",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Helm Hammerhand",
+    "unit_type":"Hero of Legend",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0802",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0797",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0798",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0799",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0800",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0801",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] king's_huntsman",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"King's Huntsman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] rider_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rider of Rohan",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0803",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0804",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0805",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] rohan_royal_guard",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rohan Royal Guard",
+    "unit_type":"Warrior",
+    "base_points":10,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0807",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0808",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0809",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] rohan_outrider",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Rohan Outrider",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0806",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[helm's_guard] warrior_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Helm's Guard",
+    "profile_origin":"Rohan",
+    "name":"Warrior of Rohan",
+    "unit_type":"Warrior",
+    "base_points":6,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":6,
+    "pointsTotal":6,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0810",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0811",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0812",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0813",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0814",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
