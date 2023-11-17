@@ -588,9 +588,9 @@ export default function App() {
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)} size="xl" centered>
         <Modal.Header closeButton>
           <div>
-            <h4>
+            <h5>
               <b>{cardUnitData != null && "(" + cardUnitData.faction + ") " + cardUnitData.name}</b>
-            </h4>
+            </h5>
             <h6>You can download a zip of all profile cards for your current army list by clicking <b className="text-primary">Roster Table > Profile Cards</b></h6>
           </div>
         </Modal.Header>

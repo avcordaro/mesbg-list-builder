@@ -3235,6 +3235,66 @@
       ]
     }
   ],
+  "[the_grey_company] aragorn,_strider":[
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_grey_company] elladan_&_elrohir":[
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_grey_company] gimli":[
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_grey_company] legolas":[
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[the_host_of_the_dragon_emperor] brorgir":[
     {
       "valid_warband_units":[
@@ -3545,12 +3605,38 @@
       "special_unit_options":[
 
       ]
+    },
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
+      ],
+      "special_unit_options":[
+
+      ]
     }
   ],
   "[the_rangers] ranger_of_the_north":[
     {
       "valid_warband_units":[
 
+      ],
+      "special_unit_options":[
+
+      ]
+    },
+    {
+      "valid_warband_units":[
+        "[the_grey_company] elladan_&_elrohir",
+        "[the_grey_company] aragorn,_strider",
+        "[the_grey_company] legolas",
+        "[the_grey_company] gimli",
+        "[the_rangers] halbarad",
+        "[the_rangers] ranger_of_the_north"
       ],
       "special_unit_options":[
 
