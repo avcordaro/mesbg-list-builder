@@ -3697,6 +3697,84 @@
       ]
     }
   ],
+  "[the_riders_of_theoden] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] deorwine":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] dernhelm":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] elfhelm":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard",
+        "[the_riders_of_theoden] dernhelm"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] eomer":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] gamling":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_riders_of_theoden] theoden":[
+    {
+      "valid_warband_units":[
+        "[the_riders_of_theoden] rider_of_rohan",
+        "[the_riders_of_theoden] rohan_royal_guard"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[the_serpent_horde] haradrim_chieftan":[
     {
       "valid_warband_units":[

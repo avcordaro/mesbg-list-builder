@@ -17,6 +17,15 @@
       "warning":"This force must contain Aragorn."
     }
   ],
+  "The Riders of Theoden":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_riders_of_theoden] theoden"
+      ],
+      "warning":"This force must contain Theoden."
+    }
+  ],
   "[minas_tirith] aragorn,_king_elessar":[
     {
       "type":"incompatible",

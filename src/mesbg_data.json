@@ -13792,6 +13792,375 @@
     ]
   },
   {
+    "model_id":"[the_riders_of_theoden] theoden",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Theoden",
+    "unit_type":"Hero of Legend",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0685",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0686",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0687",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] eomer",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Eomer",
+    "unit_type":"Hero of Valour",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0674",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0675",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0676",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] deorwine",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Deorwine",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0672",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] elfhelm",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Elfhelm",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0673",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] gamling",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Gamling",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0677",
+        "option":"Royal Standard of Rohan",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0678",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0667",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0668",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0669",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0670",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0671",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] dernhelm",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Dernhelm",
+    "unit_type":"Minor Hero",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] rohan_royal_guard",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Rohan Royal Guard",
+    "unit_type":"Warrior",
+    "base_points":15,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":15,
+    "pointsTotal":15,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0682",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0683",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0684",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_riders_of_theoden] rider_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"The Riders of Theoden",
+    "profile_origin":"Rohan",
+    "name":"Rider of Rohan",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0679",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0680",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0681",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_serpent_horde] suladan",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
