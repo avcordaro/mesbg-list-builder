@@ -719,6 +719,222 @@
       ]
     }
   ],
+  "[defenders_of_the_shire] baldo_tulpenny":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] farmer_maggot":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] grip,_fang_and_wolf",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] farmer_tolman_cotton":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] folco_boffin":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] fredegar_bolger":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] frodo_of_the_nine_fingers":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] grip,_fang_and_wolf":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] hamfast_'gaffer'_gamgee":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] holfoot_bracegirdle":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] lobelia_sackville-baggins":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] meriadoc,_captain_of_the_shire":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] battlin'_brandybucks",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+        "Battlin' Brandybucks"
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] paladin_took":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+        "Tookish Hunters"
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] peregrin,_captain_of_the_shire":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] tookish_hunters",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+        "Tookish Hunters"
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] robin_smallburrow":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] rosie_cotton":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] samwise_the_brave":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[defenders_of_the_shire] will_whitfoot":[
+    {
+      "valid_warband_units":[
+        "[defenders_of_the_shire] hobbit_archer",
+        "[defenders_of_the_shire] hobbit_militia",
+        "[defenders_of_the_shire] hobbit_shirriff",
+        "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[fangorn] beechbone":[
     {
       "valid_warband_units":[

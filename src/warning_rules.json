@@ -17,6 +17,22 @@
       "warning":"This force must contain Theoden."
     }
   ],
+  "Defenders of the Shire":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[defenders_of_the_shire] meriadoc,_captain_of_the_shire"
+      ],
+      "warning":"This force must contain Meriadoc, Captain of the Shire"
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[defenders_of_the_shire] peregrin,_captain_of_the_shire"
+      ],
+      "warning":"This force must contain Peregrin, Captain of the Shire"
+    }
+  ],
   "Helm's Guard":[
     {
       "type":"compulsory",
