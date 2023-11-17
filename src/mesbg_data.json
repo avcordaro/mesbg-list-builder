@@ -8436,6 +8436,459 @@
     ]
   },
   {
+    "model_id":"[paths_of_the_druadan] theoden",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Theoden",
+    "unit_type":"Hero of Legend",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0794",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0795",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0796",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] eomer",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Eomer",
+    "unit_type":"Hero of Valour",
+    "base_points":115,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":115,
+    "pointsTotal":115,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0782",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0783",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0784",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] ghan-buri-ghan",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Wildmen of Druadan",
+    "name":"Ghan-Buri-Ghan",
+    "unit_type":"Hero of Valour",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] deorwine",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Deorwine",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0779",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] elfhelm",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Elfhelm",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0781",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] gamling",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Gamling",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0785",
+        "option":"Royal Standard of Rohan",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0786",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0774",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0775",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0776",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0777",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0778",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] dernhelm",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Dernhelm",
+    "unit_type":"Minor Hero",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0780",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] rohan_royal_guard",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Rohan Royal Guard",
+    "unit_type":"Warrior",
+    "base_points":15,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":15,
+    "pointsTotal":15,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0791",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0792",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0793",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] rider_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Rider of Rohan",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0787",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0788",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0789",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] rohan_outrider",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Rohan",
+    "name":"Rohan Outrider",
+    "unit_type":"Warrior",
+    "base_points":13,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":13,
+    "pointsTotal":13,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0790",
+        "option":"Horse",
+        "points":5.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[paths_of_the_druadan] woses_warrior",
+    "faction_type":"Good LL",
+    "faction":"Paths of the Druadan",
+    "profile_origin":"Wildmen of Druadan",
+    "name":"Woses Warrior",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[rangers_of_ithilien] faramir",
     "faction_type":"Good LL",
     "faction":"Rangers of Ithilien",
@@ -8901,6 +9354,227 @@
         "option":"Spear",
         "points":1.0,
         "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[riders_of_eomer] gandalf_the_white",
+    "faction_type":"Good LL",
+    "faction":"Riders of Eomer",
+    "profile_origin":"Minas Tirith",
+    "name":"Gandalf the White",
+    "unit_type":"Hero of Valour",
+    "base_points":240,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":240,
+    "pointsTotal":240,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0773",
+        "option":"Shadowfax",
+        "points":20.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[riders_of_eomer] eomer",
+    "faction_type":"Good LL",
+    "faction":"Riders of Eomer",
+    "profile_origin":"Rohan",
+    "name":"Eomer",
+    "unit_type":"Hero of Valour",
+    "base_points":110,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":110,
+    "pointsTotal":110,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0765",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0766",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0767",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[riders_of_eomer] erkenbrand",
+    "faction_type":"Good LL",
+    "faction":"Riders of Eomer",
+    "profile_origin":"Rohan",
+    "name":"Erkenbrand",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0768",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[riders_of_eomer] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Riders of Eomer",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0760",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0761",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0762",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0763",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0764",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[riders_of_eomer] rider_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"Riders of Eomer",
+    "profile_origin":"Rohan",
+    "name":"Rider of Rohan",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0769",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0770",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0771",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0772",
+        "option":"Westfold Redshield Upgrade",
+        "points":1.0,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0

@@ -8,6 +8,29 @@
       "warning":"This force must contain Theoden."
     }
   ],
+  "Paths of the Druadan":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[paths_of_the_druadan] theoden"
+      ],
+      "warning":"This force must contain Theoden."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[paths_of_the_druadan] ghan-buri-ghan"
+      ],
+      "warning":"This force must contain Ghan-Buri-Ghan."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[paths_of_the_druadan] woses_warrior"
+      ],
+      "warning":"Ghan-Buri-Ghan's warband must contain a full warband of Woses Warriors."
+    }
+  ],
   "Rangers of Ithilien":[
     {
       "type":"compulsory",
@@ -15,6 +38,15 @@
         "[rangers_of_ithilien] faramir"
       ],
       "warning":"This force must contain Faramir."
+    }
+  ],
+  "Riders of Eomer":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[riders_of_eomer] eomer"
+      ],
+      "warning":"This force must contain Eomer."
     }
   ],
   "The Grey Company":[

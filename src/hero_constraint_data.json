@@ -2360,6 +2360,100 @@
       ]
     }
   ],
+  "[paths_of_the_druadan] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] deorwine":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] dernhelm":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] elfhelm":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] eomer":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] gamling":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] ghan-buri-ghan":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] woses_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[paths_of_the_druadan] theoden":[
+    {
+      "valid_warband_units":[
+        "[paths_of_the_druadan] rider_of_rohan",
+        "[paths_of_the_druadan] rohan_royal_guard",
+        "[paths_of_the_druadan] rohan_outrider"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[rangers_of_ithilien] anborn":[
     {
       "valid_warband_units":[
@@ -2461,6 +2555,46 @@
     {
       "valid_warband_units":[
 
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[riders_of_eomer] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[riders_of_eomer] rider_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[riders_of_eomer] eomer":[
+    {
+      "valid_warband_units":[
+        "[riders_of_eomer] rider_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[riders_of_eomer] erkenbrand":[
+    {
+      "valid_warband_units":[
+        "[riders_of_eomer] rider_of_rohan"
+      ],
+      "special_unit_options":[
+        "Westfold Redshield Upgrade"
+      ]
+    }
+  ],
+  "[riders_of_eomer] gandalf_the_white":[
+    {
+      "valid_warband_units":[
+        "[riders_of_eomer] rider_of_rohan"
       ],
       "special_unit_options":[
 
