@@ -2640,7 +2640,7 @@
         "[rohan] warrior_of_rohan"
       ],
       "special_unit_options":[
-
+        "Helminga Upgrade"
       ]
     }
   ],
@@ -3573,6 +3573,161 @@
         "[the_kingdom_of_moria] khazad_guard",
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] aragorn,_king_elessar":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] beregond":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] captain_of_dol_amroth":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] captain_of_minas_tirith":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] captain_of_rohan":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] elladan_&_elrohir":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] meriadoc_brandybuck"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] eomer":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] warrior_of_rohan"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] gandalf_the_white":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] gimli":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] meriadoc_brandybuck"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] legolas":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] meriadoc_brandybuck"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] meriadoc_brandybuck":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] peregrin_took":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_men_of_the_west] prince_imrahil":[
+    {
+      "valid_warband_units":[
+        "[the_men_of_the_west] peregrin_took",
+        "[the_men_of_the_west] warrior_of_minas_tirith",
+        "[the_men_of_the_west] meriadoc_brandybuck",
+        "[the_men_of_the_west] knight_of_dol_amroth"
       ],
       "special_unit_options":[
 

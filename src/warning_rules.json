@@ -17,6 +17,15 @@
       "warning":"This force must contain Aragorn."
     }
   ],
+  "The Men of the West":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_men_of_the_west] aragorn,_king_elessar"
+      ],
+      "warning":"This force must contain Aragorn, King Elessar."
+    }
+  ],
   "The Riders of Theoden":[
     {
       "type":"compulsory",

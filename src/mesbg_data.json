@@ -9876,9 +9876,9 @@
       },
       {
         "option_id":"OPT0374",
-        "option":"Helminga",
+        "option":"Helminga Upgrade",
         "points":1.0,
-        "type":null,
+        "type":"upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -13305,6 +13305,571 @@
         "type":null,
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] aragorn,_king_elessar",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Aragorn, King Elessar",
+    "unit_type":"Hero of Legend",
+    "base_points":225,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":225,
+    "pointsTotal":225,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] prince_imrahil",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"The Fiefdoms",
+    "name":"Prince Imrahil",
+    "unit_type":"Hero of Legend",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] gandalf_the_white",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Gandalf the White",
+    "unit_type":"Hero of Valour",
+    "base_points":220,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":220,
+    "pointsTotal":220,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] eomer",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Rohan",
+    "name":"Eomer",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0700",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] gimli",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"The Fellowship",
+    "name":"Gimli",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] legolas",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"The Fellowship",
+    "name":"Legolas",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0707",
+        "option":"Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] elladan_&_elrohir",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Rivendell",
+    "name":"Elladan & Elrohir",
+    "unit_type":"Hero of Fortitude",
+    "base_points":160,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0695",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] captain_of_dol_amroth",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"The Fiefdoms",
+    "name":"Captain of Dol Amroth",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] captain_of_minas_tirith",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Captain of Minas Tirith",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0688",
+        "option":"Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0689",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] captain_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Rohan",
+    "name":"Captain of Rohan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0696",
+        "option":"Bow",
+        "points":5.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0697",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0698",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0699",
+        "option":"Throwing Spears",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] beregond",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Beregond",
+    "unit_type":"Minor Hero",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] meriadoc_brandybuck",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Rohan",
+    "name":"Meriadoc Brandybuck",
+    "unit_type":"Independent Hero",
+    "base_points":25,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0701",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] peregrin_took",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Peregrin Took",
+    "unit_type":"Independent Hero",
+    "base_points":25,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] knight_of_dol_amroth",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"The Fiefdoms",
+    "name":"Knight of Dol Amroth",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0708",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0709",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] warrior_of_minas_tirith",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Minas Tirith",
+    "name":"Warrior of Minas Tirith",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0690",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0691",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0692",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0693",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0694",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_men_of_the_west] warrior_of_rohan",
+    "faction_type":"Good LL",
+    "faction":"The Men of the West",
+    "profile_origin":"Rohan",
+    "name":"Warrior of Rohan",
+    "unit_type":"Warrior",
+    "base_points":6,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":6,
+    "pointsTotal":6,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0702",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0703",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0704",
+        "option":"Throwing Spears",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0705",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0706",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
         "opt_quantity":0.0
       }
     ]
