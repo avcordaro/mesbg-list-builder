@@ -3,6 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Table from 'react-bootstrap/Table';
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
+import Spinner from 'react-bootstrap/Spinner';
 import { FaDownload } from "react-icons/fa6";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears 
@@ -15,7 +16,8 @@ export function ModalRosterTable({
   roster,
   showRosterTable,
   setShowRosterTable,
-  downloadProfileCards
+  downloadProfileCards,
+  downloadSpinner
 }) {
 
   return (
@@ -30,7 +32,9 @@ export function ModalRosterTable({
               <h6>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
               <h6>25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
               <h6>Bows: <b>{roster.bow_count}</b></h6>
-              <Button className="ms-auto me-3" onClick={() => downloadProfileCards()}><FaDownload /> Profile Cards</Button>
+              <Button className="ms-auto me-3" onClick={() => downloadProfileCards()}>
+                {downloadSpinner ? <Spinner size="sm" animation="border" /> : <FaDownload />} Profile Cards
+              </Button>
             </Stack>
           </Modal.Title>
         </Modal.Header>

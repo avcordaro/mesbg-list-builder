@@ -77,6 +77,7 @@ export default function App() {
   const [allianceLevel, setAllianceLevel] = useState("n/a");
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
+  const [downloadSpinner, setDownloadSpinner] = useState(false);
   
   useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
@@ -133,6 +134,7 @@ export default function App() {
   }, [roster]);
 
   const downloadProfileCards = async () => {
+    setDownloadSpinner(true);
     let profileCards = new Set()
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
@@ -155,6 +157,7 @@ export default function App() {
       let ts = new Date()
       saveAs(blob, "MESBG-Army-Profiles-" + ts.toISOString().substring(0, 19) + ".zip");
     });
+    setDownloadSpinner(false);
   }
 
   const getAllUniqueModels = () => {
@@ -348,7 +351,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.10.0 (updated 17-Nov-23)
+                version 2.10.1 (updated 18-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -634,6 +637,7 @@ export default function App() {
         roster={roster} showRosterTable={showRosterTable} 
         setShowRosterTable={setShowRosterTable} 
         downloadProfileCards={downloadProfileCards}
+        downloadSpinner={downloadSpinner}
       />
       <Alliances showAlliances={showAlliances} setShowAlliances={setShowAlliances} factionList={factionList} />
     </div>

@@ -33,9 +33,9 @@ df_models['inc_bow_count'] = df_models['default_bow']
 df_models.unit_type = pd.Categorical(df_models.unit_type, categories=unit_type_order)
 
 df_options = pd.read_excel("mesbg_data.xlsx", sheet_name="options")
-df_options = df_options.sort_values(['faction', 'name', 'points'], ascending=[True, True, False])
+df_options = df_options.sort_values(['model_id', 'points'], ascending=[True, False])
 df_options['opt_quantity'] = df_options['min']
-df_merged = df_models.merge(df_options, on=['faction', 'name'], how='left')
+df_merged = df_models.merge(df_options, on='model_id', how='left')
 df_merged['option_id'].fillna("None", inplace=True)
 df_merged['option'].fillna("None", inplace=True)
 df_merged['points'].fillna("None", inplace=True)

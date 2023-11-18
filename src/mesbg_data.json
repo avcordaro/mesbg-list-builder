@@ -3365,11 +3365,11 @@
     ]
   },
   {
-    "model_id":"[defenders_of_the_shire] tookish_hunters",
+    "model_id":"[defenders_of_the_shire] hobbit_archer_th",
     "faction_type":"Good LL",
     "faction":"Defenders of the Shire",
     "profile_origin":"The Shire",
-    "name":"Tookish Hunters",
+    "name":"Hobbit Archer",
     "unit_type":"Warrior",
     "base_points":6,
     "default_bow":true,
@@ -3382,41 +3382,22 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0841",
+        "option_id":"OPT0849",
         "option":"War Horn",
         "points":30.0,
         "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[defenders_of_the_shire] battlin'_brandybucks",
-    "faction_type":"Good LL",
-    "faction":"Defenders of the Shire",
-    "profile_origin":"The Shire",
-    "name":"Battlin' Brandybucks",
-    "unit_type":"Warrior",
-    "base_points":5,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":5,
-    "pointsTotal":5,
-    "warband_size":1,
-    "options":[
+      },
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
-        "min":0.0,
+        "option_id":"OPT0850",
+        "option":"Tookish Hunters",
+        "points":1.0,
+        "type":"upgrade",
+        "min":1.0,
         "max":1.0,
-        "opt_quantity":0.0
+        "opt_quantity":1.0
       }
     ]
   },
@@ -3454,6 +3435,34 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[defenders_of_the_shire] hobbit_militia_bb",
+    "faction_type":"Good LL",
+    "faction":"Defenders of the Shire",
+    "profile_origin":"The Shire",
+    "name":"Hobbit Militia",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0848",
+        "option":"Battlin' Brandybucks",
+        "points":1.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
       }
     ]
   },
@@ -10520,7 +10529,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT0645",
+        "option_id":"OPT0847",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -12533,7 +12542,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0618",
+        "option_id":"OPT0842",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -12542,7 +12551,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0619",
+        "option_id":"OPT0843",
         "option":"Whip",
         "points":1.0,
         "type":null,
@@ -12719,7 +12728,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0376",
+        "option_id":"OPT0844",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -12728,7 +12737,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0377",
+        "option_id":"OPT0845",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -12737,7 +12746,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0378",
+        "option_id":"OPT0846",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -13119,11 +13128,11 @@
     ]
   },
   {
-    "model_id":"[the_easterlings] black_dragon_kataphrakt",
+    "model_id":"[the_easterlings] easterling_kataphrakt_bd",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
-    "name":"Black Dragon Kataphrakt",
+    "name":"Easterling Kataphrakt",
     "unit_type":"Warrior",
     "base_points":16,
     "default_bow":false,
@@ -13239,11 +13248,11 @@
     ]
   },
   {
-    "model_id":"[the_easterlings] black_dragon_warrior",
+    "model_id":"[the_easterlings] easterling_warrior_bd",
     "faction_type":"Evil Army",
     "faction":"The Easterlings",
     "profile_origin":"The Easterlings",
-    "name":"Black Dragon Warrior",
+    "name":"Easterling Warrior",
     "unit_type":"Warrior",
     "base_points":9,
     "default_bow":false,
@@ -14599,52 +14608,6 @@
     ]
   },
   {
-    "model_id":"[the_host_of_the_dragon_emperor] black_dragon_kataphrakt",
-    "faction_type":"Evil LL",
-    "faction":"The Host of the Dragon Emperor",
-    "profile_origin":"The Easterlings",
-    "name":"Black Dragon Kataphrakt",
-    "unit_type":"Warrior",
-    "base_points":14,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":14,
-    "pointsTotal":14,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"OPT0439",
-        "option":"Banner",
-        "points":25.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0440",
-        "option":"War Drum (Easterling)",
-        "points":15.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0441",
-        "option":"Black Dragon Upgrade - FREE",
-        "points":0.0,
-        "type":"upgrade",
-        "min":1.0,
-        "max":1.0,
-        "opt_quantity":1.0
-      }
-    ]
-  },
-  {
     "model_id":"[the_host_of_the_dragon_emperor] easterling_kataphrakt",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
@@ -14700,6 +14663,52 @@
     ]
   },
   {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_kataphrakt_bd",
+    "faction_type":"Evil LL",
+    "faction":"The Host of the Dragon Emperor",
+    "profile_origin":"The Easterlings",
+    "name":"Easterling Kataphrakt",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0439",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0440",
+        "option":"War Drum (Easterling)",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0441",
+        "option":"Black Dragon Upgrade - FREE",
+        "points":0.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
     "faction_type":"Evil LL",
     "faction":"The Host of the Dragon Emperor",
@@ -14724,70 +14733,6 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[the_host_of_the_dragon_emperor] black_dragon_warrior",
-    "faction_type":"Evil LL",
-    "faction":"The Host of the Dragon Emperor",
-    "profile_origin":"The Easterlings",
-    "name":"Black Dragon Warrior",
-    "unit_type":"Warrior",
-    "base_points":7,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":7,
-    "pointsTotal":7,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"OPT0442",
-        "option":"Banner",
-        "points":25.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0443",
-        "option":"Pike",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0444",
-        "option":"Shield",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0445",
-        "option":"Bow",
-        "points":1.0,
-        "type":"bow",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0446",
-        "option":"Black Dragon Upgrade - FREE",
-        "points":0.0,
-        "type":"upgrade",
-        "min":1.0,
-        "max":1.0,
-        "opt_quantity":1.0
       }
     ]
   },
@@ -14861,6 +14806,70 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_host_of_the_dragon_emperor] easterling_warrior_bd",
+    "faction_type":"Evil LL",
+    "faction":"The Host of the Dragon Emperor",
+    "profile_origin":"The Easterlings",
+    "name":"Easterling Warrior",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0442",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0443",
+        "option":"Pike",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0444",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0445",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0446",
+        "option":"Black Dragon Upgrade - FREE",
+        "points":0.0,
+        "type":"upgrade",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
       }
     ]
   },

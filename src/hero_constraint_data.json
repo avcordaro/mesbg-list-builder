@@ -852,11 +852,11 @@
       "valid_warband_units":[
         "[defenders_of_the_shire] hobbit_archer",
         "[defenders_of_the_shire] hobbit_shirriff",
-        "[defenders_of_the_shire] battlin'_brandybucks",
+        "[defenders_of_the_shire] hobbit_militia_bb",
         "[defenders_of_the_shire] rosie_cotton"
       ],
       "special_unit_options":[
-        "Battlin' Brandybucks"
+
       ]
     }
   ],
@@ -878,11 +878,11 @@
       "valid_warband_units":[
         "[defenders_of_the_shire] hobbit_militia",
         "[defenders_of_the_shire] hobbit_shirriff",
-        "[defenders_of_the_shire] tookish_hunters",
+        "[defenders_of_the_shire] hobbit_archer_th",
         "[defenders_of_the_shire] rosie_cotton"
       ],
       "special_unit_options":[
-        "Tookish Hunters"
+
       ]
     }
   ],
@@ -3565,8 +3565,8 @@
   "[the_easterlings] easterling_dragon_knight":[
     {
       "valid_warband_units":[
-        "[the_easterlings] black_dragon_kataphrakt",
-        "[the_easterlings] black_dragon_warrior"
+        "[the_easterlings] easterling_kataphrakt_bd",
+        "[the_easterlings] easterling_warrior_bd"
       ],
       "special_unit_options":[
 
@@ -4020,8 +4020,8 @@
   "[the_host_of_the_dragon_emperor] easterling_dragon_knight":[
     {
       "valid_warband_units":[
-        "[the_host_of_the_dragon_emperor] black_dragon_kataphrakt",
-        "[the_host_of_the_dragon_emperor] black_dragon_warrior"
+        "[the_host_of_the_dragon_emperor] easterling_kataphrakt_bd",
+        "[the_host_of_the_dragon_emperor] easterling_warrior_bd"
       ],
       "special_unit_options":[
 
@@ -4063,7 +4063,6 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
       "special_unit_options":[
-        "Black Dragon Upgrade",
         "Black Dragon Upgrade - FREE"
       ]
     }
