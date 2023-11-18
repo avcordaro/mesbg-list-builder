@@ -38,6 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
+  const VERSION = "2.10.1"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -61,11 +62,12 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState({num_units: 0, points: 0, bow_count: 0, warbands: []});
+  const [roster, setRoster] = useState({version: VERSION, num_units: 0, points: 0, bow_count: 0, warbands: []});
   const [uniqueModels, setUniqueModels] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
   const [JSONImport, setJSONImport] = useState("");
   const [exportAlert, setExportAlert] = useState(false);
+  const [importAlert, setImportAlert] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false);
   const [showImportModal, setShowImportModal] = useState(false); 
   const [cardUnitData, setCardUnitData] = useState(null); 
@@ -322,21 +324,26 @@ export default function App() {
     Also notify them with an alert that fades away after 3 seconds. */
     navigator.clipboard.writeText(JSON.stringify(roster))
     setExportAlert(true)
-    window.setTimeout(()=>(setExportAlert(false)), 3000)
+    window.setTimeout(()=>(setExportAlert(false)), 5000)
   }
 
   const handleImportJSON = (e) => {
     // Attempts to read the input, convert it to JSON, and assigns the JSON dictionary to the roster state variable. 
     e.preventDefault()
-    if(JSONImport) {
-      try {
-        setRoster(JSON.parse(JSONImport));
-        setShowImportModal(false);
-        setJSONImport("");
-      }
-      catch(err) {
-        console.log(err)
-      }
+    try {
+        let json = JSON.parse(JSONImport);
+        let valid_json = ["num_units", "points", "bow_count", "warbands"].every(key => json.hasOwnProperty(key))
+        if (valid_json) {
+          setRoster(json);
+          setShowImportModal(false);
+          setJSONImport("");
+        } else {
+          setImportAlert(true);
+          window.setTimeout(()=>(setImportAlert(false)), 5000);
+        }
+    } catch(err) {
+        setImportAlert(true);
+        window.setTimeout(()=>(setImportAlert(false)), 5000);
     }
   }
 
@@ -351,7 +358,7 @@ export default function App() {
                 Army Roster Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version 2.10.1 (updated 18-Nov-23)
+                version {VERSION} (updated 18-Nov-23)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -480,8 +487,10 @@ export default function App() {
           }
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
-          <Alert style={{ width: "950px"}} show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
-            JSON string copied to clipboard.
+          <Alert style={{ width: "950px", zIndex: 1050 }} className="position-fixed" show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
+            <b>JSON string copied to your clipboard.</b>
+            <hr />
+            You can keep this somewhere safe, such as in a text file, to reload your army list again later using 'Import JSON'.
           </Alert>
           {roster.warbands.map((warband) => (
             <Card
@@ -621,12 +630,15 @@ export default function App() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form style={{"textAlign": "right"}} onSubmit={handleImportJSON} className="me-4">        
+          <Form noValidate style={{"textAlign": "right"}} onSubmit={handleImportJSON} className="me-4">        
             <Form.Control 
               value={JSONImport} 
               onChange={e => setJSONImport(e.target.value.replace(/^"(.*)"$/, '$1').replaceAll('""', '"'))}
               placeholder="Paste your army roster JSON string..."
             />
+            {importAlert && <p style={{"textAlign": "left"}} className="mt-2 ms-2 text-danger">
+              JSON string for army list is invalid. 
+            </p>}
             <Button className="ms-auto mt-3" onClick={handleImportJSON} type="submit"><BiSolidFileImport /> Import JSON</Button>
           </Form>
         </Modal.Body>
