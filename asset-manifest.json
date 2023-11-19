@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.277d315d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.68dddbe7.js",
+    "main.js": "/mesbg-list-builder/static/js/main.d7f197b9.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -116,6 +116,7 @@
     "static/media/Mahud Tribesmaster.jpg": "/mesbg-list-builder/static/media/Mahud Tribesmaster.09bd5f4fa220dfc43532.jpg",
     "static/media/Gimli.jpg": "/mesbg-list-builder/static/media/Gimli.3fd1ced254186866bf6d.jpg",
     "static/media/Sharku.jpg": "/mesbg-list-builder/static/media/Sharku.b61f5f23c3734947057a.jpg",
+    "static/media/Mirkwood Spider.jpg": "/mesbg-list-builder/static/media/Mirkwood Spider.435e3731ba336d7919cc.jpg",
     "static/media/Eorl the Young.jpg": "/mesbg-list-builder/static/media/Eorl the Young.2d85d2d4075bbdf61336.jpg",
     "static/media/Shagrat.jpg": "/mesbg-list-builder/static/media/Shagrat.6269c7cdffde2f40d5c2.jpg",
     "static/media/Frida Tallspear.jpg": "/mesbg-list-builder/static/media/Frida Tallspear.dca9aae22d7b125905e2.jpg",
@@ -276,6 +277,7 @@
     "static/media/Serpent Guard.jpg": "/mesbg-list-builder/static/media/Serpent Guard.3aa0bde45773ceeda8e8.jpg",
     "static/media/Black Guard of Barad-Dur.jpg": "/mesbg-list-builder/static/media/Black Guard of Barad-Dur.0f9ebcae46d590089d6f.jpg",
     "static/media/Warrior of Rohan.jpg": "/mesbg-list-builder/static/media/Warrior of Rohan.62acd1066a912de56e3b.jpg",
+    "static/media/Giant Spider.jpg": "/mesbg-list-builder/static/media/Giant Spider.c40a38215ad1f7293510.jpg",
     "static/media/Serpent Rider.jpg": "/mesbg-list-builder/static/media/Serpent Rider.71df185a32b0937dcd58.jpg",
     "static/media/Bat Swarm.jpg": "/mesbg-list-builder/static/media/Bat Swarm.a40384e931c40b49d770.jpg",
     "static/media/Woses Warrior.jpg": "/mesbg-list-builder/static/media/Woses Warrior.913c088d7b338e535cf5.jpg",
@@ -300,6 +302,7 @@
     "static/media/Warrior of Arnor.jpg": "/mesbg-list-builder/static/media/Warrior of Arnor.4d6702f9bee0c0cda6c0.jpg",
     "static/media/Morannon Orc.jpg": "/mesbg-list-builder/static/media/Morannon Orc.5cd52658a3188e34eba1.jpg",
     "static/media/Orc Warrior.jpg": "/mesbg-list-builder/static/media/Orc Warrior.09eb15a270ab92b4f688.jpg",
+    "static/media/Fell Warg.jpg": "/mesbg-list-builder/static/media/Fell Warg.a6d10082a428c06a3481.jpg",
     "static/media/Wild Man of Dunland.jpg": "/mesbg-list-builder/static/media/Wild Man of Dunland.6f883df8728fa0796437.jpg",
     "static/media/Khazad Guard.jpg": "/mesbg-list-builder/static/media/Khazad Guard.489b26889f5c0136e497.jpg",
     "static/media/Abrakhan Merchant Guard.jpg": "/mesbg-list-builder/static/media/Abrakhan Merchant Guard.89733ab832a9ad46dbe0.jpg",
@@ -352,8 +355,10 @@
     "static/media/Serpent Rider.png": "/mesbg-list-builder/static/media/Serpent Rider.f2af28383423fbcd03cd.png",
     "static/media/Rider of the Dead.png": "/mesbg-list-builder/static/media/Rider of the Dead.ed0f2f51ae676d50675f.png",
     "static/media/The Watcher in the Water.png": "/mesbg-list-builder/static/media/The Watcher in the Water.af0e7ccf78e33a66258c.png",
+    "static/media/Fell Warg.png": "/mesbg-list-builder/static/media/Fell Warg.1f7baa96864711fd5b56.png",
     "static/media/Deorwine.png": "/mesbg-list-builder/static/media/Deorwine.5dd9f754a5294cb24a14.png",
     "static/media/Great Beast of Gorgoroth.png": "/mesbg-list-builder/static/media/Great Beast of Gorgoroth.1404437c847dc9efc531.png",
+    "static/media/Mirkwood Spider.png": "/mesbg-list-builder/static/media/Mirkwood Spider.24245cd4ec9e4c08790b.png",
     "static/media/Thrydan Wolfsbane.png": "/mesbg-list-builder/static/media/Thrydan Wolfsbane.035a491cc6cfd56acd20.png",
     "static/media/King's Champion.png": "/mesbg-list-builder/static/media/King's Champion.01f597d3d237b3cc5cc8.png",
     "static/media/Elendil.png": "/mesbg-list-builder/static/media/Elendil.9a3d4cf35775e615c6e1.png",
@@ -413,6 +418,7 @@
     "static/media/Mauhur.png": "/mesbg-list-builder/static/media/Mauhur.4914146410279e55fd08.png",
     "static/media/Abrakhan Merchant Guard.png": "/mesbg-list-builder/static/media/Abrakhan Merchant Guard.9fa656c82e77dedfd701.png",
     "static/media/Will Whitfoot.png": "/mesbg-list-builder/static/media/Will Whitfoot.25a0a016d914627c65fc.png",
+    "static/media/Giant Spider.png": "/mesbg-list-builder/static/media/Giant Spider.f7e16446ee6a711c0507.png",
     "static/media/Amdur.png": "/mesbg-list-builder/static/media/Amdur.c13eff17558190788f6e.png",
     "static/media/Haradrim Raider.png": "/mesbg-list-builder/static/media/Haradrim Raider.6c7a459739f3c040af6e.png",
     "static/media/Rhunish War Drake.png": "/mesbg-list-builder/static/media/Rhunish War Drake.eb58f704d9de2c29870c.png",
@@ -649,10 +655,10 @@
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.277d315d.css.map": "/mesbg-list-builder/static/css/main.277d315d.css.map",
-    "main.68dddbe7.js.map": "/mesbg-list-builder/static/js/main.68dddbe7.js.map"
+    "main.d7f197b9.js.map": "/mesbg-list-builder/static/js/main.d7f197b9.js.map"
   },
   "entrypoints": [
     "static/css/main.277d315d.css",
-    "static/js/main.68dddbe7.js"
+    "static/js/main.d7f197b9.js"
   ]
 }
