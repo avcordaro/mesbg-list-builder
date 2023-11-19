@@ -25,8 +25,7 @@ export function ModalRosterTable({
         <Modal.Header closeButton>
           <Modal.Title className="w-100">
             <Stack direction="horizontal" gap={3}>
-              <h6 >Alliance level:</h6>
-              <h5><Badge bg={allianceColour}>{allianceLevel}</Badge></h5>
+              <h6 >Alliance level: <Badge style={{fontSize: "14px"}} bg={allianceColour}>{allianceLevel}</Badge></h6>
               <h6>Total Points: <b>{roster.points}</b></h6>
               <h6>Total Units: <b>{roster.num_units}</b></h6>
               <h6>50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
@@ -41,7 +40,7 @@ export function ModalRosterTable({
         <Modal.Body>
           {showRosterTable &&
             <>
-              <Table style={{verticalAlign: "middle"}}size="sm" bordered striped>
+              <Table style={{verticalAlign: "middle"}}size="sm" bordered>
                 <thead>
                   <tr>
                     <th>Warband</th>
@@ -56,34 +55,34 @@ export function ModalRosterTable({
                     {roster.warbands.map((warband) => (
                       <>
                         {warband.hero != null &&
-                          <tr>
-                            <td>{warband.num}</td>
-                            <td>{warband.hero.name}</td>
-                            <td>
+                          <tr className={warband.num % 2 == 0 ? "secondary" : ""}>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}><b>{warband.num}</b></td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{warband.hero.name}</td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>
                               {warband.hero.options.map((option) => (
                                 option.opt_quantity > 0 ? (option.max > 1 ? 
                                   option.opt_quantity + " " + option.option : option.option) : ""
                               )).filter((opt) => (opt != "")).join(", ")}
                             </td>
-                            <td>{warband.hero.pointsPerUnit}</td>
-                            <td>{warband.hero.quantity}</td>
-                            <td>{warband.hero.pointsTotal}</td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{warband.hero.pointsPerUnit}</td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{warband.hero.quantity}</td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{warband.hero.pointsTotal}</td>
                           </tr>
                         }
                         {warband.units.map((unit) => (
                           <>
                           {unit.name != null &&
                             <tr>
-                              <td>{warband.num}</td>
-                              <td>{unit.name}</td>
-                              <td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}></td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.name}</td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>
                                 {unit.options.map((option) => (
                                   option.opt_quantity > 0 ? option.option : ""
                                 )).filter((opt) => (opt != "")).join(", ")}
                               </td>
-                              <td>{unit.pointsPerUnit}</td>
-                              <td>{unit.quantity}</td>
-                              <td>{unit.pointsTotal}</td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.pointsPerUnit}</td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.quantity}</td>
+                              <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.pointsTotal}</td>
                             </tr>
                           }
                           </>

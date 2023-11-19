@@ -8355,6 +8355,62 @@
     ]
   },
   {
+    "model_id":"[mordor] giant_spider",
+    "faction_type":"Evil Army",
+    "faction":"Mordor",
+    "profile_origin":"Mordor",
+    "name":"Giant Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[mordor] mirkwood_spider",
+    "faction_type":"Evil Army",
+    "faction":"Mordor",
+    "profile_origin":"Mordor",
+    "name":"Mirkwood Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[mordor] morgul_knight",
     "faction_type":"Evil Army",
     "faction":"Mordor",
@@ -8532,6 +8588,34 @@
         "option_id":"OPT0206",
         "option":"Banner",
         "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[mordor] fell_warg",
+    "faction_type":"Evil Army",
+    "faction":"Mordor",
+    "profile_origin":"Mordor",
+    "name":"Fell Warg",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
