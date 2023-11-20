@@ -3966,6 +3966,735 @@
     ]
   },
   {
+    "model_id":"[grand_army_of_the_south] the_mumak_war_leader",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"The Mumak War Leader",
+    "unit_type":"Hero of Legend",
+    "base_points":400,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":400,
+    "pointsTotal":400,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] suladan",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Suladan",
+    "unit_type":"Hero of Legend",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0884",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0885",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] war_mumak_of_far_harad",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"War Mumak of Far Harad",
+    "unit_type":"Hero of Fortitude",
+    "base_points":300,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":300,
+    "pointsTotal":300,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] war_mumak_of_harad",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"War Mumak of Harad",
+    "unit_type":"Hero of Fortitude",
+    "base_points":275,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":275,
+    "pointsTotal":275,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0906",
+        "option":"Gnarled Hide",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0907",
+        "option":"Mahud Beastmaster Chieftain",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0908",
+        "option":"Rocks",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0909",
+        "option":"Sigils of Defiance",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0910",
+        "option":"Tusk Weapons",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0911",
+        "option":"Foul Temperament",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0912",
+        "option":"Rappelling Lines",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] hasharin",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Hasharin",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] raza,_fang_of_the_serpent",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Raza, Fang of the Serpent",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] mahud_king",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Mahud King",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0886",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0887",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0888",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0889",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_king",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim King",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0874",
+        "option":"Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0875",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0876",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_chieftan",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim Chieftan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0872",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0873",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_taskmaster",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim Taskmaster",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] mahud_tribesmaster",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Tribesmaster",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0893",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0894",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0895",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0896",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] half_troll",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Half Troll",
+    "unit_type":"Warrior",
+    "base_points":23,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":23,
+    "pointsTotal":23,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] mahud_raider",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Raider",
+    "unit_type":"Warrior",
+    "base_points":17,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":17,
+    "pointsTotal":17,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0890",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0891",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0892",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] serpent_rider",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Serpent Rider",
+    "unit_type":"Warrior",
+    "base_points":13,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":13,
+    "pointsTotal":13,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_raider",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim Raider",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0877",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0878",
+        "option":"Bow with Poisoned Arrows",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0879",
+        "option":"War Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] mahud_warrior",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Mahud Warrior",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0897",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0898",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0899",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] serpent_guard",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Serpent Guard",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_warrior",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim Warrior",
+    "unit_type":"Warrior",
+    "base_points":6,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":6,
+    "pointsTotal":6,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0880",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0881",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0882",
+        "option":"Bow with Poisoned Arrows",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0883",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[halls_of_thranduil] thranduil",
     "faction_type":"Good Army",
     "faction":"Halls of Thranduil",
@@ -12726,6 +13455,470 @@
     "pointsPerUnit":4,
     "pointsTotal":4,
     "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] gothmog",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Gothmog",
+    "unit_type":"Hero of Legend",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0851",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0852",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] goroth",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Goroth",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] gothmog's_enforcer",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Gothmog's Enforcer",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] guritz",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Guritz",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] zagdush",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Zagdush",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] morannon_orc_captain",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Morannon Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0856",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0857",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] orc_taskmaster",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Taskmaster",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] orc_shaman",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Shaman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT0866",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] orc_drummer",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Drummer",
+    "unit_type":"Independent Hero",
+    "base_points":30,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] mordor_troll",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor Troll",
+    "unit_type":"Warrior",
+    "base_points":100,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] morannon_orc",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Mordor",
+    "name":"Morannon Orc",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0853",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0854",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0855",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] orc_warrior",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0867",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0868",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0869",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0870",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0871",
+        "option":"Two-Handed Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] mordor_war_catapult",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor War Catapult",
+    "unit_type":"Siege Engine",
+    "base_points":160,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":4,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_army_of_gothmog] mordor_siege_bow",
+    "faction_type":"Evil LL",
+    "faction":"The Army of Gothmog",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor Siege Bow",
+    "unit_type":"Siege Engine",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":3,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
     "options":[
       {
         "option_id":"None",

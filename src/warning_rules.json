@@ -23,14 +23,33 @@
       "dependencies":[
         "[defenders_of_the_shire] meriadoc,_captain_of_the_shire"
       ],
-      "warning":"This force must contain Meriadoc, Captain of the Shire"
+      "warning":"This force must contain Meriadoc, Captain of the Shire."
     },
     {
       "type":"compulsory",
       "dependencies":[
         "[defenders_of_the_shire] peregrin,_captain_of_the_shire"
       ],
-      "warning":"This force must contain Peregrin, Captain of the Shire"
+      "warning":"This force must contain Peregrin, Captain of the Shire."
+    }
+  ],
+  "Grand Army of the South":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[grand_army_of_the_south] the_mumak_war_leader",
+        "[grand_army_of_the_south] suladan"
+      ],
+      "warning":"This force must contain either Suladan or The Mumak War Leader."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[grand_army_of_the_south] war_mumak_of_far_harad",
+        "[grand_army_of_the_south] the_mumak_war_leader",
+        "[grand_army_of_the_south] war_mumak_of_harad"
+      ],
+      "warning":"This force must contain at least one Mumak model."
     }
   ],
   "Helm's Guard":[
@@ -81,6 +100,15 @@
         "[riders_of_eomer] eomer"
       ],
       "warning":"This force must contain Eomer."
+    }
+  ],
+  "The Army of Gothmog":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_army_of_gothmog] gothmog"
+      ],
+      "warning":"This force must contain Gothmog."
     }
   ],
   "The Grey Company":[

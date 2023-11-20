@@ -1012,6 +1012,142 @@
       ]
     }
   ],
+  "[grand_army_of_the_south] haradrim_chieftan":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] haradrim_king":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] haradrim_taskmaster":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] hasharin":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] mahud_king":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] half_troll",
+        "[grand_army_of_the_south] mahud_raider",
+        "[grand_army_of_the_south] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] mahud_tribesmaster":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] half_troll",
+        "[grand_army_of_the_south] mahud_raider",
+        "[grand_army_of_the_south] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] raza,_fang_of_the_serpent":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] suladan":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] the_mumak_war_leader":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] half_troll",
+        "[grand_army_of_the_south] mahud_warrior",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] war_mumak_of_far_harad":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] half_troll",
+        "[grand_army_of_the_south] mahud_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[grand_army_of_the_south] war_mumak_of_harad":[
+    {
+      "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[halls_of_thranduil] thranduil":[
     {
       "valid_warband_units":[
@@ -3473,6 +3609,112 @@
     {
       "valid_warband_units":[
         "[sharkey's_rogues] hobbit_militia"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] goroth":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] gothmog":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] gothmog's_enforcer":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] guritz":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] morannon_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] orc_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] orc_taskmaster":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_army_of_gothmog] zagdush":[
+    {
+      "valid_warband_units":[
+        "[the_army_of_gothmog] mordor_troll",
+        "[the_army_of_gothmog] morannon_orc",
+        "[the_army_of_gothmog] orc_warrior"
       ],
       "special_unit_options":[
 
