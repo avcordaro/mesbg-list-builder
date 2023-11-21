@@ -111,6 +111,15 @@
       "warning":"This force must contain Gothmog."
     }
   ],
+  "The Black Gate Opens":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_black_gate_opens] mordor_troll_chieftan_(leader)"
+      ],
+      "warning":"This force must contain the Mordor Troll Chieftan (Leader), who is a Hero of Valour."
+    }
+  ],
   "The Grey Company":[
     {
       "type":"compulsory",

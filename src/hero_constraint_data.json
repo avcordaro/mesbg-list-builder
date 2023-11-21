@@ -3721,6 +3721,66 @@
       ]
     }
   ],
+  "[the_black_gate_opens] morannon_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[the_black_gate_opens] mordor_troll",
+        "[the_black_gate_opens] morannon_orc",
+        "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_gate_opens] mordor_troll_chieftan":[
+    {
+      "valid_warband_units":[
+        "[the_black_gate_opens] mordor_troll",
+        "[the_black_gate_opens] morannon_orc",
+        "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_gate_opens] mordor_troll_chieftan_(leader)":[
+    {
+      "valid_warband_units":[
+        "[the_black_gate_opens] mordor_troll",
+        "[the_black_gate_opens] morannon_orc",
+        "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_gate_opens] mouth_of_sauron":[
+    {
+      "valid_warband_units":[
+        "[the_black_gate_opens] mordor_troll",
+        "[the_black_gate_opens] morannon_orc",
+        "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_gate_opens] orc_captain":[
+    {
+      "valid_warband_units":[
+        "[the_black_gate_opens] mordor_troll",
+        "[the_black_gate_opens] morannon_orc",
+        "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[the_dead_of_dunharrow] herald_of_the_dead":[
     {
       "valid_warband_units":[

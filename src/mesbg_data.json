@@ -8319,6 +8319,15 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0919",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -8866,6 +8875,24 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0916",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0917",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -8924,6 +8951,15 @@
         "opt_quantity":0.0
       },
       {
+        "option_id":"OPT0920",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT0242",
         "option":"Orc Bow",
         "points":5.0,
@@ -8934,6 +8970,24 @@
       },
       {
         "option_id":"OPT0243",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0921",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0922",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -9074,6 +9128,15 @@
     "options":[
       {
         "option_id":"OPT0226",
+        "option":"War Drum (Mordor)",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0918",
         "option":"War Drum (Mordor)",
         "points":30.0,
         "type":null,
@@ -9434,6 +9497,15 @@
         "opt_quantity":0.0
       },
       {
+        "option_id":"OPT0913",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT0219",
         "option":"Shield",
         "points":1.0,
@@ -9444,6 +9516,24 @@
       },
       {
         "option_id":"OPT0220",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0914",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0915",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -9508,6 +9598,15 @@
         "opt_quantity":0.0
       },
       {
+        "option_id":"OPT0923",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT0247",
         "option":"Orc Bow",
         "points":1.0,
@@ -9536,6 +9635,42 @@
       },
       {
         "option_id":"OPT0250",
+        "option":"Two-Handed Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0924",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0925",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0926",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0927",
         "option":"Two-Handed Weapon",
         "points":1.0,
         "type":null,
@@ -13919,6 +14054,230 @@
     "pointsPerUnit":50,
     "pointsTotal":50,
     "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] mordor_troll_chieftan_(leader)",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor Troll Chieftan (Leader)",
+    "unit_type":"Hero of Valour",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] mouth_of_sauron",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Mordor",
+    "name":"Mouth of Sauron",
+    "unit_type":"Hero of Valour",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] mordor_troll_chieftan",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor Troll Chieftan",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] morannon_orc_captain",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Mordor",
+    "name":"Morannon Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] orc_captain",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] mordor_troll",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Barad-dur",
+    "name":"Mordor Troll",
+    "unit_type":"Warrior",
+    "base_points":100,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] morannon_orc",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Mordor",
+    "name":"Morannon Orc",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_gate_opens] orc_warrior",
+    "faction_type":"Evil LL",
+    "faction":"The Black Gate Opens",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
     "options":[
       {
         "option_id":"None",
