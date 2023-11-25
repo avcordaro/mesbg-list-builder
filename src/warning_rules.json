@@ -1,4 +1,22 @@
 {
+  "Army of Dunland":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[army_of_dunland] thrydan_wolfsbane"
+      ],
+      "warning":"This force must contain Thrydan Wolfsbane."
+    }
+  ],
+  "Assault Upon Helm's Deep":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[assault_upon_helm's_deep] uruk-hai_captain"
+      ],
+      "warning":"This force must contain an Uruk-Hai Captain."
+    }
+  ],
   "Breaking of the Fellowship":[
     {
       "type":"compulsory",
@@ -199,6 +217,24 @@
       "warning":"This force must contain Theodred."
     }
   ],
+  "Ugluk's Scouts":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[ugluk's_scouts] ugluk"
+      ],
+      "warning":"This force must contain Ugluk."
+    }
+  ],
+  "Wolves of Isengard":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[wolves_of_isengard] sharku"
+      ],
+      "warning":"This force must contain Sharku."
+    }
+  ],
   "[minas_tirith] aragorn,_king_elessar":[
     {
       "type":"incompatible",
@@ -317,6 +353,21 @@
         "[rohan] eowyn"
       ],
       "warning":"If Helm Hammerhand is included in the same force as any named Rohan Hero models, you automatically lose your army bonus and become impossible allies with all other army lists."
+    }
+  ],
+  "[the_chief's_ruffians] ruffian_cpt":[
+    {
+      "type":"requires",
+      "dependencies":[
+        "[the_chief's_ruffians] rowan_thistlewood,_ruffian_enforcer",
+        "[the_chief's_ruffians] bill_ferny",
+        "[the_chief's_ruffians] lotho_sackville-baggins",
+        "[the_chief's_ruffians] ted_sandyman",
+        "[the_chief's_ruffians] sharkey_and_worm",
+        "[the_chief's_ruffians] sid_briarthorn,_ruffian_chief",
+        "[the_chief's_ruffians] harry_goatleaf"
+      ],
+      "warning":"A Ruffian leading a warband may only be included if all of the other Hero models from this Legendary Legion are already included in this force."
     }
   ],
   "[the_fellowship] arwen":[
