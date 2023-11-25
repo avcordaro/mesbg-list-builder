@@ -8,6 +8,22 @@
       "warning":"This force must contain Aragorn."
     }
   ],
+  "Cirith Ungol":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[cirith_ungol] shagrat"
+      ],
+      "warning":"This force must contain Shagrat."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[cirith_ungol] gorbag"
+      ],
+      "warning":"This force must contain Gorbag."
+    }
+  ],
   "Defenders of Helm's Deep":[
     {
       "type":"compulsory",
@@ -31,6 +47,15 @@
         "[defenders_of_the_shire] peregrin,_captain_of_the_shire"
       ],
       "warning":"This force must contain Peregrin, Captain of the Shire."
+    }
+  ],
+  "Depths of Moria":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[depths_of_moria] the_balrog"
+      ],
+      "warning":"This force must contain The Balrog."
     }
   ],
   "Grand Army of the South":[
@@ -59,6 +84,15 @@
         "[helm's_guard] helm_hammerhand"
       ],
       "warning":"This force must contain Helm Hammerhand."
+    }
+  ],
+  "Lurtz's Scouts":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[lurtz's_scouts] lurtz"
+      ],
+      "warning":"This force must contain Lurtz."
     }
   ],
   "Paths of the Druadan":[
@@ -118,6 +152,15 @@
         "[the_black_gate_opens] mordor_troll_chieftan_(leader)"
       ],
       "warning":"This force must contain the Mordor Troll Chieftan (Leader), who is a Hero of Valour."
+    }
+  ],
+  "The Black Riders":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_black_riders] witch_king"
+      ],
+      "warning":"This force must contain the Witch King."
     }
   ],
   "The Grey Company":[

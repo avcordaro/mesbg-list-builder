@@ -1,4 +1,6 @@
+import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
+import * as NumericInput from "react-numeric-input";
 import hero_constraint_data from "../hero_constraint_data.json";
 
 /* Option Warrior is the component used to display an individual gear options that each 
@@ -129,13 +131,62 @@ export function OptionWarrior({
     return newRoster;
   };
 
+  const handleQuantity = (newQuantity, newQuantityString, input) => {
+    /* Handles updates for options that require a quantity, rather than a toggle. This includes
+    updating any changes to points and bow count when the quantity is changed. This function 
+    receives three inputs from the NumericInput field it's attached to:
+    newQuantity - the new value as an integer (what we're interested in)
+    newQuantityString - the new value as a string (not needed)
+    input - I'm unclear on what this arg provides (but also not needed) */
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.num == warbandNum) {
+        let newUnits = newWarband.units.map((_unit) => {
+          let newUnit = { ..._unit };
+          if(newUnit.id == unit.id) {
+            let newOptions = newUnit.options.map((_option) => {
+              let newOption = { ..._option };
+              if(newOption.option_id == option.option_id) {
+                newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
+                newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+                newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - (option.points * option.opt_quantity)
+                newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] + (option.points * newQuantity)
+                newUnit['pointsTotal'] = newUnit['pointsPerUnit']
+                newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+                newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
+                newOption['opt_quantity'] = newQuantity
+              }
+              return newOption
+            });
+            newUnit.options = newOptions
+          }
+          return newUnit
+        });
+        newWarband.units = newUnits
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    setRoster(newRoster);
+  };
+
   return (
-    <Form.Check
-      type="switch"
-      label={option.option + " (" + option.points + " points)"}
-      checked={option.opt_quantity == 1}
-      disabled={(option.min == option.max) || !roster.warbands[warbandNum - 1].hero || (option.type == "upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_unit_options'].includes(option.option)) }
-      onChange={handleToggle}
-    />
+    <>
+    {option.max > 1 ? 
+      <Stack className="mt-1" direction="horizontal" gap={2}>
+        <NumericInput size={1} min={option.min} max={option.max} value={option.opt_quantity} onChange={handleQuantity}/>
+        {option.option + " (" + option.points + " points)"}
+      </Stack>
+      :
+      <Form.Check
+        type="switch"
+        label={option.option + " (" + option.points + " points)"}
+        checked={option.opt_quantity == 1}
+        disabled={(option.min == option.max) || !roster.warbands[warbandNum - 1].hero || (option.type == "upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_unit_options'].includes(option.option)) }
+        onChange={handleToggle}
+      />
+    }
+    </>
   );
 }

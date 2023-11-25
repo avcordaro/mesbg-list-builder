@@ -482,6 +482,66 @@
       ]
     }
   ],
+  "[cirith_ungol] gorbag":[
+    {
+      "valid_warband_units":[
+        "[cirith_ungol] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[cirith_ungol] mordor_uruk-hai_captain":[
+    {
+      "valid_warband_units":[
+        "[cirith_ungol] mordor_uruk-hai"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[cirith_ungol] orc_captain":[
+    {
+      "valid_warband_units":[
+        "[cirith_ungol] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[cirith_ungol] orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[cirith_ungol] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[cirith_ungol] shagrat":[
+    {
+      "valid_warband_units":[
+        "[cirith_ungol] mordor_uruk-hai"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[cirith_ungol] shelob":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[corsairs_of_umbar] black_numenorean_marshall":[
     {
       "valid_warband_units":[
@@ -929,6 +989,81 @@
         "[defenders_of_the_shire] hobbit_militia",
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[depths_of_moria] moria_blackshield_captain":[
+    {
+      "valid_warband_units":[
+        "[depths_of_moria] moria_blackshield_drummers",
+        "[depths_of_moria] moria_goblin_drum",
+        "[depths_of_moria] cave_troll",
+        "[depths_of_moria] moria_blackshield",
+        "[depths_of_moria] moria_goblin_prowler",
+        "[depths_of_moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[depths_of_moria] moria_blackshield_shaman":[
+    {
+      "valid_warband_units":[
+        "[depths_of_moria] moria_blackshield_drummers",
+        "[depths_of_moria] moria_goblin_drum",
+        "[depths_of_moria] cave_troll",
+        "[depths_of_moria] moria_blackshield",
+        "[depths_of_moria] moria_goblin_prowler",
+        "[depths_of_moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[depths_of_moria] moria_goblin_captain":[
+    {
+      "valid_warband_units":[
+        "[depths_of_moria] moria_blackshield_drummers",
+        "[depths_of_moria] moria_goblin_drum",
+        "[depths_of_moria] cave_troll",
+        "[depths_of_moria] moria_blackshield",
+        "[depths_of_moria] moria_goblin_prowler",
+        "[depths_of_moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[depths_of_moria] moria_goblin_shaman":[
+    {
+      "valid_warband_units":[
+        "[depths_of_moria] moria_blackshield_drummers",
+        "[depths_of_moria] moria_goblin_drum",
+        "[depths_of_moria] cave_troll",
+        "[depths_of_moria] moria_blackshield",
+        "[depths_of_moria] moria_goblin_prowler",
+        "[depths_of_moria] moria_goblin_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[depths_of_moria] the_balrog":[
+    {
+      "valid_warband_units":[
+        "[depths_of_moria] moria_blackshield_drummers",
+        "[depths_of_moria] moria_goblin_drum",
+        "[depths_of_moria] cave_troll",
+        "[depths_of_moria] moria_blackshield",
+        "[depths_of_moria] moria_goblin_prowler",
+        "[depths_of_moria] moria_goblin_warrior"
       ],
       "special_unit_options":[
 
@@ -1680,6 +1815,60 @@
         "[lothlorien] guard_of_the_galadhrim_court",
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lurtz's_scouts] lurtz":[
+    {
+      "valid_warband_units":[
+        "[lurtz's_scouts] uruk-hai_drummer",
+        "[lurtz's_scouts] uruk-hai_scout"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lurtz's_scouts] mauhur":[
+    {
+      "valid_warband_units":[
+        "[lurtz's_scouts] uruk-hai_drummer",
+        "[lurtz's_scouts] uruk-hai_scout"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lurtz's_scouts] ugluk":[
+    {
+      "valid_warband_units":[
+        "[lurtz's_scouts] uruk-hai_drummer",
+        "[lurtz's_scouts] uruk-hai_scout"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lurtz's_scouts] uruk-hai_drummer":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[lurtz's_scouts] uruk-hai_scout_captain":[
+    {
+      "valid_warband_units":[
+        "[lurtz's_scouts] uruk-hai_drummer",
+        "[lurtz's_scouts] uruk-hai_scout"
       ],
       "special_unit_options":[
 
@@ -3775,6 +3964,26 @@
         "[the_black_gate_opens] mordor_troll",
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_riders] ringwraith":[
+    {
+      "valid_warband_units":[
+        "[the_black_riders] ringwraith"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[the_black_riders] witch_king":[
+    {
+      "valid_warband_units":[
+        "[the_black_riders] ringwraith"
       ],
       "special_unit_options":[
 

@@ -1847,6 +1847,329 @@
     ]
   },
   {
+    "model_id":"[cirith_ungol] shagrat",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Mordor",
+    "name":"Shagrat",
+    "unit_type":"Hero of Fortitude",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0969",
+        "option":"Shield of Cirith Ungol",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0970",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] gorbag",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Mordor",
+    "name":"Gorbag",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0954",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] mordor_uruk-hai_captain",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Mordor",
+    "name":"Mordor Uruk-Hai Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0959",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0960",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0961",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] orc_captain",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0962",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0963",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] orc_shaman",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Shaman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] shelob",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Barad-dur",
+    "name":"Shelob",
+    "unit_type":"Independent Hero",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] mordor_uruk-hai",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Mordor",
+    "name":"Mordor Uruk-Hai",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0955",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0956",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0957",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0958",
+        "option":"Two-Handed Mace",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[cirith_ungol] orc_warrior",
+    "faction_type":"Evil LL",
+    "faction":"Cirith Ungol",
+    "profile_origin":"Barad-dur",
+    "name":"Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0964",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0965",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0966",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0967",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0968",
+        "option":"Two-Handed Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[corsairs_of_umbar] dalamyr,_fleetmaster_of_umbar",
     "faction_type":"Evil Army",
     "faction":"Corsairs of Umbar",
@@ -3516,6 +3839,350 @@
         "option":"Battlin' Brandybucks",
         "points":1.0,
         "type":"upgrade",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] the_balrog",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"The Balrog",
+    "unit_type":"Hero of Legend",
+    "base_points":350,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":350,
+    "pointsTotal":350,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_blackshield_captain",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Blackshield Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_goblin_captain",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Goblin Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0936",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0937",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_blackshield_shaman",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Blackshield Shaman",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_goblin_shaman",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Goblin Shaman",
+    "unit_type":"Minor Hero",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] cave_troll",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Angmar",
+    "name":"Cave Troll",
+    "unit_type":"Warrior",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0941",
+        "option":"Troll Chain",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0942",
+        "option":"Swap Spear for Hammer",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_blackshield_drummers",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Blackshield Drummers",
+    "unit_type":"Warrior",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_goblin_drum",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Goblin Drum",
+    "unit_type":"Warrior",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_blackshield",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Blackshield",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0935",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_goblin_prowler",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Goblin Prowler",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[depths_of_moria] moria_goblin_warrior",
+    "faction_type":"Evil LL",
+    "faction":"Depths of Moria",
+    "profile_origin":"Moria",
+    "name":"Moria Goblin Warrior",
+    "unit_type":"Warrior",
+    "base_points":4,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":4,
+    "pointsTotal":4,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0938",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0939",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0940",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -6737,6 +7404,210 @@
     ]
   },
   {
+    "model_id":"[lurtz's_scouts] lurtz",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Lurtz",
+    "unit_type":"Hero of Valour",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0928",
+        "option":"Shield",
+        "points":0.0,
+        "type":null,
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      }
+    ]
+  },
+  {
+    "model_id":"[lurtz's_scouts] ugluk",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Ugluk",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[lurtz's_scouts] mauhur",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Mauhur",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[lurtz's_scouts] uruk-hai_scout_captain",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Uruk-Hai Scout Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0932",
+        "option":"Uruk-Hai Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0933",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0934",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[lurtz's_scouts] uruk-hai_drummer",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Uruk-Hai Drummer",
+    "unit_type":"Independent Hero",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[lurtz's_scouts] uruk-hai_scout",
+    "faction_type":"Evil LL",
+    "faction":"Lurtz's Scouts",
+    "profile_origin":"Isengard",
+    "name":"Uruk-Hai Scout",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0929",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0930",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0931",
+        "option":"Uruk-Hai Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[minas_tirith] aragorn,_king_elessar",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
@@ -8319,15 +9190,6 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0919",
-        "option":"Armoured Horse",
-        "points":15.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
       }
     ]
   },
@@ -8831,9 +9693,9 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0213",
+        "option":"Shield",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -8869,24 +9731,6 @@
       },
       {
         "option_id":"OPT0222",
-        "option":"Two-Handed Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0916",
-        "option":"Shield",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0917",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -8951,15 +9795,6 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0920",
-        "option":"Warg",
-        "points":10.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT0242",
         "option":"Orc Bow",
         "points":5.0,
@@ -8970,24 +9805,6 @@
       },
       {
         "option_id":"OPT0243",
-        "option":"Shield",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0921",
-        "option":"Orc Bow",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0922",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -9128,15 +9945,6 @@
     "options":[
       {
         "option_id":"OPT0226",
-        "option":"War Drum (Mordor)",
-        "points":30.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0918",
         "option":"War Drum (Mordor)",
         "points":30.0,
         "type":null,
@@ -9497,15 +10305,6 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0913",
-        "option":"Banner",
-        "points":25.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT0219",
         "option":"Shield",
         "points":1.0,
@@ -9516,24 +10315,6 @@
       },
       {
         "option_id":"OPT0220",
-        "option":"Spear",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0914",
-        "option":"Shield",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0915",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -9598,15 +10379,6 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT0923",
-        "option":"Banner",
-        "points":25.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT0247",
         "option":"Orc Bow",
         "points":1.0,
@@ -9635,42 +10407,6 @@
       },
       {
         "option_id":"OPT0250",
-        "option":"Two-Handed Weapon",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0924",
-        "option":"Orc Bow",
-        "points":1.0,
-        "type":"bow",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0925",
-        "option":"Shield",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0926",
-        "option":"Spear",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0927",
         "option":"Two-Handed Weapon",
         "points":1.0,
         "type":null,
@@ -10144,9 +10880,18 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0943",
+        "option":"Troll Chain",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0944",
+        "option":"Swap Spear for Hammer",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14112,10 +14857,10 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
+        "option_id":"OPT0919",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -14168,9 +14913,18 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0916",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0917",
+        "option":"Two-Handed Weapon",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14196,9 +14950,27 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0920",
+        "option":"Warg",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0921",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0922",
+        "option":"Shield",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14224,9 +14996,9 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0918",
+        "option":"War Drum (Mordor)",
+        "points":30.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14252,9 +15024,27 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0913",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0914",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0915",
+        "option":"Spear",
+        "points":1.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14280,12 +15070,167 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT0923",
+        "option":"Banner",
+        "points":25.0,
         "type":null,
         "min":0.0,
         "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0924",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0925",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0926",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0927",
+        "option":"Two-Handed Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_riders] witch_king",
+    "faction_type":"Evil LL",
+    "faction":"The Black Riders",
+    "profile_origin":"Barad-dur",
+    "name":"Witch King",
+    "unit_type":"Hero of Legend",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT0945",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0946",
+        "option":"Morgul Blade",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0948",
+        "option":"Might",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":3.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0949",
+        "option":"Will",
+        "points":5.0,
+        "type":null,
+        "min":10.0,
+        "max":20.0,
+        "opt_quantity":10.0
+      },
+      {
+        "option_id":"OPT0950",
+        "option":"Fate",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":3.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_black_riders] ringwraith",
+    "faction_type":"Evil LL",
+    "faction":"The Black Riders",
+    "profile_origin":"Barad-dur",
+    "name":"Ringwraith",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0947",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":1.0,
+        "max":1.0,
+        "opt_quantity":1.0
+      },
+      {
+        "option_id":"OPT0951",
+        "option":"Might",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":2.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0952",
+        "option":"Will",
+        "points":5.0,
+        "type":null,
+        "min":7.0,
+        "max":14.0,
+        "opt_quantity":7.0
+      },
+      {
+        "option_id":"OPT0953",
+        "option":"Fate",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":2.0,
         "opt_quantity":0.0
       }
     ]
