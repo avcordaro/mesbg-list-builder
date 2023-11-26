@@ -165,7 +165,7 @@
       ]
     }
   ],
-  "[army_of_dunland] dunlending_chieftan":[
+  "[army_of_dunland] dunlending_chieftain":[
     {
       "valid_warband_units":[
         "[army_of_dunland] crebain",
@@ -310,7 +310,7 @@
       ]
     }
   ],
-  "[barad-dur] mordor_troll_chieftan":[
+  "[barad-dur] mordor_troll_chieftain":[
     {
       "valid_warband_units":[
         "[barad-dur] orc_drummer",
@@ -1243,7 +1243,7 @@
       ]
     }
   ],
-  "[grand_army_of_the_south] haradrim_chieftan":[
+  "[grand_army_of_the_south] haradrim_chieftain":[
     {
       "valid_warband_units":[
         "[grand_army_of_the_south] serpent_rider",
@@ -1428,7 +1428,7 @@
       ]
     }
   ],
-  "[isengard] dunlending_chieftan":[
+  "[isengard] dunlending_chieftain":[
     {
       "valid_warband_units":[
         "[isengard] uruk-hai_drummer",
@@ -2504,7 +2504,7 @@
       ]
     }
   ],
-  "[mordor] mordor_troll_chieftan":[
+  "[mordor] mordor_troll_chieftain":[
     {
       "valid_warband_units":[
         "[mordor] black_guard_drummer",
@@ -4018,7 +4018,7 @@
       ]
     }
   ],
-  "[the_black_gate_opens] mordor_troll_chieftan":[
+  "[the_black_gate_opens] mordor_troll_chieftain":[
     {
       "valid_warband_units":[
         "[the_black_gate_opens] mordor_troll",
@@ -4030,7 +4030,7 @@
       ]
     }
   ],
-  "[the_black_gate_opens] mordor_troll_chieftan_(leader)":[
+  "[the_black_gate_opens] mordor_troll_chieftain_(leader)":[
     {
       "valid_warband_units":[
         "[the_black_gate_opens] mordor_troll",
@@ -4242,7 +4242,8 @@
     {
       "valid_warband_units":[
         "[the_easterlings] easterling_kataphrakt_bd",
-        "[the_easterlings] easterling_warrior_bd"
+        "[the_easterlings] easterling_warrior_bd",
+        "[the_easterlings] dragon_cult_acolyte"
       ],
       "special_unit_options":[
 
@@ -4697,7 +4698,8 @@
     {
       "valid_warband_units":[
         "[the_host_of_the_dragon_emperor] easterling_kataphrakt_bd",
-        "[the_host_of_the_dragon_emperor] easterling_warrior_bd"
+        "[the_host_of_the_dragon_emperor] easterling_warrior_bd",
+        "[the_host_of_the_dragon_emperor] dragon_cult_acolyte"
       ],
       "special_unit_options":[
 
@@ -5276,7 +5278,7 @@
       ]
     }
   ],
-  "[the_serpent_horde] haradrim_chieftan":[
+  "[the_serpent_horde] haradrim_chieftain":[
     {
       "valid_warband_units":[
         "[the_serpent_horde] serpent_rider",

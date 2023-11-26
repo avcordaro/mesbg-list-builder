@@ -143,6 +143,27 @@
         "[rangers_of_ithilien] faramir"
       ],
       "warning":"This force must contain Faramir."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rangers_of_ithilien] frodo_baggins"
+      ],
+      "warning":"This force must contain Frodo."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rangers_of_ithilien] samwise_gamgee"
+      ],
+      "warning":"This force must contain Sam."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rangers_of_ithilien] smeagol"
+      ],
+      "warning":"This force must contain Smeagol."
     }
   ],
   "Riders of Eomer":[
@@ -167,9 +188,9 @@
     {
       "type":"compulsory",
       "dependencies":[
-        "[the_black_gate_opens] mordor_troll_chieftan_(leader)"
+        "[the_black_gate_opens] mordor_troll_chieftain_(leader)"
       ],
-      "warning":"This force must contain the Mordor Troll Chieftan (Leader), who is a Hero of Valour."
+      "warning":"This force must contain the Mordor Troll Chieftain (Leader), who is a Hero of Valour."
     }
   ],
   "The Black Riders":[
@@ -296,7 +317,7 @@
         "[rivendell] elladan_&_elrohir",
         "[rivendell] bilbo_baggins"
       ],
-      "warning":"If Gil-Galad is included in the same force as either Arwen, Lindir, Elladan & Elrohir or Bilbo Baggins, you automatically lose your army bonus and become impossible allies with all other army lists."
+      "warning":"If Gil-Galad is included in the same force as either Arwen, Lindir, Elladan & Elrohir or Bilbo Baggins, you automatically become Impossible Allies with all except Numenor (Historical) and Lothlorien, Fangorn and The Misty Mountains (Convenient)."
     }
   ],
   "[rohan] dernhelm":[

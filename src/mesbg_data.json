@@ -784,11 +784,11 @@
     ]
   },
   {
-    "model_id":"[army_of_dunland] dunlending_chieftan",
+    "model_id":"[army_of_dunland] dunlending_chieftain",
     "faction_type":"Evil LL",
     "faction":"Army of Dunland",
     "profile_origin":"Isengard",
-    "name":"Dunlending Chieftan",
+    "name":"Dunlending Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":55,
     "default_bow":false,
@@ -1320,8 +1320,8 @@
     "options":[
       {
         "option_id":"OPT0064",
-        "option":"Swap Weapon",
-        "points":1.0,
+        "option":"Swap Shield for War Drum (Isengard)",
+        "points":25.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -1329,8 +1329,8 @@
       },
       {
         "option_id":"OPT0065",
-        "option":"Swap Shield for War Drum (Isengard)",
-        "points":0.0,
+        "option":"Swap Weapon",
+        "points":1.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -1651,11 +1651,11 @@
     ]
   },
   {
-    "model_id":"[barad-dur] mordor_troll_chieftan",
+    "model_id":"[barad-dur] mordor_troll_chieftain",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
     "profile_origin":"Barad-dur",
-    "name":"Mordor Troll Chieftan",
+    "name":"Mordor Troll Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":140,
     "default_bow":false,
@@ -3638,16 +3638,16 @@
     "faction":"Defenders of Helm's Deep",
     "profile_origin":"Lothlorien",
     "name":"Haldir",
-    "unit_type":"Hero of Fortitude",
-    "base_points":80,
+    "unit_type":"Hero of Valour",
+    "base_points":85,
     "default_bow":false,
     "unique":true,
     "inc_bow_count":false,
     "siege_crew":0,
     "quantity":1,
-    "pointsPerUnit":80,
-    "pointsTotal":80,
-    "warband_size":12,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":15,
     "options":[
       {
         "option_id":"OPT0217",
@@ -5337,6 +5337,61 @@
     ]
   },
   {
+    "model_id":"[far_harad] mahud_king",
+    "faction_type":"Evil Army",
+    "faction":"Far Harad",
+    "profile_origin":"Far Harad",
+    "name":"Mahud King",
+    "unit_type":"Hero of Valour",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0274",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0275",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0276",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0277",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[far_harad] war_mumak_of_far_harad",
     "faction_type":"Evil Army",
     "faction":"Far Harad",
@@ -5402,61 +5457,6 @@
         "option_id":"OPT0296",
         "option":"Rappelling Lines",
         "points":10.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[far_harad] mahud_king",
-    "faction_type":"Evil Army",
-    "faction":"Far Harad",
-    "profile_origin":"Far Harad",
-    "name":"Mahud King",
-    "unit_type":"Hero of Fortitude",
-    "base_points":70,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":70,
-    "pointsTotal":70,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT0274",
-        "option":"War Camel",
-        "points":10.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0275",
-        "option":"Blowpipe with Poisoned Darts",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0276",
-        "option":"Shield",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0277",
-        "option":"War Spear",
-        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -5732,6 +5732,116 @@
     ]
   },
   {
+    "model_id":"[grand_army_of_the_south] mahud_king",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"Far Harad",
+    "name":"Mahud King",
+    "unit_type":"Hero of Valour",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0316",
+        "option":"War Camel",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0317",
+        "option":"Blowpipe with Poisoned Darts",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0318",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0319",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[grand_army_of_the_south] haradrim_king",
+    "faction_type":"Evil LL",
+    "faction":"Grand Army of the South",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim King",
+    "unit_type":"Hero of Valour",
+    "base_points":60,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0301",
+        "option":"Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0302",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0303",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0304",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[grand_army_of_the_south] war_mumak_of_far_harad",
     "faction_type":"Evil LL",
     "faction":"Grand Army of the South",
@@ -5898,121 +6008,11 @@
     ]
   },
   {
-    "model_id":"[grand_army_of_the_south] mahud_king",
-    "faction_type":"Evil LL",
-    "faction":"Grand Army of the South",
-    "profile_origin":"Far Harad",
-    "name":"Mahud King",
-    "unit_type":"Hero of Fortitude",
-    "base_points":70,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":70,
-    "pointsTotal":70,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT0316",
-        "option":"War Camel",
-        "points":10.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0317",
-        "option":"Blowpipe with Poisoned Darts",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0318",
-        "option":"Shield",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0319",
-        "option":"War Spear",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[grand_army_of_the_south] haradrim_king",
+    "model_id":"[grand_army_of_the_south] haradrim_chieftain",
     "faction_type":"Evil LL",
     "faction":"Grand Army of the South",
     "profile_origin":"The Serpent Horde",
-    "name":"Haradrim King",
-    "unit_type":"Hero of Fortitude",
-    "base_points":60,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":60,
-    "pointsTotal":60,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT0301",
-        "option":"Horse",
-        "points":15.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0302",
-        "option":"Bow with Poisoned Arrows",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0303",
-        "option":"War Spear",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0304",
-        "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[grand_army_of_the_south] haradrim_chieftan",
-    "faction_type":"Evil LL",
-    "faction":"Grand Army of the South",
-    "profile_origin":"The Serpent Horde",
-    "name":"Haradrim Chieftan",
+    "name":"Haradrim Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":50,
     "default_bow":false,
@@ -7160,11 +7160,11 @@
     ]
   },
   {
-    "model_id":"[isengard] dunlending_chieftan",
+    "model_id":"[isengard] dunlending_chieftain",
     "faction_type":"Evil Army",
     "faction":"Isengard",
     "profile_origin":"Isengard",
-    "name":"Dunlending Chieftan",
+    "name":"Dunlending Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":55,
     "default_bow":false,
@@ -8193,6 +8193,52 @@
     ]
   },
   {
+    "model_id":"[lothlorien] haldir",
+    "faction_type":"Good Army",
+    "faction":"Lothlorien",
+    "profile_origin":"Lothlorien",
+    "name":"Haldir",
+    "unit_type":"Hero of Valour",
+    "base_points":70,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0463",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0464",
+        "option":"Elf Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0465",
+        "option":"Elven Cloak",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[lothlorien] orophin",
     "faction_type":"Good Army",
     "faction":"Lothlorien",
@@ -8295,52 +8341,6 @@
       {
         "option_id":"OPT0448",
         "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[lothlorien] haldir",
-    "faction_type":"Good Army",
-    "faction":"Lothlorien",
-    "profile_origin":"Lothlorien",
-    "name":"Haldir",
-    "unit_type":"Hero of Fortitude",
-    "base_points":70,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":70,
-    "pointsTotal":70,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT0463",
-        "option":"Heavy Armour",
-        "points":10.0,
-        "type":"armour",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0464",
-        "option":"Elf Bow",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0465",
-        "option":"Elven Cloak",
         "points":5.0,
         "type":null,
         "min":0.0,
@@ -9133,6 +9133,79 @@
     ]
   },
   {
+    "model_id":"[minas_tirith] king_of_men",
+    "faction_type":"Good Army",
+    "faction":"Minas Tirith",
+    "profile_origin":"Minas Tirith",
+    "name":"King of Men",
+    "unit_type":"Hero of Valour",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT0518",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0519",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0520",
+        "option":"Heavy Armour",
+        "points":5.0,
+        "type":"armour",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0521",
+        "option":"Lance",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0522",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0523",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[minas_tirith] denethor",
     "faction_type":"Good Army",
     "faction":"Minas Tirith",
@@ -9209,79 +9282,6 @@
         "option_id":"None",
         "option":"None",
         "points":"None",
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[minas_tirith] king_of_men",
-    "faction_type":"Good Army",
-    "faction":"Minas Tirith",
-    "profile_origin":"Minas Tirith",
-    "name":"King of Men",
-    "unit_type":"Hero of Fortitude",
-    "base_points":60,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":60,
-    "pointsTotal":60,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT0518",
-        "option":"Armoured Horse",
-        "points":15.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0519",
-        "option":"Horse",
-        "points":10.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0520",
-        "option":"Heavy Armour",
-        "points":5.0,
-        "type":"armour",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0521",
-        "option":"Lance",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0522",
-        "option":"Shield",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0523",
-        "option":"Swap Weapon",
-        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -9937,7 +9937,7 @@
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
-    "siege_crew":2,
+    "siege_crew":3,
     "quantity":1,
     "pointsPerUnit":50,
     "pointsTotal":50,
@@ -9967,7 +9967,7 @@
         "points":7.0,
         "type":null,
         "min":0.0,
-        "max":5.0,
+        "max":4.0,
         "opt_quantity":0.0
       }
     ]
@@ -10607,11 +10607,11 @@
     ]
   },
   {
-    "model_id":"[mordor] mordor_troll_chieftan",
+    "model_id":"[mordor] mordor_troll_chieftain",
     "faction_type":"Evil Army",
     "faction":"Mordor",
     "profile_origin":"Barad-dur",
-    "name":"Mordor Troll Chieftan",
+    "name":"Mordor Troll Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":140,
     "default_bow":false,
@@ -11523,7 +11523,7 @@
     "options":[
       {
         "option_id":"OPT0542",
-        "option":"Banner",
+        "option":"Swap Shield for Banner",
         "points":25.0,
         "type":null,
         "min":0.0,
@@ -14547,7 +14547,7 @@
     "faction":"Rivendell",
     "profile_origin":"Rivendell",
     "name":"Arwen",
-    "unit_type":"Hero of Fortitude",
+    "unit_type":"Minor Hero",
     "base_points":60,
     "default_bow":false,
     "unique":true,
@@ -14556,7 +14556,7 @@
     "quantity":1,
     "pointsPerUnit":60,
     "pointsTotal":60,
-    "warband_size":12,
+    "warband_size":6,
     "options":[
       {
         "option_id":"OPT0757",
@@ -16620,11 +16620,11 @@
     ]
   },
   {
-    "model_id":"[the_black_gate_opens] mordor_troll_chieftan_(leader)",
+    "model_id":"[the_black_gate_opens] mordor_troll_chieftain_(leader)",
     "faction_type":"Evil LL",
     "faction":"The Black Gate Opens",
     "profile_origin":"Barad-dur",
-    "name":"Mordor Troll Chieftan (Leader)",
+    "name":"Mordor Troll Chieftain (Leader)",
     "unit_type":"Hero of Valour",
     "base_points":140,
     "default_bow":false,
@@ -16676,11 +16676,11 @@
     ]
   },
   {
-    "model_id":"[the_black_gate_opens] mordor_troll_chieftan",
+    "model_id":"[the_black_gate_opens] mordor_troll_chieftain",
     "faction_type":"Evil LL",
     "faction":"The Black Gate Opens",
     "profile_origin":"Barad-dur",
-    "name":"Mordor Troll Chieftan",
+    "name":"Mordor Troll Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":140,
     "default_bow":false,
@@ -16998,7 +16998,7 @@
       {
         "option_id":"OPT0909",
         "option":"Morgul Blade",
-        "points":5.0,
+        "points":10.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -19841,40 +19841,12 @@
     ]
   },
   {
-    "model_id":"[the_kingdom_of_khazad-dum] king's_champion",
-    "faction_type":"Good Army",
-    "faction":"The Kingdom of Khazad-Dum",
-    "profile_origin":"The Kingdom of Khazad-Dum",
-    "name":"King's Champion",
-    "unit_type":"Hero of Fortitude",
-    "base_points":140,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":140,
-    "pointsTotal":140,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT1072",
-        "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[the_kingdom_of_khazad-dum] dwarf_king",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
     "profile_origin":"The Kingdom of Khazad-Dum",
     "name":"Dwarf King",
-    "unit_type":"Hero of Fortitude",
+    "unit_type":"Hero of Valour",
     "base_points":75,
     "default_bow":false,
     "unique":false,
@@ -19883,7 +19855,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":12,
+    "warband_size":15,
     "options":[
       {
         "option_id":"OPT1056",
@@ -19905,6 +19877,34 @@
       },
       {
         "option_id":"OPT1058",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_kingdom_of_khazad-dum] king's_champion",
+    "faction_type":"Good Army",
+    "faction":"The Kingdom of Khazad-Dum",
+    "profile_origin":"The Kingdom of Khazad-Dum",
+    "name":"King's Champion",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1072",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -20349,40 +20349,12 @@
     ]
   },
   {
-    "model_id":"[the_kingdom_of_moria] king's_champion",
-    "faction_type":"Good Army",
-    "faction":"The Kingdom of Moria",
-    "profile_origin":"The Kingdom of Khazad-Dum",
-    "name":"King's Champion",
-    "unit_type":"Hero of Fortitude",
-    "base_points":140,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":140,
-    "pointsTotal":140,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT1096",
-        "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[the_kingdom_of_moria] dwarf_king",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Moria",
     "profile_origin":"The Kingdom of Khazad-Dum",
     "name":"Dwarf King",
-    "unit_type":"Hero of Fortitude",
+    "unit_type":"Hero of Valour",
     "base_points":75,
     "default_bow":false,
     "unique":false,
@@ -20391,7 +20363,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":12,
+    "warband_size":15,
     "options":[
       {
         "option_id":"OPT1080",
@@ -20413,6 +20385,34 @@
       },
       {
         "option_id":"OPT1082",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_kingdom_of_moria] king's_champion",
+    "faction_type":"Good Army",
+    "faction":"The Kingdom of Moria",
+    "profile_origin":"The Kingdom of Khazad-Dum",
+    "name":"King's Champion",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1096",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -21928,7 +21928,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT1169",
+        "option_id":"OPT1170",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -21937,7 +21937,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1170",
+        "option_id":"OPT1171",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -21946,7 +21946,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1171",
+        "option_id":"OPT1172",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -21974,7 +21974,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1156",
+        "option_id":"OPT1157",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -21983,7 +21983,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1157",
+        "option_id":"OPT1158",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -21992,7 +21992,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1158",
+        "option_id":"OPT1159",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -22048,7 +22048,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1155",
+        "option_id":"OPT1156",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -22076,7 +22076,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1159",
+        "option_id":"OPT1160",
         "option":"Royal Standard of Rohan",
         "points":50.0,
         "type":null,
@@ -22085,7 +22085,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1160",
+        "option_id":"OPT1161",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -22186,9 +22186,9 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1155",
+        "option":"Throwing Spears",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -22214,7 +22214,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1165",
+        "option_id":"OPT1166",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -22223,7 +22223,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1166",
+        "option_id":"OPT1167",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -22232,7 +22232,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1167",
+        "option_id":"OPT1168",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -22241,7 +22241,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1168",
+        "option_id":"OPT1169",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22269,7 +22269,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1161",
+        "option_id":"OPT1162",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -22278,7 +22278,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1162",
+        "option_id":"OPT1163",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -22287,7 +22287,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1163",
+        "option_id":"OPT1164",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -22296,7 +22296,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1164",
+        "option_id":"OPT1165",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22324,7 +22324,7 @@
     "warband_size":18,
     "options":[
       {
-        "option_id":"OPT1195",
+        "option_id":"OPT1196",
         "option":"Armoured Horse",
         "points":15.0,
         "type":"mount",
@@ -22333,7 +22333,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1196",
+        "option_id":"OPT1197",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -22389,7 +22389,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1197",
+        "option_id":"OPT1198",
         "option":"Armoured Fell Beast",
         "points":70.0,
         "type":"mount",
@@ -22398,7 +22398,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1198",
+        "option_id":"OPT1199",
         "option":"Fell Beast",
         "points":50.0,
         "type":"mount",
@@ -22407,10 +22407,65 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1199",
+        "option_id":"OPT1200",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_serpent_horde] haradrim_king",
+    "faction_type":"Evil Army",
+    "faction":"The Serpent Horde",
+    "profile_origin":"The Serpent Horde",
+    "name":"Haradrim King",
+    "unit_type":"Hero of Valour",
+    "base_points":60,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1177",
+        "option":"Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1178",
+        "option":"Bow with Poisoned Arrows",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1179",
+        "option":"War Spear",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1180",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -22435,7 +22490,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1200",
+        "option_id":"OPT1201",
         "option":"Gnarled Hide",
         "points":30.0,
         "type":null,
@@ -22444,7 +22499,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1201",
+        "option_id":"OPT1202",
         "option":"Mahud Beastmaster Chieftain",
         "points":25.0,
         "type":null,
@@ -22453,7 +22508,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1202",
+        "option_id":"OPT1203",
         "option":"Rocks",
         "points":20.0,
         "type":null,
@@ -22462,7 +22517,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1203",
+        "option_id":"OPT1204",
         "option":"Sigils of Defiance",
         "points":20.0,
         "type":null,
@@ -22471,7 +22526,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1204",
+        "option_id":"OPT1205",
         "option":"Tusk Weapons",
         "points":20.0,
         "type":null,
@@ -22480,7 +22535,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1205",
+        "option_id":"OPT1206",
         "option":"Foul Temperament",
         "points":15.0,
         "type":null,
@@ -22489,7 +22544,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1206",
+        "option_id":"OPT1207",
         "option":"Rappelling Lines",
         "points":10.0,
         "type":null,
@@ -22517,7 +22572,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1190",
+        "option_id":"OPT1191",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -22526,7 +22581,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1191",
+        "option_id":"OPT1192",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -22535,7 +22590,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1192",
+        "option_id":"OPT1193",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -22574,66 +22629,11 @@
     ]
   },
   {
-    "model_id":"[the_serpent_horde] haradrim_king",
+    "model_id":"[the_serpent_horde] haradrim_chieftain",
     "faction_type":"Evil Army",
     "faction":"The Serpent Horde",
     "profile_origin":"The Serpent Horde",
-    "name":"Haradrim King",
-    "unit_type":"Hero of Fortitude",
-    "base_points":60,
-    "default_bow":false,
-    "unique":false,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":60,
-    "pointsTotal":60,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT1176",
-        "option":"Horse",
-        "points":15.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1177",
-        "option":"Bow with Poisoned Arrows",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1178",
-        "option":"War Spear",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1179",
-        "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[the_serpent_horde] haradrim_chieftan",
-    "faction_type":"Evil Army",
-    "faction":"The Serpent Horde",
-    "profile_origin":"The Serpent Horde",
-    "name":"Haradrim Chieftan",
+    "name":"Haradrim Chieftain",
     "unit_type":"Hero of Fortitude",
     "base_points":50,
     "default_bow":false,
@@ -22646,7 +22646,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1173",
+        "option_id":"OPT1174",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -22655,7 +22655,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1174",
+        "option_id":"OPT1175",
         "option":"Bow with Poisoned Arrows",
         "points":5.0,
         "type":null,
@@ -22664,7 +22664,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1175",
+        "option_id":"OPT1176",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -22692,7 +22692,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1184",
+        "option_id":"OPT1185",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -22720,7 +22720,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1194",
+        "option_id":"OPT1195",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22748,7 +22748,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1180",
+        "option_id":"OPT1181",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -22757,7 +22757,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1181",
+        "option_id":"OPT1182",
         "option":"Bow with Poisoned Arrows",
         "points":1.0,
         "type":"bow",
@@ -22766,7 +22766,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1182",
+        "option_id":"OPT1183",
         "option":"War Spear",
         "points":1.0,
         "type":null,
@@ -22775,7 +22775,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1183",
+        "option_id":"OPT1184",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22803,7 +22803,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1172",
+        "option_id":"OPT1173",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22831,7 +22831,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1207",
+        "option_id":"OPT1208",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22840,7 +22840,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1208",
+        "option_id":"OPT1209",
         "option":"Bow with Poisoned Arrows",
         "points":0.0,
         "type":"bow",
@@ -22849,7 +22849,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1209",
+        "option_id":"OPT1210",
         "option":"Twin Blades",
         "points":0.0,
         "type":null,
@@ -22877,7 +22877,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1193",
+        "option_id":"OPT1194",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22905,7 +22905,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1185",
+        "option_id":"OPT1186",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -22914,7 +22914,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1186",
+        "option_id":"OPT1187",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -22923,7 +22923,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1187",
+        "option_id":"OPT1188",
         "option":"Bow with Poisoned Arrows",
         "points":1.0,
         "type":"bow",
@@ -22932,7 +22932,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1188",
+        "option_id":"OPT1189",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -22941,7 +22941,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1189",
+        "option_id":"OPT1190",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -22969,7 +22969,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1214",
+        "option_id":"OPT1215",
         "option":"Cart",
         "points":25.0,
         "type":null,
@@ -22978,7 +22978,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1215",
+        "option_id":"OPT1216",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -23006,7 +23006,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1222",
+        "option_id":"OPT1223",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -23015,7 +23015,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1223",
+        "option_id":"OPT1224",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -23024,7 +23024,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1224",
+        "option_id":"OPT1225",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -23052,7 +23052,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1228",
+        "option_id":"OPT1229",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -23061,7 +23061,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1229",
+        "option_id":"OPT1230",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -23070,7 +23070,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1230",
+        "option_id":"OPT1231",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -23126,7 +23126,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1212",
+        "option_id":"OPT1213",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -23135,7 +23135,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1213",
+        "option_id":"OPT1214",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -23191,7 +23191,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1231",
+        "option_id":"OPT1232",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -23200,7 +23200,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1232",
+        "option_id":"OPT1233",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -23424,7 +23424,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1225",
+        "option_id":"OPT1226",
         "option":"Elven Cloak",
         "points":5.0,
         "type":null,
@@ -23433,7 +23433,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1226",
+        "option_id":"OPT1227",
         "option":"Pony",
         "points":5.0,
         "type":"mount",
@@ -23442,7 +23442,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1227",
+        "option_id":"OPT1228",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -23498,7 +23498,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT1210",
+        "option_id":"OPT1211",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -23507,7 +23507,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1211",
+        "option_id":"OPT1212",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -23675,7 +23675,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1216",
+        "option_id":"OPT1217",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -23684,7 +23684,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1217",
+        "option_id":"OPT1218",
         "option":"Tookish Hunters",
         "points":1.0,
         "type":"upgrade",
@@ -23693,7 +23693,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1218",
+        "option_id":"OPT1219",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -23721,7 +23721,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1221",
+        "option_id":"OPT1222",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -23749,7 +23749,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1219",
+        "option_id":"OPT1220",
         "option":"Battlin' Brandybucks",
         "points":1.0,
         "type":"upgrade",
@@ -23758,7 +23758,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1220",
+        "option_id":"OPT1221",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -23786,7 +23786,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1250",
+        "option_id":"OPT1251",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -23795,7 +23795,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1251",
+        "option_id":"OPT1252",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -23804,7 +23804,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1252",
+        "option_id":"OPT1253",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -23832,7 +23832,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1239",
+        "option_id":"OPT1240",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -23888,7 +23888,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1233",
+        "option_id":"OPT1234",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -23897,7 +23897,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1234",
+        "option_id":"OPT1235",
         "option":"Bow",
         "points":5.0,
         "type":"bow",
@@ -23906,7 +23906,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1235",
+        "option_id":"OPT1236",
         "option":"Heavy Armour",
         "points":5.0,
         "type":"armour",
@@ -23915,7 +23915,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1236",
+        "option_id":"OPT1237",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -23924,7 +23924,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1237",
+        "option_id":"OPT1238",
         "option":"Throwing Spears",
         "points":5.0,
         "type":null,
@@ -23933,7 +23933,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1238",
+        "option_id":"OPT1239",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -23961,7 +23961,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1240",
+        "option_id":"OPT1241",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -23970,7 +23970,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1241",
+        "option_id":"OPT1242",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -23979,7 +23979,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1242",
+        "option_id":"OPT1243",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -23988,7 +23988,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1243",
+        "option_id":"OPT1244",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24016,7 +24016,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1246",
+        "option_id":"OPT1247",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -24025,7 +24025,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1247",
+        "option_id":"OPT1248",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -24034,7 +24034,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1248",
+        "option_id":"OPT1249",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -24043,7 +24043,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1249",
+        "option_id":"OPT1250",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24071,7 +24071,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1244",
+        "option_id":"OPT1245",
         "option":"Horse",
         "points":5.0,
         "type":"mount",
@@ -24080,7 +24080,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1245",
+        "option_id":"OPT1246",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24108,7 +24108,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1253",
+        "option_id":"OPT1254",
         "option":"War Horn",
         "points":30.0,
         "type":null,
@@ -24117,7 +24117,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1254",
+        "option_id":"OPT1255",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -24126,7 +24126,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1255",
+        "option_id":"OPT1256",
         "option":"Throwing Spears",
         "points":2.0,
         "type":null,
@@ -24135,7 +24135,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1256",
+        "option_id":"OPT1257",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -24144,7 +24144,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1257",
+        "option_id":"OPT1258",
         "option":"Bow",
         "points":1.0,
         "type":"bow",
@@ -24153,7 +24153,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1258",
+        "option_id":"OPT1259",
         "option":"Helminga Upgrade",
         "points":1.0,
         "type":"upgrade",
@@ -24162,7 +24162,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1259",
+        "option_id":"OPT1260",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24246,7 +24246,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1275",
+        "option_id":"OPT1276",
         "option":"Uruk-Hai Bow",
         "points":5.0,
         "type":null,
@@ -24255,7 +24255,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1276",
+        "option_id":"OPT1277",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -24264,7 +24264,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1277",
+        "option_id":"OPT1278",
         "option":"Two-Handed Weapon",
         "points":5.0,
         "type":null,
@@ -24273,7 +24273,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1278",
+        "option_id":"OPT1279",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24301,7 +24301,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1260",
+        "option_id":"OPT1261",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -24357,15 +24357,6 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1261",
-        "option":"Orc Bow",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT1262",
         "option":"Orc Bow",
         "points":5.0,
@@ -24376,6 +24367,15 @@
       },
       {
         "option_id":"OPT1263",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1264",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24403,7 +24403,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1270",
+        "option_id":"OPT1271",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24431,7 +24431,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1271",
+        "option_id":"OPT1272",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -24440,7 +24440,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1272",
+        "option_id":"OPT1273",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -24449,7 +24449,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1273",
+        "option_id":"OPT1274",
         "option":"Uruk-Hai Bow",
         "points":1.0,
         "type":"bow",
@@ -24458,7 +24458,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1274",
+        "option_id":"OPT1275",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24486,7 +24486,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1264",
+        "option_id":"OPT1265",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -24495,7 +24495,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1265",
+        "option_id":"OPT1266",
         "option":"Orc Bow",
         "points":1.0,
         "type":"bow",
@@ -24504,7 +24504,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1266",
+        "option_id":"OPT1267",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -24513,7 +24513,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1267",
+        "option_id":"OPT1268",
         "option":"Spear",
         "points":1.0,
         "type":null,
@@ -24522,7 +24522,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1268",
+        "option_id":"OPT1269",
         "option":"Two-Handed Weapon",
         "points":1.0,
         "type":null,
@@ -24531,7 +24531,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1269",
+        "option_id":"OPT1270",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24559,7 +24559,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1285",
+        "option_id":"OPT1286",
         "option":"Khandish Chariot",
         "points":30.0,
         "type":"mount",
@@ -24568,7 +24568,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1286",
+        "option_id":"OPT1287",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -24596,7 +24596,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1281",
+        "option_id":"OPT1282",
         "option":"Khandish Chariot",
         "points":30.0,
         "type":"mount",
@@ -24605,7 +24605,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1282",
+        "option_id":"OPT1283",
         "option":"Horse",
         "points":10.0,
         "type":"mount",
@@ -24614,7 +24614,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1283",
+        "option_id":"OPT1284",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24642,7 +24642,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1279",
+        "option_id":"OPT1280",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24651,7 +24651,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1280",
+        "option_id":"OPT1281",
         "option":"Swap Axe for Bow",
         "points":0.0,
         "type":null,
@@ -24679,7 +24679,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1284",
+        "option_id":"OPT1285",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24707,7 +24707,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1287",
+        "option_id":"OPT1288",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24716,7 +24716,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1288",
+        "option_id":"OPT1289",
         "option":"Swap Axe for Bow",
         "points":0.0,
         "type":null,
@@ -24772,7 +24772,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1290",
+        "option_id":"OPT1291",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24800,7 +24800,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1289",
+        "option_id":"OPT1290",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -24828,7 +24828,7 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1297",
+        "option_id":"OPT1298",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -24837,7 +24837,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1298",
+        "option_id":"OPT1299",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -24865,7 +24865,7 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1291",
+        "option_id":"OPT1292",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -24874,7 +24874,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1292",
+        "option_id":"OPT1293",
         "option":"Orc Bow",
         "points":5.0,
         "type":null,
@@ -24883,7 +24883,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1293",
+        "option_id":"OPT1294",
         "option":"Shield",
         "points":5.0,
         "type":null,
@@ -24892,7 +24892,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1294",
+        "option_id":"OPT1295",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24920,7 +24920,7 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"OPT1295",
+        "option_id":"OPT1296",
         "option":"Warg",
         "points":10.0,
         "type":"mount",
@@ -24929,7 +24929,7 @@
         "opt_quantity":1.0
       },
       {
-        "option_id":"OPT1296",
+        "option_id":"OPT1297",
         "option":"Swap Weapon",
         "points":5.0,
         "type":null,
@@ -24957,7 +24957,7 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"OPT1299",
+        "option_id":"OPT1300",
         "option":"Banner",
         "points":25.0,
         "type":null,
@@ -24966,7 +24966,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1300",
+        "option_id":"OPT1301",
         "option":"Orc Bow",
         "points":1.0,
         "type":"bow",
@@ -24975,7 +24975,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1301",
+        "option_id":"OPT1302",
         "option":"Shield",
         "points":1.0,
         "type":null,
@@ -24984,7 +24984,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1302",
+        "option_id":"OPT1303",
         "option":"Throwing Spears",
         "points":1.0,
         "type":null,
@@ -24993,7 +24993,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"OPT1303",
+        "option_id":"OPT1304",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,

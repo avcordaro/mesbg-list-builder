@@ -5,7 +5,6 @@ import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Spinner from 'react-bootstrap/Spinner';
 import Form from "react-bootstrap/Form";
-import AsciiTable from 'ascii-data-table'
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
 import { GoCopy } from "react-icons/go";
