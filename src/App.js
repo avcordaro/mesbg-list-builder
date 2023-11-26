@@ -355,7 +355,7 @@ export default function App() {
             <img src={require("./images/title-logo.png")} />
             <Stack>
               <p className="p-0 m-0" style={{ fontSize: "24px" }}>
-                Army Roster Builder
+                MESBG List Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
                 version {VERSION} (updated 26-Nov-23)
