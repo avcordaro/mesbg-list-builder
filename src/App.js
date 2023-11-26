@@ -187,7 +187,7 @@ export default function App() {
           if (rule['type'] == 'requires' && intersection.length != rule.dependencies.length) {
             newWarnings.push(rule.warning);
           } 
-          if (rule['type'] == 'incompatible' && intersection.length > 0) {
+          if (rule['type'] == 'incompatible' && (intersection.length > 0 || rule.dependencies.length == 0)) {
             newWarnings.push(rule.warning);
           }
         });

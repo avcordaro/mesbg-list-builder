@@ -312,12 +312,9 @@
     {
       "type":"incompatible",
       "dependencies":[
-        "[rivendell] lindir",
-        "[rivendell] arwen",
-        "[rivendell] elladan_&_elrohir",
-        "[rivendell] bilbo_baggins"
+
       ],
-      "warning":"If Gil-Galad is included in the same force as either Arwen, Lindir, Elladan & Elrohir or Bilbo Baggins, you automatically become Impossible Allies with all except Numenor (Historical) and Lothlorien, Fangorn and The Misty Mountains (Convenient)."
+      "warning":"If Gil-Galad is included in the your force, you automatically become Impossible Allies with all except Numenor (Historical) and Lothlorien, Fangorn and The Misty Mountains (Convenient)."
     }
   ],
   "[rohan] dernhelm":[
