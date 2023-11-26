@@ -7,7 +7,10 @@ import Spinner from 'react-bootstrap/Spinner';
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
+import { FcCheckmark } from "react-icons/fc";
+import { RxCross1 } from "react-icons/rx";
 import { GoCopy } from "react-icons/go";
+import faction_data from "../faction_data.json";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears 
 after the user clicks the 'Roster Table' button. This component uses the full roster
@@ -20,7 +23,8 @@ export function ModalRosterTable({
   showRosterTable,
   setShowRosterTable,
   downloadProfileCards,
-  downloadSpinner
+  downloadSpinner,
+  factionList
 }) {
   const [textView, setTextView] = useState(false);
   const [copyLabel, setCopyLabel] = useState("Copy");
@@ -67,6 +71,16 @@ export function ModalRosterTable({
       
     });
     tableString += "----------------------------------------\n"
+    tableString += "\n===== Army Bonuses =====\n\n"
+
+    if (['Legendary Legion', 'Historical'].includes(allianceLevel)) {
+      factionList.map((f) => {
+          tableString += `--- ${f} ---\n\n`
+          tableString += faction_data[f]['armyBonus'].replaceAll("<b>", "").replaceAll("</b>", "").replaceAll("<br/>", "\n") + "\n\n"
+      })
+    } else {
+      tableString += "No bonuses due to Alliance Level not being Historical."
+    }
     return tableString;
   }
 
@@ -150,12 +164,40 @@ export function ModalRosterTable({
                     ))}
                 </tbody>
               </Table>
-              <div>
-              </div>
+              {['Legendary Legion', 'Historical'].includes(allianceLevel) ?
+                <>
+                  <h6>Army Bonuses <FcCheckmark /></h6>
+                  <hr />
+                  {factionList.map((f) => (
+                    <div>
+                      <h6 className="mt-4">
+                        <Badge bg="dark">
+                          {f}
+                        </Badge>
+                      </h6>
+                      <div 
+                        className="text-body"
+                        dangerouslySetInnerHTML={{__html: faction_data[f]['armyBonus']}} 
+                        style={{fontSize: 14, maxWidth: "850px"}}
+                      />
+                    </div>
+                  ))}
+                </>
+              :
+                <>
+                  <h6>Army Bonuses <RxCross1 className="text-danger"/></h6>
+                  <hr />
+                  <div 
+                    className="mt-4 text-body"
+                    dangerouslySetInnerHTML={{__html: "No bonuses due to Alliance Level not being Historical."}}
+                    style={{fontSize: 14, maxWidth: "850px"}}
+                  />
+                </>
+              }
             </>
             :
             <Stack direction="horizontal" gap={3}>
-              <pre>
+              <pre style={{maxWidth: "800px"}}>
                 {getTextView()}
               </pre>
               <Button variant="light" className="ms-auto mb-auto border" onClick={handleCopy}>

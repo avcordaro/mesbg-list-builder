@@ -650,6 +650,7 @@ export default function App() {
         setShowRosterTable={setShowRosterTable} 
         downloadProfileCards={downloadProfileCards}
         downloadSpinner={downloadSpinner}
+        factionList={factionList}
       />
       <Alliances showAlliances={showAlliances} setShowAlliances={setShowAlliances} factionList={factionList} />
     </div>

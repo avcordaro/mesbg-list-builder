@@ -35,6 +35,10 @@ svg {
   margin-bottom: 3px;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 .sticky-nav {
   position: sticky;
   top: 0;
