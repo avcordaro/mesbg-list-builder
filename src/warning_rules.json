@@ -407,6 +407,16 @@
       "warning":"Smeagol may only be included in a warband that contains only Frodo and Sam."
     }
   ],
+  "[the_kingdom_of_khazad-dum] floi_stonehand":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[the_kingdom_of_khazad-dum] mardin",
+        "[the_kingdom_of_khazad-dum] durin"
+      ],
+      "warning":"Floi Stonehand cannot be included in the same force as any other named Heroes from The Kingdom of Khazad-Dum."
+    }
+  ],
   "[the_rangers] arathorn":[
     {
       "type":"incompatible",

@@ -4787,6 +4787,20 @@
       ]
     }
   ],
+  "[the_kingdom_of_khazad-dum] floi_stonehand":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_khazad-dum] vault_warden_team",
+        "[the_kingdom_of_khazad-dum] iron_guard",
+        "[the_kingdom_of_khazad-dum] khazad_guard",
+        "[the_kingdom_of_khazad-dum] dwarf_ranger",
+        "[the_kingdom_of_khazad-dum] dwarf_warrior"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[the_kingdom_of_khazad-dum] king's_champion":[
     {
       "valid_warband_units":[
