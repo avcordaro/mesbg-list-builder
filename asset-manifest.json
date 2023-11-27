@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.19c51e50.css",
-    "main.js": "/mesbg-list-builder/static/js/main.f19e0789.js",
+    "main.js": "/mesbg-list-builder/static/js/main.9ad8945f.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -54,9 +54,9 @@
     "static/media/Great Beast of Gorgoroth.jpg": "/mesbg-list-builder/static/media/Great Beast of Gorgoroth.cf226662cb39a4f019a9.jpg",
     "static/media/The Dark Marshall.jpg": "/mesbg-list-builder/static/media/The Dark Marshall.9297a54563af2d5a71c2.jpg",
     "static/media/Ringwraith.jpg": "/mesbg-list-builder/static/media/Ringwraith.a8a28cbbef0801084b1f.jpg",
-    "static/media/Elendil.jpg": "/mesbg-list-builder/static/media/Elendil.1dbf7e67633abeee42b0.jpg",
     "static/media/Prince Imrahil.jpg": "/mesbg-list-builder/static/media/Prince Imrahil.0a50f23a1b9cd2af5972.jpg",
     "static/media/The Shadow Lord.jpg": "/mesbg-list-builder/static/media/The Shadow Lord.871fc18c647e54c8623c.jpg",
+    "static/media/Elendil.jpg": "/mesbg-list-builder/static/media/Elendil.2c4185191fe73fb967b6.jpg",
     "static/media/Hurin.jpg": "/mesbg-list-builder/static/media/Hurin.b77fcfe99b4d999db268.jpg",
     "static/media/Quickbeam.jpg": "/mesbg-list-builder/static/media/Quickbeam.a31c429ffdef155d0086.jpg",
     "static/media/The Balrog.jpg": "/mesbg-list-builder/static/media/The Balrog.f5ac74fbade90ff7f6a5.jpg",
@@ -143,6 +143,7 @@
     "static/media/Haleth.jpg": "/mesbg-list-builder/static/media/Haleth.74a77f07e958a038797e.jpg",
     "static/media/Samwise Gamgee.jpg": "/mesbg-list-builder/static/media/Samwise Gamgee.38f3afcb96854557331d.jpg",
     "static/media/Cirion.jpg": "/mesbg-list-builder/static/media/Cirion.437833937943a156c397.jpg",
+    "static/media/Isildur.jpg": "/mesbg-list-builder/static/media/Isildur.237a582ac2f0a7678947.jpg",
     "static/media/Mahud King.jpg": "/mesbg-list-builder/static/media/Mahud King.202fb183a21a69bc689d.jpg",
     "static/media/Moria Blackshield Drummers.jpg": "/mesbg-list-builder/static/media/Moria Blackshield Drummers.459a02c1480a9262877d.jpg",
     "static/media/High Elf Stormcaller.jpg": "/mesbg-list-builder/static/media/High Elf Stormcaller.19efd3d0a2770c81b4fc.jpg",
@@ -157,7 +158,6 @@
     "static/media/Cirdan.jpg": "/mesbg-list-builder/static/media/Cirdan.b293e6e7d5afc0928749.jpg",
     "static/media/Halbarad.jpg": "/mesbg-list-builder/static/media/Halbarad.2c2de4a14135f095cf85.jpg",
     "static/media/Khandish King.jpg": "/mesbg-list-builder/static/media/Khandish King.bb960085a4e8916c4b5e.jpg",
-    "static/media/Isildur.jpg": "/mesbg-list-builder/static/media/Isildur.2108f55424f174f0a19a.jpg",
     "static/media/Samwise the Brave.jpg": "/mesbg-list-builder/static/media/Samwise the Brave.f8b262ff6d8ac85d94f6.jpg",
     "static/media/Ugluk.jpg": "/mesbg-list-builder/static/media/Ugluk.08b083e93203ed73aa39.jpg",
     "static/media/Captain of the Black Guard.jpg": "/mesbg-list-builder/static/media/Captain of the Black Guard.8b5646ecf6adc0eee03e.jpg",
@@ -170,7 +170,7 @@
     "static/media/Zagdush.jpg": "/mesbg-list-builder/static/media/Zagdush.896761dcac7d9d0278ee.jpg",
     "static/media/Lurtz.jpg": "/mesbg-list-builder/static/media/Lurtz.66eb75e04fdab52d91b3.jpg",
     "static/media/Goroth.jpg": "/mesbg-list-builder/static/media/Goroth.9af2b90bbeb0f5c3c2b8.jpg",
-    "static/media/Captain of Numenor.jpg": "/mesbg-list-builder/static/media/Captain of Numenor.e7016fad5821ec5cd518.jpg",
+    "static/media/Captain of Numenor.jpg": "/mesbg-list-builder/static/media/Captain of Numenor.bc18c2a080d3490379da.jpg",
     "static/media/Shade.jpg": "/mesbg-list-builder/static/media/Shade.a101e100bab846304825.jpg",
     "static/media/Haradrim Taskmaster.jpg": "/mesbg-list-builder/static/media/Haradrim Taskmaster.47e716640fd61ef0b0d4.jpg",
     "static/media/Ruffian.jpg": "/mesbg-list-builder/static/media/Ruffian.dd229c1a8293ab224c07.jpg",
@@ -237,9 +237,9 @@
     "static/media/Isengard Troll.jpg": "/mesbg-list-builder/static/media/Isengard Troll.24c50246e3b1458f575d.jpg",
     "static/media/Mordor Uruk-Hai Captain.jpg": "/mesbg-list-builder/static/media/Mordor Uruk-Hai Captain.9f2906aac39faf9ab48d.jpg",
     "static/media/Uruk-Hai Scout Captain.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Scout Captain.8428333ce3f7cf080298.jpg",
-    "static/media/Warrior of Numenor.jpg": "/mesbg-list-builder/static/media/Warrior of Numenor.be1b5807a86539e26169.jpg",
     "static/media/Angmar Orc Captain.jpg": "/mesbg-list-builder/static/media/Angmar Orc Captain.8ebb16f076426986ee91.jpg",
     "static/media/Haradrim Chieftain.jpg": "/mesbg-list-builder/static/media/Haradrim Chieftain.49daa60a5897e34dd21f.jpg",
+    "static/media/Warrior of Numenor.jpg": "/mesbg-list-builder/static/media/Warrior of Numenor.1deb5e90fc1f0207aa8b.jpg",
     "static/media/Durburz.jpg": "/mesbg-list-builder/static/media/Durburz.f5ebcc3dc7f834361cca.jpg",
     "static/media/Uruk-Hai Shaman.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Shaman.7af20c2228a5d72edc38.jpg",
     "static/media/Orc Shaman.jpg": "/mesbg-list-builder/static/media/Orc Shaman.d643f5766afe58b0db0a.jpg",
@@ -657,10 +657,10 @@
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.19c51e50.css.map": "/mesbg-list-builder/static/css/main.19c51e50.css.map",
-    "main.f19e0789.js.map": "/mesbg-list-builder/static/js/main.f19e0789.js.map"
+    "main.9ad8945f.js.map": "/mesbg-list-builder/static/js/main.9ad8945f.js.map"
   },
   "entrypoints": [
     "static/css/main.19c51e50.css",
-    "static/js/main.f19e0789.js"
+    "static/js/main.9ad8945f.js"
   ]
 }
