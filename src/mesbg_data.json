@@ -5806,7 +5806,7 @@
       {
         "option_id":"OPT0301",
         "option":"Horse",
-        "points":15.0,
+        "points":10.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,
@@ -22437,7 +22437,7 @@
       {
         "option_id":"OPT1177",
         "option":"Horse",
-        "points":15.0,
+        "points":10.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,
