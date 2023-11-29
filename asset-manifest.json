@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.19c51e50.css",
-    "main.js": "/mesbg-list-builder/static/js/main.31a96297.js",
+    "main.js": "/mesbg-list-builder/static/js/main.872cb2fe.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -201,8 +201,8 @@
     "static/media/Forlong the Fat.jpg": "/mesbg-list-builder/static/media/Forlong the Fat.f6a42d5eb60c02eda446.jpg",
     "static/media/Groblog.jpg": "/mesbg-list-builder/static/media/Groblog.26e2a86f43fbac9ec354.jpg",
     "static/media/Khandish Horseman.jpg": "/mesbg-list-builder/static/media/Khandish Horseman.89a41c474b62d4bb2daa.jpg",
-    "static/media/Mordor Troll Chieftan (Leader).jpg": "/mesbg-list-builder/static/media/Mordor Troll Chieftan (Leader).725bb4194eea8be26fbb.jpg",
-    "static/media/Mordor Troll Chieftan.jpg": "/mesbg-list-builder/static/media/Mordor Troll Chieftan.725bb4194eea8be26fbb.jpg",
+    "static/media/Mordor Troll Chieftain (Leader).jpg": "/mesbg-list-builder/static/media/Mordor Troll Chieftain (Leader).725bb4194eea8be26fbb.jpg",
+    "static/media/Mordor Troll Chieftain.jpg": "/mesbg-list-builder/static/media/Mordor Troll Chieftain.725bb4194eea8be26fbb.jpg",
     "static/media/Corsair Bo'sun.jpg": "/mesbg-list-builder/static/media/Corsair Bo'sun.11b2115c66fc13da9b5d.jpg",
     "static/media/Wood Elf Captain.jpg": "/mesbg-list-builder/static/media/Wood Elf Captain.cc99cb4bf280a71635cb.jpg",
     "static/media/Malbeth the Seer.jpg": "/mesbg-list-builder/static/media/Malbeth the Seer.b563af0e2eaae0fc2fb3.jpg",
@@ -218,7 +218,7 @@
     "static/media/Rider of the Dead.jpg": "/mesbg-list-builder/static/media/Rider of the Dead.ea4ef710913031d44997.jpg",
     "static/media/Dunlending Horseman.jpg": "/mesbg-list-builder/static/media/Dunlending Horseman.b7eb0081c1cfdafa029a.jpg",
     "static/media/Galadhrim Captain.jpg": "/mesbg-list-builder/static/media/Galadhrim Captain.99633d6178db292a9993.jpg",
-    "static/media/Dunlending Chieftan.jpg": "/mesbg-list-builder/static/media/Dunlending Chieftan.907259d59ff656190b63.jpg",
+    "static/media/Dunlending Chieftain.jpg": "/mesbg-list-builder/static/media/Dunlending Chieftain.907259d59ff656190b63.jpg",
     "static/media/Uruk-Hai Demolition Team.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Demolition Team.c7505e31f6ab585f06fe.jpg",
     "static/media/High Elf Captain.jpg": "/mesbg-list-builder/static/media/High Elf Captain.7e43f646eac61c1ff3d5.jpg",
     "static/media/Moria Blackshield Shaman.jpg": "/mesbg-list-builder/static/media/Moria Blackshield Shaman.ea591bc20f6688670b62.jpg",
@@ -372,8 +372,8 @@
     "static/media/Tookish Hunters.png": "/mesbg-list-builder/static/media/Tookish Hunters.7354c32cd37bcb7146da.png",
     "static/media/Holfoot Bracegirdle.png": "/mesbg-list-builder/static/media/Holfoot Bracegirdle.62508f8e160a5b1092c9.png",
     "static/media/Peregrin, Captain of the Shire.png": "/mesbg-list-builder/static/media/Peregrin, Captain of the Shire.126cb6ada21ebaa74f1a.png",
-    "static/media/Mordor Troll Chieftan (Leader).png": "/mesbg-list-builder/static/media/Mordor Troll Chieftan (Leader).4127feaab948b85fa3ef.png",
-    "static/media/Mordor Troll Chieftan.png": "/mesbg-list-builder/static/media/Mordor Troll Chieftan.4127feaab948b85fa3ef.png",
+    "static/media/Mordor Troll Chieftain (Leader).png": "/mesbg-list-builder/static/media/Mordor Troll Chieftain (Leader).4127feaab948b85fa3ef.png",
+    "static/media/Mordor Troll Chieftain.png": "/mesbg-list-builder/static/media/Mordor Troll Chieftain.4127feaab948b85fa3ef.png",
     "static/media/Helm Hammerhand.png": "/mesbg-list-builder/static/media/Helm Hammerhand.213a5a397e54d30a5215.png",
     "static/media/Dwarf Ballista.png": "/mesbg-list-builder/static/media/Dwarf Ballista.ecfa17ffdedf70ea8234.png",
     "static/media/Black Dragon Warrior.png": "/mesbg-list-builder/static/media/Black Dragon Warrior.64993507e0e29e292235.png",
@@ -410,7 +410,7 @@
     "static/media/War Mumak of Far Harad.png": "/mesbg-list-builder/static/media/War Mumak of Far Harad.e2e5cd3a3508d908eefd.png",
     "static/media/Sharku.png": "/mesbg-list-builder/static/media/Sharku.3ff537441cc114a21f80.png",
     "static/media/Eowyn.png": "/mesbg-list-builder/static/media/Eowyn.39800909eb0e13196c8b.png",
-    "static/media/Dunlending Chieftan.png": "/mesbg-list-builder/static/media/Dunlending Chieftan.20c1570679f7e24524ca.png",
+    "static/media/Dunlending Chieftain.png": "/mesbg-list-builder/static/media/Dunlending Chieftain.20c1570679f7e24524ca.png",
     "static/media/Lobelia Sackville-Baggins.png": "/mesbg-list-builder/static/media/Lobelia Sackville-Baggins.a4fefade1963d3a627c7.png",
     "static/media/Paladin Took.png": "/mesbg-list-builder/static/media/Paladin Took.3bff86e75839abfb1908.png",
     "static/media/Glorfindel.png": "/mesbg-list-builder/static/media/Glorfindel.736990265cdf84116bd7.png",
@@ -426,7 +426,7 @@
     "static/media/Rhunish War Drake.png": "/mesbg-list-builder/static/media/Rhunish War Drake.eb58f704d9de2c29870c.png",
     "static/media/Hama.png": "/mesbg-list-builder/static/media/Hama.7142304bacb1d8b434fc.png",
     "static/media/Rider of Rohan.png": "/mesbg-list-builder/static/media/Rider of Rohan.db683ed7ce21bac1b755.png",
-    "static/media/Haradrim Chieftan.png": "/mesbg-list-builder/static/media/Haradrim Chieftan.e5127d53592accf66b96.png",
+    "static/media/Haradrim Chieftain.png": "/mesbg-list-builder/static/media/Haradrim Chieftain.e5127d53592accf66b96.png",
     "static/media/Bill the Pony.png": "/mesbg-list-builder/static/media/Bill the Pony.6ea93052ab05f3e59c8f.png",
     "static/media/Cave Troll.png": "/mesbg-list-builder/static/media/Cave Troll.10c16f49a481458b34b2.png",
     "static/media/Elladan & Elrohir.png": "/mesbg-list-builder/static/media/Elladan & Elrohir.ea43d00d4fa4e7378ec5.png",
@@ -657,10 +657,10 @@
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.19c51e50.css.map": "/mesbg-list-builder/static/css/main.19c51e50.css.map",
-    "main.31a96297.js.map": "/mesbg-list-builder/static/js/main.31a96297.js.map"
+    "main.872cb2fe.js.map": "/mesbg-list-builder/static/js/main.872cb2fe.js.map"
   },
   "entrypoints": [
     "static/css/main.19c51e50.css",
-    "static/js/main.31a96297.js"
+    "static/js/main.872cb2fe.js"
   ]
 }
