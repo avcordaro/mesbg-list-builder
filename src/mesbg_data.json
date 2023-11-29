@@ -14385,34 +14385,6 @@
     ]
   },
   {
-    "model_id":"[rivendell] cirdan",
-    "faction_type":"Good Army",
-    "faction":"Rivendell",
-    "profile_origin":"Rivendell",
-    "name":"Cirdan",
-    "unit_type":"Hero of Fortitude",
-    "base_points":80,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":80,
-    "pointsTotal":80,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[rivendell] high_elf_captain",
     "faction_type":"Good Army",
     "faction":"Rivendell",
@@ -14535,6 +14507,34 @@
         "option":"Horse",
         "points":10.0,
         "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[rivendell] cirdan",
+    "faction_type":"Good Army",
+    "faction":"Rivendell",
+    "profile_origin":"Rivendell",
+    "name":"Cirdan",
+    "unit_type":"Minor Hero",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
