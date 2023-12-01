@@ -72,11 +72,11 @@ export function RosterHero({
       let newWarband = { ...warband };
       let newUnits = newWarband.units.map((_unit) => {
         let newUnit = { ..._unit };
-        console.log(newUnit)
         if (newUnit.model_id == '[rivendell] rivendell_knight') {
           newWarband["bow_count"] = newWarband["bow_count"] + (1 * newUnit["quantity"]);
           newRoster["bow_count"] = newRoster["bow_count"] + (1 * newUnit["quantity"]);
           newUnit["inc_bow_count"] = true;
+          newUnit["bow_limit"] = true;
         }
         return newUnit;
       });

@@ -38,7 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.0.3"
+  const VERSION = "3.1.0"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -104,29 +104,34 @@ export default function App() {
     calculateAllianceLevel(factions, faction_type)
 
     // Every time roster is updated, update count of bows per faction
-    let bowCounts = roster.warbands.reduce((counter, warband) => {
-      if (warband.hero) {
-        let f = warband.hero.faction;
-        if (!counter.hasOwnProperty(f)) {
-          counter[f] = 0;
+    let bowCounts = {};
+    let modelCounts = {};
+    roster.warbands.map((_warband) => {
+      if (_warband.hero) {
+        let f = _warband.hero.faction;
+        if (!bowCounts.hasOwnProperty(f)) {
+          bowCounts[f] = 0;
         }
-        counter[f] = counter[f] + warband.bow_count;        
+        if (!modelCounts.hasOwnProperty(f)) {
+          modelCounts[f] = 0;
+        }
+        _warband.units.map((_unit) => {
+          console.log(_unit.name != null)
+          console.log(_unit.type == "Warrior")
+          console.log(_unit.bow_limit)
+          if (_unit.name != null && _unit.unit_type == "Warrior" && _unit.bow_limit) {
+            console.log("Success")
+            modelCounts[f] = modelCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
+            if (_unit.inc_bow_count) {
+              bowCounts[f] = bowCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
+            }
+          }
+        });
       }
-      return counter;
-    }, {});
+      console.log(bowCounts);
+      console.log(modelCounts);
+    });
     setFactionBowCounts(bowCounts);
-
-    // Every time roster is updated, update count of models per faction
-    let modelCounts = roster.warbands.reduce((counter, warband) => {
-      if (warband.hero) {
-        let f = warband.hero.faction;
-        if (!counter.hasOwnProperty(f)) {
-          counter[f] = 0;
-        }
-        counter[f] = counter[f] + warband.num_units + 1;        
-      }
-      return counter;
-    }, {});
     setFactionModelCounts(modelCounts);
 
     let newUniqueModels = getAllUniqueModels()
@@ -454,11 +459,11 @@ export default function App() {
                   {warnings.map(w => (<p className="text-danger">{w}</p>))}
                 </>
               }
-              <h6>Bow Counts</h6> 
+              <h6>Bow Limit</h6> 
               <hr/>
               {factionList.map((f) => (
                 <p className={Math.round(factionBowCounts[f] / factionModelCounts[f] * 100) / 100 > faction_data[f]['bow_limit'] ? 'text-danger' : 'text-dark'}>
-                  <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit)"} {factionBowCounts[f]} / {factionModelCounts[f]} -- <b>{Math.round(factionBowCounts[f] / factionModelCounts[f] * 100)}%</b>
+                  <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit)"} {factionBowCounts[f]} / {factionModelCounts[f]} -- <b>{factionModelCounts[f] > 0 ? Math.round(factionBowCounts[f] / factionModelCounts[f] * 100) : 0}%</b>
                 </p>
               ))}
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 

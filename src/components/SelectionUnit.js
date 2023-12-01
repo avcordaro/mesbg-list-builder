@@ -87,9 +87,9 @@ export function SelectionUnit({
       });
     } else {
       // Specific logic for when Elrond is chosen to modify bow count with Rivendell Knights
-      console.log(uniqueModels)
       if (newUnitData.model_id == '[rivendell] rivendell_knight' && uniqueModels.includes('[rivendell] elrond')) {
         newUnitData["inc_bow_count"] = false;
+        newUnitData["bow_limit"] = false;
       }
       // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
@@ -124,11 +124,11 @@ export function SelectionUnit({
       let newWarband = { ...warband };
       let newUnits = newWarband.units.map((_unit) => {
         let newUnit = { ..._unit };
-        console.log(newUnit)
         if (newUnit.model_id == '[rivendell] rivendell_knight') {
           newWarband["bow_count"] = newWarband["bow_count"] - (1 * newUnit["quantity"]);
           newRoster["bow_count"] = newRoster["bow_count"] - (1 * newUnit["quantity"]);
           newUnit["inc_bow_count"] = false;
+          newUnit["bow_limit"] = false;
         }
         return newUnit;
       });
