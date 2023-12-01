@@ -20054,6 +20054,34 @@
     ]
   },
   {
+    "model_id":"[the_kingdom_of_khazad-dum] vault_warden_team",
+    "faction_type":"Good Army",
+    "faction":"The Kingdom of Khazad-Dum",
+    "profile_origin":"The Kingdom of Khazad-Dum",
+    "name":"Vault Warden Team",
+    "unit_type":"Warrior",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_kingdom_of_khazad-dum] iron_guard",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
@@ -20544,7 +20572,7 @@
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
-    "siege_crew":0,
+    "siege_crew":2,
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
