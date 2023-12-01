@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.19c51e50.css",
-    "main.js": "/mesbg-list-builder/static/js/main.458c05a8.js",
+    "main.js": "/mesbg-list-builder/static/js/main.f7b41eb8.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -657,10 +657,10 @@
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.19c51e50.css.map": "/mesbg-list-builder/static/css/main.19c51e50.css.map",
-    "main.458c05a8.js.map": "/mesbg-list-builder/static/js/main.458c05a8.js.map"
+    "main.f7b41eb8.js.map": "/mesbg-list-builder/static/js/main.f7b41eb8.js.map"
   },
   "entrypoints": [
     "static/css/main.19c51e50.css",
-    "static/js/main.458c05a8.js"
+    "static/js/main.f7b41eb8.js"
   ]
 }
