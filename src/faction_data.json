@@ -324,7 +324,7 @@
     "bow_limit":0.33
   },
   "Barad-dur":{
-    "armyBonus":"<b>\"The Power of the Ring Could not be Undone\"<\/b> - Sauron's warband size is increased to 24. Additionally, a force that contains solely of models from the Barad-d\u00fbr army list will never be considered Broken if Sauron has 3 or more Wounds remaining. Should Sauron have 2 or fewer Wounds remaining, the army will break as normal. Should Sauron be slain, the army will immediately count as being Broken. A Barad-dur ",
+    "armyBonus":"<b>\"The Power of the Ring Could not be Undone\"<\/b> - Sauron's warband size is increased to 24. Additionally, a force that contains solely of models from the Barad-d\u00fbr army list will never be considered Broken if Sauron has 3 or more Wounds remaining. Should Sauron have 2 or fewer Wounds remaining, the army will break as normal. Should Sauron be slain, the army will immediately count as being Broken.",
     "primaryAllies":[
 
     ],
