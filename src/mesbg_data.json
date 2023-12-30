@@ -14994,9 +14994,27 @@
     "warband_size":1,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1308",
+        "option":"Mithril Coat",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1309",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1310",
+        "option":"The Ring",
+        "points":0.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -23863,9 +23881,27 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1305",
+        "option":"Mithril Coat",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1306",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1307",
+        "option":"The Ring",
+        "points":0.0,
         "type":null,
         "min":0.0,
         "max":1.0,

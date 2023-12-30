@@ -170,7 +170,7 @@
     "bow_limit":0.33
   },
   "Riders of Eomer":{
-    "armyBonus":"<b>\"To the King!\" - Friendly Rohan Cavalry models within 12\"<\/b> of Eomer gain +1 Strength on a turn in which they Charge.<br\/> <br\/><b>\"Look to the Sun\"<\/b> - Once per battle, so long as Gandalf is alive and in your force, you can declare that you are using this ability at the start of any friendly Move phase. Until the end of the turn, enemy models that are Engaged with, or supporting a model Engaged with, any friendly Cavalry models that made a Charge that turn suffer a penalty of -1 to their Duel rolls.",
+    "armyBonus":"<b>\"To the King!\"<\/b> - Friendly Rohan Cavalry models within 12\" of Eomer gain +1 Strength on a turn in which they Charge.<br\/> <br\/><b>\"Look to the Sun\"<\/b> - Once per battle, so long as Gandalf is alive and in your force, you can declare that you are using this ability at the start of any friendly Move phase. Until the end of the turn, enemy models that are Engaged with, or supporting a model Engaged with, any friendly Cavalry models that made a Charge that turn suffer a penalty of -1 to their Duel rolls.",
     "primaryAllies":[
 
     ],
