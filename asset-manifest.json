@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.19c51e50.css",
-    "main.js": "/mesbg-list-builder/static/js/main.37b9b454.js",
+    "main.js": "/mesbg-list-builder/static/js/main.57a6612e.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -36,6 +36,7 @@
     "static/media/Mordor War Catapult.jpg": "/mesbg-list-builder/static/media/Mordor War Catapult.8c845b1a6c63a4b6883d.jpg",
     "static/media/The Undying.jpg": "/mesbg-list-builder/static/media/The Undying.32d081c40a98fe6882f8.jpg",
     "static/media/The Dwimmerlaik.jpg": "/mesbg-list-builder/static/media/The Dwimmerlaik.11b5a02f5a69bcc77e2d.jpg",
+    "static/media/Denethor.jpg": "/mesbg-list-builder/static/media/Denethor.87a8618ef0b3b981e832.jpg",
     "static/media/Royal Palanquin.jpg": "/mesbg-list-builder/static/media/Royal Palanquin.d6c7ea3f0604ca74452a.jpg",
     "static/media/Gamling.jpg": "/mesbg-list-builder/static/media/Gamling.4f0195ddcc922e12a548.jpg",
     "static/media/Glorfindel.jpg": "/mesbg-list-builder/static/media/Glorfindel.35f0b81d11d5fc2470ee.jpg",
@@ -91,7 +92,6 @@
     "static/media/Gandalf the Grey.jpg": "/mesbg-list-builder/static/media/Gandalf the Grey.11bdc2bc6e4d26876750.jpg",
     "static/media/Snaga.jpg": "/mesbg-list-builder/static/media/Snaga.f95415e25e3ae5582b50.jpg",
     "static/media/Baldo Tulpenny.jpg": "/mesbg-list-builder/static/media/Baldo Tulpenny.7fde326f319fdc91ee1d.jpg",
-    "static/media/Denethor.jpg": "/mesbg-list-builder/static/media/Denethor.ec8af79a3a906850aa07.jpg",
     "static/media/Irolas.jpg": "/mesbg-list-builder/static/media/Irolas.ae35be2c7fad59bad043.jpg",
     "static/media/Dragon Cult Acolyte.jpg": "/mesbg-list-builder/static/media/Dragon Cult Acolyte.a63e9b3f5a8d412f8420.jpg",
     "static/media/Celeborn.jpg": "/mesbg-list-builder/static/media/Celeborn.ec5e8e4d060d79700fce.jpg",
@@ -118,6 +118,7 @@
     "static/media/Gimli.jpg": "/mesbg-list-builder/static/media/Gimli.3fd1ced254186866bf6d.jpg",
     "static/media/Sharku.jpg": "/mesbg-list-builder/static/media/Sharku.b61f5f23c3734947057a.jpg",
     "static/media/Mirkwood Spider.jpg": "/mesbg-list-builder/static/media/Mirkwood Spider.435e3731ba336d7919cc.jpg",
+    "static/media/Balin.jpg": "/mesbg-list-builder/static/media/Balin.8ab426b2c0d6b0177bc2.jpg",
     "static/media/Eorl the Young.jpg": "/mesbg-list-builder/static/media/Eorl the Young.2d85d2d4075bbdf61336.jpg",
     "static/media/Shagrat.jpg": "/mesbg-list-builder/static/media/Shagrat.6269c7cdffde2f40d5c2.jpg",
     "static/media/Frida Tallspear.jpg": "/mesbg-list-builder/static/media/Frida Tallspear.dca9aae22d7b125905e2.jpg",
@@ -152,7 +153,6 @@
     "static/media/Ent.jpg": "/mesbg-list-builder/static/media/Ent.c3a700f3632939c8d050.jpg",
     "static/media/Wild Man Oathmaker.jpg": "/mesbg-list-builder/static/media/Wild Man Oathmaker.0b4d54f102570a59dfc9.jpg",
     "static/media/Black Numenorean Marshall.jpg": "/mesbg-list-builder/static/media/Black Numenorean Marshall.567f0a8e0f78fbd2b820.jpg",
-    "static/media/Balin.jpg": "/mesbg-list-builder/static/media/Balin.68f6e0ba48c2cc8fe2dc.jpg",
     "static/media/Watcher of Karna.jpg": "/mesbg-list-builder/static/media/Watcher of Karna.be21aa57179068fa70a4.jpg",
     "static/media/Bandobras Took.jpg": "/mesbg-list-builder/static/media/Bandobras Took.8ce9ba4cf410438dcd06.jpg",
     "static/media/Cirdan.jpg": "/mesbg-list-builder/static/media/Cirdan.b293e6e7d5afc0928749.jpg",
@@ -657,10 +657,10 @@
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.19c51e50.css.map": "/mesbg-list-builder/static/css/main.19c51e50.css.map",
-    "main.37b9b454.js.map": "/mesbg-list-builder/static/js/main.37b9b454.js.map"
+    "main.57a6612e.js.map": "/mesbg-list-builder/static/js/main.57a6612e.js.map"
   },
   "entrypoints": [
     "static/css/main.19c51e50.css",
-    "static/js/main.37b9b454.js"
+    "static/js/main.57a6612e.js"
   ]
 }
