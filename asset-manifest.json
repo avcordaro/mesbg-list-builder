@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.19c51e50.css",
-    "main.js": "/mesbg-list-builder/static/js/main.57a6612e.js",
+    "main.js": "/mesbg-list-builder/static/js/main.311d83d0.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
@@ -167,6 +167,7 @@
     "static/media/Knight of Dol Amroth.jpg": "/mesbg-list-builder/static/media/Knight of Dol Amroth.b5c8187a10e6908a128e.jpg",
     "static/media/Avenger Bolt Thrower.jpg": "/mesbg-list-builder/static/media/Avenger Bolt Thrower.f0a751d03481fdf84182.jpg",
     "static/media/Boromir of Gondor.jpg": "/mesbg-list-builder/static/media/Boromir of Gondor.7ca879a4ae927f215adb.jpg",
+    "static/media/Muzgur.jpg": "/mesbg-list-builder/static/media/Muzgur.f56e336618d3ebb17648.jpg",
     "static/media/Zagdush.jpg": "/mesbg-list-builder/static/media/Zagdush.896761dcac7d9d0278ee.jpg",
     "static/media/Lurtz.jpg": "/mesbg-list-builder/static/media/Lurtz.66eb75e04fdab52d91b3.jpg",
     "static/media/Goroth.jpg": "/mesbg-list-builder/static/media/Goroth.9af2b90bbeb0f5c3c2b8.jpg",
@@ -206,7 +207,6 @@
     "static/media/Corsair Bo'sun.jpg": "/mesbg-list-builder/static/media/Corsair Bo'sun.11b2115c66fc13da9b5d.jpg",
     "static/media/Wood Elf Captain.jpg": "/mesbg-list-builder/static/media/Wood Elf Captain.cc99cb4bf280a71635cb.jpg",
     "static/media/Malbeth the Seer.jpg": "/mesbg-list-builder/static/media/Malbeth the Seer.b563af0e2eaae0fc2fb3.jpg",
-    "static/media/Muzgur.jpg": "/mesbg-list-builder/static/media/Muzgur.2683e5c2f324b1fe265d.jpg",
     "static/media/Mardin.jpg": "/mesbg-list-builder/static/media/Mardin.282230e7353af623cfd8.jpg",
     "static/media/Dunlending Huscarl.jpg": "/mesbg-list-builder/static/media/Dunlending Huscarl.607e3d80fff18f38af95.jpg",
     "static/media/Galadhrim Knight.jpg": "/mesbg-list-builder/static/media/Galadhrim Knight.86f36d6ffbc97be656fe.jpg",
@@ -655,12 +655,16 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "static/media/Defenders of the Shire.png": "/mesbg-list-builder/static/media/Defenders of the Shire.8bd1b1afd25b97d97816.png",
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
+    "static/media/Thorin's Company.png": "/mesbg-list-builder/static/media/Thorin's Company.1c87ea78d72e4bc1640a.png",
+    "static/media/Erebor Reclaimed.png": "/mesbg-list-builder/static/media/Erebor Reclaimed.31a1c0daf0afe861cfd2.png",
+    "static/media/The Iron Hills.png": "/mesbg-list-builder/static/media/The Iron Hills.0c80580e42fc5d13c29c.png",
+    "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.19c51e50.css.map": "/mesbg-list-builder/static/css/main.19c51e50.css.map",
-    "main.57a6612e.js.map": "/mesbg-list-builder/static/js/main.57a6612e.js.map"
+    "main.311d83d0.js.map": "/mesbg-list-builder/static/js/main.311d83d0.js.map"
   },
   "entrypoints": [
     "static/css/main.19c51e50.css",
-    "static/js/main.57a6612e.js"
+    "static/js/main.311d83d0.js"
   ]
 }
