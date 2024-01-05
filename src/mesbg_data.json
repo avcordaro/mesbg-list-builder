@@ -508,6 +508,24 @@
     "warband_size":1,
     "options":[
       {
+        "option_id":"OPT1311",
+        "option":"Troll Chain",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1312",
+        "option":"Swap Spear for Hammer",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT0019",
         "option":"Swap Weapon",
         "points":1.0,
