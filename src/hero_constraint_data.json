@@ -5750,6 +5750,366 @@
       ]
     }
   ],
+  "[thorin's_company] balin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] bifur_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] bilbo_baggins":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] bofur_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] bombur_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] dori_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] dwalin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] fili_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] gandalf_the_grey":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] gloin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] kili_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] nori_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] oin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] ori_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[thorin's_company] thorin_oakenshield":[
+    {
+      "valid_warband_units":[
+        "[thorin's_company] balin_the_dwarf",
+        "[thorin's_company] bifur_the_dwarf",
+        "[thorin's_company] bilbo_baggins",
+        "[thorin's_company] bofur_the_dwarf",
+        "[thorin's_company] bombur_the_dwarf",
+        "[thorin's_company] dori_the_dwarf",
+        "[thorin's_company] dwalin_the_dwarf",
+        "[thorin's_company] fili_the_dwarf",
+        "[thorin's_company] gandalf_the_grey",
+        "[thorin's_company] gloin_the_dwarf",
+        "[thorin's_company] kili_the_dwarf",
+        "[thorin's_company] nori_the_dwarf",
+        "[thorin's_company] oin_the_dwarf",
+        "[thorin's_company] ori_the_dwarf",
+        "[thorin's_company] thorin_oakenshield"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[ugluk's_scouts] grishnak":[
     {
       "valid_warband_units":[

@@ -24858,6 +24858,477 @@
     ]
   },
   {
+    "model_id":"[thorin's_company] gandalf_the_grey",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Gandalf the Grey",
+    "unit_type":"Hero of Legend",
+    "base_points":170,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":170,
+    "pointsTotal":170,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1323",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] thorin_oakenshield",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Thorin Oakenshield",
+    "unit_type":"Hero of Legend",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1329",
+        "option":"Orcrist",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1330",
+        "option":"Pony",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1331",
+        "option":"The Oakenshield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] dwalin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Dwalin the Dwarf",
+    "unit_type":"Hero of Valour",
+    "base_points":95,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":95,
+    "pointsTotal":95,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1321",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] balin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Balin the Dwarf",
+    "unit_type":"Hero of Valour",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1313",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] gloin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Gloin the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1324",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] dori_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Dori the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1320",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] nori_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Nori the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1326",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] fili_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Fili the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1322",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] kili_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Kili the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1325",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] bifur_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Bifur the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1314",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] bofur_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Bofur the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1318",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] bombur_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Bombur the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1319",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] oin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Oin the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1327",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] bilbo_baggins",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Bilbo Baggins",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1315",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1316",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1317",
+        "option":"The One Ring",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[thorin's_company] ori_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Ori the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1328",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[ugluk's_scouts] ugluk",
     "faction_type":"Evil LL",
     "faction":"Ugluk's Scouts",
