@@ -239,7 +239,8 @@
     {
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
-        "[arnor] hobbit_archer"
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor"
       ],
       "special_unit_options":[
 
@@ -250,7 +251,8 @@
     {
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
-        "[arnor] hobbit_archer"
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor"
       ],
       "special_unit_options":[
 
@@ -261,7 +263,8 @@
     {
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
-        "[arnor] hobbit_archer"
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor"
       ],
       "special_unit_options":[
 

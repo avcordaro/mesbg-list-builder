@@ -1183,6 +1183,44 @@
     ]
   },
   {
+    "model_id":"[arnor] ranger_of_arnor",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Ranger of Arnor",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1332",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1333",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[arnor] warrior_of_arnor",
     "faction_type":"Good Army",
     "faction":"Arnor",
@@ -3443,6 +3481,35 @@
     ]
   },
   {
+    "model_id":"[corsairs_of_umbar] corsair_arbalester",
+    "faction_type":"Evil Army",
+    "faction":"Corsairs of Umbar",
+    "profile_origin":"Corsairs of Umbar",
+    "name":"Corsair Arbalester",
+    "unit_type":"Warrior",
+    "base_points":10,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT0177",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[corsairs_of_umbar] black_numenorean",
     "faction_type":"Evil Army",
     "faction":"Corsairs of Umbar",
@@ -3480,35 +3547,6 @@
       },
       {
         "option_id":"OPT0172",
-        "option":"Swap Weapon",
-        "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[corsairs_of_umbar] corsair_arbalester",
-    "faction_type":"Evil Army",
-    "faction":"Corsairs of Umbar",
-    "profile_origin":"Corsairs of Umbar",
-    "name":"Corsair Arbalester",
-    "unit_type":"Warrior",
-    "base_points":9,
-    "default_bow":true,
-    "unique":false,
-    "inc_bow_count":true,
-    "bow_limit":true,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":9,
-    "pointsTotal":9,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"OPT0177",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -9365,7 +9403,7 @@
       {
         "option_id":"OPT0517",
         "option":"Horse",
-        "points":15.0,
+        "points":10.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,

@@ -524,7 +524,7 @@
     "bow_limit":0.33
   },
   "Thorin's Company":{
-    "armyBonus":"<b>\"I would take each and every one of these Dwarves over an army from the Iron Hills, for when I called upon them, they answered\"<\/b> - Models from this army list may re-roll To Wound rolls of a 1 whilst within 3\" of Thorin Oakenshield.",
+    "armyBonus":"<b>\"I would take each and every one of these Dwarves over an army from the Iron Hills, for when I called upon them, they answered\"<\/b> - Models from this army list may re-roll To Wound rolls of a 1 whilst within 3\" of Thorin Oakenshield.<br\/><br\/>A Thorin's Company warband is always a single warband made up entirely of Heroes, and can even extend beyond the normal model limits for a warband. The Hero with the highest Heroic Tier is treated as being the warband's captain.",
     "primaryAllies":[
       "Army of Lake-town",
       "The Misty Mountains"

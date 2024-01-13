@@ -38,7 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.1.3"
+  const VERSION = "3.1.4"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -363,7 +363,7 @@ export default function App() {
                 MESBG List Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version {VERSION} (updated 06-Jan-24)
+                version {VERSION} (updated 13-Jan-24)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -392,7 +392,7 @@ export default function App() {
                       onSelect={(e) => handleFaction(f_type, e)}
                       disabled={!heroSelection || factionType.includes("LL")}
                     >
-                    {[...faction_lists[f_type]].map((f) => (
+                    {[...faction_lists[f_type]].sort().map((f) => (
                       <Dropdown.Item
                         style={{ width: "458px", textAlign: "center" }}
                         eventKey={f}
