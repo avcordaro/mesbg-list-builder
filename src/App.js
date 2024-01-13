@@ -116,11 +116,7 @@ export default function App() {
           modelCounts[f] = 0;
         }
         _warband.units.map((_unit) => {
-          console.log(_unit.name != null)
-          console.log(_unit.type == "Warrior")
-          console.log(_unit.bow_limit)
           if (_unit.name != null && _unit.unit_type == "Warrior" && _unit.bow_limit) {
-            console.log("Success")
             modelCounts[f] = modelCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
             if (_unit.inc_bow_count) {
               bowCounts[f] = bowCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
@@ -128,8 +124,6 @@ export default function App() {
           }
         });
       }
-      console.log(bowCounts);
-      console.log(modelCounts);
     });
     setFactionBowCounts(bowCounts);
     setFactionModelCounts(modelCounts);

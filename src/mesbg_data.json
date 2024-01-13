@@ -6748,6 +6748,422 @@
     ]
   },
   {
+    "model_id":"[halls_of_thranduil] legolas_greenleaf,_prince_of_mirkwood",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Legolas Greenleaf, Prince of Mirkwood",
+    "unit_type":"Hero of Valour",
+    "base_points":95,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":95,
+    "pointsTotal":95,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1334",
+        "option":"Elven Cloak",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1335",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1336",
+        "option":"Orcrist",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] tauriel",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Tauriel",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1356",
+        "option":"Elf Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] mirkwood_captain",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Mirkwood Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1347",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] mirkwood_ranger_captain",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Mirkwood Ranger Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1348",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] palace_guard_captain",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Palace Guard Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1349",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1350",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] wood_elf_sentinel",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Lothlorien",
+    "name":"Wood Elf Sentinel",
+    "unit_type":"Warrior",
+    "base_points":25,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1357",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] mirkwood_cavalry",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Mirkwood Cavalry",
+    "unit_type":"Warrior",
+    "base_points":16,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":16,
+    "pointsTotal":16,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1337",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1338",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1339",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] mirkwood_ranger",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Mirkwood Ranger",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":true,
+    "unique":false,
+    "inc_bow_count":true,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1345",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1346",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] palace_guard",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Palace Guard",
+    "unit_type":"Warrior",
+    "base_points":12,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":12,
+    "pointsTotal":12,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1351",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1352",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1353",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1354",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1355",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[halls_of_thranduil] mirkwood_elf",
+    "faction_type":"Good Army",
+    "faction":"Halls of Thranduil",
+    "profile_origin":"Halls of Thranduil",
+    "name":"Mirkwood Elf",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1340",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1341",
+        "option":"Elf Bow",
+        "points":2.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1342",
+        "option":"Elven-made Glaive",
+        "points":2.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1343",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1344",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[helm's_guard] helm_hammerhand",
     "faction_type":"Good LL",
     "faction":"Helm's Guard",

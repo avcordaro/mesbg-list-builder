@@ -1382,10 +1382,84 @@
       ]
     }
   ],
+  "[halls_of_thranduil] legolas_greenleaf,_prince_of_mirkwood":[
+    {
+      "valid_warband_units":[
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[halls_of_thranduil] mirkwood_captain":[
+    {
+      "valid_warband_units":[
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[halls_of_thranduil] mirkwood_ranger_captain":[
+    {
+      "valid_warband_units":[
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[halls_of_thranduil] palace_guard_captain":[
+    {
+      "valid_warband_units":[
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
+  "[halls_of_thranduil] tauriel":[
+    {
+      "valid_warband_units":[
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
+      ],
+      "special_unit_options":[
+
+      ]
+    }
+  ],
   "[halls_of_thranduil] thranduil":[
     {
       "valid_warband_units":[
-
+        "[halls_of_thranduil] mirkwood_cavalry",
+        "[halls_of_thranduil] mirkwood_elf",
+        "[halls_of_thranduil] mirkwood_ranger",
+        "[halls_of_thranduil] palace_guard",
+        "[halls_of_thranduil] wood_elf_sentinel"
       ],
       "special_unit_options":[
 
