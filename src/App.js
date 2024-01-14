@@ -38,7 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.1.5"
+  const VERSION = "3.1.6"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -133,6 +133,14 @@ export default function App() {
 
     checkWarnings(newUniqueModels, factions);
   }, [roster]);
+
+  useEffect(() => {
+    //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
+    if (factionList.includes("Halls of Thranduil")) {
+      let newRoster = handleMirkwoodRangers(roster, allianceLevel);
+      setRoster(newRoster);
+    }
+  }, [allianceLevel]);
 
   const downloadProfileCards = async () => {
     setDownloadSpinner(true);
@@ -328,6 +336,26 @@ export default function App() {
     setDisplaySelection(false);
   };
 
+  const handleMirkwoodRangers = (roster, alliance_level) => {
+    // Specific logic for Mirkwood Rangers and counting towards bow limit, depending on if the alliance level is Historical or not.
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newUnits = newWarband.units.map((_unit) => {
+        let newUnit = { ..._unit };
+        if (newUnit.model_id == '[halls_of_thranduil] mirkwood_ranger') {
+          newUnit["inc_bow_count"] = alliance_level == 'Historical' ? false : true;
+          newUnit["bow_limit"] = alliance_level == 'Historical' ? false : true;;
+        }
+        return newUnit;
+      });
+      newWarband.units = newUnits;
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    return newRoster
+  };
+
   const handleExportJSON = () => {
     /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard. 
     Also notify them with an alert that fades away after 3 seconds. */
@@ -425,6 +453,7 @@ export default function App() {
                               warbandNumFocus={warbandNumFocus}
                               setShowCardModal={setShowCardModal}
                               setCardUnitData={setCardUnitData}
+                              allianceLevel={allianceLevel}
                             />
                           ))
                       : mesbg_data
@@ -447,6 +476,7 @@ export default function App() {
                               warbandNumFocus={warbandNumFocus}
                               setShowCardModal={setShowCardModal}
                               setCardUnitData={setCardUnitData}
+                              allianceLevel={allianceLevel}
                             />
                     ))}
                   </Stack>

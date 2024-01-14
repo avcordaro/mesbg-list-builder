@@ -18,6 +18,7 @@ export function SelectionUnit({
   warbandNumFocus,
   setShowCardModal,
   setCardUnitData,
+  allianceLevel
 }) {
 
   const deleteInvalidUnit = (newRoster, unit_id) => {
@@ -90,6 +91,11 @@ export function SelectionUnit({
       if (newUnitData.model_id == '[rivendell] rivendell_knight' && uniqueModels.includes('[rivendell] elrond')) {
         newUnitData["inc_bow_count"] = false;
         newUnitData["bow_limit"] = false;
+      }
+      // Specific logic for Mirkwood Rangers and the bow limit, depending on the alliance level
+      if (newUnitData.model_id == '[halls_of_thranduil] mirkwood_ranger' && allianceLevel != "Historical") {
+        newUnitData["inc_bow_count"] = true;
+        newUnitData["bow_limit"] = true;
       }
       // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[
