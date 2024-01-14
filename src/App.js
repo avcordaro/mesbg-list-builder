@@ -38,7 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.1.4"
+  const VERSION = "3.1.5"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -140,10 +140,20 @@ export default function App() {
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
         profileCards.add([_warband.hero.profile_origin, _warband.hero.name]);
+        if (hero_constraint_data[_warband.hero.model_id][0]['extra_profiles'].length > 0) {
+          hero_constraint_data[_warband.hero.model_id][0]['extra_profiles'].map((_profile) => {
+            profileCards.add([_warband.hero.profile_origin, _profile]);
+          })
+        }
       }
       _warband.units.map((_unit) => {
         if (_unit.name != null) {
           profileCards.add([_unit.profile_origin, _unit.name]);
+          if (hero_constraint_data[_unit.model_id][0]['extra_profiles'].length > 0) {
+          hero_constraint_data[_unit.model_id][0]['extra_profiles'].map((_profile) => {
+            profileCards.add([_unit.profile_origin, _profile]);
+          })
+        }
         }
       });
     });
@@ -357,7 +367,7 @@ export default function App() {
                 MESBG List Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version {VERSION} (updated 13-Jan-24)
+                version {VERSION} (updated 14-Jan-24)
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
@@ -606,19 +616,35 @@ export default function App() {
           </div>
         </Modal.Header>
         <Modal.Body style={{textAlign: "center"}}>
-
           {cardUnitData != null &&
-            <img
-              className="profile_card border border-secondary"
-              src={(() => {
-                try {
-                  return require("./images/" + cardUnitData.profile_origin + "/cards/" + cardUnitData.name + ".jpg")
-                } 
-                catch (e) {
-                  return require("./images/default_card.jpg")
-                }
-              })()}
-            />
+            <>
+              <img
+                className="profile_card border border-secondary"
+                src={(() => {
+                  try {
+                    return require("./images/" + cardUnitData.profile_origin + "/cards/" + cardUnitData.name + ".jpg")
+                  } 
+                  catch (e) {
+                    return require("./images/default_card.jpg")
+                  }
+                })()}
+              />
+              {hero_constraint_data[cardUnitData.model_id][0]['extra_profiles'].length != 0 && (
+                hero_constraint_data[cardUnitData.model_id][0]['extra_profiles'].map((profile) => (
+                  <img
+                    className="profile_card border border-secondary mt-3"
+                    src={(() => {
+                      try {
+                        return require("./images/" + cardUnitData.profile_origin + "/cards/" + profile + ".jpg")
+                      } 
+                      catch (e) {
+                        return require("./images/default_card.jpg")
+                      }
+                    })()}
+                  />
+                ))
+              )}
+            </>
           }
         </Modal.Body>
       </Modal>
