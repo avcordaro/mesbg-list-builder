@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.2b2619b3.js",
+    "main.js": "/mesbg-list-builder/static/js/main.692bd41b.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Dwalin the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Dwalin the Dwarf, Champion of Erebor.e5182042ae283a0ec5ff.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
@@ -733,10 +733,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.2b2619b3.js.map": "/mesbg-list-builder/static/js/main.2b2619b3.js.map"
+    "main.692bd41b.js.map": "/mesbg-list-builder/static/js/main.692bd41b.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.2b2619b3.js"
+    "static/js/main.692bd41b.js"
   ]
 }
