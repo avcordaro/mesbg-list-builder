@@ -157,11 +157,6 @@ export default function App() {
       _warband.units.map((_unit) => {
         if (_unit.name != null) {
           profileCards.add([_unit.profile_origin, _unit.name]);
-          if (hero_constraint_data[_unit.model_id][0]['extra_profiles'].length > 0) {
-          hero_constraint_data[_unit.model_id][0]['extra_profiles'].map((_profile) => {
-            profileCards.add([_unit.profile_origin, _profile]);
-          })
-        }
         }
       });
     });
@@ -659,7 +654,7 @@ export default function App() {
                   }
                 })()}
               />
-              {hero_constraint_data[cardUnitData.model_id][0]['extra_profiles'].length != 0 && (
+              {cardUnitData.unit_type.includes("Hero") && hero_constraint_data[cardUnitData.model_id][0]['extra_profiles'].length != 0 && (
                 hero_constraint_data[cardUnitData.model_id][0]['extra_profiles'].map((profile) => (
                   <img
                     className="profile_card border border-secondary mt-3"
