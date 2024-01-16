@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.692bd41b.js",
+    "main.js": "/mesbg-list-builder/static/js/main.5fd69b2b.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Dwalin the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Dwalin the Dwarf, Champion of Erebor.e5182042ae283a0ec5ff.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
+    "static/media/Sharkey and Worm.jpg": "/mesbg-list-builder/static/media/Sharkey and Worm.83665e4dabb713a74eb2.jpg",
     "static/media/Thorin Oakenshield, King Under the Mountain.jpg": "/mesbg-list-builder/static/media/Thorin Oakenshield, King Under the Mountain.fd6d53b30f5c0b9e3fd1.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
     "static/media/The Mumak War Leader.jpg": "/mesbg-list-builder/static/media/The Mumak War Leader.157e40c2d4a0199005b0.jpg",
@@ -14,7 +15,6 @@
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Thranduil.jpg": "/mesbg-list-builder/static/media/Thranduil.784a1ff4db0ccd73dae4.jpg",
     "static/media/Helm Hammerhand.jpg": "/mesbg-list-builder/static/media/Helm Hammerhand.880f602201c5c68ef655.jpg",
-    "static/media/Sharkey and Worm.jpg": "/mesbg-list-builder/static/media/Sharkey and Worm.c388c92f399588019847.jpg",
     "static/media/Khamul.jpg": "/mesbg-list-builder/static/media/Khamul.0eba7a57e99f68415d5a.jpg",
     "static/media/Dwarf Ballista.jpg": "/mesbg-list-builder/static/media/Dwarf Ballista.e416fdfb6d82ad9ab649.jpg",
     "static/media/Dragon.jpg": "/mesbg-list-builder/static/media/Dragon.4c88b5d7843e1136e926.jpg",
@@ -733,10 +733,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.692bd41b.js.map": "/mesbg-list-builder/static/js/main.692bd41b.js.map"
+    "main.5fd69b2b.js.map": "/mesbg-list-builder/static/js/main.5fd69b2b.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.692bd41b.js"
+    "static/js/main.5fd69b2b.js"
   ]
 }
