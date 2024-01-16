@@ -1178,6 +1178,17 @@
       "extra_profiles":[
 
       ]
+    },
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_unit_options":[
+
+      ],
+      "extra_profiles":[
+
+      ]
     }
   ],
   "[defenders_of_the_shire] hamfast_'gaffer'_gamgee":[
@@ -6814,6 +6825,19 @@
         "[the_shire] hobbit_militia",
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
+      ],
+      "special_unit_options":[
+
+      ],
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_shire] grip,_fang_and_wolf":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_unit_options":[
 

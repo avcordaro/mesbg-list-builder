@@ -12850,9 +12850,36 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1358",
+        "option":"Breathe Fire",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1359",
+        "option":"Fly",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1360",
+        "option":"Tough Hide",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1361",
+        "option":"Wyrmtongue",
+        "points":50.0,
         "type":null,
         "min":0.0,
         "max":1.0,
