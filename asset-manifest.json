@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.5fd69b2b.js",
+    "main.js": "/mesbg-list-builder/static/js/main.817ae5c7.js",
     "static/media/Witch King.jpg": "/mesbg-list-builder/static/media/Witch King.476f859c94ef28f0110b.jpg",
     "static/media/Dwalin the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Dwalin the Dwarf, Champion of Erebor.e5182042ae283a0ec5ff.jpg",
     "static/media/The Watcher in the Water.jpg": "/mesbg-list-builder/static/media/The Watcher in the Water.b1ea2de8faaeddbed38e.jpg",
@@ -130,6 +130,7 @@
     "static/media/Floi Stonehand.jpg": "/mesbg-list-builder/static/media/Floi Stonehand.99c6e0e4be8cfe49231f.jpg",
     "static/media/Mahud Tribesmaster.jpg": "/mesbg-list-builder/static/media/Mahud Tribesmaster.09bd5f4fa220dfc43532.jpg",
     "static/media/Gimli.jpg": "/mesbg-list-builder/static/media/Gimli.3fd1ced254186866bf6d.jpg",
+    "static/media/Duinhir.jpg": "/mesbg-list-builder/static/media/Duinhir.442780e2000a2bd44593.jpg",
     "static/media/Bifur the Dwarf.jpg": "/mesbg-list-builder/static/media/Bifur the Dwarf.918e86d3c87f617d8b51.jpg",
     "static/media/Sharku.jpg": "/mesbg-list-builder/static/media/Sharku.b61f5f23c3734947057a.jpg",
     "static/media/Mirkwood Spider.jpg": "/mesbg-list-builder/static/media/Mirkwood Spider.435e3731ba336d7919cc.jpg",
@@ -733,10 +734,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.5fd69b2b.js.map": "/mesbg-list-builder/static/js/main.5fd69b2b.js.map"
+    "main.817ae5c7.js.map": "/mesbg-list-builder/static/js/main.817ae5c7.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.5fd69b2b.js"
+    "static/js/main.817ae5c7.js"
   ]
 }
