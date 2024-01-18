@@ -87,9 +87,10 @@ with open('faction_data.json', 'w') as f:
 
 df_hero_constraints = pd.read_excel("mesbg_data.xlsx", sheet_name="hero_constraints")
 df_hero_constraints['valid_warband_units'] = df_hero_constraints['valid_warband_units'].apply(eval)
-df_hero_constraints['special_unit_options'] = df_hero_constraints['special_unit_options'].apply(eval)
+df_hero_constraints['special_warband_options'] = df_hero_constraints['special_warband_options'].apply(eval)
+df_hero_constraints['special_army_option'].fillna("", inplace=True)
 df_hero_constraints['extra_profiles'] = df_hero_constraints['extra_profiles'].apply(eval)
-df_hero_constraints = df_hero_constraints.groupby('hero_model_id').apply(lambda x: x[['valid_warband_units', 'special_unit_options', 'extra_profiles']].to_dict(orient='records'))
+df_hero_constraints = df_hero_constraints.groupby('hero_model_id').apply(lambda x: x[['valid_warband_units', 'special_warband_options','special_army_option', 'extra_profiles']].to_dict(orient='records'))
 
 with open('hero_constraint_data.json', 'w') as f:
     f.write(df_hero_constraints.to_json(orient="index", indent=2))

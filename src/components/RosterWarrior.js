@@ -18,7 +18,8 @@ export function RosterWarrior({
   roster,
   setRoster,
   setShowCardModal,
-  setCardUnitData
+  setCardUnitData,
+  specialArmyOptions
 }) {
   const handleIncrement = () => {
     // Updates the roster state variable to handle increase to points, units and bow count totals.
@@ -197,6 +198,7 @@ export function RosterWarrior({
                     warbandNum={warbandNum}
                     unit={unitData}
                     option={option}
+                    specialArmyOptions={specialArmyOptions}
                   />
                 ))}
               </Form>

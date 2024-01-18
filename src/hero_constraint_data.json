@@ -8,9 +8,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -25,9 +26,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -42,9 +44,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -59,9 +62,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -76,9 +80,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -93,9 +98,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -110,9 +116,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -127,9 +134,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -144,9 +152,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -159,9 +168,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -176,9 +186,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -193,9 +204,10 @@
         "[angmar] wild_warg",
         "[angmar] angmar_orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -210,9 +222,10 @@
         "[army_of_dunland] dunlending_warrior",
         "[army_of_dunland] wild_man_of_dunland"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -227,9 +240,10 @@
         "[army_of_dunland] dunlending_warrior",
         "[army_of_dunland] wild_man_of_dunland"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -244,9 +258,10 @@
         "[army_of_dunland] dunlending_warrior",
         "[army_of_dunland] wild_man_of_dunland"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -261,9 +276,10 @@
         "[army_of_dunland] dunlending_warrior",
         "[army_of_dunland] wild_man_of_dunland"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -278,9 +294,10 @@
         "[army_of_dunland] dunlending_warrior",
         "[army_of_dunland] wild_man_of_dunland"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -293,9 +310,10 @@
         "[arnor] hobbit_archer",
         "[arnor] ranger_of_arnor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -308,9 +326,10 @@
         "[arnor] hobbit_archer",
         "[arnor] ranger_of_arnor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -323,9 +342,10 @@
         "[arnor] hobbit_archer",
         "[arnor] ranger_of_arnor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -339,9 +359,10 @@
         "[assault_upon_helm's_deep] uruk-hai_berserker",
         "[assault_upon_helm's_deep] uruk-hai_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -355,9 +376,10 @@
         "[assault_upon_helm's_deep] uruk-hai_berserker",
         "[assault_upon_helm's_deep] uruk-hai_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -374,9 +396,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -393,9 +416,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -412,9 +436,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -425,9 +450,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -444,9 +470,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -463,9 +490,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -482,9 +510,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -501,9 +530,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -514,9 +544,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -533,9 +564,10 @@
         "[barad-dur] orc_tracker",
         "[barad-dur] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -553,9 +585,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -573,9 +606,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -593,9 +627,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -613,9 +648,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -633,9 +669,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -653,9 +690,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -673,9 +711,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -693,9 +732,10 @@
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -706,9 +746,10 @@
       "valid_warband_units":[
         "[cirith_ungol] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -719,9 +760,10 @@
       "valid_warband_units":[
         "[cirith_ungol] mordor_uruk-hai"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -732,9 +774,10 @@
       "valid_warband_units":[
         "[cirith_ungol] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -745,9 +788,10 @@
       "valid_warband_units":[
         "[cirith_ungol] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -758,9 +802,10 @@
       "valid_warband_units":[
         "[cirith_ungol] mordor_uruk-hai"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -771,9 +816,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -787,9 +833,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -803,9 +850,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -819,9 +867,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -835,9 +884,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -851,9 +901,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -867,9 +918,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -883,9 +935,10 @@
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -896,9 +949,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -913,9 +967,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -930,9 +985,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -947,9 +1003,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -964,9 +1021,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -981,9 +1039,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -998,9 +1057,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1011,9 +1071,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1028,9 +1089,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1045,9 +1107,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1062,9 +1125,10 @@
         "[defenders_of_helm's_deep] rohan_royal_guard",
         "[defenders_of_helm's_deep] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1078,9 +1142,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1095,9 +1160,10 @@
         "[defenders_of_the_shire] grip,_fang_and_wolf",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1111,9 +1177,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1127,9 +1194,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1143,9 +1211,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1159,9 +1228,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1172,9 +1242,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1183,9 +1254,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1199,9 +1271,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1215,9 +1288,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1231,9 +1305,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1247,9 +1322,10 @@
         "[defenders_of_the_shire] hobbit_militia_bb",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1263,9 +1339,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Tookish Hunters"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1279,9 +1356,10 @@
         "[defenders_of_the_shire] hobbit_archer_th",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1295,9 +1373,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1308,9 +1387,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1324,9 +1404,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1340,9 +1421,10 @@
         "[defenders_of_the_shire] hobbit_shirriff",
         "[defenders_of_the_shire] rosie_cotton"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1358,9 +1440,10 @@
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1376,9 +1459,10 @@
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1394,9 +1478,10 @@
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1412,9 +1497,10 @@
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1430,9 +1516,10 @@
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1443,9 +1530,10 @@
       "valid_warband_units":[
         "[fangorn] ent"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1456,9 +1544,10 @@
       "valid_warband_units":[
         "[fangorn] ent"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1469,9 +1558,10 @@
       "valid_warband_units":[
         "[fangorn] ent"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1484,9 +1574,10 @@
         "[far_harad] mahud_raider",
         "[far_harad] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1499,9 +1590,10 @@
         "[far_harad] mahud_raider",
         "[far_harad] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1514,9 +1606,10 @@
         "[far_harad] mahud_warrior",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1528,9 +1621,10 @@
         "[far_harad] half_troll",
         "[far_harad] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1544,9 +1638,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1560,9 +1655,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1576,9 +1672,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1592,9 +1689,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1607,9 +1705,10 @@
         "[grand_army_of_the_south] mahud_raider",
         "[grand_army_of_the_south] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1622,9 +1721,10 @@
         "[grand_army_of_the_south] mahud_raider",
         "[grand_army_of_the_south] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1638,9 +1738,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1654,9 +1755,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1669,9 +1771,10 @@
         "[grand_army_of_the_south] mahud_warrior",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1683,9 +1786,10 @@
         "[grand_army_of_the_south] half_troll",
         "[grand_army_of_the_south] mahud_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1697,9 +1801,10 @@
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1714,9 +1819,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1731,9 +1837,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1748,9 +1855,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1765,9 +1873,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1782,9 +1891,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1799,9 +1909,10 @@
         "[halls_of_thranduil] palace_guard",
         "[halls_of_thranduil] wood_elf_sentinel"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1815,9 +1926,10 @@
         "[helm's_guard] rohan_outrider",
         "[helm's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1831,9 +1943,10 @@
         "[helm's_guard] rohan_outrider",
         "[helm's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1847,9 +1960,10 @@
         "[helm's_guard] rohan_outrider",
         "[helm's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1873,9 +1987,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1899,9 +2014,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1925,9 +2041,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1938,9 +2055,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1964,9 +2082,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -1990,9 +2109,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Marauder Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2016,9 +2136,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2043,9 +2164,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2069,9 +2191,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2083,9 +2206,10 @@
         "[isengard] warg_rider",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2109,9 +2233,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2135,9 +2260,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2161,9 +2287,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2174,9 +2301,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2200,9 +2328,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2226,9 +2355,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2252,9 +2382,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2278,9 +2409,10 @@
         "[isengard] wild_man_of_dunland",
         "[isengard] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2295,9 +2427,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Galadhrim Guard Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2312,9 +2445,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2329,9 +2463,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2346,9 +2481,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Galadhrim Guard Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2363,9 +2499,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2380,9 +2517,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2397,9 +2535,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2414,9 +2553,10 @@
         "[lothlorien] galadhrim_warrior",
         "[lothlorien] wood_elf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2428,9 +2568,10 @@
         "[lurtz's_scouts] uruk-hai_drummer",
         "[lurtz's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2442,9 +2583,10 @@
         "[lurtz's_scouts] uruk-hai_drummer",
         "[lurtz's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"Marauder Upgrade - FREE",
       "extra_profiles":[
 
       ]
@@ -2456,9 +2598,10 @@
         "[lurtz's_scouts] uruk-hai_drummer",
         "[lurtz's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2469,9 +2612,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2483,9 +2627,10 @@
         "[lurtz's_scouts] uruk-hai_drummer",
         "[lurtz's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2502,9 +2647,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2521,9 +2667,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2540,9 +2687,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2559,9 +2707,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2578,9 +2727,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2597,9 +2747,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2616,9 +2767,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2635,9 +2787,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2654,9 +2807,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2673,9 +2827,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2692,9 +2847,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2711,9 +2867,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2730,9 +2887,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2749,9 +2907,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2768,9 +2927,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2787,9 +2947,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2806,9 +2967,10 @@
         "[minas_tirith] ranger_of_gondor",
         "[minas_tirith] warrior_of_minas_tirith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2819,9 +2981,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2832,9 +2995,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2856,9 +3020,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2880,9 +3045,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2904,9 +3070,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2928,9 +3095,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2952,9 +3120,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2976,9 +3145,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -2989,9 +3159,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3013,9 +3184,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3037,9 +3209,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3061,9 +3234,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3085,9 +3259,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3109,9 +3284,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3133,9 +3309,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3157,9 +3334,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3181,9 +3359,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3205,9 +3384,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3229,9 +3409,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3242,9 +3423,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3266,9 +3448,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3290,9 +3473,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3308,9 +3492,10 @@
         "[mordor] orc_warrior",
         "[moria] bat_swarm"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3332,9 +3517,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3356,9 +3542,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3369,9 +3556,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3393,9 +3581,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3417,9 +3606,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3441,9 +3631,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3465,9 +3656,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3489,9 +3681,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3513,9 +3706,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3537,9 +3731,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3561,9 +3756,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3585,9 +3781,10 @@
         "[mordor] orc_warrior",
         "[mordor] orc_tracker"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3608,9 +3805,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3630,9 +3828,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3652,9 +3851,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3668,9 +3868,10 @@
         "[moria] bat_swarm",
         "[moria] wild_warg"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3690,9 +3891,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3712,9 +3914,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3734,9 +3937,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3756,9 +3960,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3778,9 +3983,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3800,9 +4006,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3822,9 +4029,10 @@
         "[moria] wild_warg",
         "[moria] moria_goblin_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3835,9 +4043,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3848,9 +4057,10 @@
       "valid_warband_units":[
         "[numenor] warrior_of_numenor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3861,9 +4071,10 @@
       "valid_warband_units":[
         "[numenor] warrior_of_numenor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3874,9 +4085,10 @@
       "valid_warband_units":[
         "[numenor] warrior_of_numenor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3889,9 +4101,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3904,9 +4117,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3919,9 +4133,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3934,9 +4149,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3949,9 +4165,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3964,9 +4181,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3977,9 +4195,10 @@
       "valid_warband_units":[
         "[paths_of_the_druadan] woses_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -3992,9 +4211,10 @@
         "[paths_of_the_druadan] rohan_royal_guard",
         "[paths_of_the_druadan] rohan_outrider"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4007,9 +4227,10 @@
         "[rangers_of_ithilien] warrior_of_minas_tirith",
         "[rangers_of_ithilien] ranger_of_gondor_free_bow"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4022,9 +4243,10 @@
         "[rangers_of_ithilien] warrior_of_minas_tirith",
         "[rangers_of_ithilien] ranger_of_gondor"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4037,9 +4259,10 @@
         "[rangers_of_ithilien] warrior_of_minas_tirith",
         "[rangers_of_ithilien] ranger_of_gondor_free_bow"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4055,9 +4278,10 @@
         "[rangers_of_ithilien] samwise_gamgee",
         "[rangers_of_ithilien] smeagol"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4069,9 +4293,10 @@
         "[rangers_of_ithilien] samwise_gamgee",
         "[rangers_of_ithilien] smeagol"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4084,9 +4309,10 @@
         "[rangers_of_ithilien] warrior_of_minas_tirith",
         "[rangers_of_ithilien] ranger_of_gondor_free_bow"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4099,9 +4325,10 @@
         "[rangers_of_ithilien] warrior_of_minas_tirith",
         "[rangers_of_ithilien] ranger_of_gondor_free_bow"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4113,9 +4340,10 @@
         "[rangers_of_ithilien] frodo_baggins",
         "[rangers_of_ithilien] smeagol"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4126,9 +4354,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4139,9 +4368,10 @@
       "valid_warband_units":[
         "[riders_of_eomer] rider_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4152,9 +4382,10 @@
       "valid_warband_units":[
         "[riders_of_eomer] rider_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4165,9 +4396,10 @@
       "valid_warband_units":[
         "[riders_of_eomer] rider_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Westfold Redshield Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4178,9 +4410,10 @@
       "valid_warband_units":[
         "[riders_of_eomer] rider_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4193,9 +4426,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4206,9 +4440,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4221,9 +4456,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4236,9 +4472,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4251,9 +4488,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4266,9 +4504,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4281,9 +4520,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "King's Guard Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4297,9 +4537,10 @@
         "[rivendell] wood_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Noldorin Exiles Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4312,9 +4553,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4327,9 +4569,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4342,9 +4585,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4357,9 +4601,10 @@
         "[rivendell] high_elf_warrior",
         "[rivendell] bilbo_baggins"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4370,9 +4615,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4390,9 +4636,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4410,9 +4657,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4430,9 +4678,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4450,9 +4699,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4470,9 +4720,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4490,9 +4741,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4510,9 +4762,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4530,9 +4783,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Westfold Redshield Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4550,9 +4804,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4570,9 +4825,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
-        "Helminga Upgrade"
+      "special_warband_options":[
+
       ],
+      "special_army_option":"Helminga Upgrade",
       "extra_profiles":[
 
       ]
@@ -4583,9 +4839,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4603,9 +4860,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4623,9 +4881,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4643,9 +4902,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4656,9 +4916,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4676,9 +4937,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4696,9 +4958,10 @@
         "[rohan] rohan_outrider",
         "[rohan] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4709,9 +4972,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4722,9 +4986,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4735,9 +5000,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4748,9 +5014,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4761,9 +5028,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4774,9 +5042,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4787,9 +5056,10 @@
       "valid_warband_units":[
         "[sharkey's_rogues] hobbit_militia"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4802,9 +5072,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4817,9 +5088,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4832,9 +5104,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4847,9 +5120,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4862,9 +5136,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4875,9 +5150,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4890,9 +5166,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4905,9 +5182,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4920,9 +5198,10 @@
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4935,9 +5214,10 @@
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4950,9 +5230,10 @@
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4965,9 +5246,10 @@
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4980,9 +5262,10 @@
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -4995,9 +5278,10 @@
         "[the_black_gate_opens] morannon_orc",
         "[the_black_gate_opens] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5008,9 +5292,10 @@
       "valid_warband_units":[
         "[the_black_riders] ringwraith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5021,9 +5306,10 @@
       "valid_warband_units":[
         "[the_black_riders] ringwraith"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5034,9 +5320,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5047,9 +5334,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5060,9 +5348,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5073,9 +5362,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5086,9 +5376,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5099,9 +5390,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5112,9 +5404,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] ruffian"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5125,9 +5418,10 @@
       "valid_warband_units":[
         "[the_chief's_ruffians] hobbit_militia"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5139,9 +5433,10 @@
         "[the_dead_of_dunharrow] rider_of_the_dead",
         "[the_dead_of_dunharrow] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5153,9 +5448,10 @@
         "[the_dead_of_dunharrow] rider_of_the_dead",
         "[the_dead_of_dunharrow] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5167,9 +5463,10 @@
         "[the_dead_of_dunharrow] rider_of_the_dead",
         "[the_dead_of_dunharrow] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5183,9 +5480,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5199,9 +5497,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5215,9 +5514,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5230,9 +5530,10 @@
         "[the_easterlings] easterling_warrior_bd",
         "[the_easterlings] dragon_cult_acolyte"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5246,9 +5547,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5262,9 +5564,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5278,9 +5581,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5294,9 +5598,10 @@
         "[the_easterlings] dragon_cult_acolyte",
         "[the_easterlings] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
         "Royal Palanquin"
       ]
@@ -5316,9 +5621,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5338,9 +5644,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5351,9 +5658,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5373,9 +5681,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5396,9 +5705,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5418,9 +5728,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5440,9 +5751,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5462,9 +5774,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5483,9 +5796,10 @@
         "[the_fellowship] meriadoc_brandybuck",
         "[the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5504,9 +5818,10 @@
         "[the_fellowship] meriadoc_brandybuck",
         "[the_fellowship] peregrin_took"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5528,9 +5843,10 @@
         "[the_fellowship] peregrin_took",
         "[the_fellowship] arwen"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5541,9 +5857,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5558,9 +5875,10 @@
         "[the_fiefdoms] blackroot_vale_archer",
         "[the_fiefdoms] clansman_of_lamedon"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5575,9 +5893,10 @@
         "[the_fiefdoms] blackroot_vale_archer",
         "[the_fiefdoms] clansman_of_lamedon"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5592,9 +5911,10 @@
         "[the_fiefdoms] blackroot_vale_archer",
         "[the_fiefdoms] clansman_of_lamedon"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5609,9 +5929,10 @@
         "[the_fiefdoms] blackroot_vale_archer",
         "[the_fiefdoms] clansman_of_lamedon"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5626,9 +5947,10 @@
         "[the_fiefdoms] blackroot_vale_archer",
         "[the_fiefdoms] clansman_of_lamedon"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5644,9 +5966,10 @@
         "[the_grey_company] halbarad",
         "[the_grey_company] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5662,9 +5985,10 @@
         "[the_grey_company] halbarad",
         "[the_grey_company] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5680,9 +6004,10 @@
         "[the_grey_company] halbarad",
         "[the_grey_company] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5698,9 +6023,10 @@
         "[the_grey_company] halbarad",
         "[the_grey_company] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5716,9 +6042,10 @@
         "[the_grey_company] halbarad",
         "[the_grey_company] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5729,9 +6056,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5745,9 +6073,10 @@
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5761,9 +6090,10 @@
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5776,9 +6106,10 @@
         "[the_host_of_the_dragon_emperor] easterling_warrior_bd",
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5792,9 +6123,10 @@
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5808,9 +6140,10 @@
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5824,9 +6157,10 @@
         "[the_host_of_the_dragon_emperor] dragon_cult_acolyte",
         "[the_host_of_the_dragon_emperor] easterling_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Black Dragon Upgrade - FREE"
       ],
+      "special_army_option":"",
       "extra_profiles":[
         "Royal Palanquin"
       ]
@@ -5841,9 +6175,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Heathguard Upgrade"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5858,9 +6193,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5875,9 +6211,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5892,9 +6229,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5909,9 +6247,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5926,9 +6265,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5943,9 +6283,10 @@
         "[the_kingdom_of_khazad-dum] dwarf_ranger",
         "[the_kingdom_of_khazad-dum] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5960,9 +6301,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5977,9 +6319,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -5994,9 +6337,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6011,9 +6355,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6028,9 +6373,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6045,9 +6391,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6062,9 +6409,10 @@
         "[the_kingdom_of_moria] dwarf_ranger",
         "[the_kingdom_of_moria] dwarf_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6078,9 +6426,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6094,9 +6443,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6110,9 +6460,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6126,9 +6477,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6141,9 +6493,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6155,9 +6508,10 @@
         "[the_men_of_the_west] peregrin_took",
         "[the_men_of_the_west] meriadoc_brandybuck"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6170,9 +6524,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6186,9 +6541,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6200,9 +6556,10 @@
         "[the_men_of_the_west] peregrin_took",
         "[the_men_of_the_west] meriadoc_brandybuck"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6214,9 +6571,10 @@
         "[the_men_of_the_west] peregrin_took",
         "[the_men_of_the_west] meriadoc_brandybuck"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6227,9 +6585,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6240,9 +6599,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6256,9 +6616,10 @@
         "[the_men_of_the_west] meriadoc_brandybuck",
         "[the_men_of_the_west] knight_of_dol_amroth"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6269,9 +6630,10 @@
       "valid_warband_units":[
         "[the_misty_mountains] great_eagle"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6283,9 +6645,10 @@
         "[the_rangers] dunedain",
         "[the_rangers] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6297,9 +6660,10 @@
         "[the_rangers] dunedain",
         "[the_rangers] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6310,9 +6674,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6324,9 +6689,10 @@
         "[the_rangers] dunedain",
         "[the_rangers] ranger_of_the_north"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6337,9 +6703,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6351,9 +6718,10 @@
         "[the_return_of_the_king] rider_of_the_dead",
         "[the_return_of_the_king] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6365,9 +6733,10 @@
         "[the_return_of_the_king] rider_of_the_dead",
         "[the_return_of_the_king] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6379,9 +6748,10 @@
         "[the_return_of_the_king] rider_of_the_dead",
         "[the_return_of_the_king] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6393,9 +6763,10 @@
         "[the_return_of_the_king] rider_of_the_dead",
         "[the_return_of_the_king] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6407,9 +6778,10 @@
         "[the_return_of_the_king] rider_of_the_dead",
         "[the_return_of_the_king] warrior_of_the_dead"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6421,9 +6793,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6435,9 +6808,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6449,9 +6823,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6464,9 +6839,10 @@
         "[the_riders_of_theoden] rohan_royal_guard",
         "[the_riders_of_theoden] dernhelm"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6478,9 +6854,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6492,9 +6869,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6506,9 +6884,10 @@
         "[the_riders_of_theoden] rider_of_rohan",
         "[the_riders_of_theoden] rohan_royal_guard"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6524,9 +6903,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6542,9 +6922,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6560,9 +6941,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6578,9 +6960,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6596,9 +6979,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6614,9 +6998,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6632,9 +7017,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6650,9 +7036,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6665,9 +7052,10 @@
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6681,9 +7069,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6697,9 +7086,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6713,9 +7103,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6729,9 +7120,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6746,9 +7138,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6762,9 +7155,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6778,9 +7172,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6794,9 +7189,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6810,9 +7206,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6826,9 +7223,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6839,9 +7237,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6855,9 +7254,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6871,9 +7271,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6887,9 +7288,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6903,9 +7305,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6919,9 +7322,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Battlin' Brandybucks"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6935,9 +7339,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Tookish Hunters"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6951,9 +7356,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
         "Tookish Hunters"
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6967,9 +7373,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6983,9 +7390,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -6999,9 +7407,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7015,9 +7424,10 @@
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7031,9 +7441,10 @@
         "[theodred's_guard] rohan_outrider",
         "[theodred's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7047,9 +7458,10 @@
         "[theodred's_guard] rohan_outrider",
         "[theodred's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7063,9 +7475,10 @@
         "[theodred's_guard] rohan_outrider",
         "[theodred's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
-        "Helminga Upgrade"
+      "special_warband_options":[
+
       ],
+      "special_army_option":"Helminga Upgrade",
       "extra_profiles":[
 
       ]
@@ -7079,9 +7492,10 @@
         "[theodred's_guard] rohan_outrider",
         "[theodred's_guard] warrior_of_rohan"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7106,9 +7520,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7133,9 +7548,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7160,9 +7576,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7187,9 +7604,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7214,9 +7632,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7241,9 +7660,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7268,9 +7688,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7295,9 +7716,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7322,9 +7744,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7349,9 +7772,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7376,9 +7800,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7403,9 +7828,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7430,9 +7856,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7457,9 +7884,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7484,9 +7912,10 @@
         "[thorin's_company] ori_the_dwarf",
         "[thorin's_company] thorin_oakenshield"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7497,9 +7926,10 @@
       "valid_warband_units":[
         "[ugluk's_scouts] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7511,9 +7941,10 @@
         "[ugluk's_scouts] uruk-hai_drummer",
         "[ugluk's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"Marauder Upgrade - FREE",
       "extra_profiles":[
 
       ]
@@ -7524,9 +7955,10 @@
       "valid_warband_units":[
         "[ugluk's_scouts] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7537,9 +7969,10 @@
       "valid_warband_units":[
         "[ugluk's_scouts] orc_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7551,9 +7984,10 @@
         "[ugluk's_scouts] uruk-hai_drummer",
         "[ugluk's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7564,9 +7998,10 @@
       "valid_warband_units":[
 
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7578,9 +8013,10 @@
         "[ugluk's_scouts] uruk-hai_drummer",
         "[ugluk's_scouts] uruk-hai_scout"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7593,9 +8029,10 @@
         "[variags_of_khand] khandish_horseman",
         "[variags_of_khand] khandish_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7608,9 +8045,10 @@
         "[variags_of_khand] khandish_horseman",
         "[variags_of_khand] khandish_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7621,9 +8059,10 @@
       "valid_warband_units":[
         "[wildmen_of_druadan] woses_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7634,9 +8073,10 @@
       "valid_warband_units":[
         "[wildmen_of_druadan] woses_warrior"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7648,9 +8088,10 @@
         "[wolves_of_isengard] warg_rider",
         "[wolves_of_isengard] wild_warg"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7662,9 +8103,10 @@
         "[wolves_of_isengard] warg_rider",
         "[wolves_of_isengard] wild_warg"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]
@@ -7676,9 +8118,10 @@
         "[wolves_of_isengard] warg_rider",
         "[wolves_of_isengard] wild_warg"
       ],
-      "special_unit_options":[
+      "special_warband_options":[
 
       ],
+      "special_army_option":"",
       "extra_profiles":[
 
       ]

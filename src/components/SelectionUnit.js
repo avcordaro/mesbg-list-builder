@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
+import hero_constraint_data from "../hero_constraint_data.json";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */
@@ -18,7 +19,9 @@ export function SelectionUnit({
   warbandNumFocus,
   setShowCardModal,
   setCardUnitData,
-  allianceLevel
+  allianceLevel,
+  specialArmyOptions,
+  setSpecialArmyOptions
 }) {
 
   const deleteInvalidUnit = (newRoster, unit_id) => {
@@ -80,6 +83,14 @@ export function SelectionUnit({
       if (newUnitData.model_id == '[rivendell] elrond') {
         newRoster = handleRivendellElrond(newRoster);
       }
+
+      // Update state variable if the new model provides special army-wide option to be enabled
+      if (hero_constraint_data[newUnitData.model_id][0]['special_army_option'] != "") {
+        let newSpecialArmyOptions = [ ...specialArmyOptions]
+        newSpecialArmyOptions.push(hero_constraint_data[newUnitData.model_id][0]['special_army_option']);
+        setSpecialArmyOptions(newSpecialArmyOptions);
+      }
+
       // Delete any warrior units in this warband not from the same faction as the hero.
       newRoster.warbands[warbandNumFocus].units.map((unit) => {
         if (unit.faction != newUnitData.faction) {

@@ -7,6 +7,7 @@ import { OptionHero } from "./OptionHero.js"
 import { ImCross } from "react-icons/im";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
+import hero_constraint_data from "../hero_constraint_data.json";
 
 /* Roster Hero components display the hero in each warband. */
 
@@ -16,7 +17,9 @@ export function RosterHero({
   roster,
   setRoster,
   setShowCardModal,
-  setCardUnitData
+  setCardUnitData,
+  specialArmyOptions,
+  setSpecialArmyOptions
 }) {
   const handleDelete = () => {
     // Removes the hero from being the warband's leader, and updates points and unit counts.
@@ -25,6 +28,13 @@ export function RosterHero({
     if (unitData.model_id == '[rivendell] elrond') {
         newRoster = handleRivendellElrond(newRoster);
     }
+    // Update state variable if the deleted model provided a special army-wide option 
+      if (hero_constraint_data[unitData.model_id][0]['special_army_option'] != "") {
+        let newSpecialArmyOptions = specialArmyOptions.filter((data) => data != hero_constraint_data[unitData.model_id][0]['special_army_option']);
+        newRoster = handleSpecialArmyOption(newRoster);
+        setSpecialArmyOptions(newSpecialArmyOptions);
+        
+      }
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num == warbandNum) {
@@ -85,6 +95,37 @@ export function RosterHero({
     });
     newRoster.warbands = newWarbands;
     return newRoster
+  };
+
+  const handleSpecialArmyOption = (newRoster) => {
+    /* If a Hero is removed that provided a special army option, that option much be turned off for all eligible units
+    in the current army roster, and points updated. */
+    let specialArmyOption = hero_constraint_data[unitData.model_id][0]['special_army_option'];
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newUnits = newWarband.units.map((_unit) => {
+        let newUnit = { ..._unit };
+        let newOptions = newUnit.options.map((_option) => {
+          let newOption = { ..._option };
+          if(newOption.type == "special_army_upgrade" && newOption.opt_quantity == 1 && newOption.option == specialArmyOption) {
+            newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
+            newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+            newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
+            newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
+            newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+            newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
+            newOption['opt_quantity'] = 0
+          }
+          return newOption
+        });
+        newUnit.options = newOptions
+        return newUnit
+      });
+      newWarband.units = newUnits
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    return newRoster;
   };
 
   return (

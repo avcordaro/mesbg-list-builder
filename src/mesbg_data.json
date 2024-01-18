@@ -4823,7 +4823,7 @@
         "option_id":"OPT0240",
         "option":"Tookish Hunters",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -4870,7 +4870,7 @@
         "option_id":"OPT0237",
         "option":"Tookish Hunters",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -4908,7 +4908,7 @@
         "option_id":"OPT0244",
         "option":"Battlin' Brandybucks",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -4975,7 +4975,7 @@
         "option_id":"OPT0242",
         "option":"Battlin' Brandybucks",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -8549,7 +8549,7 @@
         "option_id":"OPT0423",
         "option":"Marauder Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9292,7 +9292,7 @@
         "option_id":"OPT0457",
         "option":"Galadhrim Guard Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9604,6 +9604,15 @@
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"None",
+        "option":"Marauder Upgrade - FREE",
+        "points":0.0,
+        "type":"special_army_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -15022,7 +15031,7 @@
         "option_id":"OPT0755",
         "option":"Westfold Redshield Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -15644,7 +15653,7 @@
         "option_id":"OPT0780",
         "option":"King's Guard Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -15718,7 +15727,7 @@
         "option_id":"OPT0792",
         "option":"Noldorin Exiles Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -16514,7 +16523,7 @@
         "option_id":"OPT0824",
         "option":"Westfold Redshield Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -16682,7 +16691,7 @@
         "option_id":"OPT0844",
         "option":"Helminga Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_army_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -18924,7 +18933,7 @@
         "option_id":"OPT0943",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -18980,7 +18989,7 @@
         "option_id":"OPT0939",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -19056,7 +19065,7 @@
         "option_id":"OPT0954",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -19130,7 +19139,7 @@
         "option_id":"OPT0948",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -20552,7 +20561,7 @@
         "option_id":"OPT1027",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -20570,7 +20579,7 @@
         "option_id":"OPT1029",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -20626,7 +20635,7 @@
         "option_id":"OPT1033",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -20693,7 +20702,7 @@
         "option_id":"OPT1037",
         "option":"Black Dragon Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -20738,7 +20747,7 @@
         "option_id":"OPT1042",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -20812,7 +20821,7 @@
         "option_id":"OPT1048",
         "option":"Black Dragon Upgrade - FREE",
         "points":0.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":1.0,
         "max":1.0,
         "opt_quantity":1.0
@@ -21147,7 +21156,7 @@
         "option_id":"OPT1070",
         "option":"Heathguard Upgrade",
         "points":2.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -24843,7 +24852,7 @@
         "option_id":"OPT1218",
         "option":"Tookish Hunters",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -24910,7 +24919,7 @@
         "option_id":"OPT1220",
         "option":"Battlin' Brandybucks",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -25322,7 +25331,7 @@
         "option_id":"OPT1259",
         "option":"Helminga Upgrade",
         "points":1.0,
-        "type":"upgrade",
+        "type":"special_army_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -26107,6 +26116,15 @@
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"None",
+        "option":"Marauder Upgrade - FREE",
+        "points":0.0,
+        "type":"special_army_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
