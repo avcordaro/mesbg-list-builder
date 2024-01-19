@@ -85,7 +85,7 @@ export function SelectionUnit({
       }
 
       // Update state variable if the new model provides special army-wide option to be enabled
-      if (hero_constraint_data[newUnitData.model_id][0]['special_army_option'] != "") {
+      if (newUnitData.unit_type != "Siege Engine" && hero_constraint_data[newUnitData.model_id][0]['special_army_option'] != "") {
         let newSpecialArmyOptions = [ ...specialArmyOptions]
         newSpecialArmyOptions.push(hero_constraint_data[newUnitData.model_id][0]['special_army_option']);
         setSpecialArmyOptions(newSpecialArmyOptions);

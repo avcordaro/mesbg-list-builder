@@ -38,7 +38,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.1.9"
+  const VERSION = "3.1.10"
+  const UPDATED = "19-Jan-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -391,7 +392,7 @@ export default function App() {
                 MESBG List Builder
               </p>
               <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version {VERSION} (updated 18-Jan-24)
+                version {VERSION} (updated {UPDATED})
               </p>
             </Stack>
             <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
