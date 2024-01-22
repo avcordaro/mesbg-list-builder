@@ -23,7 +23,7 @@ import { ModalRosterTable } from "./components/ModalRosterTable.js"
 import { Alliances } from "./components/Alliances.js"
 import React, { useState, useEffect } from "react";
 import { FaPlus } from "react-icons/fa";  
-import { FaTableList } from "react-icons/fa6";  
+import { FaTableList } from "react-icons/fa6"; 
 import { MdDelete } from "react-icons/md";
 import { FcCheckmark } from "react-icons/fc";
 import { LuSwords } from "react-icons/lu";
@@ -38,8 +38,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.1.10"
-  const UPDATED = "19-Jan-24"
+  const VERSION = "3.3.0"
+  const UPDATED = "22-Jan-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -117,13 +117,24 @@ export default function App() {
         if (!modelCounts.hasOwnProperty(f)) {
           modelCounts[f] = 0;
         }
+        if (_warband.hero.model_id == "[the_iron_hills] iron_hills_chariot_(captain)") {
+          modelCounts[f] = modelCounts[f] + (_warband.hero.siege_crew - 1);
+        }
+        if (_warband.hero.unit_type == "Siege Engine") {
+          modelCounts[f] = modelCounts[f] + (_warband.hero.siege_crew - 1);
+          _warband.hero.options.map((opt) => {
+            if (opt.option == "Additional Crew") {
+              modelCounts[f] = modelCounts[f] + opt.opt_quantity;
+            }
+          });
+        }
         _warband.units.map((_unit) => {
           if (_unit.name != null && _unit.unit_type == "Warrior" && _unit.bow_limit) {
             modelCounts[f] = modelCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
             if (_unit.inc_bow_count) {
               bowCounts[f] = bowCounts[f] + ((_unit.siege_crew > 0 ? _unit.siege_crew : 1) * _unit.quantity);
             }
-          }
+          } 
         });
       }
     });
@@ -620,7 +631,8 @@ export default function App() {
                     />
                   )
                 )}
-              {(warband.hero != null && !['Independent Hero', 'Independent Hero*', 'Siege Engine'].includes(warband.hero.unit_type))  &&
+              {(warband.hero != null && !['Independent Hero', 'Independent Hero*', 'Siege Engine'].includes(warband.hero.unit_type) 
+                && warband.hero.model_id != "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)")  &&
                 <Button
                   onClick={() => handleNewWarrior(warband.num)}
                   variant={"info"}

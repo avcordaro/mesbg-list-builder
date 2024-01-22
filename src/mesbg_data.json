@@ -1087,6 +1087,339 @@
     ]
   },
   {
+    "model_id":"[army_of_thror] thror",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Thror",
+    "unit_type":"Hero of Legend",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] thrain",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Thrain",
+    "unit_type":"Hero of Valour",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] young_thorin_oakenshield",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Young Thorin Oakenshield",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] young_dwalin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Young Dwalin the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] grim_hammer_captain",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Grim Hammer Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":70,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":70,
+    "pointsTotal":70,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1381",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] captain_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Captain of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1379",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1380",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] young_balin_the_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Young Balin the Dwarf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] grim_hammer",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Grim Hammer",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1382",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1383",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1384",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1385",
+        "option":"Guardians of the King Upgrade",
+        "points":1.0,
+        "type":"special_warband_upgrade",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_thror] warrior_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Army of Thror",
+    "profile_origin":"Army of Thror",
+    "name":"Warrior of Erebor",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1386",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1387",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1388",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1389",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1390",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[arnor] arvedui,_last_king_of_arnor",
     "faction_type":"Good Army",
     "faction":"Arnor",
@@ -5383,6 +5716,627 @@
     ]
   },
   {
+    "model_id":"[erebor_reclaimed_(king_thorin)] thorin_oakenshield,_king_under_the_mountain",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Thorin Oakenshield, King Under the Mountain",
+    "unit_type":"Hero of Legend",
+    "base_points":115,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":115,
+    "pointsTotal":115,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1396",
+        "option":"Orcrist",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1397",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Chariot (Champions of Erebor)",
+    "unit_type":"Hero of Valour",
+    "base_points":500,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":4,
+    "quantity":1,
+    "pointsPerUnit":500,
+    "pointsTotal":500,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] dain_ironfoot,_lord_of_the_iron_hills",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"The Iron Hills",
+    "name":"Dain Ironfoot, Lord of the Iron Hills",
+    "unit_type":"Hero of Valour",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1398",
+        "option":"War Boar",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] dwalin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Dwalin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Valour",
+    "base_points":115,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":115,
+    "pointsTotal":115,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1391",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] balin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Balin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Valour",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] gloin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Gloin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] iron_hills_captain",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1399",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1400",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1401",
+        "option":"Swap War Spear and Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] nori_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Nori the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] dori_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Dori the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] fili_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Fili the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1392",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1393",
+        "option":"Dwarf Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] kili_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Kili the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1394",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1395",
+        "option":"Dwarf Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] bifur_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Bifur the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] bofur_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Bofur the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] oin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Oin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] bombur_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Bombur the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] ori_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
+    "name":"Ori the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Goat Rider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1407",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1408",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1409",
+        "option":"Swap Spear for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Thorin)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Dwarf",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1402",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1403",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1404",
+        "option":"Swap Shield for Crossbow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1405",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1406",
+        "option":"Swap Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[fangorn] treebeard",
     "faction_type":"Good Army",
     "faction":"Fangorn",
@@ -9609,7 +10563,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"None",
+        "option_id":"OPT1363",
         "option":"Marauder Upgrade - FREE",
         "points":0.0,
         "type":"special_army_upgrade",
@@ -20829,6 +21783,328 @@
     ]
   },
   {
+    "model_id":"[the_iron_hills] dain_ironfoot,_lord_of_the_iron_hills",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Dain Ironfoot, Lord of the Iron Hills",
+    "unit_type":"Hero of Legend",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1364",
+        "option":"War Boar",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_chariot_(captain)",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Chariot (Captain)",
+    "unit_type":"Hero of Fortitude",
+    "base_points":250,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":4,
+    "quantity":1,
+    "pointsPerUnit":250,
+    "pointsTotal":250,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] murin_&_drar",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Murin & Drar",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_captain",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1368",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1369",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1370",
+        "option":"Swap War Spear and Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_chariot",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Chariot",
+    "unit_type":"Warrior",
+    "base_points":175,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":4,
+    "quantity":1,
+    "pointsPerUnit":175,
+    "pointsTotal":175,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_goat_rider",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Goat Rider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1376",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1377",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1378",
+        "option":"Swap Spear for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_dwarf",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Dwarf",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1371",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1372",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1373",
+        "option":"Swap Shield for Crossbow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1374",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1375",
+        "option":"Swap Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_iron_hills] iron_hills_ballista",
+    "faction_type":"Good Army",
+    "faction":"The Iron Hills",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Ballista",
+    "unit_type":"Siege Engine",
+    "base_points":125,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":4,
+    "quantity":1,
+    "pointsPerUnit":125,
+    "pointsTotal":125,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT1365",
+        "option":"Iron Hills Engineer Captain",
+        "points":40.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1366",
+        "option":"Superior Construction",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1367",
+        "option":"Additional Crew",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":3.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_kingdom_of_khazad-dum] durin",
     "faction_type":"Good Army",
     "faction":"The Kingdom of Khazad-Dum",
@@ -26121,7 +27397,7 @@
         "opt_quantity":0.0
       },
       {
-        "option_id":"None",
+        "option_id":"OPT1362",
         "option":"Marauder Upgrade - FREE",
         "points":0.0,
         "type":"special_army_upgrade",

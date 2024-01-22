@@ -256,6 +256,18 @@
       "warning":"This force must contain Sharku."
     }
   ],
+  "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[erebor_reclaimed_(king_thorin)] dwalin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] fili_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] balin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] kili_the_dwarf,_champion_of_erebor"
+      ],
+      "warning":"The Iron Hills Chariot (with Champions of Erebor) cannot be chosen in combination with either Balin the Dwarf Champion of Erebor, Dwalin the Dwarf Champion of Erebor, Kili the Dwarf Champion of Erebor, Fili the Dwarf Champion of Erebor."
+    }
+  ],
   "[minas_tirith] aragorn,_king_elessar":[
     {
       "type":"incompatible",

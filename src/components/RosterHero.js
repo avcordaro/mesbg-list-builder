@@ -29,7 +29,7 @@ export function RosterHero({
         newRoster = handleRivendellElrond(newRoster);
     }
     // Update state variable if the deleted model provided a special army-wide option 
-      if (hero_constraint_data[unitData.model_id][0]['special_army_option'] != "") {
+      if (hero_constraint_data[unitData.model_id] && hero_constraint_data[unitData.model_id][0]['special_army_option'] != "") {
         let newSpecialArmyOptions = specialArmyOptions.filter((data) => data != hero_constraint_data[unitData.model_id][0]['special_army_option']);
         newRoster = handleSpecialArmyOption(newRoster);
         setSpecialArmyOptions(newSpecialArmyOptions);

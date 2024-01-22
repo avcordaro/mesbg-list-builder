@@ -49,7 +49,7 @@
       "Army of Thror",
       "Arnor",
       "The Dead of Dunharrow",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale",
@@ -144,7 +144,7 @@
     "bow_limit":0.33
   },
   "Army of Thror":{
-    "armyBonus":"<b>\"Thror ruled with utter surety, never doubting his house would endure\"<\/b> - Friendly Erebor Dwarf models count as being in range of a banner if Thror is within 6.",
+    "armyBonus":"<b>\"Thror ruled with utter surety, never doubting his house would endure\"<\/b> - Friendly Erebor Dwarf models count as being in range of a banner if Thror is within 6\".",
     "primaryAllies":[
       "Garrison of Dale",
       "The Iron Hills"
@@ -199,7 +199,7 @@
     ],
     "secondaryAllies":[
       "Army of Lake-town",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "Lothlorien",
       "The Misty Mountains",
@@ -505,7 +505,7 @@
     ],
     "bow_limit":0.33
   },
-  "Erebor Reclaimed":{
+  "Erebor Reclaimed (King Thorin)":{
     "armyBonus":"<b>\"Will you follow me, one last time?\"<\/b> - All friendly Erebor Dwarf models from this army list gain the Du Bekar special rule. <br\/> <br\/><b>\"Du Bekar\"<\/b> - A model with this special rule counts as being in range of a banner if they are within 6\" of Thorin Oakenshield, King Under the Mountain.",
     "primaryAllies":[
       "Halls of Thranduil",
@@ -524,7 +524,7 @@
     "bow_limit":0.33
   },
   "Thorin's Company":{
-    "armyBonus":"<b>\"I would take each and every one of these Dwarves over an army from the Iron Hills, for when I called upon them, they answered\"<\/b> - Models from this army list may re-roll To Wound rolls of a 1 whilst within 3\" of Thorin Oakenshield.<br\/><br\/>A Thorin's Company warband is always a single warband made up entirely of Heroes, and can even extend beyond the normal model limits for a warband. The Hero with the highest Heroic Tier is treated as being the warband's captain.",
+    "armyBonus":"<b>\"I would take each and every one of these Dwarves over an army from the Iron Hills, for when I called upon them, they answered\"<\/b> - Models from this army list may re-roll To Wound rolls of a 1 whilst within 3\" of Thorin Oakenshield.<br\/><br\/>A Thorin's Company warband is always a single warband made up entirely of Heroes, and can even extend beyond the normal model limits for a warband. The Hero with the highest Heroic Tier is treated as being the warband's captain. Additionally, all models from this army list gain Heroic March.",
     "primaryAllies":[
       "Army of Lake-town",
       "The Misty Mountains"
@@ -606,7 +606,7 @@
       "Army of Thror",
       "Arnor",
       "The Dead of Dunharrow",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale",
@@ -636,7 +636,7 @@
       "Army of Thror",
       "Arnor",
       "The Dead of Dunharrow",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
@@ -663,7 +663,7 @@
   "Survivors of Lake-town":{
     "armyBonus":"<b>\"Any man who wants to give their last, follow me!\"<\/b> - Bard the Bowman's Stand Fast! will affect other Lake-town Hero models. Additionally, Bard the Bowman's Saviour of Lake-town special rule has its range increased to 12\" instead of 6\".",
     "primaryAllies":[
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Halls of Thranduil",
       "The Iron Hills"
     ],
@@ -684,7 +684,7 @@
       "Thorin's Company"
     ],
     "secondaryAllies":[
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "Halls of Thranduil",
       "The Iron Hills",
@@ -699,7 +699,7 @@
   "Halls of Thranduil":{
     "armyBonus":"<b>\"The Elves of Mirkwood are not like their kin. They are less wise, and more dangerous\"<\/b> - Mirkwood Rangers from this force do not count towards the army's Bow Limit. Additionally, whilst they are within 3\" of Thranduil, all Palace Guard Captains, Mirkwood Elf Captains, Palace Guard, Mirkwood Cavalry and Mirkwood Elves will also gain +1 to their To Wound rolls when making Strikes.",
     "primaryAllies":[
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "The Iron Hills",
       "Survivors of Lake-town"
     ],
@@ -817,7 +817,7 @@
     ],
     "secondaryAllies":[
       "Army of Lake-town",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "Garrison of Dale",
       "Halls of Thranduil",
@@ -839,7 +839,7 @@
     "secondaryAllies":[
       "Army of Lake-town",
       "Army of Thror",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
@@ -882,7 +882,7 @@
       "Army of Thror",
       "Arnor",
       "The Dead of Dunharrow",
-      "Erebor Reclaimed",
+      "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale",

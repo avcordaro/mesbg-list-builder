@@ -303,6 +303,111 @@
       ]
     }
   ],
+  "[army_of_thror] captain_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] grim_hammer_captain":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] thrain":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] thror":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+        "Guardians of the King Upgrade"
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] young_balin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] young_dwalin_the_dwarf":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_thror] young_thorin_oakenshield":[
+    {
+      "valid_warband_units":[
+        "[army_of_thror] grim_hammer",
+        "[army_of_thror] warrior_of_erebor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[arnor] arvedui,_last_king_of_arnor":[
     {
       "valid_warband_units":[
@@ -1515,6 +1620,257 @@
         "[depths_of_moria] moria_blackshield",
         "[depths_of_moria] moria_goblin_prowler",
         "[depths_of_moria] moria_goblin_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] balin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] bifur_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] bofur_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] bombur_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] dain_ironfoot,_lord_of_the_iron_hills":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] dori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] dwalin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] fili_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] gloin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] iron_hills_captain":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] kili_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] nori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] oin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] ori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_thorin)] thorin_oakenshield,_king_under_the_mountain":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_thorin)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_thorin)] iron_hills_goat_rider",
+        "[erebor_reclaimed_(king_thorin)] balin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] bifur_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] bofur_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] bombur_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] dori_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] dwalin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] fili_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] gloin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] kili_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] nori_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] oin_the_dwarf,_champion_of_erebor",
+        "[erebor_reclaimed_(king_thorin)] ori_the_dwarf,_champion_of_erebor"
       ],
       "special_warband_options":[
 
@@ -6163,6 +6519,70 @@
       "special_army_option":"",
       "extra_profiles":[
         "Royal Palanquin"
+      ]
+    }
+  ],
+  "[the_iron_hills] dain_ironfoot,_lord_of_the_iron_hills":[
+    {
+      "valid_warband_units":[
+        "[the_iron_hills] iron_hills_chariot",
+        "[the_iron_hills] iron_hills_dwarf",
+        "[the_iron_hills] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_iron_hills] iron_hills_captain":[
+    {
+      "valid_warband_units":[
+        "[the_iron_hills] iron_hills_chariot",
+        "[the_iron_hills] iron_hills_dwarf",
+        "[the_iron_hills] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_iron_hills] iron_hills_chariot_(captain)":[
+    {
+      "valid_warband_units":[
+        "[the_iron_hills] iron_hills_chariot",
+        "[the_iron_hills] iron_hills_dwarf",
+        "[the_iron_hills] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_iron_hills] murin_&_drar":[
+    {
+      "valid_warband_units":[
+        "[the_iron_hills] iron_hills_chariot",
+        "[the_iron_hills] iron_hills_dwarf",
+        "[the_iron_hills] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
       ]
     }
   ],
