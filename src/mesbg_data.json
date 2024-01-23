@@ -5716,6 +5716,397 @@
     ]
   },
   {
+    "model_id":"[erebor_reclaimed_(king_dain)] dain_ironfoot,_king_under_the_mountain",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Dain Ironfoot, King Under the Mountain",
+    "unit_type":"Hero of Legend",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] dwalin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Dwalin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Valour",
+    "base_points":115,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":115,
+    "pointsTotal":115,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] thorin_iii_stonehelm",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Thorin III Stonehelm",
+    "unit_type":"Hero of Valour",
+    "base_points":110,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":110,
+    "pointsTotal":110,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] gloin_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Gloin the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] iron_hills_captain",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1410",
+        "option":"War Goat",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1411",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1412",
+        "option":"Swap War Spear and Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] nori_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Nori the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] dori_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Dori the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] bifur_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Bifur the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] bofur_the_dwarf,_champion_of_erebor",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"Erebor Reclaimed (King Dain)",
+    "name":"Bofur the Dwarf, Champion of Erebor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] iron_hills_goat_rider",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Goat Rider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1418",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1419",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1420",
+        "option":"Swap Spear for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+    "faction_type":"Good Army",
+    "faction":"Erebor Reclaimed (King Dain)",
+    "profile_origin":"The Iron Hills",
+    "name":"Iron Hills Dwarf",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1413",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1414",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1415",
+        "option":"Swap Shield for Crossbow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1416",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1417",
+        "option":"Swap Shield for Mattock",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[erebor_reclaimed_(king_thorin)] thorin_oakenshield,_king_under_the_mountain",
     "faction_type":"Good Army",
     "faction":"Erebor Reclaimed (King Thorin)",
@@ -6813,6 +7204,478 @@
         "type":null,
         "min":0.0,
         "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] brand,_king_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Brand, King of Dale",
+    "unit_type":"Hero of Legend",
+    "base_points":110,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":110,
+    "pointsTotal":110,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] bard_ii,_prince_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Bard II, Prince of Dale",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] captain_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Captain of Dale",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1421",
+        "option":"Esgaroth Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1422",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1423",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] knight_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Knight of Dale",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1424",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] warrior_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Warrior of Dale",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1425",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1426",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1427",
+        "option":"Esgaroth Bow",
+        "points":2.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1428",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1429",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1430",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(brand)] windlance",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Brand)",
+    "profile_origin":"Garrison of Dale (Brand)",
+    "name":"Windlance",
+    "unit_type":"Siege Engine",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT1431",
+        "option":"Dale Engineer Captain",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1432",
+        "option":"Additional Crew",
+        "points":7.0,
+        "type":null,
+        "min":0.0,
+        "max":5.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(girion)] girion,_lord_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Girion)",
+    "profile_origin":"Garrison of Dale (Girion)",
+    "name":"Girion, Lord of Dale",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1445",
+        "option":"Windlance",
+        "points":75.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1446",
+        "option":"Great Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(girion)] captain_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Girion)",
+    "profile_origin":"Garrison of Dale (Girion)",
+    "name":"Captain of Dale",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1433",
+        "option":"Esgaroth Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1434",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1435",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(girion)] knight_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Girion)",
+    "profile_origin":"Garrison of Dale (Girion)",
+    "name":"Knight of Dale",
+    "unit_type":"Warrior",
+    "base_points":11,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":11,
+    "pointsTotal":11,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1436",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(girion)] warrior_of_dale",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Girion)",
+    "profile_origin":"Garrison of Dale (Girion)",
+    "name":"Warrior of Dale",
+    "unit_type":"Warrior",
+    "base_points":7,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":7,
+    "pointsTotal":7,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1437",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1438",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1439",
+        "option":"Esgaroth Bow",
+        "points":2.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1440",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1441",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1442",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[garrison_of_dale_(girion)] windlance",
+    "faction_type":"Good Army",
+    "faction":"Garrison of Dale (Girion)",
+    "profile_origin":"Garrison of Dale (Girion)",
+    "name":"Windlance",
+    "unit_type":"Siege Engine",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT1443",
+        "option":"Dale Engineer Captain",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1444",
+        "option":"Additional Crew",
+        "points":7.0,
+        "type":null,
+        "min":0.0,
+        "max":5.0,
         "opt_quantity":0.0
       }
     ]

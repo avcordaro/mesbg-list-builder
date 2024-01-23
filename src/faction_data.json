@@ -52,7 +52,7 @@
       "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -146,7 +146,7 @@
   "Army of Thror":{
     "armyBonus":"<b>\"Thror ruled with utter surety, never doubting his house would endure\"<\/b> - Friendly Erebor Dwarf models count as being in range of a banner if Thror is within 6\".",
     "primaryAllies":[
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "The Iron Hills"
     ],
     "secondaryAllies":[
@@ -256,7 +256,29 @@
     ],
     "bow_limit":0.33
   },
-  "Garrison of Dale":{
+  "Garrison of Dale (Brand)":{
+    "armyBonus":"<b>\"Girion, lord of the city, rallied his bowmen to fire upon the beast\"<\/b> - Captains of Dale and Warriors of Dale have their Shoot value improved to 3+.",
+    "primaryAllies":[
+      "Erebor Reclaimed (King Dain)"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "Fangorn",
+      "The Shire",
+      "Wildmen of Druadan"
+    ],
+    "bow_limit":0.33
+  },
+  "Garrison of Dale (Girion)":{
     "armyBonus":"<b>\"Girion, lord of the city, rallied his bowmen to fire upon the beast\"<\/b> - Captains of Dale and Warriors of Dale have their Shoot value improved to 3+.",
     "primaryAllies":[
       "Army of Thror"
@@ -505,6 +527,28 @@
     ],
     "bow_limit":0.33
   },
+  "Erebor Reclaimed (King Dain)":{
+    "armyBonus":"<b>\"Will you follow me, one last time?\"<\/b> - All models in this army list change their Iron Hills keyword for the Erebor keyword. All friendly Erebor Dwarf models from this army list gain the Du Bekar special rule. <br\/> <br\/><b>\"Du Bekar\"<\/b> - A model with this special rule counts as being in range of a banner if they are within 6\" of Dain Ironfoot, King Under the Mountain.",
+    "primaryAllies":[
+      "Garrison of Dale (Girion) (Brand)"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "Fangorn",
+      "The Shire",
+      "Wildmen of Druadan"
+    ],
+    "bow_limit":0.33
+  },
   "Erebor Reclaimed (King Thorin)":{
     "armyBonus":"<b>\"Will you follow me, one last time?\"<\/b> - All friendly Erebor Dwarf models from this army list gain the Du Bekar special rule. <br\/> <br\/><b>\"Du Bekar\"<\/b> - A model with this special rule counts as being in range of a banner if they are within 6\" of Thorin Oakenshield, King Under the Mountain.",
     "primaryAllies":[
@@ -609,7 +653,7 @@
       "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -640,7 +684,7 @@
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -711,7 +755,7 @@
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "The Kingdom of Khazad-Dum",
       "Lothlorien",
       "Minas Tirith",
@@ -819,7 +863,7 @@
       "Army of Lake-town",
       "Erebor Reclaimed (King Thorin)",
       "Fangorn",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "Lothlorien",
@@ -843,7 +887,7 @@
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -885,7 +929,7 @@
       "Erebor Reclaimed (King Thorin)",
       "Fangorn",
       "The Fiefdoms",
-      "Garrison of Dale",
+      "Garrison of Dale (Girion)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",

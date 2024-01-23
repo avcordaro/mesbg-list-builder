@@ -1630,6 +1630,141 @@
       ]
     }
   ],
+  "[erebor_reclaimed_(king_dain)] bifur_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] bofur_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] dain_ironfoot,_king_under_the_mountain":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] dori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] dwalin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] gloin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] iron_hills_captain":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] nori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[erebor_reclaimed_(king_dain)] thorin_iii_stonehelm":[
+    {
+      "valid_warband_units":[
+        "[erebor_reclaimed_(king_dain)] iron_hills_dwarf",
+        "[erebor_reclaimed_(king_dain)] iron_hills_goat_rider"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[erebor_reclaimed_(king_thorin)] balin_the_dwarf,_champion_of_erebor":[
     {
       "valid_warband_units":[
@@ -1976,6 +2111,81 @@
       "valid_warband_units":[
         "[far_harad] half_troll",
         "[far_harad] mahud_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[garrison_of_dale_(brand)] bard_ii,_prince_of_dale":[
+    {
+      "valid_warband_units":[
+        "[garrison_of_dale_(brand)] knight_of_dale",
+        "[garrison_of_dale_(brand)] warrior_of_dale"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[garrison_of_dale_(brand)] brand,_king_of_dale":[
+    {
+      "valid_warband_units":[
+        "[garrison_of_dale_(brand)] knight_of_dale",
+        "[garrison_of_dale_(brand)] warrior_of_dale"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[garrison_of_dale_(brand)] captain_of_dale":[
+    {
+      "valid_warband_units":[
+        "[garrison_of_dale_(brand)] knight_of_dale",
+        "[garrison_of_dale_(brand)] warrior_of_dale"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[garrison_of_dale_(girion)] captain_of_dale":[
+    {
+      "valid_warband_units":[
+        "[garrison_of_dale_(girion)] knight_of_dale",
+        "[garrison_of_dale_(girion)] warrior_of_dale"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[garrison_of_dale_(girion)] girion,_lord_of_dale":[
+    {
+      "valid_warband_units":[
+        "[garrison_of_dale_(girion)] knight_of_dale",
+        "[garrison_of_dale_(girion)] warrior_of_dale"
       ],
       "special_warband_options":[
 
