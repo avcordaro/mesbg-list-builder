@@ -366,6 +366,13 @@
     {
       "type":"incompatible",
       "dependencies":[
+
+      ],
+      "warning":"If Helm Hammerhand is included in your force, you automatically become impossible allies with all other army lists."
+    },
+    {
+      "type":"incompatible",
+      "dependencies":[
         "[rohan] deorwine",
         "[rohan] erkenbrand",
         "[rohan] elfhelm",
@@ -382,7 +389,7 @@
         "[rohan] dernhelm",
         "[rohan] eowyn"
       ],
-      "warning":"If Helm Hammerhand is included in the same force as any named Rohan Hero models, you automatically lose your army bonus and become impossible allies with all other army lists."
+      "warning":"Helm Hammerhand may not be included in the same force as any named Rohan Hero models."
     }
   ],
   "[the_chief's_ruffians] ruffian_cpt":[

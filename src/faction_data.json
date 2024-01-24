@@ -16,7 +16,9 @@
       "The Rangers",
       "Rivendell",
       "The Shire",
-      "The White Council"
+      "The White Council",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -50,9 +52,11 @@
       "Arnor",
       "The Dead of Dunharrow",
       "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -96,7 +100,9 @@
       "Rohan",
       "The Shire",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -118,7 +124,9 @@
       "Rivendell",
       "Rohan",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -139,7 +147,9 @@
       "Rivendell",
       "The Shire",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -331,7 +341,9 @@
       "Rohan",
       "The Shire",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -513,7 +525,9 @@
       "The Rangers",
       "Rivendell",
       "The Shire",
-      "The White Council"
+      "The White Council",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -651,9 +665,11 @@
       "Arnor",
       "The Dead of Dunharrow",
       "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -681,10 +697,12 @@
       "Arnor",
       "The Dead of Dunharrow",
       "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
       "Fangorn",
       "The Fellowship",
       "The Fiefdoms",
       "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -756,6 +774,8 @@
       "The Fellowship",
       "The Fiefdoms",
       "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)",
       "The Kingdom of Khazad-Dum",
       "Lothlorien",
       "Minas Tirith",
@@ -830,7 +850,9 @@
       "Rivendell",
       "The Shire",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },
@@ -927,9 +949,11 @@
       "Arnor",
       "The Dead of Dunharrow",
       "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
       "Fangorn",
       "The Fiefdoms",
       "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
       "Halls of Thranduil",
       "The Iron Hills",
       "The Kingdom of Khazad-Dum",
@@ -1101,7 +1125,9 @@
       "Rohan",
       "The Shire",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Garrison of Dale (Brand)",
+      "Erebor Reclaimed (King Dain)"
     ],
     "bow_limit":0.33
   },

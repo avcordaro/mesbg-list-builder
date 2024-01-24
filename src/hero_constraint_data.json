@@ -5438,9 +5438,6 @@
   "[rohan] helm_hammerhand":[
     {
       "valid_warband_units":[
-        "[rohan] aldor",
-        "[rohan] haleth",
-        "[rohan] meriadoc_brandybuck",
         "[rohan] son_of_eorl",
         "[rohan] rider_of_rohan",
         "[rohan] rohan_royal_guard",
