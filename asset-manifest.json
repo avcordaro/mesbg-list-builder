@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.a82010f8.js",
+    "main.js": "/mesbg-list-builder/static/js/main.688bac07.js",
     "static/media/Iron Hills Ballista.jpg": "/mesbg-list-builder/static/media/Iron Hills Ballista.5c87d357160676b3afe5.jpg",
     "static/media/Iron Hills Chariot (Captain).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Captain).728637f3d3aaaaf77af2.jpg",
     "static/media/Iron Hills Chariot (Champions of Erebor).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Champions of Erebor).728637f3d3aaaaf77af2.jpg",
@@ -47,6 +47,7 @@
     "static/media/The Knight of Umbar.jpg": "/mesbg-list-builder/static/media/The Knight of Umbar.b1c3522b0a6d115af73e.jpg",
     "static/media/Mordor War Catapult.jpg": "/mesbg-list-builder/static/media/Mordor War Catapult.8c845b1a6c63a4b6883d.jpg",
     "static/media/The Undying.jpg": "/mesbg-list-builder/static/media/The Undying.32d081c40a98fe6882f8.jpg",
+    "static/media/Boromir.jpg": "/mesbg-list-builder/static/media/Boromir.53e6c972ca61a1ab1c82.jpg",
     "static/media/The Dwimmerlaik.jpg": "/mesbg-list-builder/static/media/The Dwimmerlaik.11b5a02f5a69bcc77e2d.jpg",
     "static/media/Denethor.jpg": "/mesbg-list-builder/static/media/Denethor.87a8618ef0b3b981e832.jpg",
     "static/media/Royal Palanquin.jpg": "/mesbg-list-builder/static/media/Royal Palanquin.d6c7ea3f0604ca74452a.jpg",
@@ -78,7 +79,6 @@
     "static/media/Brand, King of Dale.jpg": "/mesbg-list-builder/static/media/Brand, King of Dale.810b9627582023bee0ca.jpg",
     "static/media/The Balrog.jpg": "/mesbg-list-builder/static/media/The Balrog.f5ac74fbade90ff7f6a5.jpg",
     "static/media/Gothmog.jpg": "/mesbg-list-builder/static/media/Gothmog.d3a5f2d86a32789fbe3a.jpg",
-    "static/media/Boromir.jpg": "/mesbg-list-builder/static/media/Boromir.89b52b0ff2621e38b505.jpg",
     "static/media/Legolas.jpg": "/mesbg-list-builder/static/media/Legolas.15ec24694679b2d78578.jpg",
     "static/media/Gandalf the White.jpg": "/mesbg-list-builder/static/media/Gandalf the White.27eed2cce688310f570f.jpg",
     "static/media/Deorwine.jpg": "/mesbg-list-builder/static/media/Deorwine.d7779d12121175072924.jpg",
@@ -789,10 +789,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.a82010f8.js.map": "/mesbg-list-builder/static/js/main.a82010f8.js.map"
+    "main.688bac07.js.map": "/mesbg-list-builder/static/js/main.688bac07.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.a82010f8.js"
+    "static/js/main.688bac07.js"
   ]
 }
