@@ -11516,7 +11516,7 @@
         "option_id":"OPT0492",
         "option":"The Banner of Minas Tirith",
         "points":40.0,
-        "type":null,
+        "type":"exclusive",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -11534,7 +11534,7 @@
         "option_id":"OPT0494",
         "option":"Lance",
         "points":5.0,
-        "type":null,
+        "type":"exclusive",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
