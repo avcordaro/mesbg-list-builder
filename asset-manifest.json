@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.065b7a9d.js",
+    "main.js": "/mesbg-list-builder/static/js/main.5115894b.js",
     "static/media/Iron Hills Ballista.jpg": "/mesbg-list-builder/static/media/Iron Hills Ballista.5c87d357160676b3afe5.jpg",
     "static/media/Iron Hills Chariot (Captain).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Captain).728637f3d3aaaaf77af2.jpg",
     "static/media/Iron Hills Chariot (Champions of Erebor).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Champions of Erebor).728637f3d3aaaaf77af2.jpg",
@@ -789,10 +789,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.065b7a9d.js.map": "/mesbg-list-builder/static/js/main.065b7a9d.js.map"
+    "main.5115894b.js.map": "/mesbg-list-builder/static/js/main.5115894b.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.065b7a9d.js"
+    "static/js/main.5115894b.js"
   ]
 }
