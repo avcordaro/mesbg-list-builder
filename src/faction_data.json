@@ -544,7 +544,7 @@
   "Erebor Reclaimed (King Dain)":{
     "armyBonus":"<b>\"Will you follow me, one last time?\"<\/b> - All models in this army list change their Iron Hills keyword for the Erebor keyword. All friendly Erebor Dwarf models from this army list gain the Du Bekar special rule. <br\/> <br\/><b>\"Du Bekar\"<\/b> - A model with this special rule counts as being in range of a banner if they are within 6\" of Dain Ironfoot, King Under the Mountain.",
     "primaryAllies":[
-      "Garrison of Dale (Girion) (Brand)"
+      "Garrison of Dale (Brand)"
     ],
     "secondaryAllies":[
       "The Dead of Dunharrow",
