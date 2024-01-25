@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.0d8a0cdb.js",
+    "main.js": "/mesbg-list-builder/static/js/main.939a98cf.js",
     "static/media/Iron Hills Ballista.jpg": "/mesbg-list-builder/static/media/Iron Hills Ballista.5c87d357160676b3afe5.jpg",
     "static/media/Iron Hills Chariot (Captain).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Captain).728637f3d3aaaaf77af2.jpg",
     "static/media/Iron Hills Chariot (Champions of Erebor).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Champions of Erebor).728637f3d3aaaaf77af2.jpg",
@@ -63,9 +63,9 @@
     "static/media/The Betrayer.jpg": "/mesbg-list-builder/static/media/The Betrayer.b9672584c1c759b369ae.jpg",
     "static/media/Cave Drake.jpg": "/mesbg-list-builder/static/media/Cave Drake.291a368883078c998acf.jpg",
     "static/media/Legolas Greenleaf, Prince of Mirkwood.jpg": "/mesbg-list-builder/static/media/Legolas Greenleaf, Prince of Mirkwood.91822624b60a94943fbb.jpg",
+    "static/media/Herald of the Dead.jpg": "/mesbg-list-builder/static/media/Herald of the Dead.d264ec90d8a91a0af7f9.jpg",
     "static/media/Shieldbearer.jpg": "/mesbg-list-builder/static/media/Shieldbearer.37eadcf3162709406329.jpg",
     "static/media/Treebeard.jpg": "/mesbg-list-builder/static/media/Treebeard.7f2e5e2292ec8caa6740.jpg",
-    "static/media/Herald of the Dead.jpg": "/mesbg-list-builder/static/media/Herald of the Dead.9acc7385095cc060fa25.jpg",
     "static/media/Great Beast of Gorgoroth.jpg": "/mesbg-list-builder/static/media/Great Beast of Gorgoroth.cf226662cb39a4f019a9.jpg",
     "static/media/The Dark Marshall.jpg": "/mesbg-list-builder/static/media/The Dark Marshall.9297a54563af2d5a71c2.jpg",
     "static/media/Ringwraith.jpg": "/mesbg-list-builder/static/media/Ringwraith.a8a28cbbef0801084b1f.jpg",
@@ -789,10 +789,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.0d8a0cdb.js.map": "/mesbg-list-builder/static/js/main.0d8a0cdb.js.map"
+    "main.939a98cf.js.map": "/mesbg-list-builder/static/js/main.939a98cf.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.0d8a0cdb.js"
+    "static/js/main.939a98cf.js"
   ]
 }
