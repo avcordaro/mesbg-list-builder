@@ -256,6 +256,16 @@
       "warning":"This force must contain Sharku."
     }
   ],
+  "[army_of_lake-town] alfrid_the_councillor":[
+    {
+      "type":"requires_one",
+      "dependencies":[
+        "[army_of_lake-town] master_of_lake-town",
+        "[army_of_lake-town] bard_the_bowman"
+      ],
+      "warning":"(Army of Lake-town) Alfrid the Councillor may only be included if your army also includes either Bard the Bowman or the Master of Lake-town."
+    }
+  ],
   "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
     {
       "type":"incompatible",
@@ -303,7 +313,7 @@
   ],
   "[rangers_of_Ithilien] samwise_gamgee":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[rangers_of_ithilien] frodo_baggins"
       ],
@@ -312,7 +322,7 @@
   ],
   "[rangers_of_ithilien] smeagol":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[rangers_of_ithilien] frodo_baggins",
         "[rangers_of_ithilien] samwise_gamgee"
@@ -392,9 +402,18 @@
       "warning":"Helm Hammerhand may not be included in the same force as any named Rohan Hero models."
     }
   ],
+  "[survivors_of_lake-town] alfrid_the_councillor":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[survivors_of_lake-town] bard_the_bowman"
+      ],
+      "warning":"(Survivors of Lake-town) Alfrid the Councillor may only be included if your army also includes either Bard the Bowman."
+    }
+  ],
   "[the_chief's_ruffians] ruffian_cpt":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[the_chief's_ruffians] rowan_thistlewood,_ruffian_enforcer",
         "[the_chief's_ruffians] bill_ferny",
@@ -409,7 +428,7 @@
   ],
   "[the_fellowship] arwen":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[the_fellowship] aragorn,_strider"
       ],
@@ -418,7 +437,7 @@
   ],
   "[the_fellowship] smeagol":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[the_fellowship] frodo_baggins",
         "[the_fellowship] samwise_gamgee"
@@ -487,7 +506,7 @@
   ],
   "[the_shire] dunedain":[
     {
-      "type":"requires",
+      "type":"requires_all",
       "dependencies":[
         "[the_shire] gandalf_the_grey"
       ],

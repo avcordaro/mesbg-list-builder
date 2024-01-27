@@ -898,7 +898,7 @@
     "bow_limit":0.33
   },
   "The White Council":{
-    "armyBonus":"<b>\"Are you in need of assistance?\"<\/b> - A member of the White Council from this army list adds +1 to the dice roll when attempting to Resist magic, so long as there is another member of the White Council from this army list within 6\".",
+    "armyBonus":"A White Council army may only include a single warband. Unlike the usual model limit of a Hero plus twelve Warriors, the White Council includes only Heroes, up to a maximum of ten.<br\/><br\/><b>\"Are you in need of assistance?\"<\/b> - A member of the White Council from this army list adds +1 to the dice roll when attempting to Resist magic, so long as there is another member of the White Council from this army list within 6\".",
     "primaryAllies":[
       "Rivendell"
     ],
@@ -1110,7 +1110,7 @@
   "The Shire":{
     "armyBonus":"<b>\"Fear! Fire! Foes!\"<\/b> - Hobbit models from this army list gain the Woodland Creature Special Rule.",
     "primaryAllies":[
-      "Rivendell"
+      "The Rangers"
     ],
     "secondaryAllies":[
       "The Dead of Dunharrow",
@@ -1121,7 +1121,7 @@
       "Lothlorien",
       "Minas Tirith",
       "The Misty Mountains",
-      "The Rangers",
+      "Rivendell",
       "Rohan",
       "The Shire",
       "The White Council",

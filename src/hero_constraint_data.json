@@ -303,6 +303,110 @@
       ]
     }
   ],
+  "[army_of_lake-town] alfrid_the_councillor":[
+    {
+      "valid_warband_units":[
+        "[army_of_lake-town] lake-town_guard",
+        "[army_of_lake-town] bain,_son_of_bard"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] bain,_son_of_bard":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] bard_the_bowman":[
+    {
+      "valid_warband_units":[
+        "[army_of_lake-town] lake-town_guard",
+        "[army_of_lake-town] sigrid_&_tilda",
+        "[army_of_lake-town] bain,_son_of_bard"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] braga,_captain_of_the_guard":[
+    {
+      "valid_warband_units":[
+        "[army_of_lake-town] lake-town_guard",
+        "[army_of_lake-town] bain,_son_of_bard"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] lake-town_guard_captain":[
+    {
+      "valid_warband_units":[
+        "[army_of_lake-town] lake-town_guard",
+        "[army_of_lake-town] bain,_son_of_bard"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] master_of_lake-town":[
+    {
+      "valid_warband_units":[
+        "[army_of_lake-town] lake-town_guard",
+        "[army_of_lake-town] bain,_son_of_bard"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_lake-town] sigrid_&_tilda":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[army_of_thror] captain_of_erebor":[
     {
       "valid_warband_units":[
@@ -4786,6 +4890,48 @@
       ]
     }
   ],
+  "[radagast's_alliance] beorn":[
+    {
+      "valid_warband_units":[
+        "[radagast's_alliance] great_eagle"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[radagast's_alliance] gwaihir":[
+    {
+      "valid_warband_units":[
+        "[radagast's_alliance] great_eagle"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[radagast's_alliance] radagast_the_brown":[
+    {
+      "valid_warband_units":[
+        "[radagast's_alliance] great_eagle"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[rangers_of_ithilien] anborn":[
     {
       "valid_warband_units":[
@@ -5618,6 +5764,141 @@
     {
       "valid_warband_units":[
         "[sharkey's_rogues] hobbit_militia"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] alfrid_the_councillor":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] bain,_son_of_bard":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor",
+        "[survivors_of_lake-town] sigrid_&_tilda"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] bard_the_bowman":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor",
+        "[survivors_of_lake-town] sigrid_&_tilda"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] bilbo_baggins,_master_burglar":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] gandalf_the_grey":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] hilda-bianca":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] lake-town_militia_captain":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] percy":[
+    {
+      "valid_warband_units":[
+        "[survivors_of_lake-town] lake-town_militia",
+        "[survivors_of_lake-town] alfrid_the_councillor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[survivors_of_lake-town] sigrid_&_tilda":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_warband_options":[
 
@@ -8050,6 +8331,146 @@
         "[the_shire] hobbit_militia",
         "[the_shire] rosie_cotton",
         "[the_shire] hobbit_shirriff"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] celeborn":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] elrond":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] galadriel,_lady_of_light":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] gandalf_the_grey":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] glorfindel":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] radagast_the_brown":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] saruman_the_white":[
+    {
+      "valid_warband_units":[
+        "[the_white_council] celeborn",
+        "[the_white_council] galadriel,_lady_of_light",
+        "[the_white_council] saruman_the_white",
+        "[the_white_council] elrond",
+        "[the_white_council] gandalf_the_grey",
+        "[the_white_council] radagast_the_brown",
+        "[the_white_council] glorfindel"
       ],
       "special_warband_options":[
 

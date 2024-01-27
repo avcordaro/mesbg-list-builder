@@ -1087,6 +1087,274 @@
     ]
   },
   {
+    "model_id":"[army_of_lake-town] bard_the_bowman",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Bard the Bowman",
+    "unit_type":"Hero of Valour",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1452",
+        "option":"Windlance",
+        "points":75.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1453",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1454",
+        "option":"Armour",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] master_of_lake-town",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Master of Lake-town",
+    "unit_type":"Hero of Valour",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] braga,_captain_of_the_guard",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Braga, Captain of the Guard",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] lake-town_guard_captain",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Lake-town Guard Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1451",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] alfrid_the_councillor",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Alfrid the Councillor",
+    "unit_type":"Hero of Fortitude",
+    "base_points":20,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] bain,_son_of_bard",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Bain, Son of Bard",
+    "unit_type":"Independent Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] sigrid_&_tilda",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Sigrid & Tilda",
+    "unit_type":"Independent Hero*",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[army_of_lake-town] lake-town_guard",
+    "faction_type":"Good Army",
+    "faction":"Army of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Lake-town Guard",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1448",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1449",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1450",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[army_of_thror] thror",
     "faction_type":"Good Army",
     "faction":"Army of Thror",
@@ -16091,6 +16359,149 @@
     ]
   },
   {
+    "model_id":"[radagast's_alliance] radagast_the_brown",
+    "faction_type":"Good Army",
+    "faction":"Radagast's Alliance",
+    "profile_origin":"Radagast's Alliance",
+    "name":"Radagast the Brown",
+    "unit_type":"Hero of Legend",
+    "base_points":150,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":150,
+    "pointsTotal":150,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1464",
+        "option":"Swap Staff for Great Eagle",
+        "points":50.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1465",
+        "option":"Sleigh",
+        "points":45.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1466",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1467",
+        "option":"Sebastian",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[radagast's_alliance] beorn",
+    "faction_type":"Good Army",
+    "faction":"Radagast's Alliance",
+    "profile_origin":"Radagast's Alliance",
+    "name":"Beorn",
+    "unit_type":"Hero of Valour",
+    "base_points":200,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":200,
+    "pointsTotal":200,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[radagast's_alliance] gwaihir",
+    "faction_type":"Good Army",
+    "faction":"Radagast's Alliance",
+    "profile_origin":"The Misty Mountains",
+    "name":"Gwaihir",
+    "unit_type":"Hero of Valour",
+    "base_points":150,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":150,
+    "pointsTotal":150,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[radagast's_alliance] great_eagle",
+    "faction_type":"Good Army",
+    "faction":"Radagast's Alliance",
+    "profile_origin":"The Misty Mountains",
+    "name":"Great Eagle",
+    "unit_type":"Warrior",
+    "base_points":100,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[rangers_of_ithilien] faramir",
     "faction_type":"Good LL",
     "faction":"Rangers of Ithilien",
@@ -18850,6 +19261,341 @@
     "options":[
       {
         "option_id":"OPT0847",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] bard_the_bowman",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Bard the Bowman",
+    "unit_type":"Hero of Legend",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1455",
+        "option":"Windlance",
+        "points":75.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1456",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1457",
+        "option":"Armour",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] gandalf_the_grey",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Thorin's Company",
+    "name":"Gandalf the Grey",
+    "unit_type":"Hero of Valour",
+    "base_points":170,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":170,
+    "pointsTotal":170,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1463",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] bilbo_baggins,_master_burglar",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Bilbo Baggins, Master Burglar",
+    "unit_type":"Hero of Fortitude",
+    "base_points":90,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":90,
+    "pointsTotal":90,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] percy",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Percy",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] lake-town_militia_captain",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Lake-town Militia Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1458",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] hilda-bianca",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Hilda-Bianca",
+    "unit_type":"Hero of Fortitude",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] bain,_son_of_bard",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Bain, Son of Bard",
+    "unit_type":"Minor Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] alfrid_the_councillor",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Army of Lake-town",
+    "name":"Alfrid the Councillor",
+    "unit_type":"Independent Hero",
+    "base_points":20,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] sigrid_&_tilda",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Sigrid & Tilda",
+    "unit_type":"Independent Hero*",
+    "base_points":30,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":2,
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[survivors_of_lake-town] lake-town_militia",
+    "faction_type":"Good Army",
+    "faction":"Survivors of Lake-town",
+    "profile_origin":"Survivors of Lake-town",
+    "name":"Lake-town Militia",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1459",
+        "option":"Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1460",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1461",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1462",
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
@@ -27076,6 +27822,245 @@
         "option_id":"OPT1221",
         "option":"Swap Weapon",
         "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] saruman_the_white",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"The White Council",
+    "name":"Saruman the White",
+    "unit_type":"Hero of Legend",
+    "base_points":170,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":170,
+    "pointsTotal":170,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1471",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] elrond",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"Rivendell",
+    "name":"Elrond",
+    "unit_type":"Hero of Valour",
+    "base_points":170,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":170,
+    "pointsTotal":170,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1472",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1473",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] gandalf_the_grey",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"Thorin's Company",
+    "name":"Gandalf the Grey",
+    "unit_type":"Hero of Valour",
+    "base_points":170,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":170,
+    "pointsTotal":170,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1474",
+        "option":"Horse",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] radagast_the_brown",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"Radagast's Alliance",
+    "name":"Radagast the Brown",
+    "unit_type":"Hero of Valour",
+    "base_points":150,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":150,
+    "pointsTotal":150,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] glorfindel",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"Rivendell",
+    "name":"Glorfindel",
+    "unit_type":"Hero of Valour",
+    "base_points":145,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":145,
+    "pointsTotal":145,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1475",
+        "option":"Armour of Gondolin",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1476",
+        "option":"Asfaloth",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] celeborn",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"The White Council",
+    "name":"Celeborn",
+    "unit_type":"Hero of Valour",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1468",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1469",
+        "option":"Elven-made Hand-and-a-Half Sword",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1470",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] galadriel,_lady_of_light",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"The White Council",
+    "name":"Galadriel, Lady of Light",
+    "unit_type":"Hero of Fortitude",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
