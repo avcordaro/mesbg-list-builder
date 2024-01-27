@@ -27944,9 +27944,36 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1477",
+        "option":"Swap Staff for Great Eagle",
+        "points":50.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1478",
+        "option":"Sleigh",
+        "points":45.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1479",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1480",
+        "option":"Sebastian",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
