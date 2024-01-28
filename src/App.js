@@ -22,7 +22,9 @@ import { RosterWarrior } from "./components/RosterWarrior.js"
 import { ModalRosterTable } from "./components/ModalRosterTable.js"
 import { Alliances } from "./components/Alliances.js"
 import React, { useState, useEffect } from "react";
-import { FaPlus } from "react-icons/fa";  
+import { FaPlus } from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa";
+import { MdReportGmailerrorred } from "react-icons/md";  
 import { FaTableList } from "react-icons/fa6"; 
 import { MdDelete } from "react-icons/md";
 import { FcCheckmark } from "react-icons/fc";
@@ -419,6 +421,14 @@ export default function App() {
             <Button className="ms-2" disabled={uniqueModels.length == 0} onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
             <Button disabled={uniqueModels.length == 0} onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
             <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
+          </Stack>
+          <Stack className="mt-2 m-0 p-0" direction="horizontal">
+          <p className="ms-3 m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
+            Developed by avcordaro | <FaRegCopyright /> 2024
+          </p>
+          <p className="ms-auto m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
+            <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
+          </p>
           </Stack>
         </Navbar.Brand>
       </Navbar>
