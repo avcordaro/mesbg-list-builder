@@ -424,10 +424,10 @@ export default function App() {
           </Stack>
           <Stack className="mt-2 m-0 p-0" direction="horizontal">
           <p className="ms-3 m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
-            Developed by avcordaro | <FaRegCopyright /> 2024
+            <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
           </p>
           <p className="ms-auto m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
-            <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
+            Developed by avcordaro | <FaRegCopyright /> 2024
           </p>
           </Stack>
         </Navbar.Brand>
