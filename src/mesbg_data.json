@@ -7361,6 +7361,15 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1481",
+        "option":"Two-Handed Club",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
       }
     ]
   },
