@@ -399,8 +399,10 @@ export default function App() {
 
   return (
     <div>
-      <Navbar style={{ minWidth: "1525px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
+      <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
+        <Stack direction="horizontal" gap={3}>
+          <Stack>
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
             <Stack>
@@ -411,23 +413,27 @@ export default function App() {
                 version {VERSION} (updated {UPDATED})
               </p>
             </Stack>
-            <h6 className="mb-0" style={{ marginLeft: "30px"}}>Total Points: <b>{roster.points}</b></h6>
-            <h6 className="mb-0">Total Units: <b>{roster.num_units}</b></h6>
-            <h6 className="mb-0">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
-            <h6 className="mb-0">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
-            <h6 className="mb-0">Bows: <b>{roster.bow_count}</b></h6>
-            <Button className="ms-2" disabled={uniqueModels.length == 0} onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
-            <Button disabled={uniqueModels.length == 0} onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
-            <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
           </Stack>
-          <Stack className="mt-2 m-0 p-0" direction="horizontal">
-          <p className="ms-3 m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
-            <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
-          </p>
-          <p className="ms-auto m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
-            Developed by avcordaro | <FaRegCopyright /> 2024
-          </p>
+            <p className="mt-3 ms-3 m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
+              <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
+            </p>
           </Stack>
+          <Stack style={{ width: "850px" }}>
+            <Stack className="mt-3 ms-4" direction="horizontal" gap={3}>
+              <Button className="ms-auto" disabled={uniqueModels.length == 0} onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
+              <Button disabled={uniqueModels.length == 0} onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
+              <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
+            </Stack>
+            <Stack className="mt-4 ms-4" direction="horizontal" gap={4}>
+              <h6 className="mb-0 mt-2">Total Points: <b>{roster.points}</b></h6>
+              <h6 className="mb-0 mt-2">Total Units: <b>{roster.num_units}</b></h6>
+              <h6 className="mb-0 mt-2">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
+              <h6 className="mb-0 mt-2">25%: <b>{Math.floor(0.25 * roster.num_units)}</b></h6>
+              <h6 className="mb-0 mt-2">Bows: <b>{roster.bow_count}</b></h6>
+              <h6 className="mb-0 mt-2 ms-auto text-muted" style={{ fontSize: "14px" }}>Developed by avcordaro | <FaRegCopyright /> 2024</h6>
+            </Stack>
+          </Stack>
+        </Stack>
         </Navbar.Brand>
       </Navbar>
       <div className="m-4">
@@ -556,7 +562,7 @@ export default function App() {
           </Alert>
           {roster.warbands.map((warband) => (
             <Card
-              style={{ width: "950px" }}
+              style={{ width: "850px" }}
               className="p-2"
               bg={"secondary"}
               text={"light"}
@@ -572,16 +578,16 @@ export default function App() {
                     <Badge bg="dark">[Faction]</Badge>
                   </Card.Text>
                 }
-                <Card.Text className="ms-5">
+                <Card.Text className="ms-4">
                   Warband: <b>{warband.num}</b>
                 </Card.Text>
-                <Card.Text className={warband.num_units > warband.max_units ? "ms-5 text-warning" : "ms-5"}>
+                <Card.Text className={warband.num_units > warband.max_units ? "ms-4 text-warning" : "ms-4"}>
                   Units: <b>{warband.num_units} / {warband.max_units}</b>
                 </Card.Text>
-                <Card.Text className="ms-5">
+                <Card.Text className="ms-4">
                   Points: <b>{warband.points}</b>
                 </Card.Text>
-                <Card.Text className="ms-5">
+                <Card.Text className="ms-4">
                   Bows: <b>{warband.bow_count}</b>
                 </Card.Text>
                 <Button
@@ -650,14 +656,14 @@ export default function App() {
                   onClick={() => handleNewWarrior(warband.num)}
                   variant={"info"}
                   className="m-1"
-                  style={{ width: "920px" }}
+                  style={{ width: "820px" }}
                 >
                   Add Unit <FaPlus />
                 </Button>
              }
             </Card>
           ))}
-          <Button onClick={() => handleNewWarband()} style={{ width: "950px" }}>
+          <Button onClick={() => handleNewWarband()} style={{ width: "850px" }}>
             Add Warband <FaPlus />
           </Button>
           

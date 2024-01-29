@@ -129,10 +129,10 @@ export function RosterHero({
   };
 
   return (
-    <Card style={{ width: "920px" }} className="p-2 m-1" bg={"light"}>
-      <Stack direction="horizontal" gap={3}>
+    <Card style={{ width: "820px" }} className="p-2 m-1" bg={"light"}>
+      <Stack direction="horizontal" gap={3} style={{ alignItems: "start" }}>
         <img
-          className="profile"
+          className="profile mt-1 mb-1"
           src={(() => {
             try {
               return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
