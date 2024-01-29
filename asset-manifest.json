@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.4185a43d.js",
+    "main.js": "/mesbg-list-builder/static/js/main.1c5236e3.js",
     "static/media/Bard the Bowman.jpg": "/mesbg-list-builder/static/media/Bard the Bowman.9fc25500767687d8a174.jpg",
     "static/media/Iron Hills Ballista.jpg": "/mesbg-list-builder/static/media/Iron Hills Ballista.5c87d357160676b3afe5.jpg",
     "static/media/Iron Hills Chariot (Captain).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Captain).728637f3d3aaaaf77af2.jpg",
@@ -349,6 +349,7 @@
     "static/media/Galadhrim Warrior.jpg": "/mesbg-list-builder/static/media/Galadhrim Warrior.2df45dfe802eae0bf4c4.jpg",
     "static/media/Dwarf King.jpg": "/mesbg-list-builder/static/media/Dwarf King.33c3a5f065168a7356c5.jpg",
     "static/media/Mordor Troll.jpg": "/mesbg-list-builder/static/media/Mordor Troll.4c5fa8ab3c841b50895a.jpg",
+    "static/media/Knight of Minas Tirith.jpg": "/mesbg-list-builder/static/media/Knight of Minas Tirith.16f2f04d3c7b74b3d9bd.jpg",
     "static/media/Captain of Arnor.jpg": "/mesbg-list-builder/static/media/Captain of Arnor.8830dc81b05d1d9d31ef.jpg",
     "static/media/Serpent Guard.jpg": "/mesbg-list-builder/static/media/Serpent Guard.3aa0bde45773ceeda8e8.jpg",
     "static/media/Warrior of Rohan.jpg": "/mesbg-list-builder/static/media/Warrior of Rohan.62acd1066a912de56e3b.jpg",
@@ -377,7 +378,6 @@
     "static/media/Warrior of Minas Tirith.jpg": "/mesbg-list-builder/static/media/Warrior of Minas Tirith.856a15759fc61496d12d.jpg",
     "static/media/Uruk-Hai Warrior.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Warrior.2df25bccbd08f495002e.jpg",
     "static/media/Dwarf Ranger.jpg": "/mesbg-list-builder/static/media/Dwarf Ranger.6ae3974be01d3a7ef0fe.jpg",
-    "static/media/Knight of Minas Tirith.jpg": "/mesbg-list-builder/static/media/Knight of Minas Tirith.d87ff0562ebb73f31fad.jpg",
     "static/media/Warrior of Arnor.jpg": "/mesbg-list-builder/static/media/Warrior of Arnor.4d6702f9bee0c0cda6c0.jpg",
     "static/media/Morannon Orc.jpg": "/mesbg-list-builder/static/media/Morannon Orc.5cd52658a3188e34eba1.jpg",
     "static/media/Orc Warrior.jpg": "/mesbg-list-builder/static/media/Orc Warrior.09eb15a270ab92b4f688.jpg",
@@ -824,10 +824,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.4185a43d.js.map": "/mesbg-list-builder/static/js/main.4185a43d.js.map"
+    "main.1c5236e3.js.map": "/mesbg-list-builder/static/js/main.1c5236e3.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.4185a43d.js"
+    "static/js/main.1c5236e3.js"
   ]
 }
