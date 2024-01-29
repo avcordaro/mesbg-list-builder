@@ -398,7 +398,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div style={{minHeight: "750px"}}>
       <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
         <Navbar.Brand className="ms-4">
         <Stack direction="horizontal" gap={3}>
