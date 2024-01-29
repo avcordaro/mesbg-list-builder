@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.da0011e1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.6ba2cd80.js",
+    "main.js": "/mesbg-list-builder/static/js/main.adda7f07.js",
     "static/media/Bard the Bowman.jpg": "/mesbg-list-builder/static/media/Bard the Bowman.9fc25500767687d8a174.jpg",
     "static/media/Iron Hills Ballista.jpg": "/mesbg-list-builder/static/media/Iron Hills Ballista.5c87d357160676b3afe5.jpg",
     "static/media/Iron Hills Chariot (Captain).jpg": "/mesbg-list-builder/static/media/Iron Hills Chariot (Captain).728637f3d3aaaaf77af2.jpg",
@@ -404,8 +404,8 @@
     "static/media/Citadel Guard.jpg": "/mesbg-list-builder/static/media/Citadel Guard.a990a69e2ad07be4c0e6.jpg",
     "static/media/Moria Goblin Warrior.jpg": "/mesbg-list-builder/static/media/Moria Goblin Warrior.5bb1434be55fcf6cc11f.jpg",
     "static/media/Orc Tracker.jpg": "/mesbg-list-builder/static/media/Orc Tracker.cefa93032853469d7dfc.jpg",
+    "static/media/Half Troll.jpg": "/mesbg-list-builder/static/media/Half Troll.4e73a286a985a10654bb.jpg",
     "static/media/Morgul Stalker.jpg": "/mesbg-list-builder/static/media/Morgul Stalker.77ec7ed1403b20e8ce52.jpg",
-    "static/media/Half Troll.jpg": "/mesbg-list-builder/static/media/Half Troll.342c3fba26c2d47d2920.jpg",
     "static/media/Ranger of Gondor.jpg": "/mesbg-list-builder/static/media/Ranger of Gondor.ddbf95d83f1b50a7a724.jpg",
     "static/media/Wild Warg.jpg": "/mesbg-list-builder/static/media/Wild Warg.41fd972bf4cf47fb6fd0.jpg",
     "static/media/default_card.jpg": "/mesbg-list-builder/static/media/default_card.89612dedec035d2f5035.jpg",
@@ -824,10 +824,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.da0011e1.css.map": "/mesbg-list-builder/static/css/main.da0011e1.css.map",
-    "main.6ba2cd80.js.map": "/mesbg-list-builder/static/js/main.6ba2cd80.js.map"
+    "main.adda7f07.js.map": "/mesbg-list-builder/static/js/main.adda7f07.js.map"
   },
   "entrypoints": [
     "static/css/main.da0011e1.css",
-    "static/js/main.6ba2cd80.js"
+    "static/js/main.adda7f07.js"
   ]
 }
