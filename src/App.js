@@ -40,8 +40,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.5.1"
-  const UPDATED = "29-Jan-24"
+  const VERSION = "3.5.2"
+  const UPDATED = "02-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -525,8 +525,8 @@ export default function App() {
               <h6>Bow Limit</h6> 
               <hr/>
               {factionList.map((f) => (
-                <p className={Math.round(factionBowCounts[f] / factionModelCounts[f] * 100) / 100 > faction_data[f]['bow_limit'] ? 'text-danger' : 'text-dark'}>
-                  <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit)"} {factionBowCounts[f]} / {factionModelCounts[f]} -- <b>{factionModelCounts[f] > 0 ? Math.round(factionBowCounts[f] / factionModelCounts[f] * 100) : 0}%</b>
+                <p className={factionBowCounts[f] > Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) ? 'text-danger' : 'text-dark'}>
+                  <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit - " + Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) + " bows)"} <b>{factionBowCounts[f]} / {factionModelCounts[f]}</b>
                 </p>
               ))}
               <Stack direction="horizontal" gap={3} className="mt-5 mb-3"> 
