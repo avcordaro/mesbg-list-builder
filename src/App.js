@@ -40,7 +40,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.6.1"
+  const VERSION = "3.6.2"
   const UPDATED = "03-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
@@ -346,6 +346,9 @@ export default function App() {
       return newWarband;
     });
     newRoster.warbands = newWarbands
+    if (newRoster['leader_warband_num'] == warbandNum) {
+      newRoster['leader_warband_num'] = null;
+    }
     setRoster(newRoster);
     setDisplaySelection(false);
   };

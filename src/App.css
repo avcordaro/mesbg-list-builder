@@ -77,3 +77,21 @@ pre {
     margin-right: auto;
     margin-left: auto;
 }
+
+.form-check-input {
+  --bs-form-check-bg: var(--bs-body-bg);
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: .25em;
+  vertical-align: top;
+  appearance: none;
+  background-color: var(--bs-form-check-bg);
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid grey;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}

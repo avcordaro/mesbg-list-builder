@@ -10,6 +10,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FcCheckmark } from "react-icons/fc";
 import { RxCross1 } from "react-icons/rx";
 import { GoCopy } from "react-icons/go";
+import { GiQueenCrown } from "react-icons/gi";
 import faction_data from "../faction_data.json";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears 
@@ -51,7 +52,11 @@ export function ModalRosterTable({
       tableString += "----------------------------------------\n"
       tableString += `Warband ${warband.num} (${warband.points} points)\n`
       if (warband.hero != null) {
-        tableString += `  ${warband.hero.name} (${warband.hero.pointsTotal} points)\n`
+        if (roster['leader_warband_num'] == warband.num) {
+          tableString += `  ${warband.hero.name} *LEADER* (${warband.hero.pointsTotal} points)\n`
+        } else {
+          tableString += `  ${warband.hero.name} (${warband.hero.pointsTotal} points)\n`
+        }
         warband.hero.options.map((option) => {
           if (option.opt_quantity > 0) {
             tableString += `    - ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}\n`
@@ -129,7 +134,7 @@ export function ModalRosterTable({
                       <>
                         {warband.hero != null &&
                           <tr className={warband.num % 2 == 0 ? "secondary" : ""}>
-                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}><b>{warband.num}</b></td>
+                            <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}><b>{warband.num}</b> {roster['leader_warband_num'] == warband.num ? <span>- <GiQueenCrown /> Leader</span> : ""}</td>
                             <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{warband.hero.name}</td>
                             <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>
                               {warband.hero.options.map((option) => (

@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import { OptionHero } from "./OptionHero.js"
 import { ImCross } from "react-icons/im";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import { GiQueenCrown } from "react-icons/gi";
 import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../hero_constraint_data.json";
 
@@ -21,6 +22,9 @@ export function RosterHero({
   specialArmyOptions,
   setSpecialArmyOptions
 }) {
+
+  let leader = false;
+
   const handleDelete = () => {
     // Removes the hero from being the warband's leader, and updates points and unit counts.
     let newRoster = { ...roster };
@@ -66,6 +70,9 @@ export function RosterHero({
       return newWarband;
     });
     newRoster.warbands = newWarbands;
+    if (newRoster['leader_warband_num'] == warbandNum) {
+      newRoster['leader_warband_num'] = null;
+    }
     setRoster(newRoster);
   };
 
@@ -128,6 +135,12 @@ export function RosterHero({
     return newRoster;
   };
 
+  const handleLeader = (e) => {
+    let newRoster = { ...roster }
+    newRoster['leader_warband_num'] = warbandNum
+    setRoster(newRoster);
+  }
+
   return (
     <Card style={{ width: "820px" }} className="p-2 m-1" bg={"light"}>
       <Stack direction="horizontal" gap={3} style={{ alignItems: "start" }}>
@@ -150,7 +163,19 @@ export function RosterHero({
             <Badge style={{ marginBottom: "12px" }} bg="dark">
               {unitData.unit_type}
             </Badge>
-            <p className="ms-auto" style={{ paddingRight: "10px" }}>
+            {["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) && <Stack className="ms-auto" direction="horizontal">
+              {roster['leader_warband_num'] == warbandNum ? <h5 className="me-2 mb-3 text-success"><GiQueenCrown /></h5> : <h5 className="me-2 mb-3" style={{ color: "lightgrey"}}><GiQueenCrown /></h5>}
+              <Form.Check
+                reverse
+                className="mb-3"
+                type="radio"
+                label="Leader"
+                name="leader"
+                checked={roster["leader_warband_num"] == warbandNum}
+                onClick={handleLeader}
+              />
+            </Stack>}
+            <p className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "ms-2" : "ms-auto"} style={{ paddingRight: "10px" }}>
               Points: <b>{unitData.pointsTotal}</b>
             </p>
           </Stack>
