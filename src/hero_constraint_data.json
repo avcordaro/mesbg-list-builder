@@ -594,6 +594,174 @@
       ]
     }
   ],
+  "[azog's_hunters] azog":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+        "The White Warg"
+      ]
+    }
+  ],
+  "[azog's_hunters] bolg":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_hunters] fimbul_the_hunter":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_hunters] hunter_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_hunters] narzug":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_hunters] yazneg":[
+    {
+      "valid_warband_units":[
+        "[azog's_hunters] fell_warg",
+        "[azog's_hunters] hunter_orc"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_legion] azog":[
+    {
+      "valid_warband_units":[
+        "[azog's_legion] gundabad_berserker",
+        "[azog's_legion] gundabad_orc_warrior",
+        "[azog's_legion] gundabad_troll",
+        "[azog's_legion] ogre",
+        "[azog's_legion] troll_brute",
+        "[azog's_legion] war_bat"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+        "The White Warg",
+        "Signal Tower"
+      ]
+    }
+  ],
+  "[azog's_legion] bolg":[
+    {
+      "valid_warband_units":[
+        "[azog's_legion] gundabad_berserker",
+        "[azog's_legion] gundabad_orc_warrior",
+        "[azog's_legion] gundabad_troll",
+        "[azog's_legion] ogre",
+        "[azog's_legion] troll_brute",
+        "[azog's_legion] war_bat"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_legion] goblin_mercenary_captain":[
+    {
+      "valid_warband_units":[
+        "[azog's_legion] goblin_mercenary",
+        "[azog's_legion] gundabad_berserker",
+        "[azog's_legion] gundabad_orc_warrior",
+        "[azog's_legion] gundabad_troll",
+        "[azog's_legion] ogre",
+        "[azog's_legion] troll_brute",
+        "[azog's_legion] war_bat"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[azog's_legion] gundabad_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[azog's_legion] gundabad_berserker",
+        "[azog's_legion] gundabad_orc_warrior",
+        "[azog's_legion] gundabad_troll",
+        "[azog's_legion] ogre",
+        "[azog's_legion] troll_brute",
+        "[azog's_legion] war_bat"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[barad-dur] black_numenorean_marshall":[
     {
       "valid_warband_units":[
@@ -1143,6 +1311,91 @@
         "[corsairs_of_umbar] corsair_of_umbar",
         "[corsairs_of_umbar] corsair_reaver",
         "[corsairs_of_umbar] black_numenorean"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_denizens_of_mirkwood] bat_swarm_cpt":[
+    {
+      "valid_warband_units":[
+        "[dark_denizens_of_mirkwood] giant_spider",
+        "[dark_denizens_of_mirkwood] mirkwood_spider",
+        "[dark_denizens_of_mirkwood] fell_warg",
+        "[dark_denizens_of_mirkwood] bat_swarm"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_denizens_of_mirkwood] fell_warg_cpt":[
+    {
+      "valid_warband_units":[
+        "[dark_denizens_of_mirkwood] giant_spider",
+        "[dark_denizens_of_mirkwood] mirkwood_spider",
+        "[dark_denizens_of_mirkwood] fell_warg",
+        "[dark_denizens_of_mirkwood] bat_swarm"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_denizens_of_mirkwood] giant_spider_cpt":[
+    {
+      "valid_warband_units":[
+        "[dark_denizens_of_mirkwood] giant_spider",
+        "[dark_denizens_of_mirkwood] mirkwood_spider",
+        "[dark_denizens_of_mirkwood] fell_warg",
+        "[dark_denizens_of_mirkwood] bat_swarm"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_denizens_of_mirkwood] mirkwood_spider_cpt":[
+    {
+      "valid_warband_units":[
+        "[dark_denizens_of_mirkwood] giant_spider",
+        "[dark_denizens_of_mirkwood] mirkwood_spider",
+        "[dark_denizens_of_mirkwood] fell_warg",
+        "[dark_denizens_of_mirkwood] bat_swarm"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_denizens_of_mirkwood] the_spider_queen":[
+    {
+      "valid_warband_units":[
+        "[dark_denizens_of_mirkwood] giant_spider",
+        "[dark_denizens_of_mirkwood] mirkwood_spider",
+        "[dark_denizens_of_mirkwood] fell_warg",
+        "[dark_denizens_of_mirkwood] bat_swarm"
       ],
       "special_warband_options":[
 
@@ -4077,7 +4330,11 @@
         "[mordor] mordor_uruk-hai",
         "[mordor] morannon_orc",
         "[mordor] orc_warrior",
-        "[mordor] orc_tracker"
+        "[mordor] orc_tracker",
+        "[mordor] fell_warg",
+        "[mordor] giant_spider",
+        "[mordor] mirkwood_spider",
+        "[mordor] bat_swarm"
       ],
       "special_warband_options":[
 
@@ -4160,7 +4417,7 @@
         "[mordor] mirkwood_spider",
         "[mordor] warg_rider",
         "[mordor] orc_warrior",
-        "[moria] bat_swarm"
+        "[mordor] bat_swarm"
       ],
       "special_warband_options":[
 
@@ -4463,7 +4720,7 @@
   "[moria] ashrak":[
     {
       "valid_warband_units":[
-        "[mordor] giant_spider",
+        "[moria] giant_spider",
         "[moria] dweller_in_the_dark",
         "[moria] moria_blackshield_drummers",
         "[moria] moria_goblin_drum",
@@ -4476,7 +4733,7 @@
         "[moria] moria_goblin_warrior"
       ],
       "special_warband_options":[
-
+        "Venom-back Spider"
       ],
       "special_army_option":"",
       "extra_profiles":[

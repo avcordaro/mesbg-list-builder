@@ -2209,6 +2209,766 @@
     ]
   },
   {
+    "model_id":"[azog's_hunters] azog",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Legion",
+    "name":"Azog",
+    "unit_type":"Hero of Legend",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1500",
+        "option":"The White Warg",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] bolg",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Legion",
+    "name":"Bolg",
+    "unit_type":"Hero of Valour",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1501",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1502",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] fimbul_the_hunter",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fimbul the Hunter",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1503",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] narzug",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Narzug",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1514",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] hunter_orc_captain",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Hunter Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1504",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1505",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1506",
+        "option":"Two-Handed Pick",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1507",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] yazneg",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Yazneg",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1515",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1516",
+        "option":"Lance",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] fell_warg",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fell Warg",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_hunters] hunter_orc",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Hunters",
+    "profile_origin":"Azog's Hunters",
+    "name":"Hunter Orc",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1508",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1509",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1510",
+        "option":"Fell Warg",
+        "points":8.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1511",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1512",
+        "option":"Two-Handed Pick",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1513",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] azog",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Azog",
+    "unit_type":"Hero of Legend",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"OPT1482",
+        "option":"Signal Tower",
+        "points":200.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1483",
+        "option":"The White Warg",
+        "points":50.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1484",
+        "option":"Stone Flail",
+        "points":20.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1485",
+        "option":"Heavy Armour",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] bolg",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Bolg",
+    "unit_type":"Hero of Valour",
+    "base_points":165,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":165,
+    "pointsTotal":165,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1486",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1487",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] goblin_mercenary_captain",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Goblin Mercenary Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1488",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] gundabad_orc_captain",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1492",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1493",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] gundabad_troll",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Troll",
+    "unit_type":"Warrior",
+    "base_points":120,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1498",
+        "option":"Crushing Club",
+        "points":0.0,
+        "type":"weapon",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1499",
+        "option":"Scythe Gauntlets",
+        "points":0.0,
+        "type":"weapon",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] troll_brute",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Troll Brute",
+    "unit_type":"Warrior",
+    "base_points":100,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] ogre",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Ogre",
+    "unit_type":"Warrior",
+    "base_points":60,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] war_bat",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"War Bat",
+    "unit_type":"Warrior",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] gundabad_berserker",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Berserker",
+    "unit_type":"Warrior",
+    "base_points":15,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":15,
+    "pointsTotal":15,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1490",
+        "option":"Two-Handed Pick",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1491",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] gundabad_orc_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1494",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1495",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1496",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1497",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] goblin_mercenary",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Goblin Mercenary",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1489",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[azog's_legion] catapult_troll",
+    "faction_type":"Evil Army",
+    "faction":"Azog's Legion",
+    "profile_origin":"Azog's Legion",
+    "name":"Catapult Troll",
+    "unit_type":"Siege Engine",
+    "base_points":180,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":1,
+    "quantity":1,
+    "pointsPerUnit":180,
+    "pointsTotal":180,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[barad-dur] sauron",
     "faction_type":"Evil Army",
     "faction":"Barad-dur",
@@ -4235,6 +4995,267 @@
         "option_id":"OPT0192",
         "option":"Swap Weapon",
         "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] the_spider_queen",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"The Spider Queen",
+    "unit_type":"Hero of Valour",
+    "base_points":115,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":115,
+    "pointsTotal":115,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] bat_swarm_cpt",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Moria",
+    "name":"Bat Swarm",
+    "unit_type":"Hero of Fortitude",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] giant_spider_cpt",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Giant Spider",
+    "unit_type":"Hero of Fortitude",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] mirkwood_spider_cpt",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Mirkwood Spider",
+    "unit_type":"Hero of Fortitude",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] fell_warg_cpt",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fell Warg",
+    "unit_type":"Hero of Fortitude",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] bat_swarm",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Moria",
+    "name":"Bat Swarm",
+    "unit_type":"Warrior",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] giant_spider",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Giant Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] mirkwood_spider",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Mirkwood Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_denizens_of_mirkwood] fell_warg",
+    "faction_type":"Evil Army",
+    "faction":"Dark Denizens of Mirkwood",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fell Warg",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -14257,10 +15278,39 @@
     ]
   },
   {
+    "model_id":"[mordor] bat_swarm",
+    "faction_type":"Evil Army",
+    "faction":"Mordor",
+    "profile_origin":"Moria",
+    "name":"Bat Swarm",
+    "unit_type":"Warrior",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[mordor] giant_spider",
     "faction_type":"Evil Army",
     "faction":"Mordor",
-    "profile_origin":"Mordor",
+    "profile_origin":"Dark Denizens of Mirkwood",
     "name":"Giant Spider",
     "unit_type":"Warrior",
     "base_points":20,
@@ -14289,7 +15339,7 @@
     "model_id":"[mordor] mirkwood_spider",
     "faction_type":"Evil Army",
     "faction":"Mordor",
-    "profile_origin":"Mordor",
+    "profile_origin":"Dark Denizens of Mirkwood",
     "name":"Mirkwood Spider",
     "unit_type":"Warrior",
     "base_points":20,
@@ -14544,7 +15594,7 @@
     "model_id":"[mordor] fell_warg",
     "faction_type":"Evil Army",
     "faction":"Mordor",
-    "profile_origin":"Mordor",
+    "profile_origin":"Azog's Hunters",
     "name":"Fell Warg",
     "unit_type":"Warrior",
     "base_points":8,
@@ -15484,6 +16534,35 @@
         "option":"Swap Weapon",
         "points":1.0,
         "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[moria] giant_spider",
+    "faction_type":"Evil Army",
+    "faction":"Moria",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Giant Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1517",
+        "option":"Venom-back Spider",
+        "points":2.0,
+        "type":"special_warband_upgrade",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0

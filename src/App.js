@@ -40,8 +40,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.5.2"
-  const UPDATED = "02-Feb-24"
+  const VERSION = "3.6.0"
+  const UPDATED = "03-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -153,6 +153,12 @@ export default function App() {
     //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
     if (factionList.includes("Halls of Thranduil")) {
       let newRoster = handleMirkwoodRangers(roster, allianceLevel);
+      setRoster(newRoster);
+    }
+    //If alliance level chaneges, and Army of Lake-town is included in army, there might be some changes needed for the Master of Lake-town
+    if (factionList.includes("Army of Lake-town")) {
+      console.log("1")
+      let newRoster = handleMasterLaketown(roster, allianceLevel);
       setRoster(newRoster);
     }
   }, [allianceLevel]);
@@ -366,6 +372,27 @@ export default function App() {
       return newWarband;
     });
     newRoster.warbands = newWarbands;
+    return newRoster
+  };
+
+  const handleMasterLaketown = (roster, alliance_level) => {
+    // Specific logic for Mirkwood Rangers and counting towards bow limit, depending on if the alliance level is Historical or not.
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.hero && newWarband.hero.model_id == "[army_of_lake-town] master_of_lake-town") {
+        console.log("2")
+        let newHero = newWarband.hero
+        newHero.warband_size = alliance_level == 'Historical' ? 15 : 12;
+        newHero.unit_type = alliance_level == 'Historical' ? "Hero of Valour" : "Hero of Fortitude";
+        newWarband.max_units = alliance_level == 'Historical' ? 15 : 12;
+        newWarband.hero = newHero;
+        console.log(newWarband);
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    console.log(newRoster);
     return newRoster
   };
 

@@ -266,6 +266,42 @@
       "warning":"(Army of Lake-town) Alfrid the Councillor may only be included if your army also includes either Bard the Bowman or the Master of Lake-town."
     }
   ],
+  "[dark_denizens_of_mirkwood] bat_swarm_cpt":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[dark_denizens_of_mirkwood] the_spider_queen"
+      ],
+      "warning":"A Bat Swarm may only lead a warband if your army also includes The Spider Queen"
+    }
+  ],
+  "[dark_denizens_of_mirkwood] fell_warg_cpt":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[dark_denizens_of_mirkwood] the_spider_queen"
+      ],
+      "warning":"A Fell Warg may only lead a warband if your army also includes The Spider Queen"
+    }
+  ],
+  "[dark_denizens_of_mirkwood] giant_spider_cpt":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[dark_denizens_of_mirkwood] the_spider_queen"
+      ],
+      "warning":"A Giant Spider may only lead a warband if your army also includes The Spider Queen"
+    }
+  ],
+  "[dark_denizens_of_mirkwood] mirkwood_spider_cpt":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[dark_denizens_of_mirkwood] the_spider_queen"
+      ],
+      "warning":"A Mirkwood Spider may only lead a warband if your army also includes The Spider Queen"
+    }
+  ],
   "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
     {
       "type":"incompatible",
@@ -309,6 +345,42 @@
         "[minas_tirith] damrod"
       ],
       "warning":"The King of Men cannot be included in the same force as any other named Gondor Hero models."
+    }
+  ],
+  "[mordor] fell_warg":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[mordor] razgush"
+      ],
+      "warning":"Orc Captains may only include Fell Wargs in their warband is Razgush is in your army."
+    }
+  ],
+  "[mordor] giant_spider":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[mordor] razgush"
+      ],
+      "warning":"Orc Captains may only include Giant Spiders in their warband is Razgush is in your army."
+    }
+  ],
+  "[mordor] mirkwood_spider":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[mordor] razgush"
+      ],
+      "warning":"Orc Captains may only include Mirkwood Spiders in their warband is Razgush is in your army."
+    }
+  ],
+  "[moria] bat_swarm":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[mordor] razgush"
+      ],
+      "warning":"Orc Captains may only include Bat Swarms in their warband is Razgush is in your army."
     }
   ],
   "[rangers_of_Ithilien] samwise_gamgee":[

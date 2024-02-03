@@ -41,6 +41,10 @@ export function OptionHero({
               }
               return newOption
             });
+          if(unit.model_id == "[azog's_legion] azog" && option.option == "Signal Tower") {
+            newHero.warband_size = 18
+            newWarband.max_units = 18
+          }
           newHero.options = newOptions
           newWarband.hero = newHero
         }
@@ -69,6 +73,10 @@ export function OptionHero({
               }
               return newOption
             });
+          if(unit.model_id == "[azog's_legion] azog" && option.option == "Signal Tower") {
+            newHero.warband_size = 24
+            newWarband.max_units = 24
+          }
           newHero.options = newOptions
           newWarband.hero = newHero
         }
