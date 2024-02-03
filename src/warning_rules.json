@@ -273,6 +273,13 @@
         "[dark_denizens_of_mirkwood] the_spider_queen"
       ],
       "warning":"A Bat Swarm may only lead a warband if your army also includes The Spider Queen"
+    },
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Dark Denizens of Mirkwood) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
   "[dark_denizens_of_mirkwood] fell_warg_cpt":[
@@ -282,6 +289,13 @@
         "[dark_denizens_of_mirkwood] the_spider_queen"
       ],
       "warning":"A Fell Warg may only lead a warband if your army also includes The Spider Queen"
+    },
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Dark Denizens of Mirkwood) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
   "[dark_denizens_of_mirkwood] giant_spider_cpt":[
@@ -291,6 +305,13 @@
         "[dark_denizens_of_mirkwood] the_spider_queen"
       ],
       "warning":"A Giant Spider may only lead a warband if your army also includes The Spider Queen"
+    },
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Dark Denizens of Mirkwood) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
   "[dark_denizens_of_mirkwood] mirkwood_spider_cpt":[
@@ -300,6 +321,13 @@
         "[dark_denizens_of_mirkwood] the_spider_queen"
       ],
       "warning":"A Mirkwood Spider may only lead a warband if your army also includes The Spider Queen"
+    },
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Dark Denizens of Mirkwood) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
   "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
@@ -474,6 +502,15 @@
       "warning":"Helm Hammerhand may not be included in the same force as any named Rohan Hero models."
     }
   ],
+  "[sharkey's_rogues] ruffian_cpt":[
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Sharkey's Rogues) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
+    }
+  ],
   "[survivors_of_lake-town] alfrid_the_councillor":[
     {
       "type":"requires_all",
@@ -496,6 +533,15 @@
         "[the_chief's_ruffians] harry_goatleaf"
       ],
       "warning":"A Ruffian leading a warband may only be included if all of the other Hero models from this Legendary Legion are already included in this force."
+    }
+  ],
+  "[the_dead_of_dunharrow] warrior_of_the_dead_cpt":[
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(The Dead of Dunharrow) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
   "[the_fellowship] arwen":[
@@ -595,6 +641,15 @@
         "[the_shire] samwise_the_brave"
       ],
       "warning":"Gandalf may not be included in the same force as Frodo, Sam, Merry or Pippin."
+    }
+  ],
+  "[wildmen_of_druadan] woses_warrior_cpt":[
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(Wildmen of Druadan) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ]
 }

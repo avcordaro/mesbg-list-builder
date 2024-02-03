@@ -40,7 +40,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.6.0"
+  const VERSION = "3.6.1"
   const UPDATED = "03-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
@@ -103,9 +103,10 @@ export default function App() {
       }
     });
     factions = new Set(factions.filter((e) => e !== undefined));
-    factions = [...factions]
+    factions = [...factions];
     setFactionList(factions);
-    calculateAllianceLevel(factions, faction_type)
+    let newAllianceLevel = calculateAllianceLevel(factions, faction_type);
+    setAllianceLevel(newAllianceLevel);
 
     // Every time roster is updated, update count of bows per faction
     let bowCounts = {};
@@ -146,7 +147,7 @@ export default function App() {
     let newUniqueModels = getAllUniqueModels()
     setUniqueModels(newUniqueModels);
 
-    checkWarnings(newUniqueModels, factions);
+    checkWarnings(newUniqueModels, factions, newAllianceLevel);
   }, [roster]);
 
   useEffect(() => {
@@ -210,12 +211,15 @@ export default function App() {
     return [ ...newUniqueModels ]
   }
 
-  const checkWarnings = (_uniqueModels, faction_list) => {
+  const checkWarnings = (_uniqueModels, faction_list, newAllianceLevel) => {
     let newWarnings = []
     _uniqueModels.map(model_id => {
       if (model_id in warning_rules) {
         let rules = warning_rules[model_id]
         rules.map(rule => {
+          if (rule['type'] == 'requires_alliance' && rule.dependencies[0] != newAllianceLevel) {
+            newWarnings.push(rule.warning);
+          }
           let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
           if (rule['type'] == 'requires_all' && intersection.length != rule.dependencies.length) {
             newWarnings.push(rule.warning);
@@ -256,15 +260,15 @@ export default function App() {
   const calculateAllianceLevel = (_factionList, _factionType) => {
     // Calculates overall alliance level for current army roster selection
     if (_factionType.includes('LL')) {
-      setAllianceLevel('Legendary Legion');
+      return 'Legendary Legion';
     }
     else if (_factionList.length == 0) {
       // If no factions currently selected
-      setAllianceLevel('n/a');
+      return 'n/a';
     }
     else if (_factionList.length == 1) {
       // If just one faction selected
-      setAllianceLevel('Historical');
+      return 'Historical';
     } else {
       // Create all possible pairs from the list of factions
       let faction_pairs = _factionList.flatMap((v, i) => _factionList.slice(i+1).map(w => [v, w]));
@@ -272,11 +276,11 @@ export default function App() {
       let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1]))
       // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
       if (pairs_alliances.includes('Impossible')) {
-        setAllianceLevel('Impossible');
+        return 'Impossible';
       } else if (pairs_alliances.includes('Convenient')) {
-        setAllianceLevel('Convenient');
+        return 'Convenient';
       } else {
-        setAllianceLevel('Historical');
+        return 'Historical';
       }
     }
   }
