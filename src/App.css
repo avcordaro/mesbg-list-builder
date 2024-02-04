@@ -91,7 +91,7 @@ pre {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid grey;
+  border: 1px solid #BEBEBE;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }

@@ -5264,6 +5264,665 @@
     ]
   },
   {
+    "model_id":"[dark_powers_of_dol_guldur] the_necromancer_of_dol_guldur",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Necromancer of Dol Guldur",
+    "unit_type":"Hero of Legend",
+    "base_points":250,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":250,
+    "pointsTotal":250,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] khamul_the_easterling",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"Khamul the Easterling",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_abyssal_knight_1",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Abyssal Knight",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_abyssal_knight_2",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Abyssal Knight",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_dark_headsman",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Dark Headsman",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_forsaken",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Forsaken",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_lingering_shadow",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Lingering Shadow",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_slayer_of_men_1",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Slayer of Men",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_slayer_of_men_2",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Slayer of Men",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_witch-king_of_angmar",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Witch-king of Angmar",
+    "unit_type":"Hero of Valour",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] the_keeper_of_the_dungeons",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"The Keeper of the Dungeons",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] gundabad_orc_captain",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1523",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1524",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] hunter_orc_captain",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Azog's Hunters",
+    "name":"Hunter Orc Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":45,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":45,
+    "pointsTotal":45,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1519",
+        "option":"Fell Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1520",
+        "option":"Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1521",
+        "option":"Two-Handed Pick",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1522",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] castellan_of_dol_guldur",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Powers of Dol Guldur",
+    "name":"Castellan of Dol Guldur",
+    "unit_type":"Minor Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"OPT1518",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] thrain_the_broken",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Thrain the Broken",
+    "unit_type":"Independent Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] mirkwood_spider",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Dark Denizens of Mirkwood",
+    "name":"Mirkwood Spider",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] fell_warg",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fell Warg",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Azog's Legion",
+    "name":"Gundabad Orc Warrior",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1531",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1532",
+        "option":"Shield",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1533",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1534",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[dark_powers_of_dol_guldur] hunter_orc",
+    "faction_type":"Evil Army",
+    "faction":"Dark Powers of Dol Guldur",
+    "profile_origin":"Azog's Hunters",
+    "name":"Hunter Orc",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1525",
+        "option":"War Horn",
+        "points":30.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1526",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1527",
+        "option":"Fell Warg",
+        "points":8.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1528",
+        "option":"Orc Bow",
+        "points":1.0,
+        "type":"bow",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1529",
+        "option":"Two-Handed Pick",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1530",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[defenders_of_helm's_deep] theoden",
     "faction_type":"Good LL",
     "faction":"Defenders of Helm's Deep",
@@ -6997,6 +7656,35 @@
         "option_id":"OPT0271",
         "option":"Swap Weapon",
         "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[desolator_of_the_north] smaug",
+    "faction_type":"Evil Army",
+    "faction":"Desolator of the North",
+    "profile_origin":"Desolator of the North",
+    "name":"Smaug",
+    "unit_type":"Hero of Legend",
+    "base_points":700,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":700,
+    "pointsTotal":700,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -8974,6 +9662,247 @@
         "type":null,
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] the_goblin_king",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"The Goblin King",
+    "unit_type":"Hero of Legend",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":18,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] goblin_mercenary_captain",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Azog's Legion",
+    "name":"Goblin Mercenary Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1538",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] grinnah",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"Grinnah",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] goblin_captain",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"Goblin Captain",
+    "unit_type":"Hero of Fortitude",
+    "base_points":35,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1535",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] the_goblin_scribe",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"The Goblin Scribe",
+    "unit_type":"Minor Hero",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] gollum",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"Gollum",
+    "unit_type":"Independent Hero",
+    "base_points":35,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":35,
+    "pointsTotal":35,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] goblin_mercenary",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Azog's Legion",
+    "name":"Goblin Mercenary",
+    "unit_type":"Warrior",
+    "base_points":5,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":5,
+    "pointsTotal":5,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1539",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[goblin-town] goblin_warrior",
+    "faction_type":"Evil Army",
+    "faction":"Goblin-town",
+    "profile_origin":"Goblin-town",
+    "name":"Goblin Warrior",
+    "unit_type":"Warrior",
+    "base_points":4,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":4,
+    "pointsTotal":4,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"OPT1536",
+        "option":"Two-Handed Axe",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1537",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
         "opt_quantity":0.0
       }
     ]
@@ -20149,6 +21078,35 @@
     ]
   },
   {
+    "model_id":"[sharkey's_rogues] harry_goatleaf",
+    "faction_type":"Evil Army",
+    "faction":"Sharkey's Rogues",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Harry Goatleaf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[sharkey's_rogues] lotho_sackville-baggins",
     "faction_type":"Evil Army",
     "faction":"Sharkey's Rogues",
@@ -20246,35 +21204,6 @@
         "option_id":"OPT0853",
         "option":"Whip",
         "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[sharkey's_rogues] harry_goatleaf",
-    "faction_type":"Evil Army",
-    "faction":"Sharkey's Rogues",
-    "profile_origin":"Sharkey's Rogues",
-    "name":"Harry Goatleaf",
-    "unit_type":"Minor Hero",
-    "base_points":40,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":40,
-    "pointsTotal":40,
-    "warband_size":6,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -21812,6 +22741,35 @@
     ]
   },
   {
+    "model_id":"[the_chief's_ruffians] harry_goatleaf",
+    "faction_type":"Evil LL",
+    "faction":"The Chief's Ruffians",
+    "profile_origin":"Sharkey's Rogues",
+    "name":"Harry Goatleaf",
+    "unit_type":"Hero of Fortitude",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_chief's_ruffians] lotho_sackville-baggins",
     "faction_type":"Evil LL",
     "faction":"The Chief's Ruffians",
@@ -21909,35 +22867,6 @@
         "option_id":"OPT0919",
         "option":"Whip",
         "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[the_chief's_ruffians] harry_goatleaf",
-    "faction_type":"Evil LL",
-    "faction":"The Chief's Ruffians",
-    "profile_origin":"Sharkey's Rogues",
-    "name":"Harry Goatleaf",
-    "unit_type":"Minor Hero",
-    "base_points":40,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":40,
-    "pointsTotal":40,
-    "warband_size":6,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -28918,6 +29847,93 @@
     ]
   },
   {
+    "model_id":"[the_trolls] bill_the_troll",
+    "faction_type":"Evil Army",
+    "faction":"The Trolls",
+    "profile_origin":"The Trolls",
+    "name":"Bill the Troll",
+    "unit_type":"Hero of Valour",
+    "base_points":150,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":150,
+    "pointsTotal":150,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1540",
+        "option":"Campfire",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_trolls] bert_the_troll",
+    "faction_type":"Evil Army",
+    "faction":"The Trolls",
+    "profile_origin":"The Trolls",
+    "name":"Bert the Troll",
+    "unit_type":"Hero of Fortitude",
+    "base_points":130,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":130,
+    "pointsTotal":130,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_trolls] tom_the_troll",
+    "faction_type":"Evil Army",
+    "faction":"The Trolls",
+    "profile_origin":"The Trolls",
+    "name":"Tom the Troll",
+    "unit_type":"Hero of Fortitude",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_white_council] saruman_the_white",
     "faction_type":"Good Army",
     "faction":"The White Council",
@@ -29171,6 +30187,35 @@
     "pointsPerUnit":130,
     "pointsTotal":130,
     "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[the_white_council] thrain_the_broken",
+    "faction_type":"Good Army",
+    "faction":"The White Council",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Thrain the Broken",
+    "unit_type":"Independent Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
     "options":[
       {
         "option_id":"None",

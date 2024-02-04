@@ -40,8 +40,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.6.2"
-  const UPDATED = "03-Feb-24"
+  const VERSION = "3.7.0"
+  const UPDATED = "04-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -158,10 +158,20 @@ export default function App() {
     }
     //If alliance level chaneges, and Army of Lake-town is included in army, there might be some changes needed for the Master of Lake-town
     if (factionList.includes("Army of Lake-town")) {
-      console.log("1")
       let newRoster = handleMasterLaketown(roster, allianceLevel);
       setRoster(newRoster);
     }
+    //If alliance level chaneges, and Goblin-town is included in army, there might be some changes needed for the warband sizes
+    if (factionList.includes("Goblin-town")) {
+      let newRoster = handleGoblinTown(roster, allianceLevel);
+      setRoster(newRoster);
+    }
+    //If alliance level chaneges, and The Trolls are included in army, there might be some changes needed for Bill's campfire
+    if (factionList.includes("The Trolls")) {
+      let newRoster = handleBillCampfire(roster, allianceLevel);
+      setRoster(newRoster);
+    }
+
   }, [allianceLevel]);
 
   const downloadProfileCards = async () => {
@@ -383,24 +393,79 @@ export default function App() {
   };
 
   const handleMasterLaketown = (roster, alliance_level) => {
-    // Specific logic for Mirkwood Rangers and counting towards bow limit, depending on if the alliance level is Historical or not.
+    // Specific logic for Master of Lake-town's heroic tier, depending on if the alliance level is Historical or not.
     let newRoster = { ...roster };
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.hero && newWarband.hero.model_id == "[army_of_lake-town] master_of_lake-town") {
-        console.log("2")
         let newHero = newWarband.hero
         newHero.warband_size = alliance_level == 'Historical' ? 15 : 12;
         newHero.unit_type = alliance_level == 'Historical' ? "Hero of Valour" : "Hero of Fortitude";
         newWarband.max_units = alliance_level == 'Historical' ? 15 : 12;
         newWarband.hero = newHero;
-        console.log(newWarband);
       }
       return newWarband;
     });
     newRoster.warbands = newWarbands;
-    console.log(newRoster);
     return newRoster
+  };
+
+  const handleGoblinTown = (roster, alliance_level) => {
+    // Specific logic for Goblin-town warband sizes, depending on if the alliance level is Historical or not.
+    let sizes = {
+      "Hero of Legend": 18,
+      "Hero of Valour": 15,
+      "Hero of Fortitude": 12,
+      "Minor Hero": 6
+    }
+
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      if (newWarband.hero && newWarband.hero.faction == "Goblin-town") {
+        let newHero = newWarband.hero
+        newHero.warband_size = alliance_level == 'Historical' ? sizes[newHero.unit_type] + 6 : sizes[newHero.unit_type];
+        newWarband.max_units = alliance_level == 'Historical' ? sizes[newHero.unit_type] + 6 : sizes[newHero.unit_type];
+        newWarband.hero = newHero;
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands;
+    return newRoster
+  };
+
+  const handleBillCampfire = (roster, alliance_level) => {
+    // Specific logic for Bill the Troll's campfire cost, depending on if the alliance level is Historical or not.
+    let newRoster = { ...roster };
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newHero = { ...newWarband.hero }
+      if (newHero.model_id == "[the_trolls] bill_the_troll") {
+        let newOptions = newHero.options.map((_option) => {
+          let newOption = { ..._option };
+          if(newOption.option == "Campfire") {
+            if (newOption.opt_quantity == 1) {
+              newRoster['points'] = newRoster['points'] - newHero['pointsTotal']
+              newWarband['points'] = newWarband['points'] - newHero['pointsTotal'];
+              newHero['pointsPerUnit'] = newHero['pointsPerUnit'] - newOption['points']
+              newOption['points'] = alliance_level == 'Historical' ? 0 : 15
+              newHero['pointsPerUnit'] = newHero['pointsPerUnit'] + newOption['points']
+              newHero['pointsTotal'] = newHero['pointsPerUnit']
+              newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
+              newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
+            } else {
+              newOption['points'] = alliance_level == 'Historical' ? 0 : 15
+            }
+          }
+          return newOption
+        });
+        newHero.options = newOptions
+        newWarband.hero = newHero
+      }
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    return newRoster;
   };
 
   const handleExportJSON = () => {
@@ -685,7 +750,8 @@ export default function App() {
                   )
                 )}
               {(warband.hero != null && !['Independent Hero', 'Independent Hero*', 'Siege Engine'].includes(warband.hero.unit_type) 
-                && warband.hero.model_id != "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)")  &&
+                && warband.hero.model_id != "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)") 
+                && warband.hero.model_id !="[desolator_of_the_north] smaug"  &&
                 <Button
                   onClick={() => handleNewWarrior(warband.num)}
                   variant={"info"}

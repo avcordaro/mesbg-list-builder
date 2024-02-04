@@ -425,7 +425,7 @@
     ],
     "bow_limit":0.33
   },
-  "Goblin-Town":{
+  "Goblin-town":{
     "armyBonus":"<b>\"Down down down in Goblin-town\"<\/b> - Each Goblin Hero model may increase their maximum warband size by six models.",
     "primaryAllies":[
 
@@ -1197,7 +1197,7 @@
       "Azog's Hunters",
       "Dark Denizens of Mirkwood",
       "Dark Powers of Dol Guldur",
-      "Desolator o the North",
+      "Desolator of the North",
       "Goblin-town",
       "Moria"
     ],

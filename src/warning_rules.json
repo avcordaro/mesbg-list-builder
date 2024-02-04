@@ -330,6 +330,15 @@
       "warning":"(Dark Denizens of Mirkwood) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
+  "[dark_powers_of_dol_guldur] thrain_the_broken":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[dark_powers_of_dol_guldur] the_necromancer_of_dol_guldur"
+      ],
+      "warning":"(Dark Powers of Dol Goldur) Thrain the Broken may only be included if the Necromancer of Dol Guldur is also in your army."
+    }
+  ],
   "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)":[
     {
       "type":"incompatible",
@@ -641,6 +650,15 @@
         "[the_shire] samwise_the_brave"
       ],
       "warning":"Gandalf may not be included in the same force as Frodo, Sam, Merry or Pippin."
+    }
+  ],
+  "[the_white_council] thrain_the_broken":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[the_white_council] gandalf_the_grey"
+      ],
+      "warning":"(The White Council) Thrain the Broken may only be included if Gandalf the Grey is also in your army."
     }
   ],
   "[wildmen_of_druadan] woses_warrior_cpt":[

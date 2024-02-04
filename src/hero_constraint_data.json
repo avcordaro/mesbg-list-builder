@@ -1406,6 +1406,281 @@
       ]
     }
   ],
+  "[dark_powers_of_dol_guldur] castellan_of_dol_guldur":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] gundabad_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] hunter_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] khamul_the_easterling":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_abyssal_knight_1":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_abyssal_knight_2":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_dark_headsman":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_forsaken":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_keeper_of_the_dungeons":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_lingering_shadow":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_necromancer_of_dol_guldur":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] khamul_the_easterling",
+        "[dark_powers_of_dol_guldur] the_abyssal_knight_1",
+        "[dark_powers_of_dol_guldur] the_abyssal_knight_2",
+        "[dark_powers_of_dol_guldur] the_dark_headsman",
+        "[dark_powers_of_dol_guldur] the_forsaken",
+        "[dark_powers_of_dol_guldur] the_lingering_shadow",
+        "[dark_powers_of_dol_guldur] the_slayer_of_men_1",
+        "[dark_powers_of_dol_guldur] the_slayer_of_men_2",
+        "[dark_powers_of_dol_guldur] the_witch-king_of_angmar",
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_slayer_of_men_1":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_slayer_of_men_2":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] the_witch-king_of_angmar":[
+    {
+      "valid_warband_units":[
+        "[dark_powers_of_dol_guldur] hunter_orc",
+        "[dark_powers_of_dol_guldur] gundabad_orc_warrior",
+        "[dark_powers_of_dol_guldur] mirkwood_spider",
+        "[dark_powers_of_dol_guldur] fell_warg",
+        "[dark_powers_of_dol_guldur] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[dark_powers_of_dol_guldur] thrain_the_broken":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[defenders_of_helm's_deep] aldor":[
     {
       "valid_warband_units":[
@@ -1987,6 +2262,20 @@
       ]
     }
   ],
+  "[desolator_of_the_north] smaug":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[erebor_reclaimed_(king_dain)] bifur_the_dwarf,_champion_of_erebor":[
     {
       "valid_warband_units":[
@@ -2543,6 +2832,96 @@
       "valid_warband_units":[
         "[garrison_of_dale_(girion)] knight_of_dale",
         "[garrison_of_dale_(girion)] warrior_of_dale"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] goblin_captain":[
+    {
+      "valid_warband_units":[
+        "[goblin-town] goblin_warrior",
+        "[goblin-town] gollum"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] goblin_mercenary_captain":[
+    {
+      "valid_warband_units":[
+        "[goblin-town] goblin_warrior",
+        "[goblin-town] gollum",
+        "[goblin-town] goblin_mercenary"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] gollum":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] grinnah":[
+    {
+      "valid_warband_units":[
+        "[goblin-town] goblin_warrior",
+        "[goblin-town] gollum"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] the_goblin_king":[
+    {
+      "valid_warband_units":[
+        "[goblin-town] goblin_warrior",
+        "[goblin-town] gollum"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[goblin-town] the_goblin_scribe":[
+    {
+      "valid_warband_units":[
+        "[goblin-town] goblin_warrior",
+        "[goblin-town] gollum"
       ],
       "special_warband_options":[
 
@@ -8598,6 +8977,54 @@
       ]
     }
   ],
+  "[the_trolls] bert_the_troll":[
+    {
+      "valid_warband_units":[
+        "[the_trolls] bert_the_troll",
+        "[the_trolls] bill_the_troll",
+        "[the_trolls] tom_the_troll"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_trolls] bill_the_troll":[
+    {
+      "valid_warband_units":[
+        "[the_trolls] bert_the_troll",
+        "[the_trolls] bill_the_troll",
+        "[the_trolls] tom_the_troll"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_trolls] tom_the_troll":[
+    {
+      "valid_warband_units":[
+        "[the_trolls] bert_the_troll",
+        "[the_trolls] bill_the_troll",
+        "[the_trolls] tom_the_troll"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[the_white_council] celeborn":[
     {
       "valid_warband_units":[
@@ -8607,7 +9034,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8627,7 +9055,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8647,7 +9076,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8667,7 +9097,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8687,7 +9118,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8707,7 +9139,8 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
       ],
       "special_warband_options":[
 
@@ -8727,7 +9160,22 @@
         "[the_white_council] elrond",
         "[the_white_council] gandalf_the_grey",
         "[the_white_council] radagast_the_brown",
-        "[the_white_council] glorfindel"
+        "[the_white_council] glorfindel",
+        "[the_white_council] thrain_the_broken"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_white_council] thrain_the_broken":[
+    {
+      "valid_warband_units":[
+
       ],
       "special_warband_options":[
 
