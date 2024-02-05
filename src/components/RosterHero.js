@@ -137,7 +137,11 @@ export function RosterHero({
 
   const handleLeader = (e) => {
     let newRoster = { ...roster }
-    newRoster['leader_warband_num'] = warbandNum
+    if (newRoster['leader_warband_num'] == warbandNum) {
+      newRoster['leader_warband_num'] = null
+    } else {
+      newRoster['leader_warband_num'] = warbandNum
+    }
     setRoster(newRoster);
   }
 
@@ -167,12 +171,12 @@ export function RosterHero({
               {roster['leader_warband_num'] == warbandNum ? <h5 className="me-2 mb-3 text-success"><GiQueenCrown /></h5> : <h5 className="me-2 mb-3" style={{ color: "lightgrey"}}><GiQueenCrown /></h5>}
               <Form.Check
                 reverse
-                className="mb-3"
-                type="radio"
+                className={roster['leader_warband_num'] == warbandNum ? "mb-3 text-success" : "mb-3"}
+                type="switch"
                 label="Leader"
                 name="leader"
                 checked={roster["leader_warband_num"] == warbandNum}
-                onClick={handleLeader}
+                onChange={handleLeader}
               />
             </Stack>}
             <p className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "ms-2" : "ms-auto"} style={{ paddingRight: "10px" }}>
