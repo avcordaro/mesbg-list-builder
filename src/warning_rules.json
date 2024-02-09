@@ -17,6 +17,23 @@
       "warning":"This force must contain an Uruk-Hai Captain."
     }
   ],
+  "Assault on Lothlorien":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[assault_on_lothlorien] muzgur"
+      ],
+      "warning":"This force must always include Muzgur."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[assault_on_lothlorien] druzhag",
+        "[assault_on_lothlorien] ashrak"
+      ],
+      "warning":"This force must always include at least one named Goblin Hero model."
+    }
+  ],
   "Breaking of the Fellowship":[
     {
       "type":"compulsory",
@@ -40,6 +57,30 @@
         "[cirith_ungol] gorbag"
       ],
       "warning":"This force must contain Gorbag."
+    }
+  ],
+  "Defenders of Erebor":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[defenders_of_erebor] bifur_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] bofur_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] dori_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] dwalin_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] gloin_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] nori_the_dwarf,_champion_of_erebor",
+        "[defenders_of_erebor] dain_ironfoot,_king_under_the_mountain",
+        "[defenders_of_erebor] thorin_iii_stonehelm"
+      ],
+      "warning":"This force must contain at least one named Erebor Hero model."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[defenders_of_erebor] bard_ii,_prince_of_dale",
+        "[defenders_of_erebor] brand,_king_of_dale"
+      ],
+      "warning":"This force must contain at least one named Dale Hero model."
     }
   ],
   "Defenders of Helm's Deep":[
@@ -74,6 +115,15 @@
         "[depths_of_moria] the_balrog"
       ],
       "warning":"This force must contain The Balrog."
+    }
+  ],
+  "Fell Beings of Mirkwood":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[fell_beings_of_mirkwood] razgush"
+      ],
+      "warning":"This force must contain Razgush."
     }
   ],
   "Grand Army of the South":[
@@ -136,6 +186,15 @@
       "warning":"Ghan-Buri-Ghan's warband must contain a full warband of Woses Warriors."
     }
   ],
+  "Pits of Dol Guldur":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[pits_of_dol_guldur] azog"
+      ],
+      "warning":"This force must contain Azog."
+    }
+  ],
   "Rangers of Ithilien":[
     {
       "type":"compulsory",
@@ -166,6 +225,16 @@
       "warning":"This force must contain Smeagol."
     }
   ],
+  "Rangers of Mirkwood":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rangers_of_mirkwood] legolas_greenleaf,_prince_of_mirkwood",
+        "[rangers_of_mirkwood] tauriel"
+      ],
+      "warning":"This force must contain either Legolas or Tauriel."
+    }
+  ],
   "Riders of Eomer":[
     {
       "type":"compulsory",
@@ -173,6 +242,24 @@
         "[riders_of_eomer] eomer"
       ],
       "warning":"This force must contain Eomer."
+    }
+  ],
+  "Rise of the Necromancer":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[rise_of_the_necromancer] the_necromancer_of_dol_guldur"
+      ],
+      "warning":"This force must contain the Necromancer of Dol Guldur."
+    }
+  ],
+  "The Army of Dale":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_army_of_dale] brand,_king_of_dale"
+      ],
+      "warning":"This force must contain Brand, King of Dale."
     }
   ],
   "The Army of Gothmog":[
@@ -245,6 +332,29 @@
         "[ugluk's_scouts] ugluk"
       ],
       "warning":"This force must contain Ugluk."
+    }
+  ],
+  "Vanquishers of the Necromancer":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[vanquishers_of_the_necromancer] galadriel,_lady_of_light"
+      ],
+      "warning":"This force must contain Galadriel, Lady of Light."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[vanquishers_of_the_necromancer] saruman_the_white"
+      ],
+      "warning":"This force must contain Saruman the White."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[vanquishers_of_the_necromancer] gandalf_the_grey"
+      ],
+      "warning":"This force must contain Gandalf the Grey."
     }
   ],
   "Wolves of Isengard":[
