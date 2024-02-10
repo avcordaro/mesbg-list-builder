@@ -348,7 +348,7 @@
     "bow_limit":0.33
   },
   "The Return of the King":{
-    "armyBonus":"<b>\"The King of the Dead\"<\/b> - The King of the Dead gains the Harbinger of Evil special rule.<br\/><br\/><b>\"The Heir of Isildur\"<\/b> - Aragorn does not have to pay any points for And\u00faril, Flame of the West, he automatically has this upgrade - it is free.<br\/><br\/><b>\"Fight for us and Regain Your Honor\"<\/b> - Spirit models from this army list count as being in range of a banner if Aragorn is within 6\".<br\/> ",
+    "armyBonus":"This army must include both Aragorn and the King of the Dead. Aragorn is always the army's leader. Aragorn, Legolas and Gimli may all lead Warriors of the Dead and Riders of the Dead.<br\/><br\/><b>\"The King of the Dead\"<\/b> - The King of the Dead gains the Harbinger of Evil special rule.<br\/><br\/><b>\"The Heir of Isildur\"<\/b> - Aragorn does not have to pay any points for And\u00faril, Flame of the West, he automatically has this upgrade - it is free.<br\/><br\/><b>\"Fight for us and Regain Your Honor\"<\/b> - Spirit models from this army list count as being in range of a banner if Aragorn is within 6\".<br\/> ",
     "primaryAllies":[
 
     ],
@@ -484,7 +484,7 @@
     "bow_limit":0.33
   },
   "The Host of the Dragon Emperor":{
-    "armyBonus":"<b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to.<br\/> <br\/><b>\"The Dragon Cults\"<\/b> - Easterling Warriors and Easterling Kataphrakts in warbands led by the Dragon Emperor or Easterling Dragon Knights do not need to pay the points to be upgraded to Black Dragons - this upgrade is free.<br\/><br\/><b>\"Heroes of the Easterlings\"<\/b> - Easterling Hero models may re-roll a D6 in a Duel roll.",
+    "armyBonus":"This army must include the Dragon Emperor of Rhun.<br\/><br\/><b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to.<br\/> <br\/><b>\"The Dragon Cults\"<\/b> - Easterling Warriors and Easterling Kataphrakts in warbands led by the Dragon Emperor or Easterling Dragon Knights do not need to pay the points to be upgraded to Black Dragons - this upgrade is free.<br\/><br\/><b>\"Heroes of the Easterlings\"<\/b> - Easterling Hero models may re-roll a D6 in a Duel roll.",
     "primaryAllies":[
 
     ],

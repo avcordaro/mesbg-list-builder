@@ -298,6 +298,15 @@
       "warning":"This force must contain Aragorn."
     }
   ],
+  "The Host of the Dragon Emperor":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_host_of_the_dragon_emperor] the_dragon_emperor"
+      ],
+      "warning":"This force must contain the Dragon Emperor."
+    }
+  ],
   "The Men of the West":[
     {
       "type":"compulsory",
@@ -305,6 +314,22 @@
         "[the_men_of_the_west] aragorn,_king_elessar"
       ],
       "warning":"This force must contain Aragorn, King Elessar."
+    }
+  ],
+  "The Return of the King":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_return_of_the_king] aragorn,_strider"
+      ],
+      "warning":"This force must contain Aragorn, Strider."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_return_of_the_king] the_king_of_the_dead"
+      ],
+      "warning":"This force must contain the King of the Dead."
     }
   ],
   "The Riders of Theoden":[
