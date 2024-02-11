@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.d86e450c.js",
+    "main.js": "/mesbg-list-builder/static/js/main.a0b02e00.js",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6444093ba29ea19bc93a.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.ecd928d210e457b60584.jpg",
@@ -37,7 +37,8 @@
     "static/media/The Goblin King.jpg": "/mesbg-list-builder/static/media/The Goblin King.03f410fc7e8c2b588cc3.jpg",
     "static/media/Isengard Assault Ballista.jpg": "/mesbg-list-builder/static/media/Isengard Assault Ballista.9e4b96796c8994fef1d1.jpg",
     "static/media/Girion, Lord of Dale.jpg": "/mesbg-list-builder/static/media/Girion, Lord of Dale.c4a866ca8214c0d0e39c.jpg",
-    "static/media/Thrain the Broken.jpg": "/mesbg-list-builder/static/media/Thrain the Broken.f0c7d85e6f591d6eed4b.jpg",
+    "static/media/Thrain the Broken (Evil).jpg": "/mesbg-list-builder/static/media/Thrain the Broken (Evil).f0c7d85e6f591d6eed4b.jpg",
+    "static/media/Thrain the Broken (Good).jpg": "/mesbg-list-builder/static/media/Thrain the Broken (Good).f0c7d85e6f591d6eed4b.jpg",
     "static/media/Bolg.jpg": "/mesbg-list-builder/static/media/Bolg.a0d39600f0b7daacacc7.jpg",
     "static/media/Kili the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Kili the Dwarf, Champion of Erebor.c1ecfbf87f9b9365771e.jpg",
     "static/media/Harry Goatleaf.jpg": "/mesbg-list-builder/static/media/Harry Goatleaf.14b3f6f6052ac01613b9.jpg",
@@ -791,7 +792,8 @@
     "static/media/Angbor the Fearless.png": "/mesbg-list-builder/static/media/Angbor the Fearless.9239c256073f08a38551.png",
     "static/media/Dori the Dwarf, Champion of Erebor.png": "/mesbg-list-builder/static/media/Dori the Dwarf, Champion of Erebor.de321aad6b594dd036e8.png",
     "static/media/Thorin Oakenshield, King Under the Mountain.png": "/mesbg-list-builder/static/media/Thorin Oakenshield, King Under the Mountain.af37587e39a6da1d0a30.png",
-    "static/media/Thrain the Broken.png": "/mesbg-list-builder/static/media/Thrain the Broken.9d9a2edb4b47c7a293df.png",
+    "static/media/Thrain the Broken (Evil).png": "/mesbg-list-builder/static/media/Thrain the Broken (Evil).9d9a2edb4b47c7a293df.png",
+    "static/media/Thrain the Broken (Good).png": "/mesbg-list-builder/static/media/Thrain the Broken (Good).9d9a2edb4b47c7a293df.png",
     "static/media/Brorgir.png": "/mesbg-list-builder/static/media/Brorgir.ec93b02548f078fab93b.png",
     "static/media/Easterling Dragon Knight.png": "/mesbg-list-builder/static/media/Easterling Dragon Knight.85a824e28cb673f31463.png",
     "static/media/Aragorn, Strider.png": "/mesbg-list-builder/static/media/Aragorn, Strider.8d2edd6caff2600ec54d.png",
@@ -917,10 +919,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.d86e450c.js.map": "/mesbg-list-builder/static/js/main.d86e450c.js.map"
+    "main.a0b02e00.js.map": "/mesbg-list-builder/static/js/main.a0b02e00.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.d86e450c.js"
+    "static/js/main.a0b02e00.js"
   ]
 }
