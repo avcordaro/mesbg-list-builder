@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.31dad611.js",
+    "main.js": "/mesbg-list-builder/static/js/main.d86e450c.js",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6444093ba29ea19bc93a.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.ecd928d210e457b60584.jpg",
@@ -240,6 +240,7 @@
     "static/media/Wild Man Oathmaker.jpg": "/mesbg-list-builder/static/media/Wild Man Oathmaker.0b4d54f102570a59dfc9.jpg",
     "static/media/Black Numenorean Marshall.jpg": "/mesbg-list-builder/static/media/Black Numenorean Marshall.567f0a8e0f78fbd2b820.jpg",
     "static/media/Watcher of Karna.jpg": "/mesbg-list-builder/static/media/Watcher of Karna.be21aa57179068fa70a4.jpg",
+    "static/media/Lurtz.jpg": "/mesbg-list-builder/static/media/Lurtz.be19c043850a808ab31e.jpg",
     "static/media/Bandobras Took.jpg": "/mesbg-list-builder/static/media/Bandobras Took.8ce9ba4cf410438dcd06.jpg",
     "static/media/Cirdan.jpg": "/mesbg-list-builder/static/media/Cirdan.b293e6e7d5afc0928749.jpg",
     "static/media/Halbarad.jpg": "/mesbg-list-builder/static/media/Halbarad.2c2de4a14135f095cf85.jpg",
@@ -260,7 +261,6 @@
     "static/media/Boromir of Gondor.jpg": "/mesbg-list-builder/static/media/Boromir of Gondor.7ca879a4ae927f215adb.jpg",
     "static/media/Muzgur.jpg": "/mesbg-list-builder/static/media/Muzgur.f56e336618d3ebb17648.jpg",
     "static/media/Zagdush.jpg": "/mesbg-list-builder/static/media/Zagdush.896761dcac7d9d0278ee.jpg",
-    "static/media/Lurtz.jpg": "/mesbg-list-builder/static/media/Lurtz.66eb75e04fdab52d91b3.jpg",
     "static/media/Goroth.jpg": "/mesbg-list-builder/static/media/Goroth.9af2b90bbeb0f5c3c2b8.jpg",
     "static/media/Mirkwood Captain.jpg": "/mesbg-list-builder/static/media/Mirkwood Captain.693f94ccf118b3fe7d00.jpg",
     "static/media/Captain of Numenor.jpg": "/mesbg-list-builder/static/media/Captain of Numenor.bc18c2a080d3490379da.jpg",
@@ -917,10 +917,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.31dad611.js.map": "/mesbg-list-builder/static/js/main.31dad611.js.map"
+    "main.d86e450c.js.map": "/mesbg-list-builder/static/js/main.d86e450c.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.31dad611.js"
+    "static/js/main.d86e450c.js"
   ]
 }
