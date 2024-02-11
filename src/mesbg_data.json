@@ -6361,35 +6361,6 @@
     ]
   },
   {
-    "model_id":"[dark_powers_of_dol_guldur] thrain_the_broken",
-    "faction_type":"Evil Army",
-    "faction":"Dark Powers of Dol Guldur",
-    "profile_origin":"Wanderers in the Wild",
-    "name":"Thrain the Broken",
-    "unit_type":"Independent Hero",
-    "base_points":10,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":10,
-    "pointsTotal":10,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[dark_powers_of_dol_guldur] mirkwood_spider",
     "faction_type":"Evil Army",
     "faction":"Dark Powers of Dol Guldur",
@@ -28411,7 +28382,7 @@
     "model_id":"[the_iron_hills] murin_&_drar",
     "faction_type":"Good Army",
     "faction":"The Iron Hills",
-    "profile_origin":"The Iron Hills",
+    "profile_origin":"Wanderers in the Wild",
     "name":"Murin & Drar",
     "unit_type":"Hero of Fortitude",
     "base_points":140,
@@ -33132,35 +33103,6 @@
     ]
   },
   {
-    "model_id":"[the_white_council] thrain_the_broken",
-    "faction_type":"Good Army",
-    "faction":"The White Council",
-    "profile_origin":"Wanderers in the Wild",
-    "name":"Thrain the Broken",
-    "unit_type":"Independent Hero",
-    "base_points":10,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":false,
-    "siege_crew":0,
-    "quantity":1,
-    "pointsPerUnit":10,
-    "pointsTotal":10,
-    "warband_size":1,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
     "model_id":"[theodred's_guard] theodred",
     "faction_type":"Good LL",
     "faction":"Theodred's Guard",
@@ -34758,6 +34700,296 @@
         "option_id":"OPT1289",
         "option":"Swap Axe for Bow",
         "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(evil)] thrain_the_broken_(evil)",
+    "faction_type":"Evil Army",
+    "faction":"Wanderers in the Wild (Evil)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Thrain the Broken (Evil)",
+    "unit_type":"Independent Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] grimbeorn",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Grimbeorn",
+    "unit_type":"Hero of Valour",
+    "base_points":200,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":200,
+    "pointsTotal":200,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] murin_&_drar",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Murin & Drar",
+    "unit_type":"Hero of Fortitude",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] barliman_butterbur",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Barliman Butterbur",
+    "unit_type":"Minor Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] harry_goatleaf",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Harry Goatleaf",
+    "unit_type":"Minor Hero",
+    "base_points":40,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":40,
+    "pointsTotal":40,
+    "warband_size":6,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] tom_bombadil",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Tom Bombadil",
+    "unit_type":"Independent Hero",
+    "base_points":160,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":160,
+    "pointsTotal":160,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] goldberry",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Goldberry",
+    "unit_type":"Independent Hero",
+    "base_points":140,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":140,
+    "pointsTotal":140,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] thrain_the_broken_(good)",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Thrain the Broken (Good)",
+    "unit_type":"Independent Hero",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] bill_the_pony",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"The Fellowship",
+    "name":"Bill the Pony",
+    "unit_type":"Independent Hero*",
+    "base_points":10,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":10,
+    "pointsTotal":10,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[wanderers_in_the_wild_(good)] beorning",
+    "faction_type":"Good Army",
+    "faction":"Wanderers in the Wild (Good)",
+    "profile_origin":"Wanderers in the Wild",
+    "name":"Beorning",
+    "unit_type":"Warrior",
+    "base_points":20,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "quantity":1,
+    "pointsPerUnit":20,
+    "pointsTotal":20,
+    "warband_size":1,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,

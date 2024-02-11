@@ -40,7 +40,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.8.1"
+  const VERSION = "4.0.0"
   const UPDATED = "11-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
@@ -104,9 +104,19 @@ export default function App() {
     });
     factions = new Set(factions.filter((e) => e !== undefined));
     factions = [...factions];
-    setFactionList(factions);
+
+    if (factions.includes("Wanderers in the Wild (Good)") || factions.includes("Wanderers in the Wild (Evil)")) {
+      factions = factions.filter((e) => e !== "Wanderers in the Wild (Good)" && e !== "Wanderers in the Wild (Evil)");
+      
+      roster.warbands.map((_warband) => {
+        if (_warband.hero && ["Wanderers in the Wild (Good)", "Wanderers in the Wild (Evil)"].includes(_warband.hero.faction)) {
+          factions.push(_warband.hero.name);
+        }
+      });
+    }
     let newAllianceLevel = calculateAllianceLevel(factions, faction_type);
     setAllianceLevel(newAllianceLevel);
+    setFactionList(factions);
 
     // Every time roster is updated, update count of bows per faction
     let bowCounts = {};
@@ -247,6 +257,9 @@ export default function App() {
       if (faction in warning_rules) {
         let rules = warning_rules[faction]
         rules.map(rule => {
+          if (rule['type'] == 'historical_dependent' && newAllianceLevel == "Historical" && faction_list.includes(rule.dependencies[0]) && !_uniqueModels.includes(rule.dependencies[1])) {
+            newWarnings.push(rule.warning); 
+          }
           let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
           if (rule['type'] == 'compulsory' && intersection.length == 0) {
             newWarnings.push(rule.warning);
@@ -623,7 +636,7 @@ export default function App() {
               }
               <h6>Bow Limit</h6> 
               <hr/>
-              {factionList.map((f) => (
+              {factionList.filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(x)).map((f) => (
                 <p className={factionBowCounts[f] > Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) ? 'text-danger' : 'text-dark'}>
                   <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit - " + Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) + " bows)"} <b>{factionBowCounts[f]} / {factionModelCounts[f]}</b>
                 </p>

@@ -18,7 +18,13 @@
       "The Shire",
       "The White Council",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -69,7 +75,13 @@
       "The Shire",
       "Survivors of Lake-town",
       "Thorin's Company",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -88,7 +100,9 @@
     "primaryAllies":[
       "Lothlorien",
       "The Misty Mountains",
-      "Rivendell"
+      "Rivendell",
+      "Barliman Butterbur",
+      "Harry Goatleaf"
     ],
     "secondaryAllies":[
       "The Dead of Dunharrow",
@@ -102,7 +116,11 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Grimbeorn",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -126,7 +144,13 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -135,7 +159,8 @@
     "primaryAllies":[
       "The Dead of Dunharrow",
       "The Fiefdoms",
-      "Rohan"
+      "Rohan",
+      "Murin & Drar"
     ],
     "secondaryAllies":[
       "Fangorn",
@@ -149,7 +174,12 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf"
     ],
     "bow_limit":0.33
   },
@@ -165,7 +195,9 @@
       "Lothlorien",
       "The Misty Mountains",
       "Rivendell",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -216,7 +248,9 @@
       "Radagast's Alliance",
       "Rivendell",
       "Thorin's Company",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -284,7 +318,11 @@
       "Rohan",
       "Fangorn",
       "The Shire",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Grimbeorn",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -300,7 +338,10 @@
       "The Misty Mountains",
       "Radagast's Alliance",
       "Rivendell",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -343,7 +384,13 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -453,7 +500,9 @@
       "Lothlorien",
       "The Misty Mountains",
       "Rivendell",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -484,7 +533,7 @@
     "bow_limit":0.33
   },
   "The Host of the Dragon Emperor":{
-    "armyBonus":"This army must include the Dragon Emperor of Rhun.<br\/><br\/><b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to.<br\/> <br\/><b>\"The Dragon Cults\"<\/b> - Easterling Warriors and Easterling Kataphrakts in warbands led by the Dragon Emperor or Easterling Dragon Knights do not need to pay the points to be upgraded to Black Dragons - this upgrade is free.<br\/><br\/><b>\"Heroes of the Easterlings\"<\/b> - Easterling Hero models may re-roll a D6 in a Duel roll.",
+    "armyBonus":"This force must include the Dragon Emperor of Rhun, who is always the army's leader.<br\/><br\/><b>\"No quarter was asked...\"<\/b> - Easterling models receive +1 Courage when their force is Broken. Additionally, once per game, in Scenarios in which a die is rolled to see when the game ends, so long as there is at least one Easterling Hero model alive and on the battlefield, the Easterling player may choose to have the dice re-rolled if the Scenario ends before they wish it to.<br\/> <br\/><b>\"The Dragon Cults\"<\/b> - Easterling Warriors and Easterling Kataphrakts in warbands led by the Dragon Emperor or Easterling Dragon Knights do not need to pay the points to be upgraded to Black Dragons - this upgrade is free.<br\/><br\/><b>\"Heroes of the Easterlings\"<\/b> - Easterling Hero models may re-roll a D6 in a Duel roll.",
     "primaryAllies":[
 
     ],
@@ -527,7 +576,13 @@
       "The Shire",
       "The White Council",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -559,7 +614,10 @@
       "Rohan",
       "Fangorn",
       "The Shire",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Grimbeorn"
     ],
     "bow_limit":0.33
   },
@@ -577,7 +635,9 @@
       "The Misty Mountains",
       "Radagast's Alliance",
       "Rivendell",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -595,7 +655,9 @@
       "Radagast's Alliance",
       "Rivendell",
       "Survivors of Lake-town",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -638,7 +700,9 @@
       "The Fellowship",
       "Halls of Thranduil",
       "Lothlorien",
-      "The Misty Mountains"
+      "The Misty Mountains",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -682,7 +746,13 @@
       "Survivors of Lake-town",
       "Thorin's Company",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -718,7 +788,13 @@
       "Survivors of Lake-town",
       "Thorin's Company",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -730,13 +806,38 @@
       "The Iron Hills"
     ],
     "secondaryAllies":[
+      "Army of Lake-town",
+      "Army of Thror",
+      "Arnor",
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
       "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Garrison of Dale (Girion)",
+      "Garrison of Dale (Brand)",
+      "Halls of Thranduil",
+      "The Iron Hills",
+      "The Kingdom of Khazad-Dum",
       "Lothlorien",
+      "Minas Tirith",
       "The Misty Mountains",
+      "Numenor",
       "Radagast's Alliance",
+      "The Rangers",
       "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Survivors of Lake-town",
       "Thorin's Company",
-      "The White Council"
+      "The White Council",
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf"
     ],
     "bow_limit":0.33
   },
@@ -754,7 +855,9 @@
       "The Misty Mountains",
       "Radagast's Alliance",
       "Rivendell",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -763,7 +866,8 @@
     "primaryAllies":[
       "Erebor Reclaimed (King Thorin)",
       "The Iron Hills",
-      "Survivors of Lake-town"
+      "Survivors of Lake-town",
+      "Grimbeorn"
     ],
     "secondaryAllies":[
       "Army of Lake-town",
@@ -788,7 +892,11 @@
       "The Shire",
       "Thorin's Company",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -852,7 +960,12 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -893,14 +1006,18 @@
       "Rivendell",
       "Survivors of Lake-town",
       "Thorin's Company",
-      "The White Council"
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
   "The White Council":{
     "armyBonus":"A White Council army may only include a single warband. Unlike the usual model limit of a Hero plus twelve Warriors, the White Council includes only Heroes, up to a maximum of ten.<br\/><br\/><b>\"Are you in need of assistance?\"<\/b> - A member of the White Council from this army list adds +1 to the dice roll when attempting to Resist magic, so long as there is another member of the White Council from this army list within 6\".",
     "primaryAllies":[
-      "Rivendell"
+      "Rivendell",
+      "Thrain the Broken (Good)"
     ],
     "secondaryAllies":[
       "Army of Lake-town",
@@ -922,7 +1039,10 @@
       "The Shire",
       "Survivors of Lake-town",
       "Thorin's Company",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -967,7 +1087,13 @@
       "The Shire",
       "Survivors of Lake-town",
       "The White Council",
-      "Wildmen of Druadan"
+      "Wildmen of Druadan",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -1052,7 +1178,9 @@
       "The Kingdom of Khazad-Dum",
       "Lothlorien",
       "The Misty Mountains",
-      "Rivendell"
+      "Rivendell",
+      "Tom Bombadil",
+      "Goldberry"
     ],
     "bow_limit":0.33
   },
@@ -1060,7 +1188,8 @@
     "armyBonus":"<b>\"His Spirit has lost none of its Potency\"<\/b> - Whenever the Necromancer of Dol Guldur attempts to cast a Magical Power, by expending one or more Will points, he automatically adds an extra free Will point to the Casting test.",
     "primaryAllies":[
       "Azog's Hunters",
-      "Azog's Legion"
+      "Azog's Legion",
+      "Thrain the Broken (Evil)"
     ],
     "secondaryAllies":[
       "Dark Denizens of Mirkwood",
@@ -1127,7 +1256,12 @@
       "The White Council",
       "Wildmen of Druadan",
       "Garrison of Dale (Brand)",
-      "Erebor Reclaimed (King Dain)"
+      "Erebor Reclaimed (King Dain)",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Murin & Drar"
     ],
     "bow_limit":0.33
   },
@@ -1243,10 +1377,223 @@
     ],
     "bow_limit":0.33
   },
-  "Wanderers in the Wild":{
-    "armyBonus":"As the Wanderers in the Wild are not an army, and not even really a fighting force, there is no Army Bonus for them.",
+  "Tom Bombadil":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
     "primaryAllies":[
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "Arnor",
+      "Fangorn",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "Numenor",
+      "Rivendell",
+      "Rohan",
+      "The Dead of Dunharrow",
+      "The Fellowship",
+      "The Fiefdoms",
+      "The Kingdom of Khazad-Dum",
+      "The Kingdom of Moria",
+      "The Misty Mountains",
+      "The Rangers",
+      "The Shire",
+      "Wildmen of Druadan",
+      "Thorin's Company",
+      "The Iron Hills",
+      "Army of Thror",
+      "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
+      "Garrison of Dale (Brand)",
+      "Garrison of Dale (Girion)",
+      "Army of Lake-town",
+      "Survivors of Lake-town",
+      "Radagast's Alliance",
+      "The White Council"
+    ],
+    "bow_limit":0.33
+  },
+  "Goldberry":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "Tom Bombadil",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "Arnor",
+      "Fangorn",
+      "Halls of Thranduil",
+      "Lothlorien",
+      "Minas Tirith",
+      "Numenor",
+      "Rivendell",
+      "Rohan",
+      "The Dead of Dunharrow",
+      "The Fellowship",
+      "The Fiefdoms",
+      "The Kingdom of Khazad-Dum",
+      "The Kingdom of Moria",
+      "The Misty Mountains",
+      "The Rangers",
+      "The Shire",
+      "Wildmen of Druadan",
+      "Thorin's Company",
+      "The Iron Hills",
+      "Army of Thror",
+      "Erebor Reclaimed (King Thorin)",
+      "Erebor Reclaimed (King Dain)",
+      "Garrison of Dale (Brand)",
+      "Garrison of Dale (Girion)",
+      "Army of Lake-town",
+      "Survivors of Lake-town",
+      "Radagast's Alliance",
+      "The White Council"
+    ],
+    "bow_limit":0.33
+  },
+  "Barliman Butterbur":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "The Fellowship",
+      "Tom Bombadil",
+      "Goldberry",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "The Shire",
+      "The Rangers",
+      "Minas Tirith",
+      "The Fiefdoms",
+      "The Dead of Dunharrow",
+      "Rohan",
+      "Wildmen of Druadan",
+      "Rivdendell",
+      "Lothlorien",
+      "Halls of Thranduil",
+      "Fangorn",
+      "The Misty Mountains"
+    ],
+    "bow_limit":0.33
+  },
+  "Grimbeorn":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "Halls of Thranduil",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Harry Goatleaf",
+      "Murin & Drar",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "The Dead of Dunharrow",
+      "Erebor Reclaimed (King Dain)",
+      "Fangorn",
+      "The Fellowship",
+      "The Fiefdoms",
+      "Garrison of Dale (Brand)",
+      "Lothlorien",
+      "Minas Tirith",
+      "The Misty Mountains",
+      "The Rangers",
+      "Rivendell",
+      "Rohan",
+      "The Shire",
+      "Wildmen of Druadan"
+    ],
+    "bow_limit":0.33
+  },
+  "Harry Goatleaf":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "The Fellowship",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Murin & Drar",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "The Rangers",
+      "Minas Tirith",
+      "The Fiefdoms",
+      "The Dead of Dunharrow",
+      "Rohan",
+      "Wildmen of Druadan",
+      "Rivendell",
+      "Lothlorien",
+      "Fangorn",
+      "The Misty Mountains"
+    ],
+    "bow_limit":0.33
+  },
+  "Murin & Drar":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "Minas Tirith",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Thrain the Broken (Good)"
+    ],
+    "secondaryAllies":[
+      "The Fellowship",
+      "The Shire",
+      "The Rangers",
+      "Minas Tirith",
+      "The Fiefdoms",
+      "The Dead of Dunharrow",
+      "Rohan",
+      "Wildmen of Druadan",
+      "Rivendell",
+      "Lothlorien",
+      "Fangorn",
+      "The Misty Mountains",
+      "Garrison of Dale (Brand)",
+      "Garrison of Dale (Girion)",
+      "Halls of Thranduil",
+      "Radagast's Alliance",
+      "The White Council"
+    ],
+    "bow_limit":0.33
+  },
+  "Thrain the Broken (Good)":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "The White Council",
+      "Tom Bombadil",
+      "Goldberry",
+      "Barliman Butterbur",
+      "Grimbeorn",
+      "Harry Goatleaf",
+      "Murin & Drar"
+    ],
+    "secondaryAllies":[
 
+    ],
+    "bow_limit":0.33
+  },
+  "Thrain the Broken (Evil)":{
+    "armyBonus":"Wanderers in the Wild do not have an army bonus.",
+    "primaryAllies":[
+      "Dark Powers of Dol Guldur"
     ],
     "secondaryAllies":[
 

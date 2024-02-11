@@ -34,26 +34,49 @@ export function Alliances({ showAlliances, setShowAlliances, factionList }) {
                   <h5>
                     <Badge bg="success">Historical</Badge>
                   </h5>
-                  {faction_data[f]["primaryAllies"].map((a) => (
-                    <>
-                      <span>
-                        <img
-                          className="faction_logo"
-                          src={(() => {
-                            try {
-                              return require("../images/faction_logos/" +
-                                a +
-                                ".png");
-                            } catch (e) {
-                              return require("../images/default.png");
-                            }
-                          })()}
-                        />
-                        {" " + a}
-                      </span>
-                      <br />
-                    </>
-                  ))}
+                  {["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(f) ?
+                    faction_data[f]["primaryAllies"].filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(x)).map((a) => (
+                      <>
+                        <span>
+                          <img
+                            className="faction_logo"
+                            src={(() => {
+                              try {
+                                return require("../images/faction_logos/" +
+                                  a +
+                                  ".png");
+                              } catch (e) {
+                                return require("../images/default.png");
+                              }
+                            })()}
+                          />
+                          {" " + a}
+                        </span>
+                        <br />
+                      </>
+                    ))
+                    :
+                    faction_data[f]["primaryAllies"].map((a) => (
+                      <>
+                        <span>
+                          <img
+                            className="faction_logo"
+                            src={(() => {
+                              try {
+                                return require("../images/faction_logos/" +
+                                  a +
+                                  ".png");
+                              } catch (e) {
+                                return require("../images/default.png");
+                              }
+                            })()}
+                          />
+                          {" " + a}
+                        </span>
+                        <br />
+                      </>
+                    ))
+                  }
                 </div>
               )}
               {faction_data[f]["secondaryAllies"].length > 0 && (

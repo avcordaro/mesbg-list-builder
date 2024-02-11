@@ -145,6 +145,16 @@
       "warning":"This force must contain at least one Mumak model."
     }
   ],
+  "Grimbeorn":[
+    {
+      "type":"historical_dependent",
+      "dependencies":[
+        "Halls of Thranduil",
+        "[halls_of_thranduil] thranduil"
+      ],
+      "warning":"Thranduil must be included for the Historical alliance level between Grimbeorn and the Halls of Thranduil."
+    }
+  ],
   "Helm's Guard":[
     {
       "type":"compulsory",
@@ -161,6 +171,16 @@
         "[lurtz's_scouts] lurtz"
       ],
       "warning":"This force must contain Lurtz."
+    }
+  ],
+  "Murin & Drar":[
+    {
+      "type":"historical_dependent",
+      "dependencies":[
+        "Minas Tirith",
+        "[minas_tirith] cirion"
+      ],
+      "warning":"Cirion must be included for the Historical alliance level between Murin & Drar and Minas Tirith."
     }
   ],
   "Paths of the Druadan":[
@@ -348,6 +368,26 @@
         "[theodred's_guard] theodred"
       ],
       "warning":"This force must contain Theodred."
+    }
+  ],
+  "Thrain the Broken (Evil)":[
+    {
+      "type":"historical_dependent",
+      "dependencies":[
+        "Dark Powers of Dol Guldur",
+        "[dark_powers_of_dol_guldur] the_necromancer_of_dol_guldur"
+      ],
+      "warning":"The Necromancer must be included for the Historical alliance level between Thrain the Broken (Good) and the Dark Powers of Dol Guldur."
+    }
+  ],
+  "Thrain the Broken (Good)":[
+    {
+      "type":"historical_dependent",
+      "dependencies":[
+        "The White Council",
+        "[the_white_council] gandalf_the_grey"
+      ],
+      "warning":"Gandalf the Grey must be included for the Historical alliance level between Thrain the Broken (Good) and The White Council."
     }
   ],
   "Ugluk's Scouts":[

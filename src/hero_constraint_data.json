@@ -10827,6 +10827,118 @@
       ]
     }
   ],
+  "[wanderers_in_the_wild_(evil)] thrain_the_broken_(evil)":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] barliman_butterbur":[
+    {
+      "valid_warband_units":[
+        "[wanderers_in_the_wild_(good)] bill_the_pony"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] goldberry":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] grimbeorn":[
+    {
+      "valid_warband_units":[
+        "[wanderers_in_the_wild_(good)] beorning"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] harry_goatleaf":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] murin_&_drar":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] thrain_the_broken_(good)":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wanderers_in_the_wild_(good)] tom_bombadil":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[wildmen_of_druadan] ghan-buri-ghan":[
     {
       "valid_warband_units":[
