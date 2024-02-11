@@ -636,7 +636,7 @@ export default function App() {
               }
               <h6>Bow Limit</h6> 
               <hr/>
-              {factionList.filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(x)).map((f) => (
+              {factionList.filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)"].includes(x)).map((f) => (
                 <p className={factionBowCounts[f] > Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) ? 'text-danger' : 'text-dark'}>
                   <b>{f}:</b>{" (" + faction_data[f]['bow_limit']*100 + "% limit - " + Math.ceil(faction_data[f]['bow_limit'] * factionModelCounts[f]) + " bows)"} <b>{factionBowCounts[f]} / {factionModelCounts[f]}</b>
                 </p>
