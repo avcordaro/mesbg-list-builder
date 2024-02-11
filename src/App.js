@@ -40,8 +40,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "3.8.0"
-  const UPDATED = "09-Feb-24"
+  const VERSION = "3.8.1"
+  const UPDATED = "11-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -180,7 +180,7 @@ export default function App() {
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
         profileCards.add([_warband.hero.profile_origin, _warband.hero.name]);
-        if (hero_constraint_data[_warband.hero.model_id][0]['extra_profiles'].length > 0) {
+        if (_warband.hero.unit_type != "Siege Engine" && hero_constraint_data[_warband.hero.model_id][0]['extra_profiles'].length > 0) {
           hero_constraint_data[_warband.hero.model_id][0]['extra_profiles'].map((_profile) => {
             profileCards.add([_warband.hero.profile_origin, _profile]);
           })
@@ -195,7 +195,7 @@ export default function App() {
     profileCards = [ ...profileCards ]
 
     const zip = new JSZip();
-    for (const card of profileCards) {
+      for (const card of profileCards) {
       const blob = await fetch(require('./images/' + card[0] + /cards/ + card[1] + ".jpg")).then(res => res.blob());
       zip.file(card[1] + ".jpg", blob, {binary:true});
     }
