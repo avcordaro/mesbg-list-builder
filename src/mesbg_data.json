@@ -3803,7 +3803,7 @@
       {
         "option_id":"OPT0082",
         "option":"Armoured Horse",
-        "points":10.0,
+        "points":15.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,
@@ -5313,7 +5313,7 @@
       {
         "option_id":"OPT0173",
         "option":"Armoured Horse",
-        "points":10.0,
+        "points":15.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,
@@ -17244,7 +17244,7 @@
       {
         "option_id":"OPT0547",
         "option":"Armoured Horse",
-        "points":10.0,
+        "points":15.0,
         "type":"mount",
         "min":0.0,
         "max":1.0,
