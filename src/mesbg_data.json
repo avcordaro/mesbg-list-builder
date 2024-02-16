@@ -5235,24 +5235,6 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT0194",
-        "option":"Horse",
-        "points":10.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT0195",
-        "option":"Bow with Poisoned Arrows",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT0196",
         "option":"Swap Weapon",
         "points":5.0,
@@ -31505,24 +31487,6 @@
         "option":"Horse",
         "points":10.0,
         "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1192",
-        "option":"Bow with Poisoned Arrows",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1193",
-        "option":"Swap Weapon",
-        "points":5.0,
-        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
