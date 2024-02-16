@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.6723b476.js",
+    "main.js": "/mesbg-list-builder/static/js/main.31f80678.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -287,7 +287,6 @@
     "static/media/Mirkwood Cavalry.jpg": "/mesbg-list-builder/static/media/Mirkwood Cavalry.fe8fe54fcc5cb3f6e9f7.jpg",
     "static/media/Arvedui, Last King of Arnor.jpg": "/mesbg-list-builder/static/media/Arvedui, Last King of Arnor.651137a37d44c52eab84.jpg",
     "static/media/Mouth of Sauron.jpg": "/mesbg-list-builder/static/media/Mouth of Sauron.17cb13f4cff12d73ae4e.jpg",
-    "static/media/Hasharin.jpg": "/mesbg-list-builder/static/media/Hasharin.94c580a7839cdf7dac9d.jpg",
     "static/media/Ingold.jpg": "/mesbg-list-builder/static/media/Ingold.a35dcbdc932ec26ec642.jpg",
     "static/media/Arwen.jpg": "/mesbg-list-builder/static/media/Arwen.7a79a90c4a6ca7c9ee5f.jpg",
     "static/media/Ted Sandyman.jpg": "/mesbg-list-builder/static/media/Ted Sandyman.1e716e834f2ab1d32f30.jpg",
@@ -332,6 +331,7 @@
     "static/media/Uruk-Hai Demolition Team.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Demolition Team.c7505e31f6ab585f06fe.jpg",
     "static/media/High Elf Captain.jpg": "/mesbg-list-builder/static/media/High Elf Captain.7e43f646eac61c1ff3d5.jpg",
     "static/media/Goblin Warrior.jpg": "/mesbg-list-builder/static/media/Goblin Warrior.f358639f58b32de6f9c4.jpg",
+    "static/media/Hasharin.jpg": "/mesbg-list-builder/static/media/Hasharin.892207f2129da3c3fb74.jpg",
     "static/media/Moria Blackshield Shaman.jpg": "/mesbg-list-builder/static/media/Moria Blackshield Shaman.ea591bc20f6688670b62.jpg",
     "static/media/Gloin the Dwarf.jpg": "/mesbg-list-builder/static/media/Gloin the Dwarf.b762e11d0bf5213bd1ca.jpg",
     "static/media/Ghan-Buri-Ghan.jpg": "/mesbg-list-builder/static/media/Ghan-Buri-Ghan.0d30d431eee3a62d6a41.jpg",
@@ -919,10 +919,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.6723b476.js.map": "/mesbg-list-builder/static/js/main.6723b476.js.map"
+    "main.31f80678.js.map": "/mesbg-list-builder/static/js/main.31f80678.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.6723b476.js"
+    "static/js/main.31f80678.js"
   ]
 }
