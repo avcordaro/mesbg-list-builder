@@ -31484,9 +31484,9 @@
     "options":[
       {
         "option_id":"OPT1191",
-        "option":"Horse",
-        "points":10.0,
-        "type":"mount",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
