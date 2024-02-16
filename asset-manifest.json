@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.aba0e46b.js",
+    "main.js": "/mesbg-list-builder/static/js/main.6723b476.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -86,10 +86,10 @@
     "static/media/Yazneg.jpg": "/mesbg-list-builder/static/media/Yazneg.86f8bcb476570295632a.jpg",
     "static/media/Glorfindel.jpg": "/mesbg-list-builder/static/media/Glorfindel.35f0b81d11d5fc2470ee.jpg",
     "static/media/Azog.jpg": "/mesbg-list-builder/static/media/Azog.6bb5a5a56aa62a5b8604.jpg",
+    "static/media/The Dragon Emperor.jpg": "/mesbg-list-builder/static/media/The Dragon Emperor.5c28521bdfd543da0ff4.jpg",
     "static/media/The Golden King.jpg": "/mesbg-list-builder/static/media/The Golden King.ebb61d4e46c04b238764.jpg",
     "static/media/The King of the Dead.jpg": "/mesbg-list-builder/static/media/The King of the Dead.3e2f0dda9aba836d1d61.jpg",
     "static/media/Elrond.jpg": "/mesbg-list-builder/static/media/Elrond.7a962cb443eed2c6324e.jpg",
-    "static/media/The Dragon Emperor.jpg": "/mesbg-list-builder/static/media/The Dragon Emperor.2b9db9a0c1f7c12f4f12.jpg",
     "static/media/Gil-Galad.jpg": "/mesbg-list-builder/static/media/Gil-Galad.f24cdd63814a3b361a66.jpg",
     "static/media/Lotho Sackville-Baggins.jpg": "/mesbg-list-builder/static/media/Lotho Sackville-Baggins.23e4f9175ff6e79ddbfe.jpg",
     "static/media/Warg Marauder.jpg": "/mesbg-list-builder/static/media/Warg Marauder.8da8f4e73f3253901e51.jpg",
@@ -919,10 +919,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.aba0e46b.js.map": "/mesbg-list-builder/static/js/main.aba0e46b.js.map"
+    "main.6723b476.js.map": "/mesbg-list-builder/static/js/main.6723b476.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.aba0e46b.js"
+    "static/js/main.6723b476.js"
   ]
 }
