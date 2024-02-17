@@ -354,10 +354,10 @@ export default function App() {
       let newUnit = { ..._unit };
       newUnit['id'] = uuid()
       if (newUnit.unique) {
-        return { id: uuid(), name: null }
         newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
         newWarband['num_units'] = newWarband['num_units'] - ((newUnit.siege_crew ? newUnit.siege_crew : 1) * newUnit["quantity"])
         newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+        return { id: uuid(), name: null }
       }
       return newUnit;
     });
