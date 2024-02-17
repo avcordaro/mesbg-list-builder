@@ -25,8 +25,9 @@ export function SelectionUnit({
 }) {
 
   const deleteInvalidUnit = (newRoster, unit_id) => {
-    /* If a new hero is selected and warrior units already exist in this warband belonging to the warband, 
-    they must be deleted and their points, bow count etc. removed from the roster.*/
+    /* If a new hero is selected and warrior units already exist in this warband belonging to a different faction, 
+    they must be deleted and their points, bow count etc. removed from the roster. Similarly, if a Siege
+    Engine is selected as the new hero of this warband, all units must be removed in the same way.*/
     let newWarbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num == warbandNumFocus + 1) {
@@ -36,7 +37,7 @@ export function SelectionUnit({
             newWarband["points"] =
               newWarband["points"] - newUnit["pointsTotal"];
             newWarband["num_units"] =
-              newWarband["num_units"] - newUnit["quantity"];
+              newWarband["num_units"] - ((newUnit.siege_crew ? newUnit.siege_crew : 1) * newUnit["quantity"]);
             newWarband["bow_count"] =
               newWarband["bow_count"] -
               (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
@@ -91,9 +92,9 @@ export function SelectionUnit({
         setSpecialArmyOptions(newSpecialArmyOptions);
       }
 
-      // Delete any warrior units in this warband not from the same faction as the hero.
+      // Delete any warrior units in this warband not from the same faction as the hero, or if a Siege Engine is selected.
       newRoster.warbands[warbandNumFocus].units.map((unit) => {
-        if (unit.faction != newUnitData.faction) {
+        if (newUnitData.unit_type == "Siege Engine" || unit.faction != newUnitData.faction) {
           newRoster = deleteInvalidUnit(newRoster, unit.id);
         }
       });

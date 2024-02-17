@@ -6983,7 +6983,7 @@
         "option_id":"OPT1577",
         "option":"Swap Shield for Crossbow",
         "points":1.0,
-        "type":"bow",
+        "type":"bow, swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -7001,7 +7001,7 @@
         "option_id":"OPT1579",
         "option":"Swap Shield for Mattock",
         "points":0.0,
-        "type":null,
+        "type":"swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9247,7 +9247,7 @@
         "option_id":"OPT1415",
         "option":"Swap Shield for Crossbow",
         "points":1.0,
-        "type":"bow",
+        "type":"bow, swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9265,7 +9265,7 @@
         "option_id":"OPT1417",
         "option":"Swap Shield for Mattock",
         "points":0.0,
-        "type":null,
+        "type":"swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9868,7 +9868,7 @@
         "option_id":"OPT1404",
         "option":"Swap Shield for Crossbow",
         "points":1.0,
-        "type":"bow",
+        "type":"bow, swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -9886,7 +9886,7 @@
         "option_id":"OPT1406",
         "option":"Swap Shield for Mattock",
         "points":0.0,
-        "type":null,
+        "type":"swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -28552,7 +28552,7 @@
         "option_id":"OPT1373",
         "option":"Swap Shield for Crossbow",
         "points":1.0,
-        "type":"bow",
+        "type":"bow, swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -28570,7 +28570,7 @@
         "option_id":"OPT1375",
         "option":"Swap Shield for Mattock",
         "points":0.0,
-        "type":null,
+        "type":"swap",
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0

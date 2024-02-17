@@ -32,7 +32,7 @@ export function OptionWarrior({
                   newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                   newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - option.points
                   newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                  if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && option.type == 'bow') {
+                  if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && option.type && option.type.includes('bow')) {
                     newUnit['inc_bow_count'] = false
                     newWarband['bow_count'] = newWarband['bow_count'] - newUnit['quantity']
                     newRoster['bow_count'] = newRoster['bow_count'] - newUnit['quantity']
@@ -66,7 +66,7 @@ export function OptionWarrior({
                   newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                   newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] + option.points
                   newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                  if (newUnit['default_bow'] == false && option.type == 'bow') {
+                  if (newUnit['default_bow'] == false && option.type && option.type.includes('bow')) {
                     newUnit['inc_bow_count'] = true
                     newWarband['bow_count'] = newWarband['bow_count'] + newUnit['quantity']
                     newRoster['bow_count'] = newRoster['bow_count'] + newUnit['quantity']
@@ -93,6 +93,17 @@ export function OptionWarrior({
     setRoster(newRoster);
   };
 
+  const includeSameType = (option_A, option_B) => {
+    if (!option_A || !option_B)
+      return false
+
+    let option_A_types = option_A.split(", ");
+    let option_B_types = option_B.split(", ");
+    let intersection = option_A_types.filter(x => option_B_types.includes(x));
+    return intersection.length > 0 ? true : false
+  }
+
+
   const toggleOffSameTypes = (newRoster) => {
     /* Some options should not be selected simultaneously due to being the same type, e.g. Horse and Armoured Horse
     This function will toggle off any options of the same type as the option just selected. */
@@ -104,12 +115,12 @@ export function OptionWarrior({
           if(newUnit.id == unit.id) {
             let newOptions = newUnit.options.map((_option) => {
               let newOption = { ..._option };
-              if(newOption.opt_quantity == 1 && newOption.option_id != option.option_id && newOption.type == option.type) {
+              if(newOption.opt_quantity == 1 && newOption.option_id != option.option_id && includeSameType(newOption.type,option.type)) {
                 newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
                 newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
                 newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
                 newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-                if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && newOption.type == 'bow') {
+                if (newUnit['default_bow'] == false && newUnit['inc_bow_count'] == true && newOption.type && newOption.type.includes('bow')) {
                   newUnit['inc_bow_count'] = false
                   newWarband['bow_count'] = newWarband['bow_count'] - newUnit['quantity']
                   newRoster['bow_count'] = newRoster['bow_count'] - newUnit['quantity']

@@ -27,6 +27,7 @@ import { FaRegCopyright } from "react-icons/fa";
 import { MdReportGmailerrorred } from "react-icons/md";  
 import { FaTableList } from "react-icons/fa6"; 
 import { MdDelete } from "react-icons/md";
+import { HiDuplicate } from "react-icons/hi";
 import { FcCheckmark } from "react-icons/fc";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
@@ -40,8 +41,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.0.3"
-  const UPDATED = "16-Feb-24"
+  const VERSION = "4.1.0"
+  const UPDATED = "17-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -329,6 +330,43 @@ export default function App() {
       units: [],
     };
     newRoster.warbands.push(newWarband);
+    setRoster(newRoster);
+    setDisplaySelection(false);
+  };
+
+  const handleCopyWarband = (warbandNum) => {
+    // Create a copy of an existing warband dictionary and add to the roster
+    let newRoster = { ...roster };
+    let newWarband = { ...roster.warbands[warbandNum - 1] };
+    newWarband['id'] = uuid()
+    newWarband['num'] = roster.warbands.length + 1;
+    if (newWarband.hero) {
+      newWarband.hero['id'] = uuid();
+      if (newWarband.hero.unique) {
+        newWarband['points'] = newWarband['points'] - newWarband.hero['pointsTotal'];
+        newWarband['num_units'] = newWarband['num_units'] - (newWarband.hero.siege_crew > 0 ? (newWarband.hero.siege_crew - 1) : 0)
+        newWarband.hero = null;
+      } else {
+        newRoster['num_units'] = newRoster['num_units'] + 1
+      }
+    }
+    let newUnits = newWarband.units.map((_unit) => {
+      let newUnit = { ..._unit };
+      newUnit['id'] = uuid()
+      if (newUnit.unique) {
+        return { id: uuid(), name: null }
+        newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+        newWarband['num_units'] = newWarband['num_units'] - ((newUnit.siege_crew ? newUnit.siege_crew : 1) * newUnit["quantity"])
+        newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+      }
+      return newUnit;
+    });
+    newUnits = newUnits.filter((u) => u.name != null);
+    newWarband.units = newUnits
+    newRoster.warbands.push(newWarband);
+    newRoster['points'] = newRoster['points'] + newWarband['points']
+    newRoster['bow_count'] = newRoster['bow_count'] + newWarband['bow_count']
+    newRoster['num_units'] = newRoster['num_units'] + newWarband['num_units']
     setRoster(newRoster);
     setDisplaySelection(false);
   };
@@ -703,8 +741,16 @@ export default function App() {
                   Bows: <b>{warband.bow_count}</b>
                 </Card.Text>
                 <Button
+                  onClick={() => handleCopyWarband(warband.num)}
+                  className="mt-1 ms-auto mb-2"
+                  style={{ marginRight: "10px" }}
+                  variant={"info"}
+                >
+                  <HiDuplicate />
+                </Button>
+                <Button
                   onClick={() => handleDeleteWarband(warband.num)}
-                  className="ms-auto mb-3"
+                  className="mt-1 mb-2"
                   style={{ marginRight: "10px" }}
                   variant={"danger"}
                 >
