@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.17ac02a8.js",
+    "main.js": "/mesbg-list-builder/static/js/main.1c3cd76c.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -275,9 +275,9 @@
     "static/media/Thrydan Wolfsbane.jpg": "/mesbg-list-builder/static/media/Thrydan Wolfsbane.626c726610ae4f893d14.jpg",
     "static/media/Dweller in the Dark.jpg": "/mesbg-list-builder/static/media/Dweller in the Dark.b75c8288cd19acaf0062.jpg",
     "static/media/Dead Marsh Spectre.jpg": "/mesbg-list-builder/static/media/Dead Marsh Spectre.12b2b402c19841ad5473.jpg",
-    "static/media/Aldor.jpg": "/mesbg-list-builder/static/media/Aldor.eedc44fcca4591c24d14.jpg",
     "static/media/Grim Hammer Captain.jpg": "/mesbg-list-builder/static/media/Grim Hammer Captain.1800574f68dafed0c67d.jpg",
     "static/media/Rohan Royal Guard.jpg": "/mesbg-list-builder/static/media/Rohan Royal Guard.98647b7fb9c0f0fcd006.jpg",
+    "static/media/Aldor.jpg": "/mesbg-list-builder/static/media/Aldor.e423dba17bfcffd97638.jpg",
     "static/media/Frodo Baggins.jpg": "/mesbg-list-builder/static/media/Frodo Baggins.52ea5f80588fdfe1190b.jpg",
     "static/media/Meriadoc Brandybuck.jpg": "/mesbg-list-builder/static/media/Meriadoc Brandybuck.fbbe7aafed69911c0998.jpg",
     "static/media/Erestor.jpg": "/mesbg-list-builder/static/media/Erestor.0821a043e9662b61ff56.jpg",
@@ -919,10 +919,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.17ac02a8.js.map": "/mesbg-list-builder/static/js/main.17ac02a8.js.map"
+    "main.1c3cd76c.js.map": "/mesbg-list-builder/static/js/main.1c3cd76c.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.17ac02a8.js"
+    "static/js/main.1c3cd76c.js"
   ]
 }
