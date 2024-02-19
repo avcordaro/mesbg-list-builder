@@ -37,11 +37,12 @@ import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
+import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.1.1"
+  const VERSION = "4.1.2"
   const UPDATED = "19-Feb-24"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
@@ -85,7 +86,12 @@ export default function App() {
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
   const [downloadSpinner, setDownloadSpinner] = useState(false);
-  
+
+  $(window).scroll(function(){
+    // stops the left-hand options menu from scrolling horizontally
+    $('.optionsList').css('left', -$(window).scrollLeft() + 24);
+  });
+
   useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
     let faction_types = roster.warbands.map((warband) => {
@@ -587,7 +593,7 @@ export default function App() {
         </Navbar.Brand>
       </Navbar>
       <div className="m-4">
-        <div className="optionsList border border-4 rounded position-fixed bg-white">
+        <div id='optionMenu' className="optionsList border border-4 rounded position-fixed bg-white">
           {displaySelection ?
             <>
             <Button variant="light" className="ms-2 border" style={{float: "right"}} onClick={() => setDisplaySelection(false)}><ImCross /></Button>
