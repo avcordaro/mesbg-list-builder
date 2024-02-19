@@ -555,32 +555,30 @@ export default function App() {
 
   return (
     <div style={{minHeight: "750px"}}>
-      <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="sticky-nav">
+      <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="shadow sticky-nav">
         <Navbar.Brand className="ms-4">
         <Stack direction="horizontal" gap={3}>
           <Stack>
           <Stack direction="horizontal" gap={3}>
             <img src={require("./images/title-logo.png")} />
-            <Stack>
-              <p className="p-0 m-0" style={{ fontSize: "24px" }}>
-                MESBG List Builder
-              </p>
-              <p className="p-0 m-0" style={{ fontSize: "16px" }}>
-                version {VERSION} (updated {UPDATED})
-              </p>
+            <Stack gap={2} style={{width: "260px"}}>
+              <img className="mt-2" src={require("./images/title.png")} />
+              <span className="p-0 m-0" style={{ fontSize: "16px" }}>
+                v{VERSION} (updated {UPDATED})
+              </span>
             </Stack>
           </Stack>
             <p className="mt-3 ms-3 m-0 p-0 text-muted" style={{ fontSize: "14px" }}>
               <MdReportGmailerrorred style={{ fontSize: "20px" }} /> For any bugs and corrections, please contact: <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">avcordaro@gmail.com</a>
             </p>
           </Stack>
-          <Stack style={{ width: "850px" }}>
-            <Stack className="mt-3 ms-4" direction="horizontal" gap={3}>
+          <Stack style={{ width: "835px" }}>
+            <Stack className="mt-3" direction="horizontal" gap={3}>
               <Button className="ms-auto" disabled={uniqueModels.length == 0} onClick={() => setShowRosterTable(true)}><FaTableList/> Roster Table</Button>
               <Button disabled={uniqueModels.length == 0} onClick={() => handleExportJSON()}><BiLinkAlt /> Export JSON</Button>
               <Button onClick={() => setShowImportModal(true)}><BiSolidFileImport /> Import JSON</Button>
             </Stack>
-            <Stack className="mt-4 ms-4" direction="horizontal" gap={4}>
+            <Stack className="mt-4" direction="horizontal" gap={4}>
               <h6 className="mb-0 mt-2">Total Points: <b>{roster.points}</b></h6>
               <h6 className="mb-0 mt-2">Total Units: <b>{roster.num_units}</b></h6>
               <h6 className="mb-0 mt-2">50%: <b>{Math.ceil(0.5 * roster.num_units)}</b></h6>
@@ -719,7 +717,7 @@ export default function App() {
           {roster.warbands.map((warband) => (
             <Card
               style={{ width: "850px" }}
-              className="p-2"
+              className="p-2 shadow"
               bg={"secondary"}
               text={"light"}
             >
