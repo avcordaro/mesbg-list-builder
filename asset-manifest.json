@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.fba46271.js",
+    "main.js": "/mesbg-list-builder/static/js/main.5d401ef0.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -908,6 +908,7 @@
     "static/media/Barliman Butterbur.png": "/mesbg-list-builder/static/media/Barliman Butterbur.90a9c4cf54ad20d2befb.png",
     "static/media/Windlance.png": "/mesbg-list-builder/static/media/Windlance.a2e6249568b53b266075.png",
     "static/media/Harry Goatleaf.png": "/mesbg-list-builder/static/media/Harry Goatleaf.0a4b47efaab90e2cc8e6.png",
+    "static/media/title.png": "/mesbg-list-builder/static/media/title.aae83a9f02dc1cae6913.png",
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "static/media/Defenders of the Shire.png": "/mesbg-list-builder/static/media/Defenders of the Shire.8bd1b1afd25b97d97816.png",
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
@@ -919,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.fba46271.js.map": "/mesbg-list-builder/static/js/main.fba46271.js.map"
+    "main.5d401ef0.js.map": "/mesbg-list-builder/static/js/main.5d401ef0.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.fba46271.js"
+    "static/js/main.5d401ef0.js"
   ]
 }
