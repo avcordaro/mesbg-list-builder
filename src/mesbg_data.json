@@ -505,7 +505,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1311",
@@ -552,7 +552,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0020",
@@ -581,7 +581,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0013",
@@ -646,7 +646,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -675,7 +675,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0007",
@@ -912,7 +912,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -941,7 +941,7 @@
     "quantity":1,
     "pointsPerUnit":12,
     "pointsTotal":12,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0044",
@@ -970,7 +970,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0045",
@@ -999,7 +999,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0046",
@@ -1064,7 +1064,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0053",
@@ -1265,7 +1265,7 @@
     "quantity":1,
     "pointsPerUnit":40,
     "pointsTotal":40,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -1323,7 +1323,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1448",
@@ -1582,7 +1582,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1382",
@@ -1638,7 +1638,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1386",
@@ -1799,7 +1799,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1332",
@@ -1837,7 +1837,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0059",
@@ -1875,7 +1875,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0057",
@@ -2007,7 +2007,7 @@
     "quantity":1,
     "pointsPerUnit":110,
     "pointsTotal":110,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0064",
@@ -2054,7 +2054,7 @@
     "quantity":1,
     "pointsPerUnit":80,
     "pointsTotal":80,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0071",
@@ -2083,7 +2083,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -2112,7 +2112,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0074",
@@ -2492,7 +2492,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -2521,7 +2521,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1646",
@@ -2550,7 +2550,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -2579,7 +2579,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1636",
@@ -2644,7 +2644,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1641",
@@ -2673,7 +2673,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -2702,7 +2702,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1628",
@@ -2740,7 +2740,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1630",
@@ -2814,7 +2814,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1642",
@@ -3089,7 +3089,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -3118,7 +3118,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1508",
@@ -3353,7 +3353,7 @@
     "quantity":1,
     "pointsPerUnit":120,
     "pointsTotal":120,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1498",
@@ -3391,7 +3391,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -3420,7 +3420,7 @@
     "quantity":1,
     "pointsPerUnit":60,
     "pointsTotal":60,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -3449,7 +3449,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -3478,7 +3478,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1490",
@@ -3516,7 +3516,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1494",
@@ -3572,7 +3572,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1489",
@@ -4060,7 +4060,7 @@
     "quantity":1,
     "pointsPerUnit":90,
     "pointsTotal":90,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -4089,7 +4089,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0103",
@@ -4118,7 +4118,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0089",
@@ -4156,7 +4156,7 @@
     "quantity":1,
     "pointsPerUnit":18,
     "pointsTotal":18,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0096",
@@ -4203,7 +4203,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0122",
@@ -4268,7 +4268,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0079",
@@ -4315,7 +4315,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0107",
@@ -4353,7 +4353,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0109",
@@ -4988,7 +4988,7 @@
     "quantity":1,
     "pointsPerUnit":90,
     "pointsTotal":90,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -5017,7 +5017,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0149",
@@ -5082,7 +5082,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0162",
@@ -5485,7 +5485,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0177",
@@ -5514,7 +5514,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0170",
@@ -5561,7 +5561,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0193",
@@ -5590,7 +5590,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0189",
@@ -5791,7 +5791,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -5820,7 +5820,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -5849,7 +5849,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -5878,7 +5878,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -6358,7 +6358,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -6387,7 +6387,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -6416,7 +6416,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1531",
@@ -6472,7 +6472,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1525",
@@ -6930,7 +6930,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1580",
@@ -6959,7 +6959,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1575",
@@ -7024,7 +7024,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1565",
@@ -7053,7 +7053,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1566",
@@ -7478,7 +7478,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -7507,7 +7507,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -7536,7 +7536,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0223",
@@ -7583,7 +7583,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0209",
@@ -7657,7 +7657,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0228",
@@ -8220,7 +8220,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -8278,7 +8278,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0239",
@@ -8325,7 +8325,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0236",
@@ -8372,7 +8372,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0244",
@@ -8410,7 +8410,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0246",
@@ -8439,7 +8439,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0242",
@@ -8640,7 +8640,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0256",
@@ -8687,7 +8687,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0262",
@@ -8716,7 +8716,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0266",
@@ -8745,7 +8745,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0259",
@@ -8783,7 +8783,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0267",
@@ -8812,7 +8812,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0268",
@@ -9176,7 +9176,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1418",
@@ -9223,7 +9223,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1413",
@@ -9797,7 +9797,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1407",
@@ -9844,7 +9844,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1402",
@@ -9996,7 +9996,7 @@
     "quantity":1,
     "pointsPerUnit":120,
     "pointsTotal":120,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -10249,7 +10249,7 @@
     "quantity":1,
     "pointsPerUnit":23,
     "pointsTotal":23,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0273",
@@ -10287,7 +10287,7 @@
     "quantity":1,
     "pointsPerUnit":17,
     "pointsTotal":17,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0278",
@@ -10343,7 +10343,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0287",
@@ -10580,7 +10580,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1605",
@@ -10609,7 +10609,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -10638,7 +10638,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -10667,7 +10667,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -10696,7 +10696,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1617",
@@ -10761,7 +10761,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -10790,7 +10790,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1609",
@@ -10828,7 +10828,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1611",
@@ -11007,7 +11007,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1424",
@@ -11036,7 +11036,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1425",
@@ -11233,7 +11233,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1436",
@@ -11262,7 +11262,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1437",
@@ -11519,7 +11519,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -11548,7 +11548,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1539",
@@ -11577,7 +11577,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1536",
@@ -12105,7 +12105,7 @@
     "quantity":1,
     "pointsPerUnit":23,
     "pointsTotal":23,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0297",
@@ -12134,7 +12134,7 @@
     "quantity":1,
     "pointsPerUnit":17,
     "pointsTotal":17,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0320",
@@ -12190,7 +12190,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0334",
@@ -12219,7 +12219,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0305",
@@ -12275,7 +12275,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0329",
@@ -12331,7 +12331,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0333",
@@ -12360,7 +12360,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0310",
@@ -12671,7 +12671,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1357",
@@ -12700,7 +12700,7 @@
     "quantity":1,
     "pointsPerUnit":16,
     "pointsTotal":16,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1337",
@@ -12747,7 +12747,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1345",
@@ -12785,7 +12785,7 @@
     "quantity":1,
     "pointsPerUnit":12,
     "pointsTotal":12,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1351",
@@ -12850,7 +12850,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1340",
@@ -13047,7 +13047,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0364",
@@ -13103,7 +13103,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0370",
@@ -13159,7 +13159,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0368",
@@ -13197,7 +13197,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0374",
@@ -13843,7 +13843,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0419",
@@ -13901,7 +13901,7 @@
     "quantity":1,
     "pointsPerUnit":110,
     "pointsTotal":110,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0396",
@@ -13948,7 +13948,7 @@
     "quantity":1,
     "pointsPerUnit":80,
     "pointsTotal":80,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0418",
@@ -13977,7 +13977,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -14006,7 +14006,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -14035,7 +14035,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0390",
@@ -14064,7 +14064,7 @@
     "quantity":1,
     "pointsPerUnit":12,
     "pointsTotal":12,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0383",
@@ -14093,7 +14093,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0384",
@@ -14122,7 +14122,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0435",
@@ -14187,7 +14187,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0430",
@@ -14252,7 +14252,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0420",
@@ -14317,7 +14317,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0385",
@@ -14382,7 +14382,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0404",
@@ -14456,7 +14456,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0440",
@@ -14863,7 +14863,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0471",
@@ -14892,7 +14892,7 @@
     "quantity":1,
     "pointsPerUnit":18,
     "pointsTotal":18,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0449",
@@ -14948,7 +14948,7 @@
     "quantity":1,
     "pointsPerUnit":12,
     "pointsTotal":12,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0461",
@@ -14986,7 +14986,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0453",
@@ -15069,7 +15069,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0472",
@@ -15277,7 +15277,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0478",
@@ -15306,7 +15306,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0479",
@@ -16017,7 +16017,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0532",
@@ -16046,7 +16046,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0524",
@@ -16093,7 +16093,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0514",
@@ -16140,7 +16140,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0501",
@@ -16187,7 +16187,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0528",
@@ -16243,7 +16243,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0533",
@@ -16281,7 +16281,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0535",
@@ -17789,7 +17789,7 @@
     "quantity":1,
     "pointsPerUnit":90,
     "pointsTotal":90,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -17818,7 +17818,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0541",
@@ -17847,7 +17847,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0595",
@@ -17876,7 +17876,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0570",
@@ -17914,7 +17914,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -17943,7 +17943,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -17972,7 +17972,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -18001,7 +18001,7 @@
     "quantity":1,
     "pointsPerUnit":18,
     "pointsTotal":18,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0586",
@@ -18048,7 +18048,7 @@
     "quantity":1,
     "pointsPerUnit":12,
     "pointsTotal":12,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0542",
@@ -18086,7 +18086,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0640",
@@ -18151,7 +18151,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0589",
@@ -18180,7 +18180,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0544",
@@ -18227,7 +18227,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -18256,7 +18256,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0573",
@@ -18321,7 +18321,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0560",
@@ -18377,7 +18377,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0599",
@@ -18415,7 +18415,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0601",
@@ -18956,7 +18956,7 @@
     "quantity":1,
     "pointsPerUnit":200,
     "pointsTotal":200,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -18985,7 +18985,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0655",
@@ -19032,7 +19032,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -19061,7 +19061,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0661",
@@ -19090,7 +19090,7 @@
     "quantity":1,
     "pointsPerUnit":75,
     "pointsTotal":75,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0665",
@@ -19119,7 +19119,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -19148,7 +19148,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0671",
@@ -19177,7 +19177,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1517",
@@ -19206,7 +19206,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0658",
@@ -19244,7 +19244,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0666",
@@ -19273,7 +19273,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -19302,7 +19302,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0667",
@@ -19517,7 +19517,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0683",
@@ -19904,7 +19904,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0708",
@@ -19960,7 +19960,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0702",
@@ -20016,7 +20016,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0706",
@@ -20054,7 +20054,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0715",
@@ -20235,7 +20235,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -20264,7 +20264,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -20293,7 +20293,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1584",
@@ -20349,7 +20349,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1592",
@@ -20537,7 +20537,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -20890,7 +20890,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0726",
@@ -20946,7 +20946,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0730",
@@ -20984,7 +20984,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0732",
@@ -21022,7 +21022,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0735",
@@ -21183,7 +21183,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1546",
@@ -21212,7 +21212,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1542",
@@ -21429,7 +21429,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0752",
@@ -22287,7 +22287,7 @@
     "quantity":1,
     "pointsPerUnit":40,
     "pointsTotal":40,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1308",
@@ -22334,7 +22334,7 @@
     "quantity":1,
     "pointsPerUnit":21,
     "pointsTotal":21,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0784",
@@ -22390,7 +22390,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0775",
@@ -22473,7 +22473,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0788",
@@ -23144,7 +23144,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -23173,7 +23173,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0818",
@@ -23220,7 +23220,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -23249,7 +23249,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0832",
@@ -23278,7 +23278,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0821",
@@ -23343,7 +23343,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0828",
@@ -23399,7 +23399,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0826",
@@ -23437,7 +23437,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0840",
@@ -23770,7 +23770,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0848",
@@ -23817,7 +23817,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0847",
@@ -24067,7 +24067,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -24125,7 +24125,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1459",
@@ -24295,7 +24295,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -24324,7 +24324,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1554",
@@ -24704,7 +24704,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0864",
@@ -24733,7 +24733,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0863",
@@ -24762,7 +24762,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0856",
@@ -24818,7 +24818,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0868",
@@ -25008,7 +25008,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1549",
@@ -25227,7 +25227,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0889",
@@ -25265,7 +25265,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0882",
@@ -25321,7 +25321,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0897",
@@ -25775,7 +25775,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0914",
@@ -25822,7 +25822,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0913",
@@ -25974,7 +25974,7 @@
     "quantity":1,
     "pointsPerUnit":24,
     "pointsTotal":24,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0921",
@@ -26003,7 +26003,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0922",
@@ -26354,7 +26354,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -26383,7 +26383,7 @@
     "quantity":1,
     "pointsPerUnit":16,
     "pointsTotal":16,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0941",
@@ -26439,7 +26439,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0937",
@@ -26495,7 +26495,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0931",
@@ -26524,7 +26524,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0953",
@@ -26598,7 +26598,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0947",
@@ -27309,7 +27309,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0997",
@@ -27374,7 +27374,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0986",
@@ -27412,7 +27412,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1002",
@@ -27450,7 +27450,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0988",
@@ -27506,7 +27506,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT0995",
@@ -27734,7 +27734,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1017",
@@ -27982,7 +27982,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -28011,7 +28011,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1025",
@@ -28076,7 +28076,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1030",
@@ -28132,7 +28132,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1019",
@@ -28161,7 +28161,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1036",
@@ -28244,7 +28244,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1043",
@@ -28452,7 +28452,7 @@
     "quantity":1,
     "pointsPerUnit":175,
     "pointsTotal":175,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -28481,7 +28481,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1376",
@@ -28528,7 +28528,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1371",
@@ -28888,7 +28888,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -28917,7 +28917,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1069",
@@ -28946,7 +28946,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1070",
@@ -28984,7 +28984,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1059",
@@ -29040,7 +29040,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1063",
@@ -29409,7 +29409,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -29438,7 +29438,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1094",
@@ -29467,7 +29467,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1095",
@@ -29496,7 +29496,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1083",
@@ -29552,7 +29552,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1087",
@@ -30046,7 +30046,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1112",
@@ -30075,7 +30075,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -30104,7 +30104,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1108",
@@ -30151,7 +30151,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1113",
@@ -30225,7 +30225,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1119",
@@ -30328,7 +30328,7 @@
     "quantity":1,
     "pointsPerUnit":100,
     "pointsTotal":100,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -30489,7 +30489,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1134",
@@ -30536,7 +30536,7 @@
     "quantity":1,
     "pointsPerUnit":25,
     "pointsTotal":25,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1130",
@@ -30737,7 +30737,7 @@
     "quantity":1,
     "pointsPerUnit":24,
     "pointsTotal":24,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1143",
@@ -30766,7 +30766,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1144",
@@ -31115,7 +31115,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1166",
@@ -31171,7 +31171,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1162",
@@ -31614,7 +31614,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1195",
@@ -31643,7 +31643,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1181",
@@ -31699,7 +31699,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1173",
@@ -31728,7 +31728,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1208",
@@ -31775,7 +31775,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1194",
@@ -31804,7 +31804,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1186",
@@ -32557,7 +32557,7 @@
     "quantity":1,
     "pointsPerUnit":15,
     "pointsTotal":15,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -32615,7 +32615,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1217",
@@ -32662,7 +32662,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1222",
@@ -32691,7 +32691,7 @@
     "quantity":1,
     "pointsPerUnit":4,
     "pointsTotal":4,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1220",
@@ -33261,7 +33261,7 @@
     "quantity":1,
     "pointsPerUnit":14,
     "pointsTotal":14,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1241",
@@ -33317,7 +33317,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1247",
@@ -33373,7 +33373,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1245",
@@ -33411,7 +33411,7 @@
     "quantity":1,
     "pointsPerUnit":6,
     "pointsTotal":6,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1254",
@@ -34184,7 +34184,7 @@
     "quantity":1,
     "pointsPerUnit":35,
     "pointsTotal":35,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1271",
@@ -34213,7 +34213,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1272",
@@ -34278,7 +34278,7 @@
     "quantity":1,
     "pointsPerUnit":5,
     "pointsTotal":5,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1265",
@@ -34582,7 +34582,7 @@
     "quantity":1,
     "pointsPerUnit":30,
     "pointsTotal":30,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1280",
@@ -34620,7 +34620,7 @@
     "quantity":1,
     "pointsPerUnit":13,
     "pointsTotal":13,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1285",
@@ -34649,7 +34649,7 @@
     "quantity":1,
     "pointsPerUnit":8,
     "pointsTotal":8,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1288",
@@ -34687,7 +34687,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -34832,7 +34832,7 @@
     "quantity":1,
     "pointsPerUnit":160,
     "pointsTotal":160,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -34861,7 +34861,7 @@
     "quantity":1,
     "pointsPerUnit":140,
     "pointsTotal":140,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -34890,7 +34890,7 @@
     "quantity":1,
     "pointsPerUnit":10,
     "pointsTotal":10,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",
@@ -34948,7 +34948,7 @@
     "quantity":1,
     "pointsPerUnit":20,
     "pointsTotal":20,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1647",
@@ -35035,7 +35035,7 @@
     "quantity":1,
     "pointsPerUnit":9,
     "pointsTotal":9,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1290",
@@ -35196,7 +35196,7 @@
     "quantity":1,
     "pointsPerUnit":11,
     "pointsTotal":11,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"OPT1300",
@@ -35261,7 +35261,7 @@
     "quantity":1,
     "pointsPerUnit":7,
     "pointsTotal":7,
-    "warband_size":1,
+    "warband_size":0,
     "options":[
       {
         "option_id":"None",

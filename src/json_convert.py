@@ -7,9 +7,9 @@ warband_sizes = {
   "Hero of Valour": 15,
   "Hero of Fortitude": 12,
   "Minor Hero": 6,
-  "Independent Hero": 1,
+  "Independent Hero": 0,
   "Independent Hero*": 0,
-  "Warrior": 1,
+  "Warrior": 0,
   "Siege Engine": 6
 }
 unit_type_order = [
