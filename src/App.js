@@ -43,7 +43,7 @@ import "./App.css";
 
 export default function App() {
   const VERSION = "4.1.2"
-  const UPDATED = "19-Feb-24"
+  const UPDATED = "19-Feb-2024"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -829,7 +829,6 @@ export default function App() {
           <Button onClick={() => handleNewWarband()} style={{ width: "850px" }}>
             Add Warband <FaPlus />
           </Button>
-          
         </Stack>
       </div>
       <Modal show={showCardModal} onHide={() => setShowCardModal(false)} size="xl" centered>
