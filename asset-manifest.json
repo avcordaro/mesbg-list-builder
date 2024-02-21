@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.7a3685bc.js",
+    "main.js": "/mesbg-list-builder/static/js/main.2176baca.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -49,7 +49,7 @@
     "static/media/Dain Ironfoot, Lord of the Iron Hills.jpg": "/mesbg-list-builder/static/media/Dain Ironfoot, Lord of the Iron Hills.54bc4155c40e04a16baa.jpg",
     "static/media/Goblin Mercenary Captain.jpg": "/mesbg-list-builder/static/media/Goblin Mercenary Captain.37f9bc6ab88abe37d58b.jpg",
     "static/media/Khamul.jpg": "/mesbg-list-builder/static/media/Khamul.0eba7a57e99f68415d5a.jpg",
-    "static/media/Dwarf Ballista.jpg": "/mesbg-list-builder/static/media/Dwarf Ballista.34727b85bf391539da63.jpg",
+    "static/media/Dwarf Ballista.jpg": "/mesbg-list-builder/static/media/Dwarf Ballista.32414669ae95c0f1f76e.jpg",
     "static/media/Dragon.jpg": "/mesbg-list-builder/static/media/Dragon.4c88b5d7843e1136e926.jpg",
     "static/media/Boromir.jpg": "/mesbg-list-builder/static/media/Boromir.4295365a5488386152d8.jpg",
     "static/media/Amdur.jpg": "/mesbg-list-builder/static/media/Amdur.0bdee50401d79aca3b61.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.7a3685bc.js.map": "/mesbg-list-builder/static/js/main.7a3685bc.js.map"
+    "main.2176baca.js.map": "/mesbg-list-builder/static/js/main.2176baca.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.7a3685bc.js"
+    "static/js/main.2176baca.js"
   ]
 }
