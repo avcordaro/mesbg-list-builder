@@ -29119,7 +29119,7 @@
       {
         "option_id":"OPT1049",
         "option":"Dwarf Engineer Captain",
-        "points":40.0,
+        "points":60.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -29128,7 +29128,7 @@
       {
         "option_id":"OPT1050",
         "option":"Flaming Ammunition",
-        "points":20.0,
+        "points":15.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -29137,7 +29137,7 @@
       {
         "option_id":"OPT1051",
         "option":"Additional Crew",
-        "points":7.0,
+        "points":8.0,
         "type":null,
         "min":0.0,
         "max":5.0,
@@ -29631,7 +29631,7 @@
       {
         "option_id":"OPT1073",
         "option":"Dwarf Engineer Captain",
-        "points":40.0,
+        "points":60.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -29640,7 +29640,7 @@
       {
         "option_id":"OPT1074",
         "option":"Flaming Ammunition",
-        "points":20.0,
+        "points":15.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -29649,7 +29649,7 @@
       {
         "option_id":"OPT1075",
         "option":"Additional Crew",
-        "points":7.0,
+        "points":8.0,
         "type":null,
         "min":0.0,
         "max":5.0,
