@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.2176baca.js",
+    "main.js": "/mesbg-list-builder/static/js/main.e2ca509d.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -137,8 +137,8 @@
     "static/media/Theoden.jpg": "/mesbg-list-builder/static/media/Theoden.a8bbbc20166864de75c1.jpg",
     "static/media/Druzhag.jpg": "/mesbg-list-builder/static/media/Druzhag.989321168867a05fd9d3.jpg",
     "static/media/Thorin Oakenshield.jpg": "/mesbg-list-builder/static/media/Thorin Oakenshield.83da19048d65d8cd58a3.jpg",
-    "static/media/Castellan of Dol Guldur.jpg": "/mesbg-list-builder/static/media/Castellan of Dol Guldur.fd70ec3336817367d35f.jpg",
     "static/media/Durin.jpg": "/mesbg-list-builder/static/media/Durin.c13c4b7e8c6e90db4ac4.jpg",
+    "static/media/Castellan of Dol Guldur.jpg": "/mesbg-list-builder/static/media/Castellan of Dol Guldur.87e17becb4844b6354e6.jpg",
     "static/media/Saruman.jpg": "/mesbg-list-builder/static/media/Saruman.187fa24c8e6ef696bf61.jpg",
     "static/media/Iron Hills Captain.jpg": "/mesbg-list-builder/static/media/Iron Hills Captain.da02a4fe0b8f8162585c.jpg",
     "static/media/Khandish Charioteer.jpg": "/mesbg-list-builder/static/media/Khandish Charioteer.19aa3759eefb2f991a10.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.2176baca.js.map": "/mesbg-list-builder/static/js/main.2176baca.js.map"
+    "main.e2ca509d.js.map": "/mesbg-list-builder/static/js/main.e2ca509d.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.2176baca.js"
+    "static/js/main.e2ca509d.js"
   ]
 }
