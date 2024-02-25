@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.e2ca509d.js",
+    "main.js": "/mesbg-list-builder/static/js/main.4ba25d23.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -53,8 +53,8 @@
     "static/media/Dragon.jpg": "/mesbg-list-builder/static/media/Dragon.4c88b5d7843e1136e926.jpg",
     "static/media/Boromir.jpg": "/mesbg-list-builder/static/media/Boromir.4295365a5488386152d8.jpg",
     "static/media/Amdur.jpg": "/mesbg-list-builder/static/media/Amdur.0bdee50401d79aca3b61.jpg",
+    "static/media/Razgush.jpg": "/mesbg-list-builder/static/media/Razgush.f39fa9660e6f82e771b7.jpg",
     "static/media/Elladan & Elrohir.jpg": "/mesbg-list-builder/static/media/Elladan & Elrohir.0067b416df77fff62c05.jpg",
-    "static/media/Razgush.jpg": "/mesbg-list-builder/static/media/Razgush.f3886c21c4802481ae22.jpg",
     "static/media/Tom the Troll.jpg": "/mesbg-list-builder/static/media/Tom the Troll.3f76eeed83cf63334976.jpg",
     "static/media/Goblin Mercenary.jpg": "/mesbg-list-builder/static/media/Goblin Mercenary.c88d4d9c0518c56e37ce.jpg",
     "static/media/Dain Ironfoot, King Under the Mountain.jpg": "/mesbg-list-builder/static/media/Dain Ironfoot, King Under the Mountain.c2da5cdb8f95635af319.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.e2ca509d.js.map": "/mesbg-list-builder/static/js/main.e2ca509d.js.map"
+    "main.4ba25d23.js.map": "/mesbg-list-builder/static/js/main.4ba25d23.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.e2ca509d.js"
+    "static/js/main.4ba25d23.js"
   ]
 }
