@@ -709,7 +709,7 @@ export default function App() {
           }
         </div>
         <Stack style={{ marginLeft: "535px" }} gap={3}>
-          <Alert style={{ width: "950px", zIndex: 1050 }} className="position-fixed" show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
+          <Alert style={{ width: "850px", zIndex: 1050 }} className="position-fixed" show={exportAlert} variant="success" onClose={() => setExportAlert(false)} dismissible>
             <b>JSON string copied to your clipboard.</b>
             <hr />
             You can keep this somewhere safe, such as in a text file, to reload your army list again later using 'Import JSON'.
