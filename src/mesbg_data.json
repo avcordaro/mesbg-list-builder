@@ -18862,7 +18862,7 @@
     "unit_type":"Minor Hero",
     "base_points":150,
     "default_bow":false,
-    "unique":true,
+    "unique":false,
     "inc_bow_count":false,
     "bow_limit":false,
     "siege_crew":0,
