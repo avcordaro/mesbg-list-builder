@@ -155,7 +155,8 @@ export function ModalRosterTable({
                               <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.name}</td>
                               <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>
                                 {unit.options.map((option) => (
-                                  option.opt_quantity > 0 ? option.option : ""
+                                  option.opt_quantity > 0 ? (option.max > 1 ? 
+                                    option.opt_quantity + " " + option.option : option.option) : ""
                                 )).filter((opt) => (opt != "")).join(", ")}
                               </td>
                               <td style={{backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white"}}>{unit.pointsPerUnit}</td>

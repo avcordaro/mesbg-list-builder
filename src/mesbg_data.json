@@ -2062,7 +2062,7 @@
         "points":1.0,
         "type":null,
         "min":0.0,
-        "max":1.0,
+        "max":2.0,
         "opt_quantity":0.0
       }
     ]
@@ -13956,7 +13956,7 @@
         "points":1.0,
         "type":null,
         "min":0.0,
-        "max":1.0,
+        "max":2.0,
         "opt_quantity":0.0
       }
     ]
