@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.33fabe87.js",
+    "main.js": "/mesbg-list-builder/static/js/main.9afb4024.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -58,6 +58,7 @@
     "static/media/Tom the Troll.jpg": "/mesbg-list-builder/static/media/Tom the Troll.3f76eeed83cf63334976.jpg",
     "static/media/Goblin Mercenary.jpg": "/mesbg-list-builder/static/media/Goblin Mercenary.c88d4d9c0518c56e37ce.jpg",
     "static/media/Dain Ironfoot, King Under the Mountain.jpg": "/mesbg-list-builder/static/media/Dain Ironfoot, King Under the Mountain.c2da5cdb8f95635af319.jpg",
+    "static/media/Glorfindel.jpg": "/mesbg-list-builder/static/media/Glorfindel.912232c21a8afeb148d5.jpg",
     "static/media/The Necromancer of Dol Guldur.jpg": "/mesbg-list-builder/static/media/The Necromancer of Dol Guldur.121ca8aa00fddb4350cc.jpg",
     "static/media/Mordor Siege Bow.jpg": "/mesbg-list-builder/static/media/Mordor Siege Bow.21fbf45334a2d394d2e4.jpg",
     "static/media/Hamfast 'Gaffer' Gamgee.jpg": "/mesbg-list-builder/static/media/Hamfast 'Gaffer' Gamgee.94623d626fd93d43a0d3.jpg",
@@ -84,7 +85,6 @@
     "static/media/Royal Palanquin.jpg": "/mesbg-list-builder/static/media/Royal Palanquin.d6c7ea3f0604ca74452a.jpg",
     "static/media/Gamling.jpg": "/mesbg-list-builder/static/media/Gamling.4f0195ddcc922e12a548.jpg",
     "static/media/Yazneg.jpg": "/mesbg-list-builder/static/media/Yazneg.86f8bcb476570295632a.jpg",
-    "static/media/Glorfindel.jpg": "/mesbg-list-builder/static/media/Glorfindel.35f0b81d11d5fc2470ee.jpg",
     "static/media/Azog.jpg": "/mesbg-list-builder/static/media/Azog.6bb5a5a56aa62a5b8604.jpg",
     "static/media/The Dragon Emperor.jpg": "/mesbg-list-builder/static/media/The Dragon Emperor.5c28521bdfd543da0ff4.jpg",
     "static/media/The Golden King.jpg": "/mesbg-list-builder/static/media/The Golden King.ebb61d4e46c04b238764.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.33fabe87.js.map": "/mesbg-list-builder/static/js/main.33fabe87.js.map"
+    "main.9afb4024.js.map": "/mesbg-list-builder/static/js/main.9afb4024.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.33fabe87.js"
+    "static/js/main.9afb4024.js"
   ]
 }
