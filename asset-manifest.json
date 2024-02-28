@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.34c2997e.js",
+    "main.js": "/mesbg-list-builder/static/js/main.33fabe87.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -333,9 +333,9 @@
     "static/media/Goblin Warrior.jpg": "/mesbg-list-builder/static/media/Goblin Warrior.f358639f58b32de6f9c4.jpg",
     "static/media/Hasharin.jpg": "/mesbg-list-builder/static/media/Hasharin.892207f2129da3c3fb74.jpg",
     "static/media/Moria Blackshield Shaman.jpg": "/mesbg-list-builder/static/media/Moria Blackshield Shaman.ea591bc20f6688670b62.jpg",
+    "static/media/Wood Elf Warrior.jpg": "/mesbg-list-builder/static/media/Wood Elf Warrior.52ccf8965dbc0080a13e.jpg",
     "static/media/Gloin the Dwarf.jpg": "/mesbg-list-builder/static/media/Gloin the Dwarf.b762e11d0bf5213bd1ca.jpg",
     "static/media/Ghan-Buri-Ghan.jpg": "/mesbg-list-builder/static/media/Ghan-Buri-Ghan.0d30d431eee3a62d6a41.jpg",
-    "static/media/Wood Elf Warrior.jpg": "/mesbg-list-builder/static/media/Wood Elf Warrior.51772272a999e56cb3ff.jpg",
     "static/media/Son of Eorl.jpg": "/mesbg-list-builder/static/media/Son of Eorl.4492bdd6ff457976df90.jpg",
     "static/media/Khandish Chieftain.jpg": "/mesbg-list-builder/static/media/Khandish Chieftain.8214f13caaa7892f2fdc.jpg",
     "static/media/Arathorn.jpg": "/mesbg-list-builder/static/media/Arathorn.b2c5eb4dcc6b5758c7a5.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.34c2997e.js.map": "/mesbg-list-builder/static/js/main.34c2997e.js.map"
+    "main.33fabe87.js.map": "/mesbg-list-builder/static/js/main.33fabe87.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.34c2997e.js"
+    "static/js/main.33fabe87.js"
   ]
 }
