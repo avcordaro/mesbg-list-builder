@@ -42,7 +42,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.1.8"
+  const VERSION = "4.1.9"
   const UPDATED = "29-Feb-2024"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
