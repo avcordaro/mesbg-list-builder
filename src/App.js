@@ -42,7 +42,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.1.9"
+  const VERSION = "4.2.0"
   const UPDATED = "29-Feb-2024"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
@@ -554,8 +554,8 @@ export default function App() {
   }
 
   return (
-    <div style={{minHeight: "750px", height: "100vh"}}>
-      <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="shadow sticky-nav">
+    <div style={{marginTop: "165px", minHeight: "750px", height: "100vh"}}>
+      <Navbar style={{ minWidth: "1450px" }} bg="dark" data-bs-theme="dark" className="shadow fixed-top">
         <Navbar.Brand className="ms-4">
         <Stack direction="horizontal" gap={3}>
           <Stack>

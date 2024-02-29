@@ -19,7 +19,7 @@ img.faction_logo {
 }
 
 div.optionsList {
-  min-height: 550px;
+  min-height: 500px;
   height: calc(100vh - 200px);
   max-height: 1500px;
   width: 510px;
