@@ -12502,15 +12502,6 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"OPT1334",
-        "option":"Elven Cloak",
-        "points":10.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
         "option_id":"OPT1335",
         "option":"Horse",
         "points":10.0,
@@ -12523,6 +12514,15 @@
         "option_id":"OPT1336",
         "option":"Orcrist",
         "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1334",
+        "option":"Elven Cloak",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -21101,7 +21101,7 @@
       {
         "option_id":"OPT1541",
         "option":"Elven Cloak",
-        "points":10.0,
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
