@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.e82be986.css",
-    "main.js": "/mesbg-list-builder/static/js/main.9afb4024.js",
+    "main.js": "/mesbg-list-builder/static/js/main.da3ffa36.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -358,8 +358,8 @@
     "static/media/Uruk-Hai Shaman.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Shaman.7af20c2228a5d72edc38.jpg",
     "static/media/Orc Shaman.jpg": "/mesbg-list-builder/static/media/Orc Shaman.d643f5766afe58b0db0a.jpg",
     "static/media/Gundabad Orc Captain.jpg": "/mesbg-list-builder/static/media/Gundabad Orc Captain.bd43fc75af9e17d6f94d.jpg",
+    "static/media/Warg Rider.jpg": "/mesbg-list-builder/static/media/Warg Rider.43342c95200cd36beb17.jpg",
     "static/media/Peregrin Took.jpg": "/mesbg-list-builder/static/media/Peregrin Took.baaa8ad1c7ccdda460c7.jpg",
-    "static/media/Warg Rider.jpg": "/mesbg-list-builder/static/media/Warg Rider.1a1a16309e0d19042051.jpg",
     "static/media/Mirkwood Ranger.jpg": "/mesbg-list-builder/static/media/Mirkwood Ranger.db0b122ff835952e9988.jpg",
     "static/media/Rohan Outrider.jpg": "/mesbg-list-builder/static/media/Rohan Outrider.0c26416117b1853c02fb.jpg",
     "static/media/Smeagol.jpg": "/mesbg-list-builder/static/media/Smeagol.bfe003ccfd1c19166dd7.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.e82be986.css.map": "/mesbg-list-builder/static/css/main.e82be986.css.map",
-    "main.9afb4024.js.map": "/mesbg-list-builder/static/js/main.9afb4024.js.map"
+    "main.da3ffa36.js.map": "/mesbg-list-builder/static/js/main.da3ffa36.js.map"
   },
   "entrypoints": [
     "static/css/main.e82be986.css",
-    "static/js/main.9afb4024.js"
+    "static/js/main.da3ffa36.js"
   ]
 }
