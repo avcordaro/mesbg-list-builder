@@ -15092,7 +15092,7 @@
       {
         "option_id":"OPT0474",
         "option":"Throwing Daggers",
-        "points":1.0,
+        "points":2.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -22496,7 +22496,7 @@
       {
         "option_id":"OPT0790",
         "option":"Throwing Daggers",
-        "points":1.0,
+        "points":2.0,
         "type":null,
         "min":0.0,
         "max":1.0,
