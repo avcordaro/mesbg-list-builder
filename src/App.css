@@ -41,12 +41,6 @@ pre {
     white-space: pre-wrap;
 }
 
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
