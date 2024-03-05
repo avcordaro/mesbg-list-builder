@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.c55a9f7e.js",
+    "main.js": "/mesbg-list-builder/static/js/main.996b2851.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -320,6 +320,7 @@
     "static/media/Nori the Dwarf.jpg": "/mesbg-list-builder/static/media/Nori the Dwarf.f17392287839e0d9ef90.jpg",
     "static/media/Angmar Orc Shaman.jpg": "/mesbg-list-builder/static/media/Angmar Orc Shaman.ce812425ec3a4b20f5ef.jpg",
     "static/media/Folco Boffin.jpg": "/mesbg-list-builder/static/media/Folco Boffin.ccbd3b86c5d50592c11d.jpg",
+    "static/media/Uruk-Hai Shaman.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Shaman.757d8283b0e97c7ea96e.jpg",
     "static/media/Captain of Dol Amroth.jpg": "/mesbg-list-builder/static/media/Captain of Dol Amroth.d6ed82eb1a85a624f297.jpg",
     "static/media/Fili the Dwarf.jpg": "/mesbg-list-builder/static/media/Fili the Dwarf.83cb16ad7cafa641ab15.jpg",
     "static/media/Rider of the Dead.jpg": "/mesbg-list-builder/static/media/Rider of the Dead.ea4ef710913031d44997.jpg",
@@ -355,7 +356,6 @@
     "static/media/Haradrim Chieftain.jpg": "/mesbg-list-builder/static/media/Haradrim Chieftain.49daa60a5897e34dd21f.jpg",
     "static/media/Warrior of Numenor.jpg": "/mesbg-list-builder/static/media/Warrior of Numenor.1deb5e90fc1f0207aa8b.jpg",
     "static/media/Durburz.jpg": "/mesbg-list-builder/static/media/Durburz.f5ebcc3dc7f834361cca.jpg",
-    "static/media/Uruk-Hai Shaman.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Shaman.7af20c2228a5d72edc38.jpg",
     "static/media/Orc Shaman.jpg": "/mesbg-list-builder/static/media/Orc Shaman.d643f5766afe58b0db0a.jpg",
     "static/media/Gundabad Orc Captain.jpg": "/mesbg-list-builder/static/media/Gundabad Orc Captain.bd43fc75af9e17d6f94d.jpg",
     "static/media/Warg Rider.jpg": "/mesbg-list-builder/static/media/Warg Rider.43342c95200cd36beb17.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.c55a9f7e.js.map": "/mesbg-list-builder/static/js/main.c55a9f7e.js.map"
+    "main.996b2851.js.map": "/mesbg-list-builder/static/js/main.996b2851.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.c55a9f7e.js"
+    "static/js/main.996b2851.js"
   ]
 }
