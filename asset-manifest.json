@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.996b2851.js",
+    "main.js": "/mesbg-list-builder/static/js/main.67f8d949.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -293,8 +293,8 @@
     "static/media/Clansman of Lamedon.jpg": "/mesbg-list-builder/static/media/Clansman of Lamedon.83744b6549abdbaef6e0.jpg",
     "static/media/Palace Guard Captain.jpg": "/mesbg-list-builder/static/media/Palace Guard Captain.6255c3c099d15b8f40c0.jpg",
     "static/media/Mahud Raider.jpg": "/mesbg-list-builder/static/media/Mahud Raider.e6fce2896dda1451e225.jpg",
-    "static/media/Gorulf Ironskin.jpg": "/mesbg-list-builder/static/media/Gorulf Ironskin.97db0b1ae0c08281b9e3.jpg",
     "static/media/Orc Taskmaster.jpg": "/mesbg-list-builder/static/media/Orc Taskmaster.92a75d8c2b8305086de0.jpg",
+    "static/media/Gorulf Ironskin.jpg": "/mesbg-list-builder/static/media/Gorulf Ironskin.98559b18c7d2df1d2702.jpg",
     "static/media/Wild Warg Chieftain.jpg": "/mesbg-list-builder/static/media/Wild Warg Chieftain.eab2528d77336b1c6598.jpg",
     "static/media/Gwaihir.jpg": "/mesbg-list-builder/static/media/Gwaihir.3f331ee3b9715eee979d.jpg",
     "static/media/Mirkwood Elf.jpg": "/mesbg-list-builder/static/media/Mirkwood Elf.741cbe9f092397bbed55.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.996b2851.js.map": "/mesbg-list-builder/static/js/main.996b2851.js.map"
+    "main.67f8d949.js.map": "/mesbg-list-builder/static/js/main.67f8d949.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.996b2851.js"
+    "static/js/main.67f8d949.js"
   ]
 }
