@@ -781,10 +781,10 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0051",
-        "option":"Horse",
-        "points":10.0,
-        "type":"mount",
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
@@ -13361,10 +13361,10 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0391",
-        "option":"Horse",
-        "points":10.0,
-        "type":"mount",
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
