@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.fe7040d5.js",
+    "main.js": "/mesbg-list-builder/static/js/main.f596e4f3.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -220,6 +220,7 @@
     "static/media/Bilbo Baggins.jpg": "/mesbg-list-builder/static/media/Bilbo Baggins.4084c11ecea999111f3a.jpg",
     "static/media/Brorgir.jpg": "/mesbg-list-builder/static/media/Brorgir.1894cc2897813975bab6.jpg",
     "static/media/Gildor Inglorion.jpg": "/mesbg-list-builder/static/media/Gildor Inglorion.e429e88fa72733ad2891.jpg",
+    "static/media/Guard of the Galadhrim Court.jpg": "/mesbg-list-builder/static/media/Guard of the Galadhrim Court.e118bd5db733c22f1811.jpg",
     "static/media/Captain of Rohan.jpg": "/mesbg-list-builder/static/media/Captain of Rohan.2c43d28586deaed89c87.jpg",
     "static/media/Aragorn, Strider.jpg": "/mesbg-list-builder/static/media/Aragorn, Strider.53a5c7d6e1251fb00d3a.jpg",
     "static/media/Dernhelm.jpg": "/mesbg-list-builder/static/media/Dernhelm.19a54044b2da3f21cefa.jpg",
@@ -367,7 +368,6 @@
     "static/media/Man-at-Arms of Dol Amroth.jpg": "/mesbg-list-builder/static/media/Man-at-Arms of Dol Amroth.14f9434450c92f92dbbd.jpg",
     "static/media/Lake-town Militia.jpg": "/mesbg-list-builder/static/media/Lake-town Militia.0939199f305e2c2bc6db.jpg",
     "static/media/Percy.jpg": "/mesbg-list-builder/static/media/Percy.5ee6f01dac82d4b211ab.jpg",
-    "static/media/Guard of the Galadhrim Court.jpg": "/mesbg-list-builder/static/media/Guard of the Galadhrim Court.59c23daa2652b1ff4025.jpg",
     "static/media/Morgul Knight.jpg": "/mesbg-list-builder/static/media/Morgul Knight.fb9514f43f960e0d8ead.jpg",
     "static/media/Black Guard Drummer.jpg": "/mesbg-list-builder/static/media/Black Guard Drummer.124ef6af9b7bf761a944.jpg",
     "static/media/Cave Troll.jpg": "/mesbg-list-builder/static/media/Cave Troll.19ca280f21c734d46a4f.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.fe7040d5.js.map": "/mesbg-list-builder/static/js/main.fe7040d5.js.map"
+    "main.f596e4f3.js.map": "/mesbg-list-builder/static/js/main.f596e4f3.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.fe7040d5.js"
+    "static/js/main.f596e4f3.js"
   ]
 }
