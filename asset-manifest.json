@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.f596e4f3.js",
+    "main.js": "/mesbg-list-builder/static/js/main.28d7ac8a.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -97,12 +97,12 @@
     "static/media/The Spider Queen.jpg": "/mesbg-list-builder/static/media/The Spider Queen.07d4e77b9f47b4d82db6.jpg",
     "static/media/Cave Drake.jpg": "/mesbg-list-builder/static/media/Cave Drake.291a368883078c998acf.jpg",
     "static/media/Legolas Greenleaf, Prince of Mirkwood.jpg": "/mesbg-list-builder/static/media/Legolas Greenleaf, Prince of Mirkwood.91822624b60a94943fbb.jpg",
-    "static/media/Herald of the Dead.jpg": "/mesbg-list-builder/static/media/Herald of the Dead.d264ec90d8a91a0af7f9.jpg",
     "static/media/Shieldbearer.jpg": "/mesbg-list-builder/static/media/Shieldbearer.37eadcf3162709406329.jpg",
     "static/media/Treebeard.jpg": "/mesbg-list-builder/static/media/Treebeard.7f2e5e2292ec8caa6740.jpg",
     "static/media/Great Beast of Gorgoroth.jpg": "/mesbg-list-builder/static/media/Great Beast of Gorgoroth.cf226662cb39a4f019a9.jpg",
     "static/media/The Dark Marshall.jpg": "/mesbg-list-builder/static/media/The Dark Marshall.9297a54563af2d5a71c2.jpg",
     "static/media/Alfrid the Councillor.jpg": "/mesbg-list-builder/static/media/Alfrid the Councillor.5d9b9f508e375372494e.jpg",
+    "static/media/Herald of the Dead.jpg": "/mesbg-list-builder/static/media/Herald of the Dead.8202428e77645a9d03d5.jpg",
     "static/media/Ringwraith.jpg": "/mesbg-list-builder/static/media/Ringwraith.a8a28cbbef0801084b1f.jpg",
     "static/media/Prince Imrahil.jpg": "/mesbg-list-builder/static/media/Prince Imrahil.0a50f23a1b9cd2af5972.jpg",
     "static/media/The Shadow Lord.jpg": "/mesbg-list-builder/static/media/The Shadow Lord.871fc18c647e54c8623c.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.f596e4f3.js.map": "/mesbg-list-builder/static/js/main.f596e4f3.js.map"
+    "main.28d7ac8a.js.map": "/mesbg-list-builder/static/js/main.28d7ac8a.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.f596e4f3.js"
+    "static/js/main.28d7ac8a.js"
   ]
 }
