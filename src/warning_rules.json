@@ -565,7 +565,7 @@
       "dependencies":[
         "[mordor] razgush"
       ],
-      "warning":"Orc Captains may only include Fell Wargs in their warband is Razgush is in your army."
+      "warning":"Orc Captains may only include Fell Wargs in their warband if Razgush is in your army."
     }
   ],
   "[mordor] giant_spider":[
@@ -574,7 +574,7 @@
       "dependencies":[
         "[mordor] razgush"
       ],
-      "warning":"Orc Captains may only include Giant Spiders in their warband is Razgush is in your army."
+      "warning":"Orc Captains may only include Giant Spiders in their warband if Razgush is in your army."
     }
   ],
   "[mordor] mirkwood_spider":[
@@ -583,7 +583,7 @@
       "dependencies":[
         "[mordor] razgush"
       ],
-      "warning":"Orc Captains may only include Mirkwood Spiders in their warband is Razgush is in your army."
+      "warning":"Orc Captains may only include Mirkwood Spiders in their warband if Razgush is in your army."
     }
   ],
   "[moria] bat_swarm":[
@@ -592,7 +592,7 @@
       "dependencies":[
         "[mordor] razgush"
       ],
-      "warning":"Orc Captains may only include Bat Swarms in their warband is Razgush is in your army."
+      "warning":"Orc Captains may only include Bat Swarms in their warband if Razgush is in your army."
     }
   ],
   "[rangers_of_Ithilien] samwise_gamgee":[
