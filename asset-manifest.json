@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.f7150b44.js",
+    "main.js": "/mesbg-list-builder/static/js/main.af390262.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -399,10 +399,10 @@
     "static/media/Knight of Minas Tirith.jpg": "/mesbg-list-builder/static/media/Knight of Minas Tirith.16f2f04d3c7b74b3d9bd.jpg",
     "static/media/Captain of Arnor.jpg": "/mesbg-list-builder/static/media/Captain of Arnor.8830dc81b05d1d9d31ef.jpg",
     "static/media/Serpent Guard.jpg": "/mesbg-list-builder/static/media/Serpent Guard.3aa0bde45773ceeda8e8.jpg",
+    "static/media/Bat Swarm.jpg": "/mesbg-list-builder/static/media/Bat Swarm.210d5ef58e313979b549.jpg",
     "static/media/Warrior of Rohan.jpg": "/mesbg-list-builder/static/media/Warrior of Rohan.62acd1066a912de56e3b.jpg",
     "static/media/Giant Spider.jpg": "/mesbg-list-builder/static/media/Giant Spider.c40a38215ad1f7293510.jpg",
     "static/media/Serpent Rider.jpg": "/mesbg-list-builder/static/media/Serpent Rider.71df185a32b0937dcd58.jpg",
-    "static/media/Bat Swarm.jpg": "/mesbg-list-builder/static/media/Bat Swarm.a40384e931c40b49d770.jpg",
     "static/media/Woses Warrior.jpg": "/mesbg-list-builder/static/media/Woses Warrior.913c088d7b338e535cf5.jpg",
     "static/media/Vrasku.jpg": "/mesbg-list-builder/static/media/Vrasku.b8c190c74d16c6c0586f.jpg",
     "static/media/Uruk-Hai Drummer.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Drummer.d47c7f25af9e520e04c2.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.f7150b44.js.map": "/mesbg-list-builder/static/js/main.f7150b44.js.map"
+    "main.af390262.js.map": "/mesbg-list-builder/static/js/main.af390262.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.f7150b44.js"
+    "static/js/main.af390262.js"
   ]
 }
