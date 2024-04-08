@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.b0890d70.js",
+    "main.js": "/mesbg-list-builder/static/js/main.bb824e4f.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -113,6 +113,7 @@
     "static/media/Bert the Troll.jpg": "/mesbg-list-builder/static/media/Bert the Troll.dc5059b8f0d42535b92c.jpg",
     "static/media/Elendil.jpg": "/mesbg-list-builder/static/media/Elendil.2c4185191fe73fb967b6.jpg",
     "static/media/Galadriel, Lady of Light.jpg": "/mesbg-list-builder/static/media/Galadriel, Lady of Light.a72c891fbe2643283911.jpg",
+    "static/media/Ashrak.jpg": "/mesbg-list-builder/static/media/Ashrak.195a9dc6e1f35a81b02c.jpg",
     "static/media/Hurin.jpg": "/mesbg-list-builder/static/media/Hurin.3079391d8cdef5c1ac2f.jpg",
     "static/media/Quickbeam.jpg": "/mesbg-list-builder/static/media/Quickbeam.a31c429ffdef155d0086.jpg",
     "static/media/Brand, King of Dale.jpg": "/mesbg-list-builder/static/media/Brand, King of Dale.810b9627582023bee0ca.jpg",
@@ -131,7 +132,6 @@
     "static/media/Galadriel.jpg": "/mesbg-list-builder/static/media/Galadriel.d0ef8153df11082a4209.jpg",
     "static/media/Bilbo Baggins, Master Burglar.jpg": "/mesbg-list-builder/static/media/Bilbo Baggins, Master Burglar.82a7bb196a1421a80ee9.jpg",
     "static/media/Sid Briarthorn, Ruffian Chief.jpg": "/mesbg-list-builder/static/media/Sid Briarthorn, Ruffian Chief.e21d6e2ac17b3764207a.jpg",
-    "static/media/Ashrak.jpg": "/mesbg-list-builder/static/media/Ashrak.8670b216eee4b730983a.jpg",
     "static/media/Eomer.jpg": "/mesbg-list-builder/static/media/Eomer.0a43e025051ad6404309.jpg",
     "static/media/Suladan.jpg": "/mesbg-list-builder/static/media/Suladan.c179ad59b410795d6e2a.jpg",
     "static/media/Theoden.jpg": "/mesbg-list-builder/static/media/Theoden.a8bbbc20166864de75c1.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.b0890d70.js.map": "/mesbg-list-builder/static/js/main.b0890d70.js.map"
+    "main.bb824e4f.js.map": "/mesbg-list-builder/static/js/main.bb824e4f.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.b0890d70.js"
+    "static/js/main.bb824e4f.js"
   ]
 }
