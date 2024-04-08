@@ -42,8 +42,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.2.10"
-  const UPDATED = "03-Apr-2024"
+  const VERSION = "4.3.0"
+  const UPDATED = "08-Apr-2024"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -384,6 +384,13 @@ export default function App() {
       model_ids.push(newRoster.warbands[warbandNum - 1].hero.model_id);
     }
 
+    // Update state variable if the deleted model provided a special army-wide option 
+    if (hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id] && hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id][0]['special_army_option'] != "") {
+      let newSpecialArmyOptions = specialArmyOptions.filter((data) => data != hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id][0]['special_army_option']);
+      newRoster = handleSpecialArmyOption(newRoster, warbandNum);
+      setSpecialArmyOptions(newSpecialArmyOptions);
+    }
+
     // Substract the warband's points, bows and unit counts from the overall roster
     newRoster.warbands.map((warband) => {
       if (warband.num == warbandNum) {
@@ -403,6 +410,7 @@ export default function App() {
         }
       }
     });
+    
     // Remove the warband from the roster, and for all warbands that appear below the one being deleted, shift their warband number down by 1
     let newWarbands = newRoster.warbands.filter((data) => data.num != warbandNum);
     newWarbands = newWarbands.map((warband) => {
@@ -418,6 +426,39 @@ export default function App() {
     }
     setRoster(newRoster);
     setDisplaySelection(false);
+  };
+
+  const handleSpecialArmyOption = (newRoster, warbandNum) => {
+    /* If a Hero is removed that provided a special army option, that option much be turned off for all eligible units
+    in the current army roster, and points updated. */
+    let specialArmyOption = hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id][0]['special_army_option'];
+    let newWarbands = newRoster.warbands.map((warband) => {
+      let newWarband = { ...warband };
+      let newUnits = newWarband.units.map((_unit) => {
+        let newUnit = { ..._unit };
+        if (newUnit.name != null) {
+          let newOptions = newUnit.options.map((_option) => {
+            let newOption = { ..._option };
+            if(newOption.type == "special_army_upgrade" && newOption.opt_quantity == 1 && newOption.option == specialArmyOption) {
+              newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
+              newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+              newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
+              newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
+              newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+              newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
+              newOption['opt_quantity'] = 0
+            }
+            return newOption
+          });
+          newUnit.options = newOptions
+        }
+        return newUnit
+      });
+      newWarband.units = newUnits
+      return newWarband;
+    });
+    newRoster.warbands = newWarbands
+    return newRoster;
   };
 
   const handleNewWarrior = (warbandNum) => {

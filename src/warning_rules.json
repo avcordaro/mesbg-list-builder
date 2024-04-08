@@ -559,6 +559,15 @@
       "warning":"The King of Men cannot be included in the same force as any other named Gondor Hero models."
     }
   ],
+  "[mordor] bat_swarm":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[mordor] razgush"
+      ],
+      "warning":"Orc Captains may only include Bat Swarms in their warband if Razgush is in your army."
+    }
+  ],
   "[mordor] fell_warg":[
     {
       "type":"requires_all",
@@ -584,15 +593,6 @@
         "[mordor] razgush"
       ],
       "warning":"Orc Captains may only include Mirkwood Spiders in their warband if Razgush is in your army."
-    }
-  ],
-  "[moria] bat_swarm":[
-    {
-      "type":"requires_all",
-      "dependencies":[
-        "[mordor] razgush"
-      ],
-      "warning":"Orc Captains may only include Bat Swarms in their warband if Razgush is in your army."
     }
   ],
   "[rangers_of_Ithilien] samwise_gamgee":[

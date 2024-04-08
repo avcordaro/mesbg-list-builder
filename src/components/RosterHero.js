@@ -112,20 +112,22 @@ export function RosterHero({
       let newWarband = { ...warband };
       let newUnits = newWarband.units.map((_unit) => {
         let newUnit = { ..._unit };
-        let newOptions = newUnit.options.map((_option) => {
-          let newOption = { ..._option };
-          if(newOption.type == "special_army_upgrade" && newOption.opt_quantity == 1 && newOption.option == specialArmyOption) {
-            newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
-            newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
-            newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
-            newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
-            newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
-            newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
-            newOption['opt_quantity'] = 0
-          }
-          return newOption
-        });
-        newUnit.options = newOptions
+        if (newUnit.name != null) {
+          let newOptions = newUnit.options.map((_option) => {
+            let newOption = { ..._option };
+            if(newOption.type == "special_army_upgrade" && newOption.opt_quantity == 1 && newOption.option == specialArmyOption) {
+              newRoster['points'] = newRoster['points'] - newUnit['pointsTotal']
+              newWarband['points'] = newWarband['points'] - newUnit['pointsTotal'];
+              newUnit['pointsPerUnit'] = newUnit['pointsPerUnit'] - newOption.points
+              newUnit['pointsTotal'] = newUnit['pointsPerUnit'] * newUnit['quantity']
+              newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
+              newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
+              newOption['opt_quantity'] = 0
+            }
+            return newOption
+          });
+          newUnit.options = newOptions
+        }
         return newUnit
       });
       newWarband.units = newUnits

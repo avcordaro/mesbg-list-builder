@@ -573,7 +573,7 @@
       "special_warband_options":[
 
       ],
-      "special_army_option":"",
+      "special_army_option":"Venom-back Spider",
       "extra_profiles":[
 
       ]
@@ -5554,9 +5554,9 @@
         "[moria] moria_goblin_warrior"
       ],
       "special_warband_options":[
-        "Venom-back Spider"
+
       ],
-      "special_army_option":"",
+      "special_army_option":"Venom-back Spider",
       "extra_profiles":[
 
       ]
@@ -5612,7 +5612,7 @@
     {
       "valid_warband_units":[
         "[mordor] fell_warg",
-        "[mordor] giant_spider",
+        "[moria] giant_spider",
         "[moria] bat_swarm",
         "[moria] wild_warg"
       ],
