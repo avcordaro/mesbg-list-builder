@@ -42,8 +42,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
-  const VERSION = "4.3.0"
-  const UPDATED = "08-Apr-2024"
+  const VERSION = "4.3.1"
+  const UPDATED = "09-Apr-2024"
   const faction_lists = {
     "Good Army": new Set(mesbg_data.filter(data => data.faction_type == "Good Army").map((data) => data.faction)),
     "Evil Army": new Set(mesbg_data.filter(data => data.faction_type == "Evil Army").map((data) => data.faction)),
@@ -385,7 +385,8 @@ export default function App() {
     }
 
     // Update state variable if the deleted model provided a special army-wide option 
-    if (hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id] && hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id][0]['special_army_option'] != "") {
+    let hero = newRoster.warbands[warbandNum - 1].hero
+    if (hero && hero_constraint_data[hero.model_id] && hero_constraint_data[hero.model_id][0]['special_army_option'] != "") {
       let newSpecialArmyOptions = specialArmyOptions.filter((data) => data != hero_constraint_data[newRoster.warbands[warbandNum - 1].hero.model_id][0]['special_army_option']);
       newRoster = handleSpecialArmyOption(newRoster, warbandNum);
       setSpecialArmyOptions(newSpecialArmyOptions);
