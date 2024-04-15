@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.d47af4e5.js",
+    "main.js": "/mesbg-list-builder/static/js/main.802dfcbf.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -177,11 +177,11 @@
     "static/media/Madril.jpg": "/mesbg-list-builder/static/media/Madril.59ae488cf628eb2b573e.jpg",
     "static/media/Buhrdur.jpg": "/mesbg-list-builder/static/media/Buhrdur.d96e27fb44db3a625175.jpg",
     "static/media/Bard II, Prince of Dale.jpg": "/mesbg-list-builder/static/media/Bard II, Prince of Dale.14e9d9a29d9896f85e24.jpg",
-    "static/media/Guritz.jpg": "/mesbg-list-builder/static/media/Guritz.b377c1417986cd79ab38.jpg",
     "static/media/Bill the Pony.jpg": "/mesbg-list-builder/static/media/Bill the Pony.734e38ba62507a8cf246.jpg",
     "static/media/Raza, Fang of the Serpent.jpg": "/mesbg-list-builder/static/media/Raza, Fang of the Serpent.3506a221f978d42d1d6c.jpg",
     "static/media/Bofur the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Bofur the Dwarf, Champion of Erebor.9fa1d064e552e1997744.jpg",
     "static/media/Bombur the Dwarf.jpg": "/mesbg-list-builder/static/media/Bombur the Dwarf.6a953c3239f2c8fbd487.jpg",
+    "static/media/Guritz.jpg": "/mesbg-list-builder/static/media/Guritz.a2ed1fbf68e2cf6d69e6.jpg",
     "static/media/Vault Warden Team.jpg": "/mesbg-list-builder/static/media/Vault Warden Team.cb091a2a1d55befd9794.jpg",
     "static/media/Paladin Took.jpg": "/mesbg-list-builder/static/media/Paladin Took.45bd2e5c834e5fd8e570.jpg",
     "static/media/Rumil.jpg": "/mesbg-list-builder/static/media/Rumil.9d616b14a26b3fe4b475.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.d47af4e5.js.map": "/mesbg-list-builder/static/js/main.d47af4e5.js.map"
+    "main.802dfcbf.js.map": "/mesbg-list-builder/static/js/main.802dfcbf.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.d47af4e5.js"
+    "static/js/main.802dfcbf.js"
   ]
 }
