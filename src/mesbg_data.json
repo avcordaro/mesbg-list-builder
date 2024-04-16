@@ -1431,9 +1431,9 @@
     "warband_size":15,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1650",
+        "option":"The Oakenshield",
+        "points":5.0,
         "type":null,
         "min":0.0,
         "max":1.0,
