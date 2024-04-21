@@ -5,8 +5,9 @@ import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Spinner from 'react-bootstrap/Spinner';
 import Form from "react-bootstrap/Form";
+import html2canvas from "html2canvas";
 import { useState } from "react";
-import { FaDownload } from "react-icons/fa6";
+import { FaDownload, FaImage } from "react-icons/fa6";
 import { FcCheckmark } from "react-icons/fc";
 import { RxCross1 } from "react-icons/rx";
 import { GoCopy } from "react-icons/go";
@@ -28,9 +29,10 @@ export function ModalRosterTable({
   factionList
 }) {
   const [textView, setTextView] = useState(false);
+  const [showArmyBonus, setShowArmyBonus] = useState(true);
   const [copyLabel, setCopyLabel] = useState("Copy");
 
-  const handleToggle = () => {
+  const handleTextToggle = () => {
     if (textView) {
       setTextView(false);
     } else {
@@ -38,10 +40,43 @@ export function ModalRosterTable({
     }
   }
 
+  const handleBonusToggle = () => {
+    if (showArmyBonus) {
+      setShowArmyBonus(false);
+    } else {
+      setShowArmyBonus(true);
+    }
+  }
+
   const handleCopy = () => {
     navigator.clipboard.writeText(getTextView());
     setCopyLabel("Copied!");
     window.setTimeout(()=>(setCopyLabel("Copy")), 3000);
+  }
+
+  const downloadScreenshot = () => {
+    let rosterList = document.getElementById("rosterList");
+    let copyBtn = document.getElementById("copyBtn");
+    if (copyBtn) {
+      copyBtn.style.display = "none"; 
+    }
+    
+    html2canvas(rosterList).then(function(data) {
+      let link = document.createElement('a');
+      if (typeof link.download === 'string') {
+        link.href = data.toDataURL();
+        let ts = new Date()
+        link.download = "MESBG-Army-" + ts.toISOString().substring(0, 19) + ".png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        window.open(data.toDataURL());
+      }
+    });
+    if (copyBtn) {
+      copyBtn.style.display = "inline-block"; 
+    }
   }
 
   const getTextView = () => {
@@ -76,15 +111,17 @@ export function ModalRosterTable({
       
     });
     tableString += "----------------------------------------\n"
-    tableString += "\n===== Army Bonuses =====\n\n"
+    if (showArmyBonus) {
+      tableString += "\n===== Army Bonuses =====\n\n"
 
-    if (['Legendary Legion', 'Historical'].includes(allianceLevel)) {
-      factionList.map((f) => {
-          tableString += `--- ${f} ---\n\n`
-          tableString += faction_data[f]['armyBonus'].replaceAll("<b>", "").replaceAll("</b>", "").replaceAll("<br/>", "\n") + "\n\n"
-      })
-    } else {
-      tableString += "No bonuses due to Alliance Level not being Historical."
+      if (['Legendary Legion', 'Historical'].includes(allianceLevel)) {
+        factionList.map((f) => {
+            tableString += `--- ${f} ---\n\n`
+            tableString += faction_data[f]['armyBonus'].replaceAll("<b>", "").replaceAll("</b>", "").replaceAll("<br/>", "\n") + "\n\n"
+        })
+      } else {
+        tableString += "No bonuses due to Alliance Level not being Historical."
+      }
     }
     return tableString;
   }
@@ -95,19 +132,28 @@ export function ModalRosterTable({
           <Modal.Title className="w-100">
             <Stack direction="horizontal" gap={3}>
               <h4>Roster Table</h4>
-              <h6 className='ms-auto me-3 mt-3'><Form.Check
+              <h6 className='ms-auto mt-3'><Form.Check
+                type="switch"
+                label="Show Army Bonus"
+                checked={showArmyBonus}
+                onChange={handleBonusToggle}
+              /></h6>
+              <h6 className='ms-2 me-3 mt-3'><Form.Check
                 type="switch"
                 label="Text Print View"
                 checked={textView}
-                onChange={handleToggle}
+                onChange={handleTextToggle}
               /></h6>
+              <Button onClick={() => downloadScreenshot()}>
+                <FaImage /> Screenshot
+              </Button>
               <Button className="me-3" onClick={() => downloadProfileCards()}>
                 {downloadSpinner ? <Spinner size="sm" animation="border" /> : <FaDownload />} Profile Cards
               </Button>
             </Stack>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body id="rosterList">
           {!textView ?
             <>
               <Stack direction="horizontal" gap={3} className="mb-3">
@@ -170,43 +216,47 @@ export function ModalRosterTable({
                     ))}
                 </tbody>
               </Table>
-              {['Legendary Legion', 'Historical'].includes(allianceLevel) ?
+              {showArmyBonus &&
                 <>
-                  <h6>Army Bonuses <FcCheckmark /></h6>
-                  <hr />
-                  {factionList.map((f) => (
-                    <div>
-                      <h6 className="mt-4">
-                        <Badge bg="dark">
-                          {f}
-                        </Badge>
-                      </h6>
-                      <div 
-                        className="text-body"
-                        dangerouslySetInnerHTML={{__html: faction_data[f]['armyBonus']}} 
-                        style={{fontSize: 14, maxWidth: "850px"}}
-                      />
-                    </div>
-                  ))}
-                </>
-              :
-                <>
-                  <h6>Army Bonuses <RxCross1 className="text-danger"/></h6>
-                  <hr />
-                  <div 
-                    className="mt-4 text-body"
-                    dangerouslySetInnerHTML={{__html: "No bonuses due to Alliance Level not being Historical."}}
-                    style={{fontSize: 14, maxWidth: "850px"}}
-                  />
-                </>
+                {['Legendary Legion', 'Historical'].includes(allianceLevel) ?
+                  <>
+                    <h6>Army Bonuses <FcCheckmark /></h6>
+                    <hr />
+                    {factionList.map((f) => (
+                      <div>
+                        <h6 className="mt-4">
+                          <Badge bg="dark">
+                            {f}
+                          </Badge>
+                        </h6>
+                        <div 
+                          className="text-body"
+                          dangerouslySetInnerHTML={{__html: faction_data[f]['armyBonus']}} 
+                          style={{fontSize: 14, maxWidth: "850px"}}
+                        />
+                      </div>
+                    ))}
+                  </>
+                :
+                  <>
+                    <h6>Army Bonuses <RxCross1 className="text-danger"/></h6>
+                    <hr />
+                    <div 
+                      className="mt-4 text-body"
+                      dangerouslySetInnerHTML={{__html: "No bonuses due to Alliance Level not being Historical."}}
+                      style={{fontSize: 14, maxWidth: "850px"}}
+                    />
+                  </>
               }
+              </>
+            }
             </>
             :
             <Stack direction="horizontal" gap={3}>
               <pre style={{maxWidth: "800px"}}>
                 {getTextView()}
               </pre>
-              <Button variant="light" className="ms-auto mb-auto border" onClick={handleCopy}>
+              <Button id="copyBtn" variant="light" className="ms-auto mb-auto border" onClick={handleCopy}>
                 <GoCopy /> {copyLabel}
               </Button>
             </Stack>
