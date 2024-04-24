@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.ab1b37d1.css",
-    "main.js": "/mesbg-list-builder/static/js/main.1f3cb196.js",
+    "main.js": "/mesbg-list-builder/static/js/main.6023e57b.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -130,12 +130,12 @@
     "static/media/The Goblin Scribe.jpg": "/mesbg-list-builder/static/media/The Goblin Scribe.87e9a587667f8b1f07fd.jpg",
     "static/media/Meriadoc, Captain of the Shire.jpg": "/mesbg-list-builder/static/media/Meriadoc, Captain of the Shire.e1bef841065ed0c3e6d3.jpg",
     "static/media/Galadriel.jpg": "/mesbg-list-builder/static/media/Galadriel.d0ef8153df11082a4209.jpg",
+    "static/media/Druzhag.jpg": "/mesbg-list-builder/static/media/Druzhag.0a918780370d0dc16e8d.jpg",
     "static/media/Bilbo Baggins, Master Burglar.jpg": "/mesbg-list-builder/static/media/Bilbo Baggins, Master Burglar.82a7bb196a1421a80ee9.jpg",
     "static/media/Sid Briarthorn, Ruffian Chief.jpg": "/mesbg-list-builder/static/media/Sid Briarthorn, Ruffian Chief.e21d6e2ac17b3764207a.jpg",
     "static/media/Eomer.jpg": "/mesbg-list-builder/static/media/Eomer.0a43e025051ad6404309.jpg",
     "static/media/Suladan.jpg": "/mesbg-list-builder/static/media/Suladan.c179ad59b410795d6e2a.jpg",
     "static/media/Theoden.jpg": "/mesbg-list-builder/static/media/Theoden.a8bbbc20166864de75c1.jpg",
-    "static/media/Druzhag.jpg": "/mesbg-list-builder/static/media/Druzhag.989321168867a05fd9d3.jpg",
     "static/media/Thorin Oakenshield.jpg": "/mesbg-list-builder/static/media/Thorin Oakenshield.83da19048d65d8cd58a3.jpg",
     "static/media/Durin.jpg": "/mesbg-list-builder/static/media/Durin.c13c4b7e8c6e90db4ac4.jpg",
     "static/media/Castellan of Dol Guldur.jpg": "/mesbg-list-builder/static/media/Castellan of Dol Guldur.87e17becb4844b6354e6.jpg",
@@ -920,10 +920,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.ab1b37d1.css.map": "/mesbg-list-builder/static/css/main.ab1b37d1.css.map",
-    "main.1f3cb196.js.map": "/mesbg-list-builder/static/js/main.1f3cb196.js.map"
+    "main.6023e57b.js.map": "/mesbg-list-builder/static/js/main.6023e57b.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1b37d1.css",
-    "static/js/main.1f3cb196.js"
+    "static/js/main.6023e57b.js"
   ]
 }
