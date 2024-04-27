@@ -72,7 +72,6 @@ export const handleBillCampfire = (roster, alliance_level) => {
             newWarband["points"] = newWarband["points"] - newHero["pointsTotal"];
             newHero["pointsPerUnit"] = newHero["pointsPerUnit"] - newOption["points"];
             newOption["points"] = alliance_level === "Historical" ? 0 : 15;
-            console.log(newOption["points"])
             newHero["pointsPerUnit"] = newHero["pointsPerUnit"] + newOption["points"];
             newHero["pointsTotal"] = newHero["pointsPerUnit"];
             newWarband["points"] = newWarband["points"] + newHero["pointsTotal"];
@@ -87,7 +86,6 @@ export const handleBillCampfire = (roster, alliance_level) => {
     }
     return newWarband;
   });
-  console.log(newRoster)
   return newRoster;
 };
 
