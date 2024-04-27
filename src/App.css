@@ -91,3 +91,8 @@ pre {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
+
+.screenshot img {
+  height: 100%;
+  width: 100%;
+}
