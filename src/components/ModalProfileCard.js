@@ -23,7 +23,7 @@ export function ModalProfileCard({
         <h6>
           You can download a zip of all profile cards for your current army
           list by clicking{" "}
-          <b className="text-primary">Roster Table &gt Profile Cards</b>
+          <b className="text-primary">Roster Table {">"} Profile Cards</b>
         </h6>
       </div>
     </Modal.Header>
