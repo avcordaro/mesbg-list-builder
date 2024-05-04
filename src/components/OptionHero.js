@@ -12,6 +12,8 @@ you'd like for the Witch King). */
 export function OptionHero({
                              roster, setRoster, warbandNum, unit, option
                            }) {
+  const MWF_MAP = {"Might": 0, "Will": 1, "Fate": 2}
+
   const handleToggle = () => {
     /* Update the roster state variable whenever the specific option is toggled on or off, 
     including any changes to points and bow count. */
@@ -135,6 +137,9 @@ export function OptionHero({
             newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
             newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
             newOption['opt_quantity'] = newQuantity
+            let mwfw = newHero['MWFW'].split(":")
+            mwfw[MWF_MAP[option.option]] = String(newQuantity)
+            newHero['MWFW'] = mwfw.join(":")
             // Siege engine additional crew must also increase unit counts.
             if (option.option === "Additional Crew") {
               newRoster['num_units'] = newRoster['num_units'] - option.opt_quantity

@@ -41,6 +41,7 @@ df_merged['option'].fillna("None", inplace=True)
 df_merged['points'].fillna("None", inplace=True)
 df_merged['min'].fillna(0, inplace=True)
 df_merged['max'].fillna(1, inplace=True)
+df_merged['MWFW'].fillna("", inplace=True)
 df_merged['opt_quantity'].fillna(0, inplace=True)
 df_merged_options = df_merged.groupby([
   'model_id', 
@@ -54,6 +55,7 @@ df_merged_options = df_merged.groupby([
   'inc_bow_count',
   'bow_limit', 
   'siege_crew', 
+  'MWFW',
   'quantity', 
   'pointsPerUnit', 
   'pointsTotal', 

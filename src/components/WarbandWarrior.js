@@ -129,7 +129,7 @@ export function WarbandWarrior({
     setShowCardModal(true);
   };
 
-  return (<Card style={{width: "820px"}} className="p-2 m-1" bg={"light"}>
+  return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
       <img
         className="profile mt-1 mb-1"
@@ -142,18 +142,37 @@ export function WarbandWarrior({
         })()}
         alt=""
       />
-      <Stack>
-        <Stack direction="horizontal" gap={3}>
-          <p>
+      <Stack gap={2}>
+        <Stack direction="horizontal" style={{minHeight: "26px"}} gap={3}>
+          <p className="m-0">
             <b>{unitData.name}</b>
           </p>
-          {unitData.unit_type !== "Warrior" && <Badge style={{marginBottom: "12px"}} bg="dark">
-            {unitData.unit_type}
-          </Badge>}
-          <p className="ms-auto" style={{paddingRight: "10px"}}>
+          <p className="m-0 ms-auto" style={{paddingRight: "10px"}}>
             Points: <b>{unitData.pointsTotal}</b>{unitData.unit_type === "Warrior" && " (per unit: " + unitData.pointsPerUnit + ")"}
           </p>
         </Stack>
+          {unitData.unit_type !== "Warrior" && 
+            <Stack direction="horizontal" style={{minHeight: "28px"}} gap={1}>
+              <Badge bg="dark">
+                {unitData.unit_type}
+              </Badge>
+              {unitData.MWFW &&
+                <>
+                  <br/>
+                  <div style={{marginBottom: "4px"}}>
+                    <span className="m-0 mwf-name border border-secondary">M W F</span>
+                    <span className="m-0 mwf-value border border-secondary">
+                      {unitData.MWFW.split(":")[0]}{" "}
+                      <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                      {unitData.MWFW.split(":")[1]}{" "}
+                      <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                      {unitData.MWFW.split(":")[2]}
+                    </span>
+                  </div> 
+                </>
+              }
+            </Stack>
+          }
         <Stack direction="horizontal" gap={3}>
           {unitData.options[0].option !== "None" && (<Form>
             {unitData.options.map((option) => (<OptionWarrior
