@@ -1,6 +1,7 @@
 import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
-import * as NumericInput from "react-numeric-input";
+import {FaMinus, FaPlus} from "react-icons/fa";
+import Button from "react-bootstrap/Button";
 
 /* Option Hero is the component used to display an individual gear options that each hero 
 has available.
@@ -128,13 +129,12 @@ export function OptionHero({
     return newRoster;
   };
 
-  const handleQuantity = (newQuantity, newQuantityString, input) => {
+  const handleQuantity = (newQuantity) => {
     /* Handles updates for options that require a quantity, rather than a toggle. This includes
-    updating any changes to points and bow count when the quantity is changed. This function 
-    receives three inputs from the NumericInput field it's attached to:
-    newQuantity - the new value as an integer (what we're interested in)
-    newQuantityString - the new value as a string (not needed)
-    input - I'm unclear on what this arg provides (but also not needed) */
+    updating any changes to points and bow count when the quantity is changed.*/
+    if (newQuantity > option.max || newQuantity < option.min) {
+      return null
+    }
     let newRoster = {...roster};
     newRoster.warbands = newRoster.warbands.map((warband) => {
       let newWarband = {...warband};
@@ -174,11 +174,15 @@ export function OptionHero({
   }
 
   return (<>
-      {option.max > 1 ? <Stack className="mt-1" direction="horizontal" gap={2}>
-        <NumericInput size={1} min={option.min} max={option.max} value={option.opt_quantity}
-                      onChange={handleQuantity}/>
-        {option.option + " (" + option.points + " points)"}
-      </Stack> : <Form.Check
+      {option.max > 1 ?
+        <Stack className="mt-1" direction="horizontal" gap={2}>
+          <Button disabled={option.opt_quantity === option.min} variant="outline-secondary" className="p-0 quantity-buttons" size="sm" onClick={() => handleQuantity(option.opt_quantity - 1)}><FaMinus /></Button>
+          <b style={{width: "20px", textAlign: "center"}}>{option.opt_quantity}</b>
+          <Button disabled={option.opt_quantity === option.max} variant="outline-secondary" className="p-0 quantity-buttons" size="sm" onClick={() => handleQuantity(option.opt_quantity + 1)}><FaPlus /></Button>
+          {option.option + " (" + option.points + " points)"}
+        </Stack>
+        :
+        <Form.Check
         type="switch"
         label={option.option + " (" + option.points + " points)"}
         checked={option.opt_quantity === 1}

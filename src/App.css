@@ -119,3 +119,8 @@ pre {
   font-size: 13px;
   font-weight: bold;
 }
+
+.quantity-buttons {
+  width: 25px;
+  height: 25px;
+}
