@@ -5,7 +5,7 @@ import React from "react";
 
 export function ExportAlert({exportAlert, setExportAlert}) {
   return (<Alert
-    style={{width: "850px", zIndex: 1050}}
+    style={{width: "850px", zIndex: 1050, marginLeft: "535px"}}
     className="position-fixed"
     show={exportAlert}
     variant="success"

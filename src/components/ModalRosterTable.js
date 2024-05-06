@@ -75,7 +75,7 @@ export function ModalRosterTable({
 
   const getTextView = () => {
     let tableString = "";
-    tableString += `| Total Points: ${roster.points} | Total Units: ${roster.num_units} | 50%: ${Math.ceil(0.5 * roster.num_units)} | 25%: ${Math.floor(0.25 * roster.num_units)} | Bows: ${roster.bow_count} |`;
+    tableString += `| Total Points: ${roster.points} | Total Units: ${roster.num_units} | Break Point: ${Math.round((0.5 * roster.num_units) * 100) / 100} | Bows: ${roster.bow_count} |`;
     tableString += `\n\nAlliance Level: ${allianceLevel}\n\n`;
     roster.warbands.map((warband) => {
       tableString += "----------------------------------------\n";
@@ -129,31 +129,32 @@ export function ModalRosterTable({
 
   const downloadProfileCards = async () => {
     setDownloadSpinner(true);
-    let profileCards = new Set();
+    let profileCards = [];
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
-        profileCards.add([_warband.hero.profile_origin, _warband.hero.name]);
+        profileCards.push([_warband.hero.profile_origin, _warband.hero.name].join("|"));
         if (_warband.hero.unit_type !== "Siege Engine" && hero_constraint_data[_warband.hero.model_id][0]["extra_profiles"].length > 0) {
           hero_constraint_data[_warband.hero.model_id][0]["extra_profiles"].map((_profile) => {
-            profileCards.add([_warband.hero.profile_origin, _profile]);
+            profileCards.push([_warband.hero.profile_origin, _profile].join("|"));
             return null;
           });
         }
       }
       _warband.units.map((_unit) => {
         if (_unit.name != null) {
-          profileCards.add([_unit.profile_origin, _unit.name]);
+          profileCards.push([_unit.profile_origin, _unit.name].join("|"));
         }
         return null;
       });
       return null;
     });
-    profileCards = [...profileCards];
+    let profileCardsSet = new Set(profileCards)
+    let finalProfileCards = [...profileCardsSet]
 
     const zip = new JSZip();
-    for (const card of profileCards) {
-      const blob = await fetch(require("../images/" + card[0] + /cards/ + card[1] + ".jpg")).then((res) => res.blob());
-      zip.file(card[1] + ".jpg", blob, {binary: true});
+    for (const card of finalProfileCards) {
+      const blob = await fetch(require("../images/" + card.split("|")[0] + /cards/ + card.split("|")[1] + ".jpg")).then((res) => res.blob());
+      zip.file(card.split("|")[1] + ".jpg", blob, {binary: true});
     }
     zip.generateAsync({type: "blob"}).then((blob) => {
       let ts = new Date();
@@ -216,10 +217,7 @@ export function ModalRosterTable({
                 Total Units: <b>{roster.num_units}</b>
               </h6>
               <h6>
-                50%: <b>{Math.ceil(0.5 * roster.num_units)}</b>
-              </h6>
-              <h6>
-                25%: <b>{Math.floor(0.25 * roster.num_units)}</b>
+                Break Point: <b>{Math.round((0.5 * roster.num_units) * 100) / 100}</b>
               </h6>
               <h6>
                 Bows: <b>{roster.bow_count}</b>

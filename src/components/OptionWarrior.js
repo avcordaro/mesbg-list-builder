@@ -154,9 +154,11 @@ export function OptionWarrior({
                 newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
                 newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
                 newOption['opt_quantity'] = newQuantity
-                let mwfw = newUnit['MWFW'].split(":")
-                mwfw[MWF_MAP[option.option]] = String(newQuantity)
-                newUnit['MWFW'] = mwfw.join(":")
+                if (["Might", "Will", "Fate"].includes(option.option)) {
+                  let mwfw = newUnit['MWFW'][0][1].split(":")
+                  mwfw[MWF_MAP[option.option]] = String(newQuantity)
+                  newUnit['MWFW'] = [["", mwfw.join(":")]]
+                }
               }
               return newOption
             })

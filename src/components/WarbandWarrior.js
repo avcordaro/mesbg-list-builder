@@ -156,17 +156,17 @@ export function WarbandWarrior({
               <Badge bg="dark">
                 {unitData.unit_type}
               </Badge>
-              {unitData.MWFW &&
+              {unitData.MWFW && unitData.MWFW.length > 0 &&
                 <>
                   <br/>
                   <div style={{marginBottom: "4px"}}>
                     <span className="m-0 mwf-name border border-secondary">M W F</span>
                     <span className="m-0 mwf-value border border-secondary">
-                      {unitData.MWFW.split(":")[0]}{" "}
+                      {unitData.MWFW[0][1].split(":")[0]}{" "}
                       <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
-                      {unitData.MWFW.split(":")[1]}{" "}
+                      {unitData.MWFW[0][1].split(":")[1]}{" "}
                       <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
-                      {unitData.MWFW.split(":")[2]}
+                      {unitData.MWFW[0][1].split(":")[2]}
                     </span>
                   </div> 
                 </>

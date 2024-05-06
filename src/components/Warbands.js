@@ -60,7 +60,9 @@ export function Warbands({
     newWarband['id'] = uuid()
     newWarband['num'] = roster.warbands.length + 1;
     if (newWarband.hero) {
-      newWarband.hero['id'] = uuid();
+      let newHero = {...newWarband.hero};
+      newHero['id'] = uuid();
+      newWarband.hero = newHero;
       if (newWarband.hero.unique) {
         newWarband['points'] = newWarband['points'] - newWarband.hero['pointsTotal'];
         newWarband['num_units'] = newWarband['num_units'] - (newWarband.hero.siege_crew > 0 ? (newWarband.hero.siege_crew - 1) : 0)
@@ -156,7 +158,6 @@ export function Warbands({
   };
 
   return (<Stack style={{marginLeft: "535px"}} gap={3}>
-    <ExportAlert exportAlert={exportAlert} setExportAlert={setExportAlert}/>
     {roster.warbands.map((warband) => (<Card
       key={uuid()}
       style={{width: "850px"}}

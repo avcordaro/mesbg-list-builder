@@ -720,6 +720,23 @@
       ]
     }
   ],
+  "[assault_upon_helm's_deep] uruk-hai_captain_leader":[
+    {
+      "valid_warband_units":[
+        "[assault_upon_helm's_deep] isengard_troll",
+        "[assault_upon_helm's_deep] uruk-hai_demolition_team",
+        "[assault_upon_helm's_deep] uruk-hai_berserker",
+        "[assault_upon_helm's_deep] uruk-hai_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[assault_upon_helm's_deep] uruk-hai_shaman":[
     {
       "valid_warband_units":[

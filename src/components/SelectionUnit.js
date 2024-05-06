@@ -142,17 +142,17 @@ export function SelectionUnit({
         <b>{unitData.name}</b>
         <br/>
         Points: {unitData.base_points} 
-        {unitData.MWFW ?
+        {unitData.MWFW && unitData.MWFW.length > 0 ?
           <>
             <br/>
             <div className="mt-1">
               <span className="m-0 mwf-name border border-secondary">M W F</span>
               <span className="m-0 mwf-value border border-secondary">
-                {unitData.MWFW.split(":")[0]}{" "}
+                {unitData.MWFW[0][1].split(":")[0]}{" "}
                 <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
-                {unitData.MWFW.split(":")[1]}{" "}
+                {unitData.MWFW[0][1].split(":")[1]}{" "}
                 <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
-                {unitData.MWFW.split(":")[2]}
+                {unitData.MWFW[0][1].split(":")[2]}
               </span>
             </div> 
           </> : <div></div>

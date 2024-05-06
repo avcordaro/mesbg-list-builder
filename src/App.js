@@ -10,6 +10,10 @@ import React, {useEffect, useState} from "react";
 import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import {GameMode} from "./components/GameMode";
+import {ExportAlert} from "./components/ExportAlert";
+import {GameModeAlert} from "./components/GameModeAlert";
+import {ModalBuilderMode} from "./components/ModalBuilderMode";
 
 
 export default function App() {
@@ -49,6 +53,10 @@ export default function App() {
   const [allianceLevel, setAllianceLevel] = useState("n/a");
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
+  const [gameMode, setGameMode] = useState(false);
+  const [gameModeAlert, setGameModeAlert] = useState(false);
+  const [showBuilderModal, setShowBuilderModal] = useState(false);
+
 
   $(window).scroll(function () {
     // stops the left-hand options menu from scrolling horizontally
@@ -204,51 +212,68 @@ export default function App() {
       setShowRosterTable={setShowRosterTable}
       setExportAlert={setExportAlert}
       setShowImportModal={setShowImportModal}
+      gameMode={gameMode}
+      setGameMode={setGameMode}
+      setGameModeAlert={setGameModeAlert}
+      setShowBuilderModal={setShowBuilderModal}
     />
     <div className="m-4">
-      <SelectionMenu
-        roster={roster}
-        setRoster={setRoster}
-        displaySelection={displaySelection}
-        setDisplaySelection={setDisplaySelection}
-        tabSelection={tabSelection}
-        setTabSelection={setTabSelection}
-        factionType={factionType}
-        factionSelection={factionSelection}
-        setFactionSelection={setFactionSelection}
-        heroSelection={heroSelection}
-        newWarriorFocus={newWarriorFocus}
-        warbandNumFocus={warbandNumFocus}
-        setShowCardModal={setShowCardModal}
-        setCardUnitData={setCardUnitData}
-        allianceLevel={allianceLevel}
-        uniqueModels={uniqueModels}
-        specialArmyOptions={specialArmyOptions}
-        setSpecialArmyOptions={setSpecialArmyOptions}
-        warnings={warnings}
-        factionList={factionList}
-        factionBowCounts={factionBowCounts}
-        factionModelCounts={factionModelCounts}
-        allianceColours={allianceColours}
-        setShowAlliances={setShowAlliances}
-      />
-      <Warbands
-        roster={roster}
-        setRoster={setRoster}
-        exportAlert={exportAlert}
-        setExportAlert={setExportAlert}
-        setHeroSelection={setHeroSelection}
-        setDisplaySelection={setDisplaySelection}
-        setWarbandNumFocus={setWarbandNumFocus}
-        setShowCardModal={setShowCardModal}
-        setCardUnitData={setCardUnitData}
-        specialArmyOptions={specialArmyOptions}
-        setSpecialArmyOptions={setSpecialArmyOptions}
-        setNewWarriorFocus={setNewWarriorFocus}
-        setTabSelection={setTabSelection}
-        factionSelection={factionSelection}
-        setFactionSelection={setFactionSelection}
-      />
+      <ExportAlert exportAlert={exportAlert} setExportAlert={setExportAlert}/>
+      <GameModeAlert gameModeAlert={gameModeAlert} setGameModeAlert={setGameModeAlert}/>
+      {!gameMode ?
+        <>
+          <SelectionMenu
+            roster={roster}
+            setRoster={setRoster}
+            displaySelection={displaySelection}
+            setDisplaySelection={setDisplaySelection}
+            tabSelection={tabSelection}
+            setTabSelection={setTabSelection}
+            factionType={factionType}
+            factionSelection={factionSelection}
+            setFactionSelection={setFactionSelection}
+            heroSelection={heroSelection}
+            newWarriorFocus={newWarriorFocus}
+            warbandNumFocus={warbandNumFocus}
+            setShowCardModal={setShowCardModal}
+            setCardUnitData={setCardUnitData}
+            allianceLevel={allianceLevel}
+            uniqueModels={uniqueModels}
+            specialArmyOptions={specialArmyOptions}
+            setSpecialArmyOptions={setSpecialArmyOptions}
+            warnings={warnings}
+            factionList={factionList}
+            factionBowCounts={factionBowCounts}
+            factionModelCounts={factionModelCounts}
+            allianceColours={allianceColours}
+            setShowAlliances={setShowAlliances}
+          />
+          <Warbands
+            roster={roster}
+            setRoster={setRoster}
+            exportAlert={exportAlert}
+            setExportAlert={setExportAlert}
+            setHeroSelection={setHeroSelection}
+            setDisplaySelection={setDisplaySelection}
+            setWarbandNumFocus={setWarbandNumFocus}
+            setShowCardModal={setShowCardModal}
+            setCardUnitData={setCardUnitData}
+            specialArmyOptions={specialArmyOptions}
+            setSpecialArmyOptions={setSpecialArmyOptions}
+            setNewWarriorFocus={setNewWarriorFocus}
+            setTabSelection={setTabSelection}
+            factionSelection={factionSelection}
+            setFactionSelection={setFactionSelection}
+          />
+        </>
+      :
+        <GameMode
+          roster={roster}
+          factionList={factionList}
+          allianceLevel={allianceLevel}
+          allianceColours={allianceColours}
+        />
+      }
     </div>
     <ModalProfileCard
       showCardModal={showCardModal}
@@ -266,6 +291,11 @@ export default function App() {
       roster={roster} showRosterTable={showRosterTable}
       setShowRosterTable={setShowRosterTable}
       factionList={factionList}
+    />
+    <ModalBuilderMode
+      showBuilderModal={showBuilderModal}
+      setShowBuilderModal={setShowBuilderModal}
+      setGameMode={setGameMode}
     />
     <Alliances
       roster={roster}

@@ -27,6 +27,7 @@ export function ModalImportJSON({
         window.setTimeout(() => setImportAlert(false), 5000);
       }
     } catch (err) {
+      console.log(err)
       setImportAlert(true);
       window.setTimeout(() => setImportAlert(false), 5000);
     }
