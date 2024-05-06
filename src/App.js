@@ -218,7 +218,7 @@ export default function App() {
     setWarnings(newWarnings);
   };
 
-  return (<div style={{marginTop: "165px", minHeight: "600px", height: "calc(100vh - 165px)"}}>
+  return (<div style={{marginTop: "165px", minHeight: "600px", height: "calc(100vh - 165px)", minWidth: "1450px"}}>
     <TopNavbar
       roster={roster}
       uniqueModels={uniqueModels}
