@@ -16,5 +16,11 @@ Fully up-to-date with the February 2024 FAQs/Errata. Mobile version not currentl
 * Table view and text-print view of your list for easy sharing
 * Game Mode (New to v5.0.0) - allows you to track the Might/Will/Fate/Wounds of your heroes, casualties, and break point calculation. Additionally displays army bonuses and profile cards all on one screen.
   
+---
+### List Building Mode
+![Screenshot of MESBG List Builder](https://i.postimg.cc/N0Jqf3Q7/builder-mode.png)
 
-![Screenshot of MESBG List Builder](https://i.postimg.cc/np0Vw7d8/Screenshot-2024-02-29-164955.png)
+---
+
+### Game Mode
+![Screenshot of MESBG List Builder](https://i.postimg.cc/MHt1hm7T/game-mode.png)
