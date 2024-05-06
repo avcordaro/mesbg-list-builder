@@ -124,6 +124,7 @@ export function SelectionUnit({
     variant="light"
     style={{width: "461px", textAlign: "left"}}
     onClick={handleClick}
+    className="border shadow-sm"
   >
     <Stack direction="horizontal" gap={3}>
       <img
@@ -140,11 +141,26 @@ export function SelectionUnit({
       <p>
         <b>{unitData.name}</b>
         <br/>
-        Points: {unitData.base_points}
-        <br/>
+        Points: {unitData.base_points} 
+        {unitData.MWFW && unitData.MWFW.length > 0 ?
+          <>
+            <br/>
+            <div className="mt-1">
+              <span className="m-0 mwf-name border border-secondary">M W F</span>
+              <span className="m-0 mwf-value border border-secondary">
+                {unitData.MWFW[0][1].split(":")[0]}{" "}
+                <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                {unitData.MWFW[0][1].split(":")[1]}{" "}
+                <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                {unitData.MWFW[0][1].split(":")[2]}
+              </span>
+            </div> 
+          </> : <div></div>
+        }
         {unitData.unit_type !== "Warrior" && (<Badge className="mt-2" bg="dark">
           {unitData.unit_type}
         </Badge>)}
+        
       </p>
       <Button
         className="ms-auto me-2 border"

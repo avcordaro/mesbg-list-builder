@@ -96,3 +96,26 @@ pre {
   height: 100%;
   width: 100%;
 }
+
+.mwf-name {
+  background-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity));
+  color: white;
+  border-radius: 5px 0px 0px 5px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.mwf-value {
+  background-color: white;
+  border-radius: 0px 5px 5px 0px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}

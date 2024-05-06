@@ -3,12 +3,13 @@ import {MdReportGmailerrorred} from "react-icons/md";
 import Button from "react-bootstrap/Button";
 import {FaTableList} from "react-icons/fa6";
 import {BiLinkAlt, BiSolidFileImport} from "react-icons/bi";
-import {FaRegCopyright} from "react-icons/fa";
+import {FaRegCopyright, FaChessRook} from "react-icons/fa";
+import { FaHammer } from "react-icons/fa6";
 import React from "react";
 import {Navbar} from "react-bootstrap";
 
-export const VERSION = "4.5.0";
-const UPDATED = "27-Apr-2024";
+export const VERSION = "5.0.0";
+const UPDATED = "06-May-2024";
 
 /* Navbar component that displays at the top of the page. */
 
@@ -18,14 +19,31 @@ export function TopNavbar({
                             setShowRosterTable,
                             setExportAlert,
                             setShowImportModal,
+                            gameMode,
+                            setGameMode,
+                            setGameModeAlert,
+                            setShowBuilderModal
                           }) {
   const handleExportJSON = () => {
     /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard.
     Also notify them with an alert that fades away after 3 seconds. */
-    navigator.clipboard.writeText(JSON.stringify(roster));
+    navigator.clipboard.writeText(JSON.stringify(roster).replaceAll("[\"\",", "[0,"));
     setExportAlert(true);
     window.setTimeout(() => setExportAlert(false), 5000);
   };
+
+  const handleBacktoBuilder = () => {
+    setShowBuilderModal(true)
+  }
+
+  const handleGameMode = () => {
+    if (parseInt(roster.version.substring(0, 1)) < 5) {
+      setGameModeAlert(true);
+      window.setTimeout(() => setGameModeAlert(false), 12000);
+    } else {
+      setGameMode(true);
+    }
+  }
 
   return (<Navbar
     style={{minWidth: "1450px"}}
@@ -62,20 +80,37 @@ export function TopNavbar({
         </Stack>
         <Stack style={{width: "835px"}}>
           <Stack className="mt-3" direction="horizontal" gap={3}>
-            <Button
+            {!gameMode ?
+              <Button
+                variant="success"
+                className="ms-auto"
+                disabled={uniqueModels.length === 0}
+                onClick={() => handleGameMode()}
+              >
+                <FaChessRook/> Game Mode
+              </Button>
+            :
+              <Button
+              variant="success"
               className="ms-auto"
+              onClick={() => handleBacktoBuilder()}
+              >
+                <FaHammer/> Builder Mode
+              </Button>
+            }
+            <Button
               disabled={uniqueModels.length === 0}
               onClick={() => setShowRosterTable(true)}
             >
               <FaTableList/> Roster Table
             </Button>
             <Button
-              disabled={uniqueModels.length === 0}
+              disabled={uniqueModels.length === 0 || gameMode}
               onClick={() => handleExportJSON()}
             >
               <BiLinkAlt/> Export JSON
             </Button>
-            <Button onClick={() => setShowImportModal(true)}>
+            <Button onClick={() => setShowImportModal(true)} disabled={gameMode}>
               <BiSolidFileImport/> Import JSON
             </Button>
           </Stack>
@@ -86,11 +121,8 @@ export function TopNavbar({
             <h6 className="mb-0 mt-2">
               Total Units: <b>{roster.num_units}</b>
             </h6>
-            <h6 className="mb-0 mt-2">
-              50%: <b>{Math.ceil(0.5 * roster.num_units)}</b>
-            </h6>
-            <h6 className="mb-0 mt-2">
-              25%: <b>{Math.floor(0.25 * roster.num_units)}</b>
+            <h6 className="mb-0 mt-2" style={{minWidth: "120px"}}>
+              Break Point: <b>{Math.round((0.5 * roster.num_units) * 100) / 100}</b>
             </h6>
             <h6 className="mb-0 mt-2">
               Bows: <b>{roster.bow_count}</b>

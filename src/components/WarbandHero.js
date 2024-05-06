@@ -93,7 +93,7 @@ export function WarbandHero({
     setRoster(newRoster);
   }
 
-  return (<Card style={{width: "820px"}} className="p-2 m-1" bg={"light"}>
+  return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
       <img
         className="profile mt-1 mb-1"
@@ -106,22 +106,19 @@ export function WarbandHero({
         })()}
         alt=""
       />
-      <Stack>
-        <Stack direction="horizontal" gap={3}>
-          <p>
+      <Stack gap={2}>
+        <Stack direction="horizontal" style={{minHeight: "26px"}} gap={3}>
+          <p className="m-0">
             <b>{unitData.name}</b>
           </p>
-          <Badge style={{marginBottom: "12px"}} bg="dark">
-            {unitData.unit_type}
-          </Badge>
           {["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) &&
             <Stack className="ms-auto" direction="horizontal">
               {roster['leader_warband_num'] === warbandNum ?
-                <h5 className="me-2 mb-3 text-success"><GiQueenCrown/></h5> :
-                <h5 className="me-2 mb-3" style={{color: "lightgrey"}}><GiQueenCrown/></h5>}
+                <h5 className="m-0 me-2 text-success"><GiQueenCrown/></h5> :
+                <h5 className="m-0 me-2" style={{color: "lightgrey"}}><GiQueenCrown/></h5>}
               <Form.Check
                 reverse
-                className={roster['leader_warband_num'] === warbandNum ? "mb-3 text-success" : "mb-3"}
+                className={roster['leader_warband_num'] === warbandNum ? "text-success" : ""}
                 type="switch"
                 label="Leader"
                 name="leader"
@@ -130,10 +127,30 @@ export function WarbandHero({
               />
             </Stack>}
           <p
-            className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "ms-2" : "ms-auto"}
+            className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "m-0 ms-2" : "m-0 ms-auto"}
             style={{paddingRight: "10px"}}>
             Points: <b>{unitData.pointsTotal}</b>
           </p>
+        </Stack>
+        <Stack direction="horizontal" style={{minHeight: "28px"}} gap={1}>
+          <Badge bg="dark">
+            {unitData.unit_type}
+          </Badge>
+          {unitData.MWFW && unitData.MWFW.length > 0 &&
+            <>
+              <br/>
+              <div style={{marginBottom: "4px"}}>
+                <span className="m-0 mwf-name border border-secondary">M W F</span>
+                <span className="m-0 mwf-value border border-secondary">
+                  {unitData.MWFW[0][1].split(":")[0]}{" "}
+                  <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                  {unitData.MWFW[0][1].split(":")[1]}{" "}
+                  <span className="m-0" style={{color: "lightgrey"}}>/</span>{" "}
+                  {unitData.MWFW[0][1].split(":")[2]}
+                </span>
+              </div> 
+            </>
+          }
         </Stack>
         <Stack direction="horizontal" gap={3}>
           {unitData.options[0].option !== "None" && (<Form>

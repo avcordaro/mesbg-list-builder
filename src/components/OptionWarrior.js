@@ -9,6 +9,8 @@ warrior has available. */
 export function OptionWarrior({
                                 roster, setRoster, warbandNum, unit, option, specialArmyOptions
                               }) {
+  const MWF_MAP = {"Might": 0, "Will": 1, "Fate": 2}
+
   const handleToggle = () => {
     /* Update the roster state variable whenever the specific option is toggled on or off, 
     including any changes to points and bow count. */
@@ -152,6 +154,11 @@ export function OptionWarrior({
                 newWarband['points'] = newWarband['points'] + newUnit['pointsTotal'];
                 newRoster['points'] = newRoster['points'] + newUnit['pointsTotal']
                 newOption['opt_quantity'] = newQuantity
+                if (["Might", "Will", "Fate"].includes(option.option)) {
+                  let mwfw = newUnit['MWFW'][0][1].split(":")
+                  mwfw[MWF_MAP[option.option]] = String(newQuantity)
+                  newUnit['MWFW'] = [["", mwfw.join(":")]]
+                }
               }
               return newOption
             })

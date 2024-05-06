@@ -54,6 +54,7 @@ df_merged_options = df_merged.groupby([
   'inc_bow_count',
   'bow_limit', 
   'siege_crew', 
+  'MWFW',
   'quantity', 
   'pointsPerUnit', 
   'pointsTotal', 
@@ -67,7 +68,8 @@ df_merged_options = df_merged.groupby([
   'max', 
   'opt_quantity'
 ]].to_dict(orient='records')).reset_index(name='options')
-df_merged_options =df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
+df_merged_options = df_merged_options.sort_values(['faction', 'unit_type', 'base_points', 'name'], ascending=[True, True, False, True])
+df_merged_options['MWFW'] = df_merged_options['MWFW'].apply(eval)
 json_dict = df_merged_options.to_json(orient='records', indent=2)
 
 with open('mesbg_data.json', 'w') as f:

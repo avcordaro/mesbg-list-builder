@@ -12,6 +12,8 @@ you'd like for the Witch King). */
 export function OptionHero({
                              roster, setRoster, warbandNum, unit, option
                            }) {
+  const MWF_MAP = {"Might": 0, "Will": 1, "Fate": 2}
+
   const handleToggle = () => {
     /* Update the roster state variable whenever the specific option is toggled on or off, 
     including any changes to points and bow count. */
@@ -34,6 +36,13 @@ export function OptionHero({
               if (newOption.type === "treebeard_m&p") {
                 newRoster['num_units'] = newRoster['num_units'] - 2;
                 newWarband['num_units'] = newWarband['num_units'] - 2;
+              }
+              if (newOption.type === "engineer_cpt") {
+                newWarband['max_units'] = 6
+                newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Engineer Captain", "Siege Veteran"), "2:1:1:2"]]
+              }
+              if (newOption.type === "mahud_chief") {
+                newHero['MWFW'] = [['War Mumak of Harad - Haradrim Commander', '2:1:1:2'], ['War Mumak of Harad', '0:0:0:10']]
               }
             }
             return newOption
@@ -65,6 +74,13 @@ export function OptionHero({
               if (newOption.type === "treebeard_m&p") {
                 newRoster['num_units'] = newRoster['num_units'] + 2;
                 newWarband['num_units'] = newWarband['num_units'] + 2;
+              }
+              if (newOption.type === "engineer_cpt") {
+                newWarband['max_units'] = 12
+                newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Siege Veteran", "Engineer Captain"), "2:1:1:2"]]
+              }
+              if (newOption.type === "mahud_chief") {
+                newHero['MWFW'] = [['War Mumak of Harad - Mahud Beastmaster Chieftain', '3:2:2:2'], ['War Mumak of Harad', '0:0:0:10']]
               }
             }
             return newOption
@@ -135,6 +151,11 @@ export function OptionHero({
             newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
             newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
             newOption['opt_quantity'] = newQuantity
+            if (["Might", "Will", "Fate"].includes(option.option)) {
+              let mwfw = newHero['MWFW'][0][1].split(":")
+              mwfw[MWF_MAP[option.option]] = String(newQuantity)
+              newHero['MWFW'] = [["", mwfw.join(":")]]
+            }
             // Siege engine additional crew must also increase unit counts.
             if (option.option === "Additional Crew") {
               newRoster['num_units'] = newRoster['num_units'] - option.opt_quantity
