@@ -64,6 +64,17 @@ export default function App() {
   });
 
   useEffect(() => {
+    let store_roster = sessionStorage.getItem("roster");
+    if (store_roster) {
+      setRoster(JSON.parse(store_roster));
+    }
+    let store_gameMode = sessionStorage.getItem("gameMode");
+    if (store_gameMode === "true") {
+      setGameMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
     let faction_types = roster.warbands.map((warband) => {
       if (warband.hero) {
@@ -142,8 +153,10 @@ export default function App() {
     setUniqueModels(newUniqueModels);
 
     checkWarnings(newUniqueModels, factions, newAllianceLevel);
+    sessionStorage.setItem("roster", JSON.stringify(roster).replaceAll("[\"\",", "[0,"))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roster]);
+
 
   const getAllUniqueModels = () => {
     let newUniqueModels = new Set()
@@ -219,7 +232,7 @@ export default function App() {
     />
     <div className="m-4">
       <ExportAlert exportAlert={exportAlert} setExportAlert={setExportAlert}/>
-      <GameModeAlert gameModeAlert={gameModeAlert} setGameModeAlert={setGameModeAlert}/>
+      <GameModeAlert gameModeAlert={gameModeAlert} setGameModeAlert={setGameModeAlert} setRoster={setRoster}/>
       {!gameMode ?
         <>
           <SelectionMenu
