@@ -8,6 +8,7 @@ export function ModalBuilderMode({showBuilderModal, setShowBuilderModal, setGame
   const handleContinue = () => {
       setShowBuilderModal(false);
       setGameMode(false);
+      window.scrollTo(0, 0)
   };
 
   return (<Modal

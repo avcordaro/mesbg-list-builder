@@ -7,6 +7,7 @@ import { FaChevronLeft, FaChevronRight, FaSkullCrossbones } from "react-icons/fa
 
 export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, hero_idx, val_idx, heroCasualtyCount, setHeroCasualtyCount}) {
 
+  // eslint-disable-next-line
   const [initialValue, setInitiaValue] = useState(parseInt(gameHeroes[hero_id][hero_idx]['MWFW'].split(":")[val_idx]));
 
   const getValue = () => {

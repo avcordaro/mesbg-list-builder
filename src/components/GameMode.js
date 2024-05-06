@@ -95,6 +95,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours}) 
 
   useEffect(() => {
     handleReset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleReset = () => {

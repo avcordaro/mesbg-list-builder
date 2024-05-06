@@ -251,8 +251,6 @@ export default function App() {
           <Warbands
             roster={roster}
             setRoster={setRoster}
-            exportAlert={exportAlert}
-            setExportAlert={setExportAlert}
             setHeroSelection={setHeroSelection}
             setDisplaySelection={setDisplaySelection}
             setWarbandNumFocus={setWarbandNumFocus}

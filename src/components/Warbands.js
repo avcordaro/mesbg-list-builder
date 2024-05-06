@@ -7,7 +7,6 @@ import {MdDelete} from "react-icons/md";
 import {DefaultHeroUnit} from "./DefaultHeroUnit";
 import {v4 as uuid} from "uuid";
 import {WarbandHero} from "./WarbandHero";
-import {ExportAlert} from "./ExportAlert";
 import {DefaultWarriorUnit} from "./DefaultWarriorUnit";
 import {WarbandWarrior} from "./WarbandWarrior";
 import {FaPlus} from "react-icons/fa";
@@ -20,8 +19,6 @@ import {handleSpecialArmyOption, handleSpecialWarbandOption} from "./specialRule
 export function Warbands({
                            roster,
                            setRoster,
-                           exportAlert,
-                           setExportAlert,
                            setHeroSelection,
                            setDisplaySelection,
                            setWarbandNumFocus,

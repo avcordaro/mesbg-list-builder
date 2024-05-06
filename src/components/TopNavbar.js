@@ -42,6 +42,7 @@ export function TopNavbar({
       window.setTimeout(() => setGameModeAlert(false), 12000);
     } else {
       setGameMode(true);
+      window.scrollTo(0, 0)
     }
   }
 
