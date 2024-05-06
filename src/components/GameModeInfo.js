@@ -4,11 +4,12 @@ import Badge from "react-bootstrap/Badge";
 import faction_data from "../data/faction_data.json";
 import Stack from "react-bootstrap/Stack";
 import {FaChessRook} from "react-icons/fa";
-import {GiCrackedShield} from "react-icons/gi";
+import {GiCrackedShield, GiSwordsEmblem} from "react-icons/gi";
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 
-export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount}) {
+export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal}) {
 
   return (<div
     id="optionMenu"
@@ -27,6 +28,7 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
         <h5>
           <Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge>
         </h5>
+        <Button variant="light" className="ms-auto border shadow-sm" onClick={() => setShowWoundModal(true)}><GiSwordsEmblem /> To Wound Chart</Button>
       </Stack>
       <h6
         className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}

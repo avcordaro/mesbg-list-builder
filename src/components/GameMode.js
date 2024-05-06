@@ -7,6 +7,7 @@ import Stack from "react-bootstrap/Stack";
 import {FaChevronLeft, FaChevronRight, FaSkullCrossbones} from "react-icons/fa";
 import {GiCrackedShield} from "react-icons/gi";
 import hero_constraint_data from "../data/hero_constraint_data.json";
+import {ModalWoundChart} from "./ModalWoundChart";
 
 export function GameModeCasualties ({roster, casualtyCount, setCasualtyCount, heroCasualtyCount, gameHeroes}) {
 
@@ -92,6 +93,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours}) 
   const [gameHeroes, setGameHeroes] = useState({});
   const [casualtyCount, setCasualtyCount] = useState(0);
   const [heroCasualtyCount, setHeroCasualtyCount] = useState(0);
+  const [showWoundModal, setShowWoundModal] = useState(false);
 
   useEffect(() => {
     let store_gameMode = sessionStorage.getItem("gameMode")
@@ -186,6 +188,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours}) 
         roster={roster}
         casualtyCount={casualtyCount}
         heroCasualtyCount={heroCasualtyCount}
+        setShowWoundModal={setShowWoundModal}
       />
       <div style={{marginLeft: "535px", minWidth: "720px"}}>
         <Stack direction="horizontal" style={{minWidth: "800px"}}>
@@ -205,6 +208,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours}) 
         <hr className="mt-5 mb-3" style={{width: "720px"}}/>
         <GameModeProfiles roster={roster}/>
       </div>
+      <ModalWoundChart showWoundModal={showWoundModal} setShowWoundModal={setShowWoundModal} />
     </div>
   );
 }

@@ -167,7 +167,7 @@ export function SelectionMenu({
         </h5>
         <Button
           variant="light"
-          className="ms-auto border"
+          className="ms-auto border shadow-sm"
           onClick={() => setShowAlliances(true)}
           disabled={!factionList.length || factionType.includes("LL")}
         >
