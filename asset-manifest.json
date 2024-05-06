@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/mesbg-list-builder/static/css/main.e6839e71.css",
-    "main.js": "/mesbg-list-builder/static/js/main.6cdfcaf7.js",
+    "main.css": "/mesbg-list-builder/static/css/main.e352d484.css",
+    "main.js": "/mesbg-list-builder/static/js/main.c0ddf2c4.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
     "static/media/Grimbeorn.jpg": "/mesbg-list-builder/static/media/Grimbeorn.cd3b4fc616de55b08128.jpg",
+    "static/media/to-wound-chart.png": "/mesbg-list-builder/static/media/to-wound-chart.9c1bc86abcb3a0c67e64.png",
     "static/media/The Lingering Shadow.jpg": "/mesbg-list-builder/static/media/The Lingering Shadow.43d5d35623ef1a288718.jpg",
     "static/media/Signal Tower.jpg": "/mesbg-list-builder/static/media/Signal Tower.7203d57e3763025b8ecc.jpg",
     "static/media/The Slayer of Men.jpg": "/mesbg-list-builder/static/media/The Slayer of Men.e81a1fdb3e4ab8febc68.jpg",
@@ -952,11 +953,11 @@
     "static/media/The Iron Hills.png": "/mesbg-list-builder/static/media/The Iron Hills.0c80580e42fc5d13c29c.png",
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
-    "main.e6839e71.css.map": "/mesbg-list-builder/static/css/main.e6839e71.css.map",
-    "main.6cdfcaf7.js.map": "/mesbg-list-builder/static/js/main.6cdfcaf7.js.map"
+    "main.e352d484.css.map": "/mesbg-list-builder/static/css/main.e352d484.css.map",
+    "main.c0ddf2c4.js.map": "/mesbg-list-builder/static/js/main.c0ddf2c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6839e71.css",
-    "static/js/main.6cdfcaf7.js"
+    "static/css/main.e352d484.css",
+    "static/js/main.c0ddf2c4.js"
   ]
 }
