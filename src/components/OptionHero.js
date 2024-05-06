@@ -40,7 +40,7 @@ export function OptionHero({
               }
               if (newOption.type === "engineer_cpt") {
                 newWarband['max_units'] = 6
-                newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Engineer Captain", "Siege Veteran"), "1:1:1:2"]]
+                newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Engineer Captain", "Siege Veteran"), "1:1:1:1"]]
               }
               if (newOption.type === "mahud_chief") {
                 newHero['MWFW'] = [['War Mumak of Harad - Haradrim Commander', '2:1:1:2'], ['War Mumak of Harad', '0:0:0:10']]
