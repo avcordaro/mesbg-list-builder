@@ -10,7 +10,6 @@ import {SelectionUnit} from "./SelectionUnit";
 import {v4 as uuid} from "uuid";
 import hero_constraint_data from "../data/hero_constraint_data.json";
 import {IoWarningOutline} from "react-icons/io5";
-import faction_data from "../data/faction_data.json";
 import Badge from "react-bootstrap/Badge";
 import {LuSwords} from "react-icons/lu";
 import {FcCheckmark} from "react-icons/fc";
@@ -45,6 +44,7 @@ export function SelectionMenu({
                                 factionModelCounts,
                                 allianceColours,
                                 setShowAlliances,
+                                factionData
                               }) {
   const faction_lists = {
     "Good Army": new Set(mesbg_data
@@ -152,10 +152,10 @@ export function SelectionMenu({
       {factionList
         .filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)",].includes(x))
         .map((f) => (<p
-          className={factionBowCounts[f] > Math.ceil(faction_data[f]["bow_limit"] * factionModelCounts[f]) ? "text-danger" : "text-dark"}
+          className={factionBowCounts[f] > Math.ceil(factionData[f]["bow_limit"] * factionModelCounts[f]) ? "text-danger" : "text-dark"}
         >
           <b>{f}:</b>
-          {" (" + faction_data[f]["bow_limit"] * 100 + "% limit - " + Math.ceil(faction_data[f]["bow_limit"] * factionModelCounts[f]) + " bows) "}
+          {" (" + factionData[f]["bow_limit"] * 100 + "% limit - " + Math.ceil(factionData[f]["bow_limit"] * factionModelCounts[f]) + " bows) "}
           <b>
             {factionBowCounts[f]} / {factionModelCounts[f]}
           </b>
@@ -194,7 +194,7 @@ export function SelectionMenu({
         <div
           className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
           dangerouslySetInnerHTML={{
-            __html: faction_data[f]["armyBonus"],
+            __html: factionData[f]["armyBonus"],
           }}
         />
       </div>))}

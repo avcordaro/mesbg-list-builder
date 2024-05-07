@@ -175,3 +175,12 @@ export const handleSpecialWarbandOption = (newRoster, warbandNum) => {
   })
   return newRoster;
 };
+
+export const handle50PctBowLimit = (faction_data, alliance_level) => {
+  /* If a Hero is removed that provided a special warband option, that option much be turned off for all eligible units
+  in the current army roster, and points updated. */
+    let new_faction_data = {...faction_data};
+    new_faction_data["The Serpent Horde"].bow_limit = alliance_level === "Historical" ? 0.5 : 0.33;
+    new_faction_data["Azog's Hunters"].bow_limit = alliance_level === "Historical" ? 0.5 : 0.33;
+    return new_faction_data;
+};

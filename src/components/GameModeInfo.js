@@ -1,7 +1,6 @@
 import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
 import Badge from "react-bootstrap/Badge";
-import faction_data from "../data/faction_data.json";
 import Stack from "react-bootstrap/Stack";
 import {FaChessRook} from "react-icons/fa";
 import {GiCrackedShield, GiSwordsEmblem} from "react-icons/gi";
@@ -9,7 +8,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 
 
-export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal}) {
+export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal, factionData}) {
 
   return (<div
     id="optionMenu"
@@ -50,7 +49,7 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
         <div
           className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
           dangerouslySetInnerHTML={{
-            __html: faction_data[f]["armyBonus"],
+            __html: factionData[f]["armyBonus"],
           }}
         />
       </div>))}

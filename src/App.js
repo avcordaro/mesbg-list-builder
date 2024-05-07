@@ -1,4 +1,5 @@
 import warning_rules from "./data/warning_rules.json";
+import faction_data from "./data/faction_data.json";
 import {ModalRosterTable} from "./components/ModalRosterTable.js"
 import {ModalImportJSON} from "./components/ModalImportJSON.js"
 import {ModalProfileCard} from "./components/ModalProfileCard.js";
@@ -38,6 +39,7 @@ export default function App() {
   const [roster, setRoster] = useState({
     version: VERSION, num_units: 0, points: 0, bow_count: 0, warbands: []
   });
+  const [factionData, setFactionData] = useState(faction_data)
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
@@ -106,7 +108,7 @@ export default function App() {
         return null
       });
     }
-    let newAllianceLevel = calculateAllianceLevel(factions, faction_type);
+    let newAllianceLevel = calculateAllianceLevel(factions, faction_type, factionData);
     setAllianceLevel(newAllianceLevel);
     setFactionList(factions);
 
@@ -260,6 +262,7 @@ export default function App() {
             factionModelCounts={factionModelCounts}
             allianceColours={allianceColours}
             setShowAlliances={setShowAlliances}
+            factionData={factionData}
           />
           <Warbands
             roster={roster}
@@ -283,6 +286,7 @@ export default function App() {
           factionList={factionList}
           allianceLevel={allianceLevel}
           allianceColours={allianceColours}
+          factionData={factionData}
         />
       }
     </div>
@@ -302,6 +306,7 @@ export default function App() {
       roster={roster} showRosterTable={showRosterTable}
       setShowRosterTable={setShowRosterTable}
       factionList={factionList}
+      factionData={factionData}
     />
     <ModalBuilderMode
       showBuilderModal={showBuilderModal}
@@ -315,6 +320,8 @@ export default function App() {
       showAlliances={showAlliances}
       setShowAlliances={setShowAlliances}
       factionList={factionList}
+      factionData={factionData}
+      setFactionData={setFactionData}
     />
   </div>);
 }

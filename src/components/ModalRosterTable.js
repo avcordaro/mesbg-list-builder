@@ -12,7 +12,6 @@ import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
 import {GoCopy} from "react-icons/go";
 import {GiQueenCrown} from "react-icons/gi";
-import faction_data from "../data/faction_data.json";
 import hero_constraint_data from "../data/hero_constraint_data.json";
 import JSZip from "jszip";
 import {saveAs} from "file-saver";
@@ -28,6 +27,7 @@ export function ModalRosterTable({
                                    showRosterTable,
                                    setShowRosterTable,
                                    factionList,
+                                   factionData
                                  }) {
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
@@ -114,7 +114,7 @@ export function ModalRosterTable({
       if (["Legendary Legion", "Historical"].includes(allianceLevel)) {
         factionList.map((f) => {
           tableString += `--- ${f} ---\n\n`;
-          tableString += faction_data[f]["armyBonus"]
+          tableString += factionData[f]["armyBonus"]
             .replaceAll("<b>", "")
             .replaceAll("</b>", "")
             .replaceAll("<br/>", "\n") + "\n\n";
@@ -349,7 +349,7 @@ export function ModalRosterTable({
                   <div
                     className="text-body"
                     dangerouslySetInnerHTML={{
-                      __html: faction_data[f]["armyBonus"],
+                      __html: factionData[f]["armyBonus"],
                     }}
                     style={{fontSize: 14, maxWidth: "850px"}}
                   />

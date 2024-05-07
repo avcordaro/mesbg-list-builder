@@ -1,12 +1,12 @@
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Badge from "react-bootstrap/Badge";
-import faction_data from "../data/faction_data.json";
 import {useEffect} from "react";
 import {
+  handle50PctBowLimit,
   handleBillCampfire, handleGoblinTown, handleMasterLaketown, handleMirkwoodRangers
 } from "./specialRules";
 
-const checkAlliance = (army_A, army_B) => {
+const checkAlliance = (army_A, army_B, faction_data) => {
   // Checks the alliance level between two given armies
   if (faction_data[army_A]['primaryAllies'].includes(army_B)) {
     return 'Historical'
@@ -16,7 +16,7 @@ const checkAlliance = (army_A, army_B) => {
   return 'Impossible'
 };
 
-export const calculateAllianceLevel = (_factionList, _factionType) => {
+export const calculateAllianceLevel = (_factionList, _factionType, faction_data) => {
   // Calculates overall alliance level for current army roster selection
   if (_factionType.includes('LL')) {
     return 'Legendary Legion';
@@ -30,7 +30,7 @@ export const calculateAllianceLevel = (_factionList, _factionType) => {
     // Create all possible pairs from the list of factions
     let faction_pairs = _factionList.flatMap((v, i) => _factionList.slice(i + 1).map(w => [v, w]));
     // Calculate the alliance level for each pair
-    let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1]))
+    let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1], faction_data))
     // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
     if (pairs_alliances.includes('Impossible')) {
       return 'Impossible';
@@ -50,7 +50,9 @@ export function Alliances({
                             allianceLevel,
                             showAlliances,
                             setShowAlliances,
-                            factionList
+                            factionList,
+                            factionData,
+                            setFactionData
                           }) {
 
   useEffect(() => {
@@ -73,6 +75,11 @@ export function Alliances({
     if (factionList.includes("The Trolls")) {
       let newRoster = handleBillCampfire(roster, allianceLevel);
       setRoster(newRoster);
+    }
+    //The Serpent Horde and Azog's Hunters can have 50% bow limit if alliance level is Historical, otherwise it reverts to 33%.
+    if (factionList.includes("The Serpent Horde") || factionList.includes("Azog's Hunters")) {
+      let newFactionData = handle50PctBowLimit(factionData, allianceLevel);
+      setFactionData(newFactionData);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allianceLevel]);
@@ -103,11 +110,11 @@ export function Alliances({
             <b>{" " + f}</b>
           </h5>
           <hr/>
-          {faction_data[f]["primaryAllies"].length > 0 && (<div className="pt-2">
+          {factionData[f]["primaryAllies"].length > 0 && (<div className="pt-2">
             <h5>
               <Badge bg="success">Historical</Badge>
             </h5>
-            {["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(f) ? faction_data[f]["primaryAllies"].filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(x)).map((a) => (<>
+            {["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(f) ? factionData[f]["primaryAllies"].filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)"].includes(x)).map((a) => (<>
                         <span>
                           <img
                             className="faction_logo"
@@ -123,7 +130,7 @@ export function Alliances({
                           {" " + a}
                         </span>
               <br/>
-            </>)) : faction_data[f]["primaryAllies"].map((a) => (<>
+            </>)) : factionData[f]["primaryAllies"].map((a) => (<>
                         <span>
                           <img
                             className="faction_logo"
@@ -141,11 +148,11 @@ export function Alliances({
               <br/>
             </>))}
           </div>)}
-          {faction_data[f]["secondaryAllies"].length > 0 && (<div className="pt-2 pb-4">
+          {factionData[f]["secondaryAllies"].length > 0 && (<div className="pt-2 pb-4">
             <h5>
               <Badge bg="warning">Convenient</Badge>
             </h5>
-            {faction_data[f]["secondaryAllies"].map((a) => (<>
+            {factionData[f]["secondaryAllies"].map((a) => (<>
                       <span>
                         <img
                           className="faction_logo"
