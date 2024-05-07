@@ -18599,7 +18599,7 @@
       {
         "option_id":"OPT0488",
         "option":"Minas Tirith Engineer Captain",
-        "points":40.0,
+        "points":50.0,
         "type":"engineer_cpt",
         "min":0.0,
         "max":1.0,
