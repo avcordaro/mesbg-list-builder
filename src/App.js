@@ -15,6 +15,7 @@ import {GameMode} from "./components/GameMode";
 import {ExportAlert} from "./components/ExportAlert";
 import {GameModeAlert} from "./components/GameModeAlert";
 import {ModalBuilderMode} from "./components/ModalBuilderMode";
+import {checkSiegeEngineCounts, checkAlliedHeroes, checkDunharrow} from "./components/specialRules";
 
 
 export default function App() {
@@ -112,9 +113,10 @@ export default function App() {
     setAllianceLevel(newAllianceLevel);
     setFactionList(factions);
 
-    // Every time roster is updated, update count of bows per faction
     let bowCounts = {};
     let modelCounts = {};
+    let heroicTiers = {}
+    let siegeEngines = {}
     roster.warbands.map((_warband) => {
       if (_warband.hero) {
         let f = _warband.hero.faction;
@@ -124,6 +126,13 @@ export default function App() {
         if (!modelCounts.hasOwnProperty(f)) {
           modelCounts[f] = 0;
         }
+        if (!heroicTiers.hasOwnProperty(f)) {
+          heroicTiers[f] = [];
+        }
+        if (!siegeEngines.hasOwnProperty(f)) {
+          siegeEngines[f] = 0;
+        }
+        heroicTiers[f].push(_warband.hero.unit_type);
         if (_warband.hero.model_id === "[the_iron_hills] iron_hills_chariot_(captain)") {
           modelCounts[f] = modelCounts[f] + (_warband.hero.siege_crew - 1);
         }
@@ -135,6 +144,7 @@ export default function App() {
             }
             return null
           });
+          siegeEngines[f] = siegeEngines[f] + 1;
         }
         _warband.units.map((_unit) => {
           if (_unit.name != null && _unit.unit_type === "Warrior" && _unit.bow_limit) {
@@ -154,7 +164,15 @@ export default function App() {
     let newUniqueModels = getAllUniqueModels()
     setUniqueModels(newUniqueModels);
 
-    checkWarnings(newUniqueModels, factions, newAllianceLevel);
+    let newWarnings = checkWarnings(newUniqueModels, factions, newAllianceLevel);
+    newWarnings = checkSiegeEngineCounts(siegeEngines, heroicTiers, newWarnings);
+    newWarnings = checkAlliedHeroes(newAllianceLevel, heroicTiers, newWarnings);
+    if (factions.includes("The Dead of Dunharrow") && factions.length > 1) {
+      const [_newAllianceLevel, _newWarnings] = checkDunharrow(newAllianceLevel, newUniqueModels, newWarnings)
+      newWarnings = _newWarnings
+      setAllianceLevel(_newAllianceLevel)
+    }
+    setWarnings(newWarnings);
     sessionStorage.setItem("roster", JSON.stringify(roster).replaceAll("[\"\",", "[0,"))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roster]);
@@ -217,7 +235,7 @@ export default function App() {
       }
       return null
     });
-    setWarnings(newWarnings);
+    return newWarnings
   };
 
   return (<div style={{marginTop: "165px", minHeight: "600px", height: "calc(100vh - 165px)", minWidth: "1450px"}}>

@@ -19,6 +19,7 @@ export function OptionHero({
     /* Update the roster state variable whenever the specific option is toggled on or off, 
     including any changes to points and bow count. */
     let newRoster = {...roster};
+    let engCptFlag = false;
     if (option.opt_quantity === 1) {
       newRoster.warbands = newRoster.warbands.map((warband) => {
         let newWarband = {...warband};
@@ -41,9 +42,39 @@ export function OptionHero({
               if (newOption.type === "engineer_cpt") {
                 newWarband['max_units'] = 6
                 newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Engineer Captain", "Siege Veteran"), "1:1:1:1"]]
+                engCptFlag = true;
               }
               if (newOption.type === "mahud_chief") {
                 newHero['MWFW'] = [['War Mumak of Harad - Haradrim Commander', '2:1:1:2'], ['War Mumak of Harad', '0:0:0:10']]
+              }
+            }
+            if (newOption.type === "add_crew" && engCptFlag) {
+              newOption['max'] = newOption['max'] - 6;
+              if (newOption['opt_quantity'] > newOption['max']) {
+                newRoster['num_units'] = newRoster['num_units'] - newOption['opt_quantity'];
+                newWarband['num_units'] = newWarband['num_units'] - newOption['opt_quantity'];
+                newRoster['points'] = newRoster['points'] - newHero['pointsTotal']
+                newWarband['points'] = newWarband['points'] - newHero['pointsTotal'];
+                newHero['pointsPerUnit'] = newHero['pointsPerUnit'] - (newOption['points'] * newOption['opt_quantity'])
+                newOption['opt_quantity'] = Math.min(newOption['opt_quantity'], newOption['max']);
+                newHero['pointsPerUnit'] = newHero['pointsPerUnit'] + (newOption['points'] * newOption['opt_quantity'])
+                newRoster['num_units'] = newRoster['num_units'] + newOption['opt_quantity'];
+                newWarband['num_units'] = newWarband['num_units'] + newOption['opt_quantity'];
+                newHero['pointsTotal'] = newHero['pointsPerUnit']
+                newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
+                newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
+              }
+            }
+            if (newOption.option.includes("Engineer Captain - ") && engCptFlag) {
+              newOption['max'] = 0
+              if (newOption['opt_quantity'] > 0) {
+                newRoster['points'] = newRoster['points'] - newHero['pointsTotal']
+                newWarband['points'] = newWarband['points'] - newHero['pointsTotal'];
+                newHero['pointsPerUnit'] = newHero['pointsPerUnit'] - newOption['points']
+                newHero['pointsTotal'] = newHero['pointsPerUnit']
+                newWarband['points'] = newWarband['points'] + newHero['pointsTotal'];
+                newRoster['points'] = newRoster['points'] + newHero['pointsTotal']
+                newOption['opt_quantity'] = 0
               }
             }
             return newOption
@@ -79,10 +110,17 @@ export function OptionHero({
               if (newOption.type === "engineer_cpt") {
                 newWarband['max_units'] = 12
                 newHero['MWFW'] = [[newHero['MWFW'][0][0].replace("Siege Veteran", "Engineer Captain"), "2:1:1:2"]]
+                engCptFlag = true;
               }
               if (newOption.type === "mahud_chief") {
                 newHero['MWFW'] = [['War Mumak of Harad - Mahud Beastmaster Chieftain', '3:2:2:2'], ['War Mumak of Harad', '0:0:0:10']]
               }
+            }
+            if (newOption.type === "add_crew" && engCptFlag) {
+              newOption['max'] = newOption['max'] + 6;
+            }
+            if (newOption.option.includes("Engineer Captain - ") && engCptFlag) {
+              newOption['max'] = 1
             }
             return newOption
           });
@@ -175,7 +213,7 @@ export function OptionHero({
 
   return (<>
       {option.max > 1 ?
-        <Stack className="mt-1" direction="horizontal" gap={2}>
+        <Stack className="mt-1 mb-1" direction="horizontal" gap={2}>
           <Button disabled={option.opt_quantity === option.min} variant="outline-secondary" className="p-0 quantity-buttons" size="sm" onClick={() => handleQuantity(option.opt_quantity - 1)}><FaMinus /></Button>
           <b style={{width: "20px", textAlign: "center"}}>{option.opt_quantity}</b>
           <Button disabled={option.opt_quantity === option.max} variant="outline-secondary" className="p-0 quantity-buttons" size="sm" onClick={() => handleQuantity(option.opt_quantity + 1)}><FaPlus /></Button>

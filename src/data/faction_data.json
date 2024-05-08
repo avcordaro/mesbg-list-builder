@@ -968,7 +968,7 @@
     ],
     "bow_limit":0.33
   },
-  "Assault Upon Helm's Deep":{
+  "7":{
     "armyBonus":"<b>\"You do not know Pain, you do not know Fear!\"<\/b> - Friendly Isengard models do not start to take Courage tests for being Broken until at least 66% of the force's models have been removed as casualties. <br\/> <br\/><b>\"Commander of the Uruk-hai\"<\/b> - The Uruk-hai Captain chosen as your leader increases their Attacks and Wounds characteristics to 3 each.<br\/> <br\/><b>\"The Isengard Hordes\"<\/b> - Hero models from this force increase the number of models they can include in their warband by 6.<br\/> <br\/><b>\"Break the Walls\"<\/b> - Isengard Ballistae from this army list may re-roll results of 1 on To Hit and Scatter rolls during the Shoot phase. Additionally, whenever a demolition charge from your army is detonated, you may roll two dice rather than one and pick either result.",
     "primaryAllies":[
 
@@ -1222,6 +1222,16 @@
       "Mordor",
       "Moria",
       "Variags of Khand"
+    ],
+    "bow_limit":0.33
+  },
+  "Assault Upon Helm's Deep":{
+    "armyBonus":"<b>\"You do not know Pain, you do not know Fear!\"<\/b> - Friendly Isengard models do not start to take Courage tests for being Broken until at least 66% of the force's models have been removed as casualties.<br\/><br\/><b>\"Commander of the Uruk-hai\"<\/b> - The Uruk-hai Captain chosen as your leader increases their Attacks and Wounds characteristics to 3 each.<br\/><br\/><b>\"The Isengard Hordes\"<\/b> - Hero models from this force increase the number of models they can include in their warband by 6.<br\/><br\/><b>\"Break the Walls\"<\/b> - Isengard Ballistae from this army list may re-roll results of 1 on To Hit and Scatter rolls during the Shoot phase. Additionally, whenever a demolition charge from your army is detonated, you may roll two dice rather than one and pick either result.<br\/>",
+    "primaryAllies":[
+
+    ],
+    "secondaryAllies":[
+
     ],
     "bow_limit":0.33
   },

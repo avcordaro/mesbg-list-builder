@@ -309,24 +309,6 @@
       "warning":"This force must contain the Witch King."
     }
   ],
-  "The Dead of Dunharrow":[
-    {
-      "type":"historical_dependent",
-      "dependencies":[
-        "Minas Tirith",
-        "[minas_tirith] aragorn,_king_elessar"
-      ],
-      "warning":"Aragorn, King Elessar must be included for the Historical alliance level between The Dead of Dunharrow and Minas Tirith"
-    },
-    {
-      "type":"historical_dependent",
-      "dependencies":[
-        "The Rangers",
-        "[the_rangers] aragorn,_strider"
-      ],
-      "warning":"Aragorn, Strider must be included for the Historical alliance level between The Dead of Dunharrow and The Rangers"
-    }
-  ],
   "The Grey Company":[
     {
       "type":"compulsory",

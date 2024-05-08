@@ -2547,6 +2547,33 @@
         "min":0.0,
         "max":4.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1657",
+        "option":"Engineer Captain - Crossbow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1658",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1659",
+        "option":"Engineer Captain - Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -5058,6 +5085,24 @@
         "min":0.0,
         "max":3.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1660",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1661",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -5110,6 +5155,24 @@
         "type":null,
         "min":0.0,
         "max":4.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1662",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1663",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -12630,9 +12693,27 @@
         "option_id":"OPT1432",
         "option":"Additional Crew",
         "points":7.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1683",
+        "option":"Engineer Captain - Esgaroth Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1684",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -12880,9 +12961,27 @@
         "option_id":"OPT1444",
         "option":"Additional Crew",
         "points":7.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1685",
+        "option":"Engineer Captain - Esgaroth Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1686",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -16480,6 +16579,33 @@
         "min":0.0,
         "max":4.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1664",
+        "option":"Engineer Captain - Crossbow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1665",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1666",
+        "option":"Engineer Captain - Two-Handed Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -18565,9 +18691,27 @@
         "option_id":"OPT0513",
         "option":"Additional Crew",
         "points":7.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":4.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1667",
+        "option":"Engineer Captain - Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1668",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -18618,9 +18762,27 @@
         "option_id":"OPT0490",
         "option":"Additional Crew",
         "points":7.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":4.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1655",
+        "option":"Engineer Captain - Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1656",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -20970,9 +21132,27 @@
         "option_id":"OPT0585",
         "option":"Additional Crew",
         "points":5.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":3.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1669",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1670",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -21023,9 +21203,27 @@
         "option_id":"OPT0569",
         "option":"Additional Crew",
         "points":5.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":4.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1671",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1672",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -27664,9 +27862,27 @@
         "option_id":"OPT1561",
         "option":"Additional Crew",
         "points":7.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1687",
+        "option":"Engineer Captain - Esgaroth Bow",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1688",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -28215,12 +28431,21 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1673",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
         "type":null,
         "min":0.0,
-        "max":1.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1674",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -28250,12 +28475,21 @@
     "warband_size":6,
     "options":[
       {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
+        "option_id":"OPT1675",
+        "option":"Engineer Captain - Orc Bow",
+        "points":5.0,
         "type":null,
         "min":0.0,
-        "max":1.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1676",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -32383,7 +32617,7 @@
       {
         "option_id":"OPT1365",
         "option":"Iron Hills Engineer Captain",
-        "points":40.0,
+        "points":75.0,
         "type":"engineer_cpt",
         "min":0.0,
         "max":1.0,
@@ -32402,7 +32636,7 @@
         "option_id":"OPT1367",
         "option":"Additional Crew",
         "points":10.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":3.0,
         "opt_quantity":0.0
@@ -32986,9 +33220,36 @@
         "option_id":"OPT1051",
         "option":"Additional Crew",
         "points":8.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1677",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1678",
+        "option":"Engineer Captain - Throwing Axes",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1679",
+        "option":"Engineer Captain - Two-Handed Axe",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]
@@ -33561,9 +33822,36 @@
         "option_id":"OPT1075",
         "option":"Additional Crew",
         "points":8.0,
-        "type":null,
+        "type":"add_crew",
         "min":0.0,
         "max":5.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1680",
+        "option":"Engineer Captain - Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1681",
+        "option":"Engineer Captain - Throwing Axes",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1682",
+        "option":"Engineer Captain - Two-Handed Axe",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":0.0,
         "opt_quantity":0.0
       }
     ]

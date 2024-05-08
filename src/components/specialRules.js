@@ -184,3 +184,49 @@ export const handle50PctBowLimit = (faction_data, alliance_level) => {
     new_faction_data["Azog's Hunters"].bow_limit = alliance_level === "Historical" ? 0.5 : 0.33;
     return new_faction_data;
 };
+
+export const checkSiegeEngineCounts = (siegeEngines, heroicTiers, _warnings) => {
+  Object.keys(heroicTiers).map((faction) => {
+    if (siegeEngines[faction] > 0) {
+      let heroForts = heroicTiers[faction].reduce((n, v) => (["Hero of Fortitude", "Hero of Valour", "Hero of Legend"].includes(v) ? n + 1 : n), 0);
+      if (siegeEngines[faction] > heroForts) {
+        _warnings.push(`Too many Siege Engines for ${faction}. An army, or allied contingent, may only include one Siege Engine for each Hero with a Heroic Tier of Hero of Fortitude or above that is taken from the same Army List as the Siege Engine. (Changes from Official Errata/FAQs)`)
+      }
+    }
+    return null
+  })
+  return _warnings
+}
+
+export const checkAlliedHeroes = (_allianceLevel, heroicTiers, _warnings) => {
+  if (Object.keys(heroicTiers).length > 1) {
+    Object.keys(heroicTiers).map((faction) => {
+      if (faction.includes("Wanderers in the Wild")) {
+        return null
+      }
+      if (_allianceLevel === "Historical") {
+        let heroForts = heroicTiers[faction].reduce((n, v) => (["Hero of Fortitude", "Hero of Valour", "Hero of Legend"].includes(v) ? n + 1 : n), 0);
+        if (heroForts === 0) {
+          _warnings.push(`${faction} - For a Historical Alliance, each allied force must contain at least one Hero with a Heroic Tier of Hero of Fortitude or higher. (Changes from Official Errata/FAQs).`)
+        }
+      } else {
+        let heroValours = heroicTiers[faction].reduce((n, v) => (["Hero of Valour", "Hero of Legend"].includes(v) ? n + 1 : n), 0);
+        if (heroValours === 0) {
+          _warnings.push(`${faction} - For a Convenient Alliance, or an alliance containing Impossible Allies, each allied force must contain at least one Hero with a Heroic Tier of Hero of Valour or higher. (Changes from Official Errata/FAQs).`)
+        }
+      }
+      return null
+    })
+  }
+  return _warnings
+}
+
+export const checkDunharrow = (_allianceLevel, _uniqueModels, _warnings) => {
+  let intersection = ["[minas_tirith] aragorn,_king_elessar", "[the_fellowship] aragorn,_strider", "[the_rangers] aragorn,_strider"].filter(x => _uniqueModels.includes(x));
+  let msg = "A Dead of Dunharrow army list is automatically Impossible Allies with any force that doesn't also include Aragorn.";
+  if (_allianceLevel !== "Impossible" && intersection.length === 0) {
+    _warnings.push(msg)
+    return ["Impossible", _warnings]
+  }
+  return [_allianceLevel, _warnings]
+}

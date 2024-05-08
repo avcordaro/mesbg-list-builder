@@ -98,18 +98,15 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
   useEffect(() => {
     let store_gameMode = sessionStorage.getItem("gameMode")
     if (store_gameMode === "true") {
-      console.log("Game Mode was true")
       let store_gameHeroes = sessionStorage.getItem("gameHeroes")
       let store_casualtyCount = sessionStorage.getItem("casualtyCount")
       let store_heroCasualtyCount = sessionStorage.getItem("heroCasualtyCount")
       if (store_gameHeroes && store_casualtyCount && store_heroCasualtyCount) {
-        console.log(JSON.parse(store_gameHeroes))
         setGameHeroes(JSON.parse(store_gameHeroes));
         setCasualtyCount(parseInt(store_casualtyCount));
         setHeroCasualtyCount(parseInt(store_heroCasualtyCount));
       }
     } else {
-      console.log("Handle reset")
       handleReset();
       sessionStorage.setItem("gameMode", "true")
     }

@@ -257,6 +257,7 @@ export function ModalRosterTable({
                   <td
                     style={{
                       backgroundColor: warband.num % 2 ? "rgba(var(--bs-emphasis-color-rgb), 0.05)" : "white",
+                      maxWidth: "350px"
                     }}
                   >
                     {warband.hero.options
