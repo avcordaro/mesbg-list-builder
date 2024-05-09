@@ -8,7 +8,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 
 
-export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal, factionData}) {
+export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal, factionData, hasArmyBonus}) {
 
   return (<div
     id="optionMenu"
@@ -30,10 +30,10 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
         <Button variant="light" className="ms-auto border shadow-sm" onClick={() => setShowWoundModal(true)}><GiSwordsEmblem /> To Wound Chart</Button>
       </Stack>
       <h6
-        className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
+        className={hasArmyBonus ? "text-body" : "text-secondary"}
       >
         Army Bonuses{" "}
-        {["Historical", "Legendary Legion"].includes(allianceLevel) ? (<FcCheckmark/>) : (<b>
+        {hasArmyBonus ? (<FcCheckmark/>) : (<b>
           <RxCross1 className="text-danger"/>
         </b>)}
       </h6>
@@ -41,13 +41,13 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
       {factionList.map((f) => (<div>
         <h5 className="mt-4">
           <Badge
-            bg={["Historical", "Legendary Legion"].includes(allianceLevel) ? "dark" : "secondary"}
+            bg={hasArmyBonus ? "dark" : "secondary"}
           >
             {f}
           </Badge>
         </h5>
         <div
-          className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
+          className={hasArmyBonus ? "text-body" : "text-secondary"}
           dangerouslySetInnerHTML={{
             __html: factionData[f]["armyBonus"],
           }}

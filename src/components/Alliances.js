@@ -30,7 +30,7 @@ export const calculateAllianceLevel = (_factionList, _factionType, faction_data)
     // Create all possible pairs from the list of factions
     let faction_pairs = _factionList.flatMap((v, i) => _factionList.slice(i + 1).map(w => [v, w]));
     // Calculate the alliance level for each pair
-    let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1], faction_data))
+    let pairs_alliances = faction_pairs.map(pair => checkAlliance(pair[0], pair[1], faction_data));
     // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
     if (pairs_alliances.includes('Impossible')) {
       return 'Impossible';

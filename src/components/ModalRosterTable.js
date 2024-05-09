@@ -27,7 +27,8 @@ export function ModalRosterTable({
                                    showRosterTable,
                                    setShowRosterTable,
                                    factionList,
-                                   factionData
+                                   factionData,
+                                   hasArmyBonus
                                  }) {
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
@@ -111,7 +112,7 @@ export function ModalRosterTable({
     if (showArmyBonus) {
       tableString += "\n===== Army Bonuses =====\n\n";
 
-      if (["Legendary Legion", "Historical"].includes(allianceLevel)) {
+      if (hasArmyBonus) {
         factionList.map((f) => {
           tableString += `--- ${f} ---\n\n`;
           tableString += factionData[f]["armyBonus"]
@@ -121,7 +122,7 @@ export function ModalRosterTable({
           return null;
         });
       } else {
-        tableString += "No bonuses due to Alliance Level not being Historical.";
+        tableString += "No bonuses.";
       }
     }
     return tableString;
@@ -338,7 +339,7 @@ export function ModalRosterTable({
               </tbody>
             </Table>
             {showArmyBonus && (<>
-              {["Legendary Legion", "Historical"].includes(allianceLevel) ? (<>
+              {hasArmyBonus ? (<>
                 <h6>
                   Army Bonuses <FcCheckmark/>
                 </h6>
@@ -363,7 +364,7 @@ export function ModalRosterTable({
                 <div
                   className="mt-4 text-body"
                   dangerouslySetInnerHTML={{
-                    __html: "No bonuses due to Alliance Level not being Historical.",
+                    __html: "No bonuses.",
                   }}
                   style={{fontSize: 14, maxWidth: "850px"}}
                 />

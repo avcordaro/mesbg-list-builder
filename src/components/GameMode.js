@@ -88,7 +88,7 @@ export function GameModeProfiles ({roster}) {
   );
 }
 
-export function GameMode({roster, factionList, allianceLevel, allianceColours, factionData}) {
+export function GameMode({roster, factionList, allianceLevel, allianceColours, factionData, hasArmyBonus}) {
 
   const [gameHeroes, setGameHeroes] = useState({});
   const [casualtyCount, setCasualtyCount] = useState(0);
@@ -189,6 +189,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
         heroCasualtyCount={heroCasualtyCount}
         setShowWoundModal={setShowWoundModal}
         factionData={factionData}
+        hasArmyBonus={hasArmyBonus}
       />
       <div style={{marginLeft: "535px", minWidth: "720px"}}>
         <Stack direction="horizontal" style={{minWidth: "800px"}}>

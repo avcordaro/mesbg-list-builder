@@ -44,7 +44,8 @@ export function SelectionMenu({
                                 factionModelCounts,
                                 allianceColours,
                                 setShowAlliances,
-                                factionData
+                                factionData,
+                                hasArmyBonus
                               }) {
   const faction_lists = {
     "Good Army": new Set(mesbg_data
@@ -150,7 +151,7 @@ export function SelectionMenu({
       <h6>Bow Limit</h6>
       <hr/>
       {factionList
-        .filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)",].includes(x))
+        .filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)"].includes(x))
         .map((f) => (<p
           className={factionBowCounts[f] > Math.ceil(factionData[f]["bow_limit"] * factionModelCounts[f]) ? "text-danger" : "text-dark"}
         >
@@ -175,24 +176,26 @@ export function SelectionMenu({
         </Button>
       </Stack>
       <h6
-        className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
+        className={hasArmyBonus ? "text-body" : "text-secondary"}
       >
         Army Bonuses{" "}
-        {["Historical", "Legendary Legion"].includes(allianceLevel) ? (<FcCheckmark/>) : (<b>
+        {hasArmyBonus ? (<FcCheckmark/>) : (<b>
           <RxCross1 className="text-danger"/>
         </b>)}
       </h6>
       <hr/>
-      {factionList.map((f) => (<div>
+      {factionList
+        .filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)"].includes(x))
+        .map((f) => (<div>
         <h5 className="mt-4">
           <Badge
-            bg={["Historical", "Legendary Legion"].includes(allianceLevel) ? "dark" : "secondary"}
+            bg={hasArmyBonus ? "dark" : "secondary"}
           >
             {f}
           </Badge>
         </h5>
         <div
-          className={["Historical", "Legendary Legion"].includes(allianceLevel) ? "text-body" : "text-secondary"}
+          className={hasArmyBonus ? "text-body" : "text-secondary"}
           dangerouslySetInnerHTML={{
             __html: factionData[f]["armyBonus"],
           }}

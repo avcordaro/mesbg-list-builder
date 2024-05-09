@@ -15,7 +15,12 @@ import {GameMode} from "./components/GameMode";
 import {ExportAlert} from "./components/ExportAlert";
 import {GameModeAlert} from "./components/GameModeAlert";
 import {ModalBuilderMode} from "./components/ModalBuilderMode";
-import {checkSiegeEngineCounts, checkAlliedHeroes, checkDunharrow} from "./components/specialRules";
+import {
+  checkSiegeEngineCounts,
+  checkAlliedHeroes,
+  checkDunharrow,
+  checkGilGalad
+} from "./components/specialRules";
 
 
 export default function App() {
@@ -54,6 +59,7 @@ export default function App() {
   const [factionBowCounts, setFactionBowCounts] = useState({});
   const [factionModelCounts, setFactionModelCounts] = useState({});
   const [allianceLevel, setAllianceLevel] = useState("n/a");
+  const [hasArmyBonus, setHasArmyBonus] = useState(true);
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
   const [gameMode, setGameMode] = useState(false);
@@ -109,8 +115,14 @@ export default function App() {
         return null
       });
     }
-    let newAllianceLevel = calculateAllianceLevel(factions, faction_type, factionData);
+
+    let newUniqueModels = getAllUniqueModels()
+    setUniqueModels(newUniqueModels);
+
+    let _factions = factions
+    let newAllianceLevel = calculateAllianceLevel(_factions, faction_type, factionData);
     setAllianceLevel(newAllianceLevel);
+    setHasArmyBonus(["Historical", "Legendary Legion"].includes(newAllianceLevel))
     setFactionList(factions);
 
     let bowCounts = {};
@@ -161,17 +173,17 @@ export default function App() {
     setFactionBowCounts(bowCounts);
     setFactionModelCounts(modelCounts);
 
-    let newUniqueModels = getAllUniqueModels()
-    setUniqueModels(newUniqueModels);
-
-    let newWarnings = checkWarnings(newUniqueModels, factions, newAllianceLevel);
+    let newWarnings;
+    [newWarnings, newAllianceLevel] = checkWarnings(newUniqueModels, factions, newAllianceLevel);
     newWarnings = checkSiegeEngineCounts(siegeEngines, heroicTiers, newWarnings);
     newWarnings = checkAlliedHeroes(newAllianceLevel, heroicTiers, newWarnings);
     if (factions.includes("The Dead of Dunharrow") && factions.length > 1) {
-      const [_newAllianceLevel, _newWarnings] = checkDunharrow(newAllianceLevel, newUniqueModels, newWarnings)
-      newWarnings = _newWarnings
-      setAllianceLevel(_newAllianceLevel)
+      [newAllianceLevel, newWarnings] = checkDunharrow(newAllianceLevel, newUniqueModels, newWarnings)
     }
+    if (newUniqueModels.includes("[rivendell] gil-galad")) {
+      newAllianceLevel = checkGilGalad(newAllianceLevel, factions);
+    }
+    setAllianceLevel(newAllianceLevel)
     setWarnings(newWarnings);
     sessionStorage.setItem("roster", JSON.stringify(roster).replaceAll("[\"\",", "[0,"))
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -197,11 +209,12 @@ export default function App() {
 
   const checkWarnings = (_uniqueModels, faction_list, newAllianceLevel) => {
     let newWarnings = []
+    let _newAllianceLevel = newAllianceLevel
     _uniqueModels.map(model_id => {
       if (model_id in warning_rules) {
         let rules = warning_rules[model_id]
         rules.map(rule => {
-          if (rule['type'] === 'requires_alliance' && rule.dependencies[0] !== newAllianceLevel) {
+          if (rule['type'] === 'requires_alliance' && rule.dependencies[0] !== _newAllianceLevel) {
             newWarnings.push(rule.warning);
           }
           let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
@@ -213,6 +226,12 @@ export default function App() {
           }
           if (rule['type'] === 'incompatible' && (intersection.length > 0 || rule.dependencies.length === 0)) {
             newWarnings.push(rule.warning);
+            if (rule.warning.includes("lose your army bonus")) {
+              setHasArmyBonus(false);
+            }
+            if (rule.warning.includes("become impossible allies") && faction_list.length > 1) {
+              _newAllianceLevel = "Impossible";
+            }
           }
           return null
         });
@@ -223,7 +242,7 @@ export default function App() {
       if (faction in warning_rules) {
         let rules = warning_rules[faction]
         rules.map(rule => {
-          if (rule['type'] === 'historical_dependent' && newAllianceLevel === "Historical" && faction_list.includes(rule.dependencies[0]) && !_uniqueModels.includes(rule.dependencies[1])) {
+          if (rule['type'] === 'historical_dependent' && _newAllianceLevel === "Historical" && faction_list.includes(rule.dependencies[0]) && !_uniqueModels.includes(rule.dependencies[1])) {
             newWarnings.push(rule.warning);
           }
           let intersection = rule.dependencies.filter(x => _uniqueModels.includes(x));
@@ -235,7 +254,7 @@ export default function App() {
       }
       return null
     });
-    return newWarnings
+    return [newWarnings, _newAllianceLevel];
   };
 
   return (<div style={{marginTop: "165px", minHeight: "600px", height: "calc(100vh - 165px)", minWidth: "1450px"}}>
@@ -281,6 +300,7 @@ export default function App() {
             allianceColours={allianceColours}
             setShowAlliances={setShowAlliances}
             factionData={factionData}
+            hasArmyBonus={hasArmyBonus}
           />
           <Warbands
             roster={roster}
@@ -325,6 +345,7 @@ export default function App() {
       setShowRosterTable={setShowRosterTable}
       factionList={factionList}
       factionData={factionData}
+      hasArmyBonus={hasArmyBonus}
     />
     <ModalBuilderMode
       showBuilderModal={showBuilderModal}

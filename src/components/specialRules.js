@@ -230,3 +230,23 @@ export const checkDunharrow = (_allianceLevel, _uniqueModels, _warnings) => {
   }
   return [_allianceLevel, _warnings]
 }
+
+export const checkGilGalad = (_allianceLevel, faction_list) => {
+  if (_allianceLevel === "Impossible") {
+    return _allianceLevel
+  }
+  const allies = {
+    "Rivendell": "Historical",
+    "Numenor": "Historical",
+    "Lothlorien": "Convenient",
+    "Fangorn": "Convenient",
+    "The Misty Mountains": "Convenient"
+  }
+  let levels = faction_list.map((f) => allies[f] ? allies[f] : "Impossible")
+  if (levels.includes("Impossible")) {
+    return "Impossible"
+  } else if (levels.includes("Convenient")) {
+    return "Convenient"
+  }
+  return "Historical"
+}
