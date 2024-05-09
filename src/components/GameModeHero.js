@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import { FaChevronLeft, FaChevronRight, FaSkullCrossbones } from "react-icons/fa";
+import {GiQueenCrown} from "react-icons/gi";
 
 
 export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, hero_idx, val_idx, heroCasualtyCount, setHeroCasualtyCount}) {
@@ -79,6 +80,7 @@ export function GameModeHero({gameHeroes, setGameHeroes, hero_id, heroCasualtyCo
                   {hero['xMWFW'].split(":")[3] === "0" &&
                     <FaSkullCrossbones className="ms-2"/>}
                 </p>
+                {hero["leader"] && <h6 className="m-0 ms-auto mt-2 text-success"><GiQueenCrown /> Leader</h6>}
               </Stack>
               <Stack className="my-2" direction="horizontal" gap={3}>
                 <GameModeMWFCounter name="Might" gameHeroes={gameHeroes}

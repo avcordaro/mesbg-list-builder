@@ -135,7 +135,8 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
               "name": x[0],
               "profile_origin": hero['profile_origin'],
               "MWFW": x[1],
-              "xMWFW": x[1]
+              "xMWFW": x[1],
+              "leader": roster["leader_warband_num"] === _warband["num"]
             }
           ));
         } else {
@@ -143,7 +144,8 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
             "name": hero['MWFW'][0][0] || hero['name'],
             "profile_origin": hero['profile_origin'],
             "MWFW": hero['MWFW'][0][1],
-            "xMWFW": hero['MWFW'][0][1]
+            "xMWFW": hero['MWFW'][0][1],
+            "leader": roster["leader_warband_num"] === _warband["num"]
           }]
         }
       }
