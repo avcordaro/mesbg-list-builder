@@ -37968,9 +37968,9 @@
     "name":"Rider of Rohan",
     "unit_type":"Warrior",
     "base_points":14,
-    "default_bow":false,
+    "default_bow":true,
     "unique":false,
-    "inc_bow_count":false,
+    "inc_bow_count":true,
     "bow_limit":true,
     "siege_crew":0,
     "MWFW":[
