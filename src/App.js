@@ -325,6 +325,7 @@ export default function App() {
           allianceLevel={allianceLevel}
           allianceColours={allianceColours}
           factionData={factionData}
+          hasArmyBonus={hasArmyBonus}
         />
       }
     </div>
