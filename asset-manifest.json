@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/mesbg-list-builder/static/css/main.e352d484.css",
-    "main.js": "/mesbg-list-builder/static/js/main.7cc93e70.js",
+    "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
+    "main.js": "/mesbg-list-builder/static/js/main.7b93d497.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
     "static/media/Grimbeorn.jpg": "/mesbg-list-builder/static/media/Grimbeorn.cd3b4fc616de55b08128.jpg",
-    "static/media/to-wound-chart.png": "/mesbg-list-builder/static/media/to-wound-chart.9c1bc86abcb3a0c67e64.png",
     "static/media/The Lingering Shadow.jpg": "/mesbg-list-builder/static/media/The Lingering Shadow.43d5d35623ef1a288718.jpg",
     "static/media/Signal Tower.jpg": "/mesbg-list-builder/static/media/Signal Tower.7203d57e3763025b8ecc.jpg",
     "static/media/The Slayer of Men.jpg": "/mesbg-list-builder/static/media/The Slayer of Men.e81a1fdb3e4ab8febc68.jpg",
@@ -14,6 +13,7 @@
     "static/media/Bard the Bowman.jpg": "/mesbg-list-builder/static/media/Bard the Bowman.9fc25500767687d8a174.jpg",
     "static/media/The Forsaken.jpg": "/mesbg-list-builder/static/media/The Forsaken.faec8f15a39d52d05cd0.jpg",
     "static/media/Tom Bombadil.jpg": "/mesbg-list-builder/static/media/Tom Bombadil.d11e0c19ab6fd2029668.jpg",
+    "static/media/to-wound-chart.png": "/mesbg-list-builder/static/media/to-wound-chart.e77eec2a92576f3940d6.png",
     "static/media/The Witch-king of Angmar.jpg": "/mesbg-list-builder/static/media/The Witch-king of Angmar.2b560117c02dfb7d7768.jpg",
     "static/media/Grimbeorn the Bear.jpg": "/mesbg-list-builder/static/media/Grimbeorn the Bear.21566c38df0e7a0ce709.jpg",
     "static/media/Catapult Troll.jpg": "/mesbg-list-builder/static/media/Catapult Troll.6f00dc3158cbdefbe345.jpg",
@@ -181,6 +181,7 @@
     "static/media/Bill the Pony.jpg": "/mesbg-list-builder/static/media/Bill the Pony.734e38ba62507a8cf246.jpg",
     "static/media/Raza, Fang of the Serpent.jpg": "/mesbg-list-builder/static/media/Raza, Fang of the Serpent.3506a221f978d42d1d6c.jpg",
     "static/media/Bofur the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Bofur the Dwarf, Champion of Erebor.9fa1d064e552e1997744.jpg",
+    "static/media/thrown-rider-table.png": "/mesbg-list-builder/static/media/thrown-rider-table.f3486f81745f368cf8ce.png",
     "static/media/Bombur the Dwarf.jpg": "/mesbg-list-builder/static/media/Bombur the Dwarf.6a953c3239f2c8fbd487.jpg",
     "static/media/Guritz.jpg": "/mesbg-list-builder/static/media/Guritz.a2ed1fbf68e2cf6d69e6.jpg",
     "static/media/Vault Warden Team.jpg": "/mesbg-list-builder/static/media/Vault Warden Team.cb091a2a1d55befd9794.jpg",
@@ -189,6 +190,7 @@
     "static/media/Theodred.jpg": "/mesbg-list-builder/static/media/Theodred.81e03d51c012c1afb7a4.jpg",
     "static/media/Corsair Reaver.jpg": "/mesbg-list-builder/static/media/Corsair Reaver.0640f666ee9120fac2a5.jpg",
     "static/media/Farmer Maggot.jpg": "/mesbg-list-builder/static/media/Farmer Maggot.8d25d092f0605fa9405a.jpg",
+    "static/media/leap-table.png": "/mesbg-list-builder/static/media/leap-table.d8ad44e1cf4eb7c1403f.png",
     "static/media/Floi Stonehand.jpg": "/mesbg-list-builder/static/media/Floi Stonehand.99c6e0e4be8cfe49231f.jpg",
     "static/media/Mahud Tribesmaster.jpg": "/mesbg-list-builder/static/media/Mahud Tribesmaster.09bd5f4fa220dfc43532.jpg",
     "static/media/Gimli.jpg": "/mesbg-list-builder/static/media/Gimli.3fd1ced254186866bf6d.jpg",
@@ -331,6 +333,7 @@
     "static/media/Dunlending Chieftain.jpg": "/mesbg-list-builder/static/media/Dunlending Chieftain.907259d59ff656190b63.jpg",
     "static/media/Dori the Dwarf.jpg": "/mesbg-list-builder/static/media/Dori the Dwarf.0f41e5e57eba326966af.jpg",
     "static/media/Knight of Dale.jpg": "/mesbg-list-builder/static/media/Knight of Dale.ca461c826f8723e0b389.jpg",
+    "static/media/jump-table.png": "/mesbg-list-builder/static/media/jump-table.11ac7cb86f44e0c6d98d.png",
     "static/media/Uruk-Hai Demolition Team.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Demolition Team.c7505e31f6ab585f06fe.jpg",
     "static/media/High Elf Captain.jpg": "/mesbg-list-builder/static/media/High Elf Captain.7e43f646eac61c1ff3d5.jpg",
     "static/media/Goblin Warrior.jpg": "/mesbg-list-builder/static/media/Goblin Warrior.f358639f58b32de6f9c4.jpg",
@@ -404,6 +407,7 @@
     "static/media/Bat Swarm.jpg": "/mesbg-list-builder/static/media/Bat Swarm.210d5ef58e313979b549.jpg",
     "static/media/Warrior of Rohan.jpg": "/mesbg-list-builder/static/media/Warrior of Rohan.62acd1066a912de56e3b.jpg",
     "static/media/Giant Spider.jpg": "/mesbg-list-builder/static/media/Giant Spider.c40a38215ad1f7293510.jpg",
+    "static/media/swim-chart.png": "/mesbg-list-builder/static/media/swim-chart.5e67ffb981470dbbf37a.png",
     "static/media/Serpent Rider.jpg": "/mesbg-list-builder/static/media/Serpent Rider.71df185a32b0937dcd58.jpg",
     "static/media/Woses Warrior.jpg": "/mesbg-list-builder/static/media/Woses Warrior.913c088d7b338e535cf5.jpg",
     "static/media/Vrasku.jpg": "/mesbg-list-builder/static/media/Vrasku.b8c190c74d16c6c0586f.jpg",
@@ -439,6 +443,7 @@
     "static/media/Uruk-Hai Scout.jpg": "/mesbg-list-builder/static/media/Uruk-Hai Scout.e24318edc423244972f1.jpg",
     "static/media/Corsair of Umbar.jpg": "/mesbg-list-builder/static/media/Corsair of Umbar.7ae1f34c07757bf67d3b.jpg",
     "static/media/Khandish Warrior.jpg": "/mesbg-list-builder/static/media/Khandish Warrior.ad9dd25aa0530f4acb19.jpg",
+    "static/media/climb-table.png": "/mesbg-list-builder/static/media/climb-table.3cc4fa9e82a39fa9c4e9.png",
     "static/media/Iron Guard.jpg": "/mesbg-list-builder/static/media/Iron Guard.691ee3c6118f8b4efb67.jpg",
     "static/media/Haradrim Warrior.jpg": "/mesbg-list-builder/static/media/Haradrim Warrior.119e6e7fd1c9adadd12c.jpg",
     "static/media/Hobbit Shirriff.jpg": "/mesbg-list-builder/static/media/Hobbit Shirriff.7b9fa0ccfd45d36c1cba.jpg",
@@ -458,7 +463,13 @@
     "static/media/Morgul Stalker.jpg": "/mesbg-list-builder/static/media/Morgul Stalker.77ec7ed1403b20e8ce52.jpg",
     "static/media/Ranger of Gondor.jpg": "/mesbg-list-builder/static/media/Ranger of Gondor.ddbf95d83f1b50a7a724.jpg",
     "static/media/Wild Warg.jpg": "/mesbg-list-builder/static/media/Wild Warg.41fd972bf4cf47fb6fd0.jpg",
+    "static/media/missile-weapon-chart.png": "/mesbg-list-builder/static/media/missile-weapon-chart.3431aebab20f43cdb3e3.png",
+    "static/media/in-the-way-chart.png": "/mesbg-list-builder/static/media/in-the-way-chart.68a810a4e976a8299994.png",
+    "static/media/siege-target-types.png": "/mesbg-list-builder/static/media/siege-target-types.9228ef8ad53c49a52414.png",
+    "static/media/sentry-chart.png": "/mesbg-list-builder/static/media/sentry-chart.5c386ab113e3290588f3.png",
     "static/media/default_card.jpg": "/mesbg-list-builder/static/media/default_card.89612dedec035d2f5035.jpg",
+    "static/media/scatter-table.png": "/mesbg-list-builder/static/media/scatter-table.f84d3e7fa92fde4c5ab1.png",
+    "static/media/detonation-table.png": "/mesbg-list-builder/static/media/detonation-table.cbecd66cca2a6df96fc0.png",
     "static/media/Hamfast 'Gaffer' Gamgee.png": "/mesbg-list-builder/static/media/Hamfast 'Gaffer' Gamgee.532c67e83cbd8036d77a.png",
     "static/media/Dragon Cult Acolyte.png": "/mesbg-list-builder/static/media/Dragon Cult Acolyte.dd5d96248d9d6d8266f3.png",
     "static/media/Raza, Fang of the Serpent.png": "/mesbg-list-builder/static/media/Raza, Fang of the Serpent.228f74d78f355879969c.png",
@@ -953,11 +964,11 @@
     "static/media/The Iron Hills.png": "/mesbg-list-builder/static/media/The Iron Hills.0c80580e42fc5d13c29c.png",
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
-    "main.e352d484.css.map": "/mesbg-list-builder/static/css/main.e352d484.css.map",
-    "main.7cc93e70.js.map": "/mesbg-list-builder/static/js/main.7cc93e70.js.map"
+    "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
+    "main.7b93d497.js.map": "/mesbg-list-builder/static/js/main.7b93d497.js.map"
   },
   "entrypoints": [
-    "static/css/main.e352d484.css",
-    "static/js/main.7cc93e70.js"
+    "static/css/main.27f1b7c9.css",
+    "static/js/main.7b93d497.js"
   ]
 }
