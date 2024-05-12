@@ -15,11 +15,6 @@
     "description":"An enemy model within 18\" of this model suffers a -1 penalty to its Courage. Note, this is not cumulative with other similar penalties such as those provided by Goblin Drums, The Harbinger of Evil special rule and so on."
   },
   {
-    "name":"Area Effect",
-    "type":"special_rule",
-    "description":"If a Catapult scores a hit against a Battlefield target, all models within 2\" of the target suffer one Strength 5 hit and are knocked prone (this additional hit does not kill a target outright)."
-  },
-  {
     "name":"Armour",
     "type":"special_rule",
     "description":"A model upgraded to wear armour adds 1 to their Defence."
