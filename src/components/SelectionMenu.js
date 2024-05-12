@@ -144,13 +144,12 @@ export function SelectionMenu({
         </Tab>))}
       </Tabs>
     </>) : (<div>
-      <Stack direction="horizontal">
+      <Stack className="mb-5" direction="horizontal">
         <h4 className="m-0"><FaHammer/> Builder Mode</h4>
         <Button variant="light" className="ms-auto border shadow-sm"
                 onClick={() => setShowKeywordSearch(true)}><FaSearch/> Search Keywords
         </Button>
       </Stack>
-      <hr className="mb-4"/>
       {warnings.length > 0 && (<>
         <h6>
           <IoWarningOutline/> Warnings

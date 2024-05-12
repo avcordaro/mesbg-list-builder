@@ -15,13 +15,12 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
     id="optionMenu"
     className="optionsList border border-4 rounded position-fixed bg-white p-3"
   >
-      <Stack direction="horizontal">
+      <Stack className="mb-5" direction="horizontal">
         <h4 className="m-0"><FaChessRook /> Game Mode</h4>
         <Button variant="light" className="ms-auto border shadow-sm"
                 onClick={() => setShowKeywordSearch(true)}><FaSearch/> Search Keywords
         </Button>
       </Stack>
-      <hr />
       {((factionList.includes("Isengard") && allianceLevel === "Historical") || factionList.includes("Assault Upon Helm's Deep")) && Math.ceil(0.66 * roster.num_units) - (casualtyCount + heroCasualtyCount) <= 0 &&
         <h6 className="mt-4 mb-2 text-danger">(Isengard Army Bonus) You are at least 66% defeated <GiCrackedShield /></h6>
       }
