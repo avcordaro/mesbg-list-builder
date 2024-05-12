@@ -21,6 +21,7 @@ import {
   checkDunharrow,
   checkGilGalad
 } from "./components/specialRules";
+import {KeywordsSearch} from "./components/KeywordsSearch";
 
 
 export default function App() {
@@ -65,6 +66,7 @@ export default function App() {
   const [gameMode, setGameMode] = useState(false);
   const [gameModeAlert, setGameModeAlert] = useState(false);
   const [showBuilderModal, setShowBuilderModal] = useState(false);
+  const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
 
   $(window).scroll(function () {
@@ -301,6 +303,7 @@ export default function App() {
             setShowAlliances={setShowAlliances}
             factionData={factionData}
             hasArmyBonus={hasArmyBonus}
+            setShowKeywordSearch={setShowKeywordSearch}
           />
           <Warbands
             roster={roster}
@@ -326,6 +329,7 @@ export default function App() {
           allianceColours={allianceColours}
           factionData={factionData}
           hasArmyBonus={hasArmyBonus}
+          setShowKeywordSearch={setShowKeywordSearch}
         />
       }
     </div>
@@ -362,6 +366,10 @@ export default function App() {
       factionList={factionList}
       factionData={factionData}
       setFactionData={setFactionData}
+    />
+    <KeywordsSearch
+      showKeywordSearch={showKeywordSearch}
+      setShowKeywordSearch={setShowKeywordSearch}
     />
   </div>);
 }

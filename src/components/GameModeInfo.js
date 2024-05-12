@@ -2,19 +2,25 @@ import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
 import Badge from "react-bootstrap/Badge";
 import Stack from "react-bootstrap/Stack";
-import {FaChessRook} from "react-icons/fa";
+import {FaChessRook, FaSearch} from "react-icons/fa";
 import {GiCrackedShield, GiSwordsEmblem} from "react-icons/gi";
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
 
 
-export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowWoundModal, factionData, hasArmyBonus}) {
+export function GameModeInfo({factionList, allianceLevel, allianceColours, roster, casualtyCount, heroCasualtyCount, setShowChartModal, setSelectedChart, factionData, hasArmyBonus, setShowKeywordSearch}) {
 
   return (<div
     id="optionMenu"
     className="optionsList border border-4 rounded position-fixed bg-white p-3"
   >
-      <h4><FaChessRook /> Game Mode</h4>
+      <Stack direction="horizontal">
+        <h4 className="m-0"><FaChessRook /> Game Mode</h4>
+        <Button variant="light" className="ms-auto border shadow-sm"
+                onClick={() => setShowKeywordSearch(true)}><FaSearch/> Search Keywords
+        </Button>
+      </Stack>
       <hr />
       {((factionList.includes("Isengard") && allianceLevel === "Historical") || factionList.includes("Assault Upon Helm's Deep")) && Math.ceil(0.66 * roster.num_units) - (casualtyCount + heroCasualtyCount) <= 0 &&
         <h6 className="mt-4 mb-2 text-danger">(Isengard Army Bonus) You are at least 66% defeated <GiCrackedShield /></h6>
@@ -27,7 +33,25 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
         <h5>
           <Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge>
         </h5>
-        <Button variant="light" className="ms-auto border shadow-sm" onClick={() => setShowWoundModal(true)}><GiSwordsEmblem /> To Wound Chart</Button>
+        <Dropdown className="ms-auto">
+          <Dropdown.Toggle variant="light" className="ms-auto border shadow-sm">
+            <GiSwordsEmblem /> Charts
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item onClick={() => {setSelectedChart("climb-table"); setShowChartModal(true);}}>Climb Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("detonation-table"); setShowChartModal(true);}}>Detonation Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("in-the-way-chart"); setShowChartModal(true);}}>In The Way Chart</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("jump-table"); setShowChartModal(true);}}>Jump Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("leap-table"); setShowChartModal(true);}}>Leap Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("missile-weapon-chart"); setShowChartModal(true);}}>Missile Weapon Chart</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("scatter-table"); setShowChartModal(true);}}>Scatter Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("sentry-chart"); setShowChartModal(true);}}>Sentry Chart</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("swim-chart"); setShowChartModal(true);}}>Swim Chart</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("siege-target-types"); setShowChartModal(true);}}>Siege Target Types</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("thrown-rider-table"); setShowChartModal(true);}}>Thrown Rider Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("to-wound-chart"); setShowChartModal(true);}}>To Wound Chart</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Stack>
       <h6
         className={hasArmyBonus ? "text-body" : "text-secondary"}

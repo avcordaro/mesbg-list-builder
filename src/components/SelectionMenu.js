@@ -15,6 +15,8 @@ import {LuSwords} from "react-icons/lu";
 import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
 import React from "react";
+import {FaSearch} from "react-icons/fa";
+import {FaHammer} from "react-icons/fa6";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
@@ -45,7 +47,8 @@ export function SelectionMenu({
                                 allianceColours,
                                 setShowAlliances,
                                 factionData,
-                                hasArmyBonus
+                                hasArmyBonus,
+                                setShowKeywordSearch
                               }) {
   const faction_lists = {
     "Good Army": new Set(mesbg_data
@@ -68,7 +71,7 @@ export function SelectionMenu({
 
   return (<div
     id="optionMenu"
-    className="optionsList border border-4 rounded position-fixed bg-white"
+    className="optionsList p-3 border border-4 rounded position-fixed bg-white"
   >
     {displaySelection ? (<>
       <Button
@@ -140,7 +143,14 @@ export function SelectionMenu({
           </Stack>
         </Tab>))}
       </Tabs>
-    </>) : (<div className="p-2">
+    </>) : (<div>
+      <Stack direction="horizontal">
+        <h4 className="m-0"><FaHammer/> Builder Mode</h4>
+        <Button variant="light" className="ms-auto border shadow-sm"
+                onClick={() => setShowKeywordSearch(true)}><FaSearch/> Search Keywords
+        </Button>
+      </Stack>
+      <hr className="mb-4"/>
       {warnings.length > 0 && (<>
         <h6>
           <IoWarningOutline/> Warnings
@@ -187,20 +197,20 @@ export function SelectionMenu({
       {factionList
         .filter((x) => !["Tom Bombadil", "Goldberry", "Barliman Butterbur", "Bill the Pony", "Grimbeorn", "Beorning", "Harry Goatleaf", "Murin & Drar", "Thrain the Broken (Good)", "Thrain the Broken (Evil)"].includes(x))
         .map((f) => (<div>
-        <h5 className="mt-4">
-          <Badge
-            bg={hasArmyBonus ? "dark" : "secondary"}
-          >
-            {f}
-          </Badge>
-        </h5>
-        <div
-          className={hasArmyBonus ? "text-body" : "text-secondary"}
-          dangerouslySetInnerHTML={{
-            __html: factionData[f]["armyBonus"],
-          }}
-        />
-      </div>))}
+          <h5 className="mt-4">
+            <Badge
+              bg={hasArmyBonus ? "dark" : "secondary"}
+            >
+              {f}
+            </Badge>
+          </h5>
+          <div
+            className={hasArmyBonus ? "text-body" : "text-secondary"}
+            dangerouslySetInnerHTML={{
+              __html: factionData[f]["armyBonus"],
+            }}
+          />
+        </div>))}
     </div>)}
   </div>);
 }

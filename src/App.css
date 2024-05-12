@@ -28,7 +28,6 @@ div.optionsList {
   max-height: 1000px;
   width: 510px;
   overflow-y: auto;
-  padding: 10px;
   z-index:1000;
 }
 

@@ -7,7 +7,7 @@ import Stack from "react-bootstrap/Stack";
 import {FaChevronLeft, FaChevronRight, FaSkullCrossbones} from "react-icons/fa";
 import {GiCrackedShield} from "react-icons/gi";
 import hero_constraint_data from "../data/hero_constraint_data.json";
-import {ModalWoundChart} from "./ModalWoundChart";
+import {ModalChart} from "./ModalChart";
 
 export function GameModeCasualties ({roster, casualtyCount, setCasualtyCount, heroCasualtyCount, gameHeroes}) {
 
@@ -88,12 +88,13 @@ export function GameModeProfiles ({roster}) {
   );
 }
 
-export function GameMode({roster, factionList, allianceLevel, allianceColours, factionData, hasArmyBonus}) {
+export function GameMode({roster, factionList, allianceLevel, allianceColours, factionData, hasArmyBonus, setShowKeywordSearch}) {
 
   const [gameHeroes, setGameHeroes] = useState({});
   const [casualtyCount, setCasualtyCount] = useState(0);
   const [heroCasualtyCount, setHeroCasualtyCount] = useState(0);
-  const [showWoundModal, setShowWoundModal] = useState(false);
+  const [showChartModal, setShowChartModal] = useState(false);
+  const [selectedChart, setSelectedChart] = useState("to-wound-chart");
 
   useEffect(() => {
     let store_gameMode = sessionStorage.getItem("gameMode")
@@ -187,9 +188,11 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
         roster={roster}
         casualtyCount={casualtyCount}
         heroCasualtyCount={heroCasualtyCount}
-        setShowWoundModal={setShowWoundModal}
+        setShowChartModal={setShowChartModal}
+        setSelectedChart={setSelectedChart}
         factionData={factionData}
         hasArmyBonus={hasArmyBonus}
+        setShowKeywordSearch={setShowKeywordSearch}
       />
       <div style={{marginLeft: "535px", minWidth: "720px"}}>
         <Stack direction="horizontal" style={{minWidth: "800px"}}>
@@ -209,7 +212,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
         <hr className="mt-5 mb-3" style={{width: "720px"}}/>
         <GameModeProfiles roster={roster}/>
       </div>
-      <ModalWoundChart showWoundModal={showWoundModal} setShowWoundModal={setShowWoundModal} />
+      <ModalChart selectedChart={selectedChart} showChartModal={showChartModal} setShowChartModal={setShowChartModal} />
     </div>
   );
 }

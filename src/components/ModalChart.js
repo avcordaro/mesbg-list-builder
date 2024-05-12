@@ -1,10 +1,10 @@
 import Modal from "react-bootstrap/Modal";
 import React from "react";
 
-export function ModalWoundChart({showWoundModal, setShowWoundModal}) {
+export function ModalChart({selectedChart, showChartModal, setShowChartModal}) {
   return (<Modal
-    show={showWoundModal}
-    onHide={() => setShowWoundModal(false)}
+    show={showChartModal}
+    onHide={() => setShowChartModal(false)}
     size="xl"
     centered
   >
@@ -12,9 +12,9 @@ export function ModalWoundChart({showWoundModal, setShowWoundModal}) {
     <Modal.Body style={{textAlign: "center"}}>
         <img
           className="border border-secondary"
-          src={require("../images/to-wound-chart.png")}
+          src={require("../images/charts/" + selectedChart + ".png")}
           alt=""
-          style={{width: "60%"}}
+          style={{maxWidth: "100%"}}
         />
     </Modal.Body>
   </Modal>);

@@ -103,3 +103,8 @@ df_warning_rules = df_warning_rules.groupby('subject').apply(lambda x: x[['type'
 
 with open('warning_rules.json', 'w') as f:
     f.write(df_warning_rules.to_json(orient="index", indent=2))
+
+df_keywords = pd.read_excel("mesbg_data.xlsx", sheet_name="keywords")
+
+with open('keywords.json', 'w') as f:
+    f.write(df_keywords.to_json(orient='records', indent=2))
