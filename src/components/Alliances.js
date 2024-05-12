@@ -85,7 +85,7 @@ export function Alliances({
   }, [allianceLevel]);
 
   return (<Offcanvas show={showAlliances} onHide={() => setShowAlliances(false)}>
-    <Offcanvas.Header closeButton>
+    <Offcanvas.Header className="border border-secondary" closeButton>
       <Offcanvas.Title>Alliances</Offcanvas.Title>
     </Offcanvas.Header>
     <Offcanvas.Body>
