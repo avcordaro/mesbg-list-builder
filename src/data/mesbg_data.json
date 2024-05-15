@@ -28586,6 +28586,15 @@
     "warband_size":0,
     "options":[
       {
+        "option_id":"OPT1689",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT1549",
         "option":"Swap Axe for Great Bow",
         "points":0.0,
@@ -39927,6 +39936,15 @@
     "pointsTotal":20,
     "warband_size":0,
     "options":[
+      {
+        "option_id":"OPT1690",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
       {
         "option_id":"OPT1647",
         "option":"Swap Axe for Great Bow",
