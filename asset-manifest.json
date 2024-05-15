@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.274b5c62.js",
+    "main.js": "/mesbg-list-builder/static/js/main.4f781828.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -313,8 +313,8 @@
     "static/media/Corsair Bo'sun.jpg": "/mesbg-list-builder/static/media/Corsair Bo'sun.11b2115c66fc13da9b5d.jpg",
     "static/media/Wood Elf Captain.jpg": "/mesbg-list-builder/static/media/Wood Elf Captain.cc99cb4bf280a71635cb.jpg",
     "static/media/Kili the Dwarf.jpg": "/mesbg-list-builder/static/media/Kili the Dwarf.7aa5e91236183bff675a.jpg",
-    "static/media/Beorning.jpg": "/mesbg-list-builder/static/media/Beorning.26246225283b8c8ef856.jpg",
     "static/media/Malbeth the Seer.jpg": "/mesbg-list-builder/static/media/Malbeth the Seer.b563af0e2eaae0fc2fb3.jpg",
+    "static/media/Beorning.jpg": "/mesbg-list-builder/static/media/Beorning.073db8a414c533030d6f.jpg",
     "static/media/Hilda-Bianca.jpg": "/mesbg-list-builder/static/media/Hilda-Bianca.0fdbbd1902371883f410.jpg",
     "static/media/Mardin.jpg": "/mesbg-list-builder/static/media/Mardin.282230e7353af623cfd8.jpg",
     "static/media/Dunlending Huscarl.jpg": "/mesbg-list-builder/static/media/Dunlending Huscarl.607e3d80fff18f38af95.jpg",
@@ -965,10 +965,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.274b5c62.js.map": "/mesbg-list-builder/static/js/main.274b5c62.js.map"
+    "main.4f781828.js.map": "/mesbg-list-builder/static/js/main.4f781828.js.map"
   },
   "entrypoints": [
     "static/css/main.27f1b7c9.css",
-    "static/js/main.274b5c62.js"
+    "static/js/main.4f781828.js"
   ]
 }
