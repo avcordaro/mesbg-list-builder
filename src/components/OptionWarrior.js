@@ -179,6 +179,7 @@ export function OptionWarrior({
       {option.option + " (" + option.points + " points)"}
     </Stack> : <Form.Check
       type="switch"
+      id={"switch-" + unit.id + "-" + option.option.replaceAll(" ", "-")}
       label={option.option + " (" + option.points + " points)"}
       checked={option.opt_quantity === 1}
       disabled={(option.min === option.max) || !roster.warbands[warbandNum - 1].hero || (option.type === "special_warband_upgrade" && !hero_constraint_data[roster.warbands[warbandNum - 1].hero.model_id][0]['special_warband_options'].includes(option.option)) || (option.type === "special_army_upgrade" && !specialArmyOptions.includes(option.option))}

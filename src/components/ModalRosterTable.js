@@ -179,6 +179,7 @@ export function ModalRosterTable({
               <h6 className="ms-auto mt-3">
                 <Form.Check
                   type="switch"
+                  id="switch-roster-show-army-bonus"
                   label="Show Army Bonus"
                   checked={showArmyBonus}
                   onChange={handleBonusToggle}
@@ -187,6 +188,7 @@ export function ModalRosterTable({
               <h6 className="ms-2 me-3 mt-3">
                 <Form.Check
                   type="switch"
+                  id="switch-roster-text-print-view"
                   label="Text Print View"
                   checked={textView}
                   onChange={handleTextToggle}
