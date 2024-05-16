@@ -120,6 +120,7 @@ export function WarbandHero({
                 reverse
                 className={roster['leader_warband_num'] === warbandNum ? "text-success" : ""}
                 type="switch"
+                id={"switch-" + unitData.id + "-leader"}
                 label="Leader"
                 name="leader"
                 checked={roster["leader_warband_num"] === warbandNum}

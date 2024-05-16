@@ -222,6 +222,7 @@ export function OptionHero({
         :
         <Form.Check
         type="switch"
+        id={"switch-" + unit.id + "-" + option.option.replaceAll(" ", "-")}
         label={option.option + " (" + option.points + " points)"}
         checked={option.opt_quantity === 1}
         disabled={option.min === option.max}
