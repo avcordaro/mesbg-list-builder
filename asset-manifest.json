@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.5e3f98f6.js",
+    "main.js": "/mesbg-list-builder/static/js/main.fa956ea3.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -45,8 +45,8 @@
     "static/media/Harry Goatleaf.jpg": "/mesbg-list-builder/static/media/Harry Goatleaf.14b3f6f6052ac01613b9.jpg",
     "static/media/Sauron.jpg": "/mesbg-list-builder/static/media/Sauron.e844d610fbd420fc6abb.jpg",
     "static/media/Barliman Butterbur.jpg": "/mesbg-list-builder/static/media/Barliman Butterbur.6df984f3006fe35719f8.jpg",
-    "static/media/Thranduil.jpg": "/mesbg-list-builder/static/media/Thranduil.784a1ff4db0ccd73dae4.jpg",
     "static/media/Helm Hammerhand.jpg": "/mesbg-list-builder/static/media/Helm Hammerhand.880f602201c5c68ef655.jpg",
+    "static/media/Thranduil.jpg": "/mesbg-list-builder/static/media/Thranduil.4df9b6300119f9726086.jpg",
     "static/media/Dain Ironfoot, Lord of the Iron Hills.jpg": "/mesbg-list-builder/static/media/Dain Ironfoot, Lord of the Iron Hills.54bc4155c40e04a16baa.jpg",
     "static/media/Goblin Mercenary Captain.jpg": "/mesbg-list-builder/static/media/Goblin Mercenary Captain.37f9bc6ab88abe37d58b.jpg",
     "static/media/Khamul.jpg": "/mesbg-list-builder/static/media/Khamul.0eba7a57e99f68415d5a.jpg",
@@ -965,10 +965,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.5e3f98f6.js.map": "/mesbg-list-builder/static/js/main.5e3f98f6.js.map"
+    "main.fa956ea3.js.map": "/mesbg-list-builder/static/js/main.fa956ea3.js.map"
   },
   "entrypoints": [
     "static/css/main.27f1b7c9.css",
-    "static/js/main.5e3f98f6.js"
+    "static/js/main.fa956ea3.js"
   ]
 }
