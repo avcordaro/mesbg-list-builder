@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.fa956ea3.js",
+    "main.js": "/mesbg-list-builder/static/js/main.f5878399.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -289,7 +289,7 @@
     "static/media/Grimbold.jpg": "/mesbg-list-builder/static/media/Grimbold.586e0e292bc7585ad710.jpg",
     "static/media/Gundabad Berserker.jpg": "/mesbg-list-builder/static/media/Gundabad Berserker.b58a4d7a4ae056ed9076.jpg",
     "static/media/Mordor Troll Chieftain (Leader).jpg": "/mesbg-list-builder/static/media/Mordor Troll Chieftain (Leader).3557d9b83d0b6334e00f.jpg",
-    "static/media/Mirkwood Cavalry.jpg": "/mesbg-list-builder/static/media/Mirkwood Cavalry.fe8fe54fcc5cb3f6e9f7.jpg",
+    "static/media/Mirkwood Cavalry.jpg": "/mesbg-list-builder/static/media/Mirkwood Cavalry.79a87eb6ebe358ebc48f.jpg",
     "static/media/Arvedui, Last King of Arnor.jpg": "/mesbg-list-builder/static/media/Arvedui, Last King of Arnor.651137a37d44c52eab84.jpg",
     "static/media/Mouth of Sauron.jpg": "/mesbg-list-builder/static/media/Mouth of Sauron.17cb13f4cff12d73ae4e.jpg",
     "static/media/Ingold.jpg": "/mesbg-list-builder/static/media/Ingold.a35dcbdc932ec26ec642.jpg",
@@ -965,10 +965,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.fa956ea3.js.map": "/mesbg-list-builder/static/js/main.fa956ea3.js.map"
+    "main.f5878399.js.map": "/mesbg-list-builder/static/js/main.f5878399.js.map"
   },
   "entrypoints": [
     "static/css/main.27f1b7c9.css",
-    "static/js/main.fa956ea3.js"
+    "static/js/main.f5878399.js"
   ]
 }
