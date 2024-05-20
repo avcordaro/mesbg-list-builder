@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.f5878399.js",
+    "main.js": "/mesbg-list-builder/static/js/main.e7357369.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -965,10 +965,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.f5878399.js.map": "/mesbg-list-builder/static/js/main.f5878399.js.map"
+    "main.e7357369.js.map": "/mesbg-list-builder/static/js/main.e7357369.js.map"
   },
   "entrypoints": [
     "static/css/main.27f1b7c9.css",
-    "static/js/main.f5878399.js"
+    "static/js/main.e7357369.js"
   ]
 }
