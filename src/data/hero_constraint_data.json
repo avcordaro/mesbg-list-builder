@@ -582,6 +582,7 @@
   "[assault_on_lothlorien] druzhag":[
     {
       "valid_warband_units":[
+        "[assault_on_lothlorien] fell_warg",
         "[assault_on_lothlorien] wild_warg",
         "[assault_on_lothlorien] giant_spider",
         "[assault_on_lothlorien] moria_goblin_warrior",

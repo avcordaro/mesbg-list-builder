@@ -8,8 +8,8 @@ import { FaHammer } from "react-icons/fa6";
 import React from "react";
 import {Navbar} from "react-bootstrap";
 
-export const VERSION = "5.2.6";
-const UPDATED = "22-May-2024";
+export const VERSION = "5.2.7";
+const UPDATED = "23-May-2024";
 
 /* Navbar component that displays at the top of the page. */
 

@@ -3058,6 +3058,38 @@
     ]
   },
   {
+    "model_id":"[assault_on_lothlorien] fell_warg",
+    "faction_type":"Evill LL",
+    "faction":"Assault on Lothlorien",
+    "profile_origin":"Azog's Hunters",
+    "name":"Fell Warg",
+    "unit_type":"Warrior",
+    "base_points":8,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":8,
+    "pointsTotal":8,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[assault_on_lothlorien] moria_goblin_prowler",
     "faction_type":"Evil LL",
     "faction":"Assault on Lothlorien",
