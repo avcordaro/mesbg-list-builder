@@ -30068,7 +30068,7 @@
       {
         "option_id":"OPT0932",
         "option":"Swap Glaive for Armoured Horse & Sword",
-        "points":25.0,
+        "points":10.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -31907,7 +31907,7 @@
       {
         "option_id":"OPT1020",
         "option":"Swap Glaive for Armoured Horse & Sword",
-        "points":25.0,
+        "points":10.0,
         "type":null,
         "min":0.0,
         "max":1.0,
