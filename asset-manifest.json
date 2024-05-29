@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.1194bef2.js",
+    "main.js": "/mesbg-list-builder/static/js/main.4a9db2a8.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -64,13 +64,13 @@
     "static/media/Mordor Siege Bow.jpg": "/mesbg-list-builder/static/media/Mordor Siege Bow.21fbf45334a2d394d2e4.jpg",
     "static/media/Hamfast 'Gaffer' Gamgee.jpg": "/mesbg-list-builder/static/media/Hamfast 'Gaffer' Gamgee.94623d626fd93d43a0d3.jpg",
     "static/media/Beechbone.jpg": "/mesbg-list-builder/static/media/Beechbone.92e24d12a63c03f008ce.jpg",
-    "static/media/Easterling Captain.jpg": "/mesbg-list-builder/static/media/Easterling Captain.3d28b33348a98b740912.jpg",
     "static/media/Grima.jpg": "/mesbg-list-builder/static/media/Grima.03344cd6051a3348e86c.jpg",
     "static/media/War Mumak of Far Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Far Harad.142cf0e1740d1fa73f75.jpg",
     "static/media/King's Champion.jpg": "/mesbg-list-builder/static/media/King's Champion.fba5302db52ba408f589.jpg",
     "static/media/Bill Ferny.jpg": "/mesbg-list-builder/static/media/Bill Ferny.dcdc9325a15590d16f82.jpg",
     "static/media/Black Dragon Kataphrakt.jpg": "/mesbg-list-builder/static/media/Black Dragon Kataphrakt.4e75f3722afe298f605e.jpg",
     "static/media/Easterling Kataphrakt.jpg": "/mesbg-list-builder/static/media/Easterling Kataphrakt.1ca3b4de98fd6dd3f2d0.jpg",
+    "static/media/Easterling Captain.jpg": "/mesbg-list-builder/static/media/Easterling Captain.17653cea0d367ab3dbf9.jpg",
     "static/media/Eowyn.jpg": "/mesbg-list-builder/static/media/Eowyn.a023b7419bcb0133fc7c.jpg",
     "static/media/The Tainted.jpg": "/mesbg-list-builder/static/media/The Tainted.b2a5ac031f56220293df.jpg",
     "static/media/Easterling Dragon Knight.jpg": "/mesbg-list-builder/static/media/Easterling Dragon Knight.104ee4a64ee9087bedad.jpg",
@@ -965,10 +965,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.1194bef2.js.map": "/mesbg-list-builder/static/js/main.1194bef2.js.map"
+    "main.4a9db2a8.js.map": "/mesbg-list-builder/static/js/main.4a9db2a8.js.map"
   },
   "entrypoints": [
     "static/css/main.27f1b7c9.css",
-    "static/js/main.1194bef2.js"
+    "static/js/main.4a9db2a8.js"
   ]
 }
