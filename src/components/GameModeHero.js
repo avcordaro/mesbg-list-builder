@@ -4,7 +4,7 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import { FaChevronLeft, FaChevronRight, FaSkullCrossbones } from "react-icons/fa";
 import {GiQueenCrown} from "react-icons/gi";
-
+import {handleAzogWhiteWarg} from "./specialRules";
 
 export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, hero_idx, val_idx, heroCasualtyCount, setHeroCasualtyCount}) {
 
@@ -20,7 +20,11 @@ export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, he
       let newGameHeroes = { ...gameHeroes }
       let vals = newGameHeroes[hero_id][hero_idx]['xMWFW'].split(":")
       if (parseInt(vals[val_idx]) === 0 && name === "Wounds") {
-        setHeroCasualtyCount(heroCasualtyCount - 1);
+        if (newGameHeroes[hero_id].length > 1 && (newGameHeroes[hero_id][hero_idx]['name'] === "Azog" || newGameHeroes[hero_id][hero_idx]['name'] === "The White Warg")) {
+          setHeroCasualtyCount(heroCasualtyCount - handleAzogWhiteWarg(newGameHeroes, hero_id, hero_idx));
+        } else {
+          setHeroCasualtyCount(heroCasualtyCount - 1);
+        }
       }
       vals[val_idx] = String(parseInt(vals[val_idx]) + 1)
       newGameHeroes[hero_id][hero_idx]['xMWFW'] = vals.join(":")
@@ -33,7 +37,11 @@ export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, he
       let newGameHeroes = { ...gameHeroes }
       let vals = newGameHeroes[hero_id][hero_idx]['xMWFW'].split(":")
       if (parseInt(vals[val_idx]) === 1 && name === "Wounds") {
-        setHeroCasualtyCount(heroCasualtyCount + 1);
+        if (newGameHeroes[hero_id].length > 1 && (newGameHeroes[hero_id][hero_idx]['name'] === "Azog" || newGameHeroes[hero_id][hero_idx]['name'] === "The White Warg")) {
+          setHeroCasualtyCount(heroCasualtyCount + handleAzogWhiteWarg(newGameHeroes, hero_id, hero_idx));
+        } else {
+          setHeroCasualtyCount(heroCasualtyCount + 1);
+        }
       }
       vals[val_idx] = String(parseInt(vals[val_idx]) - 1)
       newGameHeroes[hero_id][hero_idx]['xMWFW'] = vals.join(":")
@@ -80,6 +88,9 @@ export function GameModeHero({gameHeroes, setGameHeroes, hero_id, heroCasualtyCo
                   {hero['xMWFW'].split(":")[3] === "0" &&
                     <FaSkullCrossbones className="ms-2"/>}
                 </p>
+                {hero.name === "The White Warg" &&
+                    <h6 className="text-muted m-0 mt-2 ms-auto" style={{width: "350px"}}>(Both Azog and The White Warg must reach zero wounds to count as a single casualty)</h6>
+                  }
                 {hero["leader"] && <h6 className="m-0 ms-auto mt-2 text-success"><GiQueenCrown /> Leader</h6>}
               </Stack>
               <Stack className="my-2" direction="horizontal" gap={3}>

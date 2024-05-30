@@ -327,6 +327,15 @@
       "warning":"This force must contain the Dragon Emperor."
     }
   ],
+  "The Kingdom of Moria":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[the_kingdom_of_moria] balin"
+      ],
+      "warning":"This force must contain Balin, as the The Kingdom of Moria is a special rule for him specifically."
+    }
+  ],
   "The Men of the West":[
     {
       "type":"compulsory",
