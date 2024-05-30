@@ -83,6 +83,9 @@ export function OptionHero({
             newHero.warband_size = 18
             newWarband.max_units = 18
           }
+          if (unit.model_id.includes("] azog") && option.option === "The White Warg") {
+            newHero.MWFW = [[0,"3:3:1:3"]]
+          }
           newHero.options = newOptions
           newWarband.hero = newHero
         }
@@ -127,6 +130,9 @@ export function OptionHero({
           if (unit.model_id === "[azog's_legion] azog" && option.option === "Signal Tower") {
             newHero.warband_size = 24
             newWarband.max_units = 24
+          }
+          if (unit.model_id.includes("] azog") && option.option === "The White Warg") {
+            newHero.MWFW = [["Azog","3:3:1:3"], ["The White Warg","3:1:1:2"]]
           }
           newHero.options = newOptions
           newWarband.hero = newHero

@@ -250,3 +250,16 @@ export const checkGilGalad = (_allianceLevel, faction_list) => {
   }
   return "Historical"
 }
+
+export const handleAzogWhiteWarg = (newGameHeroes, hero_id, hero_idx) => {
+  let mapping = {0: "Azog", 1: "The White Warg"}
+  let azogWounds = newGameHeroes[hero_id][0]['xMWFW'].split(":")[3]
+  let wargWounds = newGameHeroes[hero_id][1]['xMWFW'].split(":")[3]
+  if (mapping[hero_idx] == "Azog" && wargWounds === "0") {
+    return 1
+  }
+  if (mapping[hero_idx] == "The White Warg" && azogWounds === "0") {
+    return 1
+  }
+  return 0
+}

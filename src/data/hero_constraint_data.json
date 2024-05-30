@@ -8882,6 +8882,42 @@
       ]
     }
   ],
+  "[the_kingdom_of_moria] oin_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[the_kingdom_of_moria] ori_the_dwarf,_champion_of_erebor":[
+    {
+      "valid_warband_units":[
+        "[the_kingdom_of_moria] vault_warden_team",
+        "[the_kingdom_of_moria] iron_guard",
+        "[the_kingdom_of_moria] khazad_guard",
+        "[the_kingdom_of_moria] dwarf_ranger",
+        "[the_kingdom_of_moria] dwarf_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[the_kingdom_of_moria] shieldbearer":[
     {
       "valid_warband_units":[

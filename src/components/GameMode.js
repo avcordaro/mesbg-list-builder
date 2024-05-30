@@ -8,6 +8,7 @@ import {FaChevronLeft, FaChevronRight, FaSkullCrossbones} from "react-icons/fa";
 import {GiCrackedShield} from "react-icons/gi";
 import hero_constraint_data from "../data/hero_constraint_data.json";
 import {ModalChart} from "./ModalChart";
+import {ModalGameModeReset} from "./ModalGameModeReset";
 
 export function GameModeCasualties ({roster, casualtyCount, setCasualtyCount, heroCasualtyCount, gameHeroes}) {
 
@@ -95,6 +96,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
   const [heroCasualtyCount, setHeroCasualtyCount] = useState(0);
   const [showChartModal, setShowChartModal] = useState(false);
   const [selectedChart, setSelectedChart] = useState("to-wound-chart");
+  const [showResetModal, setShowResetModal] = useState(false);
 
   useEffect(() => {
     let store_gameMode = sessionStorage.getItem("gameMode")
@@ -196,7 +198,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
       />
       <div style={{marginLeft: "535px", minWidth: "720px"}}>
         <Stack direction="horizontal" style={{minWidth: "800px"}}>
-          <Button className="m-2" onClick={handleReset}><TbRefresh/> Reset All</Button>
+          <Button className="m-2" onClick={() => setShowResetModal(true)}><TbRefresh/> Reset All</Button>
           <GameModeCasualties roster={roster} casualtyCount={casualtyCount}
                               setCasualtyCount={setCasualtyCount}
                               heroCasualtyCount={heroCasualtyCount} gameHeroes={gameHeroes}/>
@@ -213,6 +215,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
         <GameModeProfiles roster={roster}/>
       </div>
       <ModalChart selectedChart={selectedChart} showChartModal={showChartModal} setShowChartModal={setShowChartModal} />
+      <ModalGameModeReset showResetModal={showResetModal} setShowResetModal={setShowResetModal} handleReset={handleReset} />
     </div>
   );
 }
