@@ -63,7 +63,11 @@ export function SelectionUnit({
       newRoster.warbands[warbandNumFocus].points = newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
       newRoster.warbands[warbandNumFocus].max_units = newUnitData.warband_size;
       if (newRoster.warbands[warbandNumFocus].hero.siege_crew > 0) {
-        newRoster.warbands[warbandNumFocus].num_units = newRoster.warbands[warbandNumFocus].num_units + (newUnitData.siege_crew - 1);
+        if (unitData.model_id.includes("_mumak_") || unitData.model_id.includes("great_beast_")) {
+          newRoster.warbands[warbandNumFocus].num_units = newRoster.warbands[warbandNumFocus].num_units + (newUnitData.siege_crew - 2);
+        } else {
+          newRoster.warbands[warbandNumFocus].num_units = newRoster.warbands[warbandNumFocus].num_units + (newUnitData.siege_crew - 1);
+        }
         newRoster.num_units = newRoster.num_units + newUnitData.siege_crew;
       } else {
         newRoster.num_units = newRoster.num_units + 1;

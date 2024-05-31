@@ -48,7 +48,11 @@ export function WarbandHero({
         newWarband["points"] = newWarband["points"] - newWarband.hero["pointsTotal"];
         // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
         if (newWarband.hero.siege_crew > 0) {
-          newWarband.num_units = newWarband.num_units - (newWarband.hero.siege_crew - 1);
+          if (unitData.model_id.includes("_mumak_") || unitData.model_id.includes("great_beast_")) {
+            newWarband.num_units = newWarband.num_units - (newWarband.hero.siege_crew - 2);
+          } else {
+            newWarband.num_units = newWarband.num_units - (newWarband.hero.siege_crew - 1);
+          }
           newRoster["num_units"] = newRoster["num_units"] - newWarband.hero.siege_crew;
         } else {
           newRoster["num_units"] = newRoster["num_units"] - 1;

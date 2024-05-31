@@ -62,10 +62,15 @@ export function Warbands({
       newWarband.hero = newHero;
       if (newWarband.hero.unique) {
         newWarband['points'] = newWarband['points'] - newWarband.hero['pointsTotal'];
-        newWarband['num_units'] = newWarband['num_units'] - (newWarband.hero.siege_crew > 0 ? (newWarband.hero.siege_crew - 1) : 0)
+        if (!newWarband.hero.model_id.includes("mumak_war_leader")) {
+          newWarband['num_units'] = newWarband['num_units'] - (newWarband.hero.siege_crew > 0 ? (newWarband.hero.siege_crew - 1) : 0)
+        }
         newWarband.hero = null;
       } else {
         newRoster['num_units'] = newRoster['num_units'] + 1
+        if (newWarband.hero && (newWarband.hero.model_id.includes("_mumak_") || newWarband.hero.model_id.includes("great_beast_"))) {
+          newRoster['num_units'] = newRoster['num_units'] + 1;
+        }
       }
     }
     let newUnits = newWarband.units.map((_unit) => {
@@ -123,6 +128,9 @@ export function Warbands({
           });
         } else {
           newRoster['num_units'] = newRoster['num_units'] - warband['num_units'] - (warband.hero != null ? 1 : 0)
+          if (warband.hero && (warband.hero.model_id.includes("_mumak_") || warband.hero.model_id.includes("great_beast_"))) {
+            newRoster['num_units'] = newRoster['num_units'] - 1;
+          }
         }
       }
       return null
