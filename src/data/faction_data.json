@@ -507,7 +507,7 @@
     "bow_limit":0.33
   },
   "The Kingdom of Moria":{
-    "armyBonus":"<b>\"The Wealth of Moria lay not in Gold or Jewels, but in Mithril\"<\/b> - Friendly Dwarf models with either the Khazad-Dum or Moria keyword may re-roll To Wound rolls of a 1 when fighting in close combat.",
+    "armyBonus":"<b>\"The Wealth of Moria lay not in Gold or Jewels, but in Mithril\"<\/b> - Friendly Dwarf models with either the Khazad-Dum or Moria keyword may re-roll To Wound rolls of a 1 when fighting in close combat.<br\/><br\/>Any model in this list which has the <b>Erebor<\/b> or <b>Khazad-Dum<\/b> keyword will instead be replaced with the <b>Moria<\/b> keyword.",
     "primaryAllies":[
 
     ],
