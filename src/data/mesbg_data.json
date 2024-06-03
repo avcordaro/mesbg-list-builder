@@ -28472,6 +28472,42 @@
     "warband_size":6,
     "options":[
       {
+        "option_id":"OPT0878",
+        "option":"Orc Engineer Captain",
+        "points":40.0,
+        "type":"engineer_cpt",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0879",
+        "option":"Flaming Ammunition",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0880",
+        "option":"Severed heads",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0881",
+        "option":"Additional Crew",
+        "points":5.0,
+        "type":"add_crew",
+        "min":0.0,
+        "max":3.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT1673",
         "option":"Engineer Captain - Orc Bow",
         "points":5.0,
@@ -28515,6 +28551,33 @@
     "pointsTotal":50,
     "warband_size":6,
     "options":[
+      {
+        "option_id":"OPT0874",
+        "option":"Orc Engineer Captain",
+        "points":40.0,
+        "type":"engineer_cpt",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0875",
+        "option":"Flaming Ammunition",
+        "points":15.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT0876",
+        "option":"Additional Crew",
+        "points":5.0,
+        "type":"add_crew",
+        "min":0.0,
+        "max":4.0,
+        "opt_quantity":0.0
+      },
       {
         "option_id":"OPT1675",
         "option":"Engineer Captain - Orc Bow",
