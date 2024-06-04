@@ -3,7 +3,11 @@ import Badge from "react-bootstrap/Badge";
 import {useEffect} from "react";
 import {
   handle50PctBowLimit,
-  handleBillCampfire, handleGoblinTown, handleMasterLaketown, handleMirkwoodRangers
+  handleBillCampfire, 
+  handleGoblinTown, 
+  handleMasterLaketown, 
+  handleMirkwoodRangers, 
+  handleKhandishHorsemanCharioteers
 } from "./specialRules";
 
 const checkAlliance = (army_A, army_B, faction_data) => {
@@ -59,6 +63,11 @@ export function Alliances({
     //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
     if (factionList.includes("Halls of Thranduil")) {
       let newRoster = handleMirkwoodRangers(roster, allianceLevel);
+      setRoster(newRoster);
+    }
+    //If alliance level changes, and Variags of Khand is included in army, there might be some changes needed for Khandish Horseman/Charioteers.
+    if (factionList.includes("Variags of Khand")) {
+      let newRoster = handleKhandishHorsemanCharioteers(roster, allianceLevel);
       setRoster(newRoster);
     }
     //If alliance level chaneges, and Army of Lake-town is included in army, there might be some changes needed for the Master of Lake-town

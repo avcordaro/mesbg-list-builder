@@ -20,6 +20,24 @@ export const handleMirkwoodRangers = (roster, alliance_level) => {
   return newRoster;
 };
 
+export const handleKhandishHorsemanCharioteers = (roster, alliance_level) => {
+  // Specific logic for Khandish Horseman/Charioteers and counting towards bow limit, depending on if the alliance level is Historical or not.
+  let newRoster = {...roster};
+  newRoster.warbands = newRoster.warbands.map((warband) => {
+    let newWarband = {...warband};
+    newWarband.units = newWarband.units.map((_unit) => {
+      let newUnit = {..._unit};
+      if (newUnit.model_id === "[variags_of_khand] khandish_charioteer" || newUnit.model_id === "[variags_of_khand] khandish_horseman") {
+        newUnit["inc_bow_count"] = alliance_level !== "Historical";
+        newUnit["bow_limit"] = alliance_level !== "Historical";
+      }
+      return newUnit;
+    });
+    return newWarband;
+  });
+  return newRoster;
+};
+
 export const handleMasterLaketown = (roster, alliance_level) => {
   // Specific logic for Master of Lake-town's heroic tier, depending on if the alliance level is Historical or not.
   let newRoster = {...roster};

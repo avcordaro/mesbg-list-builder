@@ -103,6 +103,11 @@ export function SelectionUnit({
         newUnitData["inc_bow_count"] = true;
         newUnitData["bow_limit"] = true;
       }
+      // Specific logic for Khandish Horseman/Charioteers and the bow limit, depending on the alliance level
+      if ((newUnitData.model_id === "[variags_of_khand] khandish_charioteer" || newUnitData.model_id === "[variags_of_khand] khandish_horseman") && allianceLevel !== "Historical") {
+        newUnitData["inc_bow_count"] = true;
+        newUnitData["bow_limit"] = true;
+      }
       // If a warrior unit is selected, it is appended to the warband's list of units.
       newRoster.warbands[warbandNumFocus].units = newRoster.warbands[warbandNumFocus].units.filter((data) => data.id !== newWarriorFocus);
       newRoster.warbands[warbandNumFocus].units.push(newUnitData);
