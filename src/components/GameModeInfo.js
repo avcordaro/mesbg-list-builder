@@ -33,7 +33,7 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
           <Badge bg={allianceColours[allianceLevel]}>{allianceLevel}</Badge>
         </h5>
         <Dropdown className="ms-auto">
-          <Dropdown.Toggle variant="light" className="ms-auto border shadow-sm">
+          <Dropdown.Toggle variant="light" className="w-100 ms-auto border shadow-sm">
             <GiSwordsEmblem /> Charts
           </Dropdown.Toggle>
           <Dropdown.Menu>

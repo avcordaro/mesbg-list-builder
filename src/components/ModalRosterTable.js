@@ -142,7 +142,7 @@ export function ModalRosterTable({
         }
       }
       _warband.units.map((_unit) => {
-        if (_unit.name != null) {
+        if (_unit.name != null && _unit.unit_type !== "Siege") {
           profileCards.push([_unit.profile_origin, _unit.name].join("|"));
         }
         return null;
