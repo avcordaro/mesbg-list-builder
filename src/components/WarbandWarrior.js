@@ -30,16 +30,25 @@ export function WarbandWarrior({
         newWarband.units = newWarband.units.map((_unit) => {
           let newUnit = {..._unit};
           if (newUnit.id === unitData.id) {
-            newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
-            newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
-            newUnit["quantity"] = newUnit["quantity"] + 1;
-            newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
-            newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
-            newWarband["num_units"] = newWarband["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
-            newWarband["bow_count"] = newWarband["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
-            newRoster["num_units"] = newRoster["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
-            newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
-            newRoster["bow_count"] = newRoster["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
+            if (newUnit.unit_type === "Siege") {
+              newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+              newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+              newUnit["quantity"] = newUnit["quantity"] + 1;
+              newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
+              newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
+              newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+            } else {
+              newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+              newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+              newUnit["quantity"] = newUnit["quantity"] + 1;
+              newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
+              newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
+              newWarband["num_units"] = newWarband["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
+              newWarband["bow_count"] = newWarband["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
+              newRoster["num_units"] = newRoster["num_units"] + (unitData.siege_crew ? unitData.siege_crew : 1);
+              newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+              newRoster["bow_count"] = newRoster["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
+            }
           }
           return newUnit;
         });
@@ -59,16 +68,25 @@ export function WarbandWarrior({
           newWarband.units = newWarband.units.map((_unit) => {
             let newUnit = {..._unit};
             if (newUnit.id === unitData.id) {
-              newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
-              newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
-              newUnit["quantity"] = newUnit["quantity"] - 1;
-              newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
-              newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
-              newWarband["num_units"] = newWarband["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
-              newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
-              newRoster["num_units"] = newRoster["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
-              newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
-              newRoster["bow_count"] = newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
+              if (newUnit.unit_type === "Siege") {
+                newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+                newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+                newUnit["quantity"] = newUnit["quantity"] - 1;
+                newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
+                newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
+                newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+              } else {
+                newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+                newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+                newUnit["quantity"] = newUnit["quantity"] - 1;
+                newUnit["pointsTotal"] = newUnit["quantity"] * newUnit["pointsPerUnit"];
+                newWarband["points"] = newWarband["points"] + newUnit["pointsTotal"];
+                newWarband["num_units"] = newWarband["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
+                newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
+                newRoster["num_units"] = newRoster["num_units"] - (unitData.siege_crew ? unitData.siege_crew : 1);
+                newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
+                newRoster["bow_count"] = newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
+              }
             }
             return newUnit;
           });
@@ -88,12 +106,17 @@ export function WarbandWarrior({
         let newUnits = newWarband.units.map((_unit) => {
           let newUnit = {..._unit};
           if (newUnit.id === unitData.id) {
-            newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
-            newWarband["num_units"] = newWarband["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
-            newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-            newRoster["num_units"] = newRoster["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
-            newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
-            newRoster["bow_count"] = newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+            if (newUnit.unit_type === "Siege") {
+              newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+              newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+            } else {
+              newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
+              newWarband["num_units"] = newWarband["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
+              newWarband["bow_count"] = newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+              newRoster["num_units"] = newRoster["num_units"] - ((unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"]);
+              newRoster["points"] = newRoster["points"] - newUnit["pointsTotal"];
+              newRoster["bow_count"] = newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
+            }
           }
           return newUnit;
         });
@@ -132,7 +155,8 @@ export function WarbandWarrior({
   return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
       <img
-        className="profile mt-1 mb-1"
+        className="mt-1 mb-1"
+        style={{width: unitData.unit_type === "Siege" ? "75px" : "100px", height: unitData.unit_type === "Siege" ? "75px" : "100px"}}
         src={(() => {
           try {
             return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
@@ -151,7 +175,7 @@ export function WarbandWarrior({
             Points: <b>{unitData.pointsTotal}</b>{unitData.unit_type === "Warrior" && " (per unit: " + unitData.pointsPerUnit + ")"}
           </p>
         </Stack>
-          {unitData.unit_type !== "Warrior" && 
+          {(unitData.unit_type !== "Warrior" && unitData.unit_type !== "Siege") && 
             <Stack direction="horizontal" style={{minHeight: "28px"}} gap={1}>
               <Badge bg="dark">
                 {unitData.unit_type}
@@ -186,14 +210,17 @@ export function WarbandWarrior({
             />))}
           </Form>)}
           <Stack direction="horizontal" gap={3} className="ms-auto mt-auto">
-            <Button
-              className="border"
-              variant={"secondary"}
-              onClick={handleCardClick}
-            >
-              <BsFillPersonVcardFill/>
-            </Button>
-            {unitData.unit_type === "Warrior" && <>
+            {unitData.unit_type !== "Siege" &&
+              <Button
+                className="border"
+                variant={"secondary"}
+                onClick={handleCardClick}
+              >
+                <BsFillPersonVcardFill/>
+              </Button>
+            }
+            
+            {(unitData.unit_type === "Warrior" || unitData.unit_type === "Siege") && <>
               <>
                 <Button onClick={handleDecrement}>
                   <FaMinus/>
@@ -205,9 +232,11 @@ export function WarbandWarrior({
                   <FaPlus/>
                 </Button>
               </>
-              <Button onClick={handleDuplicate} variant={"info"}>
-                <HiDuplicate/>
-              </Button>
+              {unitData.unit_type === "Warrior" &&
+                <Button onClick={handleDuplicate} variant={"info"}>
+                  <HiDuplicate/>
+                </Button>
+              }
             </>}
             <Button
               style={{marginRight: "10px"}}

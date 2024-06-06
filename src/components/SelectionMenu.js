@@ -7,6 +7,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import mesbg_data from "../data/mesbg_data.json";
 import {SelectionUnit} from "./SelectionUnit";
+import {SelectionSiege} from "./SelectionSiege";
 import {v4 as uuid} from "uuid";
 import hero_constraint_data from "../data/hero_constraint_data.json";
 import {IoWarningOutline} from "react-icons/io5";
@@ -140,6 +141,16 @@ export function SelectionMenu({
                 setCardUnitData={setCardUnitData}
                 allianceLevel={allianceLevel}
               />))}
+              {!heroSelection &&
+                <SelectionSiege 
+                  key={uuid()}
+                  newWarriorFocus={newWarriorFocus}
+                  setDisplaySelection={setDisplaySelection}
+                  roster={roster}
+                  setRoster={setRoster}
+                  warbandNumFocus={warbandNumFocus}
+                />
+              }
           </Stack>
         </Tab>))}
       </Tabs>
