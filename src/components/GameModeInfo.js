@@ -39,6 +39,7 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
           <Dropdown.Menu>
             <Dropdown.Item onClick={() => {setSelectedChart("climb-table"); setShowChartModal(true);}}>Climb Table</Dropdown.Item>
             <Dropdown.Item onClick={() => {setSelectedChart("detonation-table"); setShowChartModal(true);}}>Detonation Table</Dropdown.Item>
+            <Dropdown.Item onClick={() => {setSelectedChart("gates-doors-sieges"); setShowChartModal(true);}}>Gates and Doors (Sieges)</Dropdown.Item>
             <Dropdown.Item onClick={() => {setSelectedChart("in-the-way-chart"); setShowChartModal(true);}}>In The Way Chart</Dropdown.Item>
             <Dropdown.Item onClick={() => {setSelectedChart("jump-table"); setShowChartModal(true);}}>Jump Table</Dropdown.Item>
             <Dropdown.Item onClick={() => {setSelectedChart("leap-table"); setShowChartModal(true);}}>Leap Table</Dropdown.Item>

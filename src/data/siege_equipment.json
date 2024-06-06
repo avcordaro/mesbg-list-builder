@@ -1,0 +1,130 @@
+[
+  {
+    "model_id": "[siege] rallying_point",
+    "profile_origin": "Siege Equipment",
+    "name": "Rallying Point",
+    "base_points": 25,
+    "quantity": 1,
+    "pointsPerUnit": 25,
+    "pointsTotal": 25,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] barricade",
+    "profile_origin": "Siege Equipment",
+    "name": "Barricade",
+    "base_points": 5,
+    "quantity": 1,
+    "pointsPerUnit": 5,
+    "pointsTotal": 5,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] spiked_barricade",
+    "profile_origin": "Siege Equipment",
+    "name": "Spiked Barricade",
+    "base_points": 10,
+    "quantity": 1,
+    "pointsPerUnit": 10,
+    "pointsTotal": 10,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] rocks",
+    "profile_origin": "Siege Equipment",
+    "name": "Rocks",
+    "base_points": 5,
+    "quantity": 1,
+    "pointsPerUnit": 5,
+    "pointsTotal": 5,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] boiling_oil",
+    "profile_origin": "Siege Equipment",
+    "name": "Boiling Oil",
+    "base_points": 30,
+    "quantity": 1,
+    "pointsPerUnit": 30,
+    "pointsTotal": 30,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] siege_tower",
+    "profile_origin": "Siege Equipment",
+    "name": "Siege Tower",
+    "base_points": 40,
+    "quantity": 1,
+    "pointsPerUnit": 40,
+    "pointsTotal": 40,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] siege_ladder",
+    "profile_origin": "Siege Equipment",
+    "name": "Siege Ladder",
+    "base_points": 5,
+    "quantity": 1,
+    "pointsPerUnit": 5,
+    "pointsTotal": 5,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  },
+  {
+    "model_id": "[siege] battering_ram",
+    "profile_origin": "Siege Equipment",
+    "name": "Battering Ram",
+    "base_points": 15,
+    "quantity": 1,
+    "pointsPerUnit": 15,
+    "pointsTotal": 15,
+    "unit_type": "Siege",
+    "MWFW": [],
+    "options": [
+      {
+        "option": "None"
+      }
+    ]
+  }
+]
