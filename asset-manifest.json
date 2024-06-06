@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mesbg-list-builder/static/css/main.27f1b7c9.css",
-    "main.js": "/mesbg-list-builder/static/js/main.32104cba.js",
+    "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
+    "main.js": "/mesbg-list-builder/static/js/main.1928aa72.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -470,6 +470,7 @@
     "static/media/default_card.jpg": "/mesbg-list-builder/static/media/default_card.89612dedec035d2f5035.jpg",
     "static/media/scatter-table.png": "/mesbg-list-builder/static/media/scatter-table.f84d3e7fa92fde4c5ab1.png",
     "static/media/detonation-table.png": "/mesbg-list-builder/static/media/detonation-table.cbecd66cca2a6df96fc0.png",
+    "static/media/gates-doors-sieges.png": "/mesbg-list-builder/static/media/gates-doors-sieges.e0bc83060e338f57ed35.png",
     "static/media/Hamfast 'Gaffer' Gamgee.png": "/mesbg-list-builder/static/media/Hamfast 'Gaffer' Gamgee.532c67e83cbd8036d77a.png",
     "static/media/Dragon Cult Acolyte.png": "/mesbg-list-builder/static/media/Dragon Cult Acolyte.dd5d96248d9d6d8266f3.png",
     "static/media/Raza, Fang of the Serpent.png": "/mesbg-list-builder/static/media/Raza, Fang of the Serpent.228f74d78f355879969c.png",
@@ -958,18 +959,22 @@
     "static/media/title-logo.png": "/mesbg-list-builder/static/media/title-logo.1275c7e981f3e524c62a.png",
     "static/media/Defenders of the Shire.png": "/mesbg-list-builder/static/media/Defenders of the Shire.8bd1b1afd25b97d97816.png",
     "static/media/The Shire.png": "/mesbg-list-builder/static/media/The Shire.8bd1b1afd25b97d97816.png",
+    "static/media/Rocks.png": "/mesbg-list-builder/static/media/Rocks.f802affc426e44a10a54.png",
     "static/media/Thorin's Company.png": "/mesbg-list-builder/static/media/Thorin's Company.1c87ea78d72e4bc1640a.png",
+    "static/media/Siege Tower.png": "/mesbg-list-builder/static/media/Siege Tower.262f312649a5f02e10a7.png",
     "static/media/Defenders of Erebor.png": "/mesbg-list-builder/static/media/Defenders of Erebor.31a1c0daf0afe861cfd2.png",
     "static/media/Erebor Reclaimed (King Dain).png": "/mesbg-list-builder/static/media/Erebor Reclaimed (King Dain).31a1c0daf0afe861cfd2.png",
     "static/media/Erebor Reclaimed (King Thorin).png": "/mesbg-list-builder/static/media/Erebor Reclaimed (King Thorin).31a1c0daf0afe861cfd2.png",
     "static/media/The Iron Hills.png": "/mesbg-list-builder/static/media/The Iron Hills.0c80580e42fc5d13c29c.png",
+    "static/media/Boiling Oil.png": "/mesbg-list-builder/static/media/Boiling Oil.22043bc9838c7f3a740b.png",
+    "static/media/Battering Ram.png": "/mesbg-list-builder/static/media/Battering Ram.7b982179da0b5a9fc6f0.png",
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
-    "main.27f1b7c9.css.map": "/mesbg-list-builder/static/css/main.27f1b7c9.css.map",
-    "main.32104cba.js.map": "/mesbg-list-builder/static/js/main.32104cba.js.map"
+    "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
+    "main.1928aa72.js.map": "/mesbg-list-builder/static/js/main.1928aa72.js.map"
   },
   "entrypoints": [
-    "static/css/main.27f1b7c9.css",
-    "static/js/main.32104cba.js"
+    "static/css/main.efc0117d.css",
+    "static/js/main.1928aa72.js"
   ]
 }
