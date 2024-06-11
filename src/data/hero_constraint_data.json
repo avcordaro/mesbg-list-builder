@@ -3082,6 +3082,7 @@
       "valid_warband_units":[
         "[far_harad] half_troll",
         "[far_harad] mahud_warrior",
+        "[far_harad] mahud_raider",
         "[the_serpent_horde] haradrim_warrior"
       ],
       "special_warband_options":[
@@ -3097,6 +3098,7 @@
     {
       "valid_warband_units":[
         "[far_harad] half_troll",
+        "[far_harad] mahud_raider",
         "[far_harad] mahud_warrior"
       ],
       "special_warband_options":[
@@ -3465,7 +3467,11 @@
       "valid_warband_units":[
         "[grand_army_of_the_south] half_troll",
         "[grand_army_of_the_south] mahud_raider",
-        "[grand_army_of_the_south] mahud_warrior"
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] mahud_warrior",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
       ],
       "special_warband_options":[
 
@@ -3481,7 +3487,11 @@
       "valid_warband_units":[
         "[grand_army_of_the_south] half_troll",
         "[grand_army_of_the_south] mahud_raider",
-        "[grand_army_of_the_south] mahud_warrior"
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] mahud_warrior",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
       ],
       "special_warband_options":[
 
@@ -3530,7 +3540,11 @@
     {
       "valid_warband_units":[
         "[grand_army_of_the_south] half_troll",
+        "[grand_army_of_the_south] mahud_raider",
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
         "[grand_army_of_the_south] mahud_warrior",
+        "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
       "special_warband_options":[
@@ -3546,7 +3560,12 @@
     {
       "valid_warband_units":[
         "[grand_army_of_the_south] half_troll",
-        "[grand_army_of_the_south] mahud_warrior"
+        "[grand_army_of_the_south] mahud_raider",
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
+        "[grand_army_of_the_south] mahud_warrior",
+        "[grand_army_of_the_south] serpent_guard",
+        "[grand_army_of_the_south] haradrim_warrior"
       ],
       "special_warband_options":[
 
@@ -3560,6 +3579,8 @@
   "[grand_army_of_the_south] war_mumak_of_harad":[
     {
       "valid_warband_units":[
+        "[grand_army_of_the_south] serpent_rider",
+        "[grand_army_of_the_south] haradrim_raider",
         "[grand_army_of_the_south] serpent_guard",
         "[grand_army_of_the_south] haradrim_warrior"
       ],
@@ -9566,6 +9587,9 @@
   "[the_serpent_horde] war_mumak_of_harad":[
     {
       "valid_warband_units":[
+        "[the_serpent_horde] serpent_rider",
+        "[the_serpent_horde] haradrim_raider",
+        "[the_serpent_horde] abrakhan_merchant_guard",
         "[the_serpent_horde] watcher_of_karna",
         "[the_serpent_horde] serpent_guard",
         "[the_serpent_horde] haradrim_warrior"
