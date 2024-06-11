@@ -2,7 +2,6 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion';
 import siege_equipment from "../data/siege_equipment.json"
-import {BsFillPersonVcardFill} from "react-icons/bs";
 import {v4 as uuid} from "uuid";
 
 export function SelectionSiege({
