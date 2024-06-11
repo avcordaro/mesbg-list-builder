@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.1928aa72.js",
+    "main.js": "/mesbg-list-builder/static/js/main.865c0053.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -33,7 +33,7 @@
     "static/media/Sharkey and Worm.jpg": "/mesbg-list-builder/static/media/Sharkey and Worm.83665e4dabb713a74eb2.jpg",
     "static/media/Thorin Oakenshield, King Under the Mountain.jpg": "/mesbg-list-builder/static/media/Thorin Oakenshield, King Under the Mountain.fd6d53b30f5c0b9e3fd1.jpg",
     "static/media/War Mumak of Harad.jpg": "/mesbg-list-builder/static/media/War Mumak of Harad.b1fe96648f7f3af168ba.jpg",
-    "static/media/The Mumak War Leader.jpg": "/mesbg-list-builder/static/media/The Mumak War Leader.157e40c2d4a0199005b0.jpg",
+    "static/media/The Mumak War Leader.jpg": "/mesbg-list-builder/static/media/The Mumak War Leader.7d5b6d826a8719fe81f6.jpg",
     "static/media/Fili the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Fili the Dwarf, Champion of Erebor.7302e1fc32d1a0fb5d7d.jpg",
     "static/media/The Goblin King.jpg": "/mesbg-list-builder/static/media/The Goblin King.03f410fc7e8c2b588cc3.jpg",
     "static/media/Isengard Assault Ballista.jpg": "/mesbg-list-builder/static/media/Isengard Assault Ballista.9e4b96796c8994fef1d1.jpg",
@@ -971,10 +971,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
-    "main.1928aa72.js.map": "/mesbg-list-builder/static/js/main.1928aa72.js.map"
+    "main.865c0053.js.map": "/mesbg-list-builder/static/js/main.865c0053.js.map"
   },
   "entrypoints": [
     "static/css/main.efc0117d.css",
-    "static/js/main.1928aa72.js"
+    "static/js/main.865c0053.js"
   ]
 }
