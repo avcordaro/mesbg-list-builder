@@ -5,7 +5,9 @@
 # [MESBG List Builder](https://avcordaro.github.io/mesbg-list-builder/)
 
 > 🗡️ A simple and intuitive tool for building your army lists in Middle-Earth Strategy Battle Game (MESBG)
+> 
 > ✅ Fully up-to-date with the February 2024 FAQs/Errata
+> 
 > ❗️ Mobile version not currently supported
 
 ### Features
