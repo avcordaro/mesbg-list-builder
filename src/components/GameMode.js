@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useCallback} from "react";
 import {GameModeInfo} from "./GameModeInfo";
 import {GameModeHero} from "./GameModeHero";
 import {TbRefresh} from "react-icons/tb";
@@ -99,23 +99,6 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
   const [showResetModal, setShowResetModal] = useState(false);
 
   useEffect(() => {
-    let store_gameMode = sessionStorage.getItem("gameMode")
-    if (store_gameMode === "true") {
-      let store_gameHeroes = sessionStorage.getItem("gameHeroes")
-      let store_casualtyCount = sessionStorage.getItem("casualtyCount")
-      let store_heroCasualtyCount = sessionStorage.getItem("heroCasualtyCount")
-      if (store_gameHeroes && store_casualtyCount && store_heroCasualtyCount) {
-        setGameHeroes(JSON.parse(store_gameHeroes));
-        setCasualtyCount(parseInt(store_casualtyCount));
-        setHeroCasualtyCount(parseInt(store_heroCasualtyCount));
-      }
-    } else {
-      handleReset();
-      sessionStorage.setItem("gameMode", "true")
-    }
-  }, []);
-
-  useEffect(() => {
     sessionStorage.setItem("gameHeroes", JSON.stringify(gameHeroes));
   }, [gameHeroes]);
 
@@ -127,7 +110,7 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
     sessionStorage.setItem("heroCasualtyCount", String(heroCasualtyCount));
   }, [heroCasualtyCount]);
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
     let newGameHeroes = {}
     roster.warbands.map((_warband) => {
       let hero = _warband.hero
@@ -179,7 +162,24 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
     setGameHeroes(newGameHeroes);
     setCasualtyCount(0);
     setHeroCasualtyCount(0);
-  }
+  }, [roster])
+
+  useEffect(() => {
+    let store_gameMode = sessionStorage.getItem("gameMode")
+    if (store_gameMode === "true") {
+      let store_gameHeroes = sessionStorage.getItem("gameHeroes")
+      let store_casualtyCount = sessionStorage.getItem("casualtyCount")
+      let store_heroCasualtyCount = sessionStorage.getItem("heroCasualtyCount")
+      if (store_gameHeroes && store_casualtyCount && store_heroCasualtyCount) {
+        setGameHeroes(JSON.parse(store_gameHeroes));
+        setCasualtyCount(parseInt(store_casualtyCount));
+        setHeroCasualtyCount(parseInt(store_heroCasualtyCount));
+      }
+    } else {
+      handleReset();
+      sessionStorage.setItem("gameMode", "true")
+    }
+  }, [handleReset]);
 
   return (
     <div>
