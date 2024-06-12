@@ -98,18 +98,6 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
   const [selectedChart, setSelectedChart] = useState("to-wound-chart");
   const [showResetModal, setShowResetModal] = useState(false);
 
-  useEffect(() => {
-    sessionStorage.setItem("gameHeroes", JSON.stringify(gameHeroes));
-  }, [gameHeroes]);
-
-  useEffect(() => {
-    sessionStorage.setItem("casualtyCount", String(casualtyCount));
-  }, [casualtyCount]);
-
-  useEffect(() => {
-    sessionStorage.setItem("heroCasualtyCount", String(heroCasualtyCount));
-  }, [heroCasualtyCount]);
-
   const handleReset = useCallback(() => {
     let newGameHeroes = {}
     roster.warbands.map((_warband) => {
@@ -180,6 +168,18 @@ export function GameMode({roster, factionList, allianceLevel, allianceColours, f
       sessionStorage.setItem("gameMode", "true")
     }
   }, [handleReset]);
+
+  useEffect(() => {
+    sessionStorage.setItem("gameHeroes", JSON.stringify(gameHeroes));
+  }, [gameHeroes]);
+
+  useEffect(() => {
+    sessionStorage.setItem("casualtyCount", String(casualtyCount));
+  }, [casualtyCount]);
+
+  useEffect(() => {
+    sessionStorage.setItem("heroCasualtyCount", String(heroCasualtyCount));
+  }, [heroCasualtyCount]);
 
   return (
     <div>
