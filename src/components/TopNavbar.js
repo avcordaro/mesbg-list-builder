@@ -7,9 +7,10 @@ import {FaRegCopyright, FaChessRook} from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
 import React from "react";
 import {Navbar} from "react-bootstrap";
+import logo from '../images/logo.svg';
 
-export const VERSION = "5.3.2";
-const UPDATED = "18-Jun-2024";
+export const VERSION = "5.3.3";
+const UPDATED = "24-Jun-2024";
 
 /* Navbar component that displays at the top of the page. */
 
@@ -55,11 +56,11 @@ export function TopNavbar({
     <Navbar.Brand className="ms-4">
       <Stack direction="horizontal" gap={3}>
         <Stack>
-          <Stack direction="horizontal" gap={3}>
+          <Stack direction="horizontal">
             <img src={require("../images/title-logo.png")} alt=""/>
-            <Stack gap={2} style={{width: "260px"}}>
+            <img src={logo} className="ms-3" style={{width: "65px", height: "65px"}} alt=""/>
+            <Stack gap={2} className="ms-2" style={{width: "260px", justifyContent: "center"}}>
               <img
-                className="mt-2"
                 src={require("../images/title.png")}
                 alt=""
               />
@@ -68,18 +69,8 @@ export function TopNavbar({
                 </span>
             </Stack>
           </Stack>
-          <p
-            className="mt-3 ms-3 m-0 p-0 text-muted"
-            style={{fontSize: "14px"}}
-          >
-            <MdReportGmailerrorred style={{fontSize: "20px"}}/> For any
-            bugs and corrections, please contact:{" "}
-            <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
-              avcordaro@gmail.com
-            </a>
-          </p>
         </Stack>
-        <Stack style={{width: "835px"}}>
+        <Stack style={{width: "750px"}}>
           <Stack className="mt-3" direction="horizontal" gap={3}>
             {!gameMode ?
               <Button
@@ -115,26 +106,39 @@ export function TopNavbar({
               <BiSolidFileImport/> Import JSON
             </Button>
           </Stack>
-          <Stack className="mt-4" direction="horizontal" gap={4}>
-            <h6 className="mb-0 mt-2">
-              Total Points: <b>{roster.points}</b>
-            </h6>
-            <h6 className="mb-0 mt-2">
-              Total Units: <b>{roster.num_units}</b>
-            </h6>
-            <h6 className="mb-0 mt-2" style={{minWidth: "120px"}}>
-              Break Point: <b>{Math.round((0.5 * roster.num_units) * 100) / 100}</b>
-            </h6>
-            <h6 className="mb-0 mt-2">
-              Bows: <b>{roster.bow_count}</b>
-            </h6>
-            <h6
-              className="mb-0 mt-2 ms-auto text-muted"
-              style={{fontSize: "14px"}}
-            >
-              Developed by avcordaro | <FaRegCopyright/> 2024
-            </h6>
-          </Stack>
+          
+        </Stack>
+      </Stack>
+      <Stack direction="horizontal" className="mt-3">
+        <p
+          className="ms-3 m-0 p-0 text-muted"
+          style={{fontSize: "14px"}}
+        >
+          <MdReportGmailerrorred style={{fontSize: "20px"}}/> For any
+          bugs and corrections, please contact:{" "}
+          <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
+            avcordaro@gmail.com
+          </a>
+        </p>
+        <Stack direction="horizontal" gap={4} style={{width: "835px", marginLeft: "80px"}}>
+          <h6 className="mb-0">
+            Total Points: <b>{roster.points}</b>
+          </h6>
+          <h6 className="mb-0">
+            Total Units: <b>{roster.num_units}</b>
+          </h6>
+          <h6 className="mb-0" style={{minWidth: "120px"}}>
+            Break Point: <b>{Math.round((0.5 * roster.num_units) * 100) / 100}</b>
+          </h6>
+          <h6 className="mb-0">
+            Bows: <b>{roster.bow_count}</b>
+          </h6>
+          <h6
+            className="mb-0 ms-auto text-muted"
+            style={{fontSize: "14px"}}
+          >
+            Developed by avcordaro | <FaRegCopyright/> 2024
+          </h6>
         </Stack>
       </Stack>
     </Navbar.Brand>
