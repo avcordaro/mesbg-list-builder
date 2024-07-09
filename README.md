@@ -18,9 +18,9 @@ Fully up-to-date with the February 2024 FAQs/Errata. Mobile version not currentl
   
 ---
 ### List Building Mode
-![Screenshot of MESBG List Builder](https://i.postimg.cc/N0Jqf3Q7/builder-mode.png)
+![Screenshot of MESBG List Builder](https://pasteimg.com/images/2024/07/09/image.png)
 
 ---
 
 ### Game Mode
-![Screenshot of MESBG List Builder](https://i.postimg.cc/MHt1hm7T/game-mode.png)
+![Screenshot of MESBG List Builder](https://pasteimg.com/images/2024/07/09/imagebc8ece4997842c57.png)
