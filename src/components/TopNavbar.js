@@ -9,8 +9,8 @@ import React from "react";
 import {Navbar} from "react-bootstrap";
 import logo from '../images/logo.svg';
 
-export const VERSION = "5.3.4";
-const UPDATED = "07-Jul-2024";
+export const VERSION = "5.3.5";
+const UPDATED = "09-Jul-2024";
 
 /* Navbar component that displays at the top of the page. */
 
@@ -56,16 +56,16 @@ export function TopNavbar({
     <Navbar.Brand className="ms-4">
       <Stack direction="horizontal" gap={3}>
         <Stack>
-          <Stack direction="horizontal">
-            <img src={require("../images/title-logo.png")} alt=""/>
-            <img src={logo} className="ms-3" style={{width: "65px", height: "65px"}} alt=""/>
-            <Stack gap={2} className="ms-2" style={{width: "260px", justifyContent: "center"}}>
+          <Stack direction="horizontal" className="mt-2">
+            <img src={logo} className="ms-1" style={{width: "65px", height: "65px"}} alt=""/>
+            <Stack gap={2} className="ms-2" style={{justifyContent: "center"}}>
               <img
                 src={require("../images/title.png")}
                 alt=""
+                style={{width: "325px"}}
               />
-              <span className="p-0 m-0" style={{fontSize: "16px"}}>
-                  v{VERSION} (updated {UPDATED})
+              <span className="p-0 m-0 mt-1" style={{fontSize: "16px"}}>
+                  Unofficial | v{VERSION} | updated {UPDATED}
                 </span>
             </Stack>
           </Stack>
@@ -111,7 +111,7 @@ export function TopNavbar({
       </Stack>
       <Stack direction="horizontal" className="mt-3">
         <p
-          className="ms-3 m-0 p-0 text-muted"
+          className="ms-2 m-0 p-0 text-muted"
           style={{fontSize: "14px"}}
         >
           <MdReportGmailerrorred style={{fontSize: "20px"}}/> For any
@@ -120,7 +120,7 @@ export function TopNavbar({
             avcordaro@gmail.com
           </a>
         </p>
-        <Stack direction="horizontal" gap={4} style={{width: "835px", marginLeft: "80px"}}>
+        <Stack direction="horizontal" gap={4} style={{width: "835px", marginLeft: "90px"}}>
           <h6 className="mb-0">
             Total Points: <b>{roster.points}</b>
           </h6>
