@@ -9,8 +9,8 @@ import React from "react";
 import {Navbar} from "react-bootstrap";
 import logo from '../images/logo.svg';
 
-export const VERSION = "5.3.5";
-const UPDATED = "09-Jul-2024";
+export const VERSION = "5.3.6";
+const UPDATED = "11-Jul-2024";
 
 /* Navbar component that displays at the top of the page. */
 

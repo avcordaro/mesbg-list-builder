@@ -39194,6 +39194,15 @@
     "warband_size":12,
     "options":[
       {
+        "option_id":"OPT1694",
+        "option":"Warg",
+        "points":10.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
         "option_id":"OPT1262",
         "option":"Orc Bow",
         "points":5.0,
@@ -39204,7 +39213,7 @@
       },
       {
         "option_id":"OPT1263",
-        "option":"Orc Bow",
+        "option":"Shield",
         "points":5.0,
         "type":null,
         "min":0.0,
