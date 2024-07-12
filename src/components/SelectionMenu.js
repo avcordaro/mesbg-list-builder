@@ -97,7 +97,7 @@ export function SelectionMenu({
               disabled={!heroSelection || factionType.includes("LL")}
             >
               {[...faction_lists[f_type]].sort().map((f) => (<Dropdown.Item
-                style={{width: "458px", textAlign: "center"}}
+                style={{width: "458px"}}
                 eventKey={f}
               >
                 <img
