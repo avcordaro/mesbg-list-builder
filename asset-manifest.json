@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.b763bf9a.js",
+    "main.js": "/mesbg-list-builder/static/js/main.488f48f7.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -122,7 +122,7 @@
     "static/media/Gothmog.jpg": "/mesbg-list-builder/static/media/Gothmog.d3a5f2d86a32789fbe3a.jpg",
     "static/media/Legolas.jpg": "/mesbg-list-builder/static/media/Legolas.15ec24694679b2d78578.jpg",
     "static/media/Gandalf the White.jpg": "/mesbg-list-builder/static/media/Gandalf the White.27eed2cce688310f570f.jpg",
-    "static/media/Deorwine.jpg": "/mesbg-list-builder/static/media/Deorwine.d7779d12121175072924.jpg",
+    "static/media/Deorwine.jpg": "/mesbg-list-builder/static/media/Deorwine.1bd70736a7b60451bee9.jpg",
     "static/media/Bombur the Dwarf, Champion of Erebor.jpg": "/mesbg-list-builder/static/media/Bombur the Dwarf, Champion of Erebor.ec9be04d66f9d432fd28.jpg",
     "static/media/Gulavhar.jpg": "/mesbg-list-builder/static/media/Gulavhar.6c594351ac2ca08f5219.jpg",
     "static/media/Thror.jpg": "/mesbg-list-builder/static/media/Thror.58bc106ac25f64e47022.jpg",
@@ -313,9 +313,9 @@
     "static/media/Gollum.jpg": "/mesbg-list-builder/static/media/Gollum.30163062030c4334ff46.jpg",
     "static/media/Corsair Bo'sun.jpg": "/mesbg-list-builder/static/media/Corsair Bo'sun.11b2115c66fc13da9b5d.jpg",
     "static/media/Wood Elf Captain.jpg": "/mesbg-list-builder/static/media/Wood Elf Captain.cc99cb4bf280a71635cb.jpg",
+    "static/media/Beorning.jpg": "/mesbg-list-builder/static/media/Beorning.9d4072f51c148fe43e3d.jpg",
     "static/media/Kili the Dwarf.jpg": "/mesbg-list-builder/static/media/Kili the Dwarf.7aa5e91236183bff675a.jpg",
     "static/media/Malbeth the Seer.jpg": "/mesbg-list-builder/static/media/Malbeth the Seer.b563af0e2eaae0fc2fb3.jpg",
-    "static/media/Beorning.jpg": "/mesbg-list-builder/static/media/Beorning.073db8a414c533030d6f.jpg",
     "static/media/Hilda-Bianca.jpg": "/mesbg-list-builder/static/media/Hilda-Bianca.0fdbbd1902371883f410.jpg",
     "static/media/Mardin.jpg": "/mesbg-list-builder/static/media/Mardin.282230e7353af623cfd8.jpg",
     "static/media/Dunlending Huscarl.jpg": "/mesbg-list-builder/static/media/Dunlending Huscarl.607e3d80fff18f38af95.jpg",
@@ -972,10 +972,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
-    "main.b763bf9a.js.map": "/mesbg-list-builder/static/js/main.b763bf9a.js.map"
+    "main.488f48f7.js.map": "/mesbg-list-builder/static/js/main.488f48f7.js.map"
   },
   "entrypoints": [
     "static/css/main.efc0117d.css",
-    "static/js/main.b763bf9a.js"
+    "static/js/main.488f48f7.js"
   ]
 }
