@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.488f48f7.js",
+    "main.js": "/mesbg-list-builder/static/js/main.a9d106d9.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -350,7 +350,6 @@
     "static/media/Corsair Arbalester.jpg": "/mesbg-list-builder/static/media/Corsair Arbalester.0fdc690b373d72162798.jpg",
     "static/media/Rivendell Knight.jpg": "/mesbg-list-builder/static/media/Rivendell Knight.e9d2c7e9873a625daebe.jpg",
     "static/media/Hunter Orc.jpg": "/mesbg-list-builder/static/media/Hunter Orc.7f680505f992d031b923.jpg",
-    "static/media/King of Men.jpg": "/mesbg-list-builder/static/media/King of Men.f8fdb4501e5e14d720df.jpg",
     "static/media/Axeman of Lossarnach.jpg": "/mesbg-list-builder/static/media/Axeman of Lossarnach.8a2b1c484c75762c7329.jpg",
     "static/media/Barrow-wight.jpg": "/mesbg-list-builder/static/media/Barrow-wight.dea9570c507ee4195e02.jpg",
     "static/media/Blackroot Vale Archer.jpg": "/mesbg-list-builder/static/media/Blackroot Vale Archer.eebcda3584c196dc1fd1.jpg",
@@ -360,6 +359,7 @@
     "static/media/Angmar Orc Captain.jpg": "/mesbg-list-builder/static/media/Angmar Orc Captain.8ebb16f076426986ee91.jpg",
     "static/media/Palace Guard.jpg": "/mesbg-list-builder/static/media/Palace Guard.1490258a5cb5037ae8fe.jpg",
     "static/media/Haradrim Chieftain.jpg": "/mesbg-list-builder/static/media/Haradrim Chieftain.49daa60a5897e34dd21f.jpg",
+    "static/media/King of Men.jpg": "/mesbg-list-builder/static/media/King of Men.554c806e9b475cdd7cee.jpg",
     "static/media/Warrior of Numenor.jpg": "/mesbg-list-builder/static/media/Warrior of Numenor.1deb5e90fc1f0207aa8b.jpg",
     "static/media/Durburz.jpg": "/mesbg-list-builder/static/media/Durburz.f5ebcc3dc7f834361cca.jpg",
     "static/media/Orc Shaman.jpg": "/mesbg-list-builder/static/media/Orc Shaman.d643f5766afe58b0db0a.jpg",
@@ -972,10 +972,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
-    "main.488f48f7.js.map": "/mesbg-list-builder/static/js/main.488f48f7.js.map"
+    "main.a9d106d9.js.map": "/mesbg-list-builder/static/js/main.a9d106d9.js.map"
   },
   "entrypoints": [
     "static/css/main.efc0117d.css",
-    "static/js/main.488f48f7.js"
+    "static/js/main.a9d106d9.js"
   ]
 }
