@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.a9d106d9.js",
+    "main.js": "/mesbg-list-builder/static/js/main.5dcb56e2.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -319,7 +319,6 @@
     "static/media/Hilda-Bianca.jpg": "/mesbg-list-builder/static/media/Hilda-Bianca.0fdbbd1902371883f410.jpg",
     "static/media/Mardin.jpg": "/mesbg-list-builder/static/media/Mardin.282230e7353af623cfd8.jpg",
     "static/media/Dunlending Huscarl.jpg": "/mesbg-list-builder/static/media/Dunlending Huscarl.607e3d80fff18f38af95.jpg",
-    "static/media/Galadhrim Knight.jpg": "/mesbg-list-builder/static/media/Galadhrim Knight.86f36d6ffbc97be656fe.jpg",
     "static/media/Haradrim King.jpg": "/mesbg-list-builder/static/media/Haradrim King.ae3e037e91b662632c90.jpg",
     "static/media/Hama.jpg": "/mesbg-list-builder/static/media/Hama.d4aa460534445c07cc3f.jpg",
     "static/media/Nori the Dwarf.jpg": "/mesbg-list-builder/static/media/Nori the Dwarf.f17392287839e0d9ef90.jpg",
@@ -344,6 +343,7 @@
     "static/media/Gloin the Dwarf.jpg": "/mesbg-list-builder/static/media/Gloin the Dwarf.b762e11d0bf5213bd1ca.jpg",
     "static/media/Ghan-Buri-Ghan.jpg": "/mesbg-list-builder/static/media/Ghan-Buri-Ghan.0d30d431eee3a62d6a41.jpg",
     "static/media/Son of Eorl.jpg": "/mesbg-list-builder/static/media/Son of Eorl.4492bdd6ff457976df90.jpg",
+    "static/media/Galadhrim Knight.jpg": "/mesbg-list-builder/static/media/Galadhrim Knight.51703e65c8bce2bb0c69.jpg",
     "static/media/Khandish Chieftain.jpg": "/mesbg-list-builder/static/media/Khandish Chieftain.8214f13caaa7892f2fdc.jpg",
     "static/media/Arathorn.jpg": "/mesbg-list-builder/static/media/Arathorn.b2c5eb4dcc6b5758c7a5.jpg",
     "static/media/Mauhur.jpg": "/mesbg-list-builder/static/media/Mauhur.ac24a0d90939ef3921c4.jpg",
@@ -972,10 +972,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
-    "main.a9d106d9.js.map": "/mesbg-list-builder/static/js/main.a9d106d9.js.map"
+    "main.5dcb56e2.js.map": "/mesbg-list-builder/static/js/main.5dcb56e2.js.map"
   },
   "entrypoints": [
     "static/css/main.efc0117d.css",
-    "static/js/main.a9d106d9.js"
+    "static/js/main.5dcb56e2.js"
   ]
 }
