@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesbg-list-builder/static/css/main.efc0117d.css",
-    "main.js": "/mesbg-list-builder/static/js/main.5dcb56e2.js",
+    "main.js": "/mesbg-list-builder/static/js/main.ab40f413.js",
     "static/media/The Abyssal Knight.jpg": "/mesbg-list-builder/static/media/The Abyssal Knight.6746ac8a4f645770afce.jpg",
     "static/media/Smaug.jpg": "/mesbg-list-builder/static/media/Smaug.622c50ef680d306cf3e9.jpg",
     "static/media/The Dark Headsman.jpg": "/mesbg-list-builder/static/media/The Dark Headsman.a143c2cc703152648a7f.jpg",
@@ -220,7 +220,7 @@
     "static/media/Gothmog's Enforcer.jpg": "/mesbg-list-builder/static/media/Gothmog's Enforcer.ee0ccd9d6dabeda80a9c.jpg",
     "static/media/Knight of the White Tower.jpg": "/mesbg-list-builder/static/media/Knight of the White Tower.7c50db483b50daf3fa90.jpg",
     "static/media/The White Warg.jpg": "/mesbg-list-builder/static/media/The White Warg.4b989d288950fc8e857f.jpg",
-    "static/media/Bilbo Baggins.jpg": "/mesbg-list-builder/static/media/Bilbo Baggins.4084c11ecea999111f3a.jpg",
+    "static/media/Bilbo Baggins.jpg": "/mesbg-list-builder/static/media/Bilbo Baggins.1aac4c4ba6eb1fb02466.jpg",
     "static/media/Brorgir.jpg": "/mesbg-list-builder/static/media/Brorgir.1894cc2897813975bab6.jpg",
     "static/media/Gildor Inglorion.jpg": "/mesbg-list-builder/static/media/Gildor Inglorion.e429e88fa72733ad2891.jpg",
     "static/media/Guard of the Galadhrim Court.jpg": "/mesbg-list-builder/static/media/Guard of the Galadhrim Court.e118bd5db733c22f1811.jpg",
@@ -972,10 +972,10 @@
     "static/media/Army of Thror.png": "/mesbg-list-builder/static/media/Army of Thror.9cf87f18e859d356ea2d.png",
     "index.html": "/mesbg-list-builder/index.html",
     "main.efc0117d.css.map": "/mesbg-list-builder/static/css/main.efc0117d.css.map",
-    "main.5dcb56e2.js.map": "/mesbg-list-builder/static/js/main.5dcb56e2.js.map"
+    "main.ab40f413.js.map": "/mesbg-list-builder/static/js/main.ab40f413.js.map"
   },
   "entrypoints": [
     "static/css/main.efc0117d.css",
-    "static/js/main.5dcb56e2.js"
+    "static/js/main.ab40f413.js"
   ]
 }
