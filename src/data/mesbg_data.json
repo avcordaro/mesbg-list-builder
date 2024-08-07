@@ -27410,6 +27410,15 @@
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1695",
+        "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
       }
     ]
   },
@@ -38600,6 +38609,59 @@
     ]
   },
   {
+    "model_id":"[thorin's_company] bilbo_baggins",
+    "faction_type":"Good Army",
+    "faction":"Thorin's Company",
+    "profile_origin":"Thorin's Company",
+    "name":"Bilbo Baggins",
+    "unit_type":"Hero of Fortitude",
+    "base_points":60,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "2:3:3:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":60,
+    "pointsTotal":60,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1315",
+        "option":"Pony",
+        "points":5.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1316",
+        "option":"Sting",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1317",
+        "option":"The One Ring",
+        "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[thorin's_company] dori_the_dwarf",
     "faction_type":"Good Army",
     "faction":"Thorin's Company",
@@ -38873,59 +38935,6 @@
         "option":"Pony",
         "points":5.0,
         "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[thorin's_company] bilbo_baggins",
-    "faction_type":"Good Army",
-    "faction":"Thorin's Company",
-    "profile_origin":"Thorin's Company",
-    "name":"Bilbo Baggins",
-    "unit_type":"Hero of Fortitude",
-    "base_points":40,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":false,
-    "siege_crew":0,
-    "MWFW":[
-      [
-        "",
-        "2:3:3:2"
-      ]
-    ],
-    "quantity":1,
-    "pointsPerUnit":40,
-    "pointsTotal":40,
-    "warband_size":12,
-    "options":[
-      {
-        "option_id":"OPT1315",
-        "option":"Pony",
-        "points":5.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1316",
-        "option":"Sting",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1317",
-        "option":"The One Ring",
-        "points":0.0,
-        "type":null,
         "min":0.0,
         "max":1.0,
         "opt_quantity":0.0
