@@ -968,16 +968,6 @@
     ],
     "bow_limit":0.33
   },
-  "7":{
-    "armyBonus":"<b>\"You do not know Pain, you do not know Fear!\"<\/b> - Friendly Isengard models do not start to take Courage tests for being Broken until at least 66% of the force's models have been removed as casualties. <br\/> <br\/><b>\"Commander of the Uruk-hai\"<\/b> - The Uruk-hai Captain chosen as your leader increases their Attacks and Wounds characteristics to 3 each.<br\/> <br\/><b>\"The Isengard Hordes\"<\/b> - Hero models from this force increase the number of models they can include in their warband by 6.<br\/> <br\/><b>\"Break the Walls\"<\/b> - Isengard Ballistae from this army list may re-roll results of 1 on To Hit and Scatter rolls during the Shoot phase. Additionally, whenever a demolition charge from your army is detonated, you may roll two dice rather than one and pick either result.",
-    "primaryAllies":[
-
-    ],
-    "secondaryAllies":[
-
-    ],
-    "bow_limit":0.33
-  },
   "The Black Riders":{
     "armyBonus":"Only a maximum of nine models can be included in this Legendary Legion.<br\/><br\/><b>\"Terror in the Night\"<\/b> - A model in range of between four and six models from this force with the Harbinger of Evil special rule suffers an additional -1 to their Courage value. A model in range of between seven and nine models from this force with the Harbinger of Evil special rule suffers an additional -2 to their Courage value.<br\/> <br\/><b>\"Screech of the Nazgul\"<\/b> - Each Ringwraith can, once per game, cast the Channelled version of the Transfix Magical Power without declaring a Heroic Channelling. This Magical Power is automatically cast, counting the result as a 6, and no Will points are expended. Target models can make a Resist test as normal. Make sure to note which of the Ringwraith models have used this ability as each Ringwraith can only use this ability once per game.<br\/> <br\/><b>\"The Will of Sauron\"<\/b> - Friendly Ringwraith models do not lose a Will point for being in combat as per their Will of Evil special rule.<br\/> <br\/><b>\"Hunt the Ringbearer\"<\/b> - At the start of the Fight phase, before other Heroic Actions are declared, if it would be possible for a friendly Ringwraith model to Charge an enemy model with the One Ring following a successful Heroic Combat, that Ringwraith model may declare a Heroic Combat without spending Might. Only one Ringwraith can declare a \"free\" Heroic Combat in this way per turn If successful, the Ringwraith that declared the Heroic Combat must Charge the enemy model with the One Ring, though any other models that move as part of the Heroic Combat may act as normal. The player who declared this \"free\" Heroic Combat automatically wins the roll-off to see which Heroic Combat goes first (if applicable), though they must select this \"free\" Heroic Combat before any others.",
     "primaryAllies":[
