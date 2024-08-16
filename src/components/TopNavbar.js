@@ -1,5 +1,4 @@
 import Stack from "react-bootstrap/Stack";
-import Badge from "react-bootstrap/Badge"
 import Offcanvas from "react-bootstrap/Offcanvas";
 import {MdReportGmailerrorred} from "react-icons/md";
 import Button from "react-bootstrap/Button";
@@ -74,7 +73,7 @@ export function TopNavbar({
               />
               <Stack direction="horizontal" className="mt-2">
                 <span className="p-0 m-0" style={{fontSize: "16px"}}>
-                    Unofficial | v{VERSION} | updated {UPDATED} | 
+                    Unofficial | v{VERSION} | updated {UPDATED}
                 </span>
               </Stack>
             </Stack>
@@ -170,7 +169,7 @@ export function TopNavbar({
       Games Workshop has announced that a new edition for MESBG will be released in the near future. 
       You can find one of the latest announcements here, describing some of the incoming changes...
       <br/><br/>
-      <a target="_blank" href="https://www.warhammer-community.com/2024/08/15/the-road-goes-ever-on-and-on-the-next-edition-of-middle-earth-strategy-battle-game/">The Road Goes Ever On and On… The Next Edition of Middle-earth™ Strategy Battle Game</a>
+      <a target="_blank" rel="noreferrer" href="https://www.warhammer-community.com/2024/08/15/the-road-goes-ever-on-and-on-the-next-edition-of-middle-earth-strategy-battle-game/">The Road Goes Ever On and On… The Next Edition of Middle-earth™ Strategy Battle Game</a>
       <br/><br/>
       You can see in the article above that a lot of profiles are being reworked, along with a new array of army lists and various rule changes.
       This is likely going to result in a very large amount of work for me once it is released, particularly for profile cards. I will definitely be 
