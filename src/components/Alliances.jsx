@@ -122,7 +122,7 @@ export function Alliances({
                             <br/>
                         </>)) : factionData[f]["primaryAllies"].map((a) => (<>
                         <span>
-                            <FactionLogo faction={f} className="faction_logo" />
+                            <FactionLogo faction={a} className="faction_logo" />
                             {" " + a}
                         </span>
                             <br/>
@@ -134,7 +134,7 @@ export function Alliances({
                         </h5>
                         {factionData[f]["secondaryAllies"].map((a) => (<>
                       <span>
-                        <FactionLogo faction={f} className="faction_logo" />
+                        <FactionLogo faction={a} className="faction_logo" />
                           {" " + a}
                       </span>
                             <br/>
