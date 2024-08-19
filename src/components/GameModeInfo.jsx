@@ -4,7 +4,6 @@ import Badge from "react-bootstrap/Badge";
 import Stack from "react-bootstrap/Stack";
 import {FaChessRook, FaSearch} from "react-icons/fa";
 import {GiCrackedShield, GiSwordsEmblem} from "react-icons/gi";
-import React from "react";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 

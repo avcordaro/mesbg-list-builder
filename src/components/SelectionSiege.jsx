@@ -1,8 +1,9 @@
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion';
-import siege_equipment from "../data/siege_equipment.json"
+import siege_equipment from "../assets/data/siege_equipment.json"
 import {v4 as uuid} from "uuid";
+import {UnitProfilePicture} from "./UnitProfilePicture.tsx";
 
 export function SelectionSiege({
                                 newWarriorFocus,
@@ -38,17 +39,7 @@ export function SelectionSiege({
               onClick={() => handleClick(data)}
             >
               <Stack direction="horizontal" gap={3}>
-                <img
-                  style={{width: "75px", height: "75px"}}
-                  src={(() => {
-                    try {
-                      return require("../images/" + data.profile_origin + "/pictures/" + data.name + ".png");
-                    } catch (e) {
-                      return require("../images/default.png");
-                    }
-                  })()}
-                  alt=""
-                />
+                  <UnitProfilePicture army={data.profile_origin} profile={data.name} style={{width: "75px", height: "75px"}}/>
                 <p>
                   <b>{data.name}</b>
                   <br/>

@@ -4,7 +4,8 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import { FaChevronLeft, FaChevronRight, FaSkullCrossbones } from "react-icons/fa";
 import {GiQueenCrown} from "react-icons/gi";
-import {handleAzogWhiteWarg} from "./specialRules";
+import {handleAzogWhiteWarg} from "./specialRules.js";
+import {UnitProfilePicture} from "./UnitProfilePicture.tsx";
 
 export function GameModeMWFCounter({name, gameHeroes, setGameHeroes, hero_id, hero_idx, val_idx, heroCasualtyCount, setHeroCasualtyCount}) {
 
@@ -69,17 +70,7 @@ export function GameModeHero({gameHeroes, setGameHeroes, hero_id, heroCasualtyCo
       {gameHeroes[hero_id].map((hero, index) => (
         <Card style={{width: "700px"}} className="m-2 pe-4" bg={"light"}>
           <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
-            <img
-              className={hero['xMWFW'].split(":")[3] === "0" ? "opacity-50 profile m-2" : "profile m-2"}
-              src={(() => {
-                try {
-                  return require("../images/" + hero.profile_origin + "/pictures/" + hero.name + ".png")
-                } catch (e) {
-                  return require("../images/default.png")
-                }
-              })()}
-              alt=""
-            />
+            <UnitProfilePicture army={ hero.profile_origin} profile={hero.name} className={hero['xMWFW'].split(":")[3] === "0" ? "opacity-50 profile m-2" : "profile m-2"}/>
             <Stack gap={2}>
               <Stack direction="horizontal" style={{minHeight: "26px"}} gap={3}>
                 <p

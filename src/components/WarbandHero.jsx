@@ -3,17 +3,18 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
-import {OptionHero} from "./OptionHero.js"
+import {OptionHero} from "./OptionHero"
 import {ImCross} from "react-icons/im";
 import {BsFillPersonVcardFill} from "react-icons/bs";
 import {GiQueenCrown} from "react-icons/gi";
 import {v4 as uuid} from "uuid";
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import {
   handleRivendellElrond,
   handleSpecialArmyOption,
   handleSpecialWarbandOption
-} from "./specialRules";
+} from "./specialRules.js";
+import {UnitProfilePicture} from "./UnitProfilePicture.tsx";
 
 /* Warband Hero components display the hero in each warband. */
 
@@ -99,17 +100,7 @@ export function WarbandHero({
 
   return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
-      <img
-        className="profile mt-1 mb-1"
-        src={(() => {
-          try {
-            return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
-          } catch (e) {
-            return require("../images/default.png")
-          }
-        })()}
-        alt=""
-      />
+      <UnitProfilePicture army={unitData.profile_origin} profile={unitData.name} className="profile mt-1 mb-1"/>
       <Stack gap={2}>
         <Stack direction="horizontal" style={{minHeight: "26px"}} gap={3}>
           <p className="m-0">

@@ -6,13 +6,13 @@ import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
 import Form from "react-bootstrap/Form";
 import html2canvas from "html2canvas";
-import React, {useState} from "react";
+import {useState} from "react";
 import {FaDownload, FaImage} from "react-icons/fa6";
 import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
 import {GoCopy} from "react-icons/go";
 import {GiQueenCrown} from "react-icons/gi";
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import JSZip from "jszip";
 import {saveAs} from "file-saver";
 
@@ -154,7 +154,7 @@ export function ModalRosterTable({
 
     const zip = new JSZip();
     for (const card of finalProfileCards) {
-      const blob = await fetch(require("../images/" + card.split("|")[0] + /cards/ + card.split("|")[1] + ".jpg")).then((res) => res.blob());
+      const blob = await fetch(("assets/images/profiles/" + card.split("|")[0] + /cards/ + card.split("|")[1] + ".jpg")).then((res) => res.blob());
       zip.file(card.split("|")[1] + ".jpg", blob, {binary: true});
     }
     zip.generateAsync({type: "blob"}).then((blob) => {

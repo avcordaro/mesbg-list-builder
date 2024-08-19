@@ -1,5 +1,4 @@
 import Alert from "react-bootstrap/Alert";
-import React from "react";
 
 /* Displays an alert pop-up when the user clicks 'Export JSON' for their list. */
 

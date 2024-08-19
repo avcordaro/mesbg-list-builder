@@ -3,12 +3,13 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
-import {OptionWarrior} from "./OptionWarrior.js"
+import {OptionWarrior} from "./OptionWarrior"
 import {FaMinus, FaPlus} from "react-icons/fa";
 import {ImCross} from "react-icons/im";
 import {HiDuplicate} from "react-icons/hi";
 import {BsFillPersonVcardFill} from "react-icons/bs";
 import {v4 as uuid} from "uuid";
+import {UnitProfilePicture} from "./UnitProfilePicture.tsx";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 
@@ -154,18 +155,11 @@ export function WarbandWarrior({
 
   return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
-      <img
-        className="mt-1 mb-1"
-        style={{width: unitData.unit_type === "Siege" ? "75px" : "100px", height: unitData.unit_type === "Siege" ? "75px" : "100px"}}
-        src={(() => {
-          try {
-            return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png")
-          } catch (e) {
-            return require("../images/default.png")
-          }
-        })()}
-        alt=""
-      />
+      <UnitProfilePicture
+          className="mt-1 mb-1"
+          style={{width: unitData.unit_type === "Siege" ? "75px" : "100px", height: unitData.unit_type === "Siege" ? "75px" : "100px"}}
+          army={unitData.profile_origin}
+          profile={unitData.name} />
       <Stack gap={2}>
         <Stack direction="horizontal" style={{minHeight: "26px"}} gap={3}>
           <p className="m-0">

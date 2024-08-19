@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useCallback} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import {GameModeInfo} from "./GameModeInfo";
 import {GameModeHero} from "./GameModeHero";
 import {TbRefresh} from "react-icons/tb";
@@ -6,9 +6,10 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import {FaChevronLeft, FaChevronRight, FaSkullCrossbones} from "react-icons/fa";
 import {GiCrackedShield} from "react-icons/gi";
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import {ModalChart} from "./ModalChart";
 import {ModalGameModeReset} from "./ModalGameModeReset";
+import {UnitProfileCard} from "./UnitProfilePicture.tsx";
 
 export function GameModeCasualties ({roster, casualtyCount, setCasualtyCount, heroCasualtyCount, gameHeroes}) {
 
@@ -73,17 +74,10 @@ export function GameModeProfiles ({roster}) {
   return (
     <div>
       {getProfileCards().map((card) => (
-        <img
-          className="profile_card border border-secondary my-3 shadow"
-          src={(() => {
-            try {
-              return require("../images/" + card.split("|")[0] + "/cards/" + card.split("|")[1] + ".jpg");
-            } catch (e) {
-              return require("../images/default_card.jpg");
-            }
-          })()}
-          alt=""
-        />
+          <UnitProfileCard
+              className="profile_card border border-secondary my-3 shadow"
+              army={card.split("|")[0]}
+              profile={ card.split("|")[1]} />
       ))}
     </div>
   );

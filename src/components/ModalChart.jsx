@@ -1,5 +1,4 @@
 import Modal from "react-bootstrap/Modal";
-import React from "react";
 
 export function ModalChart({selectedChart, showChartModal, setShowChartModal}) {
   return (<Modal
@@ -12,7 +11,7 @@ export function ModalChart({selectedChart, showChartModal, setShowChartModal}) {
     <Modal.Body style={{textAlign: "center"}}>
         <img
           className="border border-secondary"
-          src={require("../images/charts/" + selectedChart + ".png")}
+          src={"./assets/images/charts/" + selectedChart + ".png"}
           alt=""
           style={{maxWidth: "100%"}}
         />

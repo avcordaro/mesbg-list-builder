@@ -1,7 +1,7 @@
 import Offcanvas from "react-bootstrap/Offcanvas";
-import keywords from "../data/keywords.json";
+import keywords from "../assets/data/keywords.json";
 import {Accordion} from "react-bootstrap";
-import React, {useState} from "react";
+import {useState} from "react";
 import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 import {FaSearch} from "react-icons/fa";

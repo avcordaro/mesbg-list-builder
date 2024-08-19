@@ -1,6 +1,6 @@
 import Modal from "react-bootstrap/Modal";
-import hero_constraint_data from "../data/hero_constraint_data.json";
-import React from "react";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
+import {UnitProfileCard} from "./UnitProfilePicture.tsx";
 
 /* Displays a modal with an image of the chosen profile card of the unit. */
 
@@ -29,29 +29,12 @@ export function ModalProfileCard({
     </Modal.Header>
     <Modal.Body style={{textAlign: "center"}}>
       {cardUnitData != null && (<>
-        <img
-          className="profile_card border border-secondary"
-          src={(() => {
-            try {
-              return require("../images/" + cardUnitData.profile_origin + "/cards/" + cardUnitData.name + ".jpg");
-            } catch (e) {
-              return require("../images/default_card.jpg");
-            }
-          })()}
-          alt=""
-        />
+        <UnitProfileCard           className="profile_card border border-secondary"
+                                   army={cardUnitData.profile_origin} profile={cardUnitData.name} />
         {cardUnitData.unit_type.includes("Hero") && hero_constraint_data[cardUnitData.model_id][0]["extra_profiles"].length !== 0 && hero_constraint_data[cardUnitData.model_id][0]["extra_profiles"].map((profile) => (
-          <img
-            className="profile_card border border-secondary mt-3"
-            src={(() => {
-              try {
-                return require("../images/" + cardUnitData.profile_origin + "/cards/" + profile + ".jpg");
-              } catch (e) {
-                return require("../images/default_card.jpg");
-              }
-            })()}
-            alt=""
-          />))}
+            <UnitProfileCard             className="profile_card border border-secondary mt-3"
+                                         army={cardUnitData.profile_origin} profile={profile} />
+        ))}
       </>)}
     </Modal.Body>
   </Modal>);
