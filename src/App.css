@@ -1,8 +1,10 @@
-html,body {
+html,
+body {
   min-width: 1450px;
 }
 
-img.profile, object.profile {
+img.profile,
+object.profile {
   width: 100px;
   height: 100px;
 }
@@ -12,12 +14,14 @@ img.table_profile {
   height: 50px;
 }
 
-img.profile_card, object.profile_card {
+img.profile_card,
+object.profile_card {
   width: 725px;
   height: 511px;
 }
 
-img.faction_logo, object.faction_logo {
+img.faction_logo,
+object.faction_logo {
   width: 30px;
   height: 30px;
 }
@@ -28,20 +32,21 @@ div.optionsList {
   max-height: 1000px;
   width: 510px;
   overflow-y: auto;
-  z-index:1000;
+  z-index: 1000;
 }
 
 .dropdown-toggle {
   width: 461px;
 }
 
-svg, object {
+svg,
+object {
   vertical-align: middle;
   margin-bottom: 3px;
 }
 
 pre {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 .modal-backdrop {
@@ -71,10 +76,10 @@ pre {
 }
 
 .modal-dialog {
-    max-width: 1000px;
-    min-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1000px;
+  min-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .form-check-input {
@@ -82,7 +87,7 @@ pre {
   flex-shrink: 0;
   width: 1em;
   height: 1em;
-  margin-top: .25em;
+  margin-top: 0.25em;
   vertical-align: top;
   appearance: none;
   background-color: var(--bs-form-check-bg);
@@ -90,7 +95,7 @@ pre {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid #BEBEBE;
+  border: 1px solid #bebebe;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
@@ -101,7 +106,7 @@ pre {
 }
 
 .mwf-name {
-  background-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity));
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity));
   color: white;
   border-radius: 5px 0px 0px 5px;
   padding-top: 0px;
