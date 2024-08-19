@@ -3,8 +3,9 @@ import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import {BsFillPersonVcardFill} from "react-icons/bs";
 import {v4 as uuid} from "uuid";
-import hero_constraint_data from "../data/hero_constraint_data.json";
-import {handleRivendellElrond} from "./specialRules";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
+import {handleRivendellElrond} from "./specialRules.js";
+import {UnitProfilePicture} from "./UnitProfilePicture.tsx";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */
@@ -136,17 +137,7 @@ export function SelectionUnit({
     className="border shadow-sm"
   >
     <Stack direction="horizontal" gap={3}>
-      <img
-        className="profile"
-        src={(() => {
-          try {
-            return require("../images/" + unitData.profile_origin + "/pictures/" + unitData.name + ".png");
-          } catch (e) {
-            return require("../images/default.png");
-          }
-        })()}
-        alt=""
-      />
+      <UnitProfilePicture army={unitData.profile_origin} profile={unitData.name} className="profile"/>
       <p>
         <b>{unitData.name}</b>
         <br/>

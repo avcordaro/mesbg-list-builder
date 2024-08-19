@@ -25,7 +25,7 @@ export function DefaultHeroUnit({
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>
-        <img className="profile" src={require("../images/default.png")} alt=""/>
+        <img className="profile" src={"assets/images/default.png"} alt=""/>
         <p>
           <b>Choose a Hero</b>
         </p>

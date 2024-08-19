@@ -5,19 +5,19 @@ import Tab from "react-bootstrap/Tab";
 import Stack from "react-bootstrap/Stack";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import mesbg_data from "../data/mesbg_data.json";
+import mesbg_data from "../assets/data/mesbg_data.json";
 import {SelectionUnit} from "./SelectionUnit";
 import {SelectionSiege} from "./SelectionSiege";
 import {v4 as uuid} from "uuid";
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import {IoWarningOutline} from "react-icons/io5";
 import Badge from "react-bootstrap/Badge";
 import {LuSwords} from "react-icons/lu";
 import {FcCheckmark} from "react-icons/fc";
 import {RxCross1} from "react-icons/rx";
-import React from "react";
 import {FaSearch} from "react-icons/fa";
 import {FaHammer} from "react-icons/fa6";
+import {FactionLogo} from "./FactionLogo.tsx";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
@@ -100,12 +100,8 @@ export function SelectionMenu({
                 style={{width: "458px"}}
                 eventKey={f}
               >
-                <img
-                  className="faction_logo"
-                  src={require("../images/faction_logos/" + f + ".png")}
-                  alt=""
-                />
-                {" " + f}
+                <FactionLogo faction={f} className="faction_logo"/>
+                  {" " + f}
               </Dropdown.Item>))}
             </DropdownButton>
             {heroSelection ? mesbg_data

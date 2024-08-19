@@ -1,4 +1,4 @@
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 
 /* Specific functionality to support special rules or certain units, factions or option types. */
 

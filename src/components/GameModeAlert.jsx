@@ -1,5 +1,4 @@
 import Alert from "react-bootstrap/Alert";
-import React from "react";
 import Button from "react-bootstrap/Button";
 import {VERSION} from "./TopNavbar";
 import {TbRefresh} from "react-icons/tb";

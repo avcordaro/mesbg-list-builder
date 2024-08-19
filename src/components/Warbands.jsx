@@ -10,9 +10,8 @@ import {WarbandHero} from "./WarbandHero";
 import {DefaultWarriorUnit} from "./DefaultWarriorUnit";
 import {WarbandWarrior} from "./WarbandWarrior";
 import {FaPlus} from "react-icons/fa";
-import React from "react";
-import hero_constraint_data from "../data/hero_constraint_data.json";
-import {handleSpecialArmyOption, handleSpecialWarbandOption} from "./specialRules";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
+import {handleSpecialArmyOption, handleSpecialWarbandOption} from "./specialRules.js";
 
 /* Displays the list of all warbands, and also defines how each warband card looks. */
 

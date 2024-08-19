@@ -2,7 +2,7 @@ html,body {
   min-width: 1450px;
 }
 
-img.profile {
+img.profile, object.profile {
   width: 100px;
   height: 100px;
 }
@@ -12,12 +12,12 @@ img.table_profile {
   height: 50px;
 }
 
-img.profile_card {
+img.profile_card, object.profile_card {
   width: 725px;
   height: 511px;
 }
 
-img.faction_logo {
+img.faction_logo, object.faction_logo {
   width: 30px;
   height: 30px;
 }
@@ -35,7 +35,7 @@ div.optionsList {
   width: 461px;
 }
 
-svg {
+svg, object {
   vertical-align: middle;
   margin-bottom: 3px;
 }

@@ -1,6 +1,6 @@
 import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
-import hero_constraint_data from "../data/hero_constraint_data.json";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import Button from "react-bootstrap/Button";
 import {FaMinus, FaPlus} from "react-icons/fa";
 
