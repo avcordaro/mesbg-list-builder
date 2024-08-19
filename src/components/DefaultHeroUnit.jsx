@@ -5,11 +5,11 @@ import Button from "react-bootstrap/Button";
 before the user selects the hero they would like to lead that warband. */
 
 export function DefaultHeroUnit({
-                                  setHeroSelection,
-                                  setDisplaySelection,
-                                  warbandNum,
-                                  setWarbandNumFocus,
-                                }) {
+  setHeroSelection,
+  setDisplaySelection,
+  warbandNum,
+  setWarbandNumFocus,
+}) {
   const handleClick = () => {
     /* Updates state variables to identify that a hero is being chosen, the warband that hero
     belongs to, and that the unit selection menu should be display */
@@ -18,17 +18,19 @@ export function DefaultHeroUnit({
     setWarbandNumFocus(warbandNum - 1);
   };
 
-  return (<Button
+  return (
+    <Button
       variant="light"
       className="p-2 m-1"
-      style={{width: "820px", textAlign: "left"}}
+      style={{ width: "820px", textAlign: "left" }}
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>
-        <img className="profile" src={"assets/images/default.png"} alt=""/>
+        <img className="profile" src={"assets/images/default.png"} alt="" />
         <p>
           <b>Choose a Hero</b>
         </p>
       </Stack>
-    </Button>);
+    </Button>
+  );
 }
