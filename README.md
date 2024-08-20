@@ -7,6 +7,7 @@ A simple and intuitive tool for building your army lists in Middle-Earth Strateg
 Fully up-to-date with the February 2024 FAQs/Errata. Mobile version not currently supported.
 
 ### Acknowledgements
+
 Special thank you to [@mhollink](https://github.com/mhollink) for his big contributions to the codebase.
 
 ### Feature Highlights:
