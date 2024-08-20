@@ -7,6 +7,7 @@ import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useStore } from "../state/store";
+import { MODAL_KEYS } from "./modal/modals";
 
 export function GameModeInfo({
   factionList,
@@ -14,14 +15,13 @@ export function GameModeInfo({
   allianceColours,
   casualtyCount,
   heroCasualtyCount,
-  setShowChartModal,
-  setSelectedChart,
   factionData,
   hasArmyBonus,
   setShowKeywordSearch,
 }) {
-  const roster = useStore((store) => store.roster);
-
+  const { roster, setCurrentModal } = useStore();
+  const openChart = (selectedChart) => () =>
+    setCurrentModal(MODAL_KEYS.CHART, { selectedChart });
   return (
     <div
       id="optionMenu"
@@ -78,108 +78,43 @@ export function GameModeInfo({
             <GiSwordsEmblem /> Charts
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("climb-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("climb-table")}>
               Climb Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("detonation-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("detonation-table")}>
               Detonation Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("gates-doors-sieges");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("gates-doors-sieges")}>
               Gates and Doors (Sieges)
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("in-the-way-chart");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("in-the-way-chart")}>
               In The Way Chart
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("jump-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("jump-table")}>
               Jump Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("leap-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("leap-table")}>
               Leap Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("missile-weapon-chart");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("missile-weapon-chart")}>
               Missile Weapon Chart
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("scatter-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("scatter-table")}>
               Scatter Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("sentry-chart");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("sentry-chart")}>
               Sentry Chart
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("swim-chart");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("swim-chart")}>
               Swim Chart
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("siege-target-types");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("siege-target-types")}>
               Siege Target Types
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("thrown-rider-table");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("thrown-rider-table")}>
               Thrown Rider Table
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={() => {
-                setSelectedChart("to-wound-chart");
-                setShowChartModal(true);
-              }}
-            >
+            <Dropdown.Item onClick={openChart("to-wound-chart")}>
               To Wound Chart
             </Dropdown.Item>
           </Dropdown.Menu>

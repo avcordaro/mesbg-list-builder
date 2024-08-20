@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
 import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
+import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 
@@ -9,6 +10,7 @@ export enum MODAL_KEYS {
   BUILDER_MODE = "BUILDER_MODE",
   IMPORT_ROSTER_JSON = "IMPORT_ROSTER_JSON",
   PROFILE_CARD = "PROFILE_CARD",
+  CHART = "CHART",
 }
 
 export type ModalProps = {
@@ -40,6 +42,14 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
       icon: <></>,
       title: "Profile card(s)",
       children: <ProfileCardModal />,
+    },
+  ],
+  [
+    MODAL_KEYS.CHART,
+    {
+      icon: <></>,
+      title: "",
+      children: <ChartsModal />,
     },
   ],
 ]);

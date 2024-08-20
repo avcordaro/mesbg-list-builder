@@ -11,7 +11,7 @@ type ListBuilderStore = {
   setGameMode: (gameMode: boolean) => void;
 
   currentlyOpenendModal: MODAL_KEYS | null;
-  modelContext?: unknown;
+  modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   setCurrentModal: (key: MODAL_KEYS, context?: unknown) => void;
   closeModal: () => void;
 
