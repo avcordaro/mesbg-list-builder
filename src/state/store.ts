@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
-import { MODAL_KEYS } from "../components/modal/modal-map.tsx";
+import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { MODAL_KEYS } from "../components/modal/modals.tsx";
 import { Roster } from "../types/roster.ts";
 
 type ListBuilderStore = {
@@ -12,6 +13,10 @@ type ListBuilderStore = {
   currentlyOpenendModal: MODAL_KEYS | null;
   setCurrentModal: (key: MODAL_KEYS) => void;
   closeModal: () => void;
+
+  activeAlert: AlertTypes;
+  triggerAlert: (alert: AlertTypes) => void;
+  dismissAlert: () => void;
 };
 
 const initialState = {
@@ -24,6 +29,7 @@ const initialState = {
   },
   gameMode: false,
   currentlyOpenendModal: null,
+  activeAlert: null,
 };
 
 type StoreKey = keyof ListBuilderStore;
@@ -46,6 +52,9 @@ export const useStore = create<
         set({
           currentlyOpenendModal: null,
         }),
+
+      triggerAlert: (alert) => set({ activeAlert: alert }),
+      dismissAlert: () => set({ activeAlert: null }),
     }),
     {
       name: "mesbg-lb-storage",

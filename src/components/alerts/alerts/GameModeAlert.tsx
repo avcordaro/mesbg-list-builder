@@ -1,19 +1,9 @@
-import { FunctionComponent } from "react";
-import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import { TbRefresh } from "react-icons/tb";
-import { useStore } from "../state/store";
+import { useStore } from "../../../state/store";
 
-type GameModeAlertProps = {
-  gameModeAlert: boolean;
-  setGameModeAlert: (showAlert: boolean) => void;
-};
-
-export const GameModeAlert: FunctionComponent<GameModeAlertProps> = ({
-  gameModeAlert,
-  setGameModeAlert,
-}) => {
-  const setRoster = useStore((store) => store.setRoster);
+export const GameModeAlert = () => {
+  const { setRoster, dismissAlert } = useStore();
 
   const handleResetList = () => {
     setRoster({
@@ -23,17 +13,10 @@ export const GameModeAlert: FunctionComponent<GameModeAlertProps> = ({
       bow_count: 0,
       warbands: [],
     });
-    setGameModeAlert(false);
+    dismissAlert();
   };
   return (
-    <Alert
-      style={{ width: "850px", zIndex: 1050, marginLeft: "535px" }}
-      className="position-fixed"
-      show={gameModeAlert}
-      variant="danger"
-      onClose={() => setGameModeAlert(false)}
-      dismissible
-    >
+    <>
       <b>Outdated Army List for Game Mode</b>
       <hr />
       Sorry, but your army list contains outdated data. This can happen when
@@ -44,15 +27,15 @@ export const GameModeAlert: FunctionComponent<GameModeAlertProps> = ({
       <div className="mt-2 d-flex justify-content-end">
         <Button
           className="me-3"
-          onClick={() => setGameModeAlert(false)}
+          onClick={() => dismissAlert()}
           variant="secondary"
         >
           Nevermind
         </Button>
-        <Button onClick={handleResetList} variant="danger">
+        <Button onClick={() => handleResetList()} variant="danger">
           <TbRefresh /> Reset List
         </Button>
       </div>
-    </Alert>
+    </>
   );
 };

@@ -11,17 +11,16 @@ import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { GameMode } from "./components/GameMode";
-import { ExportAlert } from "./components/ExportAlert";
-import { GameModeAlert } from "./components/GameModeAlert";
 import {
-  checkSiegeEngineCounts,
   checkAlliedHeroes,
   checkDunharrow,
   checkGilGalad,
+  checkSiegeEngineCounts,
 } from "./components/specialRules.js";
 import { KeywordsSearch } from "./components/KeywordsSearch";
 import { useStore } from "./state/store";
-import { ModalContainer } from "./components/modal/modal";
+import { ModalContainer } from "./components/modal/ModalContainer";
+import { Alerts } from "./components/alerts/Alerts";
 
 export default function App() {
   const allianceColours = {
@@ -46,7 +45,6 @@ export default function App() {
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
-  const [exportAlert, setExportAlert] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false);
   const [cardUnitData, setCardUnitData] = useState(null);
   const [showRosterTable, setShowRosterTable] = useState(false);
@@ -58,7 +56,6 @@ export default function App() {
   const [hasArmyBonus, setHasArmyBonus] = useState(true);
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
-  const [gameModeAlert, setGameModeAlert] = useState(false);
   const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
   // $(window).scroll(function () {
@@ -310,21 +307,14 @@ export default function App() {
         minWidth: "1450px",
       }}
     >
+      <Alerts />
+      <ModalContainer />
+
       <TopNavbar
         uniqueModels={uniqueModels}
         setShowRosterTable={setShowRosterTable}
-        setExportAlert={setExportAlert}
-        setGameModeAlert={setGameModeAlert}
       />
       <div className="m-4">
-        <ExportAlert
-          exportAlert={exportAlert}
-          setExportAlert={setExportAlert}
-        />
-        <GameModeAlert
-          gameModeAlert={gameModeAlert}
-          setGameModeAlert={setGameModeAlert}
-        />
         {!gameMode ? (
           <>
             <SelectionMenu
@@ -379,7 +369,7 @@ export default function App() {
           />
         )}
       </div>
-      <ModalContainer />
+
       <ModalProfileCard
         showCardModal={showCardModal}
         setShowCardModal={setShowCardModal}

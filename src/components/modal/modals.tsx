@@ -15,7 +15,7 @@ export type ModalProps = {
   title: string;
 };
 
-export const modalMap = new Map<MODAL_KEYS, ModalProps>([
+export const modals = new Map<MODAL_KEYS, ModalProps>([
   [
     MODAL_KEYS.BUILDER_MODE,
     {

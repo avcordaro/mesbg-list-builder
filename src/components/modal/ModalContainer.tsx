@@ -1,6 +1,6 @@
 import Modal from "react-bootstrap/Modal";
 import { useStore } from "../../state/store.ts";
-import { modalMap } from "./modal-map.tsx";
+import { modals } from "./modals.tsx";
 
 export const ModalContainer = () => {
   const state = useStore();
@@ -10,7 +10,7 @@ export const ModalContainer = () => {
     return null;
   }
 
-  const currentModal = modalMap.get(state.currentlyOpenendModal);
+  const currentModal = modals.get(state.currentlyOpenendModal);
   return (
     <Modal
       show={true} // handled by the modal container, so this should always be true

@@ -10,17 +10,18 @@ import { Navbar } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
 import { useStore } from "../state/store";
-import { MODAL_KEYS } from "./modal/modal-map";
+import { MODAL_KEYS } from "./modal/modals";
+import { AlertTypes } from "./alerts/alert-types";
 
 /* Navbar component that displays at the top of the page. */
 
 export function TopNavbar({
   uniqueModels,
   setShowRosterTable,
-  setExportAlert,
   setGameModeAlert,
 }) {
-  const { roster, gameMode, setGameMode, setCurrentModal } = useStore();
+  const { roster, gameMode, setGameMode, setCurrentModal, triggerAlert } =
+    useStore();
 
   const [showNews, setShowNews] = useState(false);
 
@@ -30,12 +31,13 @@ export function TopNavbar({
     navigator.clipboard.writeText(
       JSON.stringify(roster).replaceAll('["",', "[0,"),
     );
-    setExportAlert(true);
-    window.setTimeout(() => setExportAlert(false), 5000);
+    triggerAlert(AlertTypes.EXPORT_ALERT);
   };
 
   const handleGameMode = () => {
     if (parseInt(roster.version.substring(0, 1)) < 5) {
+      triggerAlert(AlertTypes.GAMEMODE_ALERT);
+
       setGameModeAlert(true);
       window.setTimeout(() => setGameModeAlert(false), 12000);
     } else {
