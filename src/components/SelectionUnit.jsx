@@ -7,6 +7,7 @@ import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import { handleRivendellElrond } from "./specialRules";
 import { UnitProfilePicture } from "./UnitProfilePicture";
 import { useStore } from "../state/store";
+import { MODAL_KEYS } from "./modal/modals";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */
@@ -18,18 +19,17 @@ export function SelectionUnit({
   unitData,
   uniqueModels,
   warbandNumFocus,
-  setShowCardModal,
   setCardUnitData,
   allianceLevel,
   specialArmyOptions,
   setSpecialArmyOptions,
 }) {
-  const { roster, setRoster } = useStore();
+  const { roster, setRoster, setCurrentModal } = useStore();
 
   const deleteInvalidUnit = (newRoster, unit_id) => {
     /* If a new hero is selected and warrior units already exist in this warband belonging to a different faction,
-    they must be deleted and their points, bow count etc. removed from the roster. Similarly, if a Siege
-    Engine is selected as the new hero of this warband, all units must be removed in the same way.*/
+        they must be deleted and their points, bow count etc. removed from the roster. Similarly, if a Siege
+        Engine is selected as the new hero of this warband, all units must be removed in the same way.*/
     newRoster.warbands = newRoster.warbands.map((warband) => {
       let newWarband = { ...warband };
       if (newWarband.num === warbandNumFocus + 1) {
@@ -66,7 +66,7 @@ export function SelectionUnit({
 
   const handleClick = () => {
     /* Handles the selection of a unit, which differs depending on whether the unit is a hero or a warrior.
-    In both situations, the points, unit and bow counts are updated. */
+        In both situations, the points, unit and bow counts are updated. */
     let newRoster = { ...roster };
     let newUnitData = { ...unitData };
     newUnitData["id"] = uuid();
@@ -176,7 +176,10 @@ export function SelectionUnit({
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
-    setShowCardModal(true);
+    setCurrentModal(MODAL_KEYS.PROFILE_CARD, {
+      unitData,
+      title: `(${unitData.faction}) ${unitData.name}`,
+    });
   };
 
   return (

@@ -1,8 +1,6 @@
 import warning_rules from "./assets/data/warning_rules.json";
 import faction_data from "./assets/data/faction_data.json";
 import { ModalRosterTable } from "./components/ModalRosterTable";
-import { ModalImportJSON } from "./components/ModalImportJSON";
-import { ModalProfileCard } from "./components/ModalProfileCard";
 import { TopNavbar } from "./components/TopNavbar";
 import { Alliances, calculateAllianceLevel } from "./components/Alliances";
 import { SelectionMenu } from "./components/SelectionMenu.jsx";
@@ -12,17 +10,16 @@ import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { GameMode } from "./components/GameMode";
-import { ExportAlert } from "./components/ExportAlert";
-import { GameModeAlert } from "./components/GameModeAlert";
-import { ModalBuilderMode } from "./components/ModalBuilderMode";
 import {
-  checkSiegeEngineCounts,
   checkAlliedHeroes,
   checkDunharrow,
   checkGilGalad,
+  checkSiegeEngineCounts,
 } from "./components/specialRules.js";
 import { KeywordsSearch } from "./components/KeywordsSearch";
 import { useStore } from "./state/store";
+import { ModalContainer } from "./components/modal/ModalContainer";
+import { Alerts } from "./components/alerts/Alerts";
 
 export default function App() {
   const allianceColours = {
@@ -47,9 +44,6 @@ export default function App() {
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
-  const [exportAlert, setExportAlert] = useState(false);
-  const [showCardModal, setShowCardModal] = useState(false);
-  const [showImportModal, setShowImportModal] = useState(false);
   const [cardUnitData, setCardUnitData] = useState(null);
   const [showRosterTable, setShowRosterTable] = useState(false);
   const [factionType, setFactionType] = useState("");
@@ -60,8 +54,6 @@ export default function App() {
   const [hasArmyBonus, setHasArmyBonus] = useState(true);
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
-  const [gameModeAlert, setGameModeAlert] = useState(false);
-  const [showBuilderModal, setShowBuilderModal] = useState(false);
   const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
   // $(window).scroll(function () {
@@ -313,23 +305,14 @@ export default function App() {
         minWidth: "1450px",
       }}
     >
+      <Alerts />
+      <ModalContainer />
+
       <TopNavbar
         uniqueModels={uniqueModels}
         setShowRosterTable={setShowRosterTable}
-        setExportAlert={setExportAlert}
-        setShowImportModal={setShowImportModal}
-        setGameModeAlert={setGameModeAlert}
-        setShowBuilderModal={setShowBuilderModal}
       />
       <div className="m-4">
-        <ExportAlert
-          exportAlert={exportAlert}
-          setExportAlert={setExportAlert}
-        />
-        <GameModeAlert
-          gameModeAlert={gameModeAlert}
-          setGameModeAlert={setGameModeAlert}
-        />
         {!gameMode ? (
           <>
             <SelectionMenu
@@ -343,7 +326,6 @@ export default function App() {
               heroSelection={heroSelection}
               newWarriorFocus={newWarriorFocus}
               warbandNumFocus={warbandNumFocus}
-              setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               allianceLevel={allianceLevel}
               uniqueModels={uniqueModels}
@@ -363,7 +345,6 @@ export default function App() {
               setHeroSelection={setHeroSelection}
               setDisplaySelection={setDisplaySelection}
               setWarbandNumFocus={setWarbandNumFocus}
-              setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
@@ -384,15 +365,6 @@ export default function App() {
           />
         )}
       </div>
-      <ModalProfileCard
-        showCardModal={showCardModal}
-        setShowCardModal={setShowCardModal}
-        cardUnitData={cardUnitData}
-      />
-      <ModalImportJSON
-        showImportModal={showImportModal}
-        setShowImportModal={setShowImportModal}
-      />
       <ModalRosterTable
         allianceLevel={allianceLevel}
         allianceColour={allianceColours[allianceLevel]}
@@ -401,10 +373,6 @@ export default function App() {
         factionList={factionList}
         factionData={factionData}
         hasArmyBonus={hasArmyBonus}
-      />
-      <ModalBuilderMode
-        showBuilderModal={showBuilderModal}
-        setShowBuilderModal={setShowBuilderModal}
       />
       <Alliances
         allianceLevel={allianceLevel}

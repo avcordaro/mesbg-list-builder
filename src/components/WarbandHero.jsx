@@ -16,18 +16,18 @@ import {
 } from "./specialRules.js";
 import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
 import { useStore } from "../state/store";
+import { MODAL_KEYS } from "./modal/modals";
 
 /* Warband Hero components display the hero in each warband. */
 
 export function WarbandHero({
   warbandNum,
   unitData,
-  setShowCardModal,
   setCardUnitData,
   specialArmyOptions,
   setSpecialArmyOptions,
 }) {
-  const { roster, setRoster } = useStore();
+  const { roster, setRoster, setCurrentModal } = useStore();
 
   const handleDelete = () => {
     // Removes the hero from being the warband's leader, and updates points and unit counts.
@@ -102,7 +102,10 @@ export function WarbandHero({
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
-    setShowCardModal(true);
+    setCurrentModal(MODAL_KEYS.PROFILE_CARD, {
+      unitData,
+      title: `(${unitData.faction}) ${unitData.name}`,
+    });
   };
 
   const handleLeader = () => {

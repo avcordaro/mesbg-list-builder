@@ -23,7 +23,6 @@ export function Warbands({
   setHeroSelection,
   setDisplaySelection,
   setWarbandNumFocus,
-  setShowCardModal,
   setCardUnitData,
   specialArmyOptions,
   setSpecialArmyOptions,
@@ -271,7 +270,6 @@ export function Warbands({
               key={uuid()}
               warbandNum={warband.num}
               unitData={warband.hero}
-              setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
@@ -297,7 +295,6 @@ export function Warbands({
                   key={uuid()}
                   warbandNum={warband.num}
                   unitData={unit}
-                  setShowCardModal={setShowCardModal}
                   setCardUnitData={setCardUnitData}
                   specialArmyOptions={specialArmyOptions}
                 />

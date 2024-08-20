@@ -1,5 +1,7 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
+import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { MODAL_KEYS } from "../components/modal/modals.tsx";
 import { Roster } from "../types/roster.ts";
 
 type ListBuilderStore = {
@@ -7,6 +9,15 @@ type ListBuilderStore = {
   setRoster: (roster: Roster) => void;
   gameMode: boolean;
   setGameMode: (gameMode: boolean) => void;
+
+  currentlyOpenendModal: MODAL_KEYS | null;
+  modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  setCurrentModal: (key: MODAL_KEYS, context?: unknown) => void;
+  closeModal: () => void;
+
+  activeAlert: AlertTypes;
+  triggerAlert: (alert: AlertTypes) => void;
+  dismissAlert: () => void;
 };
 
 const initialState: Partial<ListBuilderStore> = {
@@ -18,6 +29,8 @@ const initialState: Partial<ListBuilderStore> = {
     warbands: [],
   },
   gameMode: false,
+  currentlyOpenendModal: null,
+  activeAlert: null,
 };
 
 type StoreKey = keyof ListBuilderStore;
@@ -29,13 +42,23 @@ export const useStore = create<
 >(
   persist(
     (set) => ({
-      roster: initialState.roster,
+      ...initialState,
       setRoster: (roster) =>
         set({
           roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
         }),
-      gameMode: initialState.gameMode,
       setGameMode: (gameMode) => set({ gameMode }),
+
+      setCurrentModal: (modal, context) =>
+        set({ currentlyOpenendModal: modal, modelContext: context }),
+      closeModal: () =>
+        set({
+          currentlyOpenendModal: null,
+          modelContext: null,
+        }),
+
+      triggerAlert: (alert) => set({ activeAlert: alert }),
+      dismissAlert: () => set({ activeAlert: null }),
     }),
     {
       name: "mesbg-lb-storage",

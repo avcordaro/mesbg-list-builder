@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 import { GiCrackedShield } from "react-icons/gi";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { ModalChart } from "./ModalChart";
 import { ModalGameModeReset } from "./ModalGameModeReset";
 import { UnitProfileCard } from "./UnitProfilePicture.tsx";
 import { useStore } from "../state/store";
@@ -169,7 +168,6 @@ export function GameMode({
   const [casualtyCount, setCasualtyCount] = useState(0);
   const [heroCasualtyCount, setHeroCasualtyCount] = useState(0);
   const [showChartModal, setShowChartModal] = useState(false);
-  const [selectedChart, setSelectedChart] = useState("to-wound-chart");
   const [showResetModal, setShowResetModal] = useState(false);
 
   const handleReset = useCallback(() => {
@@ -263,8 +261,6 @@ export function GameMode({
         allianceColours={allianceColours}
         casualtyCount={casualtyCount}
         heroCasualtyCount={heroCasualtyCount}
-        setShowChartModal={setShowChartModal}
-        setSelectedChart={setSelectedChart}
         factionData={factionData}
         hasArmyBonus={hasArmyBonus}
         setShowKeywordSearch={setShowKeywordSearch}
@@ -298,11 +294,6 @@ export function GameMode({
         <hr className="mt-5 mb-3" style={{ width: "720px" }} />
         <GameModeProfiles />
       </div>
-      <ModalChart
-        selectedChart={selectedChart}
-        showChartModal={showChartModal}
-        setShowChartModal={setShowChartModal}
-      />
       <ModalGameModeReset
         showResetModal={showResetModal}
         setShowResetModal={setShowResetModal}
