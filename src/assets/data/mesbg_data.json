@@ -37152,27 +37152,9 @@
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT1226",
-        "option":"Elven Cloak",
-        "points":5.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1227",
-        "option":"Pony",
-        "points":5.0,
-        "type":"mount",
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      },
-      {
-        "option_id":"OPT1228",
-        "option":"Shield",
-        "points":5.0,
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
