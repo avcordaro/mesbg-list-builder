@@ -1,12 +1,11 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { FaHammer } from "react-icons/fa6";
+import { useStore } from "../state/store";
 
-export function ModalBuilderMode({
-  showBuilderModal,
-  setShowBuilderModal,
-  setGameMode,
-}) {
+export function ModalBuilderMode({ showBuilderModal, setShowBuilderModal }) {
+  const setGameMode = useStore((store) => store.setGameMode);
+
   const handleContinue = () => {
     setShowBuilderModal(false);
     setGameMode(false);
