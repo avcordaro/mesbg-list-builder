@@ -14,14 +14,16 @@ import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import { ModalChart } from "./ModalChart";
 import { ModalGameModeReset } from "./ModalGameModeReset";
 import { UnitProfileCard } from "./UnitProfilePicture.tsx";
+import { useStore } from "../state/store";
 
 export function GameModeCasualties({
-  roster,
   casualtyCount,
   setCasualtyCount,
   heroCasualtyCount,
   gameHeroes,
 }) {
+  const roster = useStore((store) => store.roster);
+
   const handleIncrement = () => {
     setCasualtyCount(casualtyCount + 1);
   };
@@ -103,7 +105,9 @@ export function GameModeCasualties({
   );
 }
 
-export function GameModeProfiles({ roster }) {
+export function GameModeProfiles() {
+  const roster = useStore((store) => store.roster);
+
   const getProfileCards = () => {
     let profileCards = [];
     roster.warbands.map((_warband) => {
@@ -152,7 +156,6 @@ export function GameModeProfiles({ roster }) {
 }
 
 export function GameMode({
-  roster,
   factionList,
   allianceLevel,
   allianceColours,
@@ -160,6 +163,8 @@ export function GameMode({
   hasArmyBonus,
   setShowKeywordSearch,
 }) {
+  const { roster } = useStore();
+
   const [gameHeroes, setGameHeroes] = useState({});
   const [casualtyCount, setCasualtyCount] = useState(0);
   const [heroCasualtyCount, setHeroCasualtyCount] = useState(0);
@@ -256,7 +261,6 @@ export function GameMode({
         factionList={factionList}
         allianceLevel={allianceLevel}
         allianceColours={allianceColours}
-        roster={roster}
         casualtyCount={casualtyCount}
         heroCasualtyCount={heroCasualtyCount}
         setShowChartModal={setShowChartModal}
@@ -271,7 +275,6 @@ export function GameMode({
             <TbRefresh /> Reset All
           </Button>
           <GameModeCasualties
-            roster={roster}
             casualtyCount={casualtyCount}
             setCasualtyCount={setCasualtyCount}
             heroCasualtyCount={heroCasualtyCount}
@@ -293,7 +296,7 @@ export function GameMode({
           />
         ))}
         <hr className="mt-5 mb-3" style={{ width: "720px" }} />
-        <GameModeProfiles roster={roster} />
+        <GameModeProfiles />
       </div>
       <ModalChart
         selectedChart={selectedChart}

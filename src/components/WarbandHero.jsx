@@ -15,19 +15,20 @@ import {
   handleSpecialWarbandOption,
 } from "./specialRules.js";
 import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
+import { useStore } from "../state/store";
 
 /* Warband Hero components display the hero in each warband. */
 
 export function WarbandHero({
   warbandNum,
   unitData,
-  roster,
-  setRoster,
   setShowCardModal,
   setCardUnitData,
   specialArmyOptions,
   setSpecialArmyOptions,
 }) {
+  const { roster, setRoster } = useStore();
+
   const handleDelete = () => {
     // Removes the hero from being the warband's leader, and updates points and unit counts.
     let newRoster = { ...roster };
@@ -205,8 +206,6 @@ export function WarbandHero({
                 {unitData.options.map((option) => (
                   <OptionHero
                     key={uuid()}
-                    roster={roster}
-                    setRoster={setRoster}
                     warbandNum={warbandNum}
                     unit={unitData}
                     option={option}

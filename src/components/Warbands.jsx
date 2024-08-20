@@ -15,12 +15,11 @@ import {
   handleSpecialArmyOption,
   handleSpecialWarbandOption,
 } from "./specialRules.js";
+import { useStore } from "../state/store";
 
 /* Displays the list of all warbands, and also defines how each warband card looks. */
 
 export function Warbands({
-  roster,
-  setRoster,
   setHeroSelection,
   setDisplaySelection,
   setWarbandNumFocus,
@@ -33,6 +32,8 @@ export function Warbands({
   factionSelection,
   setFactionSelection,
 }) {
+  const { roster, setRoster } = useStore();
+
   const handleNewWarband = () => {
     // Create a new empty warband dictionary and add to the roster
     let newRoster = { ...roster };
@@ -270,8 +271,6 @@ export function Warbands({
               key={uuid()}
               warbandNum={warband.num}
               unitData={warband.hero}
-              roster={roster}
-              setRoster={setRoster}
               setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
@@ -285,8 +284,6 @@ export function Warbands({
                   key={uuid()}
                   setNewWarriorFocus={setNewWarriorFocus}
                   unitData={unit}
-                  roster={roster}
-                  setRoster={setRoster}
                   setHeroSelection={setHeroSelection}
                   setDisplaySelection={setDisplaySelection}
                   warbandNum={warband.num}
@@ -300,8 +297,6 @@ export function Warbands({
                   key={uuid()}
                   warbandNum={warband.num}
                   unitData={unit}
-                  roster={roster}
-                  setRoster={setRoster}
                   setShowCardModal={setShowCardModal}
                   setCardUnitData={setCardUnitData}
                   specialArmyOptions={specialArmyOptions}

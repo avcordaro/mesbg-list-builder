@@ -4,9 +4,10 @@ import { Roster } from "../types/roster.ts";
 
 type ListBuilderStore = {
   roster: Roster;
+  setRoster: (roster: Roster) => void;
 };
 
-const initialState: ListBuilderStore = {
+const initialState: Partial<ListBuilderStore> = {
   roster: {
     version: BUILD_VERSION,
     num_units: 0,
@@ -23,7 +24,10 @@ export const useStore = create<
   persist(
     (set) => ({
       roster: initialState.roster,
-      setRoster: (roster) => set({ roster }),
+      setRoster: (roster) =>
+        set({
+          roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
+        }),
     }),
     {
       name: "mesbg-lb-storage",

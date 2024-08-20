@@ -1,6 +1,7 @@
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import { ImCross } from "react-icons/im";
+import { useStore } from "../state/store";
 
 /* Default Warrior Unit components appear inside Warbands after 'Add Unit' is selected, 
 before the user selects the warrior they would like. */
@@ -8,8 +9,6 @@ before the user selects the warrior they would like. */
 export function DefaultWarriorUnit({
   setNewWarriorFocus,
   unitData,
-  roster,
-  setRoster,
   setHeroSelection,
   setDisplaySelection,
   warbandNum,
@@ -18,6 +17,8 @@ export function DefaultWarriorUnit({
   factionSelection,
   setFactionSelection,
 }) {
+  const { roster, setRoster } = useStore();
+
   const handleClick = () => {
     /* Updates state variables to identify that a warrior (not a hero) is being chosen, 
     the warband that warrior belongs to, and that the correct unit selection menu should be displayed */

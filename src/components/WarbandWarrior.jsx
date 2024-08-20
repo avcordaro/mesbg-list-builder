@@ -10,18 +10,19 @@ import { HiDuplicate } from "react-icons/hi";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
+import { useStore } from "../state/store";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 
 export function WarbandWarrior({
   warbandNum,
   unitData,
-  roster,
-  setRoster,
   setShowCardModal,
   setCardUnitData,
   specialArmyOptions,
 }) {
+  const { roster, setRoster } = useStore();
+
   const handleIncrement = () => {
     // Updates the roster state variable to handle increase to points, units and bow count totals.
     let newRoster = { ...roster };
@@ -268,8 +269,6 @@ export function WarbandWarrior({
                 {unitData.options.map((option) => (
                   <OptionWarrior
                     key={uuid()}
-                    roster={roster}
-                    setRoster={setRoster}
                     warbandNum={warbandNum}
                     unit={unitData}
                     option={option}

@@ -42,7 +42,7 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const { roster, setRoster } = useStore();
+  const { roster } = useStore();
   const [factionData, setFactionData] = useState(faction_data);
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
@@ -221,10 +221,6 @@ export default function App() {
     }
     setAllianceLevel(newAllianceLevel);
     setWarnings(newWarnings);
-    sessionStorage.setItem(
-      "roster",
-      JSON.stringify(roster).replaceAll('["",', "[0,"),
-    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roster]);
 
@@ -326,7 +322,6 @@ export default function App() {
       }}
     >
       <TopNavbar
-        roster={roster}
         uniqueModels={uniqueModels}
         setShowRosterTable={setShowRosterTable}
         setExportAlert={setExportAlert}
@@ -344,13 +339,10 @@ export default function App() {
         <GameModeAlert
           gameModeAlert={gameModeAlert}
           setGameModeAlert={setGameModeAlert}
-          setRoster={setRoster}
         />
         {!gameMode ? (
           <>
             <SelectionMenu
-              roster={roster}
-              setRoster={setRoster}
               displaySelection={displaySelection}
               setDisplaySelection={setDisplaySelection}
               tabSelection={tabSelection}
@@ -378,8 +370,6 @@ export default function App() {
               setShowKeywordSearch={setShowKeywordSearch}
             />
             <Warbands
-              roster={roster}
-              setRoster={setRoster}
               setHeroSelection={setHeroSelection}
               setDisplaySelection={setDisplaySelection}
               setWarbandNumFocus={setWarbandNumFocus}
@@ -395,7 +385,6 @@ export default function App() {
           </>
         ) : (
           <GameMode
-            roster={roster}
             factionList={factionList}
             allianceLevel={allianceLevel}
             allianceColours={allianceColours}
@@ -413,12 +402,10 @@ export default function App() {
       <ModalImportJSON
         showImportModal={showImportModal}
         setShowImportModal={setShowImportModal}
-        setRoster={setRoster}
       />
       <ModalRosterTable
         allianceLevel={allianceLevel}
         allianceColour={allianceColours[allianceLevel]}
-        roster={roster}
         showRosterTable={showRosterTable}
         setShowRosterTable={setShowRosterTable}
         factionList={factionList}
@@ -431,8 +418,6 @@ export default function App() {
         setGameMode={setGameMode}
       />
       <Alliances
-        roster={roster}
-        setRoster={setRoster}
         allianceLevel={allianceLevel}
         showAlliances={showAlliances}
         setShowAlliances={setShowAlliances}

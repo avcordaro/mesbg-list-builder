@@ -4,14 +4,15 @@ import Accordion from "react-bootstrap/Accordion";
 import siege_equipment from "../assets/data/siege_equipment.json";
 import { v4 as uuid } from "uuid";
 import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
+import { useStore } from "../state/store";
 
 export function SelectionSiege({
   newWarriorFocus,
   setDisplaySelection,
-  roster,
-  setRoster,
   warbandNumFocus,
 }) {
+  const { roster, setRoster } = useStore();
+
   const handleClick = (data) => {
     let newRoster = { ...roster };
     let newUnitData = { ...data };

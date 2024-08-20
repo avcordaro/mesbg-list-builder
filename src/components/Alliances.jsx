@@ -10,6 +10,7 @@ import {
   handleKhandishHorsemanCharioteers,
 } from "./specialRules.js";
 import { FactionLogo } from "./FactionLogo.tsx";
+import { useStore } from "../state/store";
 
 const checkAlliance = (army_A, army_B, faction_data) => {
   // Checks the alliance level between two given armies
@@ -58,8 +59,6 @@ export const calculateAllianceLevel = (
 /* Displays an Offcanvas component showing the possible alliances for the current army selection. */
 
 export function Alliances({
-  roster,
-  setRoster,
   allianceLevel,
   showAlliances,
   setShowAlliances,
@@ -67,6 +66,8 @@ export function Alliances({
   factionData,
   setFactionData,
 }) {
+  const { roster, setRoster } = useStore();
+
   useEffect(() => {
     //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
     if (factionList.includes("Halls of Thranduil")) {
