@@ -11,6 +11,7 @@ export const ModalContainer = () => {
   }
 
   const currentModal = modals.get(state.currentlyOpenendModal);
+  const { title } = state?.modelContext || {};
   return (
     <Modal
       show={true} // handled by the modal container, so this should always be true
@@ -20,7 +21,7 @@ export const ModalContainer = () => {
     >
       <Modal.Header closeButton>
         <Modal.Title>
-          {currentModal.icon} {currentModal.title}
+          {currentModal.icon} {title || currentModal.title}
         </Modal.Title>
       </Modal.Header>
       {currentModal.children}

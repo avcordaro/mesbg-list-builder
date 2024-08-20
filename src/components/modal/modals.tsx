@@ -3,10 +3,12 @@ import { FaFileImport } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
 import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
+import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 
 export enum MODAL_KEYS {
   BUILDER_MODE = "BUILDER_MODE",
   IMPORT_ROSTER_JSON = "IMPORT_ROSTER_JSON",
+  PROFILE_CARD = "PROFILE_CARD",
 }
 
 export type ModalProps = {
@@ -30,6 +32,14 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
       icon: <FaFileImport />,
       title: "Import JSON",
       children: <ImportRosterModal />,
+    },
+  ],
+  [
+    MODAL_KEYS.PROFILE_CARD,
+    {
+      icon: <></>,
+      title: "Profile card(s)",
+      children: <ProfileCardModal />,
     },
   ],
 ]);

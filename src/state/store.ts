@@ -11,7 +11,8 @@ type ListBuilderStore = {
   setGameMode: (gameMode: boolean) => void;
 
   currentlyOpenendModal: MODAL_KEYS | null;
-  setCurrentModal: (key: MODAL_KEYS) => void;
+  modelContext?: unknown;
+  setCurrentModal: (key: MODAL_KEYS, context?: unknown) => void;
   closeModal: () => void;
 
   activeAlert: AlertTypes;
@@ -47,10 +48,13 @@ export const useStore = create<
           roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
         }),
       setGameMode: (gameMode) => set({ gameMode }),
-      setCurrentModal: (modal) => set({ currentlyOpenendModal: modal }),
+
+      setCurrentModal: (modal, context) =>
+        set({ currentlyOpenendModal: modal, modelContext: context }),
       closeModal: () =>
         set({
           currentlyOpenendModal: null,
+          modelContext: null,
         }),
 
       triggerAlert: (alert) => set({ activeAlert: alert }),

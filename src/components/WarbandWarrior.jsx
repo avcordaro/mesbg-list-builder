@@ -11,17 +11,17 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
 import { useStore } from "../state/store";
+import { MODAL_KEYS } from "./modal/modals";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 
 export function WarbandWarrior({
   warbandNum,
   unitData,
-  setShowCardModal,
   setCardUnitData,
   specialArmyOptions,
 }) {
-  const { roster, setRoster } = useStore();
+  const { roster, setRoster, setCurrentModal } = useStore();
 
   const handleIncrement = () => {
     // Updates the roster state variable to handle increase to points, units and bow count totals.
@@ -177,8 +177,8 @@ export function WarbandWarrior({
   };
 
   const handleDuplicate = () => {
-    /* Duplicates the warrior unit in the warband that this unit belongs to (but with a new unique ID). 
-    Also updates the roster state variable with adjustments to points, units and bow count totals. */
+    /* Duplicates the warrior unit in the warband that this unit belongs to (but with a new unique ID).
+        Also updates the roster state variable with adjustments to points, units and bow count totals. */
     let newRoster = { ...roster };
     let newUnit = { ...unitData };
     newUnit["id"] = uuid();
@@ -206,7 +206,10 @@ export function WarbandWarrior({
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCardUnitData(unitData);
-    setShowCardModal(true);
+    setCurrentModal(MODAL_KEYS.PROFILE_CARD, {
+      unitData,
+      title: `(${unitData.faction}) ${unitData.name}`,
+    });
   };
 
   return (

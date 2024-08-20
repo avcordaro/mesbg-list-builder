@@ -1,7 +1,6 @@
 import warning_rules from "./assets/data/warning_rules.json";
 import faction_data from "./assets/data/faction_data.json";
 import { ModalRosterTable } from "./components/ModalRosterTable";
-import { ModalProfileCard } from "./components/ModalProfileCard";
 import { TopNavbar } from "./components/TopNavbar";
 import { Alliances, calculateAllianceLevel } from "./components/Alliances";
 import { SelectionMenu } from "./components/SelectionMenu.jsx";
@@ -45,7 +44,6 @@ export default function App() {
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
-  const [showCardModal, setShowCardModal] = useState(false);
   const [cardUnitData, setCardUnitData] = useState(null);
   const [showRosterTable, setShowRosterTable] = useState(false);
   const [factionType, setFactionType] = useState("");
@@ -328,7 +326,6 @@ export default function App() {
               heroSelection={heroSelection}
               newWarriorFocus={newWarriorFocus}
               warbandNumFocus={warbandNumFocus}
-              setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               allianceLevel={allianceLevel}
               uniqueModels={uniqueModels}
@@ -348,7 +345,6 @@ export default function App() {
               setHeroSelection={setHeroSelection}
               setDisplaySelection={setDisplaySelection}
               setWarbandNumFocus={setWarbandNumFocus}
-              setShowCardModal={setShowCardModal}
               setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
@@ -369,12 +365,6 @@ export default function App() {
           />
         )}
       </div>
-
-      <ModalProfileCard
-        showCardModal={showCardModal}
-        setShowCardModal={setShowCardModal}
-        cardUnitData={cardUnitData}
-      />
       <ModalRosterTable
         allianceLevel={allianceLevel}
         allianceColour={allianceColours[allianceLevel]}

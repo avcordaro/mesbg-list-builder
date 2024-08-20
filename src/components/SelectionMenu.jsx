@@ -34,7 +34,6 @@ export function SelectionMenu({
   heroSelection,
   newWarriorFocus,
   warbandNumFocus,
-  setShowCardModal,
   setCardUnitData,
   allianceLevel,
   uniqueModels,
@@ -50,7 +49,7 @@ export function SelectionMenu({
   hasArmyBonus,
   setShowKeywordSearch,
 }) {
-  const { roster, setRoster } = useStore();
+  const { roster, setCurrentModal } = useStore();
 
   const faction_lists = {
     "Good Army": new Set(
@@ -143,7 +142,6 @@ export function SelectionMenu({
                             unitData={row}
                             uniqueModels={uniqueModels}
                             warbandNumFocus={warbandNumFocus}
-                            setShowCardModal={setShowCardModal}
                             setCardUnitData={setCardUnitData}
                             allianceLevel={allianceLevel}
                             specialArmyOptions={specialArmyOptions}
@@ -173,7 +171,6 @@ export function SelectionMenu({
                             unitData={row}
                             uniqueModels={uniqueModels}
                             warbandNumFocus={warbandNumFocus}
-                            setShowCardModal={setShowCardModal}
                             setCardUnitData={setCardUnitData}
                             allianceLevel={allianceLevel}
                           />
