@@ -22,6 +22,7 @@ import {
   checkGilGalad,
 } from "./components/specialRules.js";
 import { KeywordsSearch } from "./components/KeywordsSearch";
+import { useStore } from "./state/store";
 
 export default function App() {
   const allianceColours = {
@@ -41,13 +42,7 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const [roster, setRoster] = useState({
-    version: BUILD_VERSION,
-    num_units: 0,
-    points: 0,
-    bow_count: 0,
-    warbands: [],
-  });
+  const { roster, setRoster } = useStore();
   const [factionData, setFactionData] = useState(faction_data);
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
@@ -76,10 +71,6 @@ export default function App() {
   // });
 
   useEffect(() => {
-    let store_roster = sessionStorage.getItem("roster");
-    if (store_roster) {
-      setRoster(JSON.parse(store_roster));
-    }
     let store_gameMode = sessionStorage.getItem("gameMode");
     if (store_gameMode === "true") {
       setGameMode(true);
