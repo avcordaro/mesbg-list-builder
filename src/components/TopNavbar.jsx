@@ -12,9 +12,6 @@ import { Navbar } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
 
-export const VERSION = "5.3.10";
-const UPDATED = "17-Aug-2024";
-
 /* Navbar component that displays at the top of the page. */
 
 export function TopNavbar({
@@ -80,7 +77,7 @@ export function TopNavbar({
                   <img src={title} alt="" style={{ width: "325px" }} />
                   <Stack direction="horizontal" className="mt-2">
                     <span className="p-0 m-0" style={{ fontSize: "16px" }}>
-                      Unofficial | v{VERSION} | updated {UPDATED}
+                      Unofficial | v{BUILD_VERSION} | updated {BUILD_DATE}
                     </span>
                   </Stack>
                 </Stack>

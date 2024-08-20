@@ -3,7 +3,7 @@ import faction_data from "./assets/data/faction_data.json";
 import { ModalRosterTable } from "./components/ModalRosterTable";
 import { ModalImportJSON } from "./components/ModalImportJSON";
 import { ModalProfileCard } from "./components/ModalProfileCard";
-import { TopNavbar, VERSION } from "./components/TopNavbar";
+import { TopNavbar } from "./components/TopNavbar";
 import { Alliances, calculateAllianceLevel } from "./components/Alliances";
 import { SelectionMenu } from "./components/SelectionMenu.jsx";
 import { Warbands } from "./components/Warbands";
@@ -42,7 +42,7 @@ export default function App() {
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
   const [roster, setRoster] = useState({
-    version: VERSION,
+    version: BUILD_VERSION,
     num_units: 0,
     points: 0,
     bow_count: 0,
