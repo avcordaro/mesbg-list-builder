@@ -9,7 +9,7 @@ type ListBuilderStore = {
   setGameMode: (gameMode: boolean) => void;
 };
 
-const initialState: Partial<ListBuilderStore> = {
+const initialState = {
   roster: {
     version: BUILD_VERSION,
     num_units: 0,

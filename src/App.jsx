@@ -42,7 +42,7 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const { roster, gameMode } = useStore();
+  const { roster, setRoster, gameMode } = useStore();
   const [factionData, setFactionData] = useState(faction_data);
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
