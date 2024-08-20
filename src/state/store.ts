@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
+import { MODAL_KEYS } from "../components/modal/modal-map.tsx";
 import { Roster } from "../types/roster.ts";
 
 type ListBuilderStore = {
@@ -7,6 +8,10 @@ type ListBuilderStore = {
   setRoster: (roster: Roster) => void;
   gameMode: boolean;
   setGameMode: (gameMode: boolean) => void;
+
+  currentlyOpenendModal: MODAL_KEYS | null;
+  setCurrentModal: (key: MODAL_KEYS) => void;
+  closeModal: () => void;
 };
 
 const initialState = {
@@ -18,6 +23,7 @@ const initialState = {
     warbands: [],
   },
   gameMode: false,
+  currentlyOpenendModal: null,
 };
 
 type StoreKey = keyof ListBuilderStore;
@@ -29,13 +35,17 @@ export const useStore = create<
 >(
   persist(
     (set) => ({
-      roster: initialState.roster,
+      ...initialState,
       setRoster: (roster) =>
         set({
           roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
         }),
-      gameMode: initialState.gameMode,
       setGameMode: (gameMode) => set({ gameMode }),
+      setCurrentModal: (modal) => set({ currentlyOpenendModal: modal }),
+      closeModal: () =>
+        set({
+          currentlyOpenendModal: null,
+        }),
     }),
     {
       name: "mesbg-lb-storage",

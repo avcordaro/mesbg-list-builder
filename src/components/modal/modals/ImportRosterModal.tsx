@@ -1,50 +1,56 @@
 import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { BiSolidFileImport } from "react-icons/bi";
-import { useStore } from "../state/store";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
+import { useStore } from "../../../state/store";
+import { Roster } from "../../../types/roster.ts";
 
 /* Displays a modal for the user to enter their JSON army list into a textbox. */
 
-export function ModalImportJSON({ showImportModal, setShowImportModal }) {
-  const setRoster = useStore((store) => store.setRoster);
+export const ImportRosterModal = () => {
+  const { setRoster, closeModal } = useStore();
 
   const [JSONImport, setJSONImport] = useState("");
   const [importAlert, setImportAlert] = useState(false);
+
+  const displayImportAlert = () => {
+    setImportAlert(true);
+    window.setTimeout(() => setImportAlert(false), 5000);
+  };
+
+  const hasKeys = (obj: object, keys: string[]): obj is Roster =>
+    keys.every((key) => key in obj);
+
+  const tryImportJSON = () => {
+    const json = JSON.parse(JSONImport);
+    const valid_json = hasKeys(json, [
+      "num_units",
+      "points",
+      "bow_count",
+      "warbands",
+    ]);
+
+    if (!valid_json) {
+      throw new Error("Invalid JSON!");
+    }
+
+    setRoster(json);
+    setJSONImport("");
+  };
 
   const handleImportJSON = (e) => {
     // Attempts to read the input, convert it to JSON, and assigns the JSON dictionary to the roster state variable.
     e.preventDefault();
     try {
-      let json = JSON.parse(JSONImport);
-      let valid_json = ["num_units", "points", "bow_count", "warbands"].every(
-        (key) => json.hasOwnProperty(key),
-      );
-      if (valid_json) {
-        setRoster(json);
-        setShowImportModal(false);
-        setJSONImport("");
-      } else {
-        setImportAlert(true);
-        window.setTimeout(() => setImportAlert(false), 5000);
-      }
-    } catch (err) {
-      setImportAlert(true);
-      window.setTimeout(() => setImportAlert(false), 5000);
+      tryImportJSON();
+      closeModal();
+    } catch {
+      displayImportAlert();
     }
   };
 
   return (
-    <Modal
-      show={showImportModal}
-      onHide={() => setShowImportModal(false)}
-      size="lg"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title>Import JSON</Modal.Title>
-      </Modal.Header>
+    <>
       <Modal.Body>
         <Form
           noValidate
@@ -71,10 +77,10 @@ export function ModalImportJSON({ showImportModal, setShowImportModal }) {
             onClick={handleImportJSON}
             type="submit"
           >
-            <BiSolidFileImport /> Import JSON
+            Import
           </Button>
         </Form>
       </Modal.Body>
-    </Modal>
+    </>
   );
-}
+};

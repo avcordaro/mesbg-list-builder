@@ -2,16 +2,15 @@ import Stack from "react-bootstrap/Stack";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { MdReportGmailerrorred } from "react-icons/md";
 import Button from "react-bootstrap/Button";
-import { FaTableList } from "react-icons/fa6";
+import { FaHammer, FaQuestion, FaTableList } from "react-icons/fa6";
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
-import { FaRegCopyright, FaChessRook } from "react-icons/fa";
-import { FaQuestion } from "react-icons/fa6";
-import { FaHammer } from "react-icons/fa6";
+import { FaChessRook, FaRegCopyright } from "react-icons/fa";
 import { useState } from "react";
 import { Navbar } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
 import { useStore } from "../state/store";
+import { MODAL_KEYS } from "./modal/modal-map";
 
 /* Navbar component that displays at the top of the page. */
 
@@ -19,26 +18,20 @@ export function TopNavbar({
   uniqueModels,
   setShowRosterTable,
   setExportAlert,
-  setShowImportModal,
   setGameModeAlert,
-  setShowBuilderModal,
 }) {
-  const { roster, gameMode, setGameMode } = useStore();
+  const { roster, gameMode, setGameMode, setCurrentModal } = useStore();
 
   const [showNews, setShowNews] = useState(false);
 
   const handleExportJSON = () => {
     /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard.
-    Also notify them with an alert that fades away after 3 seconds. */
+        Also notify them with an alert that fades away after 3 seconds. */
     navigator.clipboard.writeText(
       JSON.stringify(roster).replaceAll('["",', "[0,"),
     );
     setExportAlert(true);
     window.setTimeout(() => setExportAlert(false), 5000);
-  };
-
-  const handleBacktoBuilder = () => {
-    setShowBuilderModal(true);
   };
 
   const handleGameMode = () => {
@@ -103,7 +96,7 @@ export function TopNavbar({
                 ) : (
                   <Button
                     variant="success"
-                    onClick={() => handleBacktoBuilder()}
+                    onClick={() => setCurrentModal(MODAL_KEYS.BUILDER_MODE, {})}
                   >
                     <FaHammer /> Builder Mode
                   </Button>
@@ -121,7 +114,9 @@ export function TopNavbar({
                   <BiLinkAlt /> Export JSON
                 </Button>
                 <Button
-                  onClick={() => setShowImportModal(true)}
+                  onClick={() =>
+                    setCurrentModal(MODAL_KEYS.IMPORT_ROSTER_JSON, {})
+                  }
                   disabled={gameMode}
                 >
                   <BiSolidFileImport /> Import JSON
