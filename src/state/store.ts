@@ -5,6 +5,8 @@ import { Roster } from "../types/roster.ts";
 type ListBuilderStore = {
   roster: Roster;
   setRoster: (roster: Roster) => void;
+  gameMode: boolean;
+  setGameMode: (gameMode: boolean) => void;
 };
 
 const initialState: Partial<ListBuilderStore> = {
@@ -15,7 +17,11 @@ const initialState: Partial<ListBuilderStore> = {
     bow_count: 0,
     warbands: [],
   },
+  gameMode: false,
 };
+
+type StoreKey = keyof ListBuilderStore;
+const keysToPersist: StoreKey[] = ["roster", "gameMode"];
 
 export const useStore = create<
   ListBuilderStore,
@@ -28,10 +34,18 @@ export const useStore = create<
         set({
           roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
         }),
+      gameMode: initialState.gameMode,
+      setGameMode: (gameMode) => set({ gameMode }),
     }),
     {
       name: "mesbg-lb-storage",
       storage: createJSONStorage(() => sessionStorage),
+      partialize: (state) =>
+        Object.fromEntries(
+          Object.entries(state).filter((stateEntry) =>
+            keysToPersist.includes(stateEntry[0] as StoreKey),
+          ),
+        ),
     },
   ),
 );

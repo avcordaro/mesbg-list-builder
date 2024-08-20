@@ -20,12 +20,10 @@ export function TopNavbar({
   setShowRosterTable,
   setExportAlert,
   setShowImportModal,
-  gameMode,
-  setGameMode,
   setGameModeAlert,
   setShowBuilderModal,
 }) {
-  const roster = useStore((store) => store.roster);
+  const { roster, gameMode, setGameMode } = useStore();
 
   const [showNews, setShowNews] = useState(false);
 

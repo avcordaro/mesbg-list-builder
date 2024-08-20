@@ -42,7 +42,7 @@ export default function App() {
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const { roster } = useStore();
+  const { roster, gameMode } = useStore();
   const [factionData, setFactionData] = useState(faction_data);
   const [uniqueModels, setUniqueModels] = useState([]);
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
@@ -60,7 +60,6 @@ export default function App() {
   const [hasArmyBonus, setHasArmyBonus] = useState(true);
   const [showAlliances, setShowAlliances] = useState(false);
   const [warnings, setWarnings] = useState([]);
-  const [gameMode, setGameMode] = useState(false);
   const [gameModeAlert, setGameModeAlert] = useState(false);
   const [showBuilderModal, setShowBuilderModal] = useState(false);
   const [showKeywordSearch, setShowKeywordSearch] = useState(false);
@@ -69,13 +68,6 @@ export default function App() {
   //     // stops the left-hand options menu from scrolling horizontally
   //     $('.optionsList').css('left', -$(window).scrollLeft() + 24);
   // });
-
-  useEffect(() => {
-    let store_gameMode = sessionStorage.getItem("gameMode");
-    if (store_gameMode === "true") {
-      setGameMode(true);
-    }
-  }, []);
 
   useEffect(() => {
     // Every time roster is updated, update the faction type of the army roster e.g. Good Army
@@ -326,8 +318,6 @@ export default function App() {
         setShowRosterTable={setShowRosterTable}
         setExportAlert={setExportAlert}
         setShowImportModal={setShowImportModal}
-        gameMode={gameMode}
-        setGameMode={setGameMode}
         setGameModeAlert={setGameModeAlert}
         setShowBuilderModal={setShowBuilderModal}
       />
@@ -415,7 +405,6 @@ export default function App() {
       <ModalBuilderMode
         showBuilderModal={showBuilderModal}
         setShowBuilderModal={setShowBuilderModal}
-        setGameMode={setGameMode}
       />
       <Alliances
         allianceLevel={allianceLevel}
