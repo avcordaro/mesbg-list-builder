@@ -4,8 +4,9 @@ import Badge from "react-bootstrap/Badge";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { handleRivendellElrond } from "./specialRules.js";
-import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
+import { handleRivendellElrond } from "./specialRules";
+import { UnitProfilePicture } from "./UnitProfilePicture";
+import { useStore } from "../state/store";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */
@@ -15,8 +16,6 @@ export function SelectionUnit({
   setDisplaySelection,
   heroSelection,
   unitData,
-  roster,
-  setRoster,
   uniqueModels,
   warbandNumFocus,
   setShowCardModal,
@@ -25,6 +24,8 @@ export function SelectionUnit({
   specialArmyOptions,
   setSpecialArmyOptions,
 }) {
+  const { roster, setRoster } = useStore();
+
   const deleteInvalidUnit = (newRoster, unit_id) => {
     /* If a new hero is selected and warrior units already exist in this warband belonging to a different faction,
     they must be deleted and their points, bow count etc. removed from the roster. Similarly, if a Siege

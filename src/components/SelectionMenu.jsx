@@ -18,13 +18,12 @@ import { RxCross1 } from "react-icons/rx";
 import { FaSearch } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
 import { FactionLogo } from "./FactionLogo.tsx";
+import { useStore } from "../state/store";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
 
 export function SelectionMenu({
-  roster,
-  setRoster,
   displaySelection,
   setDisplaySelection,
   tabSelection,
@@ -51,6 +50,8 @@ export function SelectionMenu({
   hasArmyBonus,
   setShowKeywordSearch,
 }) {
+  const { roster, setRoster } = useStore();
+
   const faction_lists = {
     "Good Army": new Set(
       mesbg_data
@@ -140,8 +141,6 @@ export function SelectionMenu({
                             setDisplaySelection={setDisplaySelection}
                             heroSelection={heroSelection}
                             unitData={row}
-                            roster={roster}
-                            setRoster={setRoster}
                             uniqueModels={uniqueModels}
                             warbandNumFocus={warbandNumFocus}
                             setShowCardModal={setShowCardModal}
@@ -172,8 +171,6 @@ export function SelectionMenu({
                             setDisplaySelection={setDisplaySelection}
                             heroSelection={heroSelection}
                             unitData={row}
-                            roster={roster}
-                            setRoster={setRoster}
                             uniqueModels={uniqueModels}
                             warbandNumFocus={warbandNumFocus}
                             setShowCardModal={setShowCardModal}
@@ -186,8 +183,6 @@ export function SelectionMenu({
                       key={uuid()}
                       newWarriorFocus={newWarriorFocus}
                       setDisplaySelection={setDisplaySelection}
-                      roster={roster}
-                      setRoster={setRoster}
                       warbandNumFocus={warbandNumFocus}
                     />
                   )}

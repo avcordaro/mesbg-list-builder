@@ -1,8 +1,20 @@
+import { FunctionComponent } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import { TbRefresh } from "react-icons/tb";
+import { useStore } from "../state/store";
 
-export function GameModeAlert({ gameModeAlert, setGameModeAlert, setRoster }) {
+type GameModeAlertProps = {
+  gameModeAlert: boolean;
+  setGameModeAlert: (showAlert: boolean) => void;
+};
+
+export const GameModeAlert: FunctionComponent<GameModeAlertProps> = ({
+  gameModeAlert,
+  setGameModeAlert,
+}) => {
+  const setRoster = useStore((store) => store.setRoster);
+
   const handleResetList = () => {
     setRoster({
       version: BUILD_VERSION,
@@ -43,4 +55,4 @@ export function GameModeAlert({ gameModeAlert, setGameModeAlert, setRoster }) {
       </div>
     </Alert>
   );
-}
+};

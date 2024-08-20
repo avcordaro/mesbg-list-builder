@@ -11,11 +11,11 @@ import { useState } from "react";
 import { Navbar } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
+import { useStore } from "../state/store";
 
 /* Navbar component that displays at the top of the page. */
 
 export function TopNavbar({
-  roster,
   uniqueModels,
   setShowRosterTable,
   setExportAlert,
@@ -25,6 +25,8 @@ export function TopNavbar({
   setGameModeAlert,
   setShowBuilderModal,
 }) {
+  const roster = useStore((store) => store.roster);
+
   const [showNews, setShowNews] = useState(false);
 
   const handleExportJSON = () => {

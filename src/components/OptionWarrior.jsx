@@ -3,18 +3,19 @@ import Form from "react-bootstrap/Form";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import Button from "react-bootstrap/Button";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useStore } from "../state/store";
 
 /* Option Warrior is the component used to display an individual gear options that each 
 warrior has available. */
 
 export function OptionWarrior({
-  roster,
-  setRoster,
   warbandNum,
   unit,
   option,
   specialArmyOptions,
 }) {
+  const { roster, setRoster } = useStore();
+
   const MWF_MAP = { Might: 0, Will: 1, Fate: 2 };
 
   const handleToggle = () => {

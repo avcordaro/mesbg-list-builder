@@ -2,6 +2,7 @@ import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
+import { useStore } from "../state/store";
 
 /* Option Hero is the component used to display an individual gear options that each hero 
 has available.
@@ -10,7 +11,9 @@ The core difference between Option Hero and Option Warrior components is
 that some hero options can be more than just a simple toggle (e.g. amount of Will points 
 you'd like for the Witch King). */
 
-export function OptionHero({ roster, setRoster, warbandNum, unit, option }) {
+export function OptionHero({ warbandNum, unit, option }) {
+  const { roster, setRoster } = useStore();
+
   const MWF_MAP = { Might: 0, Will: 1, Fate: 2 };
 
   const handleToggle = () => {

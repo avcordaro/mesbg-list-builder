@@ -6,12 +6,12 @@ import { FaChessRook, FaSearch } from "react-icons/fa";
 import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
+import { useStore } from "../state/store";
 
 export function GameModeInfo({
   factionList,
   allianceLevel,
   allianceColours,
-  roster,
   casualtyCount,
   heroCasualtyCount,
   setShowChartModal,
@@ -20,6 +20,8 @@ export function GameModeInfo({
   hasArmyBonus,
   setShowKeywordSearch,
 }) {
+  const roster = useStore((store) => store.roster);
+
   return (
     <div
       id="optionMenu"

@@ -15,6 +15,7 @@ import { GiQueenCrown } from "react-icons/gi";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
+import { useStore } from "../state/store";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears
 after the user clicks the 'Roster Table' button. This component uses the full roster
@@ -23,13 +24,14 @@ state variable (passed to it as an argument) to populate a table of the army. */
 export function ModalRosterTable({
   allianceLevel,
   allianceColour,
-  roster,
   showRosterTable,
   setShowRosterTable,
   factionList,
   factionData,
   hasArmyBonus,
 }) {
+  const roster = useStore((store) => store.roster);
+
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
   const [copyLabel, setCopyLabel] = useState("Copy");

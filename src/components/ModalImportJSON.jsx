@@ -3,14 +3,13 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { BiSolidFileImport } from "react-icons/bi";
+import { useStore } from "../state/store";
 
 /* Displays a modal for the user to enter their JSON army list into a textbox. */
 
-export function ModalImportJSON({
-  showImportModal,
-  setShowImportModal,
-  setRoster,
-}) {
+export function ModalImportJSON({ showImportModal, setShowImportModal }) {
+  const setRoster = useStore((store) => store.setRoster);
+
   const [JSONImport, setJSONImport] = useState("");
   const [importAlert, setImportAlert] = useState(false);
 
