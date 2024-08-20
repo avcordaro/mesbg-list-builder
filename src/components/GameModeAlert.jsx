@@ -1,12 +1,11 @@
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import { VERSION } from "./TopNavbar";
 import { TbRefresh } from "react-icons/tb";
 
 export function GameModeAlert({ gameModeAlert, setGameModeAlert, setRoster }) {
   const handleResetList = () => {
     setRoster({
-      version: VERSION,
+      version: BUILD_VERSION,
       num_units: 0,
       points: 0,
       bow_count: 0,
