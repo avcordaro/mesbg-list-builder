@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { GameMode } from "./components/GameMode";
+import { GameMode } from "./components/gamemode/GameMode";
 import {
   checkAlliedHeroes,
   checkDunharrow,
@@ -22,13 +22,6 @@ import { ModalContainer } from "./components/modal/ModalContainer";
 import { Alerts } from "./components/alerts/Alerts";
 
 export default function App() {
-  const allianceColours = {
-    Historical: "success",
-    Convenient: "warning",
-    Impossible: "danger",
-    "Legendary Legion": "info",
-    "n/a": "secondary",
-  };
   const [factionSelection, setFactionSelection] = useState({
     "Good Army": "Minas Tirith",
     "Evil Army": "Mordor",
@@ -335,7 +328,6 @@ export default function App() {
               factionList={factionList}
               factionBowCounts={factionBowCounts}
               factionModelCounts={factionModelCounts}
-              allianceColours={allianceColours}
               setShowAlliances={setShowAlliances}
               factionData={factionData}
               hasArmyBonus={hasArmyBonus}
@@ -358,7 +350,6 @@ export default function App() {
           <GameMode
             factionList={factionList}
             allianceLevel={allianceLevel}
-            allianceColours={allianceColours}
             factionData={factionData}
             hasArmyBonus={hasArmyBonus}
             setShowKeywordSearch={setShowKeywordSearch}
@@ -367,7 +358,6 @@ export default function App() {
       </div>
       <ModalRosterTable
         allianceLevel={allianceLevel}
-        allianceColour={allianceColours[allianceLevel]}
         showRosterTable={showRosterTable}
         setShowRosterTable={setShowRosterTable}
         factionList={factionList}

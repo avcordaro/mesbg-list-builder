@@ -19,6 +19,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
 import { FactionLogo } from "./FactionLogo.tsx";
 import { useStore } from "../state/store";
+import { allianceColours } from "./constants/alliances";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
@@ -43,7 +44,6 @@ export function SelectionMenu({
   factionList,
   factionBowCounts,
   factionModelCounts,
-  allianceColours,
   setShowAlliances,
   factionData,
   hasArmyBonus,

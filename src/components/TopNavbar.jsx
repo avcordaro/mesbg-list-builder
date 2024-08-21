@@ -20,14 +20,14 @@ export function TopNavbar({
   setShowRosterTable,
   setGameModeAlert,
 }) {
-  const { roster, gameMode, setGameMode, setCurrentModal, triggerAlert } =
+  const { roster, gameMode, setCurrentModal, triggerAlert, startNewGame } =
     useStore();
 
   const [showNews, setShowNews] = useState(false);
 
   const handleExportJSON = () => {
     /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard.
-        Also notify them with an alert that fades away after 3 seconds. */
+            Also notify them with an alert that fades away after 3 seconds. */
     navigator.clipboard.writeText(
       JSON.stringify(roster).replaceAll('["",', "[0,"),
     );
@@ -41,7 +41,7 @@ export function TopNavbar({
       setGameModeAlert(true);
       window.setTimeout(() => setGameModeAlert(false), 12000);
     } else {
-      setGameMode(true);
+      startNewGame();
       window.scrollTo(0, 0);
     }
   };

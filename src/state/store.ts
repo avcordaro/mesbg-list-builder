@@ -1,14 +1,20 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { GameModeState } from "../components/gamemode/types.ts";
 import { MODAL_KEYS } from "../components/modal/modals.tsx";
 import { Roster } from "../types/roster.ts";
+import { getHeroesForGameMode } from "./gamemode.ts";
 
 type ListBuilderStore = {
   roster: Roster;
   setRoster: (roster: Roster) => void;
+
   gameMode: boolean;
   setGameMode: (gameMode: boolean) => void;
+  gameState?: GameModeState;
+  startNewGame: () => void;
+  updateGameState: (update: Partial<GameModeState>) => void;
 
   currentlyOpenendModal: MODAL_KEYS | null;
   modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -20,7 +26,7 @@ type ListBuilderStore = {
   dismissAlert: () => void;
 };
 
-const initialState: Partial<ListBuilderStore> = {
+const initialState = {
   roster: {
     version: BUILD_VERSION,
     num_units: 0,
@@ -29,25 +35,42 @@ const initialState: Partial<ListBuilderStore> = {
     warbands: [],
   },
   gameMode: false,
+  gameState: undefined,
   currentlyOpenendModal: null,
   activeAlert: null,
 };
 
 type StoreKey = keyof ListBuilderStore;
-const keysToPersist: StoreKey[] = ["roster", "gameMode"];
+const keysToPersist: StoreKey[] = ["roster", "gameMode", "gameState"];
 
 export const useStore = create<
   ListBuilderStore,
   [["zustand/persist", unknown]]
 >(
   persist(
-    (set) => ({
+    (set, get) => ({
       ...initialState,
       setRoster: (roster) =>
         set({
           roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
         }),
       setGameMode: (gameMode) => set({ gameMode }),
+      startNewGame: () =>
+        set({
+          gameMode: true,
+          gameState: {
+            heroes: getHeroesForGameMode(get().roster),
+            casualties: 0,
+            heroCasualties: 0,
+          },
+        }),
+      updateGameState: (gameStateUpdate) =>
+        set({
+          gameState: {
+            ...get().gameState,
+            ...gameStateUpdate,
+          },
+        }),
 
       setCurrentModal: (modal, context) =>
         set({ currentlyOpenendModal: modal, modelContext: context }),

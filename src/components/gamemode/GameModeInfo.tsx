@@ -1,25 +1,38 @@
-import { FcCheckmark } from "react-icons/fc";
-import { RxCross1 } from "react-icons/rx";
+import { FunctionComponent } from "react";
 import Badge from "react-bootstrap/Badge";
-import Stack from "react-bootstrap/Stack";
-import { FaChessRook, FaSearch } from "react-icons/fa";
-import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
-import { useStore } from "../state/store";
-import { MODAL_KEYS } from "./modal/modals";
+import Stack from "react-bootstrap/Stack";
+import { FaChessRook, FaSearch } from "react-icons/fa";
+import { FcCheckmark } from "react-icons/fc";
+import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
+import { useStore } from "../../state/store";
+import { FactionData } from "../../types/faction-data.ts";
+import { Faction } from "../../types/factions.ts";
+import { allianceColours } from "../constants/alliances";
+import { MODAL_KEYS } from "../modal/modals";
 
-export function GameModeInfo({
+export type GameModeInfoProps = {
+  factionList: Faction[];
+  allianceLevel: keyof typeof allianceColours;
+  factionData: Record<Faction, FactionData>;
+  hasArmyBonus: boolean;
+  setShowKeywordSearch: (boolean) => void;
+};
+
+export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
   factionList,
   allianceLevel,
-  allianceColours,
-  casualtyCount,
-  heroCasualtyCount,
   factionData,
   hasArmyBonus,
   setShowKeywordSearch,
-}) {
-  const { roster, setCurrentModal } = useStore();
+}) => {
+  const {
+    roster,
+    setCurrentModal,
+    gameState: { casualties = 0, heroCasualties = 0 },
+  } = useStore();
   const openChart = (selectedChart) => () =>
     setCurrentModal(MODAL_KEYS.CHART, { selectedChart });
   return (
@@ -41,8 +54,7 @@ export function GameModeInfo({
       </Stack>
       {((factionList.includes("Isengard") && allianceLevel === "Historical") ||
         factionList.includes("Assault Upon Helm's Deep")) &&
-        Math.ceil(0.66 * roster.num_units) -
-          (casualtyCount + heroCasualtyCount) <=
+        Math.ceil(0.66 * roster.num_units) - (casualties + heroCasualties) <=
           0 && (
           <h6 className="mt-4 mb-2 text-danger">
             (Isengard Army Bonus) You are at least 66% defeated{" "}
@@ -51,15 +63,14 @@ export function GameModeInfo({
         )}
       {((factionList.includes("Isengard") && allianceLevel === "Historical") ||
         factionList.includes("Assault Upon Helm's Deep")) &&
-        Math.ceil(0.66 * roster.num_units) -
-          (casualtyCount + heroCasualtyCount) >
+        Math.ceil(0.66 * roster.num_units) - (casualties + heroCasualties) >
           0 && (
           <h6 className="mt-4 mb-2">
             Until 66% (Isengard Army Bonus):{" "}
             <b>
               {Math.max(
                 Math.ceil(0.66 * roster.num_units) -
-                  (casualtyCount + heroCasualtyCount),
+                  (casualties + heroCasualties),
                 0,
               )}
             </b>
@@ -132,18 +143,18 @@ export function GameModeInfo({
       </h6>
       <hr />
       {factionList.map((f) => (
-        <div>
+        <div key={f}>
           <h5 className="mt-4">
             <Badge bg={hasArmyBonus ? "dark" : "secondary"}>{f}</Badge>
           </h5>
           <div
             className={hasArmyBonus ? "text-body" : "text-secondary"}
             dangerouslySetInnerHTML={{
-              __html: factionData[f]["armyBonus"],
+              __html: factionData[f].armyBonus,
             }}
           />
         </div>
       ))}
     </div>
   );
-}
+};

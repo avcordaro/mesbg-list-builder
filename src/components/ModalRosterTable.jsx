@@ -16,6 +16,7 @@ import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
 import { useStore } from "../state/store";
+import { allianceColours } from "./constants/alliances";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears
 after the user clicks the 'Roster Table' button. This component uses the full roster
@@ -23,7 +24,6 @@ state variable (passed to it as an argument) to populate a table of the army. */
 
 export function ModalRosterTable({
   allianceLevel,
-  allianceColour,
   showRosterTable,
   setShowRosterTable,
   factionList,
@@ -236,7 +236,10 @@ export function ModalRosterTable({
               <Stack direction="horizontal" gap={3} className="mb-3">
                 <h6>
                   Alliance level:{" "}
-                  <Badge style={{ fontSize: "14px" }} bg={allianceColour}>
+                  <Badge
+                    style={{ fontSize: "14px" }}
+                    bg={allianceColours[allianceLevel]}
+                  >
                     {allianceLevel}
                   </Badge>
                 </h6>
