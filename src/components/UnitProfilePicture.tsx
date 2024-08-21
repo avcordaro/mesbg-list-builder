@@ -1,6 +1,5 @@
 import { CSSProperties, FunctionComponent } from "react";
-
-const DEFAULT_IMAGE = "./assets/images/default.png";
+import { ImageWithFallback } from "./ImageWithFallback.tsx";
 
 type UnitProfilePictureProps = {
   army: string;
@@ -15,17 +14,15 @@ export const UnitProfilePicture: FunctionComponent<UnitProfilePictureProps> = ({
   style,
   className,
 }) => {
-  const imagePath =
-    "./assets/images/profiles/" + army + "/pictures/" + profile + ".png";
   return (
-    <object
-      data={imagePath}
-      type="image/png"
+    <ImageWithFallback
+      source={
+        "./assets/images/profiles/" + army + "/pictures/" + profile + ".png"
+      }
+      fallbackImageSource="./assets/images/default.png"
       style={style}
       className={className}
-    >
-      <img src={DEFAULT_IMAGE} className={className} style={style} alt="" />
-    </object>
+    />
   );
 };
 
@@ -35,16 +32,12 @@ export const UnitProfileCard: FunctionComponent<UnitProfilePictureProps> = ({
   style,
   className,
 }) => {
-  const imagePath =
-    "./assets/images/profiles/" + army + "/cards/" + profile + ".jpg";
   return (
-    <object
-      className={className}
-      data={imagePath}
-      type="image/png"
+    <ImageWithFallback
+      source={"./assets/images/profiles/" + army + "/cards/" + profile + ".jpg"}
+      fallbackImageSource="./assets/images/default.png"
       style={style}
-    >
-      <img src={DEFAULT_IMAGE} className={className} style={style} alt="" />
-    </object>
+      className={className}
+    />
   );
 };
