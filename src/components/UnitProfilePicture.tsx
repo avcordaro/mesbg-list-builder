@@ -35,7 +35,7 @@ export const UnitProfileCard: FunctionComponent<UnitProfilePictureProps> = ({
   return (
     <ImageWithFallback
       source={"./assets/images/profiles/" + army + "/cards/" + profile + ".jpg"}
-      fallbackImageSource="./assets/images/default.png"
+      fallbackImageSource="./assets/images/default_card.jpg"
       style={style}
       className={className}
     />
