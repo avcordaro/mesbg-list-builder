@@ -22,6 +22,7 @@ export const UnitProfilePicture: FunctionComponent<UnitProfilePictureProps> = ({
       fallbackImageSource="./assets/images/default.png"
       style={style}
       className={className}
+      alt={`Profile picture for ${profile}`}
     />
   );
 };
@@ -38,6 +39,7 @@ export const UnitProfileCard: FunctionComponent<UnitProfilePictureProps> = ({
       fallbackImageSource="./assets/images/default_card.jpg"
       style={style}
       className={className}
+      alt={`Profile card for ${profile}`}
     />
   );
 };
