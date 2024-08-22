@@ -1,23 +1,22 @@
 import { useEffect, useState } from "react";
 import faction_data from "./assets/data/faction_data.json";
 import warning_rules from "./assets/data/warning_rules.json";
-import { KeywordsSearch } from "./components/KeywordsSearch";
-import { ModalRosterTable } from "./components/ModalRosterTable";
-import { SelectionMenu } from "./components/SelectionMenu.jsx";
-import { TopNavbar } from "./components/TopNavbar";
-import { Warbands } from "./components/Warbands";
+import { SelectionMenu } from "./components/builder-mode/SelectionMenu.jsx";
+import { Warbands } from "./components/builder-mode/Warbands.jsx";
+import { TopNavbar } from "./components/layout/TopNavbar.jsx";
 // import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Alerts } from "./components/alerts/Alerts";
 import { GameMode } from "./components/gamemode/GameMode";
 import { ModalContainer } from "./components/modal/ModalContainer";
+import { ModalRosterTable } from "./components/modal/modals/ModalRosterTable.jsx";
 import { SidebarContainer } from "./components/sidebar-drawer/SidebarContainer";
+import { useStore } from "./state/store";
 import {
   checkAlliedHeroes,
   checkSiegeEngineCounts,
-} from "./components/specialRules.js";
-import { useStore } from "./state/store";
+} from "./utils/specialRules.js";
 
 export default function App() {
   const [factionSelection, setFactionSelection] = useState({
@@ -53,8 +52,6 @@ export default function App() {
 
   // Modals
   const [showRosterTable, setShowRosterTable] = useState(false);
-  // Sidebar
-  const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
   // $(window).scroll(function () {
   //     // stops the left-hand options menu from scrolling horizontally
@@ -239,7 +236,6 @@ export default function App() {
               factionBowCounts={factionBowCounts}
               factionModelCounts={factionModelCounts}
               factionData={factionData}
-              setShowKeywordSearch={setShowKeywordSearch}
             />
             <Warbands
               setHeroSelection={setHeroSelection}
@@ -254,21 +250,13 @@ export default function App() {
             />
           </>
         ) : (
-          <GameMode
-            factionData={factionData}
-            setShowKeywordSearch={setShowKeywordSearch}
-          />
+          <GameMode factionData={factionData} />
         )}
       </div>
       <ModalRosterTable
         showRosterTable={showRosterTable}
         setShowRosterTable={setShowRosterTable}
         factionData={factionData}
-      />
-
-      <KeywordsSearch
-        showKeywordSearch={showKeywordSearch}
-        setShowKeywordSearch={setShowKeywordSearch}
       />
     </div>
   );

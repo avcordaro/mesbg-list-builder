@@ -12,10 +12,10 @@ import { FactionData } from "../../types/faction-data.ts";
 import { Faction, Factions } from "../../types/factions.ts";
 import { allianceColours } from "../constants/alliances";
 import { ModalTypes } from "../modal/modals";
+import { SidebarTypes } from "../sidebar-drawer/sidebars.tsx";
 
 export type GameModeInfoProps = {
   factionData: Record<Faction, FactionData>;
-  setShowKeywordSearch: (boolean: boolean) => void;
 };
 
 const charts: Record<string, string> = {
@@ -36,7 +36,6 @@ const charts: Record<string, string> = {
 
 export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
   factionData,
-  setShowKeywordSearch,
 }) => {
   const {
     roster,
@@ -45,6 +44,7 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
     factions: factionList,
     allianceLevel,
     armyBonusActive: hasArmyBonus,
+    openSidebar,
   } = useStore();
   const openChart = (selectedChart: keyof typeof charts) => () =>
     setCurrentModal(ModalTypes.CHART, { selectedChart });
@@ -60,7 +60,7 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
         <Button
           variant="light"
           className="ms-auto border shadow-sm"
-          onClick={() => setShowKeywordSearch(true)}
+          onClick={() => openSidebar(SidebarTypes.KEYWORD_SEARCH)}
         >
           <FaSearch /> Search Keywords
         </Button>

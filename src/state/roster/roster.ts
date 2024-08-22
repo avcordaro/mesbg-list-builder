@@ -1,6 +1,6 @@
 import { Roster } from "../../types/roster.ts";
 import { ListBuilderStore } from "../store.ts";
-import { calculateAllianceLevel, checkForSpecialCases } from "./alliance.ts";
+import { calculateAllianceLevel, checkForSpecialCases } from "./alliance";
 import { getFactionList, getFactionType } from "./faction.ts";
 import { calculateModelCount, getUniqueModels } from "./models.ts";
 

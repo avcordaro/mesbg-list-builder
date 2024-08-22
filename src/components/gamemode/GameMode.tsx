@@ -11,17 +11,13 @@ import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode: FunctionComponent<GameModeInfoProps> = ({
   factionData,
-  setShowKeywordSearch,
 }) => {
   const { startNewGame, setCurrentModal } = useStore();
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
   return (
     <div>
-      <GameModeInfo
-        factionData={factionData}
-        setShowKeywordSearch={setShowKeywordSearch}
-      />
+      <GameModeInfo factionData={factionData} />
       <div style={{ marginLeft: "535px", minWidth: "720px" }}>
         <Stack direction="horizontal" style={{ minWidth: "800px" }}>
           <Button className="m-2" onClick={openResetGameModal}>

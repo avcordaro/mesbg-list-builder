@@ -1,12 +1,12 @@
-import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
 import { ImCross } from "react-icons/im";
-import { useStore } from "../state/store";
+import { useStore } from "../../../state/store";
 
 /* Default Warrior Unit components appear inside Warbands after 'Add Unit' is selected, 
 before the user selects the warrior they would like. */
 
-export function DefaultWarriorUnit({
+export function ChooseWarriorButton({
   setNewWarriorFocus,
   unitData,
   setHeroSelection,
@@ -52,7 +52,7 @@ export function DefaultWarriorUnit({
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>
-        <img className="profile" src={"assets/images/default.png"} alt="" />
+        <img className="profile" src="assets/images/default.png" alt="" />
         <p>
           <b>Choose a Warrior</b>
         </p>
@@ -60,7 +60,7 @@ export function DefaultWarriorUnit({
           onClick={handleDelete}
           className="ms-auto mt-auto"
           style={{ marginRight: "10px", marginBottom: "5px" }}
-          variant={"warning"}
+          variant="warning"
         >
           <ImCross />
         </Button>

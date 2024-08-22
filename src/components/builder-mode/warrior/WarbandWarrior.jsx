@@ -8,10 +8,10 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { HiDuplicate } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 import { v4 as uuid } from "uuid";
-import { useStore } from "../state/store";
-import { OptionWarrior } from "./OptionWarrior";
-import { UnitProfilePicture } from "./images/UnitProfilePicture.tsx";
-import { ModalTypes } from "./modal/modals";
+import { useStore } from "../../../state/store";
+import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
+import { ModalTypes } from "../../modal/modals";
+import { OptionWarrior } from "./OptionWarrior.jsx";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 

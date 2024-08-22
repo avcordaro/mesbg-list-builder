@@ -32,7 +32,7 @@ export const FactionAllies = ({ faction }: { faction: Faction }) => {
 
   const primaryAllies: Faction[] = factionData[faction]["primaryAllies"]
     // Filter other Wanders if this faction is a wanderer...
-    .filter((ally) => isWanderer && !wanderers.includes(ally as Faction));
+    .filter((ally) => !isWanderer || !wanderers.includes(ally as Faction));
   const secondaryAllies: Faction[] = factionData[faction]["secondaryAllies"];
 
   return (

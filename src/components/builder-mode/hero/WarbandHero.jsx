@@ -7,16 +7,16 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import { GiQueenCrown } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useStore } from "../state/store";
-import { OptionHero } from "./OptionHero";
-import { UnitProfilePicture } from "./images/UnitProfilePicture.tsx";
-import { ModalTypes } from "./modal/modals";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { useStore } from "../../../state/store";
 import {
   handleRivendellElrond,
   handleSpecialArmyOption,
   handleSpecialWarbandOption,
-} from "./specialRules.js";
+} from "../../../utils/specialRules.js";
+import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
+import { ModalTypes } from "../../modal/modals";
+import { OptionHero } from "./OptionHero.jsx";
 
 /* Warband Hero components display the hero in each warband. */
 

@@ -5,12 +5,12 @@ import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { FaChessRook, FaRegCopyright } from "react-icons/fa";
 import { FaHammer, FaQuestion, FaTableList } from "react-icons/fa6";
 import { MdReportGmailerrorred } from "react-icons/md";
-import logo from "../assets/images/logo.svg";
-import title from "../assets/images/title.png";
-import { useStore } from "../state/store";
-import { AlertTypes } from "./alerts/alert-types";
-import { ModalTypes } from "./modal/modals";
-import { SidebarTypes } from "./sidebar-drawer/sidebars";
+import logo from "../../assets/images/logo.svg";
+import title from "../../assets/images/title.png";
+import { useStore } from "../../state/store";
+import { AlertTypes } from "../alerts/alert-types";
+import { ModalTypes } from "../modal/modals";
+import { SidebarTypes } from "../sidebar-drawer/sidebars";
 
 /* Navbar component that displays at the top of the page. */
 

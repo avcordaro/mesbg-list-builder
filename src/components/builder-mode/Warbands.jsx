@@ -6,16 +6,16 @@ import { FaPlus } from "react-icons/fa";
 import { HiDuplicate } from "react-icons/hi";
 import { MdDelete } from "react-icons/md";
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useStore } from "../state/store";
-import { DefaultHeroUnit } from "./DefaultHeroUnit";
-import { DefaultWarriorUnit } from "./DefaultWarriorUnit";
-import { WarbandHero } from "./WarbandHero";
-import { WarbandWarrior } from "./WarbandWarrior";
+import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
+import { useStore } from "../../state/store";
 import {
   handleSpecialArmyOption,
   handleSpecialWarbandOption,
-} from "./specialRules.js";
+} from "../../utils/specialRules.js";
+import { ChooseHeroButton } from "./hero/ChooseHeroButton.jsx";
+import { WarbandHero } from "./hero/WarbandHero.jsx";
+import { ChooseWarriorButton } from "./warrior/ChooseWarriorButton.jsx";
+import { WarbandWarrior } from "./warrior/WarbandWarrior.jsx";
 
 /* Displays the list of all warbands, and also defines how each warband card looks. */
 
@@ -257,7 +257,7 @@ export function Warbands({
             </Button>
           </Stack>
           {warband.hero == null ? (
-            <DefaultHeroUnit
+            <ChooseHeroButton
               key={uuid()}
               setHeroSelection={setHeroSelection}
               setDisplaySelection={setDisplaySelection}
@@ -276,7 +276,7 @@ export function Warbands({
           {warband.units.length > 0 &&
             warband.units.map((unit) =>
               unit.name == null ? (
-                <DefaultWarriorUnit
+                <ChooseWarriorButton
                   key={uuid()}
                   setNewWarriorFocus={setNewWarriorFocus}
                   unitData={unit}

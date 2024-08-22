@@ -1,8 +1,8 @@
-import Stack from "react-bootstrap/Stack";
-import Form from "react-bootstrap/Form";
-import { FaMinus, FaPlus } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
-import { useStore } from "../state/store";
+import Form from "react-bootstrap/Form";
+import Stack from "react-bootstrap/Stack";
+import { FaMinus, FaPlus } from "react-icons/fa";
+import { useStore } from "../../../state/store";
 
 /* Option Hero is the component used to display an individual gear options that each hero 
 has available.

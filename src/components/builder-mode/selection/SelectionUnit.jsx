@@ -3,11 +3,11 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useStore } from "../state/store";
-import { UnitProfilePicture } from "./images/UnitProfilePicture";
-import { ModalTypes } from "./modal/modals";
-import { handleRivendellElrond } from "./specialRules";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { useStore } from "../../../state/store";
+import { handleRivendellElrond } from "../../../utils/specialRules.js";
+import { UnitProfilePicture } from "../../images/UnitProfilePicture";
+import { ModalTypes } from "../../modal/modals";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */

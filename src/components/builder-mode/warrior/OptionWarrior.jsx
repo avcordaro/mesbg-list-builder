@@ -1,9 +1,9 @@
-import Stack from "react-bootstrap/Stack";
-import Form from "react-bootstrap/Form";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Stack from "react-bootstrap/Stack";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { useStore } from "../state/store";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { useStore } from "../../../state/store";
 
 /* Option Warrior is the component used to display an individual gear options that each 
 warrior has available. */

@@ -14,9 +14,9 @@ import { FcCheckmark } from "react-icons/fc";
 import { GiQueenCrown } from "react-icons/gi";
 import { GoCopy } from "react-icons/go";
 import { RxCross1 } from "react-icons/rx";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useStore } from "../state/store";
-import { allianceColours } from "./constants/alliances";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { useStore } from "../../../state/store";
+import { allianceColours } from "../../constants/alliances";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears
 after the user clicks the 'Roster Table' button. This component uses the full roster

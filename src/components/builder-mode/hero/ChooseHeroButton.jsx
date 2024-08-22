@@ -1,10 +1,10 @@
-import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
 
 /* Default Hero Unit components appear inside Warbands as the first unit card, 
 before the user selects the hero they would like to lead that warband. */
 
-export function DefaultHeroUnit({
+export function ChooseHeroButton({
   setHeroSelection,
   setDisplaySelection,
   warbandNum,
@@ -26,7 +26,7 @@ export function DefaultHeroUnit({
       onClick={handleClick}
     >
       <Stack direction="horizontal" gap={3}>
-        <img className="profile" src={"assets/images/default.png"} alt="" />
+        <img className="profile" src="assets/images/default.png" alt="" />
         <p>
           <b>Choose a Hero</b>
         </p>

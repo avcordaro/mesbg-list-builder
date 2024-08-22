@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Alliances } from "./sidebars/Alliances.tsx";
+import { KeywordsSearch } from "./sidebars/KeywordsSearch.tsx";
 import { NewEditionNews } from "./sidebars/NewEditionNews.tsx";
 
 export enum SidebarTypes {
@@ -26,6 +27,13 @@ export const sidebars = new Map<SidebarTypes, SidebarProps>([
     {
       title: "Alliances",
       children: <Alliances />,
+    },
+  ],
+  [
+    SidebarTypes.KEYWORD_SEARCH,
+    {
+      title: "Keyword search",
+      children: <KeywordsSearch />,
     },
   ],
 ]);
