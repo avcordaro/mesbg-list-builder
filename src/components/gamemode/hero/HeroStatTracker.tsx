@@ -14,13 +14,11 @@ const valueIndexMap: Record<TrackedStat, number> = {
   Wounds: 3,
 };
 
-const bothAzogAndWargDead = ([azog, warg]: GameModeHero[]): boolean => {
+const woundsLeftForModel = ([azog, warg]: GameModeHero[]): number => {
   const azogWounds = Number(azog.xMWFW.split(":")[3]);
   const wargWounds = Number(warg.xMWFW.split(":")[3]);
 
-  const totalModelWounds = azogWounds + wargWounds;
-
-  return totalModelWounds === 0;
+  return azogWounds + wargWounds;
 };
 
 type GameModeMWFCounterProps = {
@@ -55,13 +53,15 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
     }
 
     if (hero.name === "Azog" || hero.name === "The White Warg") {
-      if (!bothAzogAndWargDead(gameState.heroes[hero_id])) {
-        // If either Azog or The White Warg dies, but not both - nothing needs to be adjusted.
+      const woundsLeftOnModel = woundsLeftForModel(gameState.heroes[hero_id]);
+      const notFullyDead = woundsLeftOnModel > 0 && direction === -1;
+      const notJustRevived = woundsLeftOnModel !== 1 && direction === 1;
+      if (notFullyDead || notJustRevived) {
         return 0;
       }
     }
 
-    return gameState.heroCasualties - direction;
+    return -direction;
   };
 
   const updateStat = (direction: -1 | 1) => {
@@ -71,7 +71,7 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
     hero.xMWFW = currentValues.join(":");
     gameState.heroes[hero_id][hero_idx] = hero;
     if (name === "Wounds") {
-      gameState.heroCasualties = handleDeathMechanics(newValue, direction);
+      gameState.heroCasualties += handleDeathMechanics(newValue, direction);
     }
     updateGameState(gameState);
   };
