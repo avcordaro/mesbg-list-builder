@@ -1,25 +1,38 @@
-import Button from "react-bootstrap/Button";
-import { ImCross } from "react-icons/im";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
-import Stack from "react-bootstrap/Stack";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
-import mesbg_data from "../assets/data/mesbg_data.json";
-import { SelectionUnit } from "./SelectionUnit";
-import { SelectionSiege } from "./SelectionSiege";
-import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { IoWarningOutline } from "react-icons/io5";
 import Badge from "react-bootstrap/Badge";
-import { LuSwords } from "react-icons/lu";
-import { FcCheckmark } from "react-icons/fc";
-import { RxCross1 } from "react-icons/rx";
+import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Stack from "react-bootstrap/Stack";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import { FaSearch } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa6";
-import { FactionLogo } from "./FactionLogo.tsx";
+import { FcCheckmark } from "react-icons/fc";
+import { ImCross } from "react-icons/im";
+import { IoWarningOutline } from "react-icons/io5";
+import { LuSwords } from "react-icons/lu";
+import { RxCross1 } from "react-icons/rx";
+import { v4 as uuid } from "uuid";
+import hero_constraint_data from "../assets/data/hero_constraint_data.json";
+import mesbg_data from "../assets/data/mesbg_data.json";
 import { useStore } from "../state/store";
+import { FactionLogo } from "./FactionLogo.tsx";
+import { SelectionSiege } from "./SelectionSiege";
+import { SelectionUnit } from "./SelectionUnit";
 import { allianceColours } from "./constants/alliances";
+
+const wanderers = [
+  "Tom Bombadil",
+  "Goldberry",
+  "Barliman Butterbur",
+  "Bill the Pony",
+  "Grimbeorn",
+  "Beorning",
+  "Harry Goatleaf",
+  "Murin & Drar",
+  "Thrain the Broken (Good)",
+  "Thrain the Broken (Evil)",
+];
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
@@ -29,27 +42,28 @@ export function SelectionMenu({
   setDisplaySelection,
   tabSelection,
   setTabSelection,
-  factionType,
   factionSelection,
   setFactionSelection,
   heroSelection,
   newWarriorFocus,
   warbandNumFocus,
-  setCardUnitData,
-  allianceLevel,
-  uniqueModels,
   specialArmyOptions,
   setSpecialArmyOptions,
   warnings,
-  factionList,
   factionBowCounts,
   factionModelCounts,
   setShowAlliances,
   factionData,
-  hasArmyBonus,
   setShowKeywordSearch,
 }) {
-  const { roster, setCurrentModal } = useStore();
+  const {
+    roster,
+    uniqueModels,
+    allianceLevel,
+    factions: factionList,
+    factionType,
+    armyBonusActive: hasArmyBonus,
+  } = useStore();
 
   const faction_lists = {
     "Good Army": new Set(
@@ -97,95 +111,100 @@ export function SelectionMenu({
             <ImCross />
           </Button>
           <Tabs activeKey={tabSelection} fill onSelect={setTabSelection}>
-            {Object.keys(faction_lists).map((f_type) => (
-              <Tab
-                eventKey={f_type}
-                title={f_type}
-                disabled={
-                  !heroSelection ||
-                  (factionType !== "" && factionType !== f_type)
-                }
-              >
-                <Stack gap={2}>
-                  <DropdownButton
-                    className="dropDownButton mt-3"
-                    title={factionSelection[f_type] + " "}
-                    onSelect={(e) => handleFaction(f_type, e)}
-                    disabled={!heroSelection || factionType.includes("LL")}
-                  >
-                    {[...faction_lists[f_type]].sort().map((f) => (
-                      <Dropdown.Item style={{ width: "458px" }} eventKey={f}>
-                        <FactionLogo faction={f} className="faction_logo" />
-                        {" " + f}
-                      </Dropdown.Item>
-                    ))}
-                  </DropdownButton>
-                  {heroSelection
-                    ? mesbg_data
-                        .filter(
-                          (data) =>
-                            data.faction === factionSelection[f_type] &&
-                            !["Independent Hero*", "Warrior"].includes(
-                              data.unit_type,
-                            ) &&
-                            !(
-                              data.unique &&
-                              uniqueModels.includes(data.model_id)
-                            ),
-                        )
-                        .map((row) => (
-                          <SelectionUnit
-                            key={uuid()}
-                            newWarriorFocus={newWarriorFocus}
-                            setDisplaySelection={setDisplaySelection}
-                            heroSelection={heroSelection}
-                            unitData={row}
-                            uniqueModels={uniqueModels}
-                            warbandNumFocus={warbandNumFocus}
-                            setCardUnitData={setCardUnitData}
-                            allianceLevel={allianceLevel}
-                            specialArmyOptions={specialArmyOptions}
-                            setSpecialArmyOptions={setSpecialArmyOptions}
-                          />
-                        ))
-                    : mesbg_data
-                        .filter(
-                          (data) =>
-                            roster.warbands[warbandNumFocus].hero &&
-                            hero_constraint_data[
-                              roster.warbands[warbandNumFocus].hero.model_id
-                            ][0]["valid_warband_units"].includes(
-                              data.model_id,
-                            ) &&
-                            !(
-                              data.unique &&
-                              uniqueModels.includes(data.model_id)
-                            ),
-                        )
-                        .map((row) => (
-                          <SelectionUnit
-                            key={uuid()}
-                            newWarriorFocus={newWarriorFocus}
-                            setDisplaySelection={setDisplaySelection}
-                            heroSelection={heroSelection}
-                            unitData={row}
-                            uniqueModels={uniqueModels}
-                            warbandNumFocus={warbandNumFocus}
-                            setCardUnitData={setCardUnitData}
-                            allianceLevel={allianceLevel}
-                          />
-                        ))}
-                  {!heroSelection && (
-                    <SelectionSiege
-                      key={uuid()}
-                      newWarriorFocus={newWarriorFocus}
-                      setDisplaySelection={setDisplaySelection}
-                      warbandNumFocus={warbandNumFocus}
-                    />
-                  )}
-                </Stack>
-              </Tab>
-            ))}
+            {Object.keys(faction_lists).map((f_type) => {
+              return (
+                <Tab
+                  key={f_type}
+                  eventKey={f_type}
+                  title={f_type}
+                  disabled={
+                    !heroSelection ||
+                    (factionType !== "" && factionType !== f_type)
+                  }
+                >
+                  <Stack gap={2}>
+                    <DropdownButton
+                      className="dropDownButton mt-3"
+                      title={factionSelection[f_type] + " "}
+                      onSelect={(e) => handleFaction(f_type, e)}
+                      disabled={!heroSelection || factionType.includes("LL")}
+                    >
+                      {[...faction_lists[f_type]].sort().map((f) => (
+                        <Dropdown.Item
+                          style={{ width: "458px" }}
+                          eventKey={f}
+                          key={f}
+                        >
+                          <FactionLogo faction={f} className="faction_logo" />
+                          {" " + f}
+                        </Dropdown.Item>
+                      ))}
+                    </DropdownButton>
+                    {heroSelection
+                      ? mesbg_data
+                          .filter(
+                            (data) =>
+                              data.faction === factionSelection[f_type] &&
+                              !["Independent Hero*", "Warrior"].includes(
+                                data.unit_type,
+                              ) &&
+                              !(
+                                data.unique &&
+                                uniqueModels.includes(data.model_id)
+                              ),
+                          )
+                          .map((row) => (
+                            <SelectionUnit
+                              key={uuid()}
+                              newWarriorFocus={newWarriorFocus}
+                              setDisplaySelection={setDisplaySelection}
+                              heroSelection={heroSelection}
+                              unitData={row}
+                              uniqueModels={uniqueModels}
+                              warbandNumFocus={warbandNumFocus}
+                              allianceLevel={allianceLevel}
+                              specialArmyOptions={specialArmyOptions}
+                              setSpecialArmyOptions={setSpecialArmyOptions}
+                            />
+                          ))
+                      : mesbg_data
+                          .filter(
+                            (data) =>
+                              roster.warbands[warbandNumFocus].hero &&
+                              hero_constraint_data[
+                                roster.warbands[warbandNumFocus].hero.model_id
+                              ][0]["valid_warband_units"].includes(
+                                data.model_id,
+                              ) &&
+                              !(
+                                data.unique &&
+                                uniqueModels.includes(data.model_id)
+                              ),
+                          )
+                          .map((row) => (
+                            <SelectionUnit
+                              key={uuid()}
+                              newWarriorFocus={newWarriorFocus}
+                              setDisplaySelection={setDisplaySelection}
+                              heroSelection={heroSelection}
+                              unitData={row}
+                              uniqueModels={uniqueModels}
+                              warbandNumFocus={warbandNumFocus}
+                              allianceLevel={allianceLevel}
+                            />
+                          ))}
+                    {!heroSelection && (
+                      <SelectionSiege
+                        key={uuid()}
+                        newWarriorFocus={newWarriorFocus}
+                        setDisplaySelection={setDisplaySelection}
+                        warbandNumFocus={warbandNumFocus}
+                      />
+                    )}
+                  </Stack>
+                </Tab>
+              );
+            })}
           </Tabs>
         </>
       ) : (
@@ -208,31 +227,20 @@ export function SelectionMenu({
                 <IoWarningOutline /> Warnings
               </h6>
               <hr />
-              {warnings.map((w) => (
-                <p className="text-danger">{w}</p>
+              {warnings.map((w, i) => (
+                <p key={i} className="text-danger">
+                  {w}
+                </p>
               ))}
             </>
           )}
           <h6>Bow Limit</h6>
           <hr />
           {factionList
-            .filter(
-              (x) =>
-                ![
-                  "Tom Bombadil",
-                  "Goldberry",
-                  "Barliman Butterbur",
-                  "Bill the Pony",
-                  "Grimbeorn",
-                  "Beorning",
-                  "Harry Goatleaf",
-                  "Murin & Drar",
-                  "Thrain the Broken (Good)",
-                  "Thrain the Broken (Evil)",
-                ].includes(x),
-            )
+            .filter((x) => !wanderers.includes(x))
             .map((f) => (
               <p
+                key={f}
                 className={
                   factionBowCounts[f] >
                   Math.ceil(factionData[f]["bow_limit"] * factionModelCounts[f])
@@ -279,21 +287,7 @@ export function SelectionMenu({
           </h6>
           <hr />
           {factionList
-            .filter(
-              (x) =>
-                ![
-                  "Tom Bombadil",
-                  "Goldberry",
-                  "Barliman Butterbur",
-                  "Bill the Pony",
-                  "Grimbeorn",
-                  "Beorning",
-                  "Harry Goatleaf",
-                  "Murin & Drar",
-                  "Thrain the Broken (Good)",
-                  "Thrain the Broken (Evil)",
-                ].includes(x),
-            )
+            .filter((x) => !wanderers.includes(x))
             .map((f) => (
               <div>
                 <h5 className="mt-4">

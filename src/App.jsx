@@ -1,25 +1,23 @@
-import warning_rules from "./assets/data/warning_rules.json";
-import faction_data from "./assets/data/faction_data.json";
-import { ModalRosterTable } from "./components/ModalRosterTable";
-import { TopNavbar } from "./components/TopNavbar";
-import { Alliances, calculateAllianceLevel } from "./components/Alliances";
-import { SelectionMenu } from "./components/SelectionMenu.jsx";
-import { Warbands } from "./components/Warbands";
 import { useEffect, useState } from "react";
+import faction_data from "./assets/data/faction_data.json";
+import warning_rules from "./assets/data/warning_rules.json";
+import { Alliances } from "./components/Alliances";
+import { KeywordsSearch } from "./components/KeywordsSearch";
+import { ModalRosterTable } from "./components/ModalRosterTable";
+import { SelectionMenu } from "./components/SelectionMenu.jsx";
+import { TopNavbar } from "./components/TopNavbar";
+import { Warbands } from "./components/Warbands";
 // import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { Alerts } from "./components/alerts/Alerts";
 import { GameMode } from "./components/gamemode/GameMode";
+import { ModalContainer } from "./components/modal/ModalContainer";
 import {
   checkAlliedHeroes,
-  checkDunharrow,
-  checkGilGalad,
   checkSiegeEngineCounts,
 } from "./components/specialRules.js";
-import { KeywordsSearch } from "./components/KeywordsSearch";
 import { useStore } from "./state/store";
-import { ModalContainer } from "./components/modal/ModalContainer";
-import { Alerts } from "./components/alerts/Alerts";
 
 export default function App() {
   const [factionSelection, setFactionSelection] = useState({
@@ -28,25 +26,35 @@ export default function App() {
     "Good LL": "The Return of the King",
     "Evil LL": "The Host of the Dragon Emperor",
   });
+
+  const {
+    roster,
+    factions,
+    factionType,
+    allianceLevel,
+    uniqueModels,
+    gameMode,
+  } = useStore();
+
+  const [factionBowCounts, setFactionBowCounts] = useState({});
+  const [factionModelCounts, setFactionModelCounts] = useState({});
+
   const [tabSelection, setTabSelection] = useState("Good Army");
   const [heroSelection, setHeroSelection] = useState(false);
   const [warbandNumFocus, setWarbandNumFocus] = useState(0);
   const [newWarriorFocus, setNewWarriorFocus] = useState("");
-  const { roster, gameMode } = useStore();
+
   const [factionData, setFactionData] = useState(faction_data);
-  const [uniqueModels, setUniqueModels] = useState([]);
+
   const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
   const [displaySelection, setDisplaySelection] = useState(false);
-  const [cardUnitData, setCardUnitData] = useState(null);
-  const [showRosterTable, setShowRosterTable] = useState(false);
-  const [factionType, setFactionType] = useState("");
-  const [factionList, setFactionList] = useState([]);
-  const [factionBowCounts, setFactionBowCounts] = useState({});
-  const [factionModelCounts, setFactionModelCounts] = useState({});
-  const [allianceLevel, setAllianceLevel] = useState("n/a");
-  const [hasArmyBonus, setHasArmyBonus] = useState(true);
-  const [showAlliances, setShowAlliances] = useState(false);
+
   const [warnings, setWarnings] = useState([]);
+
+  // Modals
+  const [showRosterTable, setShowRosterTable] = useState(false);
+  // Sidebar
+  const [showAlliances, setShowAlliances] = useState(false);
   const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
   // $(window).scroll(function () {
@@ -55,65 +63,7 @@ export default function App() {
   // });
 
   useEffect(() => {
-    // Every time roster is updated, update the faction type of the army roster e.g. Good Army
-    let faction_types = roster.warbands.map((warband) => {
-      if (warband.hero) {
-        return warband.hero.faction_type;
-      }
-      return null;
-    });
-    faction_types = faction_types.filter((e) => e !== null && e !== undefined);
-    let faction_type = faction_types.length === 0 ? "" : faction_types[0];
-    setFactionType(faction_type);
-
-    // Every time roster is updated, update the list of unique factions currently in the roster.
-    let factions = roster.warbands.map((warband) => {
-      if (warband.hero) {
-        return warband.hero.faction;
-      }
-      return null;
-    });
-    factions = new Set(factions.filter((e) => e !== null && e !== undefined));
-    factions = [...factions];
-
-    if (
-      factions.includes("Wanderers in the Wild (Good)") ||
-      factions.includes("Wanderers in the Wild (Evil)")
-    ) {
-      factions = factions.filter(
-        (e) =>
-          e !== "Wanderers in the Wild (Good)" &&
-          e !== "Wanderers in the Wild (Evil)",
-      );
-
-      roster.warbands.map((_warband) => {
-        if (
-          _warband.hero &&
-          [
-            "Wanderers in the Wild (Good)",
-            "Wanderers in the Wild (Evil)",
-          ].includes(_warband.hero.faction)
-        ) {
-          factions.push(_warband.hero.name);
-        }
-        return null;
-      });
-    }
-
-    let newUniqueModels = getAllUniqueModels();
-    setUniqueModels(newUniqueModels);
-
-    let _factions = factions;
-    let newAllianceLevel = calculateAllianceLevel(
-      _factions,
-      faction_type,
-      factionData,
-    );
-    setAllianceLevel(newAllianceLevel);
-    setHasArmyBonus(
-      ["Historical", "Legendary Legion"].includes(newAllianceLevel),
-    );
-    setFactionList(factions);
+    if (!factions || !factionType) return;
 
     let bowCounts = {};
     let modelCounts = {};
@@ -175,48 +125,16 @@ export default function App() {
     setFactionModelCounts(modelCounts);
 
     let newWarnings;
-    [newWarnings, newAllianceLevel] = checkWarnings(
-      newUniqueModels,
-      factions,
-      newAllianceLevel,
-    );
+    [newWarnings] = checkWarnings(uniqueModels, factions, allianceLevel);
     newWarnings = checkSiegeEngineCounts(
       siegeEngines,
       heroicTiers,
       newWarnings,
     );
-    newWarnings = checkAlliedHeroes(newAllianceLevel, heroicTiers, newWarnings);
-    if (factions.includes("The Dead of Dunharrow") && factions.length > 1) {
-      [newAllianceLevel, newWarnings] = checkDunharrow(
-        newAllianceLevel,
-        newUniqueModels,
-        newWarnings,
-      );
-    }
-    if (newUniqueModels.includes("[rivendell] gil-galad")) {
-      newAllianceLevel = checkGilGalad(newAllianceLevel, factions);
-    }
-    setAllianceLevel(newAllianceLevel);
+    newWarnings = checkAlliedHeroes(allianceLevel, heroicTiers, newWarnings);
     setWarnings(newWarnings);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roster]);
-
-  const getAllUniqueModels = () => {
-    let newUniqueModels = new Set();
-    roster.warbands.map((_warband) => {
-      if (_warband.hero) {
-        newUniqueModels.add(_warband.hero.model_id);
-      }
-      _warband.units.map((_unit) => {
-        if (_unit.name != null) {
-          newUniqueModels.add(_unit.model_id);
-        }
-        return null;
-      });
-      return null;
-    });
-    return [...newUniqueModels];
-  };
 
   const checkWarnings = (_uniqueModels, faction_list, newAllianceLevel) => {
     let newWarnings = [];
@@ -249,7 +167,8 @@ export default function App() {
           ) {
             newWarnings.push(rule.warning);
             if (rule.warning.includes("lose your army bonus")) {
-              setHasArmyBonus(false);
+              // setHasArmyBonus(false);
+              // TODO: Make sure rules are checked when roster update takes place!
             }
             if (
               rule.warning.includes("become impossible allies") &&
@@ -300,11 +219,7 @@ export default function App() {
     >
       <Alerts />
       <ModalContainer />
-
-      <TopNavbar
-        uniqueModels={uniqueModels}
-        setShowRosterTable={setShowRosterTable}
-      />
+      <TopNavbar setShowRosterTable={setShowRosterTable} />
       <div className="m-4">
         {!gameMode ? (
           <>
@@ -313,31 +228,24 @@ export default function App() {
               setDisplaySelection={setDisplaySelection}
               tabSelection={tabSelection}
               setTabSelection={setTabSelection}
-              factionType={factionType}
               factionSelection={factionSelection}
               setFactionSelection={setFactionSelection}
               heroSelection={heroSelection}
               newWarriorFocus={newWarriorFocus}
               warbandNumFocus={warbandNumFocus}
-              setCardUnitData={setCardUnitData}
-              allianceLevel={allianceLevel}
-              uniqueModels={uniqueModels}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
               warnings={warnings}
-              factionList={factionList}
               factionBowCounts={factionBowCounts}
               factionModelCounts={factionModelCounts}
               setShowAlliances={setShowAlliances}
               factionData={factionData}
-              hasArmyBonus={hasArmyBonus}
               setShowKeywordSearch={setShowKeywordSearch}
             />
             <Warbands
               setHeroSelection={setHeroSelection}
               setDisplaySelection={setDisplaySelection}
               setWarbandNumFocus={setWarbandNumFocus}
-              setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
               setNewWarriorFocus={setNewWarriorFocus}
@@ -348,27 +256,19 @@ export default function App() {
           </>
         ) : (
           <GameMode
-            factionList={factionList}
-            allianceLevel={allianceLevel}
             factionData={factionData}
-            hasArmyBonus={hasArmyBonus}
             setShowKeywordSearch={setShowKeywordSearch}
           />
         )}
       </div>
       <ModalRosterTable
-        allianceLevel={allianceLevel}
         showRosterTable={showRosterTable}
         setShowRosterTable={setShowRosterTable}
-        factionList={factionList}
         factionData={factionData}
-        hasArmyBonus={hasArmyBonus}
       />
       <Alliances
-        allianceLevel={allianceLevel}
         showAlliances={showAlliances}
         setShowAlliances={setShowAlliances}
-        factionList={factionList}
         factionData={factionData}
         setFactionData={setFactionData}
       />

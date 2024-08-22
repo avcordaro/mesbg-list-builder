@@ -1,20 +1,20 @@
-import Stack from "react-bootstrap/Stack";
-import Modal from "react-bootstrap/Modal";
-import Table from "react-bootstrap/Table";
+import { saveAs } from "file-saver";
+import html2canvas from "html2canvas";
+import JSZip from "jszip";
+import { useState } from "react";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
-import Spinner from "react-bootstrap/Spinner";
 import Form from "react-bootstrap/Form";
-import html2canvas from "html2canvas";
-import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
+import Spinner from "react-bootstrap/Spinner";
+import Stack from "react-bootstrap/Stack";
+import Table from "react-bootstrap/Table";
 import { FaDownload, FaImage } from "react-icons/fa6";
 import { FcCheckmark } from "react-icons/fc";
-import { RxCross1 } from "react-icons/rx";
-import { GoCopy } from "react-icons/go";
 import { GiQueenCrown } from "react-icons/gi";
+import { GoCopy } from "react-icons/go";
+import { RxCross1 } from "react-icons/rx";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import JSZip from "jszip";
-import { saveAs } from "file-saver";
 import { useStore } from "../state/store";
 import { allianceColours } from "./constants/alliances";
 
@@ -23,14 +23,16 @@ after the user clicks the 'Roster Table' button. This component uses the full ro
 state variable (passed to it as an argument) to populate a table of the army. */
 
 export function ModalRosterTable({
-  allianceLevel,
   showRosterTable,
   setShowRosterTable,
-  factionList,
   factionData,
-  hasArmyBonus,
 }) {
-  const roster = useStore((store) => store.roster);
+  const {
+    roster,
+    armyBonusActive: hasArmyBonus,
+    factions: factionList,
+    allianceLevel,
+  } = useStore();
 
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);

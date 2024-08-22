@@ -1,6 +1,8 @@
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Badge from "react-bootstrap/Badge";
 import { useEffect } from "react";
+import Badge from "react-bootstrap/Badge";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { useStore } from "../state/store";
+import { FactionLogo } from "./FactionLogo.tsx";
 import {
   handle50PctBowLimit,
   handleBillCampfire,
@@ -9,64 +11,21 @@ import {
   handleMirkwoodRangers,
   handleKhandishHorsemanCharioteers,
 } from "./specialRules.js";
-import { FactionLogo } from "./FactionLogo.tsx";
-import { useStore } from "../state/store";
-
-const checkAlliance = (army_A, army_B, faction_data) => {
-  // Checks the alliance level between two given armies
-  if (faction_data[army_A]["primaryAllies"].includes(army_B)) {
-    return "Historical";
-  } else if (faction_data[army_A]["secondaryAllies"].includes(army_B)) {
-    return "Convenient";
-  }
-  return "Impossible";
-};
-
-export const calculateAllianceLevel = (
-  _factionList,
-  _factionType,
-  faction_data,
-) => {
-  // Calculates overall alliance level for current army roster selection
-  if (_factionType.includes("LL")) {
-    return "Legendary Legion";
-  } else if (_factionList.length === 0) {
-    // If no factions currently selected
-    return "n/a";
-  } else if (_factionList.length === 1) {
-    // If just one faction selected
-    return "Historical";
-  } else {
-    // Create all possible pairs from the list of factions
-    let faction_pairs = _factionList.flatMap((v, i) =>
-      _factionList.slice(i + 1).map((w) => [v, w]),
-    );
-    // Calculate the alliance level for each pair
-    let pairs_alliances = faction_pairs.map((pair) =>
-      checkAlliance(pair[0], pair[1], faction_data),
-    );
-    // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
-    if (pairs_alliances.includes("Impossible")) {
-      return "Impossible";
-    } else if (pairs_alliances.includes("Convenient")) {
-      return "Convenient";
-    } else {
-      return "Historical";
-    }
-  }
-};
 
 /* Displays an Offcanvas component showing the possible alliances for the current army selection. */
 
 export function Alliances({
-  allianceLevel,
   showAlliances,
   setShowAlliances,
-  factionList,
   factionData,
   setFactionData,
 }) {
-  const { roster, setRoster } = useStore();
+  const {
+    roster,
+    setRoster,
+    allianceLevel,
+    factions: factionList,
+  } = useStore();
 
   useEffect(() => {
     //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.

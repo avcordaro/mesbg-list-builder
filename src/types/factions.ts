@@ -89,6 +89,8 @@ export enum Factions {
   Murin__Drar = "Murin & Drar",
   Thrain_the_Broken_Good = "Thrain the Broken (Good)",
   Thrain_the_Broken_Evil = "Thrain the Broken (Evil)",
+  Wanders_in_the_Wild_Good = "Wanderers in the Wild (Good)",
+  Wanders_in_the_Wild_Evil = "Wanderers in the Wild (Evil)",
 }
 
 export type Faction = (typeof Factions)[keyof typeof Factions];

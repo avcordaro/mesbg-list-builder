@@ -1,27 +1,29 @@
-import Stack from "react-bootstrap/Stack";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import { MdReportGmailerrorred } from "react-icons/md";
-import Button from "react-bootstrap/Button";
-import { FaHammer, FaQuestion, FaTableList } from "react-icons/fa6";
-import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
-import { FaChessRook, FaRegCopyright } from "react-icons/fa";
 import { useState } from "react";
 import { Navbar } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Stack from "react-bootstrap/Stack";
+import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
+import { FaChessRook, FaRegCopyright } from "react-icons/fa";
+import { FaHammer, FaQuestion, FaTableList } from "react-icons/fa6";
+import { MdReportGmailerrorred } from "react-icons/md";
 import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
 import { useStore } from "../state/store";
-import { MODAL_KEYS } from "./modal/modals";
 import { AlertTypes } from "./alerts/alert-types";
+import { MODAL_KEYS } from "./modal/modals";
 
 /* Navbar component that displays at the top of the page. */
 
-export function TopNavbar({
-  uniqueModels,
-  setShowRosterTable,
-  setGameModeAlert,
-}) {
-  const { roster, gameMode, setCurrentModal, triggerAlert, startNewGame } =
-    useStore();
+export function TopNavbar({ setShowRosterTable }) {
+  const {
+    roster,
+    gameMode,
+    uniqueModels,
+    setCurrentModal,
+    triggerAlert,
+    startNewGame,
+  } = useStore();
 
   const [showNews, setShowNews] = useState(false);
 
@@ -37,9 +39,6 @@ export function TopNavbar({
   const handleGameMode = () => {
     if (parseInt(roster.version.substring(0, 1)) < 5) {
       triggerAlert(AlertTypes.GAMEMODE_ALERT);
-
-      setGameModeAlert(true);
-      window.setTimeout(() => setGameModeAlert(false), 12000);
     } else {
       startNewGame();
       window.scrollTo(0, 0);
@@ -72,6 +71,7 @@ export function TopNavbar({
                   <img src={title} alt="" style={{ width: "325px" }} />
                   <Stack direction="horizontal" className="mt-2">
                     <span className="p-0 m-0" style={{ fontSize: "16px" }}>
+                      {/* eslint-disable-next-line no-undef */}
                       Unofficial | v{BUILD_VERSION} | updated {BUILD_DATE}
                     </span>
                   </Stack>

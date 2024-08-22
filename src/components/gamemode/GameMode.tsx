@@ -10,10 +10,7 @@ import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode: FunctionComponent<GameModeInfoProps> = ({
-  factionList,
-  allianceLevel,
   factionData,
-  hasArmyBonus,
   setShowKeywordSearch,
 }) => {
   const { startNewGame, setCurrentModal } = useStore();
@@ -22,10 +19,7 @@ export const GameMode: FunctionComponent<GameModeInfoProps> = ({
   return (
     <div>
       <GameModeInfo
-        factionList={factionList}
-        allianceLevel={allianceLevel}
         factionData={factionData}
-        hasArmyBonus={hasArmyBonus}
         setShowKeywordSearch={setShowKeywordSearch}
       />
       <div style={{ marginLeft: "535px", minWidth: "720px" }}>

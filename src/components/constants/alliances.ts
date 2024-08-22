@@ -5,3 +5,5 @@ export const allianceColours = {
   "Legendary Legion": "info",
   "n/a": "secondary",
 };
+
+export type AllianceLevel = keyof typeof allianceColours;

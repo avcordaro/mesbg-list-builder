@@ -1,5 +1,5 @@
-import { GameModeHero } from "../components/gamemode/types.ts";
-import { Roster } from "../types/roster.ts";
+import { GameModeHero } from "../../components/gamemode/types.ts";
+import { Roster } from "../../types/roster.ts";
 
 export function getHeroesForGameMode(
   roster: Roster,

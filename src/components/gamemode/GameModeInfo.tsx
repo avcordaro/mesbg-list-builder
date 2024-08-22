@@ -9,31 +9,44 @@ import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { useStore } from "../../state/store";
 import { FactionData } from "../../types/faction-data.ts";
-import { Faction } from "../../types/factions.ts";
+import { Faction, Factions } from "../../types/factions.ts";
 import { allianceColours } from "../constants/alliances";
 import { MODAL_KEYS } from "../modal/modals";
 
 export type GameModeInfoProps = {
-  factionList: Faction[];
-  allianceLevel: keyof typeof allianceColours;
   factionData: Record<Faction, FactionData>;
-  hasArmyBonus: boolean;
-  setShowKeywordSearch: (boolean) => void;
+  setShowKeywordSearch: (boolean: boolean) => void;
+};
+
+const charts: Record<string, string> = {
+  "climb-table": "Climb Table",
+  "detonation-table": "Detonation Table",
+  "gates-doors-sieges": "Gates and Doors (Sieges)",
+  "in-the-way-chart": "In The Way Chart",
+  "jump-table": "Jump Table",
+  "leap-table": "Leap Table",
+  "missile-weapon-chart": "Missile Weapon Chart",
+  "scatter-table": "Scatter Table",
+  "sentry-chart": "Sentry chart",
+  "swim-chart": "Swim chart",
+  "siege-target-types": "Siege Target Types",
+  "thrown-rider-table": "Thrown Rider Table",
+  "to-wound-chart": "To Wound Chart",
 };
 
 export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
-  factionList,
-  allianceLevel,
   factionData,
-  hasArmyBonus,
   setShowKeywordSearch,
 }) => {
   const {
     roster,
     setCurrentModal,
     gameState: { casualties = 0, heroCasualties = 0 },
+    factions: factionList,
+    allianceLevel,
+    armyBonusActive: hasArmyBonus,
   } = useStore();
-  const openChart = (selectedChart) => () =>
+  const openChart = (selectedChart: keyof typeof charts) => () =>
     setCurrentModal(MODAL_KEYS.CHART, { selectedChart });
   return (
     <div
@@ -52,8 +65,9 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
           <FaSearch /> Search Keywords
         </Button>
       </Stack>
-      {((factionList.includes("Isengard") && allianceLevel === "Historical") ||
-        factionList.includes("Assault Upon Helm's Deep")) &&
+      {((factionList.includes(Factions.Isengard) &&
+        allianceLevel === "Historical") ||
+        factionList.includes(Factions.Assault_Upon_Helms_Deep)) &&
         Math.ceil(0.66 * roster.num_units) - (casualties + heroCasualties) <=
           0 && (
           <h6 className="mt-4 mb-2 text-danger">
@@ -61,8 +75,9 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
             <GiCrackedShield />
           </h6>
         )}
-      {((factionList.includes("Isengard") && allianceLevel === "Historical") ||
-        factionList.includes("Assault Upon Helm's Deep")) &&
+      {((factionList.includes(Factions.Isengard) &&
+        allianceLevel === "Historical") ||
+        factionList.includes(Factions.Assault_Upon_Helms_Deep)) &&
         Math.ceil(0.66 * roster.num_units) - (casualties + heroCasualties) >
           0 && (
           <h6 className="mt-4 mb-2">
@@ -89,45 +104,11 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
             <GiSwordsEmblem /> Charts
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item onClick={openChart("climb-table")}>
-              Climb Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("detonation-table")}>
-              Detonation Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("gates-doors-sieges")}>
-              Gates and Doors (Sieges)
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("in-the-way-chart")}>
-              In The Way Chart
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("jump-table")}>
-              Jump Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("leap-table")}>
-              Leap Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("missile-weapon-chart")}>
-              Missile Weapon Chart
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("scatter-table")}>
-              Scatter Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("sentry-chart")}>
-              Sentry Chart
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("swim-chart")}>
-              Swim Chart
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("siege-target-types")}>
-              Siege Target Types
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("thrown-rider-table")}>
-              Thrown Rider Table
-            </Dropdown.Item>
-            <Dropdown.Item onClick={openChart("to-wound-chart")}>
-              To Wound Chart
-            </Dropdown.Item>
+            {Object.entries(charts).map(([fileName, chartName]) => (
+              <Dropdown.Item key={fileName} onClick={openChart(fileName)}>
+                {chartName}
+              </Dropdown.Item>
+            ))}
           </Dropdown.Menu>
         </Dropdown>
       </Stack>

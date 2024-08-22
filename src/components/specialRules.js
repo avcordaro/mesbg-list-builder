@@ -312,38 +312,3 @@ export const checkAlliedHeroes = (_allianceLevel, heroicTiers, _warnings) => {
   }
   return _warnings;
 };
-
-export const checkDunharrow = (_allianceLevel, _uniqueModels, _warnings) => {
-  let intersection = [
-    "[minas_tirith] aragorn,_king_elessar",
-    "[the_fellowship] aragorn,_strider",
-    "[the_rangers] aragorn,_strider",
-  ].filter((x) => _uniqueModels.includes(x));
-  let msg =
-    "A Dead of Dunharrow army list is automatically Impossible Allies with any force that doesn't also include Aragorn.";
-  if (_allianceLevel !== "Impossible" && intersection.length === 0) {
-    _warnings.push(msg);
-    return ["Impossible", _warnings];
-  }
-  return [_allianceLevel, _warnings];
-};
-
-export const checkGilGalad = (_allianceLevel, faction_list) => {
-  if (_allianceLevel === "Impossible") {
-    return _allianceLevel;
-  }
-  const allies = {
-    Rivendell: "Historical",
-    Numenor: "Historical",
-    Lothlorien: "Convenient",
-    Fangorn: "Convenient",
-    "The Misty Mountains": "Convenient",
-  };
-  let levels = faction_list.map((f) => (allies[f] ? allies[f] : "Impossible"));
-  if (levels.includes("Impossible")) {
-    return "Impossible";
-  } else if (levels.includes("Convenient")) {
-    return "Convenient";
-  }
-  return "Historical";
-};

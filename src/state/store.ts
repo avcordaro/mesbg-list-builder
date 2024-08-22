@@ -1,26 +1,38 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { AllianceLevel } from "../components/constants/alliances.ts";
 import { GameModeState } from "../components/gamemode/types.ts";
 import { MODAL_KEYS } from "../components/modal/modals.tsx";
+import { Faction, FactionType } from "../types/factions.ts";
 import { Roster } from "../types/roster.ts";
-import { getHeroesForGameMode } from "./gamemode.ts";
+import { getHeroesForGameMode } from "./gamemode/gamemode.ts";
+import { ModelCountData } from "./roster/models.ts";
+import { updateRoster } from "./roster/roster.ts";
 
-type ListBuilderStore = {
+export type ListBuilderStore = {
+  // Roster Building
   roster: Roster;
   setRoster: (roster: Roster) => void;
-
+  factionType: FactionType | "";
+  factions: Faction[];
+  factionMetaData: ModelCountData;
+  allianceLevel: AllianceLevel;
+  armyBonusActive: boolean;
+  uniqueModels: string[];
+  rosterBuildingWarnings: string[];
+  // Game mode
   gameMode: boolean;
   setGameMode: (gameMode: boolean) => void;
   gameState?: GameModeState;
   startNewGame: () => void;
   updateGameState: (update: Partial<GameModeState>) => void;
-
+  // Modals
   currentlyOpenendModal: MODAL_KEYS | null;
   modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   setCurrentModal: (key: MODAL_KEYS, context?: unknown) => void;
   closeModal: () => void;
-
+  // Alerts
   activeAlert: AlertTypes;
   triggerAlert: (alert: AlertTypes) => void;
   dismissAlert: () => void;
@@ -34,6 +46,13 @@ const initialState = {
     bow_count: 0,
     warbands: [],
   },
+  factions: [],
+  factionType: "" as FactionType,
+  factionMetaData: {} as ModelCountData,
+  allianceLevel: "n/a" as AllianceLevel,
+  armyBonusActive: true,
+  uniqueModels: [],
+  rosterBuildingWarnings: [],
   gameMode: false,
   gameState: undefined,
   currentlyOpenendModal: null,
@@ -41,7 +60,18 @@ const initialState = {
 };
 
 type StoreKey = keyof ListBuilderStore;
-const keysToPersist: StoreKey[] = ["roster", "gameMode", "gameState"];
+const keysToPersist: StoreKey[] = [
+  "roster",
+  "gameMode",
+  "gameState",
+  "factions",
+  "factionType",
+  "factionMetaData",
+  "allianceLevel",
+  "uniqueModels",
+  "rosterBuildingWarnings",
+  "armyBonusActive",
+];
 
 export const useStore = create<
   ListBuilderStore,
@@ -52,7 +82,7 @@ export const useStore = create<
       ...initialState,
       setRoster: (roster) =>
         set({
-          roster: JSON.parse(JSON.stringify(roster).replaceAll('["",', "[0,")),
+          ...updateRoster(roster),
         }),
       setGameMode: (gameMode) => set({ gameMode }),
       startNewGame: () =>
