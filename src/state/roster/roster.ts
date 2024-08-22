@@ -3,12 +3,13 @@ import { ListBuilderStore } from "../store.ts";
 import { calculateAllianceLevel, checkForSpecialCases } from "./alliance";
 import { getFactionList, getFactionType } from "./faction.ts";
 import { calculateModelCount, getUniqueModels } from "./models.ts";
+import { getWarningsForCreatedRoster } from "./warnings.ts";
 
 export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
   const factionType = getFactionType(roster.warbands);
   const factionList = getFactionList(roster.warbands);
   const uniqueModels = getUniqueModels(roster.warbands);
-  const modelCounts = calculateModelCount(roster.warbands);
+  const factionMetaData = calculateModelCount(roster.warbands);
 
   const allianceLevel = calculateAllianceLevel(factionList, factionType);
   const [actualAllianceLevel, warnings] = checkForSpecialCases(
@@ -19,6 +20,14 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
 
   const armyBonusActive = ["Historical", "Legendary Legion"].includes(
     allianceLevel,
+  );
+
+  const rosterBuildingWarnings = getWarningsForCreatedRoster(
+    factionType,
+    factionList,
+    actualAllianceLevel,
+    factionMetaData,
+    uniqueModels,
   );
 
   // Replace the empty string at the start of each array with a 0.
@@ -32,10 +41,10 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     roster: updatedRoster,
     factions: factionList,
     factionType: factionType,
-    factionMetaData: modelCounts,
+    factionMetaData: factionMetaData,
     uniqueModels: uniqueModels,
     allianceLevel: actualAllianceLevel,
-    rosterBuildingWarnings: warnings,
+    rosterBuildingWarnings: [...warnings, ...rosterBuildingWarnings],
     armyBonusActive: armyBonusActive,
   };
 }
