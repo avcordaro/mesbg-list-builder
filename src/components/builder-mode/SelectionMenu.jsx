@@ -13,6 +13,7 @@ import { IoWarningOutline } from "react-icons/io5";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
 import { v4 as uuid } from "uuid";
+import factionData from "../../assets/data/faction_data.json";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import mesbg_data from "../../assets/data/mesbg_data.json";
 import { useStore } from "../../state/store";
@@ -38,18 +39,16 @@ export function SelectionMenu({
   warbandNumFocus,
   specialArmyOptions,
   setSpecialArmyOptions,
-  warnings,
-  factionBowCounts,
-  factionModelCounts,
-  factionData,
 }) {
   const {
     roster,
     uniqueModels,
     allianceLevel,
+    rosterBuildingWarnings: warnings,
     factions: factionList,
     factionType,
     armyBonusActive: hasArmyBonus,
+    factionMetaData,
     openSidebar,
   } = useStore();
 
@@ -230,8 +229,11 @@ export function SelectionMenu({
               <p
                 key={f}
                 className={
-                  factionBowCounts[f] >
-                  Math.ceil(factionData[f]["bow_limit"] * factionModelCounts[f])
+                  factionMetaData[f].modelsWithBow >
+                  Math.ceil(
+                    factionData[f]["bow_limit"] *
+                      factionMetaData[f].modelsThatCountForBowLimit,
+                  )
                     ? "text-danger"
                     : "text-dark"
                 }
@@ -241,11 +243,13 @@ export function SelectionMenu({
                   factionData[f]["bow_limit"] * 100 +
                   "% limit - " +
                   Math.ceil(
-                    factionData[f]["bow_limit"] * factionModelCounts[f],
+                    factionData[f]["bow_limit"] *
+                      factionMetaData[f].modelsThatCountForBowLimit,
                   ) +
                   " bows) "}
                 <b>
-                  {factionBowCounts[f]} / {factionModelCounts[f]}
+                  {factionMetaData[f].modelsWithBow} /{" "}
+                  {factionMetaData[f].modelsThatCountForBowLimit}
                 </b>
               </p>
             ))}

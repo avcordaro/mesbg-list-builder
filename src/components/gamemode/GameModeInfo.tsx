@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -7,16 +6,12 @@ import { FaChessRook, FaSearch } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import factionData from "../../assets/data/faction_data.json";
 import { useStore } from "../../state/store";
-import { FactionData } from "../../types/faction-data.ts";
-import { Faction, Factions } from "../../types/factions.ts";
+import { Factions } from "../../types/factions.ts";
 import { allianceColours } from "../constants/alliances";
 import { ModalTypes } from "../modal/modals";
 import { SidebarTypes } from "../sidebar-drawer/sidebars.tsx";
-
-export type GameModeInfoProps = {
-  factionData: Record<Faction, FactionData>;
-};
 
 const charts: Record<string, string> = {
   "climb-table": "Climb Table",
@@ -34,9 +29,7 @@ const charts: Record<string, string> = {
   "to-wound-chart": "To Wound Chart",
 };
 
-export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
-  factionData,
-}) => {
+export const GameModeInfo = () => {
   const {
     roster,
     setCurrentModal,

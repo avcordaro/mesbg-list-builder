@@ -1,23 +1,20 @@
-import { FunctionComponent } from "react";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { TbRefresh } from "react-icons/tb";
 import { useStore } from "../../state/store.ts";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
-import { GameModeInfo, GameModeInfoProps } from "./GameModeInfo.jsx";
+import { GameModeInfo } from "./GameModeInfo.jsx";
 import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
-export const GameMode: FunctionComponent<GameModeInfoProps> = ({
-  factionData,
-}) => {
+export const GameMode = () => {
   const { startNewGame, setCurrentModal } = useStore();
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
   return (
     <div>
-      <GameModeInfo factionData={factionData} />
+      <GameModeInfo />
       <div style={{ marginLeft: "535px", minWidth: "720px" }}>
         <Stack direction="horizontal" style={{ minWidth: "800px" }}>
           <Button className="m-2" onClick={openResetGameModal}>
