@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
-import { UnitProfileCard } from "../../UnitProfilePicture.tsx";
+import { UnitProfileCard } from "../../images/UnitProfileCard.tsx";
 
 /* Displays a modal with an image of the chosen profile card of the unit. */
 

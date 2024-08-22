@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { TbRefresh } from "react-icons/tb";
 import { useStore } from "../../state/store.ts";
-import { MODAL_KEYS } from "../modal/modals.tsx";
+import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
 import { GameModeInfo, GameModeInfoProps } from "./GameModeInfo.jsx";
 import { ProfileCards } from "./ProfileCards.tsx";
@@ -15,7 +15,7 @@ export const GameMode: FunctionComponent<GameModeInfoProps> = ({
 }) => {
   const { startNewGame, setCurrentModal } = useStore();
   const openResetGameModal = () =>
-    setCurrentModal(MODAL_KEYS.RESET_GAME_MODE, { handleReset: startNewGame });
+    setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
   return (
     <div>
       <GameModeInfo

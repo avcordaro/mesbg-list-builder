@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../state/store.ts";
 import { Unit } from "../../types/unit.ts";
-import { UnitProfileCard } from "../UnitProfilePicture.tsx";
+import { UnitProfileCard } from "../images/UnitProfileCard.tsx";
 
 export const ProfileCards = () => {
   const roster = useStore((store) => store.roster);

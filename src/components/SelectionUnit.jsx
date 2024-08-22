@@ -1,13 +1,13 @@
-import Stack from "react-bootstrap/Stack";
-import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { handleRivendellElrond } from "./specialRules";
-import { UnitProfilePicture } from "./UnitProfilePicture";
 import { useStore } from "../state/store";
-import { MODAL_KEYS } from "./modal/modals";
+import { UnitProfilePicture } from "./images/UnitProfilePicture";
+import { ModalTypes } from "./modal/modals";
+import { handleRivendellElrond } from "./specialRules";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,
 which appears on the left hand side of the screen. */
@@ -19,7 +19,6 @@ export function SelectionUnit({
   unitData,
   uniqueModels,
   warbandNumFocus,
-  setCardUnitData,
   allianceLevel,
   specialArmyOptions,
   setSpecialArmyOptions,
@@ -175,8 +174,7 @@ export function SelectionUnit({
   const handleCardClick = (e) => {
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
-    setCardUnitData(unitData);
-    setCurrentModal(MODAL_KEYS.PROFILE_CARD, {
+    setCurrentModal(ModalTypes.PROFILE_CARD, {
       unitData,
       title: `(${unitData.faction}) ${unitData.name}`,
     });
@@ -230,7 +228,7 @@ export function SelectionUnit({
         </p>
         <Button
           className="ms-auto me-2 border"
-          variant={"secondary"}
+          variant="secondary"
           onClick={handleCardClick}
         >
           <BsFillPersonVcardFill />

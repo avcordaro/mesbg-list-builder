@@ -4,7 +4,7 @@ import Stack from "react-bootstrap/Stack";
 import { FaSkullCrossbones } from "react-icons/fa";
 import { GiQueenCrown } from "react-icons/gi";
 import { useStore } from "../../../state/store";
-import { UnitProfilePicture } from "../../UnitProfilePicture.tsx";
+import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
 import { GameModeHero } from "../types";
 import { HeroStatTracker } from "./HeroStatTracker";
 

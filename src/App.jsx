@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import faction_data from "./assets/data/faction_data.json";
 import warning_rules from "./assets/data/warning_rules.json";
-import { Alliances } from "./components/Alliances";
 import { KeywordsSearch } from "./components/KeywordsSearch";
 import { ModalRosterTable } from "./components/ModalRosterTable";
 import { SelectionMenu } from "./components/SelectionMenu.jsx";
@@ -13,6 +12,7 @@ import "./App.css";
 import { Alerts } from "./components/alerts/Alerts";
 import { GameMode } from "./components/gamemode/GameMode";
 import { ModalContainer } from "./components/modal/ModalContainer";
+import { SidebarContainer } from "./components/sidebar-drawer/SidebarContainer";
 import {
   checkAlliedHeroes,
   checkSiegeEngineCounts,
@@ -54,7 +54,6 @@ export default function App() {
   // Modals
   const [showRosterTable, setShowRosterTable] = useState(false);
   // Sidebar
-  const [showAlliances, setShowAlliances] = useState(false);
   const [showKeywordSearch, setShowKeywordSearch] = useState(false);
 
   // $(window).scroll(function () {
@@ -219,6 +218,7 @@ export default function App() {
     >
       <Alerts />
       <ModalContainer />
+      <SidebarContainer />
       <TopNavbar setShowRosterTable={setShowRosterTable} />
       <div className="m-4">
         {!gameMode ? (
@@ -238,7 +238,6 @@ export default function App() {
               warnings={warnings}
               factionBowCounts={factionBowCounts}
               factionModelCounts={factionModelCounts}
-              setShowAlliances={setShowAlliances}
               factionData={factionData}
               setShowKeywordSearch={setShowKeywordSearch}
             />
@@ -266,12 +265,7 @@ export default function App() {
         setShowRosterTable={setShowRosterTable}
         factionData={factionData}
       />
-      <Alliances
-        showAlliances={showAlliances}
-        setShowAlliances={setShowAlliances}
-        factionData={factionData}
-        setFactionData={setFactionData}
-      />
+
       <KeywordsSearch
         showKeywordSearch={showKeywordSearch}
         setShowKeywordSearch={setShowKeywordSearch}

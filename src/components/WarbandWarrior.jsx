@@ -1,26 +1,21 @@
-import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
-import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-import { OptionWarrior } from "./OptionWarrior";
-import { FaMinus, FaPlus } from "react-icons/fa";
-import { ImCross } from "react-icons/im";
-import { HiDuplicate } from "react-icons/hi";
+import Stack from "react-bootstrap/Stack";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import { FaMinus, FaPlus } from "react-icons/fa";
+import { HiDuplicate } from "react-icons/hi";
+import { ImCross } from "react-icons/im";
 import { v4 as uuid } from "uuid";
-import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
 import { useStore } from "../state/store";
-import { MODAL_KEYS } from "./modal/modals";
+import { OptionWarrior } from "./OptionWarrior";
+import { UnitProfilePicture } from "./images/UnitProfilePicture.tsx";
+import { ModalTypes } from "./modal/modals";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 
-export function WarbandWarrior({
-  warbandNum,
-  unitData,
-  setCardUnitData,
-  specialArmyOptions,
-}) {
+export function WarbandWarrior({ warbandNum, unitData, specialArmyOptions }) {
   const { roster, setRoster, setCurrentModal } = useStore();
 
   const handleIncrement = () => {
@@ -205,15 +200,14 @@ export function WarbandWarrior({
   const handleCardClick = (e) => {
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
-    setCardUnitData(unitData);
-    setCurrentModal(MODAL_KEYS.PROFILE_CARD, {
+    setCurrentModal(ModalTypes.PROFILE_CARD, {
       unitData,
       title: `(${unitData.faction}) ${unitData.name}`,
     });
   };
 
   return (
-    <Card style={{ width: "820px" }} className="p-2 pb-3 m-1" bg={"light"}>
+    <Card style={{ width: "820px" }} className="p-2 pb-3 m-1" bg="light">
       <Stack direction="horizontal" gap={3} style={{ alignItems: "start" }}>
         <UnitProfilePicture
           className="mt-1 mb-1"
@@ -284,7 +278,7 @@ export function WarbandWarrior({
               {unitData.unit_type !== "Siege" && (
                 <Button
                   className="border"
-                  variant={"secondary"}
+                  variant="secondary"
                   onClick={handleCardClick}
                 >
                   <BsFillPersonVcardFill />
@@ -306,7 +300,7 @@ export function WarbandWarrior({
                     </Button>
                   </>
                   {unitData.unit_type === "Warrior" && (
-                    <Button onClick={handleDuplicate} variant={"info"}>
+                    <Button onClick={handleDuplicate} variant="info">
                       <HiDuplicate />
                     </Button>
                   )}
@@ -314,7 +308,7 @@ export function WarbandWarrior({
               )}
               <Button
                 style={{ marginRight: "10px" }}
-                variant={"warning"}
+                variant="warning"
                 onClick={handleDelete}
               >
                 <ImCross />

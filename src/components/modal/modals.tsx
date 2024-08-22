@@ -8,7 +8,7 @@ import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
 
-export enum MODAL_KEYS {
+export enum ModalTypes {
   BUILDER_MODE = "BUILDER_MODE",
   IMPORT_ROSTER_JSON = "IMPORT_ROSTER_JSON",
   PROFILE_CARD = "PROFILE_CARD",
@@ -22,9 +22,9 @@ export type ModalProps = {
   title: string;
 };
 
-export const modals = new Map<MODAL_KEYS, ModalProps>([
+export const modals = new Map<ModalTypes, ModalProps>([
   [
-    MODAL_KEYS.BUILDER_MODE,
+    ModalTypes.BUILDER_MODE,
     {
       icon: <FaHammer />,
       title: "Back to Builder Mode",
@@ -32,7 +32,7 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
     },
   ],
   [
-    MODAL_KEYS.IMPORT_ROSTER_JSON,
+    ModalTypes.IMPORT_ROSTER_JSON,
     {
       icon: <FaFileImport />,
       title: "Import JSON",
@@ -40,7 +40,7 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
     },
   ],
   [
-    MODAL_KEYS.PROFILE_CARD,
+    ModalTypes.PROFILE_CARD,
     {
       icon: <></>,
       title: "Profile card(s)",
@@ -48,7 +48,7 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
     },
   ],
   [
-    MODAL_KEYS.CHART,
+    ModalTypes.CHART,
     {
       icon: <></>,
       title: "",
@@ -56,7 +56,7 @@ export const modals = new Map<MODAL_KEYS, ModalProps>([
     },
   ],
   [
-    MODAL_KEYS.RESET_GAME_MODE,
+    ModalTypes.RESET_GAME_MODE,
     {
       icon: <TbRefresh />,
       title: "Reset Game Mode?",

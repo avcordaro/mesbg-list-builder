@@ -1,14 +1,14 @@
 import { CSSProperties, FunctionComponent } from "react";
 import { ImageWithFallback } from "./ImageWithFallback.tsx";
 
-type UnitProfilePictureProps = {
+export type UnitProfileProps = {
   army: string;
   profile: string;
   style?: CSSProperties | undefined;
   className?: string;
 };
 
-export const UnitProfilePicture: FunctionComponent<UnitProfilePictureProps> = ({
+export const UnitProfilePicture: FunctionComponent<UnitProfileProps> = ({
   army,
   profile,
   style,
@@ -23,23 +23,6 @@ export const UnitProfilePicture: FunctionComponent<UnitProfilePictureProps> = ({
       style={style}
       className={className}
       alt={`Profile picture for ${profile}`}
-    />
-  );
-};
-
-export const UnitProfileCard: FunctionComponent<UnitProfilePictureProps> = ({
-  army,
-  profile,
-  style,
-  className,
-}) => {
-  return (
-    <ImageWithFallback
-      source={"./assets/images/profiles/" + army + "/cards/" + profile + ".jpg"}
-      fallbackImageSource="./assets/images/default_card.jpg"
-      style={style}
-      className={className}
-      alt={`Profile card for ${profile}`}
     />
   );
 };

@@ -16,23 +16,12 @@ import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
 import mesbg_data from "../assets/data/mesbg_data.json";
 import { useStore } from "../state/store";
-import { FactionLogo } from "./FactionLogo.tsx";
 import { SelectionSiege } from "./SelectionSiege";
 import { SelectionUnit } from "./SelectionUnit";
 import { allianceColours } from "./constants/alliances";
-
-const wanderers = [
-  "Tom Bombadil",
-  "Goldberry",
-  "Barliman Butterbur",
-  "Bill the Pony",
-  "Grimbeorn",
-  "Beorning",
-  "Harry Goatleaf",
-  "Murin & Drar",
-  "Thrain the Broken (Good)",
-  "Thrain the Broken (Evil)",
-];
+import { wanderers } from "./constants/wanderers";
+import { FactionLogo } from "./images/FactionLogo.tsx";
+import { SidebarTypes } from "./sidebar-drawer/sidebars";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
@@ -52,7 +41,6 @@ export function SelectionMenu({
   warnings,
   factionBowCounts,
   factionModelCounts,
-  setShowAlliances,
   factionData,
   setShowKeywordSearch,
 }) {
@@ -63,6 +51,7 @@ export function SelectionMenu({
     factions: factionList,
     factionType,
     armyBonusActive: hasArmyBonus,
+    openSidebar,
   } = useStore();
 
   const faction_lists = {
@@ -269,7 +258,7 @@ export function SelectionMenu({
             <Button
               variant="light"
               className="ms-auto border shadow-sm"
-              onClick={() => setShowAlliances(true)}
+              onClick={() => openSidebar(SidebarTypes.ALLIANCE)}
               disabled={!factionList.length || factionType.includes("LL")}
             >
               <LuSwords /> Alliances

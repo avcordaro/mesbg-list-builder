@@ -1,10 +1,10 @@
-import Stack from "react-bootstrap/Stack";
-import Button from "react-bootstrap/Button";
 import Accordion from "react-bootstrap/Accordion";
-import siege_equipment from "../assets/data/siege_equipment.json";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
 import { v4 as uuid } from "uuid";
-import { UnitProfilePicture } from "./UnitProfilePicture.tsx";
+import siege_equipment from "../assets/data/siege_equipment.json";
 import { useStore } from "../state/store";
+import { UnitProfilePicture } from "./images/UnitProfilePicture.tsx";
 
 export function SelectionSiege({
   newWarriorFocus,

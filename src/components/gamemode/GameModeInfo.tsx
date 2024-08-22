@@ -11,7 +11,7 @@ import { useStore } from "../../state/store";
 import { FactionData } from "../../types/faction-data.ts";
 import { Faction, Factions } from "../../types/factions.ts";
 import { allianceColours } from "../constants/alliances";
-import { MODAL_KEYS } from "../modal/modals";
+import { ModalTypes } from "../modal/modals";
 
 export type GameModeInfoProps = {
   factionData: Record<Faction, FactionData>;
@@ -47,7 +47,7 @@ export const GameModeInfo: FunctionComponent<GameModeInfoProps> = ({
     armyBonusActive: hasArmyBonus,
   } = useStore();
   const openChart = (selectedChart: keyof typeof charts) => () =>
-    setCurrentModal(MODAL_KEYS.CHART, { selectedChart });
+    setCurrentModal(ModalTypes.CHART, { selectedChart });
   return (
     <div
       id="optionMenu"

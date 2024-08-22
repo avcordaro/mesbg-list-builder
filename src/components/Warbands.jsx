@@ -1,21 +1,21 @@
-import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
+import { FaPlus } from "react-icons/fa";
 import { HiDuplicate } from "react-icons/hi";
 import { MdDelete } from "react-icons/md";
-import { DefaultHeroUnit } from "./DefaultHeroUnit";
 import { v4 as uuid } from "uuid";
-import { WarbandHero } from "./WarbandHero";
-import { DefaultWarriorUnit } from "./DefaultWarriorUnit";
-import { WarbandWarrior } from "./WarbandWarrior";
-import { FaPlus } from "react-icons/fa";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
+import { useStore } from "../state/store";
+import { DefaultHeroUnit } from "./DefaultHeroUnit";
+import { DefaultWarriorUnit } from "./DefaultWarriorUnit";
+import { WarbandHero } from "./WarbandHero";
+import { WarbandWarrior } from "./WarbandWarrior";
 import {
   handleSpecialArmyOption,
   handleSpecialWarbandOption,
 } from "./specialRules.js";
-import { useStore } from "../state/store";
 
 /* Displays the list of all warbands, and also defines how each warband card looks. */
 
@@ -23,7 +23,6 @@ export function Warbands({
   setHeroSelection,
   setDisplaySelection,
   setWarbandNumFocus,
-  setCardUnitData,
   specialArmyOptions,
   setSpecialArmyOptions,
   setNewWarriorFocus,
@@ -206,8 +205,8 @@ export function Warbands({
           key={uuid()}
           style={{ width: "850px" }}
           className="p-2 shadow"
-          bg={"secondary"}
-          text={"light"}
+          bg="secondary"
+          text="light"
         >
           <Stack direction="horizontal">
             {warband.hero ? (
@@ -244,7 +243,7 @@ export function Warbands({
               onClick={() => handleCopyWarband(warband.num)}
               className="mt-1 ms-auto mb-2"
               style={{ marginRight: "10px" }}
-              variant={"info"}
+              variant="info"
             >
               <HiDuplicate />
             </Button>
@@ -252,7 +251,7 @@ export function Warbands({
               onClick={() => handleDeleteWarband(warband.num)}
               className="mt-1 mb-2"
               style={{ marginRight: "10px" }}
-              variant={"danger"}
+              variant="danger"
             >
               <MdDelete />
             </Button>
@@ -270,7 +269,6 @@ export function Warbands({
               key={uuid()}
               warbandNum={warband.num}
               unitData={warband.hero}
-              setCardUnitData={setCardUnitData}
               specialArmyOptions={specialArmyOptions}
               setSpecialArmyOptions={setSpecialArmyOptions}
             />
@@ -295,7 +293,6 @@ export function Warbands({
                   key={uuid()}
                   warbandNum={warband.num}
                   unitData={unit}
-                  setCardUnitData={setCardUnitData}
                   specialArmyOptions={specialArmyOptions}
                 />
               ),
@@ -309,7 +306,7 @@ export function Warbands({
             warband.hero.model_id !== "[desolator_of_the_north] smaug" && (
               <Button
                 onClick={() => handleNewWarrior(warband.num)}
-                variant={"info"}
+                variant="info"
                 className="m-1"
                 style={{ width: "820px" }}
               >

@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Navbar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import Stack from "react-bootstrap/Stack";
 import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { FaChessRook, FaRegCopyright } from "react-icons/fa";
@@ -11,7 +9,8 @@ import logo from "../assets/images/logo.svg";
 import title from "../assets/images/title.png";
 import { useStore } from "../state/store";
 import { AlertTypes } from "./alerts/alert-types";
-import { MODAL_KEYS } from "./modal/modals";
+import { ModalTypes } from "./modal/modals";
+import { SidebarTypes } from "./sidebar-drawer/sidebars";
 
 /* Navbar component that displays at the top of the page. */
 
@@ -23,13 +22,12 @@ export function TopNavbar({ setShowRosterTable }) {
     setCurrentModal,
     triggerAlert,
     startNewGame,
+    openSidebar,
   } = useStore();
-
-  const [showNews, setShowNews] = useState(false);
 
   const handleExportJSON = () => {
     /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard.
-            Also notify them with an alert that fades away after 3 seconds. */
+                Also notify them with an alert that fades away after 3 seconds. */
     navigator.clipboard.writeText(
       JSON.stringify(roster).replaceAll('["",', "[0,"),
     );
@@ -83,7 +81,7 @@ export function TopNavbar({ setShowRosterTable }) {
                 <Button
                   variant="dark"
                   className="ms-auto border border-secondary"
-                  onClick={() => setShowNews(true)}
+                  onClick={() => openSidebar(SidebarTypes.NEW_EDITION_NEWS)}
                 >
                   <FaQuestion /> New Edition
                 </Button>
@@ -98,7 +96,7 @@ export function TopNavbar({ setShowRosterTable }) {
                 ) : (
                   <Button
                     variant="success"
-                    onClick={() => setCurrentModal(MODAL_KEYS.BUILDER_MODE, {})}
+                    onClick={() => setCurrentModal(ModalTypes.BUILDER_MODE, {})}
                   >
                     <FaHammer /> Builder Mode
                   </Button>
@@ -117,7 +115,7 @@ export function TopNavbar({ setShowRosterTable }) {
                 </Button>
                 <Button
                   onClick={() =>
-                    setCurrentModal(MODAL_KEYS.IMPORT_ROSTER_JSON, {})
+                    setCurrentModal(ModalTypes.IMPORT_ROSTER_JSON, {})
                   }
                   disabled={gameMode}
                 >
@@ -162,61 +160,6 @@ export function TopNavbar({ setShowRosterTable }) {
           </Stack>
         </Navbar.Brand>
       </Navbar>
-      <Offcanvas show={showNews} onHide={() => setShowNews(false)}>
-        <Offcanvas.Header className="border border-secondary" closeButton>
-          <Offcanvas.Title>
-            <b>The New Edition of MESBG</b>
-          </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <b>17th August 2024 - Message from avcordaro</b>
-          <br />
-          <br />
-          Hello everyone!
-          <br />
-          <br />
-          Games Workshop has announced that a new edition for MESBG will be
-          released in the near future. You can find one of the latest
-          announcements here, describing some of the incoming changes...
-          <br />
-          <br />
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.warhammer-community.com/2024/08/15/the-road-goes-ever-on-and-on-the-next-edition-of-middle-earth-strategy-battle-game/"
-          >
-            The Road Goes Ever On and On… The Next Edition of Middle-earth™
-            Strategy Battle Game
-          </a>
-          <br />
-          <br />
-          You can see in the article above that a lot of profiles are being
-          reworked, along with a new array of army lists and various rule
-          changes. This is likely going to result in a very large amount of work
-          for me once it is released, particularly for profile cards. I will
-          definitely be working hard to bring you updates that support the new
-          edition of the game on this website.
-          <br />
-          <br />
-          My plan is to maintain two versions of this list builder, one for the
-          new edition, and one for the old edition. I may be able to better
-          estimate the time and effort it will require as more details are
-          released over the coming months. As a matter of tempering
-          expectations, I'd like to disclaim in advance that it could take many
-          weeks to fully support all of the changes.
-          <br />
-          <br />
-          In the meantime, thank you for all your support and kind words over
-          the past year. It has meant a great deal to me. I appreciate your
-          patience for what's to come in future as I transition this website
-          over to supporting the new edition.
-          <br />
-          <br />
-          Thank you.
-          <br />
-          <br />
-        </Offcanvas.Body>
-      </Offcanvas>
     </>
   );
 }

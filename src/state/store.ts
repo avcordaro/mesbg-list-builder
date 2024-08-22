@@ -3,7 +3,8 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
 import { AllianceLevel } from "../components/constants/alliances.ts";
 import { GameModeState } from "../components/gamemode/types.ts";
-import { MODAL_KEYS } from "../components/modal/modals.tsx";
+import { ModalTypes } from "../components/modal/modals.tsx";
+import { SidebarTypes } from "../components/sidebar-drawer/sidebars.tsx";
 import { Faction, FactionType } from "../types/factions.ts";
 import { Roster } from "../types/roster.ts";
 import { getHeroesForGameMode } from "./gamemode/gamemode.ts";
@@ -28,12 +29,16 @@ export type ListBuilderStore = {
   startNewGame: () => void;
   updateGameState: (update: Partial<GameModeState>) => void;
   // Modals
-  currentlyOpenendModal: MODAL_KEYS | null;
+  currentlyOpenendModal: ModalTypes | null;
   modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-  setCurrentModal: (key: MODAL_KEYS, context?: unknown) => void;
+  setCurrentModal: (key: ModalTypes, context?: unknown) => void;
   closeModal: () => void;
+  // Sidebar
+  currentlyOpenendSidebar: SidebarTypes | null;
+  openSidebar: (sidebarType: SidebarTypes) => void;
+  closeSidebar: () => void;
   // Alerts
-  activeAlert: AlertTypes;
+  activeAlert: AlertTypes | null;
   triggerAlert: (alert: AlertTypes) => void;
   dismissAlert: () => void;
 };
@@ -56,6 +61,7 @@ const initialState = {
   gameMode: false,
   gameState: undefined,
   currentlyOpenendModal: null,
+  currentlyOpenendSidebar: null,
   activeAlert: null,
 };
 
@@ -109,6 +115,8 @@ export const useStore = create<
           currentlyOpenendModal: null,
           modelContext: null,
         }),
+      openSidebar: (sidebar) => set({ currentlyOpenendSidebar: sidebar }),
+      closeSidebar: () => set({ currentlyOpenendSidebar: null }),
 
       triggerAlert: (alert) => set({ activeAlert: alert }),
       dismissAlert: () => set({ activeAlert: null }),
