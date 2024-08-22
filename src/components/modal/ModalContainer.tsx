@@ -11,7 +11,7 @@ export const ModalContainer = () => {
   }
 
   const currentModal = modals.get(state.currentlyOpenendModal);
-  const { title } = state?.modelContext || {};
+  const { title } = state?.modalContext || {};
   return (
     <Modal
       show={true} // handled by the modal container, so this should always be true

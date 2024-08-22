@@ -14,7 +14,7 @@ import { SidebarTypes } from "../sidebar-drawer/sidebars";
 
 /* Navbar component that displays at the top of the page. */
 
-export function TopNavbar({ setShowRosterTable }) {
+export function TopNavbar() {
   const {
     roster,
     gameMode,
@@ -103,7 +103,7 @@ export function TopNavbar({ setShowRosterTable }) {
                 )}
                 <Button
                   disabled={uniqueModels.length === 0}
-                  onClick={() => setShowRosterTable(true)}
+                  onClick={() => setCurrentModal(ModalTypes.ROSTER_TABLE)}
                 >
                   <FaTableList /> Roster Table
                 </Button>

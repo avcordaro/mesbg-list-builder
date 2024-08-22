@@ -1,12 +1,14 @@
 import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
-import { FaHammer } from "react-icons/fa6";
+import { FaHammer, FaImage } from "react-icons/fa6";
 import { TbRefresh } from "react-icons/tb";
 import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
+import { ModalRosterTable } from "./modals/ModalRosterTable";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
+import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
 
 export enum ModalTypes {
   BUILDER_MODE = "BUILDER_MODE",
@@ -14,6 +16,8 @@ export enum ModalTypes {
   PROFILE_CARD = "PROFILE_CARD",
   CHART = "CHART",
   RESET_GAME_MODE = "RESET_GAME_MODE",
+  ROSTER_TABLE = "ROSTER_TABLE",
+  ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
 }
 
 export type ModalProps = {
@@ -61,6 +65,22 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <TbRefresh />,
       title: "Reset Game Mode?",
       children: <ResetGameModeModal />,
+    },
+  ],
+  [
+    ModalTypes.ROSTER_TABLE,
+    {
+      icon: <></>,
+      title: "Roster Table",
+      children: <ModalRosterTable />,
+    },
+  ],
+  [
+    ModalTypes.ROSTER_SCREENSHOT,
+    {
+      icon: <FaImage />,
+      title: "Screenshot",
+      children: <ScreenshotRosterModal />,
     },
   ],
 ]);

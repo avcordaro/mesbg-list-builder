@@ -10,7 +10,7 @@ import "./App.css";
 import { Alerts } from "./components/alerts/Alerts";
 import { GameMode } from "./components/gamemode/GameMode";
 import { ModalContainer } from "./components/modal/ModalContainer";
-import { ModalRosterTable } from "./components/modal/modals/ModalRosterTable.jsx";
+import { ModalRosterTable } from "./components/modal/modals/ModalRosterTable.tsx";
 import { SidebarContainer } from "./components/sidebar-drawer/SidebarContainer";
 import { useStore } from "./state/store";
 import {
@@ -49,9 +49,6 @@ export default function App() {
   const [displaySelection, setDisplaySelection] = useState(false);
 
   const [warnings, setWarnings] = useState([]);
-
-  // Modals
-  const [showRosterTable, setShowRosterTable] = useState(false);
 
   // $(window).scroll(function () {
   //     // stops the left-hand options menu from scrolling horizontally
@@ -216,7 +213,8 @@ export default function App() {
       <Alerts />
       <ModalContainer />
       <SidebarContainer />
-      <TopNavbar setShowRosterTable={setShowRosterTable} />
+      <TopNavbar />
+
       <div className="m-4">
         {!gameMode ? (
           <>
@@ -253,11 +251,6 @@ export default function App() {
           <GameMode factionData={factionData} />
         )}
       </div>
-      <ModalRosterTable
-        showRosterTable={showRosterTable}
-        setShowRosterTable={setShowRosterTable}
-        factionData={factionData}
-      />
     </div>
   );
 }

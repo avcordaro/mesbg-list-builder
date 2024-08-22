@@ -3,10 +3,10 @@ import Modal from "react-bootstrap/Modal";
 import { useStore } from "../../../state/store.ts";
 
 export const ResetGameModeModal = () => {
-  const { modelContext, closeModal } = useStore();
+  const { modalContext, closeModal } = useStore();
 
   const handleContinue = () => {
-    modelContext.handleReset();
+    modalContext.handleReset();
     closeModal();
   };
 

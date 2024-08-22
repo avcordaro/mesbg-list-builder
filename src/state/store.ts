@@ -30,7 +30,7 @@ export type ListBuilderStore = {
   updateGameState: (update: Partial<GameModeState>) => void;
   // Modals
   currentlyOpenendModal: ModalTypes | null;
-  modelContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  modalContext?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   setCurrentModal: (key: ModalTypes, context?: unknown) => void;
   closeModal: () => void;
   // Sidebar
@@ -109,11 +109,11 @@ export const useStore = create<
         }),
 
       setCurrentModal: (modal, context) =>
-        set({ currentlyOpenendModal: modal, modelContext: context }),
+        set({ currentlyOpenendModal: modal, modalContext: context }),
       closeModal: () =>
         set({
           currentlyOpenendModal: null,
-          modelContext: null,
+          modalContext: null,
         }),
       openSidebar: (sidebar) => set({ currentlyOpenendSidebar: sidebar }),
       closeSidebar: () => set({ currentlyOpenendSidebar: null }),

@@ -9,7 +9,7 @@ import { UnitProfileCard } from "../../images/UnitProfileCard.tsx";
 
 export const ProfileCardModal = () => {
   const {
-    modelContext: { unitData },
+    modalContext: { unitData },
   } = useStore();
 
   const ExtraProfileCards = ({ unit }: { unit: Unit }) => {

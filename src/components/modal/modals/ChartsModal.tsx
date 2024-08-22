@@ -3,7 +3,7 @@ import { useStore } from "../../../state/store.ts";
 
 export function ChartsModal() {
   const {
-    modelContext: { selectedChart },
+    modalContext: { selectedChart },
   } = useStore();
 
   return (
