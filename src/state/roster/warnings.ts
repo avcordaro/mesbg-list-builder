@@ -83,7 +83,7 @@ export const getWarningsForCreatedRoster = (
   // checkAlliedHeroes();
   // checkSiegeEngineCounts();
 
-  return [];
+  return []; // TODO: fill this with the actual warnings!
 };
 
 const checkSiegeEngineCounts = (heroicTiers, siegeEngines) => {

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SelectionMenu } from "./SelectionMenu";
 import { Warbands } from "./Warbands";
 
+// TODO: Update the builder mode components to use typescript.
 export const BuilderMode = () => {
   const [factionSelection, setFactionSelection] = useState({
     "Good Army": "Minas Tirith",

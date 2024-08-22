@@ -52,10 +52,10 @@ export const FactionAllies = ({ faction }: { faction: Faction }) => {
 };
 
 export const Alliances = () => {
-  // const { roster, setRoster, allianceLevel, factions } = useStore();
   const { factions } = useStore();
 
   // TODO: add this logic back in a form that it works for the new sidebar.
+  // FIXME: Since most of these if statements update the roster in some for, it probably should be moved to the updateRoster function!
   // useEffect(() => {
   //   //If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
   //   if (factionList.includes("Halls of Thranduil")) {
