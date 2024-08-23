@@ -54,7 +54,7 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     roster: updatedRoster,
     factions: factionList,
     factionType: factionType,
-    factionMetaData: factionMetaData,
+    factionMetaData: calculateModelCount(adjustedRoster.warbands),
     uniqueModels: uniqueModels,
     allianceLevel: becomesImpossibleAllies ? "Impossible" : actualAllianceLevel,
     rosterBuildingWarnings: [...warnings, ...rosterBuildingWarnings],
