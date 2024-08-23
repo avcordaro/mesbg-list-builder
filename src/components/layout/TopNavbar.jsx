@@ -151,7 +151,10 @@ export function TopNavbar() {
                 className="mb-0 ms-auto text-muted"
                 style={{ fontSize: "14px" }}
               >
-                Developed by avcordaro | <FaRegCopyright /> 2024
+                Developed by{" "}
+                <a href="https://github.com/avcordaro">avcordaro</a> &{" "}
+                <a href="https://github.com/mhollink">mhollink</a> |{" "}
+                <FaRegCopyright /> 2024
               </h6>
             </Stack>
           </Stack>
