@@ -42,7 +42,10 @@ function getModelCount(warband: Warband): number {
   }
 
   count += warband.units
-    .filter((unit) => !!unit && !!unit.name && unit.unit_type === "Warrior")
+    .filter(
+      (unit) =>
+        !!unit && !!unit.name && unit.unit_type === "Warrior" && unit.bow_limit,
+    )
     .reduce(
       (count, unit) => count + unit.quantity + unit.siege_crew * unit.quantity,
       0,
@@ -54,7 +57,7 @@ function getModelCount(warband: Warband): number {
 function getBowCount(warband: Warband) {
   return warband.units
     .filter((unit) => !!unit && !!unit.name && unit.unit_type === "Warrior")
-    .filter((unit) => unit.inc_bow_count)
+    .filter((unit) => unit.inc_bow_count && unit.bow_limit)
     .reduce(
       (bowCount, unit) =>
         bowCount + (unit.siege_crew > 0 ? unit.siege_crew : 1) * unit.quantity,

@@ -212,7 +212,6 @@ const checkWarnings = (
 const checkSiegeEngineCounts = (factionMetaData: ModelCountData) => {
   return Object.entries(factionMetaData)
     .map(([faction, { heroicTiers, siegeEngines }]) => {
-      console.log(faction);
       const allowedSiegeEngines = heroicTiers.filter((tier) =>
         ["Hero of Fortitude", "Hero of Valour", "Hero of Legend"].includes(
           tier,
