@@ -87,10 +87,6 @@ export const checkForSpecialCases = (
 
   if (models.includes("[rivendell] gil-galad")) {
     allianceLevel = checkGilGalad(allianceLevel, factions);
-    warnings.push(
-      "If Gil-Galad is included in the your force, all alliances become impossible except for Numenor (Historical) " +
-        "and Lothlorien, Fangorn and The Misty Mountains (Convenient).",
-    );
   }
 
   return [allianceLevel, warnings];
