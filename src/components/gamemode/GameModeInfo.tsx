@@ -6,7 +6,7 @@ import { FaChessRook, FaSearch } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
-import factionData from "../../assets/data/faction_data.json";
+import { useFactionData } from "../../hooks/faction-data.ts";
 import { useStore } from "../../state/store";
 import { Factions } from "../../types/factions.ts";
 import { allianceColours } from "../constants/alliances";
@@ -39,6 +39,8 @@ export const GameModeInfo = () => {
     armyBonusActive: hasArmyBonus,
     openSidebar,
   } = useStore();
+  const factionData = useFactionData();
+
   const openChart = (selectedChart: keyof typeof charts) => () =>
     setCurrentModal(ModalTypes.CHART, { selectedChart });
   return (

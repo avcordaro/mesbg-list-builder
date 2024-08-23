@@ -13,9 +13,9 @@ import { IoWarningOutline } from "react-icons/io5";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
 import { v4 as uuid } from "uuid";
-import factionData from "../../assets/data/faction_data.json";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import mesbg_data from "../../assets/data/mesbg_data.json";
+import { useFactionData } from "../../hooks/faction-data";
 import { useStore } from "../../state/store";
 import { allianceColours } from "../constants/alliances";
 import { wanderers } from "../constants/wanderers";
@@ -51,6 +51,7 @@ export function SelectionMenu({
     factionMetaData,
     openSidebar,
   } = useStore();
+  const factionData = useFactionData();
 
   const faction_lists = {
     "Good Army": new Set(

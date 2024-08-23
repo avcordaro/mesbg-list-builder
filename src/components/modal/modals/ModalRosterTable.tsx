@@ -14,8 +14,8 @@ import { FcCheckmark } from "react-icons/fc";
 import { GiQueenCrown } from "react-icons/gi";
 import { GoCopy } from "react-icons/go";
 import { RxCross1 } from "react-icons/rx";
-import factionData from "../../../assets/data/faction_data.json";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
 import { allianceColours } from "../../constants/alliances";
 import { ModalTypes } from "../modals";
@@ -32,6 +32,7 @@ export const ModalRosterTable = () => {
     allianceLevel,
     setCurrentModal,
   } = useStore();
+  const factionData = useFactionData();
 
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
