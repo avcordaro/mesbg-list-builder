@@ -66,6 +66,7 @@ function checkLosesArmyBonus(
       factions.length > 1
     ) {
       becomesImpossibleAllies = true;
+      losesArmyBonus = true;
     }
   }
   return { losesArmyBonus, becomesImpossibleAllies, warnings };
