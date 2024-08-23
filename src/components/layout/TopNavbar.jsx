@@ -147,9 +147,6 @@ export function TopNavbar() {
                 Break Point:{" "}
                 <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
               </h6>
-              <h6 className="mb-0">
-                Bows: <b>{roster.bow_count}</b>
-              </h6>
               <h6
                 className="mb-0 ms-auto text-muted"
                 style={{ fontSize: "14px" }}

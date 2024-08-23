@@ -66,7 +66,7 @@ export const ModalRosterTable = () => {
 
   const getTextView = () => {
     let tableString = "";
-    tableString += `| Total Points: ${roster.points} | Total Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} | Bows: ${roster.bow_count} |`;
+    tableString += `| Total Points: ${roster.points} | Total Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} | `;
     tableString += `\n\nAlliance Level: ${allianceLevel}\n\n`;
     roster.warbands.map((warband) => {
       tableString += "----------------------------------------\n";
@@ -234,9 +234,6 @@ export const ModalRosterTable = () => {
               <h6>
                 Break Point:{" "}
                 <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
-              </h6>
-              <h6>
-                Bows: <b>{roster.bow_count}</b>
               </h6>
             </Stack>
             <Table style={{ verticalAlign: "middle" }} size="sm" bordered>

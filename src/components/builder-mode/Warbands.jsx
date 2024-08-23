@@ -236,9 +236,6 @@ export function Warbands({
             <Card.Text className="ms-4">
               Points: <b>{warband.points}</b>
             </Card.Text>
-            <Card.Text className="ms-4">
-              Bows: <b>{warband.bow_count}</b>
-            </Card.Text>
             <Button
               onClick={() => handleCopyWarband(warband.num)}
               className="mt-1 ms-auto mb-2"
