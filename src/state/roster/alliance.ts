@@ -38,6 +38,7 @@ const getAllianceLevel = (factionList: Faction[]): AllianceLevel => {
   return "Historical";
 };
 
+// TODO: Check how this can fit into the warnings.ts
 export const calculateAllianceLevel = (
   factionList: Faction[],
   factionType: FactionType | "",

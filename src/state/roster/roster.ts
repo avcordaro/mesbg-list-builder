@@ -22,8 +22,11 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     allianceLevel,
   );
 
-  const rosterBuildingWarnings = getWarningsForCreatedRoster(
-    factionType,
+  const {
+    warnings: rosterBuildingWarnings,
+    losesArmyBonus,
+    becomesImpossibleAllies,
+  } = getWarningsForCreatedRoster(
     factionList,
     actualAllianceLevel,
     factionMetaData,
@@ -43,8 +46,8 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     factionType: factionType,
     factionMetaData: factionMetaData,
     uniqueModels: uniqueModels,
-    allianceLevel: actualAllianceLevel,
+    allianceLevel: becomesImpossibleAllies ? "Impossible" : actualAllianceLevel,
     rosterBuildingWarnings: [...warnings, ...rosterBuildingWarnings],
-    armyBonusActive: armyBonusActive,
+    armyBonusActive: armyBonusActive && !losesArmyBonus,
   };
 }

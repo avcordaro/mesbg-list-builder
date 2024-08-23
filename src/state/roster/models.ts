@@ -82,7 +82,7 @@ function getModelCountForWarband(warband: Warband) {
 
 function sumModelCountsForFaction(total, current) {
   return {
-    heroicTier: [...total.heroicTier, current.heroicTier],
+    heroicTiers: [...total.heroicTiers, current.heroicTier],
     modelsThatCountForBowLimit:
       total.modelsThatCountForBowLimit + current.modelsThatCountForBowLimit,
     modelsWithBow: total.modelsWithBow + current.modelsWithBow,
@@ -109,7 +109,7 @@ export function calculateModelCount(warbands: Warband[]): ModelCountData {
     result[faction] = groupedWarbands[faction]
       .map((warband: Warband) => getModelCountForWarband(warband))
       .reduce(sumModelCountsForFaction, {
-        heroicTier: [],
+        heroicTiers: [],
         modelsThatCountForBowLimit: 0,
         modelsWithBow: 0,
         siegeEngines: 0,
