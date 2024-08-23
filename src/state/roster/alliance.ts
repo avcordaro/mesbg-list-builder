@@ -2,6 +2,14 @@ import faction_data from "../../assets/data/faction_data.json";
 import { AllianceLevel } from "../../components/constants/alliances.ts";
 import { FactionData } from "../../types/faction-data.ts";
 import { Faction, Factions, FactionType } from "../../types/factions.ts";
+import { Roster } from "../../types/roster.ts";
+import {
+  handleBillCampfire,
+  handleGoblinTown,
+  handleKhandishHorsemanCharioteers,
+  handleMasterLaketown,
+  handleMirkwoodRangers,
+} from "../../utils/specialRules.js";
 
 const checkAlliance = (
   a: Faction,
@@ -140,4 +148,38 @@ const checkGilGalad = (
     return "Convenient";
   }
   return "Historical";
+};
+
+export const makeAllianceSpecificRosterAjustments = (
+  factionList: Faction[],
+  allianceLevel: AllianceLevel,
+  roster: Roster,
+): Roster => {
+  let updatedRoster = { ...roster };
+
+  // If alliance level changes, and Halls of Thranduil is included in army, there might be some changes needed for Mirkwood Rangers.
+  if (factionList.includes(Factions.Halls_of_Thranduil)) {
+    updatedRoster = handleMirkwoodRangers(updatedRoster, allianceLevel);
+  }
+  //If alliance level changes, and Variags of Khand is included in army, there might be some changes needed for Khandish Horseman/Charioteers.
+  if (factionList.includes(Factions.Variags_of_Khand)) {
+    updatedRoster = handleKhandishHorsemanCharioteers(
+      updatedRoster,
+      allianceLevel,
+    );
+  }
+  //If alliance level chaneges, and Army of Lake-town is included in army, there might be some changes needed for the Master of Lake-town
+  if (factionList.includes(Factions.Army_of_Lake_town)) {
+    updatedRoster = handleMasterLaketown(updatedRoster, allianceLevel);
+  }
+  //If alliance level chaneges, and Goblin-town is included in army, there might be some changes needed for the warband sizes
+  if (factionList.includes(Factions.Goblin_town)) {
+    updatedRoster = handleGoblinTown(updatedRoster, allianceLevel);
+  }
+  //If alliance level chaneges, and The Trolls are included in army, there might be some changes needed for Bill's campfire
+  if (factionList.includes(Factions.The_Trolls)) {
+    updatedRoster = handleBillCampfire(updatedRoster, allianceLevel);
+  }
+
+  return updatedRoster;
 };

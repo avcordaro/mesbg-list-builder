@@ -1,6 +1,10 @@
 import { Roster } from "../../types/roster.ts";
 import { ListBuilderStore } from "../store.ts";
-import { calculateAllianceLevel, checkForSpecialCases } from "./alliance";
+import {
+  calculateAllianceLevel,
+  checkForSpecialCases,
+  makeAllianceSpecificRosterAjustments,
+} from "./alliance";
 import { getFactionList, getFactionType } from "./faction.ts";
 import { calculateModelCount, getUniqueModels } from "./models.ts";
 import { getWarningsForCreatedRoster } from "./warnings.ts";
@@ -18,10 +22,6 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     uniqueModels,
   );
 
-  const armyBonusActive = ["Historical", "Legendary Legion"].includes(
-    allianceLevel,
-  );
-
   const {
     warnings: rosterBuildingWarnings,
     losesArmyBonus,
@@ -33,11 +33,21 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     uniqueModels,
   );
 
+  const armyBonusActive =
+    ["Historical", "Legendary Legion"].includes(actualAllianceLevel) &&
+    !losesArmyBonus;
+
+  const adjustedRoster = makeAllianceSpecificRosterAjustments(
+    factionList,
+    actualAllianceLevel,
+    roster,
+  );
+
   // Replace the empty string at the start of each array with a 0.
   // We do this cause the export will error out on empty strings at the start of an array.
   // Actual fix should be done in the data, but CBA.
   const updatedRoster = JSON.parse(
-    JSON.stringify(roster).replaceAll('["",', "[0,"),
+    JSON.stringify(adjustedRoster).replaceAll('["",', "[0,"),
   );
 
   return {
@@ -48,6 +58,6 @@ export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
     uniqueModels: uniqueModels,
     allianceLevel: becomesImpossibleAllies ? "Impossible" : actualAllianceLevel,
     rosterBuildingWarnings: [...warnings, ...rosterBuildingWarnings],
-    armyBonusActive: armyBonusActive && !losesArmyBonus,
+    armyBonusActive: armyBonusActive,
   };
 }
