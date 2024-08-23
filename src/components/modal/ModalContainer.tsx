@@ -19,11 +19,13 @@ export const ModalContainer = () => {
       size="xl"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title>
-          {currentModal.icon} {title || currentModal.title}
-        </Modal.Title>
-      </Modal.Header>
+      {!currentModal.customModalHeader && (
+        <Modal.Header closeButton>
+          <Modal.Title>
+            {currentModal.icon} {title || currentModal.title}
+          </Modal.Title>
+        </Modal.Header>
+      )}
       {currentModal.children}
     </Modal>
   );

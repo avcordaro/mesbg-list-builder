@@ -24,6 +24,7 @@ export type ModalProps = {
   children: ReactNode;
   icon: ReactNode;
   title: string;
+  customModalHeader?: boolean;
 };
 
 export const modals = new Map<ModalTypes, ModalProps>([
@@ -71,8 +72,9 @@ export const modals = new Map<ModalTypes, ModalProps>([
     ModalTypes.ROSTER_TABLE,
     {
       icon: <></>,
-      title: "Roster Table",
+      title: "",
       children: <ModalRosterTable />,
+      customModalHeader: true,
     },
   ],
   [
