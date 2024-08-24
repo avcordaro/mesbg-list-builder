@@ -148,9 +148,7 @@ export function SelectionMenu({
                               setDisplaySelection={setDisplaySelection}
                               heroSelection={heroSelection}
                               unitData={row}
-                              uniqueModels={uniqueModels}
                               warbandNumFocus={warbandNumFocus}
-                              allianceLevel={allianceLevel}
                               specialArmyOptions={specialArmyOptions}
                               setSpecialArmyOptions={setSpecialArmyOptions}
                             />
@@ -176,9 +174,7 @@ export function SelectionMenu({
                               setDisplaySelection={setDisplaySelection}
                               heroSelection={heroSelection}
                               unitData={row}
-                              uniqueModels={uniqueModels}
                               warbandNumFocus={warbandNumFocus}
-                              allianceLevel={allianceLevel}
                             />
                           ))}
                     {!heroSelection && (
