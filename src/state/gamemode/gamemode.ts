@@ -1,57 +1,56 @@
 import { GameModeHero } from "../../components/gamemode/types.ts";
 import { Roster } from "../../types/roster.ts";
+import { FreshUnit, isDefinedUnit, Unit } from "../../types/unit.ts";
 
-export function getHeroesForGameMode(
-  roster: Roster,
-): Record<string, GameModeHero[]> {
-  const newGameHeroes = {};
-  roster.warbands.map((_warband) => {
-    const hero = _warband.hero;
-    if (hero && hero["MWFW"].length > 0) {
-      if (hero["MWFW"].length > 1) {
-        newGameHeroes[hero["id"]] = hero["MWFW"].map((x) => ({
-          name: x[0],
-          profile_origin: hero["profile_origin"],
-          MWFW: x[1],
-          xMWFW: x[1],
-          leader: roster["leader_warband_num"] === _warband["num"],
-        }));
-      } else {
-        newGameHeroes[hero["id"]] = [
-          {
-            name: hero["MWFW"][0][0] || hero["name"],
-            profile_origin: hero["profile_origin"],
-            MWFW: hero["MWFW"][0][1],
-            xMWFW: hero["MWFW"][0][1],
-            leader: roster["leader_warband_num"] === _warband["num"],
-          },
-        ];
-      }
-    }
-    _warband.units.map((_unit) => {
-      if (_unit.name != null && _unit["MWFW"].length > 0) {
-        if (_unit["MWFW"].length > 1) {
-          newGameHeroes[_unit["id"]] = _unit["MWFW"].map((x) => ({
-            name: x[0],
-            profile_origin: _unit["profile_origin"],
-            MWFW: x[1],
-            xMWFW: x[1],
-          }));
-        } else {
-          newGameHeroes[_unit["id"]] = [
-            {
-              name: _unit["MWFW"][0][0] || _unit["name"],
-              profile_origin: _unit["profile_origin"],
-              MWFW: _unit["MWFW"][0][1],
-              xMWFW: _unit["MWFW"][0][1],
-            },
-          ];
-        }
-      }
-      return null;
-    });
-    return null;
-  });
+const convertToStats = (
+  name: string | number,
+  MWFW: string,
+  unit: Unit,
+  isArmyLeader: boolean,
+): GameModeHero => ({
+  name: String(name),
+  MWFW: MWFW,
+  xMWFW: MWFW,
+  profile_origin: unit.profile_origin,
+  leader: isArmyLeader,
+});
 
-  return newGameHeroes;
-}
+const mapHeroToStats = (
+  unit: Unit | FreshUnit,
+  isArmyLeader?: boolean,
+): Record<string, GameModeHero[]> => {
+  // check if a unit is selected (and not an empty selector box)
+  if (!isDefinedUnit(unit)) return null;
+
+  // check if unit is a hero
+  if (unit.MWFW.length === 0) return null;
+  // check if unit is composed of multiple hero's (such as Alladan & Elrohir)
+  if (unit.MWFW.length > 1) {
+    return {
+      [unit.id]: unit.MWFW.map(([name, MWFW]) =>
+        convertToStats(name, MWFW, unit, isArmyLeader),
+      ),
+    };
+  } else {
+    const [[name, MWFW]] = unit.MWFW;
+    return {
+      [unit.id]: [convertToStats(name || unit.name, MWFW, unit, isArmyLeader)],
+    };
+  }
+};
+
+const getHeroes = (roster: Roster): Record<string, GameModeHero[]> => {
+  return roster.warbands
+    .map(({ hero, units }) => [
+      mapHeroToStats(hero, false),
+      ...units.map((unit) => mapHeroToStats(unit)).filter((v) => !!v),
+    ])
+    .flat()
+    .reduce((result, hero) => ({ ...result, ...hero }), {});
+};
+
+export const createGameState = (roster: Roster) => ({
+  heroes: getHeroes(roster),
+  casualties: 0,
+  heroCasualties: 0,
+});

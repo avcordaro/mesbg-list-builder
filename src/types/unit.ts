@@ -19,10 +19,13 @@ export type Unit = {
   unique: boolean;
   unit_type: UnitType;
   warband_size: number;
-  MWFW: [[number | string, string]];
+  MWFW: [string | number, string][];
 };
 
-export type FreshUnit = Partial<Unit>;
+export type FreshUnit = Pick<Unit, "id" | "name">;
+
+export const isDefinedUnit = (unit: FreshUnit): unit is Unit =>
+  unit.name !== null;
 
 export type UnitType =
   | "Warrior"
