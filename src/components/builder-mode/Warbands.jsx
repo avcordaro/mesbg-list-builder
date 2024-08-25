@@ -30,23 +30,10 @@ export function Warbands({
   factionSelection,
   setFactionSelection,
 }) {
-  const { roster, setRoster } = useStore();
+  const { roster, setRoster, addWarband } = useStore();
 
   const handleNewWarband = () => {
-    // Create a new empty warband dictionary and add to the roster
-    let newRoster = { ...roster };
-    let newWarband = {
-      id: uuid(),
-      num: newRoster.warbands.length + 1,
-      points: 0,
-      num_units: 0,
-      max_units: "-",
-      bow_count: 0,
-      hero: null,
-      units: [],
-    };
-    newRoster.warbands.push(newWarband);
-    setRoster(newRoster);
+    addWarband();
     setDisplaySelection(false);
   };
 

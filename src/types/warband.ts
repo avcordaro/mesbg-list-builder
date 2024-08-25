@@ -1,8 +1,7 @@
-import { v4 as uuid } from "uuid";
 import { Unit } from "./unit.ts";
 
 export type Warband = {
-  id: typeof uuid;
+  id: string;
   num: number;
   points: number;
   num_units: number;

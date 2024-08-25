@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { v4 as uuid } from "uuid";
 import { AllianceLevel } from "../../components/constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { Unit } from "../../types/unit.ts";
+import { Warband } from "../../types/warband.ts";
 import { Slice } from "../store.ts";
 import { ModelCountData } from "./models.ts";
 import { updateRoster } from "./roster.ts";
@@ -67,7 +70,29 @@ export const rosterSlice: Slice<RosterState> = (set) => ({
       "SET_ROSTER",
     ),
 
-  addWarband: (): void => set({}, undefined, "ADD_WARBAND"),
+  addWarband: (): void =>
+    set(
+      ({ roster }) => ({
+        roster: {
+          ...roster,
+          warbands: [
+            ...roster.warbands,
+            {
+              id: uuid(),
+              num: roster.warbands.length + 1,
+              points: 0,
+              num_units: 0,
+              max_units: "-",
+              bow_count: 0,
+              hero: null,
+              units: [],
+            },
+          ],
+        },
+      }),
+      undefined,
+      "ADD_WARBAND",
+    ),
   duplicateWarband: (warbandId: string): void =>
     set({}, undefined, "DUPLICATE_WARBAND"),
   deleteWarband: (warbandId: string): void =>
