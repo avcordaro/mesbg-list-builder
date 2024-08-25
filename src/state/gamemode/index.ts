@@ -24,21 +24,29 @@ const initialState = {
 export const gamemodeSlice: Slice<GamemodeState> = (set, get) => ({
   ...initialState,
 
-  setGameMode: (gameMode) => set({ gameMode }),
+  setGameMode: (gameMode) => set({ gameMode }, undefined, "SET_GAME_MODE"),
   startNewGame: () =>
-    set({
-      gameMode: true,
-      gameState: {
-        heroes: getHeroesForGameMode(get().roster),
-        casualties: 0,
-        heroCasualties: 0,
+    set(
+      {
+        gameMode: true,
+        gameState: {
+          heroes: getHeroesForGameMode(get().roster),
+          casualties: 0,
+          heroCasualties: 0,
+        },
       },
-    }),
+      undefined,
+      "START_GAME",
+    ),
   updateGameState: (gameStateUpdate) =>
-    set({
-      gameState: {
-        ...get().gameState,
-        ...gameStateUpdate,
+    set(
+      {
+        gameState: {
+          ...get().gameState,
+          ...gameStateUpdate,
+        },
       },
-    }),
+      undefined,
+      "UPDATE_GAME_STATE",
+    ),
 });

@@ -14,6 +14,7 @@ const initialState = {
 export const alertSlice: Slice<AlertState> = (set) => ({
   ...initialState,
 
-  triggerAlert: (alert) => set({ activeAlert: alert }),
-  dismissAlert: () => set({ activeAlert: null }),
+  triggerAlert: (alert) =>
+    set({ activeAlert: alert }, undefined, "TRIGGER_ALERT"),
+  dismissAlert: () => set({ activeAlert: null }, undefined, "DISMISS_ALERT"),
 });

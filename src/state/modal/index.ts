@@ -20,10 +20,18 @@ export const modalSlice: Slice<ModalState> = (set) => ({
   ...initialModalState,
 
   setCurrentModal: (modal, context) =>
-    set({ currentlyOpenendModal: modal, modalContext: context }),
+    set(
+      { currentlyOpenendModal: modal, modalContext: context },
+      undefined,
+      "OPEN_MODAL",
+    ),
   closeModal: () =>
-    set({
-      currentlyOpenendModal: null,
-      modalContext: null,
-    }),
+    set(
+      {
+        currentlyOpenendModal: null,
+        modalContext: null,
+      },
+      undefined,
+      "CLOSE_MODAL",
+    ),
 });

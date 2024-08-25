@@ -38,7 +38,11 @@ export const rosterSlice: Slice<RosterState> = (set) => ({
   ...initialState,
 
   setRoster: (roster) =>
-    set({
-      ...updateRoster(roster),
-    }),
+    set(
+      {
+        ...updateRoster(roster),
+      },
+      undefined,
+      "SET_ROSTER",
+    ),
 });

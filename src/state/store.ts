@@ -14,8 +14,10 @@ export type AppState = RosterState &
   AlertState;
 
 export type Slice<T> = StateCreator<
-  T,
-  [["zustand/devtools", unknown], ["zustand/persist", unknown]]
+  AppState,
+  [["zustand/devtools", unknown], ["zustand/persist", unknown]],
+  [],
+  T
 >;
 
 export const useStore = create<
