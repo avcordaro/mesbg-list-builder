@@ -1,5 +1,5 @@
 import { Roster } from "../../types/roster.ts";
-import { ListBuilderStore } from "../store.ts";
+import { AppState } from "../store.ts";
 import {
   calculateAllianceLevel,
   checkForSpecialCases,
@@ -9,7 +9,7 @@ import { getFactionList, getFactionType } from "./faction.ts";
 import { calculateModelCount, getUniqueModels } from "./models.ts";
 import { getWarningsForCreatedRoster } from "./warnings.ts";
 
-export function updateRoster(roster: Roster): Partial<ListBuilderStore> {
+export function updateRoster(roster: Roster): Partial<AppState> {
   const factionType = getFactionType(roster.warbands);
   const factionList = getFactionList(roster.warbands);
   const uniqueModels = getUniqueModels(roster.warbands);

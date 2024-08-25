@@ -7,9 +7,3 @@ export type GameModeHero = {
   xMWFW: string;
   leader: boolean;
 };
-
-export type GameModeState = {
-  heroes: Record<string, GameModeHero[]>;
-  casualties: number;
-  heroCasualties: number;
-};
