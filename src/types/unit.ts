@@ -24,8 +24,7 @@ export type Unit = {
 
 export type FreshUnit = Pick<Unit, "id" | "name">;
 
-export const isDefinedUnit = (unit: FreshUnit): unit is Unit =>
-  unit.name !== null;
+export const isDefinedUnit = (unit: FreshUnit): unit is Unit => !!unit?.name;
 
 export type UnitType =
   | "Warrior"

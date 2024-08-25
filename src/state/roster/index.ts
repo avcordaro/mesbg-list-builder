@@ -5,6 +5,7 @@ import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { Unit, FreshUnit } from "../../types/unit.ts";
 import { Slice } from "../store.ts";
+import { addWarband, deleteWarband } from "./buiding/warband.ts";
 import { ModelCountData } from "./models.ts";
 import { updateRoster } from "./roster.ts";
 
@@ -70,30 +71,11 @@ export const rosterSlice: Slice<RosterState> = (set) => ({
       "SET_ROSTER",
     ),
 
-  addWarband: (): void =>
-    set(
-      ({ roster }) => {
-        roster.warbands.push({
-          id: uuid(),
-          num: roster.warbands.length + 1,
-          points: 0,
-          num_units: 0,
-          max_units: "-",
-          bow_count: 0,
-          hero: null,
-          units: [],
-        });
-        return {
-          roster,
-        };
-      },
-      undefined,
-      "ADD_WARBAND",
-    ),
+  addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
   duplicateWarband: (warbandId: string): void =>
     set({}, undefined, "DUPLICATE_WARBAND"),
   deleteWarband: (warbandId: string): void =>
-    set({}, undefined, "DELETE_WARBAND"),
+    set(deleteWarband(warbandId), undefined, "DELETE_WARBAND"),
 
   assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit): void =>
     set({}, undefined, "ASSIGN_HERO"),
