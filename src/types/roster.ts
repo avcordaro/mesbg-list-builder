@@ -5,5 +5,6 @@ export type Roster = {
   num_units: number;
   points: number;
   bow_count: number;
+  leader_warband_num: number | null;
   warbands: Warband[];
 };
