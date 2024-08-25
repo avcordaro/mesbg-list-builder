@@ -1,4 +1,4 @@
-import { create } from "zustand";
+import { create, StateCreator } from "zustand";
 import { createJSONStorage, devtools, persist } from "zustand/middleware";
 import { alertSlice, AlertState } from "./alert";
 import { gamemodeSlice, GamemodeState } from "./gamemode";
@@ -13,9 +13,10 @@ export type AppState = RosterState &
   SidebarState &
   AlertState;
 
-export type SliceSet<T> = (state: Partial<T>) => void;
-export type SliceGet = () => AppState;
-export type Slice<T> = (set: SliceSet<T>, get?: SliceGet) => T;
+export type Slice<T> = StateCreator<
+  T,
+  [["zustand/devtools", unknown], ["zustand/persist", unknown]]
+>;
 
 export const useStore = create<
   AppState,
@@ -23,12 +24,12 @@ export const useStore = create<
 >(
   devtools(
     persist(
-      (set, get) => ({
-        ...modalSlice(set),
-        ...sidebarSlice(set),
-        ...alertSlice(set),
-        ...gamemodeSlice(set, get),
-        ...rosterSlice(set),
+      (...args) => ({
+        ...modalSlice(...args),
+        ...sidebarSlice(...args),
+        ...alertSlice(...args),
+        ...gamemodeSlice(...args),
+        ...rosterSlice(...args),
       }),
       {
         name: "mesbg-lb-storage",
