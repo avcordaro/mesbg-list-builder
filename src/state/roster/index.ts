@@ -3,8 +3,7 @@ import { v4 as uuid } from "uuid";
 import { AllianceLevel } from "../../components/constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
-import { Unit } from "../../types/unit.ts";
-import { Warband } from "../../types/warband.ts";
+import { Unit, FreshUnit } from "../../types/unit.ts";
 import { Slice } from "../store.ts";
 import { ModelCountData } from "./models.ts";
 import { updateRoster } from "./roster.ts";
@@ -23,7 +22,7 @@ type RosterFunctions = {
   deleteHero: (warbandId: string, heroId: string) => void;
 
   // Unit functions
-  addUnit: () => void;
+  addUnit: (warbandId: string) => void;
   selectUnit: (warbandId: string, unitId: string, unit: Unit) => void;
   updateUnit: (warbandId: string, unitId: string, unit: Unit) => void;
   deleteUnit: (warbandId: string, unitId: string) => void;
@@ -72,24 +71,21 @@ export const rosterSlice: Slice<RosterState> = (set) => ({
 
   addWarband: (): void =>
     set(
-      ({ roster }) => ({
-        roster: {
-          ...roster,
-          warbands: [
-            ...roster.warbands,
-            {
-              id: uuid(),
-              num: roster.warbands.length + 1,
-              points: 0,
-              num_units: 0,
-              max_units: "-",
-              bow_count: 0,
-              hero: null,
-              units: [],
-            },
-          ],
-        },
-      }),
+      ({ roster }) => {
+        roster.warbands.push({
+          id: uuid(),
+          num: roster.warbands.length + 1,
+          points: 0,
+          num_units: 0,
+          max_units: "-",
+          bow_count: 0,
+          hero: null,
+          units: [],
+        });
+        return {
+          roster,
+        };
+      },
       undefined,
       "ADD_WARBAND",
     ),
@@ -105,7 +101,18 @@ export const rosterSlice: Slice<RosterState> = (set) => ({
   deleteHero: (warbandId: string, heroId: string): void =>
     set({}, undefined, "DELETE_HERO"),
 
-  addUnit: (): void => set({}, undefined, "ADD_UNIT"),
+  addUnit: (warbandId: string): void =>
+    set(
+      ({ roster }) => {
+        const warband = roster.warbands.find(({ id }) => id === warbandId);
+        warband.units.push({ id: uuid(), name: null } as FreshUnit);
+        return {
+          roster,
+        };
+      },
+      undefined,
+      "ADD_UNIT",
+    ),
   selectUnit: (warbandId: string, unitId: string, unit: Unit): void =>
     set({}, undefined, "SELECT_UNIT"),
   updateUnit: (warbandId: string, unitId: string, unit: Unit): void =>

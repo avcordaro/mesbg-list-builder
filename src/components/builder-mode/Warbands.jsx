@@ -30,7 +30,7 @@ export function Warbands({
   factionSelection,
   setFactionSelection,
 }) {
-  const { roster, setRoster, addWarband } = useStore();
+  const { roster, setRoster, addWarband, addUnit } = useStore();
 
   const handleNewWarband = () => {
     addWarband();
@@ -176,11 +176,8 @@ export function Warbands({
     setDisplaySelection(false);
   };
 
-  const handleNewWarrior = (warbandNum) => {
-    // Add an empty placeholder dictionary for the new unit (it will be replaced by the actual warrior that gets selected)
-    let newRoster = { ...roster };
-    newRoster.warbands[warbandNum - 1].units.push({ id: uuid(), name: null });
-    setRoster(newRoster);
+  const handleNewWarrior = (warbandId) => {
+    addUnit(warbandId);
     setHeroSelection(false);
     setDisplaySelection(false);
   };
@@ -289,7 +286,7 @@ export function Warbands({
               "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)" &&
             warband.hero.model_id !== "[desolator_of_the_north] smaug" && (
               <Button
-                onClick={() => handleNewWarrior(warband.num)}
+                onClick={() => handleNewWarrior(warband.id)}
                 variant="info"
                 className="m-1"
                 style={{ width: "820px" }}

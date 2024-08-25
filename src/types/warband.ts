@@ -1,4 +1,4 @@
-import { Unit } from "./unit.ts";
+import { FreshUnit, Unit } from "./unit.ts";
 
 export type Warband = {
   id: string;
@@ -7,6 +7,6 @@ export type Warband = {
   num_units: number;
   max_units: number | "-";
   bow_count: number;
-  hero: Unit;
-  units: Unit[];
+  hero: FreshUnit | Unit;
+  units: (FreshUnit | Unit)[];
 };
