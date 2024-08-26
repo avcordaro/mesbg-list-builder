@@ -450,6 +450,24 @@
       "warning":"(Army of Lake-town) Alfrid the Councillor may only be included if your army also includes either Bard the Bowman or the Master of Lake-town."
     }
   ],
+  "[arnor] dunedain":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[arnor] aranarth"
+      ],
+      "warning":"(Arnor) Dunedain may only be taken as part of Arnor if your force also includes Aranarth."
+    }
+  ],
+  "[arnor] ranger_of_the_north":[
+    {
+      "type":"requires_all",
+      "dependencies":[
+        "[arnor] aranarth"
+      ],
+      "warning":"(Arnor) Rangers of the North may only be taken as part of Arnor if your force also includes Aranarth."
+    }
+  ],
   "[dark_denizens_of_mirkwood] bat_swarm_cpt":[
     {
       "type":"requires_all",
@@ -543,6 +561,36 @@
         "[minas_tirith] denethor"
       ],
       "warning":"Aragorn, King Elessar cannot be included in the same force as Boromir or Denethor."
+    }
+  ],
+  "[minas_tirith] earnur":[
+    {
+      "type":"incompatible",
+      "dependencies":[
+
+      ],
+      "warning":"If Earnur is included in your force, you automatically become impossible allies with all other army lists."
+    },
+    {
+      "type":"incompatible",
+      "dependencies":[
+        "[minas_tirith] ingold",
+        "[minas_tirith] irolas",
+        "[minas_tirith] cirion",
+        "[minas_tirith] madril",
+        "[minas_tirith] aragorn,_king_elessar",
+        "[minas_tirith] gandalf_the_white",
+        "[minas_tirith] boromir",
+        "[minas_tirith] faramir",
+        "[minas_tirith] hurin",
+        "[minas_tirith] denethor",
+        "[minas_tirith] peregrin_took",
+        "[minas_tirith] anborn",
+        "[minas_tirith] mablung",
+        "[minas_tirith] beregond",
+        "[minas_tirith] damrod"
+      ],
+      "warning":"If Earnur is included in the same force as any named Gondor Hero models, you automatically lose your army bonus."
     }
   ],
   "[minas_tirith] king_of_men":[

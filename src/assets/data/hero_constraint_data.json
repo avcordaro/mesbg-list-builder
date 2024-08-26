@@ -1,4 +1,25 @@
 {
+  "[angmar] aldrac":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[angmar] angmar_orc_captain":[
     {
       "valid_warband_units":[
@@ -6,7 +27,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -24,7 +48,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -42,7 +69,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -60,7 +90,52 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[angmar] captain_of_carn_dum":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[angmar] fraecht":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -78,7 +153,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -96,7 +174,31 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[angmar] nazthak":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -114,7 +216,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -132,7 +237,31 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[angmar] the_shadow_of_rhudaur":[
+    {
+      "valid_warband_units":[
+        "[angmar] cave_troll",
+        "[angmar] dead_marsh_spectre",
+        "[angmar] angmar_warg_rider",
+        "[angmar] wild_warg",
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -150,7 +279,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -166,7 +298,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -184,7 +319,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -202,7 +340,10 @@
         "[angmar] dead_marsh_spectre",
         "[angmar] angmar_warg_rider",
         "[angmar] wild_warg",
-        "[angmar] angmar_orc_warrior"
+        "[angmar] angmar_orc_warrior",
+        "[angmar] hill_troll",
+        "[angmar] warrior_of_carn_dum",
+        "[angmar] werewolf"
       ],
       "special_warband_options":[
 
@@ -512,12 +653,53 @@
       ]
     }
   ],
+  "[arnor] aranarth":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arnor] argadir":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[arnor] arvedui,_last_king_of_arnor":[
     {
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
         "[arnor] hobbit_archer",
-        "[arnor] ranger_of_arnor"
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
       ],
       "special_warband_options":[
 
@@ -533,7 +715,29 @@
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
         "[arnor] hobbit_archer",
-        "[arnor] ranger_of_arnor"
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arnor] dunedain":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
       ],
       "special_warband_options":[
 
@@ -549,7 +753,29 @@
       "valid_warband_units":[
         "[arnor] warrior_of_arnor",
         "[arnor] hobbit_archer",
-        "[arnor] ranger_of_arnor"
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arnor] ranger_of_the_north":[
+    {
+      "valid_warband_units":[
+        "[arnor] warrior_of_arnor",
+        "[arnor] hobbit_archer",
+        "[arnor] ranger_of_arnor",
+        "[arnor] ranger_of_the_north",
+        "[arnor] dunedain",
+        "[arnor] knight_of_arnor"
       ],
       "special_warband_options":[
 
@@ -4560,6 +4786,26 @@
     }
   ],
   "[minas_tirith] denethor":[
+    {
+      "valid_warband_units":[
+        "[minas_tirith] peregrin_took",
+        "[minas_tirith] knight_of_minas_tirith",
+        "[minas_tirith] guard_of_the_fountain_court",
+        "[minas_tirith] citadel_guard",
+        "[minas_tirith] osgiliath_veteran",
+        "[minas_tirith] ranger_of_gondor",
+        "[minas_tirith] warrior_of_minas_tirith"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[minas_tirith] earnur":[
     {
       "valid_warband_units":[
         "[minas_tirith] peregrin_took",

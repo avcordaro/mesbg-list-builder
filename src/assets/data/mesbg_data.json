@@ -151,6 +151,41 @@
     ]
   },
   {
+    "model_id":"[angmar] aldrac",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Aldrac",
+    "unit_type":"Hero of Valour",
+    "base_points":120,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "3:3:3:3"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":120,
+    "pointsTotal":120,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[angmar] the_dwimmerlaik",
     "faction_type":"Evil Army",
     "faction":"Angmar",
@@ -310,33 +345,33 @@
     ]
   },
   {
-    "model_id":"[angmar] shade",
+    "model_id":"[angmar] the_shadow_of_rhudaur",
     "faction_type":"Evil Army",
     "faction":"Angmar",
     "profile_origin":"Angmar",
-    "name":"Shade",
+    "name":"The Shadow of Rhudaur",
     "unit_type":"Hero of Fortitude",
-    "base_points":100,
+    "base_points":80,
     "default_bow":false,
-    "unique":false,
+    "unique":true,
     "inc_bow_count":false,
     "bow_limit":false,
     "siege_crew":0,
     "MWFW":[
       [
         "",
-        "0:8:0:3"
+        "2:5:1:2"
       ]
     ],
     "quantity":1,
-    "pointsPerUnit":100,
-    "pointsTotal":100,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
     "warband_size":12,
     "options":[
       {
-        "option_id":"OPT0022",
-        "option":"Swap Weapon",
-        "points":5.0,
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -380,6 +415,111 @@
     ]
   },
   {
+    "model_id":"[angmar] shade",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Shade",
+    "unit_type":"Hero of Fortitude",
+    "base_points":75,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "0:4:1:3"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0022",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] fraecht",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Fraecht",
+    "unit_type":"Hero of Fortitude",
+    "base_points":65,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "1:4:1:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":65,
+    "pointsTotal":65,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] captain_of_carn_dum",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Captain of Carn Dum",
+    "unit_type":"Hero of Fortitude",
+    "base_points":55,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "2:1:1:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":55,
+    "pointsTotal":55,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT1701",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[angmar] barrow-wight",
     "faction_type":"Evil Army",
     "faction":"Angmar",
@@ -407,6 +547,41 @@
         "option_id":"OPT0018",
         "option":"Swap Weapon",
         "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] nazthak",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Nazthak",
+    "unit_type":"Hero of Fortitude",
+    "base_points":50,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "3:1:1:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":50,
+    "pointsTotal":50,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -606,6 +781,70 @@
     ]
   },
   {
+    "model_id":"[angmar] hill_troll",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Hill Troll",
+    "unit_type":"Warrior",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"OPT1702",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] werewolf",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Werewolf",
+    "unit_type":"Warrior",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[angmar] dead_marsh_spectre",
     "faction_type":"Evil Army",
     "faction":"Angmar",
@@ -697,6 +936,56 @@
       {
         "option_id":"OPT0017",
         "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[angmar] warrior_of_carn_dum",
+    "faction_type":"Evil Army",
+    "faction":"Angmar",
+    "profile_origin":"Angmar",
+    "name":"Warrior of Carn Dum",
+    "unit_type":"Warrior",
+    "base_points":9,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":9,
+    "pointsTotal":9,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"OPT1704",
+        "option":"Banner",
+        "points":25.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1703",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1705",
+        "option":"Spear",
         "points":1.0,
         "type":null,
         "min":0.0,
@@ -1911,6 +2200,41 @@
     ]
   },
   {
+    "model_id":"[arnor] aranarth",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Aranarth",
+    "unit_type":"Hero of Valour",
+    "base_points":80,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "3:2:2:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":80,
+    "pointsTotal":80,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[arnor] arvedui,_last_king_of_arnor",
     "faction_type":"Good Army",
     "faction":"Arnor",
@@ -1933,6 +2257,41 @@
     "pointsPerUnit":80,
     "pointsTotal":80,
     "warband_size":15,
+    "options":[
+      {
+        "option_id":"None",
+        "option":"None",
+        "points":"None",
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] argadir",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Argadir",
+    "unit_type":"Hero of Fortitude",
+    "base_points":85,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "3:1:1:2"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":85,
+    "pointsTotal":85,
+    "warband_size":12,
     "options":[
       {
         "option_id":"None",
@@ -2017,6 +2376,135 @@
         "option_id":"OPT0056",
         "option":"Swap Shield for Bow",
         "points":0.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] ranger_of_the_north",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"The Rangers",
+    "name":"Ranger of the North",
+    "unit_type":"Independent Hero",
+    "base_points":30,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "1:1:1:1"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":30,
+    "pointsTotal":30,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"OPT1706",
+        "option":"Horse",
+        "points":10.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1707",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1708",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] dunedain",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"The Rangers",
+    "name":"Dunedain",
+    "unit_type":"Independent Hero",
+    "base_points":25,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "1:1:1:1"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":25,
+    "pointsTotal":25,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"OPT1698",
+        "option":"Swap Weapon",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1699",
+        "option":"Spear",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[arnor] knight_of_arnor",
+    "faction_type":"Good Army",
+    "faction":"Arnor",
+    "profile_origin":"Arnor",
+    "name":"Knight of Arnor",
+    "unit_type":"Warrior",
+    "base_points":14,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":14,
+    "pointsTotal":14,
+    "warband_size":0,
+    "options":[
+      {
+        "option_id":"OPT1700",
+        "option":"Swap Weapon",
+        "points":1.0,
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -17691,6 +18179,50 @@
       {
         "option_id":"OPT0495",
         "option":"Shield",
+        "points":5.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
+    "model_id":"[minas_tirith] earnur",
+    "faction_type":"Good Army",
+    "faction":"Minas Tirith",
+    "profile_origin":"Minas Tirith",
+    "name":"Earnur",
+    "unit_type":"Hero of Valour",
+    "base_points":100,
+    "default_bow":false,
+    "unique":true,
+    "inc_bow_count":false,
+    "bow_limit":false,
+    "siege_crew":0,
+    "MWFW":[
+      [
+        "",
+        "3:3:1:3"
+      ]
+    ],
+    "quantity":1,
+    "pointsPerUnit":100,
+    "pointsTotal":100,
+    "warband_size":15,
+    "options":[
+      {
+        "option_id":"OPT1696",
+        "option":"Armoured Horse",
+        "points":15.0,
+        "type":"mount",
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      },
+      {
+        "option_id":"OPT1697",
+        "option":"Lance",
         "points":5.0,
         "type":null,
         "min":0.0,
