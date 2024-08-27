@@ -5,7 +5,17 @@ import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { FreshUnit, Unit } from "../../types/unit.ts";
 import { Slice } from "../store.ts";
-import { recalculate, updateFactionData } from "./buiding/calculations.ts";
+import {
+  recalculate as updateMetaData,
+  updateFactionData,
+} from "./buiding/calculations.ts";
+import { assignHero, deleteHero, updateHero } from "./buiding/hero.ts";
+import {
+  deleteUnit,
+  duplicateUnit,
+  selectUnit,
+  updateUnit,
+} from "./buiding/unit.ts";
 import {
   addWarband,
   deleteWarband,
@@ -66,61 +76,82 @@ const initialState = {
   rosterBuildingWarnings: [],
 };
 
-export const rosterSlice: Slice<RosterState> = (set) => ({
-  ...initialState,
+export const rosterSlice: Slice<RosterState> = (set) => {
+  const recalculate = () => updateMetaData(set);
+  return {
+    ...initialState,
 
-  setRoster: (newRoster) => {
-    set(
-      {
-        ...updateFactionData(newRoster),
-      },
-      undefined,
-      "UPDATE_ROSTER_META_DATA",
-    );
-    set(
-      ({ allianceLevel, factions }) => ({
-        ...updateRoster(newRoster, allianceLevel, factions),
-      }),
-      undefined,
-      "SET_ROSTER",
-    );
-  },
+    setRoster: (newRoster) => {
+      set(
+        {
+          ...updateFactionData(newRoster),
+        },
+        undefined,
+        "UPDATE_ROSTER_META_DATA",
+      );
+      set(
+        ({ allianceLevel, factions }) => ({
+          ...updateRoster(newRoster, allianceLevel, factions),
+        }),
+        undefined,
+        "SET_ROSTER",
+      );
+    },
 
-  addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
-  duplicateWarband: (warbandId: string): void => {
-    set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
-    recalculate(set);
-  },
-  deleteWarband: (warbandId: string): void => {
-    set(deleteWarband(warbandId), undefined, "DELETE_WARBAND");
-    recalculate(set);
-  },
+    addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
+    duplicateWarband: (warbandId: string): void => {
+      set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
+      recalculate();
+    },
+    deleteWarband: (warbandId: string): void => {
+      set(deleteWarband(warbandId), undefined, "DELETE_WARBAND");
+      recalculate();
+    },
 
-  assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit): void =>
-    set({}, undefined, "ASSIGN_HERO"),
-  updateHero: (warbandId: string, heroId: string, hero: Unit): void =>
-    set({}, undefined, "UPDATE_HERO"),
-  deleteHero: (warbandId: string, heroId: string): void =>
-    set({}, undefined, "DELETE_HERO"),
+    assignHeroToWarband: (
+      warbandId: string,
+      heroId: string,
+      hero: Unit,
+    ): void => {
+      set(assignHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
+      recalculate();
+    },
+    updateHero: (warbandId: string, heroId: string, hero: Unit): void => {
+      set(updateHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
+      recalculate();
+    },
+    deleteHero: (warbandId: string, heroId: string): void => {
+      set(deleteHero(warbandId, heroId), undefined, "ASSIGN_HERO");
+      recalculate();
+    },
 
-  addUnit: (warbandId: string): void =>
-    set(
-      ({ roster }) => {
-        const warband = roster.warbands.find(({ id }) => id === warbandId);
-        warband.units.push({ id: uuid(), name: null } as FreshUnit);
-        return {
-          roster,
-        };
-      },
-      undefined,
-      "ADD_UNIT",
-    ),
-  selectUnit: (warbandId: string, unitId: string, unit: Unit): void =>
-    set({}, undefined, "SELECT_UNIT"),
-  updateUnit: (warbandId: string, unitId: string, unit: Unit): void =>
-    set({}, undefined, "UPDATE_UNIT"),
-  duplicateUnit: (warbandId: string, unitId: string): void =>
-    set({}, undefined, "DUPLICATE_UNIT"),
-  deleteUnit: (warbandId: string, unitId: string): void =>
-    set({}, undefined, "DELETE_UNIT"),
-});
+    addUnit: (warbandId: string): void =>
+      set(
+        ({ roster }) => {
+          const warband = roster.warbands.find(({ id }) => id === warbandId);
+          warband.units.push({ id: uuid(), name: null } as FreshUnit);
+          return {
+            roster,
+          };
+        },
+        undefined,
+        "ADD_UNIT",
+      ),
+    selectUnit: (warbandId: string, unitId: string, unit: Unit): void => {
+      set(selectUnit(warbandId, unitId, unit), undefined, "SELECT_UNIT");
+      recalculate();
+    },
+    updateUnit: (warbandId: string, unitId: string, unit: Unit): void => {
+      set(updateUnit(warbandId, unitId, unit), undefined, "UPDATE_UNIT");
+      recalculate();
+    },
+    duplicateUnit: (warbandId: string, unitId: string): void => {
+      set(duplicateUnit(warbandId, unitId), undefined, "DUPLICATE_UNIT");
+      recalculate();
+    },
+    deleteUnit: (warbandId: string, unitId: string): void => {
+      set(deleteUnit(warbandId, unitId), undefined, "DELETE_UNIT");
+      recalculate();
+    },
+  };
+};
