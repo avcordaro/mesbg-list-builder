@@ -1,4 +1,31 @@
 {
+  "Arathorn's Stand":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[arathorn's_stand] arathorn"
+      ],
+      "warning":"This force must contain Arathorn, who will always be your leader."
+    }
+  ],
+  "Army of Arnor":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[army_of_arnor] arvedui,_last_king_of_arnor"
+      ],
+      "warning":"This force must contain Arvedui, who will always be your leader."
+    }
+  ],
+  "Army of Carn Dum":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[army_of_carn_dum] aldrac"
+      ],
+      "warning":"This force must contain the Aldrac, who will always be your leader."
+    }
+  ],
   "Army of Dunland":[
     {
       "type":"compulsory",
@@ -34,6 +61,22 @@
       "warning":"This force must always include at least one named Goblin Hero model."
     }
   ],
+  "Battle of Fornost":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[battle_of_fornost] earnur"
+      ],
+      "warning":"This force must contain Earnur, Last King of Gondor."
+    },
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[battle_of_fornost] glorfindel"
+      ],
+      "warning":"This force must contain Glorfindel."
+    }
+  ],
   "Breaking of the Fellowship":[
     {
       "type":"compulsory",
@@ -41,6 +84,15 @@
         "[breaking_of_the_fellowship] aragorn,_strider"
       ],
       "warning":"This force must contain Aragorn."
+    }
+  ],
+  "Burdhur's Horde":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[burdhur's_horde] buhrdur"
+      ],
+      "warning":"This force must contain Burdhur, who will always be your leader."
     }
   ],
   "Cirith Ungol":[
@@ -162,6 +214,15 @@
         "[helm's_guard] helm_hammerhand"
       ],
       "warning":"This force must contain Helm Hammerhand."
+    }
+  ],
+  "Host of the Witch-King":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[host_of_the_witch-king] witch_king"
+      ],
+      "warning":"This force must contain the Witch-King, who will always be your leader."
     }
   ],
   "Lurtz's Scouts":[
@@ -429,6 +490,15 @@
         "[vanquishers_of_the_necromancer] gandalf_the_grey"
       ],
       "warning":"This force must contain Gandalf the Grey."
+    }
+  ],
+  "Wolf Pack of Angmar":[
+    {
+      "type":"compulsory",
+      "dependencies":[
+        "[wolf_pack_of_angmar] wild_warg_chieftain_(leader)"
+      ],
+      "warning":"This force must contain the Wild Warg Chieftain (Leader)."
     }
   ],
   "Wolves of Isengard":[

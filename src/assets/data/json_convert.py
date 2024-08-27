@@ -36,6 +36,7 @@ df_options = pd.read_excel("mesbg_data.xlsx", sheet_name="options")
 df_options = df_options.sort_values(['model_id', 'points'], ascending=[True, False])
 df_options['opt_quantity'] = df_options['min']
 df_merged = df_models.merge(df_options, on='model_id', how='left')
+
 df_merged['option_id'].fillna("None", inplace=True)
 df_merged['option'].fillna("None", inplace=True)
 df_merged['points'].fillna("None", inplace=True)
@@ -47,7 +48,8 @@ df_merged_options = df_merged.groupby([
   'faction_type', 
   'faction', 
   'profile_origin', 
-  'name', 'unit_type', 
+  'name', 
+  'unit_type', 
   'base_points', 
   'default_bow', 
   'unique', 

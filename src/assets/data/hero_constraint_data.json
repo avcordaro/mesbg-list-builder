@@ -354,6 +354,250 @@
       ]
     }
   ],
+  "[arathorn's_stand] arathorn":[
+    {
+      "valid_warband_units":[
+        "[arathorn's_stand] ranger_of_the_north",
+        "[arathorn's_stand] dunedain"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arathorn's_stand] dunedain":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arathorn's_stand] halbarad":[
+    {
+      "valid_warband_units":[
+        "[arathorn's_stand] ranger_of_the_north",
+        "[arathorn's_stand] dunedain"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[arathorn's_stand] ranger_of_the_north":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] aranarth":[
+    {
+      "valid_warband_units":[
+        "[army_of_arnor] warrior_of_arnor",
+        "[army_of_arnor] ranger_of_arnor",
+        "[army_of_arnor] ranger_of_the_north",
+        "[army_of_arnor] dunedain",
+        "[army_of_arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] argadir":[
+    {
+      "valid_warband_units":[
+        "[army_of_arnor] warrior_of_arnor",
+        "[army_of_arnor] ranger_of_arnor",
+        "[army_of_arnor] ranger_of_the_north",
+        "[army_of_arnor] dunedain",
+        "[army_of_arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] arvedui,_last_king_of_arnor":[
+    {
+      "valid_warband_units":[
+        "[army_of_arnor] warrior_of_arnor",
+        "[army_of_arnor] ranger_of_arnor",
+        "[army_of_arnor] ranger_of_the_north",
+        "[army_of_arnor] dunedain",
+        "[army_of_arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] captain_of_arnor":[
+    {
+      "valid_warband_units":[
+        "[army_of_arnor] warrior_of_arnor",
+        "[army_of_arnor] ranger_of_arnor",
+        "[army_of_arnor] ranger_of_the_north",
+        "[army_of_arnor] dunedain",
+        "[army_of_arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] dunedain":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] malbeth_the_seer":[
+    {
+      "valid_warband_units":[
+        "[army_of_arnor] warrior_of_arnor",
+        "[army_of_arnor] ranger_of_arnor",
+        "[army_of_arnor] ranger_of_the_north",
+        "[army_of_arnor] dunedain",
+        "[army_of_arnor] knight_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_arnor] ranger_of_the_north":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_carn_dum] aldrac":[
+    {
+      "valid_warband_units":[
+        "[army_of_carn_dum] warrior_of_carn_dum",
+        "[army_of_carn_dum] angmar_orc_warrior",
+        "[army_of_carn_dum] angmar_warg_rider",
+        "[army_of_carn_dum] orc_tracker"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_carn_dum] angmar_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[army_of_carn_dum] warrior_of_carn_dum",
+        "[army_of_carn_dum] angmar_orc_warrior",
+        "[army_of_carn_dum] angmar_warg_rider",
+        "[army_of_carn_dum] orc_tracker"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_carn_dum] captain_of_carn_dum":[
+    {
+      "valid_warband_units":[
+        "[army_of_carn_dum] warrior_of_carn_dum",
+        "[army_of_carn_dum] angmar_orc_warrior",
+        "[army_of_carn_dum] angmar_warg_rider",
+        "[army_of_carn_dum] orc_tracker"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[army_of_carn_dum] fraecht":[
+    {
+      "valid_warband_units":[
+        "[army_of_carn_dum] warrior_of_carn_dum",
+        "[army_of_carn_dum] angmar_orc_warrior",
+        "[army_of_carn_dum] angmar_warg_rider",
+        "[army_of_carn_dum] orc_tracker"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[army_of_dunland] dunlending_chieftain":[
     {
       "valid_warband_units":[
@@ -1337,6 +1581,171 @@
       ]
     }
   ],
+  "[battle_of_fornost] aranarth":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] captain_of_minas_tirith":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] warrior_of_minas_tirith",
+        "[battle_of_fornost] knight_of_minas_tirith"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] cirdan":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] high_elf_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] dunedain_ind":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] dunedain_minor":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] hobbit_archer"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] earnur":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] warrior_of_minas_tirith",
+        "[battle_of_fornost] knight_of_minas_tirith"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] glorfindel":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] high_elf_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] high_elf_captain":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] high_elf_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] ranger_of_the_north_ind":[
+    {
+      "valid_warband_units":[
+
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[battle_of_fornost] ranger_of_the_north_minor":[
+    {
+      "valid_warband_units":[
+        "[battle_of_fornost] ranger_of_the_north_ind",
+        "[battle_of_fornost] dunedain_ind",
+        "[battle_of_fornost] ranger_of_arnor",
+        "[battle_of_fornost] hobbit_archer"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[breaking_of_the_fellowship] aragorn,_strider":[
     {
       "valid_warband_units":[
@@ -1495,6 +1904,74 @@
         "[breaking_of_the_fellowship] boromir_of_gondor",
         "[breaking_of_the_fellowship] meriadoc_brandybuck",
         "[breaking_of_the_fellowship] peregrin_took"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[burdhur's_horde] angmar_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[burdhur's_horde] angmar_orc_warrior",
+        "[burdhur's_horde] angmar_warg_rider",
+        "[burdhur's_horde] hill_troll",
+        "[burdhur's_horde] wild_warg"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[burdhur's_horde] angmar_orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[burdhur's_horde] angmar_orc_warrior",
+        "[burdhur's_horde] angmar_warg_rider",
+        "[burdhur's_horde] hill_troll",
+        "[burdhur's_horde] wild_warg"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[burdhur's_horde] buhrdur":[
+    {
+      "valid_warband_units":[
+        "[burdhur's_horde] angmar_orc_warrior",
+        "[burdhur's_horde] angmar_warg_rider",
+        "[burdhur's_horde] hill_troll",
+        "[burdhur's_horde] wild_warg"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[burdhur's_horde] wild_warg_chieftain":[
+    {
+      "valid_warband_units":[
+        "[burdhur's_horde] angmar_orc_warrior",
+        "[burdhur's_horde] angmar_warg_rider",
+        "[burdhur's_horde] hill_troll",
+        "[burdhur's_horde] wild_warg"
       ],
       "special_warband_options":[
 
@@ -3968,6 +4445,150 @@
         "[helm's_guard] rohan_royal_guard",
         "[helm's_guard] rohan_outrider",
         "[helm's_guard] warrior_of_rohan"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] angmar_orc_captain":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] angmar_orc_shaman":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] barrow-wight":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] nazthak":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] shade":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] the_dwimmerlaik":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] the_shadow_of_rhudaur":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] the_tainted":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[host_of_the_witch-king] witch_king":[
+    {
+      "valid_warband_units":[
+        "[host_of_the_witch-king] dead_marsh_spectre",
+        "[host_of_the_witch-king] angmar_warg_rider",
+        "[host_of_the_witch-king] angmar_orc_warrior"
       ],
       "special_warband_options":[
 
@@ -11285,6 +11906,38 @@
     {
       "valid_warband_units":[
         "[wildmen_of_druadan] woses_warrior"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wolf_pack_of_angmar] wild_warg_chieftain":[
+    {
+      "valid_warband_units":[
+        "[wolf_pack_of_angmar] werewolf",
+        "[wolf_pack_of_angmar] wild_warg",
+        "[wolf_pack_of_angmar] fell_warg"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
+  "[wolf_pack_of_angmar] wild_warg_chieftain_(leader)":[
+    {
+      "valid_warband_units":[
+        "[wolf_pack_of_angmar] werewolf",
+        "[wolf_pack_of_angmar] wild_warg",
+        "[wolf_pack_of_angmar] fell_warg"
       ],
       "special_warband_options":[
 
