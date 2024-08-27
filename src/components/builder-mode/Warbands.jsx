@@ -7,7 +7,6 @@ import { HiDuplicate } from "react-icons/hi";
 import { MdDelete } from "react-icons/md";
 import { v4 as uuid } from "uuid";
 import { useStore } from "../../state/store";
-import { handleSpecialWarbandOption } from "../../utils/specialRules.js";
 import { ChooseHeroButton } from "./hero/ChooseHeroButton.jsx";
 import { WarbandHero } from "./hero/WarbandHero.jsx";
 import { ChooseWarriorButton } from "./warrior/ChooseWarriorButton.jsx";
@@ -26,152 +25,23 @@ export function Warbands({
   factionSelection,
   setFactionSelection,
 }) {
-  const { roster, setRoster, addWarband, deleteWarband, addUnit } = useStore();
+  const { roster, addWarband, deleteWarband, duplicateWarband, addUnit } =
+    useStore();
 
   const handleNewWarband = () => {
     addWarband();
     setDisplaySelection(false);
   };
 
-  const handleCopyWarband = (warbandNum) => {
-    // Create a copy of an existing warband dictionary and add to the roster
-    let newRoster = { ...roster };
-    let newWarband = { ...roster.warbands[warbandNum - 1] };
-    newWarband["id"] = uuid();
-    newWarband["num"] = roster.warbands.length + 1;
-    if (newWarband.hero) {
-      let newHero = { ...newWarband.hero };
-      newHero["id"] = uuid();
-      newWarband.hero = newHero;
-      if (newWarband.hero.unique) {
-        newWarband["points"] =
-          newWarband["points"] - newWarband.hero["pointsTotal"];
-        if (!newWarband.hero.model_id.includes("mumak_war_leader")) {
-          newWarband["num_units"] =
-            newWarband["num_units"] -
-            (newWarband.hero.siege_crew > 0
-              ? newWarband.hero.siege_crew - 1
-              : 0);
-        }
-        newWarband.hero = null;
-      } else {
-        newRoster["num_units"] = newRoster["num_units"] + 1;
-        if (
-          newWarband.hero &&
-          (newWarband.hero.model_id.includes("_mumak_") ||
-            newWarband.hero.model_id.includes("great_beast_"))
-        ) {
-          newRoster["num_units"] = newRoster["num_units"] + 1;
-        }
-      }
-    }
-    let newUnits = newWarband.units.map((_unit) => {
-      let newUnit = { ..._unit };
-      newUnit["id"] = uuid();
-      if (newUnit.unique) {
-        newWarband["points"] = newWarband["points"] - newUnit["pointsTotal"];
-        newWarband["num_units"] =
-          newWarband["num_units"] -
-          (newUnit.siege_crew ? newUnit.siege_crew : 1) * newUnit["quantity"];
-        newWarband["bow_count"] =
-          newWarband["bow_count"] -
-          (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-        return { id: uuid(), name: null };
-      }
-      return newUnit;
-    });
-    newUnits = newUnits.filter((u) => u.name != null);
-    newWarband.units = newUnits;
-    newRoster.warbands.push(newWarband);
-    newRoster["points"] = newRoster["points"] + newWarband["points"];
-    newRoster["bow_count"] = newRoster["bow_count"] + newWarband["bow_count"];
-    newRoster["num_units"] = newRoster["num_units"] + newWarband["num_units"];
-
-    newRoster = handleSpecialWarbandOption(newRoster, newWarband["num"]);
-    setRoster(newRoster);
+  const handleCopyWarband = (warbandId) => {
+    duplicateWarband(warbandId);
     setDisplaySelection(false);
   };
 
-  const handleDeleteWarband = (warbandId) => deleteWarband(warbandId);
-  // const handleDeleteWarband = (warbandNum) => {
-  //   let newRoster = { ...roster };
-  //   let model_ids = newRoster.warbands[warbandNum - 1].units.map(
-  //     (data) => data.model_id,
-  //   );
-  //   if (newRoster.warbands[warbandNum - 1].hero) {
-  //     model_ids.push(newRoster.warbands[warbandNum - 1].hero.model_id);
-  //   }
-  //
-  //   // Update state variable if the deleted model provided a special army-wide option
-  //   let hero = newRoster.warbands[warbandNum - 1].hero;
-  //   if (
-  //     hero &&
-  //     hero_constraint_data[hero.model_id] &&
-  //     hero_constraint_data[hero.model_id][0]["special_army_option"] !== ""
-  //   ) {
-  //     let newSpecialArmyOptions = specialArmyOptions.filter(
-  //       (data) =>
-  //         data !==
-  //         hero_constraint_data[
-  //           newRoster.warbands[warbandNum - 1].hero.model_id
-  //         ][0]["special_army_option"],
-  //     );
-  //     newRoster = handleSpecialArmyOption(newRoster, warbandNum);
-  //     setSpecialArmyOptions(newSpecialArmyOptions);
-  //   }
-  //
-  //   // Substract the warband's points, bows and unit counts from the overall roster
-  //   newRoster.warbands.map((warband) => {
-  //     if (warband.num === warbandNum) {
-  //       newRoster["points"] = newRoster["points"] - warband["points"];
-  //       newRoster["bow_count"] = newRoster["bow_count"] - warband["bow_count"];
-  //
-  //       // Bit of awkward logic here for siege engines where the whole siege crew needs to be removed from unit count.
-  //       if (warband.hero && warband.hero.unit_type === "Siege Engine") {
-  //         newRoster["num_units"] =
-  //           newRoster["num_units"] - warband.hero.siege_crew;
-  //         warband.hero.options.map((option) => {
-  //           if (option.option === "Additional Crew") {
-  //             newRoster["num_units"] =
-  //               newRoster["num_units"] - option.opt_quantity;
-  //           }
-  //           return null;
-  //         });
-  //       } else {
-  //         newRoster["num_units"] =
-  //           newRoster["num_units"] -
-  //           warband["num_units"] -
-  //           (warband.hero != null ? 1 : 0);
-  //         if (
-  //           warband.hero &&
-  //           (warband.hero.model_id.includes("_mumak_") ||
-  //             warband.hero.model_id.includes("great_beast_"))
-  //         ) {
-  //           newRoster["num_units"] = newRoster["num_units"] - 1;
-  //         }
-  //       }
-  //     }
-  //     return null;
-  //   });
-  //
-  //   // Remove the warband from the roster, and for all warbands that appear below the one being deleted, shift their warband number down by 1
-  //   let newWarbands = newRoster.warbands.filter(
-  //     (data) => data.num !== warbandNum,
-  //   );
-  //   newWarbands = newWarbands.map((warband) => {
-  //     let newWarband = { ...warband };
-  //     if (warband.num > warbandNum) {
-  //       newWarband["num"] = newWarband["num"] - 1;
-  //     }
-  //     return newWarband;
-  //   });
-  //   newRoster.warbands = newWarbands;
-  //   if (newRoster["leader_warband_num"] === warbandNum) {
-  //     newRoster["leader_warband_num"] = null;
-  //   }
-  //   setRoster(newRoster);
-  //   setDisplaySelection(false);
-  // };
+  const handleDeleteWarband = (warbandId) => {
+    deleteWarband(warbandId);
+    setDisplaySelection(false);
+  };
 
   const handleNewWarrior = (warbandId) => {
     addUnit(warbandId);
@@ -218,7 +88,7 @@ export function Warbands({
               Points: <b>{warband.points}</b>
             </Card.Text>
             <Button
-              onClick={() => handleCopyWarband(warband.num)}
+              onClick={() => handleCopyWarband(warband.id)}
               className="mt-1 ms-auto mb-2"
               style={{ marginRight: "10px" }}
               variant="info"

@@ -113,9 +113,38 @@ export const duplicateWarband =
       return { roster };
     }
 
-    // todo: do duplication
+    const hasUniqueHero =
+      isDefinedUnit(warbandToDuplicate.hero) && warbandToDuplicate.hero.unique;
+    const newWarband: Warband = {
+      ...warbandToDuplicate,
+      id: uuid(),
+      num: roster.warbands.length + 1,
+      hero: !hasUniqueHero
+        ? {
+            ...warbandToDuplicate.hero,
+            id: uuid(),
+          }
+        : null,
+      units: warbandToDuplicate.units
+        .filter((unit) => isDefinedUnit(unit))
+        .filter((unit) => !unit.unique)
+        .map((unit) => ({
+          ...unit,
+          options: unit.options.map((option) =>
+            option.type === "special_warband_upgrade"
+              ? {
+                  ...option,
+                  opt_quantity: 0,
+                }
+              : option,
+          ),
+        })),
+    };
 
     return {
-      roster,
+      roster: {
+        ...roster,
+        warbands: [...roster.warbands, newWarband],
+      },
     };
   };

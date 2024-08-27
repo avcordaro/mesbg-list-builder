@@ -43,5 +43,11 @@ export type Option = {
   option: string;
   option_id: string;
   points: number;
-  type: "mount" | "add_crew" | "engineer_cpt" | "special_army_upgrade" | null;
+  type:
+    | "mount"
+    | "add_crew"
+    | "engineer_cpt"
+    | "special_army_upgrade"
+    | "special_warband_upgrade"
+    | null;
 };
