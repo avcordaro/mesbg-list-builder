@@ -21,7 +21,7 @@ export function SelectionUnit({
   specialArmyOptions,
   setSpecialArmyOptions,
 }) {
-  const { roster, setRoster, setCurrentModal } = useStore();
+  const { roster, setRoster, setCurrentModal, selectUnit } = useStore();
 
   const deleteInvalidUnit = (newRoster, unit_id) => {
     /* If a new hero is selected and warrior units already exist in this warband belonging to a different faction,
@@ -62,6 +62,13 @@ export function SelectionUnit({
   };
 
   const handleClick = () => {
+    if (!heroSelection) {
+      const warbandId = roster.warbands[warbandNumFocus].id;
+      selectUnit(warbandId, newWarriorFocus, unitData);
+      setDisplaySelection(false);
+      return;
+    }
+
     /* Handles the selection of a unit, which differs depending on whether the unit is a hero or a warrior.
         In both situations, the points, unit and bow counts are updated. */
     let newRoster = { ...roster };
@@ -166,7 +173,7 @@ export function SelectionUnit({
           profile={unitData.name}
           className="profile"
         />
-        <p>
+        <div>
           <b>{unitData.name}</b>
           <br />
           Points: {unitData.base_points}
@@ -198,7 +205,7 @@ export function SelectionUnit({
               {unitData.unit_type}
             </Badge>
           )}
-        </p>
+        </div>
         <Button
           className="ms-auto me-2 border"
           variant="secondary"

@@ -1,29 +1,79 @@
-import { Unit } from "../../../types/unit.ts";
+import { v4 as uuid } from "uuid";
+import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { Warband } from "../../../types/warband.ts";
+import { findAndRemoveItem } from "../../../utils/array.ts";
+
+const finUnitById = (unitId: string) => (unit: Unit) =>
+  isDefinedUnit(unit) && unit.id === unitId;
 
 export const selectUnit =
-  (warbandId: string, unitId: string, unit: Unit) =>
-  ({ roster }) => {
-    console.log({ warbandId, unitId, unit, roster });
-    return {};
-  };
+  (warbandId: string, unitId: string, selectedUnit: Unit) =>
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband: Warband) => {
+        if (warband.id !== warbandId) return warband;
+        return {
+          ...warband,
+          units: warband.units.map((unit: FreshUnit) =>
+            unit.id === unitId ? { ...unit, ...selectedUnit } : unit,
+          ),
+        };
+      }),
+    },
+  });
 
 export const updateUnit =
-  (warbandId: string, heroId: string, hero: Unit) =>
-  ({ roster }) => {
-    console.log({ warbandId, heroId, hero, roster });
-    return {};
-  };
+  (warbandId: string, unitId: string, update: Partial<Unit>) =>
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband: Warband) => {
+        if (warband.id !== warbandId) return warband;
+        const isUnitToUpdate = finUnitById(unitId);
+        return {
+          ...warband,
+          units: warband.units.map((unit: Unit) =>
+            isUnitToUpdate(unit) ? { ...unit, ...update } : unit,
+          ),
+        };
+      }),
+    },
+  });
 
 export const duplicateUnit =
   (warbandId: string, unitId: string) =>
-  ({ roster }) => {
-    console.log({ warbandId, unitId, roster });
-    return {};
-  };
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband: Warband) => {
+        if (warband.id !== warbandId) return warband;
+        const unitToDuplicate = warband.units.find(finUnitById(unitId));
+
+        if (!isDefinedUnit(unitToDuplicate)) return warband;
+        if (unitToDuplicate.unique) return warband;
+
+        warband.units.push({
+          ...unitToDuplicate,
+          id: uuid(),
+        });
+
+        return warband;
+      }),
+    },
+  });
 
 export const deleteUnit =
   (warbandId: string, unitId: string) =>
-  ({ roster }) => {
-    console.log({ warbandId, unitId, roster });
-    return {};
-  };
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband: Warband) => {
+        if (warband.id !== warbandId) return warband;
+
+        findAndRemoveItem(warband.units, finUnitById(unitId));
+
+        return warband;
+      }),
+    },
+  });

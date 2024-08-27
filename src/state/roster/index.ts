@@ -34,13 +34,13 @@ type RosterFunctions = {
 
   // Hero functions
   assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit) => void;
-  updateHero: (warbandId: string, heroId: string, hero: Unit) => void;
+  updateHero: (warbandId: string, heroId: string, hero: Partial<Unit>) => void;
   deleteHero: (warbandId: string, heroId: string) => void;
 
   // Unit functions
   addUnit: (warbandId: string) => void;
   selectUnit: (warbandId: string, unitId: string, unit: Unit) => void;
-  updateUnit: (warbandId: string, unitId: string, unit: Unit) => void;
+  updateUnit: (warbandId: string, unitId: string, unit: Partial<Unit>) => void;
   deleteUnit: (warbandId: string, unitId: string) => void;
   duplicateUnit: (warbandId: string, unitId: string) => void;
 };
@@ -116,7 +116,11 @@ export const rosterSlice: Slice<RosterState> = (set) => {
       set(assignHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
       recalculate();
     },
-    updateHero: (warbandId: string, heroId: string, hero: Unit): void => {
+    updateHero: (
+      warbandId: string,
+      heroId: string,
+      hero: Partial<Unit>,
+    ): void => {
       set(updateHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
       recalculate();
     },
@@ -141,7 +145,11 @@ export const rosterSlice: Slice<RosterState> = (set) => {
       set(selectUnit(warbandId, unitId, unit), undefined, "SELECT_UNIT");
       recalculate();
     },
-    updateUnit: (warbandId: string, unitId: string, unit: Unit): void => {
+    updateUnit: (
+      warbandId: string,
+      unitId: string,
+      unit: Partial<Unit>,
+    ): void => {
       set(updateUnit(warbandId, unitId, unit), undefined, "UPDATE_UNIT");
       recalculate();
     },

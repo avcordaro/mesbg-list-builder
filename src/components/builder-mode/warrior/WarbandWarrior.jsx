@@ -16,185 +16,34 @@ import { OptionWarrior } from "./OptionWarrior.jsx";
 /* Warband Warrior components display an individual warrior unit in a warband. */
 
 export function WarbandWarrior({ warbandNum, unitData, specialArmyOptions }) {
-  const { roster, setRoster, setCurrentModal } = useStore();
+  const {
+    roster,
+    setRoster,
+    setCurrentModal,
+    updateUnit,
+    deleteUnit,
+    duplicateUnit,
+  } = useStore();
 
   const handleIncrement = () => {
-    // Updates the roster state variable to handle increase to points, units and bow count totals.
-    let newRoster = { ...roster };
-    newRoster.warbands = newRoster.warbands.map((warband) => {
-      let newWarband = { ...warband };
-      if (newWarband.num === warbandNum) {
-        newWarband.units = newWarband.units.map((_unit) => {
-          let newUnit = { ..._unit };
-          if (newUnit.id === unitData.id) {
-            if (newUnit.unit_type === "Siege") {
-              newRoster["points"] =
-                newRoster["points"] - newUnit["pointsTotal"];
-              newWarband["points"] =
-                newWarband["points"] - newUnit["pointsTotal"];
-              newUnit["quantity"] = newUnit["quantity"] + 1;
-              newUnit["pointsTotal"] =
-                newUnit["quantity"] * newUnit["pointsPerUnit"];
-              newWarband["points"] =
-                newWarband["points"] + newUnit["pointsTotal"];
-              newRoster["points"] =
-                newRoster["points"] + newUnit["pointsTotal"];
-            } else {
-              newRoster["points"] =
-                newRoster["points"] - newUnit["pointsTotal"];
-              newWarband["points"] =
-                newWarband["points"] - newUnit["pointsTotal"];
-              newUnit["quantity"] = newUnit["quantity"] + 1;
-              newUnit["pointsTotal"] =
-                newUnit["quantity"] * newUnit["pointsPerUnit"];
-              newWarband["points"] =
-                newWarband["points"] + newUnit["pointsTotal"];
-              newWarband["num_units"] =
-                newWarband["num_units"] +
-                (unitData.siege_crew ? unitData.siege_crew : 1);
-              newWarband["bow_count"] =
-                newWarband["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
-              newRoster["num_units"] =
-                newRoster["num_units"] +
-                (unitData.siege_crew ? unitData.siege_crew : 1);
-              newRoster["points"] =
-                newRoster["points"] + newUnit["pointsTotal"];
-              newRoster["bow_count"] =
-                newRoster["bow_count"] + (newUnit["inc_bow_count"] ? 1 : 0);
-            }
-          }
-          return newUnit;
-        });
-      }
-      return newWarband;
+    updateUnit(roster.warbands[warbandNum - 1].id, unitData.id, {
+      quantity: unitData.quantity + 1,
     });
-    setRoster(newRoster);
   };
 
   const handleDecrement = () => {
-    // Updates the roster state variable to handle decrease to points, units and bow count totals.
-    if (unitData.quantity > 1) {
-      let newRoster = { ...roster };
-      newRoster.warbands = newRoster.warbands.map((warband) => {
-        let newWarband = { ...warband };
-        if (newWarband.num === warbandNum) {
-          newWarband.units = newWarband.units.map((_unit) => {
-            let newUnit = { ..._unit };
-            if (newUnit.id === unitData.id) {
-              if (newUnit.unit_type === "Siege") {
-                newRoster["points"] =
-                  newRoster["points"] - newUnit["pointsTotal"];
-                newWarband["points"] =
-                  newWarband["points"] - newUnit["pointsTotal"];
-                newUnit["quantity"] = newUnit["quantity"] - 1;
-                newUnit["pointsTotal"] =
-                  newUnit["quantity"] * newUnit["pointsPerUnit"];
-                newWarband["points"] =
-                  newWarband["points"] + newUnit["pointsTotal"];
-                newRoster["points"] =
-                  newRoster["points"] + newUnit["pointsTotal"];
-              } else {
-                newRoster["points"] =
-                  newRoster["points"] - newUnit["pointsTotal"];
-                newWarband["points"] =
-                  newWarband["points"] - newUnit["pointsTotal"];
-                newUnit["quantity"] = newUnit["quantity"] - 1;
-                newUnit["pointsTotal"] =
-                  newUnit["quantity"] * newUnit["pointsPerUnit"];
-                newWarband["points"] =
-                  newWarband["points"] + newUnit["pointsTotal"];
-                newWarband["num_units"] =
-                  newWarband["num_units"] -
-                  (unitData.siege_crew ? unitData.siege_crew : 1);
-                newWarband["bow_count"] =
-                  newWarband["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
-                newRoster["num_units"] =
-                  newRoster["num_units"] -
-                  (unitData.siege_crew ? unitData.siege_crew : 1);
-                newRoster["points"] =
-                  newRoster["points"] + newUnit["pointsTotal"];
-                newRoster["bow_count"] =
-                  newRoster["bow_count"] - (newUnit["inc_bow_count"] ? 1 : 0);
-              }
-            }
-            return newUnit;
-          });
-        }
-        return newWarband;
-      });
-      setRoster(newRoster);
-    }
+    const quantity = unitData.quantity - 1;
+    updateUnit(roster.warbands[warbandNum - 1].id, unitData.id, {
+      quantity: quantity > 1 ? quantity : 1, // if value goes below 1, clamp the value to 1.
+    });
   };
 
   const handleDelete = () => {
-    // Updates the roster state variable to remove warrior unit, and handle adjustment to points, units and bow count totals.
-    let newRoster = { ...roster };
-    newRoster.warbands = newRoster.warbands.map((warband) => {
-      let newWarband = { ...warband };
-      if (newWarband.num === warbandNum) {
-        let newUnits = newWarband.units.map((_unit) => {
-          let newUnit = { ..._unit };
-          if (newUnit.id === unitData.id) {
-            if (newUnit.unit_type === "Siege") {
-              newWarband["points"] =
-                newWarband["points"] - newUnit["pointsTotal"];
-              newRoster["points"] =
-                newRoster["points"] - newUnit["pointsTotal"];
-            } else {
-              newWarband["points"] =
-                newWarband["points"] - newUnit["pointsTotal"];
-              newWarband["num_units"] =
-                newWarband["num_units"] -
-                (unitData.siege_crew ? unitData.siege_crew : 1) *
-                  newUnit["quantity"];
-              newWarband["bow_count"] =
-                newWarband["bow_count"] -
-                (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-              newRoster["num_units"] =
-                newRoster["num_units"] -
-                (unitData.siege_crew ? unitData.siege_crew : 1) *
-                  newUnit["quantity"];
-              newRoster["points"] =
-                newRoster["points"] - newUnit["pointsTotal"];
-              newRoster["bow_count"] =
-                newRoster["bow_count"] -
-                (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-            }
-          }
-          return newUnit;
-        });
-        newUnits = newUnits.filter((data) => data.id !== unitData.id);
-        newWarband.units = newUnits;
-      }
-      return newWarband;
-    });
-    setRoster(newRoster);
+    deleteUnit(roster.warbands[warbandNum - 1].id, unitData.id);
   };
 
   const handleDuplicate = () => {
-    /* Duplicates the warrior unit in the warband that this unit belongs to (but with a new unique ID).
-        Also updates the roster state variable with adjustments to points, units and bow count totals. */
-    let newRoster = { ...roster };
-    let newUnit = { ...unitData };
-    newUnit["id"] = uuid();
-    newRoster.warbands[warbandNum - 1].units.push(newUnit);
-    newRoster.warbands[warbandNum - 1]["num_units"] =
-      newRoster.warbands[warbandNum - 1]["num_units"] +
-      (unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"];
-    newRoster.warbands[warbandNum - 1]["points"] =
-      newRoster.warbands[warbandNum - 1]["points"] + newUnit["pointsTotal"];
-    newRoster.warbands[warbandNum - 1]["bow_count"] =
-      newRoster.warbands[warbandNum - 1]["bow_count"] +
-      (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-    newRoster["num_units"] =
-      newRoster["num_units"] +
-      (unitData.siege_crew ? unitData.siege_crew : 1) * newUnit["quantity"];
-    newRoster["points"] = newRoster["points"] + newUnit["pointsTotal"];
-    newRoster["bow_count"] =
-      newRoster["bow_count"] +
-      (newUnit["inc_bow_count"] ? 1 : 0) * newUnit["quantity"];
-
-    setRoster(newRoster);
+    duplicateUnit(roster.warbands[warbandNum - 1].id, unitData.id);
   };
 
   const handleCardClick = (e) => {
@@ -289,7 +138,10 @@ export function WarbandWarrior({ warbandNum, unitData, specialArmyOptions }) {
                 unitData.unit_type === "Siege") && (
                 <>
                   <>
-                    <Button onClick={handleDecrement}>
+                    <Button
+                      onClick={handleDecrement}
+                      disabled={unitData.quantity === 1}
+                    >
                       <FaMinus />
                     </Button>
                     <p className="mt-3">

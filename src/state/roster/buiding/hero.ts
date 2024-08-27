@@ -8,7 +8,7 @@ export const assignHero =
   };
 
 export const updateHero =
-  (warbandId: string, heroId: string, hero: Unit) =>
+  (warbandId: string, heroId: string, hero: Partial<Unit>) =>
   ({ roster }) => {
     console.log({ warbandId, heroId, hero, roster });
     return {};

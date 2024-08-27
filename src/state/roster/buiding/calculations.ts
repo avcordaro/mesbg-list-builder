@@ -8,6 +8,7 @@ import {
   calculateRosterUnitCount,
   calculateRosterTotalBowCount,
   calculateWarbandBowCount,
+  calculateWarbandModelCount,
 } from "../../../utils/unit-count.ts";
 import { calculateAllianceLevel } from "../alliance.ts";
 import {
@@ -52,14 +53,15 @@ export const recalculatePoints = (roster: Roster): Roster => {
 };
 
 export const updateUnitCount = (roster: Roster) => {
+  console.log(roster);
   return {
     ...roster,
     num_units: calculateRosterUnitCount(roster),
     bow_count: calculateRosterTotalBowCount(roster),
     warbands: roster.warbands.map((warband) => ({
       ...warband,
-      num_units: 0,
-      max_units: warband.hero.warband_size, // TODO: Handle special cases
+      num_units: calculateWarbandModelCount(warband),
+      max_units: warband.hero?.warband_size || 0, // TODO: Handle special cases
       bow_count: calculateWarbandBowCount(warband),
     })),
   };

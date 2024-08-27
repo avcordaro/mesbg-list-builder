@@ -278,7 +278,6 @@ const checkDunharrow = (
   factions: Faction[],
   modelsInArmy: string[],
 ): string => {
-  console.log(factions, currentAllianceLevel);
   if (
     factions.length <= 1 ||
     !factions.includes(Factions.The_Dead_of_Dunharrow)

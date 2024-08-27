@@ -3,10 +3,12 @@ import { FreshUnit, isDefinedUnit, Unit } from "../types/unit.ts";
 import { Warband } from "../types/warband.ts";
 import { sum } from "./utils.ts";
 
-const calculateWarbandModelCount = (warband: Warband) => {
+export const calculateWarbandModelCount = (warband: Warband) => {
   // todo: Figure out how to calculate this properly with all the edge cases like Murin & Drar / Siege crew.
-  console.log("calculate model count for warband: ", warband);
-  return 0;
+  return warband.units
+    .filter(isDefinedUnit)
+    .map((unit) => unit.quantity)
+    .reduce(sum, 0);
 };
 
 export const calculateWarbandBowLimitModels = (warband: Warband) => {
@@ -49,7 +51,13 @@ export const calculateWarbandBowCount = (warband: Warband) =>
     );
 
 export const calculateRosterUnitCount = (roster: Roster) =>
-  roster.warbands.map(calculateWarbandModelCount).reduce(sum, 0);
+  roster.warbands
+    .map((warband) => {
+      const hero = isDefinedUnit(warband.hero) ? 1 : 0;
+      const units = calculateWarbandModelCount(warband);
+      return hero + units;
+    })
+    .reduce(sum, 0);
 
 export const calculateWarbandTotalBowCount = (warband: Warband) => {
   // todo: Figure out how to calculate this properly
