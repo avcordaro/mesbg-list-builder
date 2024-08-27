@@ -7,6 +7,6 @@ export type Warband = {
   num_units: number;
   max_units: number | "-";
   bow_count: number;
-  hero: FreshUnit | Unit;
+  hero: Unit;
   units: (FreshUnit | Unit)[];
 };

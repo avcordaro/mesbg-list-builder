@@ -3,9 +3,14 @@ import { v4 as uuid } from "uuid";
 import { AllianceLevel } from "../../components/constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
-import { Unit, FreshUnit } from "../../types/unit.ts";
+import { FreshUnit, Unit } from "../../types/unit.ts";
 import { Slice } from "../store.ts";
-import { addWarband, deleteWarband } from "./buiding/warband.ts";
+import { recalculate, updateFactionData } from "./buiding/calculations.ts";
+import {
+  addWarband,
+  deleteWarband,
+  duplicateWarband,
+} from "./buiding/warband.ts";
 import { ModelCountData } from "./models.ts";
 import { updateRoster } from "./roster.ts";
 
@@ -35,6 +40,7 @@ export type RosterState = {
   factionType: FactionType | "";
   factions: Faction[];
   factionMetaData: ModelCountData;
+  factionEnabledSpecialRules: string[];
   allianceLevel: AllianceLevel;
   armyBonusActive: boolean;
   uniqueModels: string[];
@@ -53,6 +59,7 @@ const initialState = {
   factions: [],
   factionType: "" as FactionType,
   factionMetaData: {} as ModelCountData,
+  factionEnabledSpecialRules: [],
   allianceLevel: "n/a" as AllianceLevel,
   armyBonusActive: true,
   uniqueModels: [],
@@ -62,20 +69,32 @@ const initialState = {
 export const rosterSlice: Slice<RosterState> = (set) => ({
   ...initialState,
 
-  setRoster: (roster) =>
+  setRoster: (newRoster) => {
     set(
       {
-        ...updateRoster(roster),
+        ...updateFactionData(newRoster),
       },
       undefined,
+      "UPDATE_ROSTER_META_DATA",
+    );
+    set(
+      ({ allianceLevel, factions }) => ({
+        ...updateRoster(newRoster, allianceLevel, factions),
+      }),
+      undefined,
       "SET_ROSTER",
-    ),
+    );
+  },
 
   addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
-  duplicateWarband: (warbandId: string): void =>
-    set({}, undefined, "DUPLICATE_WARBAND"),
-  deleteWarband: (warbandId: string): void =>
-    set(deleteWarband(warbandId), undefined, "DELETE_WARBAND"),
+  duplicateWarband: (warbandId: string): void => {
+    set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
+    recalculate(set);
+  },
+  deleteWarband: (warbandId: string): void => {
+    set(deleteWarband(warbandId), undefined, "DELETE_WARBAND");
+    recalculate(set);
+  },
 
   assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit): void =>
     set({}, undefined, "ASSIGN_HERO"),

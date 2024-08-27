@@ -1,6 +1,8 @@
 import warning_rules_data from "../../assets/data/warning_rules.json";
 import { AllianceLevel } from "../../components/constants/alliances.ts";
-import { Faction } from "../../types/factions";
+import { FactionData } from "../../types/faction-data.ts";
+import { Faction, Factions } from "../../types/factions";
+import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
 import { ModelCountData } from "./models";
 
 type WarningRule = {
@@ -14,7 +16,7 @@ const warning_rules = warning_rules_data as WarningRules;
 
 type RosterBuildWarnings = {
   losesArmyBonus: boolean;
-  becomesImpossibleAllies: boolean;
+  newAllianceLevel: AllianceLevel;
   warnings: string[];
 };
 
@@ -114,7 +116,7 @@ const checkForErrors = (
     return [
       {
         losesArmyBonus: false,
-        becomesImpossibleAllies: false,
+        newAllianceLevel: alliance,
         warnings: [],
       },
     ];
@@ -138,7 +140,7 @@ const checkForErrors = (
 
     return {
       losesArmyBonus,
-      becomesImpossibleAllies,
+      newAllianceLevel: becomesImpossibleAllies ? "Impossible" : alliance,
       warnings: [
         ...armyBonusWarnings,
         ...requireModelWarnings,
@@ -182,30 +184,29 @@ const checkWarnings = (
   factions: Faction[],
   alliance: AllianceLevel,
 ): RosterBuildWarnings => {
-  const { losesArmyBonus, becomesImpossibleAllies, warnings } = uniqueModels
+  const dunharrowWarning = checkDunharrow(alliance, factions, uniqueModels);
+  const { losesArmyBonus, newAllianceLevel, warnings } = uniqueModels
     .flatMap((model) => checkForErrors(model, uniqueModels, factions, alliance))
     .reduce(
       (result, currentValue) => ({
         losesArmyBonus: result.losesArmyBonus || currentValue.losesArmyBonus,
-        becomesImpossibleAllies:
-          result.becomesImpossibleAllies ||
-          currentValue.becomesImpossibleAllies,
+        newAllianceLevel: getHighestPossibleAlliance(
+          result.newAllianceLevel,
+          currentValue.newAllianceLevel,
+        ),
         warnings: [...result.warnings, ...currentValue.warnings],
       }),
-      { losesArmyBonus: false, becomesImpossibleAllies: false, warnings: [] },
+      { losesArmyBonus: false, newAllianceLevel: alliance, warnings: [] },
     );
-
+  const allianceLevel = checkGilGalad(newAllianceLevel, factions, uniqueModels);
   const factionWarnings = factions.flatMap((faction) =>
-    checkForFactionErrors(
-      faction,
-      factions,
-      uniqueModels,
-      becomesImpossibleAllies ? "Impossible" : alliance,
-    ),
+    checkForFactionErrors(faction, factions, uniqueModels, allianceLevel),
   );
   return {
-    warnings: [...warnings, ...factionWarnings],
-    becomesImpossibleAllies,
+    warnings: [dunharrowWarning, ...warnings, ...factionWarnings].filter(
+      (v) => !!v,
+    ),
+    newAllianceLevel: allianceLevel,
     losesArmyBonus,
   };
 };
@@ -272,24 +273,101 @@ const checkAlliedHeroes = (
     .filter((warning) => !!warning);
 };
 
+const checkDunharrow = (
+  currentAllianceLevel: AllianceLevel,
+  factions: Faction[],
+  modelsInArmy: string[],
+): string => {
+  console.log(factions, currentAllianceLevel);
+  if (
+    factions.length <= 1 ||
+    !factions.includes(Factions.The_Dead_of_Dunharrow)
+  )
+    // Not a multi faction army with Dunharrow
+    return null;
+
+  if (currentAllianceLevel === "Impossible") {
+    // Already impossible, so nothing to warn about
+    return null;
+  }
+
+  const requiredModelToHave = [
+    "[minas_tirith] aragorn,_king_elessar",
+    "[the_fellowship] aragorn,_strider",
+    "[the_rangers] aragorn,_strider",
+  ];
+  const intersection = requiredModelToHave.filter((requiredModel) =>
+    modelsInArmy.includes(requiredModel),
+  );
+
+  return intersection.length === 0
+    ? "A Dead of Dunharrow army list is automatically Impossible Allies with any force that doesn't also include Aragorn."
+    : null;
+};
+
+const checkGilGalad = (
+  currentAllianceLevel: AllianceLevel,
+  faction_list: Faction[],
+  models: string[],
+): AllianceLevel => {
+  if (currentAllianceLevel === "Impossible") {
+    return currentAllianceLevel;
+  }
+
+  if (!models.includes("[rivendell] gil-galad")) {
+    return currentAllianceLevel;
+  }
+
+  const gilGaladFactionData: Record<string, FactionData> = {
+    "Gil Galad": {
+      primaryAllies: [Factions.Rivendell, Factions.Numenor],
+      secondaryAllies: [
+        Factions.Lothlorien,
+        Factions.Fangorn,
+        Factions.The_Misty_Mountains,
+      ],
+      // the fields below are not important for the calculation.
+      armyBonus: "",
+      bow_limit: 0,
+    },
+  };
+
+  const alliances = faction_list.map((faction) =>
+    checkAlliance("Gil Galad" as Faction, faction, gilGaladFactionData),
+  );
+
+  // The lowest alliance level found between the pairs becomes the overall alliance level of the army roster
+  if (alliances.includes("Impossible")) {
+    return "Impossible";
+  }
+  if (alliances.includes("Convenient")) {
+    return "Convenient";
+  }
+  return "Historical";
+};
+
 export const getWarningsForCreatedRoster = (
   factionList: Faction[],
-  actualAllianceLevel: AllianceLevel,
+  allianceLevel: AllianceLevel,
   factionMetaData: ModelCountData,
   uniqueModels: string[],
 ): RosterBuildWarnings => {
-  const blab = checkWarnings(uniqueModels, factionList, actualAllianceLevel);
+  const initialWarnings = checkWarnings(
+    uniqueModels,
+    factionList,
+    allianceLevel,
+  );
   const siegeEngineWarnings = checkSiegeEngineCounts(factionMetaData);
   const alliedHeroTierWarnings = checkAlliedHeroes(
-    actualAllianceLevel,
+    initialWarnings.newAllianceLevel,
     factionMetaData,
   );
 
   return {
-    becomesImpossibleAllies: blab.becomesImpossibleAllies,
-    losesArmyBonus: blab.losesArmyBonus,
+    newAllianceLevel: initialWarnings.newAllianceLevel,
+    losesArmyBonus: initialWarnings.losesArmyBonus,
     warnings: [
-      ...blab.warnings,
+      ...initialWarnings.warnings,
       ...siegeEngineWarnings,
       ...alliedHeroTierWarnings,
     ],

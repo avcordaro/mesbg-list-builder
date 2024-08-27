@@ -6,12 +6,8 @@ import { FaPlus } from "react-icons/fa";
 import { HiDuplicate } from "react-icons/hi";
 import { MdDelete } from "react-icons/md";
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../state/store";
-import {
-  handleSpecialArmyOption,
-  handleSpecialWarbandOption,
-} from "../../utils/specialRules.js";
+import { handleSpecialWarbandOption } from "../../utils/specialRules.js";
 import { ChooseHeroButton } from "./hero/ChooseHeroButton.jsx";
 import { WarbandHero } from "./hero/WarbandHero.jsx";
 import { ChooseWarriorButton } from "./warrior/ChooseWarriorButton.jsx";

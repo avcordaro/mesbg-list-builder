@@ -2,9 +2,9 @@ import { Warband } from "./warband.ts";
 
 export type Roster = {
   version: string;
-  num_units: number;
-  points: number;
-  bow_count: number;
-  leader_warband_num: number | null;
   warbands: Warband[];
+  leader_warband_num: number | null;
+  num_units: number;
+  bow_count: number;
+  points: number;
 };

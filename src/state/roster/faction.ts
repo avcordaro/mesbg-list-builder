@@ -1,5 +1,6 @@
 import { Faction, Factions, FactionType } from "../../types/factions.ts";
 import { Warband } from "../../types/warband.ts";
+import { getSpecialArmyOption } from "./buiding/special-rules.ts";
 
 export function getFactionType(warbands: Warband[]): FactionType | "" {
   if (warbands && warbands.length <= 0) {
@@ -63,4 +64,13 @@ export function getFactionList(warbands: Warband[]): Faction[] {
   const uniqueFactions = [...new Set(factions)];
 
   return handleWanderersSpecialCase(uniqueFactions, warbands) as Faction[];
+}
+
+export function getFactionSpecialRules(warbands: Warband[]): string[] {
+  return warbands
+    .flatMap((warband) => [
+      getSpecialArmyOption(warband.hero),
+      ...warband.units.map(getSpecialArmyOption),
+    ])
+    .filter((v) => !!v);
 }

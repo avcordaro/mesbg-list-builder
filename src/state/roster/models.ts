@@ -1,5 +1,10 @@
 import { Faction } from "../../types/factions.ts";
+import { Unit } from "../../types/unit.ts";
 import { Warband } from "../../types/warband.ts";
+import {
+  calculateWarbandBowCount,
+  calculateWarbandBowLimitModels,
+} from "../../utils/unit-count.ts";
 
 export function getUniqueModels(warbands: Warband[]): string[] {
   if (warbands && warbands.length <= 0) {
@@ -9,7 +14,7 @@ export function getUniqueModels(warbands: Warband[]): string[] {
   const allModelIds = warbands
     .flatMap(({ hero, units }) => [
       hero?.model_id,
-      ...units.map((unit) => unit?.model_id),
+      ...units.map((unit: Unit) => unit?.model_id),
     ])
     .filter((modelId) => !!modelId);
 
@@ -26,45 +31,6 @@ export type ModelCountData = Record<
   }
 >;
 
-function getModelCount(warband: Warband): number {
-  let count = 0;
-  if (
-    warband.hero.model_id === "[the_iron_hills] iron_hills_chariot_(captain)"
-  ) {
-    count += warband.hero.siege_crew - 1;
-  }
-
-  if (warband.hero.unit_type === "Siege Engine") {
-    count += warband.hero.siege_crew - 1;
-    count +=
-      warband.hero.options.find((option) => option.option === "Additional Crew")
-        ?.opt_quantity ?? 0; // opt_quantity or 0 if no "Additional Crew" option exists.
-  }
-
-  count += warband.units
-    .filter(
-      (unit) =>
-        !!unit && !!unit.name && unit.unit_type === "Warrior" && unit.bow_limit,
-    )
-    .reduce(
-      (count, unit) => count + unit.quantity + unit.siege_crew * unit.quantity,
-      0,
-    );
-
-  return count;
-}
-
-function getBowCount(warband: Warband) {
-  return warband.units
-    .filter((unit) => !!unit && !!unit.name && unit.unit_type === "Warrior")
-    .filter((unit) => unit.inc_bow_count && unit.bow_limit)
-    .reduce(
-      (bowCount, unit) =>
-        bowCount + (unit.siege_crew > 0 ? unit.siege_crew : 1) * unit.quantity,
-      0,
-    );
-}
-
 function getModelCountForWarband(warband: Warband) {
   if (!warband?.hero) {
     return {
@@ -77,8 +43,8 @@ function getModelCountForWarband(warband: Warband) {
 
   return {
     heroicTier: warband.hero.unit_type,
-    modelsThatCountForBowLimit: getModelCount(warband),
-    modelsWithBow: getBowCount(warband),
+    modelsThatCountForBowLimit: calculateWarbandBowLimitModels(warband),
+    modelsWithBow: calculateWarbandBowCount(warband),
     siegeEngines: warband.hero.unit_type === "Siege Engine" ? 1 : 0,
   };
 }

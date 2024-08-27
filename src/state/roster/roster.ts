@@ -1,45 +1,19 @@
+import { AllianceLevel } from "../../components/constants/alliances.ts";
+import { Faction } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { AppState } from "../store.ts";
-import {
-  calculateAllianceLevel,
-  checkForSpecialCases,
-  makeAllianceSpecificRosterAjustments,
-} from "./alliance";
-import { getFactionList, getFactionType } from "./faction.ts";
-import { calculateModelCount, getUniqueModels } from "./models.ts";
-import { getWarningsForCreatedRoster } from "./warnings.ts";
+import { makeAllianceSpecificRosterAjustments } from "./alliance";
+import { calculateModelCount } from "./models.ts";
 
-export function updateRoster(roster: Roster): Partial<AppState> {
-  const factionType = getFactionType(roster.warbands);
-  const factionList = getFactionList(roster.warbands);
-  const uniqueModels = getUniqueModels(roster.warbands);
-  const factionMetaData = calculateModelCount(roster.warbands);
-
-  const allianceLevel = calculateAllianceLevel(factionList, factionType);
-  const [actualAllianceLevel, warnings] = checkForSpecialCases(
-    allianceLevel,
-    factionList,
-    uniqueModels,
-  );
-
-  const {
-    warnings: rosterBuildingWarnings,
-    losesArmyBonus,
-    becomesImpossibleAllies,
-  } = getWarningsForCreatedRoster(
-    factionList,
-    actualAllianceLevel,
-    factionMetaData,
-    uniqueModels,
-  );
-
-  const armyBonusActive =
-    ["Historical", "Legendary Legion"].includes(actualAllianceLevel) &&
-    !losesArmyBonus;
-
+export function updateRoster(
+  roster: Roster,
+  allianceLevel: AllianceLevel,
+  factions: Faction[],
+): Partial<AppState> {
+  // Adjusts the roster just prior to saving to make sure all alliance specific rules are met.
   const adjustedRoster = makeAllianceSpecificRosterAjustments(
-    factionList,
-    actualAllianceLevel,
+    factions,
+    allianceLevel,
     roster,
   );
 
@@ -52,12 +26,6 @@ export function updateRoster(roster: Roster): Partial<AppState> {
 
   return {
     roster: updatedRoster,
-    factions: factionList,
-    factionType: factionType,
     factionMetaData: calculateModelCount(adjustedRoster.warbands),
-    uniqueModels: uniqueModels,
-    allianceLevel: becomesImpossibleAllies ? "Impossible" : actualAllianceLevel,
-    rosterBuildingWarnings: [...warnings, ...rosterBuildingWarnings],
-    armyBonusActive: armyBonusActive,
   };
 }

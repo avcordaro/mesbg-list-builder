@@ -8,6 +8,7 @@ export const keysToPersist: StoreKey[] = [
   "factions",
   "factionType",
   "factionMetaData",
+  "factionEnabledSpecialRules",
   "allianceLevel",
   "uniqueModels",
   "rosterBuildingWarnings",
