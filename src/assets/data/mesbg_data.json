@@ -787,7 +787,7 @@
     "profile_origin":"Angmar",
     "name":"Hill Troll",
     "unit_type":"Warrior",
-    "base_points":25,
+    "base_points":75,
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
@@ -797,8 +797,8 @@
 
     ],
     "quantity":1,
-    "pointsPerUnit":25,
-    "pointsTotal":25,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
     "warband_size":0,
     "options":[
       {
@@ -7923,7 +7923,7 @@
     "profile_origin":"Angmar",
     "name":"Hill Troll",
     "unit_type":"Warrior",
-    "base_points":25,
+    "base_points":75,
     "default_bow":false,
     "unique":false,
     "inc_bow_count":false,
@@ -7933,8 +7933,8 @@
 
     ],
     "quantity":1,
-    "pointsPerUnit":25,
-    "pointsTotal":25,
+    "pointsPerUnit":75,
+    "pointsTotal":75,
     "warband_size":0,
     "options":[
       {
@@ -43500,7 +43500,7 @@
     "unit_type":"Hero of Valour",
     "base_points":80,
     "default_bow":false,
-    "unique":false,
+    "unique":true,
     "inc_bow_count":false,
     "bow_limit":false,
     "siege_crew":0,
