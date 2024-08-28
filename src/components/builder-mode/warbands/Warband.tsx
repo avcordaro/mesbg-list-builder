@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
-import { ChooseHeroButton } from "../hero/ChooseHeroButton.jsx";
+import { ChooseHeroButton } from "../hero/ChooseHeroButton.tsx";
 import { WarbandHero } from "../hero/WarbandHero.jsx";
 import { ChooseWarriorButton } from "../warrior/ChooseWarriorButton.tsx";
 import { WarbandWarrior } from "../warrior/WarbandWarrior.tsx";
@@ -36,18 +36,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
     >
       <WarbandInfo warband={warband} />
       {warband.hero == null ? (
-        <ChooseHeroButton
-          setHeroSelection={(b: boolean) =>
-            updateBuilderSidebar({ heroSelection: b })
-          }
-          setDisplaySelection={(b: boolean) =>
-            updateBuilderSidebar({ warriorSelection: b })
-          }
-          warbandNum={warband.num}
-          setWarbandNumFocus={(b: number) =>
-            updateBuilderSidebar({ warriorSelectionFocus: [String(b), ""] })
-          }
-        />
+        <ChooseHeroButton warbandId={warband.id} />
       ) : (
         <WarbandHero warbandNum={warband.num} unitData={warband.hero} />
       )}

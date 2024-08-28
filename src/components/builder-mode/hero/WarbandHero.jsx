@@ -14,6 +14,7 @@ import {
   handleSpecialArmyOption,
   handleSpecialWarbandOption,
 } from "../../../utils/specialRules.js";
+import { MwfBadge } from "../../common/MwfBadge";
 import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
 import { ModalTypes } from "../../modal/modals";
 import { OptionHero } from "./OptionHero.jsx";
@@ -179,27 +180,7 @@ export function WarbandHero({
           </Stack>
           <Stack direction="horizontal" style={{ minHeight: "28px" }} gap={1}>
             <Badge bg="dark">{unitData.unit_type}</Badge>
-            {unitData.MWFW && unitData.MWFW.length > 0 && (
-              <>
-                <br />
-                <div style={{ marginBottom: "4px" }}>
-                  <span className="m-0 mwf-name border border-secondary">
-                    M W F
-                  </span>
-                  <span className="m-0 mwf-value border border-secondary">
-                    {unitData.MWFW[0][1].split(":")[0]}{" "}
-                    <span className="m-0" style={{ color: "lightgrey" }}>
-                      /
-                    </span>{" "}
-                    {unitData.MWFW[0][1].split(":")[1]}{" "}
-                    <span className="m-0" style={{ color: "lightgrey" }}>
-                      /
-                    </span>{" "}
-                    {unitData.MWFW[0][1].split(":")[2]}
-                  </span>
-                </div>
-              </>
-            )}
+            <MwfBadge unit={unitData} />
           </Stack>
           <Stack direction="horizontal" gap={3}>
             {unitData.options[0].option !== "None" && (

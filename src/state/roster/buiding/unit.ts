@@ -17,7 +17,7 @@ export const selectUnit =
         return {
           ...warband,
           units: warband.units.map((unit: FreshUnit) =>
-            isUnitToUpdate ? { ...unit, ...selectedUnit } : unit,
+            isUnitToUpdate(unit) ? { ...unit, ...selectedUnit } : unit,
           ),
         };
       }),
