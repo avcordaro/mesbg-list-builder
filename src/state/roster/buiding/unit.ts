@@ -3,8 +3,8 @@ import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 import { findAndRemoveItem } from "../../../utils/array.ts";
 
-const finUnitById = (unitId: string) => (unit: Unit) =>
-  isDefinedUnit(unit) && unit.id === unitId;
+const findUnitById = (unitId: string) => (unit: Unit | FreshUnit) =>
+  unit.id === unitId;
 
 export const selectUnit =
   (warbandId: string, unitId: string, selectedUnit: Unit) =>
@@ -13,10 +13,11 @@ export const selectUnit =
       ...roster,
       warbands: roster.warbands.map((warband: Warband) => {
         if (warband.id !== warbandId) return warband;
+        const isUnitToUpdate = findUnitById(unitId);
         return {
           ...warband,
           units: warband.units.map((unit: FreshUnit) =>
-            unit.id === unitId ? { ...unit, ...selectedUnit } : unit,
+            isUnitToUpdate ? { ...unit, ...selectedUnit } : unit,
           ),
         };
       }),
@@ -30,7 +31,7 @@ export const updateUnit =
       ...roster,
       warbands: roster.warbands.map((warband: Warband) => {
         if (warband.id !== warbandId) return warband;
-        const isUnitToUpdate = finUnitById(unitId);
+        const isUnitToUpdate = findUnitById(unitId);
         return {
           ...warband,
           units: warband.units.map((unit: Unit) =>
@@ -48,7 +49,7 @@ export const duplicateUnit =
       ...roster,
       warbands: roster.warbands.map((warband: Warband) => {
         if (warband.id !== warbandId) return warband;
-        const unitToDuplicate = warband.units.find(finUnitById(unitId));
+        const unitToDuplicate = warband.units.find(findUnitById(unitId));
 
         if (!isDefinedUnit(unitToDuplicate)) return warband;
         if (unitToDuplicate.unique) return warband;
@@ -71,7 +72,7 @@ export const deleteUnit =
       warbands: roster.warbands.map((warband: Warband) => {
         if (warband.id !== warbandId) return warband;
 
-        findAndRemoveItem(warband.units, finUnitById(unitId));
+        findAndRemoveItem(warband.units, findUnitById(unitId));
 
         return warband;
       }),

@@ -1,6 +1,7 @@
 import { create, StateCreator } from "zustand";
 import { createJSONStorage, devtools, persist } from "zustand/middleware";
 import { alertSlice, AlertState } from "./alert";
+import { builderSlice, BuilderState } from "./builder-selection";
 import { gamemodeSlice, GamemodeState } from "./gamemode";
 import { modalSlice, ModalState } from "./modal";
 import { getStateToPersist } from "./persistence.ts";
@@ -11,7 +12,8 @@ export type AppState = RosterState &
   GamemodeState &
   ModalState &
   SidebarState &
-  AlertState;
+  AlertState &
+  BuilderState;
 
 export type Slice<T> = StateCreator<
   AppState,
@@ -32,6 +34,7 @@ export const useStore = create<
         ...alertSlice(...args),
         ...gamemodeSlice(...args),
         ...rosterSlice(...args),
+        ...builderSlice(...args),
       }),
       {
         name: "mesbg-lb-storage",

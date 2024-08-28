@@ -1,5 +1,5 @@
 import { Roster } from "../types/roster.ts";
-import { FreshUnit, isDefinedUnit, Unit } from "../types/unit.ts";
+import { FreshUnit, isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { Warband } from "../types/warband.ts";
 import { sum } from "./utils.ts";
 
@@ -39,11 +39,21 @@ export const calculateWarbandBowLimitModels = (warband: Warband) => {
   return count;
 };
 
-export const calculateWarbandBowCount = (warband: Warband) =>
+const isBow = (option: Option) =>
+  option.type === "bow" && option.opt_quantity === 1;
+
+export const calculateWarbandBowCount = (
+  warband: Warband,
+  rawBowCount: boolean = false,
+) =>
   warband.units
     .filter((unit: Unit | FreshUnit) => isDefinedUnit(unit))
     .filter((unit: Unit) => unit.unit_type === "Warrior")
-    .filter((unit: Unit) => unit.inc_bow_count && unit.bow_limit)
+    .filter(
+      (unit: Unit) =>
+        (unit.bow_limit || rawBowCount) &&
+        (unit.inc_bow_count || !!unit.options.find(isBow) || unit.default_bow),
+    )
     .reduce(
       (bowCount: number, unit: Unit) =>
         bowCount + (unit.siege_crew > 0 ? unit.siege_crew : 1) * unit.quantity,
@@ -60,9 +70,7 @@ export const calculateRosterUnitCount = (roster: Roster) =>
     .reduce(sum, 0);
 
 export const calculateWarbandTotalBowCount = (warband: Warband) => {
-  // todo: Figure out how to calculate this properly
-  console.log("calculate bow_count for warband:", warband);
-  return 0;
+  return calculateWarbandBowCount(warband, true);
 };
 
 export const calculateRosterTotalBowCount = (roster: Roster) => {

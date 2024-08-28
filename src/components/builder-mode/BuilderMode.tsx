@@ -1,50 +1,53 @@
-import { useState } from "react";
+import { useStore } from "../../state/store.ts";
 import { SelectionMenu } from "./SelectionMenu";
-import { Warbands } from "./Warbands";
+import { Warbands } from "./warbands/Warbands.tsx";
 
 // TODO: Update the builder mode components to use typescript.
 export const BuilderMode = () => {
-  const [factionSelection, setFactionSelection] = useState({
-    "Good Army": "Minas Tirith",
-    "Evil Army": "Mordor",
-    "Good LL": "The Return of the King",
-    "Evil LL": "The Host of the Dragon Emperor",
-  });
+  const {
+    factionSelection,
+    tabSelection,
+    warriorSelection,
+    heroSelection,
+    warriorSelectionFocus,
+    updateBuilderSidebar,
+    roster,
+  } = useStore();
 
-  const [tabSelection, setTabSelection] = useState("Good Army");
-  const [heroSelection, setHeroSelection] = useState(false);
-  const [warbandNumFocus, setWarbandNumFocus] = useState(0);
-  const [newWarriorFocus, setNewWarriorFocus] = useState("");
+  const setFactionSelection = (fs) => {
+    updateBuilderSidebar({
+      factionSelection: fs,
+    });
+  };
 
-  const [specialArmyOptions, setSpecialArmyOptions] = useState([]);
-  const [displaySelection, setDisplaySelection] = useState(false);
+  const setTabSelection = (tab) => {
+    updateBuilderSidebar({
+      tabSelection: tab,
+    });
+  };
+
+  const setDisplaySelection = (b: boolean) => {
+    updateBuilderSidebar({
+      warriorSelection: b,
+    });
+  };
 
   return (
     <>
       <SelectionMenu
-        displaySelection={displaySelection}
+        displaySelection={warriorSelection}
         setDisplaySelection={setDisplaySelection}
         tabSelection={tabSelection}
         setTabSelection={setTabSelection}
         factionSelection={factionSelection}
         setFactionSelection={setFactionSelection}
         heroSelection={heroSelection}
-        newWarriorFocus={newWarriorFocus}
-        warbandNumFocus={warbandNumFocus}
-        specialArmyOptions={specialArmyOptions}
-        setSpecialArmyOptions={setSpecialArmyOptions}
+        newWarriorFocus={warriorSelectionFocus[1]}
+        warbandNumFocus={
+          roster.warbands.find(({ id }) => id === warriorSelectionFocus[0])?.num
+        }
       />
-      <Warbands
-        setHeroSelection={setHeroSelection}
-        setDisplaySelection={setDisplaySelection}
-        setWarbandNumFocus={setWarbandNumFocus}
-        specialArmyOptions={specialArmyOptions}
-        setSpecialArmyOptions={setSpecialArmyOptions}
-        setNewWarriorFocus={setNewWarriorFocus}
-        setTabSelection={setTabSelection}
-        factionSelection={factionSelection}
-        setFactionSelection={setFactionSelection}
-      />
+      <Warbands />
     </>
   );
 };

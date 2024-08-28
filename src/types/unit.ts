@@ -45,6 +45,7 @@ export type Option = {
   points: number;
   type:
     | "mount"
+    | "bow"
     | "add_crew"
     | "engineer_cpt"
     | "special_army_upgrade"

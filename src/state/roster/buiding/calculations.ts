@@ -7,8 +7,8 @@ import {
 import {
   calculateRosterUnitCount,
   calculateRosterTotalBowCount,
-  calculateWarbandBowCount,
   calculateWarbandModelCount,
+  calculateWarbandTotalBowCount,
 } from "../../../utils/unit-count.ts";
 import { calculateAllianceLevel } from "../alliance.ts";
 import {
@@ -53,7 +53,6 @@ export const recalculatePoints = (roster: Roster): Roster => {
 };
 
 export const updateUnitCount = (roster: Roster) => {
-  console.log(roster);
   return {
     ...roster,
     num_units: calculateRosterUnitCount(roster),
@@ -62,7 +61,7 @@ export const updateUnitCount = (roster: Roster) => {
       ...warband,
       num_units: calculateWarbandModelCount(warband),
       max_units: warband.hero?.warband_size || 0, // TODO: Handle special cases
-      bow_count: calculateWarbandBowCount(warband),
+      bow_count: calculateWarbandTotalBowCount(warband),
     })),
   };
 };
@@ -91,5 +90,6 @@ export const updateFactionData = (roster: Roster) => {
     allianceLevel: newAllianceLevel,
     rosterBuildingWarnings: warnings,
     armyBonusActive: armyBonusActive,
+    factionMetaData: calculateModelCount(roster.warbands),
   };
 };
