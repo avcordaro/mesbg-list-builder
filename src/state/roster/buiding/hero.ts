@@ -20,3 +20,15 @@ export const deleteHero =
     console.log({ warbandId, heroId, roster });
     return {};
   };
+
+export const updateLeadingHero =
+  (warbandId: string) =>
+  ({ roster }) => {
+    const leader = roster.leader_warband_id !== warbandId ? warbandId : null;
+    return {
+      roster: {
+        ...roster,
+        leader_warband_id: leader,
+      },
+    };
+  };

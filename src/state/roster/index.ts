@@ -9,7 +9,12 @@ import {
   recalculate as updateMetaData,
   updateFactionData,
 } from "./buiding/calculations.ts";
-import { assignHero, deleteHero, updateHero } from "./buiding/hero.ts";
+import {
+  assignHero,
+  deleteHero,
+  updateHero,
+  updateLeadingHero,
+} from "./buiding/hero.ts";
 import {
   deleteUnit,
   duplicateUnit,
@@ -36,6 +41,7 @@ type RosterFunctions = {
   assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit) => void;
   updateHero: (warbandId: string, heroId: string, hero: Partial<Unit>) => void;
   deleteHero: (warbandId: string, heroId: string) => void;
+  makeLeader: (warbandId: string) => void;
 
   // Unit functions
   addUnit: (warbandId: string) => void;
@@ -123,6 +129,9 @@ export const rosterSlice: Slice<RosterState> = (set) => {
     ): void => {
       set(updateHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
       recalculate();
+    },
+    makeLeader: (warbandId: string): void => {
+      set(updateLeadingHero(warbandId), undefined, "UPDATE_ARMY_LEADER");
     },
     deleteHero: (warbandId: string, heroId: string): void => {
       set(deleteHero(warbandId, heroId), undefined, "ASSIGN_HERO");

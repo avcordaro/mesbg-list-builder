@@ -36,8 +36,6 @@ export const BuilderMode = () => {
     ({ id }) => id === warriorSelectionFocus[0],
   );
 
-  console.log(warriorSelectionFocus);
-
   return (
     <>
       <SelectionMenu

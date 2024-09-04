@@ -1,4 +1,4 @@
-import { Unit } from "../../types/unit.ts";
+import { Unit } from "../../../types/unit.ts";
 
 export const MwfBadge = ({ unit }: { unit: Unit }) => {
   if (!unit.MWFW || unit.MWFW.length === 0) {

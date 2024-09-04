@@ -11,12 +11,15 @@ The core difference between Option Hero and Option Warrior components is
 that some hero options can be more than just a simple toggle (e.g. amount of Will points 
 you'd like for the Witch King). */
 
-export function OptionHero({ warbandNum, unit, option }) {
-  const { roster, setRoster } = useStore();
+export function OptionHero({ warbandId, unit, option }) {
+  const { roster, setRoster, updateHero } = useStore();
+
+  const warbandNum = roster?.warbands.find(({ id }) => id === warbandId)?.num;
 
   const MWF_MAP = { Might: 0, Will: 1, Fate: 2 };
 
-  const handleToggle = () => {
+  const handleToggle = (e) => {
+    e.preventDefault();
     /* Update the roster state variable whenever the specific option is toggled on or off, 
     including any changes to points and bow count. */
     let newRoster = { ...roster };
