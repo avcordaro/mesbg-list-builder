@@ -44,6 +44,10 @@ export const recalculatePoints = (roster: Roster): Roster => {
     warbands: roster.warbands.map((warband) => ({
       ...warband,
       points: calculatePointsForWarband(warband),
+      hero: {
+        ...warband.hero,
+        ...calculatePointsForUnit(warband.hero),
+      },
       units: warband.units.map((unit) => ({
         ...unit,
         ...calculatePointsForUnit(unit),

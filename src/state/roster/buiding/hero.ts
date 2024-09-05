@@ -10,8 +10,36 @@ export const assignHero =
 export const updateHero =
   (warbandId: string, heroId: string, hero: Partial<Unit>) =>
   ({ roster }) => {
-    console.log({ warbandId, heroId, hero, roster });
-    return {};
+    // TODO: Handle option (de)selection for the following cases:
+    // - "treebeard_m&p"
+    // - engineer_cpt
+    // --- Extra upgrades (shield & bow)
+    // --- Increased warband size
+    // - mahud_chief
+    // - [azog's_legion] azog (With Signal Tower)
+    // - Azog with White Warg
+
+    return {
+      roster: {
+        ...roster,
+        warbands: roster.warbands.map((warband) => {
+          if (warband.id !== warbandId) return warband;
+          if (warband.hero.id !== heroId) {
+            console.warn("The heros id did not match with warband hero", {
+              warbandHeroId: warband.hero.id,
+              heroId,
+            });
+          }
+          return {
+            ...warband,
+            hero: {
+              ...warband.hero,
+              ...hero,
+            },
+          };
+        }),
+      },
+    };
   };
 
 export const deleteHero =

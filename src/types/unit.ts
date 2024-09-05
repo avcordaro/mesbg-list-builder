@@ -50,5 +50,7 @@ export type Option = {
     | "engineer_cpt"
     | "special_army_upgrade"
     | "special_warband_upgrade"
+    | "treebeard_m&p"
+    | "mahud_chief"
     | null;
 };

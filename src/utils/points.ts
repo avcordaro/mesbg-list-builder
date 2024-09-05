@@ -8,7 +8,7 @@ export const calculatePpuForUnit = (unit: Unit | FreshUnit): number =>
     ? unit.base_points +
       unit.options
         .filter((option) => option.option_id !== "None")
-        .map((option) => option.points * option.opt_quantity)
+        .map((option) => option.points * (option.opt_quantity - option.min))
         .reduce(sum, 0)
     : 0;
 
