@@ -1,10 +1,13 @@
 import { v4 as uuid } from "uuid";
-import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { isDefinedUnit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 import { findAndRemoveItem } from "../../../utils/array.ts";
 import { AppState } from "../../store.ts";
 import { RosterState } from "../index.ts";
-import { getSpecialArmyOption, hasSpecialArmyOption } from "./special-rules.ts";
+import {
+  adjustPotentialArmyWideSpecialRuleOptions,
+  recalculateLeaderWarband,
+} from "./hero-special-stuff.ts";
 
 export const addWarband =
   () =>
@@ -23,48 +26,6 @@ export const addWarband =
       roster,
     };
   };
-
-const adjustPotentialArmyWideSpecialRuleOptions = (
-  warbands: Warband[],
-  hero: Unit | FreshUnit,
-) => {
-  // Hero was not defined, nothing needs to be updated in this section.
-  if (!isDefinedUnit(hero)) return;
-  // Hero does not have army-wide special rules that need adjustment.
-  if (!hasSpecialArmyOption(hero)) return;
-
-  const deletedSpecialArmyOption = getSpecialArmyOption(hero);
-  warbands.forEach((warband: Warband) => {
-    warband.units.forEach((unit: Unit | FreshUnit) => {
-      if (!isDefinedUnit(unit)) return unit;
-      unit.options = unit.options.map((option) => {
-        // We don't need to adjust anything if the option is not a special army upgrade
-        if (option.type !== "special_army_upgrade") return option;
-        // We don't need to adjust options that are not the option that is removed
-        if (option.option !== deletedSpecialArmyOption) return option;
-
-        return {
-          ...option,
-          opt_quantity: 0,
-        };
-      });
-    });
-  });
-};
-
-const recalculateLeaderWarbandNum = (
-  deletedWarband: Warband,
-  currentLeader: number,
-) => {
-  if (deletedWarband.num === currentLeader) {
-    return null; // deleted warband contained leader, no new leader.
-  }
-  if (deletedWarband.num > currentLeader) {
-    return currentLeader; // leader is in one of the earlier warbands and did not shift.
-  } else {
-    return currentLeader - 1; // leader warband shifted with 1 spot.
-  }
-};
 
 export const deleteWarband =
   (warbandId: string) =>
@@ -88,9 +49,9 @@ export const deleteWarband =
     return {
       roster: {
         ...roster,
-        leader_warband_num: recalculateLeaderWarbandNum(
+        leader_warband_id: recalculateLeaderWarband(
           deletedWarband,
-          roster.leader_warband_num,
+          roster.leader_warband_id,
         ),
         warbands: roster.warbands.map((warband, index) => ({
           ...warband,

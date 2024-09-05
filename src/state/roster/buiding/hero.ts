@@ -1,24 +1,43 @@
 import { Unit } from "../../../types/unit.ts";
+import {
+  adjustPotentialArmyWideSpecialRuleOptions,
+  handleAzog,
+  handleMahudChief,
+  handleSiegeEngineCaptainUpdates,
+} from "./hero-special-stuff.ts";
 
 export const assignHero =
   (warbandId: string, heroId: string, hero: Unit) =>
-  ({ roster }) => {
-    console.log({ warbandId, heroId, hero, roster });
-    return {};
-  };
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband) => {
+        if (warband.id !== warbandId) return warband;
+
+        return {
+          ...warband,
+          hero: {
+            ...hero,
+            id: heroId,
+          },
+        };
+      }),
+    },
+  });
+
+const getUpdatedHero = (hero: Unit, update: Partial<Unit>): Unit => {
+  const updated: Unit = { ...hero, ...update };
+
+  handleSiegeEngineCaptainUpdates(updated);
+  handleMahudChief(updated);
+  handleAzog(updated);
+
+  return updated;
+};
 
 export const updateHero =
   (warbandId: string, heroId: string, hero: Partial<Unit>) =>
   ({ roster }) => {
-    // TODO: Handle option (de)selection for the following cases:
-    // - "treebeard_m&p"
-    // - engineer_cpt
-    // --- Extra upgrades (shield & bow)
-    // --- Increased warband size
-    // - mahud_chief
-    // - [azog's_legion] azog (With Signal Tower)
-    // - Azog with White Warg
-
     return {
       roster: {
         ...roster,
@@ -30,12 +49,12 @@ export const updateHero =
               heroId,
             });
           }
+
+          const fullyUpdatedHero = getUpdatedHero(warband.hero, hero);
           return {
             ...warband,
-            hero: {
-              ...warband.hero,
-              ...hero,
-            },
+            max_units: fullyUpdatedHero.warband_size,
+            hero: fullyUpdatedHero,
           };
         }),
       },
@@ -45,8 +64,28 @@ export const updateHero =
 export const deleteHero =
   (warbandId: string, heroId: string) =>
   ({ roster }) => {
-    console.log({ warbandId, heroId, roster });
-    return {};
+    const deletedHero = roster.warbands.find(({ id }) => warbandId === id).hero;
+    if (deletedHero.id !== heroId) {
+      console.warn("The heros id did not match with warband hero", {
+        warbandHeroId: deletedHero,
+        heroId,
+      });
+    }
+
+    adjustPotentialArmyWideSpecialRuleOptions(roster.warbands, deletedHero);
+    return {
+      roster: {
+        ...roster,
+        warbands: roster.warbands.map((warband) => {
+          if (warband.id !== warbandId) return warband;
+
+          return {
+            ...warband,
+            hero: null,
+          };
+        }),
+      },
+    };
   };
 
 export const updateLeadingHero =

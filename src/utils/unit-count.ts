@@ -3,12 +3,37 @@ import { FreshUnit, isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { Warband } from "../types/warband.ts";
 import { sum } from "./utils.ts";
 
+const extraUnitsOnHero = (hero: Unit) => {
+  if (!isDefinedUnit(hero)) return 0;
+
+  if (hero.model_id === "[fangorn] treebeard") {
+    const hasMerAndPip =
+      hero.options.find(({ type }) => type === "treebeard_m&p")
+        ?.opt_quantity === 1;
+    if (hasMerAndPip) return 2;
+  }
+
+  if (hero.unit_type === "Siege Engine") {
+    return (
+      (hero.options.find((option) => option.type === "add_crew")
+        ?.opt_quantity || 0) +
+      hero.siege_crew -
+      1
+    );
+  }
+
+  return 0;
+};
+
 export const calculateWarbandModelCount = (warband: Warband) => {
   // todo: Figure out how to calculate this properly with all the edge cases like Murin & Drar / Siege crew.
-  return warband.units
+  const units = warband.units
     .filter(isDefinedUnit)
     .map((unit) => unit.quantity)
     .reduce(sum, 0);
+  const extraUnits = extraUnitsOnHero(warband.hero);
+
+  return units + extraUnits;
 };
 
 export const calculateWarbandBowLimitModels = (warband: Warband) => {

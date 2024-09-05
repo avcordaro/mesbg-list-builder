@@ -127,14 +127,14 @@ export const rosterSlice: Slice<RosterState> = (set) => {
       heroId: string,
       hero: Partial<Unit>,
     ): void => {
-      set(updateHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
+      set(updateHero(warbandId, heroId, hero), undefined, "UPDATE_HERO");
       recalculate();
     },
     makeLeader: (warbandId: string): void => {
       set(updateLeadingHero(warbandId), undefined, "UPDATE_ARMY_LEADER");
     },
     deleteHero: (warbandId: string, heroId: string): void => {
-      set(deleteHero(warbandId, heroId), undefined, "ASSIGN_HERO");
+      set(deleteHero(warbandId, heroId), undefined, "DELETE_HERO");
       recalculate();
     },
 
