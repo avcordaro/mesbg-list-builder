@@ -41,8 +41,8 @@ const mapHeroToStats = (
 
 const getHeroes = (roster: Roster): Record<string, GameModeHero[]> => {
   return roster.warbands
-    .map(({ hero, units, num }) => [
-      mapHeroToStats(hero, roster.leader_warband_num === num),
+    .map(({ hero, units, id }) => [
+      mapHeroToStats(hero, roster.leader_warband_id === id),
       ...units.map((unit) => mapHeroToStats(unit)).filter((v) => !!v),
     ])
     .flat()
