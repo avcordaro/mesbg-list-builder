@@ -13,6 +13,8 @@ export const keysToPersist: StoreKey[] = [
   "uniqueModels",
   "rosterBuildingWarnings",
   "armyBonusActive",
+  "tabSelection",
+  "factionSelection",
 ];
 
 export const getStateToPersist = (state: AppState): Partial<AppState> =>
