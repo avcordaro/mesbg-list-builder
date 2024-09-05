@@ -57,7 +57,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
     >
       <WarbandInfo warband={warband} />
 
-      {warband.hero == null ? (
+      {!isDefinedUnit(warband.hero) ? (
         <ChooseHeroButton warbandId={warband.id} />
       ) : (
         <WarbandHero warbandId={warband.id} unit={warband.hero} />
