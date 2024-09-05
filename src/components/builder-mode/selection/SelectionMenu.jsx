@@ -15,11 +15,11 @@ import { RxCross1 } from "react-icons/rx";
 import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import mesbg_data from "../../../assets/data/mesbg_data.json";
+import { allianceColours } from "../../../constants/alliances";
+import { wanderers } from "../../../constants/wanderers";
 import { useFactionData } from "../../../hooks/faction-data";
 import { useStore } from "../../../state/store";
-import { allianceColours } from "../../constants/alliances";
-import { wanderers } from "../../constants/wanderers";
-import { FactionLogo } from "../../images/FactionLogo.tsx";
+import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 import { SidebarTypes } from "../../sidebar-drawer/sidebars";
 
 import { SelectionSiege } from "./SelectionSiege.jsx";

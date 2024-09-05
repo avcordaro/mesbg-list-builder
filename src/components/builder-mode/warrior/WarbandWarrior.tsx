@@ -3,8 +3,8 @@ import Badge from "react-bootstrap/Badge";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import { Unit } from "../../../types/unit.ts";
+import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
-import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
 import { WarriorActions } from "./WarriorActions.tsx";
 import { WarriorOptionList } from "./WarriorOptionList.tsx";
 

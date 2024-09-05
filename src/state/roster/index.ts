@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { v4 as uuid } from "uuid";
-import { AllianceLevel } from "../../components/constants/alliances.ts";
+import { AllianceLevel } from "../../constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { FreshUnit, Unit } from "../../types/unit.ts";

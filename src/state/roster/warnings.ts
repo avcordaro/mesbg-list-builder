@@ -1,5 +1,5 @@
 import warning_rules_data from "../../assets/data/warning_rules.json";
-import { AllianceLevel } from "../../components/constants/alliances.ts";
+import { AllianceLevel } from "../../constants/alliances.ts";
 import { FactionData } from "../../types/faction-data.ts";
 import { Faction, Factions } from "../../types/factions";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";

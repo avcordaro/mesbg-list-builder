@@ -6,7 +6,7 @@ import { v4 as uuid } from "uuid";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../../state/store";
 import { handleRivendellElrond } from "../../../utils/specialRules.js";
-import { UnitProfilePicture } from "../../images/UnitProfilePicture";
+import { UnitProfilePicture } from "../../common/images/UnitProfilePicture";
 import { ModalTypes } from "../../modal/modals";
 
 /* The Selection Unit is the component used to display an individual unit in the unit selection list,

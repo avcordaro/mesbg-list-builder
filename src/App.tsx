@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { Alerts } from "./components/alerts/Alerts";
 import { BuilderMode } from "./components/builder-mode/BuilderMode";
+import { TopNavbar } from "./components/common/layout/TopNavbar.tsx";
 import { GameMode } from "./components/gamemode/GameMode";
-import { TopNavbar } from "./components/layout/TopNavbar.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
 import { SidebarContainer } from "./components/sidebar-drawer/SidebarContainer";
 import { useStore } from "./state/store";

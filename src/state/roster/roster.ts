@@ -1,4 +1,4 @@
-import { AllianceLevel } from "../../components/constants/alliances.ts";
+import { AllianceLevel } from "../../constants/alliances.ts";
 import { Faction } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { AppState } from "../store.ts";

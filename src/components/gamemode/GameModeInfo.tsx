@@ -6,10 +6,10 @@ import { FaChessRook, FaSearch } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { GiCrackedShield, GiSwordsEmblem } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import { allianceColours } from "../../constants/alliances";
 import { useFactionData } from "../../hooks/faction-data.ts";
 import { useStore } from "../../state/store";
 import { Factions } from "../../types/factions.ts";
-import { allianceColours } from "../constants/alliances";
 import { ModalTypes } from "../modal/modals";
 import { SidebarTypes } from "../sidebar-drawer/sidebars.tsx";
 

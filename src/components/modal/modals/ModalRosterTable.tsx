@@ -15,10 +15,10 @@ import { GiQueenCrown } from "react-icons/gi";
 import { GoCopy } from "react-icons/go";
 import { RxCross1 } from "react-icons/rx";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { allianceColours } from "../../../constants/alliances";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
 import { isDefinedUnit } from "../../../types/unit.ts";
-import { allianceColours } from "../../constants/alliances";
 import { ModalTypes } from "../modals";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears

@@ -1,5 +1,5 @@
 import faction_data from "../../assets/data/faction_data.json";
-import { AllianceLevel } from "../../components/constants/alliances.ts";
+import { AllianceLevel } from "../../constants/alliances.ts";
 import { FactionData } from "../../types/faction-data.ts";
 import { Faction, Factions, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
