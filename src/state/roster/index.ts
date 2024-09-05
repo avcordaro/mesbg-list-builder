@@ -30,6 +30,7 @@ import { ModelCountData } from "./models.ts";
 import { updateRoster } from "./roster.ts";
 
 type RosterFunctions = {
+  // Override roster (IE; import or reset)
   setRoster: (roster: Roster) => void;
 
   // Global warband functions
@@ -102,6 +103,7 @@ export const rosterSlice: Slice<RosterState> = (set) => {
         undefined,
         "SET_ROSTER",
       );
+      recalculate();
     },
 
     addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),

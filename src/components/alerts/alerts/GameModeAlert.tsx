@@ -11,6 +11,7 @@ export const GameModeAlert = () => {
       num_units: 0,
       points: 0,
       bow_count: 0,
+      leader_warband_id: null,
       warbands: [],
     });
     dismissAlert();

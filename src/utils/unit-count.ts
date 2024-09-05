@@ -29,7 +29,10 @@ export const calculateWarbandModelCount = (warband: Warband) => {
   // todo: Figure out how to calculate this properly with all the edge cases like Murin & Drar / Siege crew.
   const units = warband.units
     .filter(isDefinedUnit)
-    .map((unit) => unit.quantity)
+    .map(
+      (unit) =>
+        unit.quantity + Math.max((unit.siege_crew - 1) * unit.quantity, 0),
+    )
     .reduce(sum, 0);
   const extraUnits = extraUnitsOnHero(warband.hero);
 
@@ -57,7 +60,9 @@ export const calculateWarbandBowLimitModels = (warband: Warband) => {
     .filter((unit: Unit) => unit.bow_limit)
     .reduce(
       (count: number, unit: Unit) =>
-        count + unit.quantity + unit.siege_crew * unit.quantity,
+        count +
+        unit.quantity +
+        Math.max((unit.siege_crew - 1) * unit.quantity, 0),
       0,
     );
 
