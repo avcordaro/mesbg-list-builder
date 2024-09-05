@@ -10,6 +10,7 @@ export const BuilderMode = () => {
     warriorSelection,
     heroSelection,
     warriorSelectionFocus,
+    factionEnabledSpecialRules,
     updateBuilderSidebar,
     roster,
   } = useStore();
@@ -48,6 +49,8 @@ export const BuilderMode = () => {
         heroSelection={heroSelection}
         newWarriorFocus={warriorSelectionFocus[1]}
         warbandNumFocus={warbandFocus?.num - 1}
+        specialArmyOptions={factionEnabledSpecialRules}
+        setSpecialArmyOptions={console.log}
       />
       <Warbands />
     </>
