@@ -22,11 +22,10 @@ const extraUnitsOnHero = (hero: Unit) => {
     );
   }
 
-  return 0;
+  return Math.max(hero.siege_crew - 1, 0);
 };
 
 export const calculateWarbandModelCount = (warband: Warband) => {
-  // todo: Figure out how to calculate this properly with all the edge cases like Murin & Drar / Siege crew.
   const units = warband.units
     .filter(isDefinedUnit)
     .map(
