@@ -1,15 +1,15 @@
-import faction_data from "../../assets/data/faction_data.json";
-import { AllianceLevel } from "../../constants/alliances.ts";
-import { FactionData } from "../../types/faction-data.ts";
-import { Faction, Factions, FactionType } from "../../types/factions.ts";
-import { Roster } from "../../types/roster.ts";
+import faction_data from "../../../assets/data/faction_data.json";
+import { AllianceLevel } from "../../../constants/alliances.ts";
+import { FactionData } from "../../../types/faction-data.ts";
+import { Faction, Factions, FactionType } from "../../../types/factions.ts";
+import { Roster } from "../../../types/roster.ts";
 import {
   handleBillCampfire,
   handleGoblinTown,
   handleKhandishHorsemanCharioteers,
   handleMasterLaketown,
   handleMirkwoodRangers,
-} from "../../utils/specialRules.js";
+} from "../../../utils/specialRules.js";
 
 export const checkAlliance = (
   a: Faction,

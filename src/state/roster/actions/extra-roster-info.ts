@@ -5,19 +5,20 @@ import {
   calculatePointsForWarband,
 } from "../../../utils/points.ts";
 import {
-  calculateRosterUnitCount,
   calculateRosterTotalBowCount,
+  calculateRosterUnitCount,
   calculateWarbandModelCount,
   calculateWarbandTotalBowCount,
 } from "../../../utils/unit-count.ts";
-import { calculateAllianceLevel } from "../alliance.ts";
 import {
+  calculateAllianceLevel,
+  calculateModelCount,
   getFactionList,
   getFactionSpecialRules,
   getFactionType,
-} from "../faction.ts";
-import { calculateModelCount, getUniqueModels } from "../models.ts";
-import { getWarningsForCreatedRoster } from "../warnings.ts";
+  getUniqueModels,
+  getWarningsForCreatedRoster,
+} from "../calculations";
 
 export const recalculate = (set) => {
   set(

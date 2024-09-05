@@ -4,7 +4,7 @@ import {
   handleAzog,
   handleMahudChief,
   handleSiegeEngineCaptainUpdates,
-} from "./hero-special-stuff.ts";
+} from "../calculations";
 
 export const assignHero =
   (warbandId: string, heroId: string, hero: Unit) =>

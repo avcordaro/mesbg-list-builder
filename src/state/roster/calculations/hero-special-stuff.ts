@@ -1,7 +1,7 @@
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import mesbg_data from "../../../assets/data/mesbg_data.json";
 import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
-import { getSpecialArmyOption, hasSpecialArmyOption } from "./special-rules.ts";
 
 export const handleMahudChief = (hero: Unit) => {
   if (
@@ -120,3 +120,13 @@ export const recalculateLeaderWarband = (
   }
   return currentLeader;
 };
+
+export const hasSpecialArmyOption = (hero: Unit): boolean =>
+  isDefinedUnit(hero) &&
+  hero_constraint_data[hero.model_id] &&
+  hero_constraint_data[hero.model_id][0]["special_army_option"] !== "";
+
+export const getSpecialArmyOption = (hero: Unit): string =>
+  hasSpecialArmyOption(hero)
+    ? hero_constraint_data[hero.model_id][0]["special_army_option"]
+    : null;

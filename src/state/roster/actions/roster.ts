@@ -1,9 +1,11 @@
-import { AllianceLevel } from "../../constants/alliances.ts";
-import { Faction } from "../../types/factions.ts";
-import { Roster } from "../../types/roster.ts";
-import { AppState } from "../store.ts";
-import { makeAllianceSpecificRosterAjustments } from "./alliance";
-import { calculateModelCount } from "./models.ts";
+import { AllianceLevel } from "../../../constants/alliances.ts";
+import { Faction } from "../../../types/factions.ts";
+import { Roster } from "../../../types/roster.ts";
+import { AppState } from "../../store.ts";
+import {
+  calculateModelCount,
+  makeAllianceSpecificRosterAjustments,
+} from "../calculations";
 
 export function updateRoster(
   roster: Roster,

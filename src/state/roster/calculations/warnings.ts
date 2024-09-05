@@ -1,9 +1,9 @@
-import warning_rules_data from "../../assets/data/warning_rules.json";
-import { AllianceLevel } from "../../constants/alliances.ts";
-import { FactionData } from "../../types/faction-data.ts";
-import { Faction, Factions } from "../../types/factions";
+import warning_rules_data from "../../../assets/data/warning_rules.json";
+import { AllianceLevel } from "../../../constants/alliances.ts";
+import { FactionData } from "../../../types/faction-data.ts";
+import { Faction, Factions } from "../../../types/factions.ts";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
-import { ModelCountData } from "./models";
+import { ModelCountData } from "./models.ts";
 
 type WarningRule = {
   type: string;

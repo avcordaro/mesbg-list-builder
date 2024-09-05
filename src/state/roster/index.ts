@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { v4 as uuid } from "uuid";
 import { AllianceLevel } from "../../constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
@@ -6,28 +5,22 @@ import { Roster } from "../../types/roster.ts";
 import { FreshUnit, Unit } from "../../types/unit.ts";
 import { Slice } from "../store.ts";
 import {
-  recalculate as updateMetaData,
-  updateFactionData,
-} from "./buiding/calculations.ts";
-import {
+  addWarband,
   assignHero,
   deleteHero,
+  deleteUnit,
+  deleteWarband,
+  duplicateUnit,
+  duplicateWarband,
+  recalculate as updateMetaData,
+  selectUnit,
+  updateFactionData,
   updateHero,
   updateLeadingHero,
-} from "./buiding/hero.ts";
-import {
-  deleteUnit,
-  duplicateUnit,
-  selectUnit,
+  updateRoster,
   updateUnit,
-} from "./buiding/unit.ts";
-import {
-  addWarband,
-  deleteWarband,
-  duplicateWarband,
-} from "./buiding/warband.ts";
-import { ModelCountData } from "./models.ts";
-import { updateRoster } from "./roster.ts";
+} from "./actions";
+import { ModelCountData } from "./calculations";
 
 type RosterFunctions = {
   // Override roster (IE; import or reset)

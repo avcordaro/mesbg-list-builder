@@ -3,11 +3,11 @@ import { isDefinedUnit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 import { findAndRemoveItem } from "../../../utils/array.ts";
 import { AppState } from "../../store.ts";
-import { RosterState } from "../index.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
   recalculateLeaderWarband,
-} from "./hero-special-stuff.ts";
+} from "../calculations";
+import { RosterState } from "../index.ts";
 
 export const addWarband =
   () =>
