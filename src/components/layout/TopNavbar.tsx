@@ -13,8 +13,8 @@ import { ModalTypes } from "../modal/modals";
 import { SidebarTypes } from "../sidebar-drawer/sidebars";
 
 /* Navbar component that displays at the top of the page. */
-// TODO: Update this component to use typescript.
-export function TopNavbar() {
+
+export const TopNavbar = () => {
   const {
     roster,
     gameMode,
@@ -165,4 +165,4 @@ export function TopNavbar() {
       </Navbar>
     </>
   );
-}
+};
