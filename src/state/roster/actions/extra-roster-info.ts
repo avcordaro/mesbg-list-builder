@@ -18,18 +18,35 @@ import {
   getFactionType,
   getUniqueModels,
   getWarningsForCreatedRoster,
+  makeAllianceSpecificRosterAjustments,
 } from "../calculations";
 
 export const recalculate = (set) => {
   set(
-    ({ roster }) => ({ roster: updateUnitCount(roster) }),
+    ({ roster }) => ({ ...updateFactionData(roster) }),
     undefined,
-    "RECALCULATE_UNIT_COUNT",
+    "UPDATE_FACTION_DATA",
+  );
+  set(
+    ({ roster, allianceLevel, factions }) => ({
+      roster: makeAllianceSpecificRosterAjustments(
+        factions,
+        allianceLevel,
+        roster,
+      ),
+    }),
+    undefined,
+    "ADJUST_MODELS_BASED_ON_SELECTION",
   );
   set(
     ({ roster }) => ({ ...updateFactionData(roster) }),
     undefined,
     "UPDATE_FACTION_DATA",
+  );
+  set(
+    ({ roster }) => ({ roster: updateUnitCount(roster) }),
+    undefined,
+    "RECALCULATE_UNIT_COUNT",
   );
   set(
     ({ roster }) => ({ roster: recalculatePoints(roster) }),
