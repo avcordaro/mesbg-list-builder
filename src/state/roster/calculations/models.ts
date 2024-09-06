@@ -1,5 +1,5 @@
 import { Faction } from "../../../types/factions.ts";
-import { Unit } from "../../../types/unit.ts";
+import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 import {
   calculateWarbandBowCount,
@@ -61,7 +61,7 @@ function sumModelCountsForFaction(total, current) {
 
 export function calculateModelCount(warbands: Warband[]): ModelCountData {
   const groupedWarbands = warbands
-    .filter((warband) => !!warband?.hero)
+    .filter((warband) => isDefinedUnit(warband.hero))
     .reduce(
       (factions, warband) => {
         const { faction } = warband.hero;
