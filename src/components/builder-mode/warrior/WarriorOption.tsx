@@ -34,6 +34,14 @@ export const WarriorOption: FunctionComponent<OptionWarriorProps> = ({
     return factionEnabledSpecialRules.includes(option.option);
   };
 
+  const isLanceWithoutHorse = () => {
+    const hasHorse =
+      unit.options.find(({ type }) => type === "mount")?.opt_quantity === 1;
+    const isLance = option.option === "Lance";
+
+    return isLance && !hasHorse;
+  };
+
   const isOptionSelectable = () => {
     if (option.min === option.max) {
       return false;
@@ -47,6 +55,8 @@ export const WarriorOption: FunctionComponent<OptionWarriorProps> = ({
       );
       return false;
     }
+
+    if (isLanceWithoutHorse()) return false;
 
     if (option.type === "special_army_upgrade" && !isArmyWideUpgradeEnabled())
       return false;

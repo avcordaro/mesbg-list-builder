@@ -21,6 +21,14 @@ export const OptionToggle = ({
   const handleToggle = () => {
     updateState(warbandId, unit.id, {
       options: unit.options.map((o) => {
+        if (option.type === "mount" && o.option === "Lance") {
+          if (o.opt_quantity === 1 && option.opt_quantity === 1) {
+            return {
+              ...o,
+              opt_quantity: 0,
+            };
+          }
+        }
         if (option.option_id !== o.option_id) {
           return {
             ...o,

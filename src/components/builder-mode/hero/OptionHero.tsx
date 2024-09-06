@@ -24,7 +24,12 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
 }) => {
   const { updateHero } = useStore();
 
-  const isOptionSelectable = () => option.min !== option.max;
+  const hasHorse =
+    unit.options.find(({ type }) => type === "mount")?.opt_quantity === 1;
+  const isLance = option.option === "Lance";
+
+  const isOptionSelectable =
+    (option.min !== option.max && !isLance) || hasHorse;
 
   return (
     <>
@@ -40,7 +45,7 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
           warbandId={warbandId}
           unit={unit}
           option={option}
-          selectable={isOptionSelectable()}
+          selectable={isOptionSelectable}
           updateState={updateHero}
         />
       )}
