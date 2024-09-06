@@ -8,10 +8,13 @@ export const keysToPersist: StoreKey[] = [
   "factions",
   "factionType",
   "factionMetaData",
+  "factionEnabledSpecialRules",
   "allianceLevel",
   "uniqueModels",
   "rosterBuildingWarnings",
   "armyBonusActive",
+  "tabSelection",
+  "factionSelection",
 ];
 
 export const getStateToPersist = (state: AppState): Partial<AppState> =>

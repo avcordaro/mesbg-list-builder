@@ -15,9 +15,10 @@ import { GiQueenCrown } from "react-icons/gi";
 import { GoCopy } from "react-icons/go";
 import { RxCross1 } from "react-icons/rx";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { allianceColours } from "../../../constants/alliances";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
-import { allianceColours } from "../../constants/alliances";
+import { isDefinedUnit } from "../../../types/unit.ts";
 import { ModalTypes } from "../modals";
 
 /* Modal Roster Table is the component used to populate the pop-up modal which appears
@@ -84,7 +85,7 @@ export const ModalRosterTable = () => {
           return null;
         });
       }
-      warband.units.map((unit) => {
+      warband.units.filter(isDefinedUnit).map((unit) => {
         if (unit.name != null) {
           tableString += `  ${unit.quantity}x ${unit.name} (${unit.pointsTotal} points)\n`;
           unit.options.map((option) => {
@@ -142,7 +143,7 @@ export const ModalRosterTable = () => {
           );
         }
       }
-      _warband.units.map((_unit) => {
+      _warband.units.filter(isDefinedUnit).map((_unit) => {
         if (_unit.name != null && _unit.unit_type !== "Siege") {
           profileCards.push([_unit.profile_origin, _unit.name].join("|"));
         }
@@ -331,7 +332,7 @@ export const ModalRosterTable = () => {
                         </td>
                       </tr>
                     )}
-                    {warband.units.map((unit) => (
+                    {warband.units.filter(isDefinedUnit).map((unit) => (
                       <>
                         {unit.name != null && (
                           <tr>

@@ -5,16 +5,16 @@ import { BiLinkAlt, BiSolidFileImport } from "react-icons/bi";
 import { FaChessRook, FaRegCopyright } from "react-icons/fa";
 import { FaHammer, FaQuestion, FaTableList } from "react-icons/fa6";
 import { MdReportGmailerrorred } from "react-icons/md";
-import logo from "../../assets/images/logo.svg";
-import title from "../../assets/images/title.png";
-import { useStore } from "../../state/store";
-import { AlertTypes } from "../alerts/alert-types";
-import { ModalTypes } from "../modal/modals";
-import { SidebarTypes } from "../sidebar-drawer/sidebars";
+import logo from "../../../assets/images/logo.svg";
+import title from "../../../assets/images/title.png";
+import { useStore } from "../../../state/store";
+import { AlertTypes } from "../../alerts/alert-types";
+import { ModalTypes } from "../../modal/modals";
+import { SidebarTypes } from "../../sidebar-drawer/sidebars";
 
 /* Navbar component that displays at the top of the page. */
-// TODO: Update this component to use typescript.
-export function TopNavbar() {
+
+export const TopNavbar = () => {
   const {
     roster,
     gameMode,
@@ -147,6 +147,9 @@ export function TopNavbar() {
                 Break Point:{" "}
                 <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
               </h6>
+              <h6 className="mb-0">
+                Bows: <b>{roster.bow_count}</b>
+              </h6>
               <h6
                 className="mb-0 ms-auto text-muted"
                 style={{ fontSize: "14px" }}
@@ -162,4 +165,4 @@ export function TopNavbar() {
       </Navbar>
     </>
   );
-}
+};

@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../state/store.ts";
-import { Unit } from "../../types/unit.ts";
-import { UnitProfileCard } from "../images/UnitProfileCard.tsx";
+import { isDefinedUnit, Unit } from "../../types/unit.ts";
+import { UnitProfileCard } from "../common/images/UnitProfileCard.tsx";
 
 export const ProfileCards = () => {
   const roster = useStore((store) => store.roster);
@@ -25,8 +25,11 @@ export const ProfileCards = () => {
       const heroProfile = { profile: hero.name, army: hero.profile_origin };
       const extraProfiles = getExtraProfilesForHero(hero);
       const unitProfiles = units
-        .filter((unit) => !unit.name || unit.unit_type !== "Siege")
-        .map((unit) => ({ profile: unit.name, army: unit.profile_origin }));
+        .filter((unit) => !isDefinedUnit(unit) || unit.unit_type !== "Siege")
+        .map((unit: Unit) => ({
+          profile: unit.name,
+          army: unit.profile_origin,
+        }));
 
       return [heroProfile, ...extraProfiles, ...unitProfiles];
     });

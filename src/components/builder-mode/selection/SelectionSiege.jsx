@@ -4,7 +4,7 @@ import Stack from "react-bootstrap/Stack";
 import { v4 as uuid } from "uuid";
 import siege_equipment from "../../../assets/data/siege_equipment.json";
 import { useStore } from "../../../state/store";
-import { UnitProfilePicture } from "../../images/UnitProfilePicture.tsx";
+import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 
 export function SelectionSiege({
   newWarriorFocus,

@@ -19,10 +19,12 @@ export type Unit = {
   unique: boolean;
   unit_type: UnitType;
   warband_size: number;
-  MWFW: [[number | string, string]];
+  MWFW: [string | number, string][];
 };
 
-export type FreshUnit = Partial<Unit>;
+export type FreshUnit = Pick<Unit, "id" | "name">;
+
+export const isDefinedUnit = (unit: FreshUnit): unit is Unit => !!unit?.name;
 
 export type UnitType =
   | "Warrior"
@@ -41,5 +43,14 @@ export type Option = {
   option: string;
   option_id: string;
   points: number;
-  type: "mount" | "add_crew" | "engineer_cpt" | null;
+  type:
+    | "mount"
+    | "bow"
+    | "add_crew"
+    | "engineer_cpt"
+    | "special_army_upgrade"
+    | "special_warband_upgrade"
+    | "treebeard_m&p"
+    | "mahud_chief"
+    | null;
 };

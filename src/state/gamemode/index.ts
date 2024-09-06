@@ -1,6 +1,6 @@
 import { GameModeHero } from "../../components/gamemode/types.ts";
 import { Slice } from "../store.ts";
-import { getHeroesForGameMode } from "./gamemode.ts";
+import { createGameState } from "./gamemode.ts";
 
 export type GameState = {
   heroes: Record<string, GameModeHero[]>;
@@ -21,31 +21,27 @@ const initialState = {
   gameState: null,
 };
 
-export const gamemodeSlice: Slice<GamemodeState> = (set, get) => ({
+export const gamemodeSlice: Slice<GamemodeState> = (set) => ({
   ...initialState,
 
   setGameMode: (gameMode) => set({ gameMode }, undefined, "SET_GAME_MODE"),
   startNewGame: () =>
     set(
-      {
+      ({ roster }) => ({
         gameMode: true,
-        gameState: {
-          heroes: getHeroesForGameMode(get().roster),
-          casualties: 0,
-          heroCasualties: 0,
-        },
-      },
+        gameState: createGameState(roster),
+      }),
       undefined,
       "START_GAME",
     ),
   updateGameState: (gameStateUpdate) =>
     set(
-      {
+      ({ gameState }) => ({
         gameState: {
-          ...get().gameState,
+          ...gameState,
           ...gameStateUpdate,
         },
-      },
+      }),
       undefined,
       "UPDATE_GAME_STATE",
     ),

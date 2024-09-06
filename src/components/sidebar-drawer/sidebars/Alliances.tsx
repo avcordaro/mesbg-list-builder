@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import Badge from "react-bootstrap/Badge";
+import { wanderers } from "../../../constants/wanderers";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
 import { Faction } from "../../../types/factions.ts";
-import { wanderers } from "../../constants/wanderers";
-import { FactionLogo } from "../../images/FactionLogo.tsx";
+import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 
 export const FactionRow = ({ faction }: { faction: Faction }) => (
   <>

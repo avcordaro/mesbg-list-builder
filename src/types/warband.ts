@@ -1,13 +1,12 @@
-import { v4 as uuid } from "uuid";
-import { Unit } from "./unit.ts";
+import { FreshUnit, Unit } from "./unit.ts";
 
 export type Warband = {
-  id: typeof uuid;
+  id: string;
   num: number;
   points: number;
   num_units: number;
   max_units: number | "-";
   bow_count: number;
   hero: Unit;
-  units: Unit[];
+  units: (FreshUnit | Unit)[];
 };

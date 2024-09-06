@@ -13,16 +13,17 @@ import { IoWarningOutline } from "react-icons/io5";
 import { LuSwords } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
-import mesbg_data from "../../assets/data/mesbg_data.json";
-import { useFactionData } from "../../hooks/faction-data";
-import { useStore } from "../../state/store";
-import { allianceColours } from "../constants/alliances";
-import { wanderers } from "../constants/wanderers";
-import { FactionLogo } from "../images/FactionLogo.tsx";
-import { SidebarTypes } from "../sidebar-drawer/sidebars";
-import { SelectionSiege } from "./selection/SelectionSiege.jsx";
-import { SelectionUnit } from "./selection/SelectionUnit.jsx";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import mesbg_data from "../../../assets/data/mesbg_data.json";
+import { allianceColours } from "../../../constants/alliances";
+import { wanderers } from "../../../constants/wanderers";
+import { useFactionData } from "../../../hooks/faction-data";
+import { useStore } from "../../../state/store";
+import { FactionLogo } from "../../common/images/FactionLogo.tsx";
+import { SidebarTypes } from "../../sidebar-drawer/sidebars";
+
+import { SelectionSiege } from "./SelectionSiege.jsx";
+import { SelectionUnit } from "./SelectionUnit.jsx";
 
 /* The menu component on the left-hand side used for displaying information about warnings,
 bow limits, and army bonuses. Also used as the selection menu when choosing a unit. */
