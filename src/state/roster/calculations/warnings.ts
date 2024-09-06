@@ -206,8 +206,8 @@ const checkWarnings = (
     warnings: [dunharrowWarning, ...warnings, ...factionWarnings].filter(
       (v) => !!v,
     ),
-    newAllianceLevel: allianceLevel,
-    losesArmyBonus,
+    newAllianceLevel: !dunharrowWarning ? allianceLevel : "Impossible",
+    losesArmyBonus: losesArmyBonus || !!dunharrowWarning,
   };
 };
 
