@@ -28,20 +28,19 @@ export const recalculate = (set) => {
     "UPDATE_FACTION_DATA",
   );
   set(
-    ({ roster, allianceLevel, factions }) => ({
-      roster: makeAllianceSpecificRosterAjustments(
+    ({ roster, allianceLevel, factions }) => {
+      const adjustedRoster = makeAllianceSpecificRosterAjustments(
         factions,
         allianceLevel,
         roster,
-      ),
-    }),
+      );
+      return {
+        roster: adjustedRoster,
+        ...updateFactionData(adjustedRoster),
+      };
+    },
     undefined,
-    "ADJUST_MODELS_BASED_ON_SELECTION",
-  );
-  set(
-    ({ roster }) => ({ ...updateFactionData(roster) }),
-    undefined,
-    "UPDATE_FACTION_DATA",
+    "ADJUST_ROSTER_WITH_SPECIAL_RULES",
   );
   set(
     ({ roster }) => ({ roster: updateUnitCount(roster) }),
