@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../../state/store";
-import { Option, Unit } from "../../../types/unit.ts";
+import { isDefinedUnit, Option, Unit } from "../../../types/unit.ts";
 import { OptionCounter } from "../../common/option/OptionCounter.tsx";
 import { OptionToggle } from "../../common/option/OptionToggle.tsx";
 
@@ -25,6 +25,7 @@ export const WarriorOption: FunctionComponent<OptionWarriorProps> = ({
   const { roster, factionEnabledSpecialRules, updateUnit } = useStore();
 
   const isSpecialWarbandOptionEnabled = (warbandHero: Unit) => {
+    if (!isDefinedUnit(warbandHero)) return false;
     const heroData = hero_constraint_data[warbandHero.model_id][0];
     return heroData["special_warband_options"].includes(option.option);
   };
