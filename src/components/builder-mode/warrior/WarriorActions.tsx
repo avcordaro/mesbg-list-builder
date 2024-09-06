@@ -42,7 +42,7 @@ export const WarriorActions = ({
     // Update the state variables so that the correct profile card is loaded, and the pop-up modal is displayed.
     e.stopPropagation();
     setCurrentModal(ModalTypes.PROFILE_CARD, {
-      unit,
+      unitData: unit,
       title: `(${unit.faction}) ${unit.name}`,
     });
   };
