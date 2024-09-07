@@ -9,6 +9,7 @@ import {
   handleKhandishHorsemanCharioteers,
   handleMasterLaketown,
   handleMirkwoodRangers,
+  handleRivendellKnights,
 } from "../../../utils/specialRules.js";
 
 export const checkAlliance = (
@@ -69,6 +70,7 @@ export const makeAllianceSpecificRosterAjustments = (
   factionList: Faction[],
   allianceLevel: AllianceLevel,
   roster: Roster,
+  uniqueModels: string[],
 ): Roster => {
   let updatedRoster = { ...roster };
 
@@ -76,6 +78,14 @@ export const makeAllianceSpecificRosterAjustments = (
   if (factionList.includes(Factions.Halls_of_Thranduil)) {
     updatedRoster = handleMirkwoodRangers(updatedRoster, allianceLevel);
   }
+
+  if (factionList.includes(Factions.Rivendell)) {
+    updatedRoster = handleRivendellKnights(
+      updatedRoster,
+      uniqueModels,
+    );
+  }
+
   //If alliance level changes, and Variags of Khand is included in army, there might be some changes needed for Khandish Horseman/Charioteers.
   if (factionList.includes(Factions.Variags_of_Khand)) {
     updatedRoster = handleKhandishHorsemanCharioteers(

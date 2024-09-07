@@ -90,9 +90,9 @@ export const rosterSlice: Slice<RosterState> = (set) => {
         "UPDATE_ROSTER_META_DATA",
       );
       set(
-        ({ allianceLevel, factions }) => ({
-          ...updateRoster(newRoster, allianceLevel, factions),
-        }),
+        {
+          ...updateRoster(newRoster),
+        },
         undefined,
         "SET_ROSTER",
       );
