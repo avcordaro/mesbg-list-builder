@@ -20,6 +20,7 @@ export const assignHero =
             ...hero,
             id: heroId,
           },
+          units: warband.units.filter((unit) => hero.faction === unit.faction),
         };
       }),
     },

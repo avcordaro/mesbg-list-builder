@@ -27,9 +27,9 @@ const extraUnitsOnHero = (hero: Unit) => {
 
 export const calculateWarbandModelCount = (warband: Warband) => {
   const units = warband.units
-    .filter(isDefinedUnit)
+    .filter((unit) => isDefinedUnit(unit) && unit.unit_type !== "Siege")
     .map(
-      (unit) =>
+      (unit: Unit) =>
         unit.quantity + Math.max((unit.siege_crew - 1) * unit.quantity, 0),
     )
     .reduce(sum, 0);
