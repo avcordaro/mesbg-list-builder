@@ -55,8 +55,8 @@ export const handleSiegeEngineCaptainUpdates = (hero: Unit) => {
     hero.options.find(({ type }) => type === "engineer_cpt").opt_quantity === 1;
   hero.warband_size = hasCapt ? 12 : 6;
   hero.MWFW = hasCapt
-    ? [["Siege Veteran", "1:1:1:1"]]
-    : [["Engineer Captain", "2:1:1:2"]];
+    ? [[`${hero.name} - Engineer Captain`, "2:1:1:2"]]
+    : [[`${hero.name} - Siege Veteran`, "1:1:1:1"]];
   hero.options = hero.options.map((option) => {
     if (option.option.includes("Engineer Captain - ")) {
       return {
