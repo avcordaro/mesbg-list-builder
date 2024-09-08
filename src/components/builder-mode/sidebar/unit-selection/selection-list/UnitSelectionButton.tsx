@@ -2,6 +2,7 @@ import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import { v4 as uuid } from "uuid";
 import { useStore } from "../../../../../state/store";
 import { Unit } from "../../../../../types/unit.ts";
 import { UnitProfilePicture } from "../../../../common/images/UnitProfilePicture";
@@ -21,7 +22,7 @@ export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   const handleClick = () => {
     (heroSelection ? assignHeroToWarband : selectUnit)(
       focusedWarbandId,
-      focusedUnitId,
+      !heroSelection ? focusedUnitId : uuid(),
       unitData,
     );
     updateBuilderSidebar({
