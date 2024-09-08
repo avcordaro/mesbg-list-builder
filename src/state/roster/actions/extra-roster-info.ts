@@ -28,11 +28,12 @@ export const recalculate = (set) => {
     "UPDATE_FACTION_DATA",
   );
   set(
-    ({ roster, allianceLevel, factions }) => {
+    ({ roster, allianceLevel, factions, uniqueModels }) => {
       const adjustedRoster = makeAllianceSpecificRosterAjustments(
         factions,
         allianceLevel,
         roster,
+        uniqueModels,
       );
       return {
         roster: adjustedRoster,

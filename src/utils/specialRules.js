@@ -18,6 +18,24 @@ export const handleMirkwoodRangers = (roster, alliance_level) => {
   return newRoster;
 };
 
+export const handleRivendellKnights = (newRoster, uniqueModels) => {
+  // If Elrond is selected for Rivendell, all Rivendell Knights in the army no longer count towards the Bow Limit.
+  const includesElrond = uniqueModels.includes("[rivendell] elrond");
+  newRoster.warbands = newRoster.warbands.map((warband) => {
+    let newWarband = { ...warband };
+    newWarband.units = newWarband.units.map((_unit) => {
+      let newUnit = { ..._unit };
+      if (newUnit.model_id === "[rivendell] rivendell_knight") {
+        newUnit["inc_bow_count"] = !includesElrond;
+        newUnit["bow_limit"] = !includesElrond;
+      }
+      return newUnit;
+    });
+    return newWarband;
+  });
+  return newRoster;
+};
+
 export const handleKhandishHorsemanCharioteers = (roster, alliance_level) => {
   // Specific logic for Khandish Horseman/Charioteers and counting towards bow limit, depending on if the alliance level is Historical or not.
   let newRoster = { ...roster };
@@ -122,36 +140,6 @@ export const handleBillCampfire = (roster, alliance_level) => {
       });
       newWarband.hero = newHero;
     }
-    return newWarband;
-  });
-  return newRoster;
-};
-
-export const handleRivendellElrond = (newRoster, elrondRemoved) => {
-  // If Elrond is selected for Rivendell, all Rivendell Knights in the army no longer count towards the Bow Limit.
-  newRoster.warbands = newRoster.warbands.map((warband) => {
-    let newWarband = { ...warband };
-    newWarband.units = newWarband.units.map((_unit) => {
-      let newUnit = { ..._unit };
-      if (newUnit.model_id === "[rivendell] rivendell_knight") {
-        if (elrondRemoved) {
-          newWarband["bow_count"] =
-            newWarband["bow_count"] + 1 * newUnit["quantity"];
-          newRoster["bow_count"] =
-            newRoster["bow_count"] + 1 * newUnit["quantity"];
-          newUnit["inc_bow_count"] = true;
-          newUnit["bow_limit"] = true;
-        } else {
-          newWarband["bow_count"] =
-            newWarband["bow_count"] - 1 * newUnit["quantity"];
-          newRoster["bow_count"] =
-            newRoster["bow_count"] - 1 * newUnit["quantity"];
-          newUnit["inc_bow_count"] = false;
-          newUnit["bow_limit"] = false;
-        }
-      }
-      return newUnit;
-    });
     return newWarband;
   });
   return newRoster;
