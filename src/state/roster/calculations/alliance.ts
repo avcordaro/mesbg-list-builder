@@ -80,10 +80,7 @@ export const makeAllianceSpecificRosterAjustments = (
   }
 
   if (factionList.includes(Factions.Rivendell)) {
-    updatedRoster = handleRivendellKnights(
-      updatedRoster,
-      uniqueModels,
-    );
+    updatedRoster = handleRivendellKnights(updatedRoster, uniqueModels);
   }
 
   //If alliance level changes, and Variags of Khand is included in army, there might be some changes needed for Khandish Horseman/Charioteers.
