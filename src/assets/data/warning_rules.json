@@ -86,11 +86,11 @@
       "warning":"This force must contain Aragorn."
     }
   ],
-  "Burdhur's Horde":[
+  "Buhrdur's Horde":[
     {
       "type":"compulsory",
       "dependencies":[
-        "[burdhur's_horde] buhrdur"
+        "[buhrdur's_horde] buhrdur"
       ],
       "warning":"This force must contain Burdhur, who will always be your leader."
     }

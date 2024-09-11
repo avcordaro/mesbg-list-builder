@@ -166,7 +166,7 @@
     "MWFW":[
       [
         "",
-        "3:3:3:3"
+        "3:3:1:3"
       ]
     ],
     "quantity":1,
@@ -1681,7 +1681,7 @@
     "MWFW":[
       [
         "",
-        "3:3:3:3"
+        "3:3:1:3"
       ]
     ],
     "quantity":1,
@@ -7741,9 +7741,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] buhrdur",
+    "model_id":"[buhrdur's_horde] buhrdur",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Buhrdur",
     "unit_type":"Hero of Valour",
@@ -7776,9 +7776,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] wild_warg_chieftain",
+    "model_id":"[buhrdur's_horde] wild_warg_chieftain",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Wild Warg Chieftain",
     "unit_type":"Hero of Fortitude",
@@ -7811,9 +7811,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] angmar_orc_captain",
+    "model_id":"[buhrdur's_horde] angmar_orc_captain",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Angmar Orc Captain",
     "unit_type":"Hero of Fortitude",
@@ -7873,9 +7873,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] angmar_orc_shaman",
+    "model_id":"[buhrdur's_horde] angmar_orc_shaman",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Angmar Orc Shaman",
     "unit_type":"Minor Hero",
@@ -7917,9 +7917,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] hill_troll",
+    "model_id":"[buhrdur's_horde] hill_troll",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Hill Troll",
     "unit_type":"Warrior",
@@ -7949,9 +7949,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] angmar_warg_rider",
+    "model_id":"[buhrdur's_horde] angmar_warg_rider",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Angmar Warg Rider",
     "unit_type":"Warrior",
@@ -8017,9 +8017,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] wild_warg",
+    "model_id":"[buhrdur's_horde] wild_warg",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Wild Warg",
     "unit_type":"Warrior",
@@ -8049,9 +8049,9 @@
     ]
   },
   {
-    "model_id":"[burdhur's_horde] angmar_orc_warrior",
+    "model_id":"[buhrdur's_horde] angmar_orc_warrior",
     "faction_type":"Evil LL",
-    "faction":"Burdhur's Horde",
+    "faction":"Buhrdur's Horde",
     "profile_origin":"Angmar",
     "name":"Angmar Orc Warrior",
     "unit_type":"Warrior",

@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { ImCross } from "react-icons/im";
 import { useStore } from "../../../state/store";
-import { FreshUnit } from "../../../types/unit.ts";
+import { isDefinedUnit, FreshUnit } from "../../../types/unit.ts";
 
 /* Default Warrior Unit components appear inside Warbands after 'Add Unit' is selected, 
 before the user selects the warrior they would like. */
@@ -21,8 +21,8 @@ export const ChooseWarriorButton: FunctionComponent<
 
   const handleClick = () => {
     const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
-    if (!hero) {
-      console.error("No hero selected, cannot handle this user interaction!");
+    if (!isDefinedUnit(hero)) {
+      deleteUnit(warbandId, unit.id);
       return;
     }
 

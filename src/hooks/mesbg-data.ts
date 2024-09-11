@@ -2,7 +2,7 @@ import heroConstraintData from "../assets/data/hero_constraint_data.json";
 import rawData from "../assets/data/mesbg_data.json";
 import { useStore } from "../state/store.ts";
 import { Faction, FactionType } from "../types/factions.ts";
-import { Unit } from "../types/unit.ts";
+import { isDefinedUnit, Unit } from "../types/unit.ts";
 
 export const useMesbgData = () => {
   const { warriorSelectionFocus, roster, uniqueModels } = useStore();
@@ -41,7 +41,7 @@ export const useMesbgData = () => {
       ({ id }) => focusedWarband === id,
     )?.hero;
 
-    if (warbandHero === null) return [];
+    if (!isDefinedUnit(warbandHero)) return [];
 
     const validUnits =
       heroConstraintData[warbandHero.model_id][0]["valid_warband_units"];

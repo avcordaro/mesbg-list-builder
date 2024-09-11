@@ -1914,7 +1914,7 @@
       ]
     }
   ],
-  "[burdhur's_horde] angmar_orc_captain":[
+  "[buhrdur's_horde] angmar_orc_captain":[
     {
       "valid_warband_units":[
         "[burdhur's_horde] angmar_orc_warrior",
@@ -1931,7 +1931,7 @@
       ]
     }
   ],
-  "[burdhur's_horde] angmar_orc_shaman":[
+  "[buhrdur's_horde] angmar_orc_shaman":[
     {
       "valid_warband_units":[
         "[burdhur's_horde] angmar_orc_warrior",
@@ -1948,7 +1948,7 @@
       ]
     }
   ],
-  "[burdhur's_horde] buhrdur":[
+  "[buhrdur's_horde] buhrdur":[
     {
       "valid_warband_units":[
         "[burdhur's_horde] angmar_orc_warrior",
@@ -1965,7 +1965,7 @@
       ]
     }
   ],
-  "[burdhur's_horde] wild_warg_chieftain":[
+  "[buhrdur's_horde] wild_warg_chieftain":[
     {
       "valid_warband_units":[
         "[burdhur's_horde] angmar_orc_warrior",
