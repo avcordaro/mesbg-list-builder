@@ -1,3 +1,5 @@
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { Unit } from "../../../types/unit.ts";
 
 export const MwfBadge = ({ unit }: { unit: Unit }) => {
@@ -5,20 +7,49 @@ export const MwfBadge = ({ unit }: { unit: Unit }) => {
     return null;
   }
 
+  const [might, will, fate] = unit.MWFW[0][1].split(":");
   return (
-    <div style={{ marginBottom: "4px", marginLeft: "4px" }}>
-      <span className="m-0 mwf-name border border-secondary">M W F</span>
-      <span className="m-0 mwf-value border border-secondary">
-        {unit.MWFW[0][1].split(":")[0]}{" "}
-        <span className="m-0" style={{ color: "lightgrey" }}>
-          /
-        </span>{" "}
-        {unit.MWFW[0][1].split(":")[1]}{" "}
-        <span className="m-0" style={{ color: "lightgrey" }}>
-          /
-        </span>{" "}
-        {unit.MWFW[0][1].split(":")[2]}
-      </span>
-    </div>
+    <Stack
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      component="div"
+      sx={{
+        m: 0,
+        p: 0,
+      }}
+    >
+      <Typography
+        variant="body2"
+        component="div"
+        sx={{
+          backgroundColor: "grey",
+          color: "white",
+          borderRadius: "5px 0px 0px 5px",
+          pl: "8px",
+          pr: "8px",
+          fontSize: "13px",
+          fontWeight: "bold",
+          border: "1px solid grey",
+        }}
+      >
+        M W F
+      </Typography>
+      <Typography
+        variant="body2"
+        component="span"
+        sx={{
+          color: "black",
+          borderRadius: "0 5px 5px 0",
+          pl: "8px",
+          pr: "8px",
+          fontSize: "13px",
+          fontWeight: "bold",
+          border: "1px solid grey",
+        }}
+      >
+        {might} / {will} / {fate}
+      </Typography>
+    </Stack>
   );
 };

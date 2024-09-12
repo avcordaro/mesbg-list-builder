@@ -1,8 +1,9 @@
+import CancelIcon from "@mui/icons-material/Cancel";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import { useTheme } from "@mui/material/styles";
 import { FunctionComponent, MouseEventHandler } from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
 import { BsFillPersonVcardFill } from "react-icons/bs";
-import { ImCross } from "react-icons/im";
 import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -17,6 +18,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   warbandId,
 }) => {
   const { setCurrentModal, deleteHero } = useStore();
+  const { palette } = useTheme();
 
   const handleDelete = () => deleteHero(warbandId, unit.id);
 
@@ -30,22 +32,42 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   };
 
   return (
-    <Stack direction="horizontal" gap={3} className="ms-auto mt-auto">
-      <Button
-        style={{ marginBottom: "5px" }}
-        className="border"
-        variant="secondary"
+    <Stack
+      direction="row"
+      spacing={2}
+      justifyContent="end"
+      sx={{ width: "100%", p: 2 }}
+    >
+      <IconButton
         onClick={handleCardClick}
+        sx={{
+          borderRadius: 2,
+          p: 1.5,
+          color: "white",
+          backgroundColor: palette.grey.A700,
+          "&:hover": {
+            backgroundColor: palette.grey["900"],
+          },
+        }}
       >
         <BsFillPersonVcardFill />
-      </Button>
-      <Button
-        style={{ marginRight: "10px", marginBottom: "5px" }}
-        variant="warning"
+      </IconButton>
+      <IconButton
         onClick={handleDelete}
+        color="warning"
+        aria-label="delete"
+        size="large"
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.warning.light,
+          "&:hover": {
+            backgroundColor: palette.warning.main,
+          },
+        }}
       >
-        <ImCross />
-      </Button>
+        <CancelIcon />
+      </IconButton>
     </Stack>
   );
 };

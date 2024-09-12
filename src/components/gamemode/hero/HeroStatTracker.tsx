@@ -1,7 +1,9 @@
+import { ChevronLeftOutlined, ChevronRightOutlined } from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useStore } from "../../../state/store.ts";
 import { GameModeHero } from "../types.ts";
 
@@ -33,6 +35,7 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
   hero_idx,
 }) => {
   const { gameState, updateGameState } = useStore();
+  const { palette } = useTheme();
 
   if (!gameState) return <></>; // If we don't have a game state, there is nothing to track.
   const hero = gameState.heroes[hero_id][hero_idx];
@@ -95,31 +98,54 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
   };
 
   return (
-    <Stack style={{ alignItems: "center" }}>
-      <h6>{name}</h6>
-      <Stack direction="horizontal" style={{ alignSelf: "center" }}>
-        <Button
-          variant="secondary"
-          size="sm"
+    <Stack alignItems="center">
+      <Typography variant="h6">{name}</Typography>
+      <Stack
+        direction="row"
+        alignItems="center"
+        justifyContent="center"
+        alignContent="center"
+        alignSelf="center"
+      >
+        <IconButton
           onClick={handleDecrement}
           disabled={currentValue <= 0}
+          size="small"
+          sx={{
+            borderRadius: 2,
+            color: "white",
+            backgroundColor: palette.grey.A400,
+            "&:hover": {
+              backgroundColor: palette.grey["600"],
+            },
+          }}
         >
-          <FaChevronLeft />
-        </Button>
-        <b
-          className={currentValue === 0 ? "text-danger" : ""}
-          style={{ width: "35px", textAlign: "center" }}
+          <ChevronLeftOutlined />
+        </IconButton>
+        <Typography
+          textAlign="center"
+          color={currentValue === 0 ? "error" : "textPrimary"}
+          sx={{
+            width: "4rem",
+          }}
         >
-          {currentValue}
-        </b>
-        <Button
-          variant="secondary"
-          size="sm"
+          <b>{currentValue}</b>
+        </Typography>
+        <IconButton
           onClick={handleIncrement}
           disabled={currentValue >= initialValue}
+          size="small"
+          sx={{
+            borderRadius: 2,
+            color: "white",
+            backgroundColor: palette.grey.A400,
+            "&:hover": {
+              backgroundColor: palette.grey["600"],
+            },
+          }}
         >
-          <FaChevronRight />
-        </Button>
+          <ChevronRightOutlined />
+        </IconButton>
       </Stack>
     </Stack>
   );

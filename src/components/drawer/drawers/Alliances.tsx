@@ -1,5 +1,10 @@
+import { CheckRounded, PriorityHighRounded } from "@mui/icons-material";
+import { Chip } from "@mui/material";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import { Fragment } from "react";
-import Badge from "react-bootstrap/Badge";
 import { wanderers } from "../../../constants/wanderers";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
@@ -8,22 +13,35 @@ import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 
 export const FactionRow = ({ faction }: { faction: Faction }) => (
   <>
-    <FactionLogo faction={faction} className="faction_logo" />
+    <FactionLogo faction={faction} />
     {" " + faction}
     <br />
   </>
 );
 
 function AlliesSection({ allies, type }: { allies: Faction[]; type: string }) {
+  const theme = useTheme();
+
   return (
-    <div className="pb-2">
-      <h5>
-        <Badge bg={type === "Historical" ? "success" : "warning"}>{type}</Badge>
-      </h5>
+    <Box sx={{ mb: 1 }}>
+      <Box sx={{ mb: 1 }}>
+        <Chip
+          sx={{
+            background:
+              type === "Historical"
+                ? theme.palette.success.light
+                : theme.palette.warning.light,
+          }}
+          label={type}
+          icon={
+            type === "Historical" ? <CheckRounded /> : <PriorityHighRounded />
+          }
+        />
+      </Box>
       {allies.map((ally) => (
         <FactionRow key={ally} faction={ally} />
       ))}
-    </div>
+    </Box>
   );
 }
 
@@ -38,10 +56,8 @@ export const FactionAllies = ({ faction }: { faction: Faction }) => {
 
   return (
     <>
-      <h5>
-        <FactionRow faction={faction} />
-      </h5>
-      <hr />
+      <FactionRow faction={faction} />
+      <Divider sx={{ m: "0.5rem auto" }} />
       {primaryAllies.length > 0 && (
         <AlliesSection allies={primaryAllies} type="Historical" />
       )}
@@ -57,14 +73,14 @@ export const Alliances = () => {
 
   return (
     <Fragment>
-      <p className="pb-3">
+      <Typography>
         Historical allies keep their army bonuses, whereas Convenient and
         Impossible allies lose all army bonuses.
-      </p>
+      </Typography>
       {factions.map((faction) => (
-        <div key={faction} className="mt-5">
+        <Box key={faction} sx={{ mt: 2 }}>
           <FactionAllies faction={faction} />
-        </div>
+        </Box>
       ))}
     </Fragment>
   );

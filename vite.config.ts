@@ -23,5 +23,13 @@ export default defineConfig({
   build: {
     outDir: "./build",
     emptyOutDir: true,
+    rollupOptions: {
+      external: ["react"],
+      output: {
+        globals: {
+          react: "React",
+        },
+      },
+    },
   },
 });

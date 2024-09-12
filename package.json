@@ -7,6 +7,7 @@
   "scripts": {
     "prepare": "husky",
     "start": "vite",
+    "start:host": "vite --host",
     "build": "tsc -b && vite build",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
@@ -18,6 +19,10 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
     "bootstrap": "^5.3.3",
     "file-save": "^0.2.0",
     "file-saver": "^2.0.5",
@@ -52,6 +57,7 @@
     "globals": "^15.9.0",
     "husky": "^9.1.4",
     "prettier": "^3.3.3",
+    "sass": "^1.78.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.2"

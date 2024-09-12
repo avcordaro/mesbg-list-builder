@@ -76,12 +76,7 @@ function checkLosesArmyBonus(
 
 function checkHistoricallyAccurate(
   rule: WarningRule,
-  alliance:
-    | "Convenient"
-    | "n/a"
-    | "Legendary Legion"
-    | "Impossible"
-    | "Historical",
+  alliance: AllianceLevel,
   factions: Faction[],
   uniqueModels: string[],
 ) {

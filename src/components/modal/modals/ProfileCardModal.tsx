@@ -1,16 +1,17 @@
+import { DialogContent } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import { Fragment } from "react";
-import Modal from "react-bootstrap/Modal";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
 
-/* Displays a modal with an image of the chosen profile card of the unit. */
-
 export const ProfileCardModal = () => {
   const {
     modalContext: { unitData },
   } = useStore();
+  const { palette } = useTheme();
 
   const ExtraProfileCards = ({ unit }: { unit: Unit }) => {
     if (!unit.unit_type.includes("Hero")) {
@@ -20,36 +21,38 @@ export const ProfileCardModal = () => {
     const [heroData] = hero_constraint_data[unitData.model_id];
     return heroData?.extra_profiles?.map((profile) => (
       <Fragment key={profile}>
-        <UnitProfileCard
-          className="profile_card border border-secondary mt-3"
-          army={unitData.profile_origin}
-          profile={profile}
-        />
+        <UnitProfileCard army={unitData.profile_origin} profile={profile} />
       </Fragment>
     ));
   };
 
   return (
     <>
-      <Modal.Body style={{ textAlign: "center" }}>
-        <h6>
+      <DialogContent>
+        <Typography variant="body2">
           You can download a zip of all profile cards for your current army list
-          by clicking{" "}
-          <b className="text-primary">Roster Table {">"} Profile Cards</b>
-        </h6>
+          by clicking:
+          <br />
+          <Typography
+            variant="body1"
+            component="strong"
+            fontWeight={800}
+            color={palette.primary.main}
+          >
+            Roster Table {">"} Profile Cards
+          </Typography>
+        </Typography>
 
         {unitData != null && (
           <>
             <UnitProfileCard
-              className="profile_card border border-secondary"
               army={unitData.profile_origin}
               profile={unitData.name}
             />
             <ExtraProfileCards unit={unitData} />
           </>
         )}
-      </Modal.Body>
-      <Modal.Footer></Modal.Footer>
+      </DialogContent>
     </>
   );
 };

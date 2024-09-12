@@ -1,9 +1,10 @@
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import Form from "react-bootstrap/Form";
-import Stack from "react-bootstrap/Stack";
 import { GiQueenCrown } from "react-icons/gi";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
 
 const HEROS_THAT_CAN_LEAD = [
   "Hero of Legend",
@@ -29,21 +30,18 @@ export const HeroLeaderToggle: FunctionComponent<HeroLeaderToggleProps> = ({
   const handleLeader = () => makeLeader(warbandId);
 
   const textColor =
-    roster.leader_warband_id === warbandId ? "text-success" : "text-secondary";
+    roster.leader_warband_id === warbandId ? "success" : "default";
 
   return (
-    <Stack className="ms-auto" direction="horizontal">
-      <span className={"m-0 me-2 " + textColor}>
+    <Stack direction="row" justifyContent="center" alignItems="center">
+      <Typography color={textColor}>
         <GiQueenCrown />
-      </span>
-      <Form.Check
-        reverse
-        className={textColor}
-        type="switch"
+      </Typography>
+      <Switch
         id={"switch-" + hero.id + "-leader"}
-        label="Leader"
         name="leader"
         checked={roster.leader_warband_id === warbandId}
+        color={textColor}
         onChange={handleLeader}
       />
     </Stack>

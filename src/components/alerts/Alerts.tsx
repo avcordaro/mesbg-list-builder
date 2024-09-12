@@ -1,5 +1,7 @@
+import { AlertColor, Slide, Snackbar } from "@mui/material";
+import Alert from "@mui/material/Alert";
+import Box from "@mui/material/Box";
 import { useEffect } from "react";
-import Alert from "react-bootstrap/Alert";
 import { useStore } from "../../state/store.ts";
 import { alertMap } from "./alert-types.tsx";
 
@@ -27,15 +29,20 @@ export const Alerts = () => {
 
   const { variant, content } = alertMap.get(activeAlert);
   return (
-    <Alert
-      style={{ width: "850px", zIndex: 1050, marginLeft: "535px" }}
-      className="position-fixed"
-      show={true}
-      variant={variant}
+    <Snackbar
+      open={true}
+      anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      TransitionComponent={Slide}
       onClose={dismissAlert}
-      dismissible
     >
-      {content}
-    </Alert>
+      <Alert
+        onClose={dismissAlert}
+        variant="standard"
+        sx={{ width: "100%" }}
+        severity={variant as AlertColor}
+      >
+        <Box sx={{ maxWidth: "72ch" }}>{content}</Box>
+      </Alert>
+    </Snackbar>
   );
 };

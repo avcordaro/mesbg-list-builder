@@ -1,28 +1,41 @@
-import { CSSProperties, FunctionComponent } from "react";
-import { ImageWithFallback } from "./ImageWithFallback.tsx";
+import Avatar from "@mui/material/Avatar";
+import { FunctionComponent } from "react";
 
 export type UnitProfileProps = {
   army: string;
   profile: string;
-  style?: CSSProperties | undefined;
-  className?: string;
+  size?: "normal" | "smaller";
+  opacity?: number;
 };
 
 export const UnitProfilePicture: FunctionComponent<UnitProfileProps> = ({
   army,
   profile,
-  style,
-  className,
+  size = "normal",
+  opacity = 100,
 }) => {
+  const sizeUnits = size === "normal" ? 100 : 75;
   return (
-    <ImageWithFallback
-      source={
-        "./assets/images/profiles/" + army + "/pictures/" + profile + ".png"
-      }
-      fallbackImageSource="./assets/images/default.png"
-      style={style}
-      className={className}
+    <Avatar
       alt={`Profile picture for ${profile}`}
-    />
+      src={"./assets/images/profiles/" + army + "/pictures/" + profile + ".png"}
+      sx={{
+        width: sizeUnits,
+        height: sizeUnits,
+        backgroundColor: "transparent",
+        opacity: opacity / 100,
+      }}
+    >
+      <Avatar
+        alt={`Profile picture for ${profile}`}
+        src="./assets/images/default.png"
+        sx={{
+          width: sizeUnits,
+          height: sizeUnits,
+          backgroundColor: "transparent",
+          opacity: opacity / 100,
+        }}
+      />
+    </Avatar>
   );
 };

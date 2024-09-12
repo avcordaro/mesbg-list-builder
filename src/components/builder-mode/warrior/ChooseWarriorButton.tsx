@@ -1,7 +1,11 @@
+import CancelIcon from "@mui/icons-material/Cancel";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import useTheme from "@mui/material/styles/useTheme";
 import { FunctionComponent } from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { ImCross } from "react-icons/im";
 import { useStore } from "../../../state/store";
 import { isDefinedUnit, FreshUnit } from "../../../types/unit.ts";
 
@@ -18,10 +22,13 @@ export const ChooseWarriorButton: FunctionComponent<
 > = ({ unit, warbandId }) => {
   const { roster, deleteUnit, updateBuilderSidebar, factionSelection } =
     useStore();
+  const { palette } = useTheme();
+
+  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warbandHasHero = isDefinedUnit(hero);
 
   const handleClick = () => {
-    const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
-    if (!isDefinedUnit(hero)) {
+    if (!warbandHasHero) {
       deleteUnit(warbandId, unit.id);
       return;
     }
@@ -48,24 +55,38 @@ export const ChooseWarriorButton: FunctionComponent<
 
   return (
     <Button
-      variant="light"
-      className="p-2 m-1"
-      style={{ width: "820px", textAlign: "left" }}
+      variant="contained"
+      color="inherit"
       onClick={handleClick}
+      fullWidth
+      disabled={!warbandHasHero}
     >
-      <Stack direction="horizontal" gap={3}>
-        <img className="profile" src="assets/images/default.png" alt="" />
-        <p>
+      <Stack direction="row" spacing={3} alignItems="center" minWidth="100%">
+        <Avatar
+          alt="Choose A Warrior"
+          src="assets/images/default.png"
+          sx={{ width: 100, height: 100 }}
+        />
+        <Typography variant="body2" sx={{ flexGrow: 1, textAlign: "start" }}>
           <b>Choose a Warrior</b>
-        </p>
-        <Button
+        </Typography>
+        <IconButton
           onClick={handleDelete}
-          className="ms-auto mt-auto"
-          style={{ marginRight: "10px", marginBottom: "5px" }}
-          variant="warning"
+          color="error"
+          aria-label="delete"
+          size="large"
+          sx={{
+            borderRadius: 2,
+            color: "white",
+            backgroundColor: palette.error.dark,
+            "&:hover": {
+              backgroundColor: palette.error.light,
+            },
+          }}
+          disabled={!warbandHasHero}
         >
-          <ImCross />
-        </Button>
+          <CancelIcon />
+        </IconButton>
       </Stack>
     </Button>
   );

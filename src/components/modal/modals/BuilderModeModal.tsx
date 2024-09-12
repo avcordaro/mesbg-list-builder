@@ -1,5 +1,4 @@
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { DialogActions, DialogContent, Button } from "@mui/material";
 import { useStore } from "../../../state/store";
 
 export const BuilderModeModal = () => {
@@ -13,18 +12,23 @@ export const BuilderModeModal = () => {
 
   return (
     <>
-      <Modal.Body>
+      <DialogContent>
         You will lose all current progress in this game if you switch back to
         Builder Mode. Are you sure you want to continue?
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={closeModal}>
+      </DialogContent>
+      <DialogActions>
+        <Button variant="contained" color="inherit" onClick={closeModal}>
           Back
         </Button>
-        <Button variant="primary" onClick={handleContinue}>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleContinue}
+          autoFocus
+        >
           Continue
         </Button>
-      </Modal.Footer>
+      </DialogActions>
     </>
   );
 };

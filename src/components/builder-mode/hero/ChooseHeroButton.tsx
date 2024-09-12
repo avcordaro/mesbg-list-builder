@@ -1,6 +1,8 @@
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
 import { useStore } from "../../../state/store";
 
 type ChooseHeroButtonProps = {
@@ -21,17 +23,16 @@ export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
   };
 
   return (
-    <Button
-      variant="light"
-      className="p-2 m-1"
-      style={{ width: "820px", textAlign: "left" }}
-      onClick={handleClick}
-    >
-      <Stack direction="horizontal" gap={3}>
-        <img className="profile" src="assets/images/default.png" alt="" />
-        <p>
-          <b>Choose a Hero</b>
-        </p>
+    <Button variant="contained" color="inherit" onClick={handleClick} fullWidth>
+      <Stack direction="row" spacing={3} alignItems="center" minWidth="100%">
+        <Avatar
+          alt="Choose A Hero"
+          src="assets/images/default.png"
+          sx={{ width: 100, height: 100 }}
+        />
+        <Typography variant="body2">
+          <b>Choose a hero</b>
+        </Typography>
       </Stack>
     </Button>
   );

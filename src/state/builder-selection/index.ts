@@ -1,7 +1,7 @@
 import { Faction, Factions } from "../../types/factions.ts";
 import { Slice } from "../store.ts";
 
-type Tabs = "Good Army" | "Evil Army" | "Good LL" | "Evil LL";
+export type Tabs = "Good Army" | "Evil Army" | "Good LL" | "Evil LL";
 
 type BuilderSelectionState = {
   tabSelection: Tabs;

@@ -26,15 +26,6 @@ object.faction_logo {
   height: 30px;
 }
 
-div.optionsList {
-  min-height: 500px;
-  height: calc(100vh - 200px);
-  max-height: 1000px;
-  width: 510px;
-  overflow-y: auto;
-  z-index: 1000;
-}
-
 .dropdown-toggle {
   width: 461px;
 }
@@ -109,10 +100,7 @@ pre {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity));
   color: white;
   border-radius: 5px 0px 0px 5px;
-  padding-top: 0px;
-  padding-bottom: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0px 8px 1px;
   font-size: 13px;
   font-weight: bold;
 }
@@ -120,10 +108,7 @@ pre {
 .mwf-value {
   background-color: white;
   border-radius: 0px 5px 5px 0px;
-  padding-top: 0px;
-  padding-bottom: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0px 8px 1px;
   font-size: 13px;
   font-weight: bold;
 }

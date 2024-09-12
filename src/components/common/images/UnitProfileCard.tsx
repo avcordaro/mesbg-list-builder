@@ -5,15 +5,12 @@ import { UnitProfileProps } from "./UnitProfilePicture.tsx";
 export const UnitProfileCard: FunctionComponent<UnitProfileProps> = ({
   army,
   profile,
-  style,
-  className,
 }) => {
   return (
     <ImageWithFallback
       source={"./assets/images/profiles/" + army + "/cards/" + profile + ".jpg"}
       fallbackImageSource="./assets/images/default_card.jpg"
-      style={style}
-      className={className}
+      className="profile_card"
       alt={`Profile card for ${profile}`}
     />
   );

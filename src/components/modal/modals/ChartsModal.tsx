@@ -1,4 +1,4 @@
-import Modal from "react-bootstrap/Modal";
+import { DialogContent } from "@mui/material";
 import { useStore } from "../../../state/store.ts";
 
 export function ChartsModal() {
@@ -7,13 +7,15 @@ export function ChartsModal() {
   } = useStore();
 
   return (
-    <Modal.Body style={{ textAlign: "center" }}>
+    <DialogContent>
       <img
-        className="border border-secondary"
         src={"./assets/images/charts/" + selectedChart + ".png"}
-        alt=""
-        style={{ maxWidth: "100%" }}
+        alt={selectedChart}
+        style={{
+          maxWidth: "100%",
+          border: "1px solid #6C757D",
+        }}
       />
-    </Modal.Body>
+    </DialogContent>
   );
 }

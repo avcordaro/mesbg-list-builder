@@ -1,6 +1,6 @@
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import { FunctionComponent } from "react";
-import Form from "react-bootstrap/Form";
-import Stack from "react-bootstrap/Stack";
 import { v4 as uuid } from "uuid";
 import { Unit } from "../../../types/unit.ts";
 import { OptionHero } from "./OptionHero";
@@ -15,9 +15,9 @@ export const HeroOptions: FunctionComponent<HeroOptionsProps> = ({
   warbandId,
 }) => {
   return (
-    <Stack direction="horizontal" gap={3}>
+    <Stack direction="row" spacing={3}>
       {unit.options[0].option !== "None" && (
-        <Form>
+        <Box>
           {unit.options.map((option) => (
             <OptionHero
               key={uuid()}
@@ -26,7 +26,7 @@ export const HeroOptions: FunctionComponent<HeroOptionsProps> = ({
               option={option}
             />
           ))}
-        </Form>
+        </Box>
       )}
     </Stack>
   );

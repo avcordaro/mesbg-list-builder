@@ -1,9 +1,14 @@
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
+import {
+  AddOutlined,
+  Cancel,
+  ContentCopyOutlined,
+  RemoveOutlined,
+} from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import { BsFillPersonVcardFill } from "react-icons/bs";
-import { FaMinus, FaPlus } from "react-icons/fa";
-import { HiDuplicate } from "react-icons/hi";
-import { ImCross } from "react-icons/im";
 import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -16,6 +21,7 @@ export const WarriorActions = ({
   warbandId: string;
 }) => {
   const { setCurrentModal, updateUnit, deleteUnit, duplicateUnit } = useStore();
+  const { palette } = useTheme();
 
   const handleIncrement = () => {
     updateUnit(warbandId, unit.id, {
@@ -48,43 +54,95 @@ export const WarriorActions = ({
   };
 
   return (
-    <Stack direction="horizontal" gap={3} className="ms-auto mt-auto">
+    <Stack
+      direction="row"
+      spacing={2}
+      justifyContent="end"
+      sx={{ width: "100%", p: 2 }}
+    >
       {unit.unit_type !== "Siege" && (
-        <Button
-          className="border"
-          variant="secondary"
+        <IconButton
           onClick={handleCardClick}
+          sx={{
+            borderRadius: 2,
+            p: 1.5,
+            color: "white",
+            backgroundColor: palette.grey.A700,
+            "&:hover": {
+              backgroundColor: palette.grey["900"],
+            },
+          }}
         >
           <BsFillPersonVcardFill />
-        </Button>
+        </IconButton>
       )}
 
       {(unit.unit_type === "Warrior" || unit.unit_type === "Siege") && (
         <>
-          <Button onClick={handleDecrement} disabled={unit.quantity === 1}>
-            <FaMinus />
-          </Button>
-          <p className="mt-3">
+          <IconButton
+            onClick={handleDecrement}
+            disabled={unit.quantity === 1}
+            size="large"
+            sx={{
+              borderRadius: 2,
+              backgroundColor: palette.primary.light,
+              color: palette.primary.contrastText,
+              "&:hover": {
+                backgroundColor: palette.primary.main,
+              },
+            }}
+          >
+            <RemoveOutlined />
+          </IconButton>
+          <Typography variant="body1" component="p" sx={{ pt: 1.5 }}>
             <b>{unit.quantity}</b>
-          </p>
-          <Button onClick={handleIncrement}>
-            <FaPlus />
-          </Button>
-
+          </Typography>
+          <IconButton
+            onClick={handleIncrement}
+            size="large"
+            sx={{
+              borderRadius: 2,
+              backgroundColor: palette.primary.light,
+              color: palette.primary.contrastText,
+              "&:hover": {
+                backgroundColor: palette.primary.main,
+              },
+            }}
+          >
+            <AddOutlined />
+          </IconButton>
           {unit.unit_type === "Warrior" && (
-            <Button onClick={handleDuplicate} variant="info">
-              <HiDuplicate />
-            </Button>
+            <IconButton
+              onClick={handleDuplicate}
+              size="large"
+              sx={{
+                borderRadius: 2,
+                backgroundColor: palette.info.light,
+                color: palette.info.contrastText,
+                "&:hover": {
+                  backgroundColor: palette.info.main,
+                },
+              }}
+            >
+              <ContentCopyOutlined />
+            </IconButton>
           )}
         </>
       )}
-      <Button
-        style={{ marginRight: "10px" }}
-        variant="warning"
+      <IconButton
         onClick={handleDelete}
+        size="large"
+        sx={{
+          borderRadius: 2,
+          backgroundColor: palette.warning.light,
+          color: palette.warning.contrastText,
+          "&:hover": {
+            backgroundColor: palette.warning.main,
+          },
+        }}
       >
-        <ImCross />
-      </Button>
+        <Cancel />
+      </IconButton>
     </Stack>
   );
 };
