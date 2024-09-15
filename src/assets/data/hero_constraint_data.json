@@ -6514,6 +6514,15 @@
   "[moria] druzhag":[
     {
       "valid_warband_units":[
+        "[moria] dweller_in_the_dark",
+        "[moria] moria_blackshield_drummers",
+        "[moria] moria_goblin_drum",
+        "[moria] cave_troll",
+        "[moria] bat_swarm",
+        "[moria] warg_marauder",
+        "[moria] moria_blackshield",
+        "[moria] moria_goblin_prowler",
+        "[moria] moria_goblin_warrior",
         "[mordor] fell_warg",
         "[moria] giant_spider",
         "[moria] bat_swarm",
