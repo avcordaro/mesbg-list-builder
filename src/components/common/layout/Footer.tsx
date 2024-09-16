@@ -9,16 +9,23 @@ export const Footer = () => {
         color: "white",
         p: 1,
         textAlign: "center",
-        position: "sticky",
-        bottom: 0,
+
         width: "100%",
+        "& a": { color: "rgb(110, 168, 254)" },
       }}
     >
       <Typography variant="body2" sx={{ display: "block", m: 1 }}>
         Unofficial | {BUILD_VERSION} | updated {BUILD_DATE}
       </Typography>
+      <Typography variant="caption">
+        For any bugs and corrections, please contact:{" "}
+        <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
+          avcordaro@gmail.com
+        </a>
+      </Typography>
       <Typography variant="body2" sx={{ display: "block", m: 1 }}>
-        Developed by avcordaro & mhollink | © 2024
+        Developed by <a href="https://github.com/avcordaro">avcordaro</a> &{" "}
+        <a href="https://github.com/mhollink">mhollink</a> | © 2024
       </Typography>
     </Box>
   );

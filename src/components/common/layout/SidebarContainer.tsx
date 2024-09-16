@@ -19,7 +19,11 @@ export const SidebarContainer: FunctionComponent<
 > = ({ title, icon, children }) => {
   const { openSidebar } = useStore();
   const { palette, breakpoints } = useTheme();
-  const isMobile = useMediaQuery(breakpoints.down("lg"));
+  const isTablet = useMediaQuery(breakpoints.down("lg"));
+  const isMobile = useMediaQuery(breakpoints.down("sm"));
+  const isLargeScreen = useMediaQuery(breakpoints.between("lg", "xl"));
+
+  const shouldWrapButtons = isMobile || isLargeScreen;
 
   return (
     <Stack
@@ -28,11 +32,11 @@ export const SidebarContainer: FunctionComponent<
         border: 2,
         borderColor: palette.grey.A400,
         borderRadius: 2,
-        minHeight: isMobile ? "" : "70vh",
+        minHeight: isTablet ? "" : "70vh",
       }}
     >
-      <Stack direction="row" sx={{ mb: 2 }}>
-        <Typography variant="h5" component="span">
+      <Stack direction={shouldWrapButtons ? "column" : "row"} sx={{ mb: 2 }}>
+        <Typography variant="h5" component="span" flexGrow={1}>
           <b>
             {icon} {title}
           </b>
@@ -41,7 +45,7 @@ export const SidebarContainer: FunctionComponent<
           variant="outlined"
           color="inherit"
           sx={{
-            ml: "auto !important",
+            mt: isMobile ? 1 : "auto",
           }}
           onClick={() => openSidebar(DrawerTypes.KEYWORD_SEARCH)}
           startIcon={<SearchIcon />}

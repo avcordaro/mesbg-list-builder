@@ -46,9 +46,6 @@ export const ChartsDropdown = () => {
         variant="outlined"
         color="inherit"
         id="basic-button"
-        sx={{
-          ml: "auto !important",
-        }}
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}

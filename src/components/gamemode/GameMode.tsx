@@ -3,6 +3,8 @@ import { Button } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useStore } from "../../state/store.ts";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
@@ -11,11 +13,18 @@ import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
   const { startNewGame, setCurrentModal } = useStore();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between("lg", "xl"));
+
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
   return (
     <Stack>
-      <Stack direction="row">
+      <Stack
+        direction={isMobile || isMediumScreen ? "column" : "row"}
+        spacing={1}
+      >
         <Button
           variant="contained"
           startIcon={<RefreshOutlined />}

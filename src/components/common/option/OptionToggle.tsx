@@ -52,7 +52,7 @@ export const OptionToggle = ({
       sx={{ display: "block" }}
       control={
         <Switch
-          id={"switch-" + unit.id + "-" + option.option.replaceAll(" ", "-")}
+          id={`switch-${warbandId}-${unit.id}-${option.option.replaceAll(" ", "-")}`}
           checked={option.opt_quantity === 1}
           disabled={!selectable}
           onChange={handleToggle}

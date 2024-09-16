@@ -35,8 +35,17 @@ export const ModalContainer = () => {
     <Dialog
       open={true} // handled by the modal container, so this should always be true
       onClose={() => state.closeModal()}
+      scroll="paper"
     >
-      <Box sx={{ ...style, minWidth: isMobile ? "90vw" : "72ch" }}>
+      <Box
+        sx={{
+          ...style,
+          minWidth: isMobile ? "90vw" : "72ch",
+          maxWidth: "90vw",
+          maxHeight: "90vh",
+          overflowY: "scroll",
+        }}
+      >
         {!currentModal.customModalHeader && (
           <>
             <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>

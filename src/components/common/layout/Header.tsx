@@ -17,6 +17,7 @@ import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import Stack from "@mui/material/Stack";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -32,6 +33,8 @@ import { ModalTypes } from "../../modal/modals.tsx";
 const RosterInfoBar = () => {
   const { roster } = useStore();
   const breakPoint = Math.ceil(roster.num_units / 2);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -41,10 +44,25 @@ const RosterInfoBar = () => {
         textAlign: "center",
       }}
     >
-      <Typography variant="body1">
-        Total Points: {roster.points} | Total Units: {roster.num_units} | Break
-        Point: {breakPoint} | Bows: {roster.bow_count}
-      </Typography>
+      <Stack
+        direction={isMobile ? "column" : "row"}
+        spacing={isMobile ? 0 : 4}
+        justifyContent="center"
+        flexWrap="wrap"
+      >
+        <Typography variant="body1" component="div">
+          Total Points: <b>{roster.points}</b>
+        </Typography>
+        <Typography variant="body1" component="div">
+          Total Units: <b>{roster.num_units}</b>
+        </Typography>
+        <Typography variant="body1" component="div">
+          Break Point: <b>{breakPoint}</b>
+        </Typography>
+        <Typography variant="body1" component="div">
+          Bows: <b>{roster.bow_count}</b>
+        </Typography>
+      </Stack>
     </Box>
   );
 };
@@ -124,11 +142,11 @@ export const Header = () => {
         <Toolbar>
           {/* Logo */}
           <Button aria-label="logo" sx={{ mr: 2 }}>
-            <img src={logo} alt="Logo" style={{ height: "40px" }} />
+            <img src={logo} alt="Logo" style={{ height: "50px" }} />
             <img
               src={title}
               alt="MESBG List Builder"
-              style={{ height: "20px" }}
+              style={{ maxHeight: "20px", margin: "0 .25rem" }}
             />
           </Button>
 
@@ -136,7 +154,7 @@ export const Header = () => {
 
           {/* Right side buttons (hide in mobile) */}
           {!isMobile && (
-            <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 1 }}>
+            <Box sx={{ display: { xs: "none", sm: "flex" } }}>
               {buttons.map((button, index) => (
                 <Button
                   key={index}
@@ -190,7 +208,7 @@ export const Header = () => {
               <img
                 src={title}
                 alt="MESBG List Builder"
-                style={{ height: "40px" }}
+                style={{ maxWidth: "400px", width: "100%" }}
               />
             </ListItem>
             <Divider sx={{ m: 2 }} />
@@ -203,7 +221,7 @@ export const Header = () => {
                     </ListItemIcon>
                   )}
                   <ListItemText
-                    primaryTypographyProps={{ fontSize: "2rem" }}
+                    primaryTypographyProps={{ fontSize: "1.4rem" }}
                     primary={button.label}
                   />
                 </ListItemButton>

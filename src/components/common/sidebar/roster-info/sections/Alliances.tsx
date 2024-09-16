@@ -3,6 +3,8 @@ import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { LuSwords } from "react-icons/lu";
 import { allianceColours } from "../../../../../constants/alliances.ts";
 import { useStore } from "../../../../../state/store.ts";
@@ -18,23 +20,34 @@ export const Alliance = () => {
     gameMode,
   } = useStore();
 
+  const theme = useTheme();
+  const isMobileScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
+  const shouldWrapButtons = isMobileScreen || isLargeScreen;
+
   return (
-    <Box sx={{ mt: 2 }}>
+    <Box sx={{ my: 2 }}>
       <Stack
-        direction="row"
+        direction={shouldWrapButtons ? "column" : "row"}
         justifyContent="center"
-        alignItems="center"
         spacing={3}
       >
-        <Typography variant="h6">Alliance Level:</Typography>
-        <Chip label={allianceLevel} color={allianceColours[allianceLevel]} />
+        <Stack direction="row" spacing={1} flexGrow={1}>
+          <Typography variant="h6">Alliance Level:</Typography>
+          <Chip
+            sx={{
+              color: "white",
+              fontWeight: "bolder",
+              background: theme.palette[allianceColours[allianceLevel]].light,
+            }}
+            label={allianceLevel}
+          />
+        </Stack>
         {!gameMode ? (
           <Button
             variant="outlined"
             color="inherit"
-            sx={{
-              ml: "auto !important",
-            }}
             onClick={() => openSidebar(DrawerTypes.ALLIANCE)}
             disabled={!factionList.length || factionType.includes("LL")}
             startIcon={<LuSwords />}

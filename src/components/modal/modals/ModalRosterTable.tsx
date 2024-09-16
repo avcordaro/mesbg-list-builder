@@ -12,6 +12,8 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { saveAs } from "file-saver";
 import html2canvas from "html2canvas";
 import JSZip from "jszip";
@@ -32,9 +34,13 @@ state variable (passed to it as an argument) to populate a table of the army. */
 export const ModalRosterTable = () => {
   const { roster, setCurrentModal, closeModal } = useStore();
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
   const [downloadSpinner, setDownloadSpinner] = useState(false);
+  const [screenshotting, setScreenshotting] = useState(false);
 
   const handleTextToggle = () => setTextView(!textView);
   const handleBonusToggle = () => setShowArmyBonus(!showArmyBonus);
@@ -45,14 +51,22 @@ export const ModalRosterTable = () => {
     if (copyBtn) {
       copyBtn.style.display = "none";
     }
-    html2canvas(rosterList, { scale: 5 }).then(function (data) {
-      setCurrentModal(ModalTypes.ROSTER_SCREENSHOT, {
-        screenshot: data.toDataURL(),
+
+    setScreenshotting(true);
+    setTimeout(() => {
+      const width = rosterList.style.width;
+      rosterList.style.width = "1200px";
+      html2canvas(rosterList).then(function (data) {
+        setCurrentModal(ModalTypes.ROSTER_SCREENSHOT, {
+          screenshot: data.toDataURL(),
+        });
+        setScreenshotting(false);
       });
+      rosterList.style.width = width;
+      if (copyBtn) {
+        copyBtn.style.display = "inline-block";
+      }
     });
-    if (copyBtn) {
-      copyBtn.style.display = "inline-block";
-    }
   };
 
   const downloadProfileCards = async () => {
@@ -114,14 +128,14 @@ export const ModalRosterTable = () => {
     <>
       <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
         <Typography variant="h6" component="h2" flexGrow={1}>
-          <ListAlt />
+          {!isMobile && <ListAlt />}
           <b>Roster Table</b>
         </Typography>
         <FormGroup aria-label="position" row>
           <FormControlLabel
             checked={showArmyBonus}
             control={<Switch color="primary" />}
-            label="show army bonus"
+            label="Show army bonus"
             labelPlacement="end"
             onChange={handleBonusToggle}
           />
@@ -143,7 +157,10 @@ export const ModalRosterTable = () => {
 
       <DialogContent id="rosterList" sx={{ minWidth: "50vw" }}>
         {!textView ? (
-          <RosterTableView showArmyBonus={showArmyBonus} />
+          <RosterTableView
+            showArmyBonus={showArmyBonus}
+            screenshotting={screenshotting}
+          />
         ) : (
           <RosterTextView showArmyBonus={showArmyBonus} />
         )}
@@ -151,11 +168,20 @@ export const ModalRosterTable = () => {
 
       <Divider />
 
-      <DialogActions sx={{ p: 2 }}>
+      <DialogActions
+        sx={{
+          p: 2,
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: "end",
+          gap: isMobile ? 2 : 0,
+        }}
+      >
         <Button
           variant="contained"
           onClick={() => createScreenshot()}
           startIcon={<FaImage />}
+          fullWidth={isMobile}
         >
           Screenshot
         </Button>
@@ -169,6 +195,7 @@ export const ModalRosterTable = () => {
               <FaDownload />
             )
           }
+          fullWidth={isMobile}
         >
           Profile Cards
         </Button>

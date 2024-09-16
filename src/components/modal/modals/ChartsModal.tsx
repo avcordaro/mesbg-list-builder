@@ -8,14 +8,16 @@ export function ChartsModal() {
 
   return (
     <DialogContent>
-      <img
-        src={"./assets/images/charts/" + selectedChart + ".png"}
-        alt={selectedChart}
-        style={{
-          maxWidth: "100%",
-          border: "1px solid #6C757D",
-        }}
-      />
+      <center>
+        <img
+          src={"./assets/images/charts/" + selectedChart + ".png"}
+          alt={selectedChart}
+          style={{
+            maxWidth: "100%",
+            border: "1px solid #6C757D",
+          }}
+        />
+      </center>
     </DialogContent>
   );
 }

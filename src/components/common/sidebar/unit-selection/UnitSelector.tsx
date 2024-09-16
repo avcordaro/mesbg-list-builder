@@ -3,6 +3,8 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect } from "react";
 import { ImCross } from "react-icons/im";
 import { useMesbgData } from "../../../../hooks/mesbg-data.ts";
@@ -41,6 +43,8 @@ function a11yProps(value: string) {
 }
 
 export const UnitSelector = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const {
     updateBuilderSidebar,
     tabSelection,
@@ -49,6 +53,7 @@ export const UnitSelector = () => {
     warriorSelectionFocus,
   } = useStore();
   const { factionsGroupedByType } = useMesbgData();
+
   const tabNames = [
     "Good Army",
     "Evil Army",
@@ -72,25 +77,26 @@ export const UnitSelector = () => {
         ? warriorSelectionFocus[0]
         : warriorSelectionFocus[1];
 
-      const elementNodeListOf = document.querySelectorAll(
-        `[data-scroll-id="${scrollId}"]`,
-      );
-      console.log(elementNodeListOf);
-      elementNodeListOf.item(0)?.scrollIntoView({
-        behavior: "smooth",
-      });
+      document
+        .querySelectorAll(`[data-scroll-id="${scrollId}"]`)
+        .item(0)
+        ?.scrollIntoView({
+          behavior: "smooth",
+        });
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <Stack>
-      <Stack direction="row">
-        <Box flexGrow={1}>
+      <Stack direction={isMobile ? "column-reverse" : "row"} alignItems="end">
+        <Box sx={{ width: "100%" }}>
           <Tabs
             value={tabNames.indexOf(tabSelection)}
             onChange={(_, tab) => setTabSelection(tab)}
-            aria-label="basic tabs example"
+            variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
           >
             {Object.keys(factionsGroupedByType).map((type: FactionType) => (
               <Tab

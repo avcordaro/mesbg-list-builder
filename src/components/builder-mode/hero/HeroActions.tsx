@@ -2,6 +2,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent, MouseEventHandler } from "react";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { useStore } from "../../../state/store.ts";
@@ -18,7 +19,8 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   warbandId,
 }) => {
   const { setCurrentModal, deleteHero } = useStore();
-  const { palette } = useTheme();
+  const { palette, breakpoints } = useTheme();
+  const isMobile = useMediaQuery(breakpoints.down("sm"));
 
   const handleDelete = () => deleteHero(warbandId, unit.id);
 
@@ -35,7 +37,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
     <Stack
       direction="row"
       spacing={2}
-      justifyContent="end"
+      justifyContent={isMobile ? "center" : "end"}
       sx={{ width: "100%", p: 2 }}
     >
       <IconButton

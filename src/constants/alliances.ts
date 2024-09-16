@@ -1,11 +1,9 @@
-import { ChipOwnProps } from "@mui/material/Chip/Chip";
-
-export const allianceColours: Record<string, ChipOwnProps["color"]> = {
+export const allianceColours: Record<string, string> = {
   Historical: "success",
   Convenient: "warning",
   Impossible: "error",
   "Legendary Legion": "info",
-  "n/a": "default",
+  "n/a": "mode",
 };
 
 export type AllianceLevel = keyof typeof allianceColours;

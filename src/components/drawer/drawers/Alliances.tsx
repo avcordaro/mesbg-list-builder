@@ -1,10 +1,10 @@
-import { CheckRounded, PriorityHighRounded } from "@mui/icons-material";
 import { Chip } from "@mui/material";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { Fragment } from "react";
+import { allianceColours } from "../../../constants/alliances.ts";
 import { wanderers } from "../../../constants/wanderers";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store";
@@ -27,15 +27,11 @@ function AlliesSection({ allies, type }: { allies: Faction[]; type: string }) {
       <Box sx={{ mb: 1 }}>
         <Chip
           sx={{
-            background:
-              type === "Historical"
-                ? theme.palette.success.light
-                : theme.palette.warning.light,
+            color: "white",
+            fontWeight: "bolder",
+            background: theme.palette[allianceColours[type]].light,
           }}
           label={type}
-          icon={
-            type === "Historical" ? <CheckRounded /> : <PriorityHighRounded />
-          }
         />
       </Box>
       {allies.map((ally) => (

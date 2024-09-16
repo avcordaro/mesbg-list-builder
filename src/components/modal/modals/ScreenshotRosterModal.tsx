@@ -6,7 +6,7 @@ export const ScreenshotRosterModal = () => {
   const { modalContext } = useStore();
 
   return (
-    <DialogContent sx={{ mt: -4 }}>
+    <DialogContent>
       <Typography variant="subtitle2">
         The following is a screenshot image of your roster list which you can
         download, or copy to your clipboard as you wish.

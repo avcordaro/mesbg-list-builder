@@ -9,8 +9,10 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import Chip from "@mui/material/Chip";
+import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { FcCheckmark } from "react-icons/fc";
 import { GiQueenCrown } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
@@ -31,10 +33,13 @@ const UnitRow = ({
   leader?: boolean;
   rowStyle: SxProps;
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <TableRow sx={rowStyle}>
-      <TableCell>{warbandNum} </TableCell>
+      {!isMobile && <TableCell>{warbandNum} </TableCell>}
       <TableCell>
+        {!unit.unit_type.includes("Hero") && <>{unit.quantity}x </>}
         {unit.name}{" "}
         {leader && (
           <>
@@ -51,8 +56,6 @@ const UnitRow = ({
           )
           .join(", ")}
       </TableCell>
-      <TableCell align="center">{unit.pointsPerUnit}</TableCell>
-      <TableCell align="center">{unit.quantity}</TableCell>
       <TableCell align="center">{unit.pointsTotal}</TableCell>
     </TableRow>
   );
@@ -80,7 +83,13 @@ const WarbandRows = ({ warband }: { warband: Warband }) => {
   );
 };
 
-export function RosterTableView({ showArmyBonus }: { showArmyBonus: boolean }) {
+export function RosterTableView({
+  showArmyBonus,
+  screenshotting = false,
+}: {
+  showArmyBonus: boolean;
+  screenshotting?: boolean;
+}) {
   const {
     allianceLevel,
     roster,
@@ -88,23 +97,43 @@ export function RosterTableView({ showArmyBonus }: { showArmyBonus: boolean }) {
     factions: factionList,
   } = useStore();
   const factionData = useFactionData();
-
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <Stack direction="row" spacing={3} sx={{ mb: 2 }} alignItems="center">
+      <Stack
+        direction={isMobile && !screenshotting ? "column" : "row"}
+        spacing={isMobile && !screenshotting ? 1 : 3}
+        sx={{ mb: 2 }}
+        alignItems={isMobile && !screenshotting ? "start" : "center"}
+      >
         <Typography flexGrow={1}>
           Alliance level:
-          <Chip
-            label={allianceLevel}
-            color={allianceColours[allianceLevel]}
-            sx={{ ml: 1, fontWeight: "bolder" }}
-          />
+          <Typography
+            variant="body2"
+            component="span"
+            sx={{
+              ml: 1,
+              fontWeight: "bolder",
+              backgroundColor:
+                theme.palette[allianceColours[allianceLevel]].light,
+              color: "white",
+              px: 2,
+              py: 1,
+              borderRadius: 100,
+            }}
+          >
+            {allianceLevel}
+          </Typography>
         </Typography>
         <Typography>
           Total Points: <b>{roster.points}</b>
         </Typography>
         <Typography>
           Total Units: <b>{roster.num_units}</b>
+        </Typography>
+        <Typography>
+          Total Bows: <b>{roster.bow_count}</b>
         </Typography>
         <Typography>
           Break Point: <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
@@ -117,11 +146,9 @@ export function RosterTableView({ showArmyBonus }: { showArmyBonus: boolean }) {
         >
           <TableHead>
             <TableRow>
-              <TableCell>Warband</TableCell>
+              {!isMobile && <TableCell>Warband</TableCell>}
               <TableCell>Name</TableCell>
               <TableCell>Options</TableCell>
-              <TableCell align="center">Per Unit</TableCell>
-              <TableCell align="center">Quantity</TableCell>
               <TableCell align="center">Points</TableCell>
             </TableRow>
           </TableHead>
@@ -140,16 +167,25 @@ export function RosterTableView({ showArmyBonus }: { showArmyBonus: boolean }) {
               <Typography variant="body1">
                 Army Bonuses <FcCheckmark />
               </Typography>
-              <hr />
+              <Divider sx={{ my: 1 }} />
               {factionList.map((f) => (
                 <div key={f}>
-                  <Chip
-                    label={f}
+                  <Typography
+                    variant="body2"
+                    component="span"
                     sx={{
-                      color: hasArmyBonus ? "white" : "grey",
-                      backgroundColor: hasArmyBonus ? "black" : "lightgrey",
+                      my: 1,
+                      display: "inline-block",
+                      fontWeight: "bolder",
+                      backgroundColor: "black",
+                      color: "white",
+                      px: 2,
+                      py: 1,
+                      borderRadius: 100,
                     }}
-                  />
+                  >
+                    {f}
+                  </Typography>
                   <Typography
                     dangerouslySetInnerHTML={{
                       __html: factionData[f]["armyBonus"],

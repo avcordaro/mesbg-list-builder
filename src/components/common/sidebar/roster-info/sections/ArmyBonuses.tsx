@@ -38,6 +38,8 @@ export const ArmyBonuses = () => {
               sx={{
                 color: hasArmyBonus ? "white" : "grey",
                 backgroundColor: hasArmyBonus ? "black" : "lightgrey",
+                fontWeight: "bolder",
+                mb: 1,
               }}
             />
             <Typography
