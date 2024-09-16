@@ -45,7 +45,7 @@ export const SidebarContainer: FunctionComponent<
           variant="outlined"
           color="inherit"
           sx={{
-            mt: isMobile ? 1 : "auto",
+            mt: isMobile || isLargeScreen ? 2 : "auto",
           }}
           onClick={() => openSidebar(DrawerTypes.KEYWORD_SEARCH)}
           startIcon={<SearchIcon />}
