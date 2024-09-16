@@ -1,41 +1,39 @@
-import { Fragment } from "react";
+import { Container, Grid2 } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { Alerts } from "./components/alerts/Alerts";
-import { BuilderMode } from "./components/builder-mode/BuilderMode";
-import { TopNavbar } from "./components/common/layout/TopNavbar.tsx";
-import { GameMode } from "./components/gamemode/GameMode";
+import { BuilderMode } from "./components/builder-mode/BuilderMode.tsx";
+import { AppContainer } from "./components/common/layout/AppContainer.tsx";
+import { Sidebar } from "./components/common/sidebar/Sidebar.tsx";
+import { DrawerContainer } from "./components/drawer/DrawerContainer.tsx";
+import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
-import { SidebarContainer } from "./components/sidebar-drawer/SidebarContainer";
 import { useStore } from "./state/store";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 
 export const App = () => {
   const { gameMode } = useStore();
-
-  // $(window).scroll(function () {
-  //     // stops the left-hand options menu from scrolling horizontally
-  //     $('.optionsList').css('left', -$(window).scrollLeft() + 24);
-  // });
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
-    <Fragment>
-      <TopNavbar />
-      <Alerts />
-      <main
-        style={{
-          marginTop: "140px",
-          minHeight: "600px",
-          minWidth: "100%",
-          padding: "1rem",
-        }}
-      >
-        {!gameMode ? <BuilderMode /> : <GameMode />}
-      </main>
-      <aside>
-        <SidebarContainer />
-        <ModalContainer />
-      </aside>
-    </Fragment>
+    <AppContainer>
+      <Container maxWidth={false} fixed sx={{ p: 2 }}>
+        <Alerts />
+        <main>
+          <Grid2 container spacing={2}>
+            <Grid2 size={!isMobile ? 4 : 12}>
+              <Sidebar />
+            </Grid2>
+            <Grid2 size={!isMobile ? 8 : 12}>
+              {gameMode ? <GameMode /> : <BuilderMode />}
+            </Grid2>
+          </Grid2>
+        </main>
+        <aside>
+          <DrawerContainer />
+          <ModalContainer />
+        </aside>
+      </Container>
+    </AppContainer>
   );
 };

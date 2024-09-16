@@ -1,5 +1,5 @@
+import { AlertColor } from "@mui/material";
 import { ReactNode } from "react";
-import { Variant } from "react-bootstrap/types";
 import { ExportAlert } from "./alerts/ExportAlert.tsx";
 import { GameModeAlert } from "./alerts/GameModeAlert.tsx";
 
@@ -13,7 +13,7 @@ type AlertOptions = {
 };
 
 export type AlertProps = {
-  variant: Variant;
+  variant: AlertColor;
   content: ReactNode;
   options?: AlertOptions;
 };
@@ -22,10 +22,10 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
   [
     AlertTypes.GAMEMODE_ALERT,
     {
-      variant: "danger",
+      variant: "error",
       content: <GameModeAlert />,
       options: {
-        autoHideAfter: 12000,
+        // autoHideAfter: 12000,
       },
     },
   ],

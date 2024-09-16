@@ -1,21 +1,32 @@
-import { CSSProperties, FunctionComponent } from "react";
-import { ImageWithFallback } from "./ImageWithFallback.tsx";
+import Avatar from "@mui/material/Avatar";
+import { FunctionComponent } from "react";
 
 type FactionLogoProps = {
   faction: string;
-  style?: CSSProperties | undefined;
-  className?: string;
 };
 
 export const FactionLogo: FunctionComponent<FactionLogoProps> = ({
   faction,
-  style,
-  className,
 }) => (
-  <ImageWithFallback
-    source={"./assets/images/faction_logos/" + faction + ".png"}
-    fallbackImageSource="./assets/images/default.png"
-    style={style}
-    className={className}
-  />
+  <Avatar
+    alt={`${faction} logo`}
+    src={"./assets/images/faction_logos/" + faction + ".png"}
+    sx={{
+      width: 24,
+      height: 24,
+      display: "inline-block",
+      backgroundColor: "transparent",
+    }}
+  >
+    <Avatar
+      alt={`${faction} logo`}
+      src="./assets/images/default.png"
+      sx={{
+        width: 24,
+        height: 24,
+        display: "inline-block",
+        backgroundColor: "transparent",
+      }}
+    />
+  </Avatar>
 );

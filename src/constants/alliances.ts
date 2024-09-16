@@ -1,9 +1,9 @@
-export const allianceColours = {
+export const allianceColours: Record<string, string> = {
   Historical: "success",
   Convenient: "warning",
-  Impossible: "danger",
+  Impossible: "error",
   "Legendary Legion": "info",
-  "n/a": "secondary",
+  "n/a": "mode",
 };
 
 export type AllianceLevel = keyof typeof allianceColours;

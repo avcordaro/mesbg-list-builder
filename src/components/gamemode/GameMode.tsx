@@ -1,36 +1,58 @@
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { TbRefresh } from "react-icons/tb";
+import { RefreshOutlined } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useStore } from "../../state/store.ts";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
-import { GameModeInfo } from "./GameModeInfo.jsx";
 import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
   const { startNewGame, setCurrentModal } = useStore();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between("lg", "xl"));
+
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
   return (
-    <div>
-      <GameModeInfo />
-      <div style={{ marginLeft: "535px", minWidth: "720px" }}>
-        <Stack direction="horizontal" style={{ minWidth: "800px" }}>
-          <Button className="m-2" onClick={openResetGameModal}>
-            <TbRefresh /> Reset All
-          </Button>
-          <Casualties />
-        </Stack>
-        <h6 className="m-0 ms-2 mt-3 text-muted">
-          Note: Heroes will be automatically added as a casualty when they reach
-          zero wounds below.
-        </h6>
-        <hr className="mb-5" style={{ width: "720px" }} />
-        <HeroStatTrackers />
-        <hr className="mt-5 mb-3" style={{ width: "720px" }} />
-        <ProfileCards />
-      </div>
-    </div>
+    <Stack>
+      <Stack
+        direction={isMobile || isMediumScreen ? "column" : "row"}
+        spacing={1}
+      >
+        <Button
+          variant="contained"
+          startIcon={<RefreshOutlined />}
+          onClick={openResetGameModal}
+          sx={{
+            minWidth: "24ch",
+          }}
+        >
+          Reset All
+        </Button>
+        <Casualties />
+      </Stack>
+      <Typography variant="subtitle1" component="center" sx={{ mt: 1 }}>
+        Note: Heroes will be automatically added as a casualty when they reach
+        zero wounds below.
+      </Typography>
+      <Divider
+        sx={{
+          m: 1,
+        }}
+      />
+      <HeroStatTrackers />
+      <Divider
+        sx={{
+          m: 1,
+        }}
+      />
+      <ProfileCards />
+    </Stack>
   );
 };

@@ -1,5 +1,6 @@
-import Form from "react-bootstrap/Form";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import { Option, Unit } from "../../../types/unit.ts";
+import { CustomSwitch as Switch } from "../switch/CustomSwitch.tsx";
 
 export const OptionToggle = ({
   warbandId,
@@ -47,13 +48,18 @@ export const OptionToggle = ({
   };
 
   return (
-    <Form.Check
-      type="switch"
-      id={"switch-" + unit.id + "-" + option.option.replaceAll(" ", "-")}
+    <FormControlLabel
+      sx={{ display: "block" }}
+      control={
+        <Switch
+          id={`switch-${warbandId}-${unit.id}-${option.option.replaceAll(" ", "-")}`}
+          checked={option.opt_quantity === 1}
+          disabled={!selectable}
+          onChange={handleToggle}
+          name={option.option}
+        />
+      }
       label={option.option + " (" + option.points + " points)"}
-      checked={option.opt_quantity === 1}
-      disabled={!selectable}
-      onChange={handleToggle}
     />
   );
 };

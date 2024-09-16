@@ -1,11 +1,14 @@
-import Button from "react-bootstrap/Button";
-import { HiDuplicate } from "react-icons/hi";
-import { MdDelete } from "react-icons/md";
+import CancelIcon from "@mui/icons-material/Cancel";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import useTheme from "@mui/material/styles/useTheme";
 import { useStore } from "../../../state/store.ts";
 import { Warband } from "../../../types/warband.ts";
 
 export const WarbandActions = ({ warband }: { warband: Warband }) => {
   const { duplicateWarband, deleteWarband, updateBuilderSidebar } = useStore();
+  const { palette } = useTheme();
 
   const handleCopyWarband = () => {
     duplicateWarband(warband.id);
@@ -24,23 +27,35 @@ export const WarbandActions = ({ warband }: { warband: Warband }) => {
   };
 
   return (
-    <>
-      <Button
-        onClick={() => handleCopyWarband()}
-        className="mt-1 ms-auto mb-2"
-        style={{ marginRight: "10px" }}
-        variant="info"
+    <Stack direction="row" spacing={1} flexGrow={1} justifyContent="end">
+      <IconButton
+        onClick={handleCopyWarband}
+        aria-label="delete"
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.info.light,
+          "&:hover": {
+            backgroundColor: palette.info.main,
+          },
+        }}
       >
-        <HiDuplicate />
-      </Button>
-      <Button
-        onClick={() => handleDeleteWarband()}
-        className="mt-1 mb-2"
-        style={{ marginRight: "10px" }}
-        variant="danger"
+        <ContentCopyIcon />
+      </IconButton>
+      <IconButton
+        onClick={handleDeleteWarband}
+        aria-label="delete"
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.error.dark,
+          "&:hover": {
+            backgroundColor: palette.error.light,
+          },
+        }}
       >
-        <MdDelete />
-      </Button>
-    </>
+        <CancelIcon />
+      </IconButton>
+    </Stack>
   );
 };

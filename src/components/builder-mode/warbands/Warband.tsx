@@ -1,7 +1,10 @@
+import AddIcon from "@mui/icons-material/Add";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import Stack from "@mui/material/Stack";
+import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import { FaPlus } from "react-icons/fa";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
@@ -17,6 +20,7 @@ type WarbandProps = {
 
 export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
   const { addUnit, updateBuilderSidebar } = useStore();
+  const theme = useTheme();
 
   const handleNewWarrior = () => {
     addUnit(warband.id);
@@ -49,42 +53,46 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
 
   return (
     <Card
-      key={warband.id}
-      style={{ width: "850px" }}
-      className="p-2 shadow"
-      bg="secondary"
-      text="light"
+      variant="elevation"
+      elevation={3}
+      sx={{
+        backgroundColor: theme.palette.grey.A700,
+        p: 1,
+      }}
     >
-      <WarbandInfo warband={warband} />
+      <Stack spacing={1}>
+        <WarbandInfo warband={warband} />
 
-      {!isDefinedUnit(warband.hero) ? (
-        <ChooseHeroButton warbandId={warband.id} />
-      ) : (
-        <WarbandHero warbandId={warband.id} unit={warband.hero} />
-      )}
+        <Box data-scroll-id={warband.id}>
+          {!isDefinedUnit(warband.hero) ? (
+            <ChooseHeroButton warbandId={warband.id} />
+          ) : (
+            <WarbandHero warbandId={warband.id} unit={warband.hero} />
+          )}
+        </Box>
 
-      {warband.units.map((unit) =>
-        !isDefinedUnit(unit) ? (
-          <ChooseWarriorButton
-            key={unit.id}
-            unit={unit}
-            warbandId={warband.id}
-          />
-        ) : (
-          <WarbandWarrior key={unit.id} warbandId={warband.id} unit={unit} />
-        ),
-      )}
+        {warband.units.map((unit) => (
+          <Box key={unit.id} data-scroll-id={unit.id}>
+            {!isDefinedUnit(unit) ? (
+              <ChooseWarriorButton warbandId={warband.id} unit={unit} />
+            ) : (
+              <WarbandWarrior warbandId={warband.id} unit={unit} />
+            )}
+          </Box>
+        ))}
 
-      {isHeroWhoLeads(warband.hero) && (
-        <Button
-          onClick={() => handleNewWarrior()}
-          variant="info"
-          className="m-1"
-          style={{ width: "820px" }}
-        >
-          Add Unit <FaPlus />
-        </Button>
-      )}
+        {isHeroWhoLeads(warband.hero) && (
+          <Button
+            onClick={() => handleNewWarrior()}
+            variant="contained"
+            color="info"
+            fullWidth
+            endIcon={<AddIcon />}
+          >
+            Add Unit
+          </Button>
+        )}
+      </Stack>
     </Card>
   );
 };

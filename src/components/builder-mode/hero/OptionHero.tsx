@@ -24,12 +24,13 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
 }) => {
   const { updateHero } = useStore();
 
-  const hasHorse =
-    unit.options.find(({ type }) => type === "mount")?.opt_quantity === 1;
+  const hasHorse = unit.options.find(
+    ({ type, opt_quantity }) => type === "mount" && opt_quantity === 1,
+  );
   const isLance = option.option === "Lance";
 
   const isOptionSelectable =
-    (option.min !== option.max && !isLance) || hasHorse;
+    (option.min !== option.max && !isLance) || !!hasHorse;
 
   return (
     <>

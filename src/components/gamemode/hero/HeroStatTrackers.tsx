@@ -1,6 +1,10 @@
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
-import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
 import { FaSkullCrossbones } from "react-icons/fa";
 import { GiQueenCrown } from "react-icons/gi";
 import { useStore } from "../../../state/store";
@@ -16,50 +20,89 @@ type HeroStatsProps = {
 const HeroStats: FunctionComponent<HeroStatsProps> = ({
   hero_id,
   hero_idx,
-}) => (
-  <Stack className="my-2" direction="horizontal" gap={3}>
-    <HeroStatTracker name="Might" hero_id={hero_id} hero_idx={hero_idx} />
-    <HeroStatTracker name="Will" hero_id={hero_id} hero_idx={hero_idx} />
-    <HeroStatTracker name="Fate" hero_id={hero_id} hero_idx={hero_idx} />
-    <HeroStatTracker name="Wounds" hero_id={hero_id} hero_idx={hero_idx} />
-  </Stack>
-);
+}) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  return (
+    <Stack
+      direction={isMobile ? "column" : "row"}
+      justifyContent="space-around"
+    >
+      <HeroStatTracker name="Might" hero_id={hero_id} hero_idx={hero_idx} />
+      <HeroStatTracker name="Will" hero_id={hero_id} hero_idx={hero_idx} />
+      <HeroStatTracker name="Fate" hero_id={hero_id} hero_idx={hero_idx} />
+      <HeroStatTracker name="Wounds" hero_id={hero_id} hero_idx={hero_idx} />
+    </Stack>
+  );
+};
 
 type HeroNameProps = {
   hero: GameModeHero;
   alive: boolean;
 };
 
-const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => (
-  <Stack direction="horizontal" style={{ minHeight: "26px" }} gap={3}>
-    {alive ? (
-      <p className="m-0 mt-2">
-        <b>{hero.name}</b>
-      </p>
-    ) : (
-      <p className="text-muted text-decoration-line-through m-0 mt-2">
-        <b>{hero.name}</b>
-        <FaSkullCrossbones className="ms-2" />
-      </p>
-    )}
+const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  return (
+    <Stack
+      direction={isMobile ? "column" : "row"}
+      spacing={3}
+      alignItems="center"
+    >
+      {alive ? (
+        <Typography variant="h6" flexGrow={1}>
+          <b>{hero.name}</b>
+          {hero.leader && (
+            <Typography component="span" color="success" sx={{ mx: 1 }}>
+              <GiQueenCrown />
+            </Typography>
+          )}
+        </Typography>
+      ) : (
+        <Typography variant="h6" color="textDisabled" flexGrow={1}>
+          <s>
+            <b>{hero.name}</b>
+            {hero.leader && (
+              <Typography component="span" color="success">
+                <GiQueenCrown />
+              </Typography>
+            )}
+          </s>
+          <Box component="span" sx={{ ml: 1 }}>
+            <FaSkullCrossbones />
+          </Box>
+        </Typography>
+      )}
 
-    {hero.name === "The White Warg" && (
-      <h6 className="text-muted m-0 mt-2 ms-auto" style={{ width: "350px" }}>
-        (Both Azog and The White Warg must reach zero wounds to count as a
-        single casualty)
-      </h6>
-    )}
+      {isMobile && (
+        <UnitProfilePicture
+          army={hero.profile_origin}
+          profile={hero.name}
+          opacity={alive ? 100 : 25}
+        />
+      )}
 
-    {hero["leader"] && (
-      <h6 className="m-0 ms-auto mt-2 text-success">
-        <GiQueenCrown /> Leader
-      </h6>
-    )}
-  </Stack>
-);
+      {hero.name === "The White Warg" && (
+        <Typography
+          variant="caption"
+          color="textSecondary"
+          sx={{ width: "44ch" }}
+          textAlign="center"
+        >
+          (Both Azog and The White Warg must reach zero wounds to count as a
+          single casualty)
+        </Typography>
+      )}
+    </Stack>
+  );
+};
 
 export const HeroStatTrackers = () => {
   const { gameState } = useStore();
+  const { palette, breakpoints } = useTheme();
+  const isMobile = useMediaQuery(breakpoints.down("sm"));
 
   return (
     <>
@@ -75,22 +118,29 @@ export const HeroStatTrackers = () => {
           const alive = hero["xMWFW"].split(":")[3] !== "0";
           return (
             <Card
-              style={{ width: "700px" }}
-              className="m-2 pe-4"
-              bg="light"
               key={`${heroId}_${hero.name}`}
+              elevation={4}
+              sx={{
+                p: 1,
+                border: 1,
+                borderColor: palette.grey.A400,
+                m: 1,
+              }}
             >
               <Stack
-                direction="horizontal"
-                gap={3}
-                style={{ alignItems: "start" }}
+                direction="row"
+                spacing={2}
+                alignItems="center"
+                justifyContent="start"
               >
-                <UnitProfilePicture
-                  army={hero.profile_origin}
-                  profile={hero.name}
-                  className={alive ? "profile m-2" : "opacity-50 profile m-2"}
-                />
-                <Stack gap={2}>
+                {!isMobile && (
+                  <UnitProfilePicture
+                    army={hero.profile_origin}
+                    profile={hero.name}
+                    opacity={alive ? 100 : 25}
+                  />
+                )}
+                <Stack spacing={1} flexGrow={1}>
                   <HeroName hero={hero} alive={alive} />
                   <HeroStats hero_id={heroId} hero_idx={index} />
                 </Stack>

@@ -1,36 +1,36 @@
 import { ReactNode } from "react";
-import { Alliances } from "./sidebars/Alliances.tsx";
-import { KeywordsSearch } from "./sidebars/KeywordsSearch.tsx";
-import { NewEditionNews } from "./sidebars/NewEditionNews.tsx";
+import { Alliances } from "./drawers/Alliances.tsx";
+import { KeywordsSearch } from "./drawers/KeywordsSearch.tsx";
+import { NewEditionNews } from "./drawers/NewEditionNews.tsx";
 
-export enum SidebarTypes {
+export enum DrawerTypes {
   ALLIANCE = "ALLIANCE",
   NEW_EDITION_NEWS = "NEW_EDITION_NEWS",
   KEYWORD_SEARCH = "KEYWORD_SEARCH",
 }
 
-export type SidebarProps = {
+export type DrawerProps = {
   children: ReactNode;
   title: string;
 };
 
-export const sidebars = new Map<SidebarTypes, SidebarProps>([
+export const drawers = new Map<DrawerTypes, DrawerProps>([
   [
-    SidebarTypes.NEW_EDITION_NEWS,
+    DrawerTypes.NEW_EDITION_NEWS,
     {
       title: "The New Edition of MESBG",
       children: <NewEditionNews />,
     },
   ],
   [
-    SidebarTypes.ALLIANCE,
+    DrawerTypes.ALLIANCE,
     {
       title: "Alliances",
       children: <Alliances />,
     },
   ],
   [
-    SidebarTypes.KEYWORD_SEARCH,
+    DrawerTypes.KEYWORD_SEARCH,
     {
       title: "Keyword search",
       children: <KeywordsSearch />,

@@ -1,15 +1,16 @@
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaSkullCrossbones,
-} from "react-icons/fa";
+import { ChevronLeftOutlined, ChevronRightOutlined } from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { FaSkullCrossbones } from "react-icons/fa";
 import { GiCrackedShield } from "react-icons/gi";
 import { useStore } from "../../state/store.ts";
 
-export const Casualties = () => {
+const Counter = () => {
   const { roster, gameState, updateGameState } = useStore();
+  const { palette } = useTheme();
 
   const handleIncrement = () => {
     updateGameState({
@@ -26,71 +27,108 @@ export const Casualties = () => {
   };
 
   return (
-    <Stack direction="horizontal" gap={3} className="ms-3">
-      <Stack direction="horizontal">
-        <h5 className="m-0">Casualties: </h5>
-        <Button
-          className="ms-2"
-          variant="secondary"
-          size="sm"
-          onClick={handleDecrement}
-          disabled={gameState.casualties === 0}
-        >
-          <FaChevronLeft />
-        </Button>
-        <h5 className="m-0" style={{ width: "40px", textAlign: "center" }}>
-          <b>{gameState.casualties + gameState.heroCasualties}</b>
-        </h5>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={handleIncrement}
-          disabled={
-            gameState.casualties >=
-            roster.num_units - Object.keys(gameState.heroes).length
-          }
-        >
-          <FaChevronRight />
-        </Button>
-      </Stack>
-      {Math.floor(0.5 * roster.num_units) +
-        1 -
-        (gameState.casualties + gameState.heroCasualties) <=
-      0 ? (
-        <h5 className="m-0 ms-5 text-danger">
-          You are Broken <GiCrackedShield />
-        </h5>
-      ) : (
-        <h5 className="m-0 ms-5">
-          Until Broken:{" "}
-          <b>
-            {Math.max(
-              Math.floor(0.5 * roster.num_units) +
-                1 -
-                (gameState.casualties + gameState.heroCasualties),
-              0,
-            )}
-          </b>
-        </h5>
-      )}
-      {Math.ceil(0.75 * roster.num_units) -
-        (gameState.casualties + gameState.heroCasualties) <=
-      0 ? (
-        <h5 className="m-0 text-danger">
-          You are Defeated <FaSkullCrossbones />
-        </h5>
-      ) : (
-        <h5 className="m-0">
-          Until Defeated:{" "}
-          <b>
-            {Math.max(
-              Math.ceil(0.75 * roster.num_units) -
-                (gameState.casualties + gameState.heroCasualties),
-              0,
-            )}
-          </b>
-        </h5>
-      )}
+    <Stack
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      flexGrow={1}
+      spacing={1}
+    >
+      <Typography variant="h6" component="span">
+        Casualties:
+      </Typography>
+      <IconButton
+        onClick={handleDecrement}
+        disabled={gameState.casualties === 0}
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.grey.A400,
+          "&:hover": {
+            backgroundColor: palette.grey["600"],
+          },
+        }}
+      >
+        <ChevronLeftOutlined />
+      </IconButton>
+      <Typography sx={{ minWidth: "2rem", textAlign: "center" }}>
+        <b>{gameState.casualties + gameState.heroCasualties}</b>
+      </Typography>
+      <IconButton
+        onClick={handleIncrement}
+        disabled={
+          gameState.casualties >=
+          roster.num_units - Object.keys(gameState.heroes).length
+        }
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.grey.A400,
+          "&:hover": {
+            backgroundColor: palette.grey["600"],
+          },
+        }}
+      >
+        <ChevronRightOutlined />
+      </IconButton>
+    </Stack>
+  );
+};
+
+export const Casualties = () => {
+  const { roster, gameState } = useStore();
+  const { breakpoints } = useTheme();
+  const isMobile = useMediaQuery(breakpoints.down("md"));
+
+  const tillBroken = Math.max(
+    Math.floor(0.5 * roster.num_units) +
+      1 -
+      (gameState.casualties + gameState.heroCasualties),
+    0,
+  );
+  const tillDefeat = Math.max(
+    Math.ceil(0.75 * roster.num_units) -
+      (gameState.casualties + gameState.heroCasualties),
+    0,
+  );
+  return (
+    <Stack
+      direction={isMobile ? "column" : "row"}
+      spacing={1}
+      justifyContent="center"
+      alignItems="center"
+      sx={{
+        p: "0 1rem",
+        width: "100%",
+      }}
+    >
+      {!isMobile && <Counter />}
+
+      <Typography variant="h6" color={tillBroken ? "textPrimary" : "error"}>
+        {!tillBroken ? (
+          <>
+            You are Broken <GiCrackedShield />
+          </>
+        ) : (
+          <>
+            Until Broken: <b>{tillBroken}</b>
+          </>
+        )}
+      </Typography>
+
+      <Typography variant="h6" color={tillDefeat ? "textPrimary" : "error"}>
+        {!tillDefeat ? (
+          <>
+            You are Defeated <FaSkullCrossbones />
+          </>
+        ) : (
+          <>
+            Until Defeated: <b>{tillDefeat}</b>
+          </>
+        )}
+      </Typography>
+
+      {isMobile && <Counter />}
     </Stack>
   );
 };

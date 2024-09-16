@@ -1,5 +1,4 @@
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { DialogActions, DialogContent, Button } from "@mui/material";
 import { useStore } from "../../../state/store.ts";
 
 export const ResetGameModeModal = () => {
@@ -12,19 +11,19 @@ export const ResetGameModeModal = () => {
 
   return (
     <>
-      <Modal.Body>
+      <DialogContent>
         This will reset all Might, Will, Fate and Wound counters for your
         heroes, and also reset the casualty counter. Are you sure you want to
         continue?
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={closeModal}>
+      </DialogContent>
+      <DialogActions>
+        <Button variant="outlined" color="inherit" onClick={closeModal}>
           Back
         </Button>
-        <Button variant="primary" onClick={handleContinue}>
+        <Button variant="contained" color="warning" onClick={handleContinue}>
           Continue
         </Button>
-      </Modal.Footer>
+      </DialogActions>
     </>
   );
 };

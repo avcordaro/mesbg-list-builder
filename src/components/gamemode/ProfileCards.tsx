@@ -1,13 +1,22 @@
-import { Fragment } from "react";
+import { Button, ImageList, ImageListItem } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useState } from "react";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../types/unit.ts";
 import { UnitProfileCard } from "../common/images/UnitProfileCard.tsx";
 
 export const ProfileCards = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const roster = useStore((store) => store.roster);
+  const [showProfileCards, setShowProfileCards] = useState(false);
+  const [bigCard, setBigCard] = useState(null);
 
   const getExtraProfilesForHero = (hero: Unit) => {
+    if (!isDefinedUnit(hero)) return [];
+
     if (hero.unit_type === "Siege Engine") {
       return [];
     }
@@ -39,13 +48,38 @@ export const ProfileCards = () => {
       index === self.findIndex((t) => t.profile === item.profile),
   );
 
-  return uniqueProfiles.map(({ profile, army }) => (
-    <Fragment key={profile}>
-      <UnitProfileCard
-        className="profile_card border border-secondary my-3 shadow"
-        profile={profile}
-        army={army}
-      />
-    </Fragment>
-  ));
+  return (
+    <>
+      {!showProfileCards ? (
+        <>
+          <Button
+            variant="contained"
+            color="inherit"
+            onClick={() => setShowProfileCards(true)}
+            sx={{
+              m: "0 0.5rem 2rem",
+            }}
+          >
+            Show all profile cards
+          </Button>
+        </>
+      ) : (
+        <ImageList cols={isMobile ? 1 : 2}>
+          {uniqueProfiles.map(({ profile, army }) => (
+            <ImageListItem
+              key={profile}
+              cols={isMobile ? 1 : bigCard === profile ? 2 : 1}
+              onClick={() => {
+                setBigCard((prev: string) =>
+                  prev !== profile ? profile : null,
+                );
+              }}
+            >
+              <UnitProfileCard profile={profile} army={army} />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      )}
+    </>
+  );
 };

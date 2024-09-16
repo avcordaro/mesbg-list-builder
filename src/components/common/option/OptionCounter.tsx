@@ -1,6 +1,7 @@
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { AddOutlined, RemoveOutlined } from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { Option, Unit } from "../../../types/unit.ts";
 
 const MWF_MAP = { Might: 0, Will: 1, Fate: 2 };
@@ -32,7 +33,7 @@ export const OptionCounter = ({
 
   const handleQuantity = (newQuantity) => {
     /* Handles updates for options that require a quantity, rather than a toggle. This includes
-                updating any changes to points and bow count when the quantity is changed.*/
+                        updating any changes to points and bow count when the quantity is changed.*/
     if (newQuantity > option.max || newQuantity < option.min) {
       return null;
     }
@@ -52,29 +53,46 @@ export const OptionCounter = ({
   };
 
   return (
-    <Stack className="mt-1" direction="horizontal" gap={2}>
-      <Button
-        disabled={option.opt_quantity === option.min}
-        variant="outline-secondary"
-        className="p-0 quantity-buttons"
-        size="sm"
+    <Stack
+      direction="row"
+      spacing={2}
+      alignItems="center"
+      gap={1}
+      sx={{ mt: 1 }}
+    >
+      <IconButton
         onClick={() => handleQuantity(option.opt_quantity - 1)}
+        aria-label="remove one"
+        sx={{
+          border: 1,
+          borderRadius: 2,
+          backgroundColor: "inherit",
+          color: "grey",
+        }}
+        size="small"
       >
-        <FaMinus />
-      </Button>
+        <RemoveOutlined />
+      </IconButton>
       <b style={{ width: "20px", textAlign: "center" }}>
         {option.opt_quantity}
       </b>
-      <Button
-        disabled={option.opt_quantity === option.max}
-        variant="outline-secondary"
-        className="p-0 quantity-buttons"
-        size="sm"
+
+      <IconButton
         onClick={() => handleQuantity(option.opt_quantity + 1)}
+        aria-label="add one"
+        sx={{
+          border: 1,
+          borderRadius: 2,
+          backgroundColor: "inherit",
+          color: "grey",
+        }}
+        size="small"
       >
-        <FaPlus />
-      </Button>
-      {option.option + " (" + option.points + " points)"}
+        <AddOutlined />
+      </IconButton>
+      <Typography>
+        {option.option + " (" + option.points + " points)"}
+      </Typography>
     </Stack>
   );
 };

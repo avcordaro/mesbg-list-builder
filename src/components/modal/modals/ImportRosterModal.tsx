@@ -1,11 +1,8 @@
+import { Button, DialogActions, DialogContent, TextField } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
 import { useStore } from "../../../state/store";
 import { Roster } from "../../../types/roster.ts";
-
-/* Displays a modal for the user to enter their JSON army list into a textbox. */
 
 export const ImportRosterModal = () => {
   const { setRoster, closeModal } = useStore();
@@ -51,36 +48,28 @@ export const ImportRosterModal = () => {
 
   return (
     <>
-      <Modal.Body>
-        <Form
-          noValidate
-          style={{ textAlign: "right" }}
-          onSubmit={handleImportJSON}
-          className="me-4"
-        >
-          <Form.Control
-            value={JSONImport}
-            onChange={(e) =>
-              setJSONImport(
-                e.target.value.replace(/^"(.*)"$/, "$1").replaceAll('""', '"'),
-              )
-            }
-            placeholder="Paste your army roster JSON string..."
-          />
-          {importAlert && (
-            <p style={{ textAlign: "left" }} className="mt-2 ms-2 text-danger">
-              JSON string for army list is invalid.
-            </p>
-          )}
-          <Button
-            className="ms-auto mt-3"
-            onClick={handleImportJSON}
-            type="submit"
-          >
-            Import
-          </Button>
-        </Form>
-      </Modal.Body>
+      <DialogContent>
+        <TextField
+          fullWidth
+          value={JSONImport}
+          onChange={(e) =>
+            setJSONImport(
+              e.target.value.replace(/^"(.*)"$/, "$1").replaceAll('""', '"'),
+            )
+          }
+          placeholder="Paste your army roster JSON string..."
+        />
+        {importAlert && (
+          <Typography variant="body1" component="strong" color="error">
+            JSON string for army list is invalid.
+          </Typography>
+        )}
+      </DialogContent>
+      <DialogActions>
+        <Button variant="contained" onClick={handleImportJSON}>
+          Import
+        </Button>
+      </DialogActions>
     </>
   );
 };

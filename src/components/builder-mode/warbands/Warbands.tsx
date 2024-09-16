@@ -1,6 +1,6 @@
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
-import { FaPlus } from "react-icons/fa";
+import AddIcon from "@mui/icons-material/Add";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import { useStore } from "../../../state/store.js";
 import { Warband } from "./Warband.tsx";
 
@@ -17,12 +17,16 @@ export const Warbands = () => {
   };
 
   return (
-    <Stack style={{ marginLeft: "535px" }} gap={3}>
+    <Stack spacing={1}>
       {roster.warbands.map((warband) => (
         <Warband key={warband.id} warband={warband} />
       ))}
-      <Button onClick={() => handleNewWarband()} style={{ width: "850px" }}>
-        Add Warband <FaPlus />
+      <Button
+        onClick={() => handleNewWarband()}
+        endIcon={<AddIcon />}
+        variant="contained"
+      >
+        Add Warband
       </Button>
     </Stack>
   );
