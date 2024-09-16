@@ -1,6 +1,6 @@
 {
   "name": "mesbg",
-  "version": "5.4.9",
+  "version": "6.0.0",
   "homepage": "https://avcordaro.github.io/mesbg-list-builder/",
   "private": true,
   "type": "module",
