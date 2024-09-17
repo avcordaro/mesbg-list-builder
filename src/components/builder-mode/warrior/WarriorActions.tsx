@@ -38,33 +38,37 @@ export const QuantityButtons = ({
 
   return (
     <>
-      <IconButton
-        onClick={handleDecrement}
-        disabled={unit.quantity === 1}
-        sx={{
-          borderRadius: 2,
-          backgroundColor: palette.primary.main,
-          color: palette.primary.contrastText,
-          "&:hover": {
-            backgroundColor: palette.primary.dark,
-          },
-        }}
-      >
-        <RemoveOutlined />
-      </IconButton>
-      <IconButton
-        onClick={handleIncrement}
-        sx={{
-          borderRadius: 2,
-          backgroundColor: palette.primary.main,
-          color: palette.primary.contrastText,
-          "&:hover": {
-            backgroundColor: palette.primary.dark,
-          },
-        }}
-      >
-        <AddOutlined />
-      </IconButton>
+      {unit.unit_type == "Warrior" && (
+        <>
+          <IconButton
+            onClick={handleDecrement}
+            disabled={unit.quantity === 1}
+            sx={{
+              borderRadius: 2,
+              backgroundColor: palette.primary.main,
+              color: palette.primary.contrastText,
+              "&:hover": {
+                backgroundColor: palette.primary.dark,
+              },
+            }}
+          >
+            <RemoveOutlined />
+          </IconButton>
+          <IconButton
+            onClick={handleIncrement}
+            sx={{
+              borderRadius: 2,
+              backgroundColor: palette.primary.main,
+              color: palette.primary.contrastText,
+              "&:hover": {
+                backgroundColor: palette.primary.dark,
+              },
+            }}
+          >
+            <AddOutlined />
+          </IconButton>
+        </>
+      )}
     </>
   );
 };

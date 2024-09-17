@@ -85,7 +85,8 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
           >
             <Typography variant="body1" component="div" flexGrow={1}>
               <b>
-                {unit.name} (x{unit.quantity})
+                {unit.name}{" "}
+                {unit.unit_type === "Warrior" && "(x" + unit.quantity + ")"}
               </b>
             </Typography>
             <Typography sx={{ paddingRight: "10px" }}>
