@@ -38,7 +38,7 @@ export const useStore = create<
       }),
       {
         name: "mesbg-lb-storage",
-        storage: createJSONStorage(() => sessionStorage),
+        storage: createJSONStorage(() => localStorage),
         partialize: (state) => getStateToPersist(state),
       },
     ),
