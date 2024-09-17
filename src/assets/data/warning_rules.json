@@ -856,7 +856,7 @@
       "warning":"A Ruffian leading a warband may only be included if all of the other Hero models from this Legendary Legion are already included in this force."
     }
   ],
-  "[the_dead_of_dunharrow] warrior_of_the_dead_cpt":[
+  "[the_dead_of_dunharrow] rider_of_the_dead_cpt":[
     {
       "type":"requires_alliance",
       "dependencies":[
@@ -865,7 +865,7 @@
       "warning":"(The Dead of Dunharrow) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
-  "[the_dead_of_dunharrow] rider_of_the_dead_cpt":[
+  "[the_dead_of_dunharrow] warrior_of_the_dead_cpt":[
     {
       "type":"requires_alliance",
       "dependencies":[

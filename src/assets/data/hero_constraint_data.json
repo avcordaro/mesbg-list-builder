@@ -8757,6 +8757,21 @@
       ]
     }
   ],
+  "[the_dead_of_dunharrow] rider_of_the_dead_cpt":[
+    {
+      "valid_warband_units":[
+        "[the_dead_of_dunharrow] rider_of_the_dead",
+        "[the_dead_of_dunharrow] warrior_of_the_dead"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[the_dead_of_dunharrow] the_king_of_the_dead":[
     {
       "valid_warband_units":[
@@ -8773,21 +8788,6 @@
     }
   ],
   "[the_dead_of_dunharrow] warrior_of_the_dead_cpt":[
-    {
-      "valid_warband_units":[
-        "[the_dead_of_dunharrow] rider_of_the_dead",
-        "[the_dead_of_dunharrow] warrior_of_the_dead"
-      ],
-      "special_warband_options":[
-
-      ],
-      "special_army_option":"",
-      "extra_profiles":[
-
-      ]
-    }
-  ],
-  "[the_dead_of_dunharrow] rider_of_the_dead_cpt":[
     {
       "valid_warband_units":[
         "[the_dead_of_dunharrow] rider_of_the_dead",
