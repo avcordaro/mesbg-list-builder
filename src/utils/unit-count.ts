@@ -22,6 +22,15 @@ const extraUnitsOnHero = (hero: Unit) => {
     );
   }
 
+  if (
+    [
+      "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
+      "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+    ].includes(hero.model_id)
+  ) {
+    return 1;
+  }
+
   return Math.max(hero.siege_crew - 1, 0);
 };
 
@@ -89,10 +98,20 @@ export const calculateWarbandBowCount = (
       0,
     );
 
+const isWarriorLeadingWarband = (hero: Unit) => {
+  return [
+    "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
+    "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+  ].includes(hero.model_id);
+};
+
 export const calculateRosterUnitCount = (roster: Roster) =>
   roster.warbands
     .map((warband) => {
-      const hero = isDefinedUnit(warband.hero) ? 1 : 0;
+      const hero =
+        isDefinedUnit(warband.hero) && !isWarriorLeadingWarband(warband.hero)
+          ? 1
+          : 0;
       const units = calculateWarbandModelCount(warband);
       return hero + units;
     })
