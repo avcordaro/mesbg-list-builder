@@ -33021,6 +33021,38 @@
     ]
   },
   {
+    "model_id":"[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+    "faction_type":"Good Army",
+    "faction":"The Dead of Dunharrow",
+    "profile_origin":"The Dead of Dunharrow",
+    "name":"Rider of the Dead",
+    "unit_type":"Hero of Fortitude",
+    "base_points":24,
+    "default_bow":false,
+    "unique":false,
+    "inc_bow_count":false,
+    "bow_limit":true,
+    "siege_crew":0,
+    "MWFW":[
+
+    ],
+    "quantity":1,
+    "pointsPerUnit":24,
+    "pointsTotal":24,
+    "warband_size":12,
+    "options":[
+      {
+        "option_id":"OPT0921",
+        "option":"Swap Weapon",
+        "points":1.0,
+        "type":null,
+        "min":0.0,
+        "max":1.0,
+        "opt_quantity":0.0
+      }
+    ]
+  },
+  {
     "model_id":"[the_dead_of_dunharrow] rider_of_the_dead",
     "faction_type":"Good Army",
     "faction":"The Dead of Dunharrow",

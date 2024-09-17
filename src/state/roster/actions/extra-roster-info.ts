@@ -44,12 +44,18 @@ export const recalculate = (set) => {
     "ADJUST_ROSTER_WITH_SPECIAL_RULES",
   );
   set(
-    ({ roster }) => ({ roster: updateUnitCount(roster) }),
+    ({ roster }) => ({
+      roster: updateUnitCount(roster),
+      ...updateFactionData(roster),
+    }),
     undefined,
     "RECALCULATE_UNIT_COUNT",
   );
   set(
-    ({ roster }) => ({ roster: recalculatePoints(roster) }),
+    ({ roster }) => ({
+      roster: recalculatePoints(roster),
+      ...updateFactionData(roster),
+    }),
     undefined,
     "RECALCULATE_POINTS",
   );
@@ -95,6 +101,7 @@ export const updateFactionData = (roster: Roster) => {
   const uniqueModels = getUniqueModels(roster.warbands);
   const { warnings, losesArmyBonus, newAllianceLevel } =
     getWarningsForCreatedRoster(
+      roster,
       factionList,
       calculateAllianceLevel(factionList, factionType),
       calculateModelCount(roster.warbands),
