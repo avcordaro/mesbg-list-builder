@@ -15,7 +15,7 @@ export const Footer = () => {
       }}
     >
       <Typography variant="body2" sx={{ display: "block", m: 1 }}>
-        Unofficial | {BUILD_VERSION} | updated {BUILD_DATE}
+        Unofficial | v{BUILD_VERSION} | updated {BUILD_DATE}
       </Typography>
       <Typography variant="caption">
         For any bugs and corrections, please contact:{" "}

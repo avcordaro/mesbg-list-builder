@@ -95,13 +95,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             </Typography>
           </Stack>
 
-          <Collapse
-            in={!props.collapsed}
-            sx={{
-              height: "100%",
-              "& .MuiCollapse-wrapper": { height: "100%" },
-            }}
-          >
+          <Collapse in={!props.collapsed}>
             {/* Unit type & MWF */}
             {unit.unit_type !== "Warrior" && unit.unit_type !== "Siege" && (
               <Stack
@@ -126,7 +120,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             <Stack
               direction={isTablet ? "column" : "row"}
               spacing={3}
-              sx={{ pb: 1, px: 1, height: "100%" }}
+              sx={{ p: 1 }}
             >
               <WarriorOptionList {...props} />
               <WarriorActions {...props} />
