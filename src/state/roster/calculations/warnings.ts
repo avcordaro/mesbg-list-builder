@@ -2,6 +2,7 @@ import warning_rules_data from "../../../assets/data/warning_rules.json";
 import { AllianceLevel } from "../../../constants/alliances.ts";
 import { FactionData } from "../../../types/faction-data.ts";
 import { Faction, Factions } from "../../../types/factions.ts";
+import { Roster } from "../../../types/roster.ts";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
 import { ModelCountData } from "./models.ts";
 
@@ -174,7 +175,27 @@ function checkForFactionErrors(
   });
 }
 
+function checkWarriorCaptains(roster: Roster, alliance: AllianceLevel) {
+  return roster.warbands
+    .map((warband) => {
+      if (
+        [
+          "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
+          "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+        ].includes(warband.hero.model_id) &&
+        alliance === "Historical" &&
+        warband.num_units < 8
+      ) {
+        return `Warband ${warband.num} needs to contain eight or more models before the ${warband.hero.name} is able to lead them.`;
+      }
+
+      return null;
+    })
+    .filter((value) => !!value);
+}
+
 const checkWarnings = (
+  roster: Roster,
   uniqueModels: string[],
   factions: Faction[],
   alliance: AllianceLevel,
@@ -197,10 +218,17 @@ const checkWarnings = (
   const factionWarnings = factions.flatMap((faction) =>
     checkForFactionErrors(faction, factions, uniqueModels, allianceLevel),
   );
+  const warriorCaptainWarnings = checkWarriorCaptains(
+    roster,
+    !dunharrowWarning ? allianceLevel : "Impossible",
+  );
   return {
-    warnings: [dunharrowWarning, ...warnings, ...factionWarnings].filter(
-      (v) => !!v,
-    ),
+    warnings: [
+      dunharrowWarning,
+      ...warnings,
+      ...factionWarnings,
+      ...warriorCaptainWarnings,
+    ].filter((v) => !!v),
     newAllianceLevel: !dunharrowWarning ? allianceLevel : "Impossible",
     losesArmyBonus: losesArmyBonus || !!dunharrowWarning,
   };
@@ -341,12 +369,14 @@ const checkGilGalad = (
 };
 
 export const getWarningsForCreatedRoster = (
+  roster: Roster,
   factionList: Faction[],
   allianceLevel: AllianceLevel,
   factionMetaData: ModelCountData,
   uniqueModels: string[],
 ): RosterBuildWarnings => {
   const initialWarnings = checkWarnings(
+    roster,
     uniqueModels,
     factionList,
     allianceLevel,
