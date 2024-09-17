@@ -37,11 +37,16 @@ const RosterInfoBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
+      id="roster-totals"
       sx={{
         backgroundColor: "#1c1c1e",
         color: "white",
-        p: 1,
+        p: 2,
         textAlign: "center",
+        position: "sticky",
+        top: 0,
+        overflow: "auto",
+        zIndex: 1,
       }}
     >
       <Stack
