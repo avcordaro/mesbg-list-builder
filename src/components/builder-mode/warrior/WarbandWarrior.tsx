@@ -1,3 +1,4 @@
+import { Collapse } from "@mui/material";
 import Card from "@mui/material/Card";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
@@ -8,13 +9,14 @@ import { FunctionComponent } from "react";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
-import { WarriorActions } from "./WarriorActions.tsx";
+import { QuantityButtons, WarriorActions } from "./WarriorActions.tsx";
 import { WarriorOptionList } from "./WarriorOptionList.tsx";
 
 /* Warband Warrior components display an individual warrior unit in a warband. */
 type WarbandWarriorProps = {
   warbandId: string;
   unit: Unit;
+  collapsed: boolean;
 };
 
 export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
@@ -28,21 +30,53 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
     <Card sx={{ p: 1 }} elevation={2}>
       <Stack
         direction={isMobile ? "column" : "row"}
-        alignItems="start"
+        alignItems="stretch"
         spacing={2}
       >
-        {isMobile ? (
-          <Stack alignItems="center" sx={{ width: "100%" }}>
-            <UnitProfilePicture
-              army={unit.profile_origin}
-              profile={unit.name}
-            />
-          </Stack>
-        ) : (
-          <UnitProfilePicture army={unit.profile_origin} profile={unit.name} />
-        )}
+        <Collapse
+          in={!props.collapsed}
+          sx={{
+            width: isMobile ? "100%" : "120px",
+          }}
+        >
+          {isMobile ? (
+            <Stack
+              direction="column"
+              alignItems="center"
+              sx={{ width: "100%" }}
+            >
+              <UnitProfilePicture
+                army={unit.profile_origin}
+                profile={unit.name}
+              />
+              <Stack direction="row" spacing={3} sx={{ mt: 1 }}>
+                <QuantityButtons unit={unit} warbandId={props.warbandId} />
+              </Stack>
+            </Stack>
+          ) : (
+            <Stack direction="column">
+              <UnitProfilePicture
+                army={unit.profile_origin}
+                profile={unit.name}
+              />
+              <Stack
+                direction="row"
+                justifyContent="space-around"
+                sx={{ mt: 1 }}
+              >
+                <QuantityButtons unit={unit} warbandId={props.warbandId} />
+              </Stack>
+            </Stack>
+          )}
+        </Collapse>
 
-        <Stack spacing={2} flexGrow={1} sx={{ width: "100%" }}>
+        <Stack
+          id="oyollasd"
+          spacing={!props.collapsed ? 2 : 0}
+          flexGrow={1}
+          justifyContent="stretch"
+          sx={{ width: "100%", mt: !props.collapsed ? "auto" : "0 !important" }}
+        >
           {/* Name & Points */}
           <Stack
             direction={isMobile ? "column" : "row"}
@@ -50,7 +84,9 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             alignItems="center"
           >
             <Typography variant="body1" component="div" flexGrow={1}>
-              <b>{unit.name}</b>
+              <b>
+                {unit.name} (x{unit.quantity})
+              </b>
             </Typography>
             <Typography sx={{ paddingRight: "10px" }}>
               Points: <b>{unit.pointsTotal}</b>
@@ -59,35 +95,43 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             </Typography>
           </Stack>
 
-          {/* Unit type & MWF */}
-          {unit.unit_type !== "Warrior" && unit.unit_type !== "Siege" && (
-            <Stack
-              direction={isMobile ? "column" : "row"}
-              spacing={1}
-              alignItems="center"
-            >
-              <Chip
-                label={unit.unit_type}
-                size="small"
-                sx={{
-                  backgroundColor: "black",
-                  color: "white",
-                  fontWeight: "bold",
-                }}
-              />
-              <MwfBadge unit={unit} />
-            </Stack>
-          )}
-
-          {/* Options and increment buttons*/}
-          <Stack
-            direction={isTablet ? "column" : "row"}
-            spacing={3}
-            sx={{ pb: 1, px: 1 }}
+          <Collapse
+            in={!props.collapsed}
+            sx={{
+              height: "100%",
+              "& .MuiCollapse-wrapper": { height: "100%" },
+            }}
           >
-            <WarriorOptionList {...props} />
-            <WarriorActions {...props} />
-          </Stack>
+            {/* Unit type & MWF */}
+            {unit.unit_type !== "Warrior" && unit.unit_type !== "Siege" && (
+              <Stack
+                direction={isMobile ? "column" : "row"}
+                spacing={1}
+                alignItems="center"
+              >
+                <Chip
+                  label={unit.unit_type}
+                  size="small"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
+                />
+                <MwfBadge unit={unit} />
+              </Stack>
+            )}
+
+            {/* Options and increment buttons*/}
+            <Stack
+              direction={isTablet ? "column" : "row"}
+              spacing={3}
+              sx={{ pb: 1, px: 1, height: "100%" }}
+            >
+              <WarriorOptionList {...props} />
+              <WarriorActions {...props} />
+            </Stack>
+          </Collapse>
         </Stack>
       </Stack>
     </Card>

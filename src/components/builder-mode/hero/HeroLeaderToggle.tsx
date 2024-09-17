@@ -33,8 +33,13 @@ export const HeroLeaderToggle: FunctionComponent<HeroLeaderToggleProps> = ({
     roster.leader_warband_id === warbandId ? "success" : "default";
 
   return (
-    <Stack direction="row" justifyContent="center" alignItems="center">
-      <Typography color={textColor}>
+    <Stack
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      color={textColor}
+    >
+      <Typography color={textColor} display="flex" justifyContent="center">
         <GiQueenCrown />
       </Typography>
       <Switch

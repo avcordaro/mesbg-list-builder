@@ -6,7 +6,6 @@ import {
 } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { BsFillPersonVcardFill } from "react-icons/bs";
@@ -14,7 +13,7 @@ import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 
-const QuantityButtons = ({
+export const QuantityButtons = ({
   unit,
   warbandId,
 }: {
@@ -42,30 +41,25 @@ const QuantityButtons = ({
       <IconButton
         onClick={handleDecrement}
         disabled={unit.quantity === 1}
-        size="large"
         sx={{
           borderRadius: 2,
-          backgroundColor: palette.primary.light,
+          backgroundColor: palette.primary.main,
           color: palette.primary.contrastText,
           "&:hover": {
-            backgroundColor: palette.primary.main,
+            backgroundColor: palette.primary.dark,
           },
         }}
       >
         <RemoveOutlined />
       </IconButton>
-      <Typography variant="body1" component="p" sx={{ pt: 1.5 }}>
-        <b>{unit.quantity}</b>
-      </Typography>
       <IconButton
         onClick={handleIncrement}
-        size="large"
         sx={{
           borderRadius: 2,
-          backgroundColor: palette.primary.light,
+          backgroundColor: palette.primary.main,
           color: palette.primary.contrastText,
           "&:hover": {
-            backgroundColor: palette.primary.main,
+            backgroundColor: palette.primary.dark,
           },
         }}
       >
@@ -104,17 +98,7 @@ export const WarriorActions = ({
   };
 
   return (
-    <Stack direction="column" justifyContent={isMobile ? "end" : "end"}>
-      {isMobile && (
-        <Stack
-          direction="row"
-          spacing={2}
-          justifyContent={isMobile ? "center" : "end"}
-          sx={{ width: "100%", pb: 2 }}
-        >
-          <QuantityButtons unit={unit} warbandId={warbandId} />
-        </Stack>
-      )}
+    <Stack justifyContent="end">
       <Stack
         direction="row"
         spacing={2}
@@ -140,7 +124,6 @@ export const WarriorActions = ({
 
         {(unit.unit_type === "Warrior" || unit.unit_type === "Siege") && (
           <>
-            {!isMobile && <QuantityButtons unit={unit} warbandId={warbandId} />}
             {unit.unit_type === "Warrior" && (
               <IconButton
                 onClick={handleDuplicate}
@@ -164,10 +147,10 @@ export const WarriorActions = ({
           size="large"
           sx={{
             borderRadius: 2,
-            backgroundColor: palette.warning.light,
-            color: palette.warning.contrastText,
+            backgroundColor: palette.error.main,
+            color: palette.error.contrastText,
             "&:hover": {
-              backgroundColor: palette.warning.main,
+              backgroundColor: palette.error.light,
             },
           }}
         >

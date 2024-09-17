@@ -127,7 +127,16 @@ export const ModalRosterTable = () => {
   return (
     <>
       <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
-        <Typography variant="h6" component="h2" flexGrow={1}>
+        <Typography
+          variant="h6"
+          component="h2"
+          flexGrow={1}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+          }}
+        >
           {!isMobile && <ListAlt />}
           <b>Roster Table</b>
         </Typography>
