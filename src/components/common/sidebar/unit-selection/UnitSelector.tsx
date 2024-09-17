@@ -68,6 +68,8 @@ export const UnitSelector = () => {
   };
 
   useEffect(() => {
+    if (!isMobile) return;
+
     window.scrollTo({
       behavior: "smooth",
       top: 0,
