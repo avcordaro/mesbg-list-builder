@@ -34,42 +34,44 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   };
 
   return (
-    <Stack
-      direction="row"
-      spacing={2}
-      justifyContent={isMobile ? "center" : "end"}
-      sx={{ width: "100%", p: 2 }}
-    >
-      <IconButton
-        onClick={handleCardClick}
-        sx={{
-          borderRadius: 2,
-          p: 1.5,
-          color: "white",
-          backgroundColor: palette.grey.A700,
-          "&:hover": {
-            backgroundColor: palette.grey["900"],
-          },
-        }}
+    <Stack direction="column" justifyContent={isMobile ? "end" : "end"}>
+      <Stack
+        direction="row"
+        spacing={2}
+        justifyContent={isMobile ? "center" : "end"}
+        sx={{ width: "100%" }}
       >
-        <BsFillPersonVcardFill />
-      </IconButton>
-      <IconButton
-        onClick={handleDelete}
-        color="warning"
-        aria-label="delete"
-        size="large"
-        sx={{
-          borderRadius: 2,
-          color: "white",
-          backgroundColor: palette.warning.light,
-          "&:hover": {
-            backgroundColor: palette.warning.main,
-          },
-        }}
-      >
-        <CancelIcon />
-      </IconButton>
+        <IconButton
+          onClick={handleCardClick}
+          sx={{
+            borderRadius: 2,
+            p: 1.5,
+            color: "white",
+            backgroundColor: palette.grey.A700,
+            "&:hover": {
+              backgroundColor: palette.grey["900"],
+            },
+          }}
+        >
+          <BsFillPersonVcardFill />
+        </IconButton>
+        <IconButton
+          onClick={handleDelete}
+          color="warning"
+          aria-label="delete"
+          size="large"
+          sx={{
+            borderRadius: 2,
+            color: "white",
+            backgroundColor: palette.warning.light,
+            "&:hover": {
+              backgroundColor: palette.warning.main,
+            },
+          }}
+        >
+          <CancelIcon />
+        </IconButton>
+      </Stack>
     </Stack>
   );
 };

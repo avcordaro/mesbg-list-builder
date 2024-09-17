@@ -19,7 +19,7 @@ export const HeroOptions: FunctionComponent<HeroOptionsProps> = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Stack direction="row" spacing={3}>
+    <Stack direction="row" spacing={3} flexGrow={1}>
       {unit.options[0].option !== "None" && (
         <Box sx={{ px: isMobile ? 2 : 0 }}>
           {unit.options.map((option) => (
