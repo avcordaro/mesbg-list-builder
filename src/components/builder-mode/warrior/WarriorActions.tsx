@@ -104,13 +104,13 @@ export const WarriorActions = ({
   };
 
   return (
-    <Stack>
+    <Stack direction="column" justifyContent={isMobile ? "end" : "end"}>
       {isMobile && (
         <Stack
           direction="row"
           spacing={2}
           justifyContent={isMobile ? "center" : "end"}
-          sx={{ width: "100%", p: 2 }}
+          sx={{ width: "100%", pb: 2 }}
         >
           <QuantityButtons unit={unit} warbandId={warbandId} />
         </Stack>
@@ -119,7 +119,7 @@ export const WarriorActions = ({
         direction="row"
         spacing={2}
         justifyContent={isMobile ? "center" : "end"}
-        sx={{ width: "100%", p: 2 }}
+        sx={{ width: "100%" }}
       >
         {unit.unit_type !== "Siege" && (
           <IconButton

@@ -1,4 +1,6 @@
 import FormControlLabel from "@mui/material/FormControlLabel";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { Option, Unit } from "../../../types/unit.ts";
 import { CustomSwitch as Switch } from "../switch/CustomSwitch.tsx";
 
@@ -19,6 +21,9 @@ export const OptionToggle = ({
     update: Partial<Unit>,
   ) => void;
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   const handleToggle = () => {
     updateState(warbandId, unit.id, {
       options: unit.options.map((o) => {
@@ -57,6 +62,7 @@ export const OptionToggle = ({
           disabled={!selectable}
           onChange={handleToggle}
           name={option.option}
+          sx={{ my: isMobile ? 0 : -2 }}
         />
       }
       label={option.option + " (" + option.points + " points)"}

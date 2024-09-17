@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
@@ -20,15 +21,17 @@ export const WarriorOptionList: FunctionComponent<OptionListProps> = ({
   if (unit.options[0].option === "None") return null;
 
   return (
-    <Box sx={{ px: isMobile ? 2 : 0 }}>
-      {unit.options.map((option) => (
-        <WarriorOption
-          key={option.option_id}
-          option={option}
-          unit={unit}
-          warbandId={warbandId}
-        />
-      ))}
-    </Box>
+    <Stack direction="row" spacing={3} flexGrow={1}>
+      <Box sx={{ px: isMobile ? 2 : 0 }}>
+        {unit.options.map((option) => (
+          <WarriorOption
+            key={option.option_id}
+            option={option}
+            unit={unit}
+            warbandId={warbandId}
+          />
+        ))}
+      </Box>
+    </Stack>
   );
 };

@@ -23,6 +23,7 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
 }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Card sx={{ p: 1 }} elevation={2}>
       <Stack
@@ -78,7 +79,11 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
             />
             <MwfBadge unit={unit} />
           </Stack>
-          <Stack direction="column" spacing={3}>
+          <Stack
+            direction={isTablet ? "column" : "row"}
+            spacing={3}
+            sx={{ pb: 1, px: 1 }}
+          >
             <HeroOptions warbandId={warbandId} unit={unit} />
             <HeroActions warbandId={warbandId} unit={unit} />
           </Stack>
