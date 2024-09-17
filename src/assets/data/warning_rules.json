@@ -865,6 +865,15 @@
       "warning":"(The Dead of Dunharrow) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
     }
   ],
+  "[the_dead_of_dunharrow] rider_of_the_dead_cpt":[
+    {
+      "type":"requires_alliance",
+      "dependencies":[
+        "Historical"
+      ],
+      "warning":"(The Dead of Dunharrow) Warrior models may not lead warbands if the alliance level is 'Convenient' or 'Impossible', due to losing the necessary army bonus."
+    }
+  ],
   "[the_fellowship] arwen":[
     {
       "type":"requires_all",
