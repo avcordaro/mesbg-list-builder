@@ -7,7 +7,15 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Warband } from "../../../types/warband.ts";
 import { WarbandActions } from "./WarbandActions.tsx";
 
-const MobileWarbandInfo = ({ warband }: { warband: Warband }) => {
+const MobileWarbandInfo = ({
+  warband,
+  collapsed,
+  collapse,
+}: {
+  warband: Warband;
+  collapsed: boolean;
+  collapse: (collapsed: boolean) => void;
+}) => {
   return (
     <Stack direction="column" alignItems="center" spacing={2}>
       <Stack direction="row" alignItems="center" sx={{ width: "100%" }}>
@@ -21,8 +29,11 @@ const MobileWarbandInfo = ({ warband }: { warband: Warband }) => {
             }}
           />
         </Box>
-
-        <WarbandActions warband={warband} />
+        <WarbandActions
+          warband={warband}
+          collapse={collapse}
+          collapsed={collapsed}
+        />
       </Stack>
       <Stack direction="row" spacing={3}>
         <Typography
@@ -45,12 +56,24 @@ const MobileWarbandInfo = ({ warband }: { warband: Warband }) => {
   );
 };
 
-export const WarbandInfo = ({ warband }: { warband: Warband }) => {
+export const WarbandInfo = ({
+  warband,
+  collapsed,
+  collapse,
+}: {
+  warband: Warband;
+  collapsed: boolean;
+  collapse: (collapsed: boolean) => void;
+}) => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return isMobile ? (
-    <MobileWarbandInfo warband={warband} />
+    <MobileWarbandInfo
+      warband={warband}
+      collapse={collapse}
+      collapsed={collapsed}
+    />
   ) : (
     <Stack direction="row" alignItems="center" spacing={2}>
       <Chip
@@ -61,41 +84,51 @@ export const WarbandInfo = ({ warband }: { warband: Warband }) => {
           fontWeight: "bolder",
         }}
       />
+      <Stack direction="row" justifyContent="center" spacing={2} flexGrow={1}>
+        {!isTablet && (
+          <Typography color="white">
+            Warband:{" "}
+            <Typography
+              component={isTablet ? "div" : "span"}
+              textAlign="center"
+            >
+              <b>{warband.num}</b>
+            </Typography>
+          </Typography>
+        )}
 
-      <Typography color="white">
-        Warband:{" "}
-        <Typography component={isTablet ? "div" : "span"} textAlign="center">
-          <b>{warband.num}</b>
+        <Typography
+          color={
+            warband.max_units !== "-" && warband.num_units > warband.max_units
+              ? "warning"
+              : "white"
+          }
+        >
+          Units:{" "}
+          <Typography component={isTablet ? "div" : "span"} textAlign="center">
+            <b>
+              {warband.num_units} / {warband.max_units}
+            </b>
+          </Typography>
         </Typography>
-      </Typography>
-
-      <Typography
-        color={
-          warband.max_units !== "-" && warband.num_units > warband.max_units
-            ? "warning"
-            : "white"
-        }
-      >
-        Units:{" "}
-        <Typography component={isTablet ? "div" : "span"} textAlign="center">
-          <b>
-            {warband.num_units} / {warband.max_units}
-          </b>
+        <Typography color="white">
+          Points:{" "}
+          <Typography component={isTablet ? "div" : "span"} textAlign="center">
+            <b>{warband.points}</b>
+          </Typography>
         </Typography>
-      </Typography>
-      <Typography color="white">
-        Points:{" "}
-        <Typography component={isTablet ? "div" : "span"} textAlign="center">
-          <b>{warband.points}</b>
+        <Typography color="white">
+          Bows:{" "}
+          <Typography component={isTablet ? "div" : "span"} textAlign="center">
+            <b>{warband.bow_count}</b>
+          </Typography>
         </Typography>
-      </Typography>
-      <Typography color="white">
-        Bows:{" "}
-        <Typography component={isTablet ? "div" : "span"} textAlign="center">
-          <b>{warband.bow_count}</b>
-        </Typography>
-      </Typography>
-      <WarbandActions warband={warband} />
+      </Stack>
+      <WarbandActions
+        warband={warband}
+        collapse={collapse}
+        collapsed={collapsed}
+      />
     </Stack>
   );
 };

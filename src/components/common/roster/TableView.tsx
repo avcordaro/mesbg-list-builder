@@ -121,6 +121,7 @@ export function RosterTableView({
               px: 2,
               py: 1,
               borderRadius: 100,
+              whiteSpace: "nowrap",
             }}
           >
             {allianceLevel}
@@ -182,6 +183,7 @@ export function RosterTableView({
                       px: 2,
                       py: 1,
                       borderRadius: 100,
+                      whiteSpace: "nowrap",
                     }}
                   >
                     {f}

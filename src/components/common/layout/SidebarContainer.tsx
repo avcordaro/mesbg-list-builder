@@ -36,10 +36,18 @@ export const SidebarContainer: FunctionComponent<
       }}
     >
       <Stack direction={shouldWrapButtons ? "column" : "row"} sx={{ mb: 2 }}>
-        <Typography variant="h5" component="span" flexGrow={1}>
-          <b>
-            {icon} {title}
-          </b>
+        <Typography
+          variant="h5"
+          component="span"
+          flexGrow={1}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+          }}
+        >
+          {icon}
+          <b>{title}</b>
         </Typography>
         <Button
           variant="outlined"

@@ -49,7 +49,16 @@ export const ModalContainer = () => {
         {!currentModal.customModalHeader && (
           <>
             <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
-              <Typography variant="h6" component="h2" flexGrow={1}>
+              <Typography
+                variant="h6"
+                component="h2"
+                flexGrow={1}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
                 {currentModal.icon} {title || currentModal.title}
               </Typography>
               <IconButton onClick={state.closeModal} sx={{ ml: "auto" }}>

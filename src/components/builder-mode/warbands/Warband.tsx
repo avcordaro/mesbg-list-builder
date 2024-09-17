@@ -1,10 +1,11 @@
 import AddIcon from "@mui/icons-material/Add";
+import { Collapse } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
@@ -20,6 +21,7 @@ type WarbandProps = {
 
 export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
   const { addUnit, updateBuilderSidebar } = useStore();
+  const [collapsed, setCollapsed] = useState(false);
   const theme = useTheme();
 
   const handleNewWarrior = () => {
@@ -61,37 +63,54 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
       }}
     >
       <Stack spacing={1}>
-        <WarbandInfo warband={warband} />
+        <WarbandInfo
+          warband={warband}
+          collapse={setCollapsed}
+          collapsed={collapsed}
+        />
 
         <Box data-scroll-id={warband.id}>
           {!isDefinedUnit(warband.hero) ? (
             <ChooseHeroButton warbandId={warband.id} />
           ) : (
-            <WarbandHero warbandId={warband.id} unit={warband.hero} />
+            <WarbandHero
+              warbandId={warband.id}
+              unit={warband.hero}
+              collapsed={collapsed}
+            />
           )}
         </Box>
 
-        {warband.units.map((unit) => (
-          <Box key={unit.id} data-scroll-id={unit.id}>
-            {!isDefinedUnit(unit) ? (
-              <ChooseWarriorButton warbandId={warband.id} unit={unit} />
-            ) : (
-              <WarbandWarrior warbandId={warband.id} unit={unit} />
-            )}
-          </Box>
-        ))}
+        {warband.units
+          // Filters 'choose a warrior buttons if the warband is collapsed
+          .filter((unit) => !collapsed || isDefinedUnit(unit))
+          .map((unit) => (
+            <Box key={unit.id} data-scroll-id={unit.id}>
+              {!isDefinedUnit(unit) ? (
+                <ChooseWarriorButton warbandId={warband.id} unit={unit} />
+              ) : (
+                <WarbandWarrior
+                  warbandId={warband.id}
+                  unit={unit}
+                  collapsed={collapsed}
+                />
+              )}
+            </Box>
+          ))}
 
-        {isHeroWhoLeads(warband.hero) && (
-          <Button
-            onClick={() => handleNewWarrior()}
-            variant="contained"
-            color="info"
-            fullWidth
-            endIcon={<AddIcon />}
-          >
-            Add Unit
-          </Button>
-        )}
+        <Collapse in={!collapsed}>
+          {isHeroWhoLeads(warband.hero) && (
+            <Button
+              onClick={() => handleNewWarrior()}
+              variant="contained"
+              color="primary"
+              fullWidth
+              endIcon={<AddIcon />}
+            >
+              Add Unit
+            </Button>
+          )}
+        </Collapse>
       </Stack>
     </Card>
   );

@@ -64,12 +64,12 @@ const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
         <Typography variant="h6" color="textDisabled" flexGrow={1}>
           <s>
             <b>{hero.name}</b>
-            {hero.leader && (
-              <Typography component="span" color="success">
-                <GiQueenCrown />
-              </Typography>
-            )}
           </s>
+          {hero.leader && (
+            <Typography component="span" color="success" sx={{ mx: 1 }}>
+              <GiQueenCrown />
+            </Typography>
+          )}
           <Box component="span" sx={{ ml: 1 }}>
             <FaSkullCrossbones />
           </Box>

@@ -50,23 +50,26 @@ const RosterInfoBar = () => {
       }}
     >
       <Stack
-        direction={isMobile ? "column" : "row"}
-        spacing={isMobile ? 0 : 4}
+        direction="row"
+        spacing={isMobile ? 2 : 4}
         justifyContent="center"
+        textAlign="center"
         flexWrap="wrap"
       >
         <Typography variant="body1" component="div">
-          Total Points: <b>{roster.points}</b>
+          Points: <b>{roster.points}</b>
         </Typography>
         <Typography variant="body1" component="div">
-          Total Units: <b>{roster.num_units}</b>
+          Units: <b>{roster.num_units}</b>
         </Typography>
         <Typography variant="body1" component="div">
           Break Point: <b>{breakPoint}</b>
         </Typography>
-        <Typography variant="body1" component="div">
-          Bows: <b>{roster.bow_count}</b>
-        </Typography>
+        {!isMobile && (
+          <Typography variant="body1" component="div">
+            Bows: <b>{roster.bow_count}</b>
+          </Typography>
+        )}
       </Stack>
     </Box>
   );

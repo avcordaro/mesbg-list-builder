@@ -1,3 +1,4 @@
+import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IconButton from "@mui/material/IconButton";
@@ -6,7 +7,15 @@ import useTheme from "@mui/material/styles/useTheme";
 import { useStore } from "../../../state/store.ts";
 import { Warband } from "../../../types/warband.ts";
 
-export const WarbandActions = ({ warband }: { warband: Warband }) => {
+export const WarbandActions = ({
+  warband,
+  collapsed,
+  collapse,
+}: {
+  warband: Warband;
+  collapsed: boolean;
+  collapse: (collapsed: boolean) => void;
+}) => {
   const { duplicateWarband, deleteWarband, updateBuilderSidebar } = useStore();
   const { palette } = useTheme();
 
@@ -27,7 +36,21 @@ export const WarbandActions = ({ warband }: { warband: Warband }) => {
   };
 
   return (
-    <Stack direction="row" spacing={1} flexGrow={1} justifyContent="end">
+    <Stack direction="row" spacing={1} justifyContent="end">
+      <IconButton
+        onClick={handleDeleteWarband}
+        aria-label="delete"
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.error.dark,
+          "&:hover": {
+            backgroundColor: palette.error.light,
+          },
+        }}
+      >
+        <CancelIcon />
+      </IconButton>
       <IconButton
         onClick={handleCopyWarband}
         aria-label="delete"
@@ -42,19 +65,20 @@ export const WarbandActions = ({ warband }: { warband: Warband }) => {
       >
         <ContentCopyIcon />
       </IconButton>
+
       <IconButton
-        onClick={handleDeleteWarband}
-        aria-label="delete"
+        onClick={() => collapse(!collapsed)}
+        aria-label="colapse"
         sx={{
           borderRadius: 2,
           color: "white",
-          backgroundColor: palette.error.dark,
+          backgroundColor: palette.grey.A400,
           "&:hover": {
-            backgroundColor: palette.error.light,
+            backgroundColor: palette.grey.A700,
           },
         }}
       >
-        <CancelIcon />
+        {collapsed ? <UnfoldMore /> : <UnfoldLess />}
       </IconButton>
     </Stack>
   );

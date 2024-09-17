@@ -62,10 +62,10 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
           size="large"
           sx={{
             borderRadius: 2,
-            color: "white",
-            backgroundColor: palette.warning.light,
+            backgroundColor: palette.error.main,
+            color: palette.error.contrastText,
             "&:hover": {
-              backgroundColor: palette.warning.main,
+              backgroundColor: palette.error.light,
             },
           }}
         >
