@@ -149,7 +149,7 @@ export const Header = () => {
       <AppBar position="static" sx={{ backgroundColor: "#1c1c1e" }}>
         <Toolbar>
           {/* Logo */}
-          <Button aria-label="logo" sx={{ mr: 2 }}>
+          <Button aria-label="logo" sx={{ mr: 2 }} href={window.location.href}>
             <img src={logo} alt="Logo" style={{ height: "50px" }} />
             <img
               src={title}
