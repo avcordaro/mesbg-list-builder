@@ -1,0 +1,76 @@
+{
+  "name": "Middle-Earth Strategy Battle Game - List Builder",
+  "short_name": "MESBG List Builder",
+  "description": "(Unofficial) A simple and intuitive tool for building your army lists in Middle-Earth Strategy Battle Game (MESBG).",
+  "start_url": "/mesbg-list-builder/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/mesbg-list-builder/icons/icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/mesbg-list-builder/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/mesbg-list-builder/screenshots/screenshot-1920x1080.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+
+    {
+      "src": "/mesbg-list-builder/screenshots/screenshot-412x915.png",
+      "type": "image/png",
+      "sizes": "412x915",
+      "form_factor": "narrow"
+    }
+  ]
+}
