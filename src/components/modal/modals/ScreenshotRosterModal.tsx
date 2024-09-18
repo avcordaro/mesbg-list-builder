@@ -1,10 +1,10 @@
 import { Button, DialogContent } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { useStore } from "../../../state/store.ts";
-import { IoArrowBackCircle } from "react-icons/io5";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { ModalTypes } from "../../modal/modals.tsx";
 import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { IoArrowBackCircle } from "react-icons/io5";
+import { useStore } from "../../../state/store.ts";
+import { ModalTypes } from "../../modal/modals.tsx";
 
 export const ScreenshotRosterModal = () => {
   const { modalContext, setCurrentModal } = useStore();
@@ -15,10 +15,10 @@ export const ScreenshotRosterModal = () => {
     <DialogContent>
       <Button
         variant="contained"
-        onClick={ () => setCurrentModal(ModalTypes.ROSTER_TABLE)}
+        onClick={() => setCurrentModal(ModalTypes.ROSTER_TABLE)}
         startIcon={<IoArrowBackCircle />}
         fullWidth={isMobile}
-        sx={{mb: 2}}
+        sx={{ mb: 2 }}
       >
         Back to Roster
       </Button>
