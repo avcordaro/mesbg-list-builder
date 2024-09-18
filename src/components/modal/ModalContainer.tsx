@@ -22,7 +22,7 @@ const style = {
 export const ModalContainer = () => {
   const state = useStore();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   if (!state.currentlyOpenendModal) {
     // No model is shown, return...
@@ -40,7 +40,7 @@ export const ModalContainer = () => {
       <Box
         sx={{
           ...style,
-          minWidth: isMobile ? "90vw" : "72ch",
+          minWidth: isMobile ? "90vw" : "100ch",
           maxWidth: "90vw",
           maxHeight: "90vh",
           overflowY: "scroll",
