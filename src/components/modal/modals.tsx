@@ -1,9 +1,11 @@
+import SaveIcon from "@mui/icons-material/Save";
 import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
 import { FaHammer, FaImage } from "react-icons/fa6";
 import { TbRefresh } from "react-icons/tb";
 import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
+import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { ModalRosterTable } from "./modals/ModalRosterTable";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
@@ -12,12 +14,13 @@ import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
 
 export enum ModalTypes {
   BUILDER_MODE = "BUILDER_MODE",
-  IMPORT_ROSTER_JSON = "IMPORT_ROSTER_JSON",
   PROFILE_CARD = "PROFILE_CARD",
   CHART = "CHART",
   RESET_GAME_MODE = "RESET_GAME_MODE",
   ROSTER_TABLE = "ROSTER_TABLE",
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
+  EXPORT_ROSTER = "EXPORT_ROSTER",
+  IMPORT_ROSTER = "IMPORT_ROSTER",
 }
 
 export type ModalProps = {
@@ -37,7 +40,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
     },
   ],
   [
-    ModalTypes.IMPORT_ROSTER_JSON,
+    ModalTypes.IMPORT_ROSTER,
     {
       icon: <FaFileImport />,
       title: "Import JSON",
@@ -83,6 +86,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <FaImage />,
       title: "Screenshot",
       children: <ScreenshotRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.EXPORT_ROSTER,
+    {
+      icon: <SaveIcon />,
+      title: "Save roster",
+      children: <ExportRosterModal />,
     },
   ],
 ]);

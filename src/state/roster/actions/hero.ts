@@ -1,3 +1,4 @@
+import rawData from "../../../assets/data/hero_constraint_data.json";
 import { Unit } from "../../../types/unit.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
@@ -5,6 +6,15 @@ import {
   handleMahudChief,
   handleSiegeEngineCaptainUpdates,
 } from "../calculations";
+
+const heroCanTakeUnit = (hero: Unit, unit: Unit) => {
+  if (hero.faction !== unit.faction) return false;
+
+  const heroConstraints = rawData[hero.model_id];
+  if (!heroConstraints) return true;
+  const { valid_warband_units } = heroConstraints[0];
+  return valid_warband_units.includes(unit.model_id);
+};
 
 export const assignHero =
   (warbandId: string, heroId: string, hero: Unit) =>
@@ -20,7 +30,9 @@ export const assignHero =
             ...hero,
             id: heroId,
           },
-          units: warband.units.filter((unit) => hero.faction === unit.faction),
+          units: warband.units.map((unit) =>
+            heroCanTakeUnit(hero, unit) ? unit : { id: unit.id, name: null },
+          ),
         };
       }),
     },

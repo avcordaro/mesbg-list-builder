@@ -1,7 +1,6 @@
 import { Container, Grid2 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useEffect, useState } from "react";
 import { Alerts } from "./components/alerts/Alerts";
 import { BuilderMode } from "./components/builder-mode/BuilderMode.tsx";
 import { AppContainer } from "./components/common/layout/AppContainer.tsx";
@@ -16,15 +15,6 @@ export const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
-  const [rosterTotalsBarHeight, setRosterTotalsBarHeight] = useState(64);
-
-  useEffect(() => {
-    const y: number =
-      document.getElementById("roster-totals")?.getBoundingClientRect()
-        ?.height || 64;
-    setRosterTotalsBarHeight(y);
-  }, []);
-
   return (
     <AppContainer>
       <Container maxWidth={false} fixed sx={{ p: 2 }}>
@@ -38,7 +28,7 @@ export const App = () => {
                   ? {}
                   : {
                       position: "sticky",
-                      top: rosterTotalsBarHeight + 16,
+                      top: 16,
                       height: "100%",
                       overflow: "auto",
                       scrollbarWidth: "thin",

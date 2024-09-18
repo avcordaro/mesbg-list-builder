@@ -1,12 +1,8 @@
-import {
-  Attachment,
-  FileDownload,
-  Handyman,
-  ListAlt,
-} from "@mui/icons-material";
+import { Handyman } from "@mui/icons-material";
 import FortIcon from "@mui/icons-material/Fort";
 import MenuIcon from "@mui/icons-material/Menu";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import SearchIcon from "@mui/icons-material/Search";
 import { ListItemButton, ListItemIcon } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -92,15 +88,6 @@ export const Header = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleExportJSON = () => {
-    /* Convert the full roster dictionary into a JSON string and save it to the user's clipboard.
-                            Also notify them with an alert that fades away after 3 seconds. */
-    navigator.clipboard.writeText(
-      JSON.stringify(roster).replaceAll('["",', "[0,"),
-    );
-    triggerAlert(AlertTypes.EXPORT_ALERT);
-  };
-
   const handleGameMode = () => {
     if (parseInt(roster.version.substring(0, 1)) < 5) {
       triggerAlert(AlertTypes.GAMEMODE_ALERT);
@@ -113,13 +100,6 @@ export const Header = () => {
   // List of buttons
   const buttons = [
     {
-      icon: <QuestionMarkIcon />,
-      label: "New Edition",
-      onClick: () => openSidebar(DrawerTypes.NEW_EDITION_NEWS),
-      outlined: true,
-      color: "inherit" as ButtonProps["color"],
-    },
-    {
       icon: gameMode ? <Handyman /> : <FortIcon />,
       label: gameMode ? "Builder" : "Game Mode",
       onClick: gameMode
@@ -128,19 +108,18 @@ export const Header = () => {
       color: "success" as ButtonProps["color"],
     },
     {
-      icon: <ListAlt />,
-      label: "Roster Table",
-      onClick: () => setCurrentModal(ModalTypes.ROSTER_TABLE),
+      icon: <SearchIcon />,
+      label: "Keywords",
+      onClick: () => openSidebar(DrawerTypes.KEYWORD_SEARCH),
+      outlined: true,
+      color: "inherit" as ButtonProps["color"],
     },
     {
-      icon: <Attachment />,
-      label: "Export JSON",
-      onClick: handleExportJSON,
-    },
-    {
-      icon: <FileDownload />,
-      label: "Import JSON",
-      onClick: () => setCurrentModal(ModalTypes.IMPORT_ROSTER_JSON),
+      icon: <QuestionMarkIcon />,
+      label: "New Edition",
+      onClick: () => openSidebar(DrawerTypes.NEW_EDITION_NEWS),
+      outlined: true,
+      color: "inherit" as ButtonProps["color"],
     },
   ];
 

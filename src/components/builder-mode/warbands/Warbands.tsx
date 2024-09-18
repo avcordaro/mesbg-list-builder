@@ -17,7 +17,7 @@ export const Warbands = () => {
   };
 
   return (
-    <Stack spacing={1}>
+    <Stack spacing={1} sx={{ pb: 16 }}>
       {roster.warbands.map((warband) => (
         <Warband key={warband.id} warband={warband} />
       ))}
