@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 export const Footer = () => {
   return (
     <Box
+      id="footer"
       sx={{
         backgroundColor: "#1c1c1e",
         color: "white",

@@ -35,6 +35,7 @@ const UnitRow = ({
 }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <TableRow sx={rowStyle}>
       {!isMobile && <TableCell>{warbandNum} </TableCell>}
@@ -146,7 +147,7 @@ export function RosterTableView({
           size="small"
         >
           <TableHead>
-            <TableRow>
+            <TableRow sx={{ backgroundColor: "white" }}>
               {!isMobile && <TableCell>Warband</TableCell>}
               <TableCell>Name</TableCell>
               <TableCell>Options</TableCell>
