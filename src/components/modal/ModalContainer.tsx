@@ -30,11 +30,11 @@ export const ModalContainer = () => {
   }
 
   const currentModal = modals.get(state.currentlyOpenendModal);
-  const { title } = state?.modalContext || {};
+  const { title, onClose } = state?.modalContext || {};
   return (
     <Dialog
       open={true} // handled by the modal container, so this should always be true
-      onClose={() => state.closeModal()}
+      onClose={onClose ? onClose : () => state.closeModal()}
       scroll="paper"
     >
       <Box
@@ -61,7 +61,10 @@ export const ModalContainer = () => {
               >
                 {currentModal.icon} {title || currentModal.title}
               </Typography>
-              <IconButton onClick={state.closeModal} sx={{ ml: "auto" }}>
+              <IconButton
+                onClick={onClose ? onClose : () => state.closeModal()}
+                sx={{ ml: "auto" }}
+              >
                 <CloseIcon />
               </IconButton>
             </Box>
