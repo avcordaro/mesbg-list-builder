@@ -39,7 +39,7 @@ export const App = () => {
                   : {
                       position: "sticky",
                       top: rosterTotalsBarHeight + 16,
-                      height: "90vh",
+                      height: "100%",
                       overflow: "auto",
                       scrollbarWidth: "thin",
                     }
