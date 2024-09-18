@@ -3,6 +3,7 @@ import { AllianceLevel } from "../../../constants/alliances.ts";
 import { FactionData } from "../../../types/faction-data.ts";
 import { Faction, Factions } from "../../../types/factions.ts";
 import { Roster } from "../../../types/roster.ts";
+import { isDefinedUnit } from "../../../types/unit.ts";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
 import { ModelCountData } from "./models.ts";
 
@@ -178,6 +179,8 @@ function checkForFactionErrors(
 function checkWarriorCaptains(roster: Roster, alliance: AllianceLevel) {
   return roster.warbands
     .map((warband) => {
+      if (!isDefinedUnit(warband.hero)) return null;
+
       if (
         [
           "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
