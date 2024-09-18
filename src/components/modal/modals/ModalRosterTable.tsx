@@ -59,6 +59,8 @@ export const ModalRosterTable = () => {
       html2canvas(rosterList).then(function (data) {
         setCurrentModal(ModalTypes.ROSTER_SCREENSHOT, {
           screenshot: data.toDataURL(),
+          rawScreenshot: data,
+          onClose: () => setCurrentModal(ModalTypes.ROSTER_TABLE),
         });
         setScreenshotting(false);
       });

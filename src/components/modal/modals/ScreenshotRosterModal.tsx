@@ -1,42 +1,54 @@
-import { Button, DialogContent } from "@mui/material";
+import { ContentCopyOutlined } from "@mui/icons-material";
+import { Button, DialogActions, DialogContent } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { IoArrowBackCircle } from "react-icons/io5";
 import { useStore } from "../../../state/store.ts";
-import { ModalTypes } from "../../modal/modals.tsx";
+import { AlertTypes } from "../../alerts/alert-types.tsx";
 
 export const ScreenshotRosterModal = () => {
-  const { modalContext, setCurrentModal } = useStore();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const { modalContext, triggerAlert } = useStore();
+
+  const copyImageToClipboard = () => {
+    if (!modalContext.rawScreenshot) return;
+    modalContext.rawScreenshot.toBlob((screenshot: Blob) => {
+      navigator.clipboard
+        .write([
+          new ClipboardItem({
+            "image/png": screenshot,
+          }),
+        ])
+        .then(() => triggerAlert(AlertTypes.SCREENSHOT_COPIED_ALERT));
+    });
+  };
 
   return (
-    <DialogContent>
-      <Button
-        variant="contained"
-        onClick={() => setCurrentModal(ModalTypes.ROSTER_TABLE)}
-        startIcon={<IoArrowBackCircle />}
-        fullWidth={isMobile}
-        sx={{ mb: 2 }}
-      >
-        Back to Roster
-      </Button>
-      <Typography variant="subtitle2">
-        The following is a screenshot image of your roster list which you can
-        download, or copy to your clipboard as you wish.
-      </Typography>
-      {modalContext.screenshot != null && (
-        <img
-          src={modalContext.screenshot}
-          alt="roster screenshot"
-          style={{
-            margin: "1rem 0",
-            border: "1px solid black",
-            boxShadow: "1px 1px 5px 0px #000000AA",
-          }}
-        />
-      )}
-    </DialogContent>
+    <>
+      <DialogContent>
+        <Typography variant="subtitle2">
+          The following is a screenshot image of your roster list which you can
+          download, or copy to your clipboard as you wish.
+        </Typography>
+        {modalContext.screenshot != null && (
+          <img
+            src={modalContext.screenshot}
+            alt="roster screenshot"
+            style={{
+              margin: "1rem 0",
+              border: "1px solid black",
+              boxShadow: "1px 1px 5px 0px #000000AA",
+            }}
+          />
+        )}
+      </DialogContent>
+      <DialogActions>
+        <Button
+          variant="contained"
+          onClick={copyImageToClipboard}
+          color="primary"
+          startIcon={<ContentCopyOutlined />}
+        >
+          Copy image to clipboard
+        </Button>
+      </DialogActions>
+    </>
   );
 };
