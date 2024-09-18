@@ -1917,10 +1917,10 @@
   "[buhrdur's_horde] angmar_orc_captain":[
     {
       "valid_warband_units":[
-        "[burdhur's_horde] angmar_orc_warrior",
-        "[burdhur's_horde] angmar_warg_rider",
-        "[burdhur's_horde] hill_troll",
-        "[burdhur's_horde] wild_warg"
+        "[buhrdur's_horde] angmar_orc_warrior",
+        "[buhrdur's_horde] angmar_warg_rider",
+        "[buhrdur's_horde] hill_troll",
+        "[buhrdur's_horde] wild_warg"
       ],
       "special_warband_options":[
 
@@ -1934,10 +1934,10 @@
   "[buhrdur's_horde] angmar_orc_shaman":[
     {
       "valid_warband_units":[
-        "[burdhur's_horde] angmar_orc_warrior",
-        "[burdhur's_horde] angmar_warg_rider",
-        "[burdhur's_horde] hill_troll",
-        "[burdhur's_horde] wild_warg"
+        "[buhrdur's_horde] angmar_orc_warrior",
+        "[buhrdur's_horde] angmar_warg_rider",
+        "[buhrdur's_horde] hill_troll",
+        "[buhrdur's_horde] wild_warg"
       ],
       "special_warband_options":[
 
@@ -1951,10 +1951,10 @@
   "[buhrdur's_horde] buhrdur":[
     {
       "valid_warband_units":[
-        "[burdhur's_horde] angmar_orc_warrior",
-        "[burdhur's_horde] angmar_warg_rider",
-        "[burdhur's_horde] hill_troll",
-        "[burdhur's_horde] wild_warg"
+        "[buhrdur's_horde] angmar_orc_warrior",
+        "[buhrdur's_horde] angmar_warg_rider",
+        "[buhrdur's_horde] hill_troll",
+        "[buhrdur's_horde] wild_warg"
       ],
       "special_warband_options":[
 
@@ -1968,10 +1968,10 @@
   "[buhrdur's_horde] wild_warg_chieftain":[
     {
       "valid_warband_units":[
-        "[burdhur's_horde] angmar_orc_warrior",
-        "[burdhur's_horde] angmar_warg_rider",
-        "[burdhur's_horde] hill_troll",
-        "[burdhur's_horde] wild_warg"
+        "[buhrdur's_horde] angmar_orc_warrior",
+        "[buhrdur's_horde] angmar_warg_rider",
+        "[buhrdur's_horde] hill_troll",
+        "[buhrdur's_horde] wild_warg"
       ],
       "special_warband_options":[
 
