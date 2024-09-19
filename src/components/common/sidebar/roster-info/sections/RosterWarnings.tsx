@@ -19,7 +19,7 @@ export function RosterWarnings() {
         </Stack>
       </Divider>
       {warnings.map((w, i) => (
-        <Typography key={i} color="error">
+        <Typography sx={{ mt: 1.5 }} key={i} color="error">
           {w}
         </Typography>
       ))}
