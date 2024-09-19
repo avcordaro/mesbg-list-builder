@@ -43,9 +43,9 @@ const UnitRow = ({
         {!unit.unit_type.includes("Hero") && <>{unit.quantity}x </>}
         {unit.name}{" "}
         {leader && (
-          <>
-            - <GiQueenCrown /> Leader{" "}
-          </>
+          <Typography component="span" variant="body2">
+            - <GiQueenCrown /> Leader
+          </Typography>
         )}
       </TableCell>
       <TableCell>
@@ -72,9 +72,19 @@ const WarbandRows = ({ warband }: { warband: Warband }) => {
   return (
     <>
       <UnitRow
-        unit={warband.hero}
+        unit={
+          isDefinedUnit(warband.hero)
+            ? warband.hero
+            : ({
+                name: "-- NO HERO SELECTED --",
+                unit_type: "Hero of something...",
+                options: [],
+              } as Unit)
+        }
         warbandNum={warband.num}
-        leader={roster.leader_warband_id === warband.id}
+        leader={
+          isDefinedUnit(warband.hero) && roster.leader_warband_id === warband.id
+        }
         rowStyle={rowStyle}
       />
       {warband.units.filter(isDefinedUnit).map((unit) => (
