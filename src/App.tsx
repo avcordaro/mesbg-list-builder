@@ -28,7 +28,7 @@ export const App = () => {
                   ? {}
                   : {
                       position: "sticky",
-                      top: 16,
+                      top: 70,
                       height: "100%",
                       overflow: "auto",
                       scrollbarWidth: "thin",
