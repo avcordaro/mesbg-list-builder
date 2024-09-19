@@ -53,11 +53,11 @@ export const FactionPickerDropdown: FunctionComponent<
     );
     switch (allianceLevel) {
       case "Historical":
-        return theme.palette.success.light;
+        return theme.palette.success.main;
       case "Convenient":
         return theme.palette.warning.light;
       case "Impossible":
-        return theme.palette.error.light;
+        return theme.palette.error.main;
       default:
         return "black";
     }
