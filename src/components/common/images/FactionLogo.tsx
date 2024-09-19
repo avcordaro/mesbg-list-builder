@@ -1,5 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import { FunctionComponent } from "react";
+import fallbackLogo from "../../../assets/images/default.png";
 
 type FactionLogoProps = {
   faction: string;
@@ -20,7 +21,7 @@ export const FactionLogo: FunctionComponent<FactionLogoProps> = ({
   >
     <Avatar
       alt={`${faction} logo`}
-      src="./assets/images/default.png"
+      src={fallbackLogo}
       sx={{
         width: 24,
         height: 24,

@@ -34,7 +34,7 @@ export const ProfileCards = () => {
       const heroProfile = { profile: hero.name, army: hero.profile_origin };
       const extraProfiles = getExtraProfilesForHero(hero);
       const unitProfiles = units
-        .filter((unit) => !isDefinedUnit(unit) || unit.unit_type !== "Siege")
+        .filter((unit) => isDefinedUnit(unit) && unit.unit_type !== "Siege")
         .map((unit: Unit) => ({
           profile: unit.name,
           army: unit.profile_origin,

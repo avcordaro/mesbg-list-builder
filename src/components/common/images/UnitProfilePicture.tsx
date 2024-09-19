@@ -1,5 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import { FunctionComponent } from "react";
+import fallbackLogo from "../../../assets/images/default.png";
 
 export type UnitProfileProps = {
   army: string;
@@ -28,7 +29,7 @@ export const UnitProfilePicture: FunctionComponent<UnitProfileProps> = ({
     >
       <Avatar
         alt={`Profile picture for ${profile}`}
-        src="./assets/images/default.png"
+        src={fallbackLogo}
         sx={{
           width: sizeUnits,
           height: sizeUnits,
