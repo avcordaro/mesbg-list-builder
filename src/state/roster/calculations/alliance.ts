@@ -29,7 +29,7 @@ export const checkAlliance = (
   return "Impossible";
 };
 
-const getAllianceLevel = (factionList: Faction[]): AllianceLevel => {
+export const getAllianceLevel = (factionList: Faction[]): AllianceLevel => {
   // Create all possible pairs from the list of factions
   const pairs = factionList.flatMap((faction, index) =>
     factionList.slice(index + 1).map((otherFaction) => [faction, otherFaction]),

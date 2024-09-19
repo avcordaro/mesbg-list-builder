@@ -8,8 +8,11 @@ import {
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
+import { AllianceLevel } from "../../../../constants/alliances.ts";
 import { useMesbgData } from "../../../../hooks/mesbg-data.ts";
+import { getAllianceLevel } from "../../../../state/roster/calculations";
 import { useStore } from "../../../../state/store.ts";
 import { Faction, FactionType } from "../../../../types/factions.ts";
 import { FactionLogo } from "../../images/FactionLogo.tsx";
@@ -23,12 +26,14 @@ export const FactionPickerDropdown: FunctionComponent<
 > = ({ type }) => {
   const { getFactionsOfType } = useMesbgData();
   const {
+    factions,
     factionSelection,
     updateBuilderSidebar,
     heroSelection,
     factionType: currentlySelectedFactionType,
   } = useStore();
   const theme = useTheme();
+  const isLaptopOrBigger = useMediaQuery(theme.breakpoints.up("lg"));
 
   const selectFaction = (faction: Faction) => {
     updateBuilderSidebar({
@@ -37,6 +42,25 @@ export const FactionPickerDropdown: FunctionComponent<
         [type]: faction,
       },
     });
+  };
+
+  const getFactionColor = (faction: Faction) => {
+    if (factions.length === 0) return "black";
+
+    const selectionIncludingFaction = [...new Set([...factions, faction])];
+    const allianceLevel: AllianceLevel = getAllianceLevel(
+      selectionIncludingFaction,
+    );
+    switch (allianceLevel) {
+      case "Historical":
+        return theme.palette.success.light;
+      case "Convenient":
+        return theme.palette.warning.light;
+      case "Impossible":
+        return theme.palette.error.light;
+      default:
+        return "black";
+    }
   };
 
   return (
@@ -64,7 +88,12 @@ export const FactionPickerDropdown: FunctionComponent<
         {getFactionsOfType(type)
           .sort()
           .map((name) => (
-            <MenuItem key={name} value={name}>
+            <MenuItem
+              key={name}
+              value={name}
+              dense={isLaptopOrBigger}
+              sx={{ color: getFactionColor(name) }}
+            >
               <Stack direction="row" spacing={1}>
                 <FactionLogo faction={name} />
                 <Typography>{name}</Typography>
