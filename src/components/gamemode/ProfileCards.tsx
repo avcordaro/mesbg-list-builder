@@ -22,6 +22,21 @@ export const ProfileCards = () => {
     }
     const extraProfiles =
       hero_constraint_data[hero.model_id][0]["extra_profiles"];
+
+    if (hero.name === "Azog") {
+      // Filter the white warg / signal tower if the option is not chosen.
+      return extraProfiles
+        .filter((profile) =>
+          hero.options.find(
+            (option) => option.option === profile && option.opt_quantity > 0,
+          ),
+        )
+        .map((profile) => ({
+          profile,
+          army: hero.profile_origin,
+        }));
+    }
+
     return extraProfiles.map((profile) => ({
       profile,
       army: hero.profile_origin,
