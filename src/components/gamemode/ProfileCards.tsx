@@ -22,6 +22,21 @@ export const ProfileCards = () => {
     }
     const extraProfiles =
       hero_constraint_data[hero.model_id][0]["extra_profiles"];
+
+    if (hero.name === "Azog") {
+      // Filter the white warg / signal tower if the option is not chosen.
+      return extraProfiles
+        .filter((profile) =>
+          hero.options.find(
+            (option) => option.option === profile && option.opt_quantity > 0,
+          ),
+        )
+        .map((profile) => ({
+          profile,
+          army: hero.profile_origin,
+        }));
+    }
+
     return extraProfiles.map((profile) => ({
       profile,
       army: hero.profile_origin,
@@ -30,11 +45,11 @@ export const ProfileCards = () => {
 
   const allProfiles: { profile: string; army: string }[] =
     roster.warbands.flatMap(({ hero, units }) => {
-      if (!hero) return [];
+      if (!isDefinedUnit(hero)) return [];
       const heroProfile = { profile: hero.name, army: hero.profile_origin };
       const extraProfiles = getExtraProfilesForHero(hero);
       const unitProfiles = units
-        .filter((unit) => !isDefinedUnit(unit) || unit.unit_type !== "Siege")
+        .filter((unit) => isDefinedUnit(unit) && unit.unit_type !== "Siege")
         .map((unit: Unit) => ({
           profile: unit.name,
           army: unit.profile_origin,

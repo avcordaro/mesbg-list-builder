@@ -22,6 +22,7 @@ import { Fragment, useState } from "react";
 import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useStore } from "../../../state/store.ts";
+import { isDefinedUnit } from "../../../types/unit.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -91,10 +92,19 @@ export const Header = () => {
   const handleGameMode = () => {
     if (parseInt(roster.version.substring(0, 1)) < 5) {
       triggerAlert(AlertTypes.GAMEMODE_ALERT);
-    } else {
-      startNewGame();
-      window.scrollTo(0, 0);
+      return;
     }
+
+    const warbandsWithoutHero = roster.warbands.filter(
+      (warband) => !isDefinedUnit(warband.hero),
+    );
+    if (warbandsWithoutHero.length > 0) {
+      setCurrentModal(ModalTypes.INCOMPLETE_WARBAND_WARNING);
+      return;
+    }
+
+    startNewGame();
+    window.scrollTo(0, 0);
   };
 
   // List of buttons

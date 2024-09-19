@@ -35,6 +35,7 @@ const extraUnitsOnHero = (hero: Unit) => {
 };
 
 export const calculateWarbandModelCount = (warband: Warband) => {
+  if (!isDefinedUnit(warband.hero)) return 0;
   const units = warband.units
     .filter((unit) => isDefinedUnit(unit) && unit.unit_type !== "Siege")
     .map(
@@ -48,6 +49,7 @@ export const calculateWarbandModelCount = (warband: Warband) => {
 };
 
 export const calculateWarbandBowLimitModels = (warband: Warband) => {
+  if (!isDefinedUnit(warband.hero)) return 0;
   let count = 0;
   if (
     warband.hero.model_id === "[the_iron_hills] iron_hills_chariot_(captain)"
@@ -83,8 +85,9 @@ const isBow = (option: Option) =>
 export const calculateWarbandBowCount = (
   warband: Warband,
   rawBowCount: boolean = false,
-) =>
-  warband.units
+) => {
+  if (!isDefinedUnit(warband.hero)) return 0;
+  return warband.units
     .filter((unit: Unit | FreshUnit) => isDefinedUnit(unit))
     .filter((unit: Unit) => unit.unit_type === "Warrior")
     .filter(
@@ -97,6 +100,7 @@ export const calculateWarbandBowCount = (
         bowCount + (unit.siege_crew > 0 ? unit.siege_crew : 1) * unit.quantity,
       0,
     );
+};
 
 const isWarriorLeadingWarband = (hero: Unit) => {
   return [

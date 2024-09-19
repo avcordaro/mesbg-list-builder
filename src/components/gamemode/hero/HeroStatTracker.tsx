@@ -55,7 +55,10 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
       return 0;
     }
 
-    if (hero.name === "Azog" || hero.name === "The White Warg") {
+    if (
+      (hero.name === "Azog" && gameState.heroes[hero_id].length > 1) ||
+      hero.name === "The White Warg"
+    ) {
       const woundsLeftOnModel = woundsLeftForModel(gameState.heroes[hero_id]);
       const notFullyDead = woundsLeftOnModel > 0 && direction === -1;
       const notJustRevived = woundsLeftOnModel !== 1 && direction === 1;

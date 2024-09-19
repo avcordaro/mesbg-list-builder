@@ -1,4 +1,5 @@
 import SaveIcon from "@mui/icons-material/Save";
+import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
 import { FaHammer, FaImage } from "react-icons/fa6";
@@ -7,6 +8,7 @@ import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
+import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarningModal.tsx";
 import { ModalRosterTable } from "./modals/ModalRosterTable";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
@@ -21,6 +23,7 @@ export enum ModalTypes {
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
   EXPORT_ROSTER = "EXPORT_ROSTER",
   IMPORT_ROSTER = "IMPORT_ROSTER",
+  INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
 }
 
 export type ModalProps = {
@@ -94,6 +97,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <SaveIcon />,
       title: "Save roster",
       children: <ExportRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.INCOMPLETE_WARBAND_WARNING,
+    {
+      icon: <WarningAmberRoundedIcon />,
+      title: "Incomplete warband",
+      children: <IncompleteWarbandWarningModal />,
     },
   ],
 ]);

@@ -14,7 +14,8 @@ export const ScreenshotRosterModal = () => {
     modalContext.rawScreenshot.toBlob((screenshot) => {
       navigator.clipboard
         .write([new ClipboardItem({ "image/png": screenshot })])
-        .then(() => triggerAlert(AlertTypes.SCREENSHOT_COPIED_ALERT));
+        .then(() => triggerAlert(AlertTypes.SCREENSHOT_COPIED_ALERT))
+        .catch((e) => alert("error: " + JSON.stringify(e)));
       closeModal();
     });
   };
