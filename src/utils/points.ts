@@ -27,6 +27,7 @@ export const calculatePointsForUnit = (
 };
 
 export const calculatePointsForWarband = (warband: Warband): number => {
+  if (!isDefinedUnit(warband.hero)) return 0;
   const heroCost = calculatePpuForUnit(warband.hero);
   const unitCost = warband.units
     .map((unit) =>

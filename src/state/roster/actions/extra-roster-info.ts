@@ -88,7 +88,7 @@ export const updateUnitCount = (roster: Roster) => {
     warbands: roster.warbands.map((warband) => ({
       ...warband,
       num_units: calculateWarbandModelCount(warband),
-      max_units: warband.hero?.warband_size || 0, // TODO: Handle special cases
+      max_units: warband.hero?.warband_size || "-",
       bow_count: calculateWarbandTotalBowCount(warband),
     })),
   };
