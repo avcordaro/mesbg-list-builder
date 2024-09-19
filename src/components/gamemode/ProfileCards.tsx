@@ -30,7 +30,7 @@ export const ProfileCards = () => {
 
   const allProfiles: { profile: string; army: string }[] =
     roster.warbands.flatMap(({ hero, units }) => {
-      if (!hero) return [];
+      if (!isDefinedUnit(hero)) return [];
       const heroProfile = { profile: hero.name, army: hero.profile_origin };
       const extraProfiles = getExtraProfilesForHero(hero);
       const unitProfiles = units
