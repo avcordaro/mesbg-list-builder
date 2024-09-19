@@ -64,21 +64,46 @@ function download(content: string, fileName: string, contentType: string) {
   URL.revokeObjectURL(a.href);
 }
 
+const mwfOptions = (options: Option[], rawMwf): [string | number, string][] => {
+  const mwfOptions = options.filter((option) =>
+    ["Might", "Will", "Fate"].includes(option.option),
+  );
+  if (mwfOptions.length === 0) {
+    return rawMwf;
+  }
+
+  const getOpt = (o: string) => {
+    const stat = mwfOptions.find((option) => option.option === o);
+    if (!stat) return 0;
+    return stat.opt_quantity - stat.min;
+  };
+
+  const am = getOpt("Might");
+  const aw = getOpt("Will");
+  const af = getOpt("Fate");
+  const [m, w, f, wo] = rawMwf[0][1].split(":").map(Number);
+
+  return [["", [m + am, w + aw, f + af, wo].join(":")]];
+};
+
 function reloadDataForUnit(unit: Unit): Unit {
   const modelData = rawData.find(
     (model) => model.model_id === unit.model_id,
   ) as Unit;
 
+  const reloadedOptions = unit.options.map((option) => ({
+    ...(modelData.options.find(
+      ({ option_id }) => option.option_id === option_id,
+    ) as Option),
+    opt_quantity: option.opt_quantity,
+  }));
+
   return {
     ...modelData,
     id: unit.id,
     quantity: unit.quantity,
-    options: unit.options.map((option) => ({
-      ...(modelData.options.find(
-        ({ option_id }) => option.option_id === option_id,
-      ) as Option),
-      opt_quantity: option.opt_quantity,
-    })),
+    options: reloadedOptions,
+    MWFW: mwfOptions(reloadedOptions, modelData.MWFW),
   };
 }
 
