@@ -10,13 +10,25 @@ export const ScreenshotRosterModal = () => {
   const supportsCopyImageToClipboard =
     navigator.clipboard && window.ClipboardItem;
 
+  // Required since the Mobile version of Firefox seems to "supportsCopyImageToClipboard" but throws an error
+  // when you actually invoke the `clipboard.write` method.
+  const isFirefoxOnMobile =
+    navigator.userAgent.includes("Mobile") &&
+    navigator.userAgent.includes("Firefox");
+
   const copyToClipboard = () => {
     modalContext.rawScreenshot.toBlob((screenshot) => {
       navigator.clipboard
         .write([new ClipboardItem({ "image/png": screenshot })])
-        .then(() => triggerAlert(AlertTypes.SCREENSHOT_COPIED_ALERT))
-        .catch((e) => alert("error: " + JSON.stringify(e)));
-      closeModal();
+        .then(() => {
+          triggerAlert(AlertTypes.SCREENSHOT_COPIED_ALERT);
+          closeModal();
+        })
+        .catch(() =>
+          alert(
+            "An error occurred while copying the image to clipboard, please try copying the image manually",
+          ),
+        );
     });
   };
 
@@ -69,7 +81,7 @@ export const ScreenshotRosterModal = () => {
         )}
       </DialogContent>
       <DialogActions>
-        {supportsCopyImageToClipboard ? (
+        {supportsCopyImageToClipboard && !isFirefoxOnMobile ? (
           <Button
             variant="contained"
             onClick={copyToClipboard}
