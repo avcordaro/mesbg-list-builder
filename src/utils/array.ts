@@ -19,3 +19,8 @@ export const findAndRemoveItem = <T>(
   }
   return null;
 };
+
+export const arraysIntersect = (arr1, arr2) => {
+  const set1 = new Set(arr1);
+  return arr2.some((item) => set1.has(item));
+};

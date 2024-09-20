@@ -80,7 +80,9 @@ export const calculateWarbandBowLimitModels = (warband: Warband) => {
 };
 
 const isBow = (option: Option) =>
-  option.type === "bow" && option.opt_quantity === 1;
+  option.type !== null &&
+  option.type.includes("bow") &&
+  option.opt_quantity === 1;
 
 export const calculateWarbandBowCount = (
   warband: Warband,

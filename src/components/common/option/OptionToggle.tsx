@@ -2,6 +2,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Option, Unit } from "../../../types/unit.ts";
+import { arraysIntersect } from "../../../utils/array.ts";
 import { CustomSwitch as Switch } from "../switch/CustomSwitch.tsx";
 
 export const OptionToggle = ({
@@ -24,6 +25,12 @@ export const OptionToggle = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
+  const hasCommonOptionType = (optA, optB) => {
+    const optATypes = optA.type.split(",").map((x) => x.trim());
+    const optBTypes = optB.type.split(",").map((x) => x.trim());
+    return arraysIntersect(optATypes, optBTypes);
+  };
+
   const handleToggle = () => {
     updateState(warbandId, unit.id, {
       options: unit.options.map((o) => {
@@ -39,7 +46,9 @@ export const OptionToggle = ({
           return {
             ...o,
             opt_quantity:
-              option.type !== null && option.type === o.type
+              option.type !== null &&
+              o.type !== null &&
+              hasCommonOptionType(option, o)
                 ? 0 // toggles off same-type options.
                 : o.opt_quantity,
           };
