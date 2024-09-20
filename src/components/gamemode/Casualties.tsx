@@ -58,7 +58,7 @@ const Counter = () => {
         onClick={handleIncrement}
         disabled={
           gameState.casualties >=
-          roster.num_units - Object.keys(gameState.heroes).length
+          roster.num_units - Object.values(gameState.heroes).flat().length
         }
         sx={{
           borderRadius: 2,

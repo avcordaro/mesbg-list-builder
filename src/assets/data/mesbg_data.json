@@ -13281,7 +13281,7 @@
     "model_id":"[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)",
     "faction_type":"Good Army",
     "faction":"Erebor Reclaimed (King Thorin)",
-    "profile_origin":"The Iron Hills",
+    "profile_origin":"Erebor Reclaimed (King Thorin)",
     "name":"Iron Hills Chariot (Champions of Erebor)",
     "unit_type":"Hero of Valour",
     "base_points":500,
@@ -13291,7 +13291,22 @@
     "bow_limit":true,
     "siege_crew":4,
     "MWFW":[
-
+      [
+        "Balin the Dwarf, Champion of Erebor",
+        "1:3:2:2"
+      ],
+      [
+        "Dwalin the Dwarf, Champion of Erebor",
+        "3:2:2:2"
+      ],
+      [
+        "Fili the Dwarf, Champion of Erebor",
+        "3:1:1:2"
+      ],
+      [
+        "Kili the Dwarf, Champion of Erebor",
+        "3:1:1:2"
+      ]
     ],
     "quantity":1,
     "pointsPerUnit":500,
@@ -35746,7 +35761,10 @@
     "bow_limit":true,
     "siege_crew":4,
     "MWFW":[
-
+      [
+        "",
+        "2:1:1:2"
+      ]
     ],
     "quantity":1,
     "pointsPerUnit":250,

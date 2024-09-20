@@ -3615,7 +3615,10 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-
+        "Balin the Dwarf, Champion of Erebor",
+        "Dwalin the Dwarf, Champion of Erebor",
+        "Fili the Dwarf, Champion of Erebor",
+        "Kili the Dwarf, Champion of Erebor"
       ]
     }
   ],
@@ -9540,7 +9543,7 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-
+        "Iron Hills Captain"
       ]
     }
   ],
