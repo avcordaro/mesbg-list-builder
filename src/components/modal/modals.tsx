@@ -46,7 +46,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
     ModalTypes.IMPORT_ROSTER,
     {
       icon: <FaFileImport />,
-      title: "Import JSON",
+      title: "Import roster",
       children: <ImportRosterModal />,
     },
   ],
@@ -95,7 +95,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
     ModalTypes.EXPORT_ROSTER,
     {
       icon: <SaveIcon />,
-      title: "Save roster",
+      title: "Export roster",
       children: <ExportRosterModal />,
     },
   ],
