@@ -41,9 +41,13 @@ export const ModalRosterTable = () => {
 
   const createScreenshot = () => {
     const rosterList = document.getElementById("rosterList");
+    const admission = document.getElementById("admission");
     const copyBtn = document.getElementById("copyBtn");
     if (copyBtn) {
       copyBtn.style.display = "none";
+    }
+    if (admission) {
+      admission.style.display = "inline-block";
     }
 
     setScreenshotting(true);
@@ -61,6 +65,9 @@ export const ModalRosterTable = () => {
       rosterList.style.width = width;
       if (copyBtn) {
         copyBtn.style.display = "inline-block";
+      }
+      if (admission) {
+        admission.style.display = "none";
       }
     });
   };

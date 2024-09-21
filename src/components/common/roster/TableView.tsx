@@ -217,6 +217,14 @@ export function RosterTableView({
           )}
         </>
       )}
+      <Typography
+        id="admission"
+        sx={{ mt: 2, display: "none" }}
+        variant="caption"
+      >
+        Created with MESBG List Builder (
+        <a href="#">https://avcordaro.github.io/mesbg-list-builder</a>)
+      </Typography>
     </>
   );
 }
