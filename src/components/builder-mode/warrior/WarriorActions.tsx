@@ -80,16 +80,33 @@ export const WarriorActions = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { setCurrentModal, deleteUnit, duplicateUnit } = useStore();
+  const { setCurrentModal, deleteUnit, duplicateUnit, updateBuilderSidebar } =
+    useStore();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
 
   const handleDelete = () => {
     deleteUnit(warbandId, unit.id);
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: false,
+    });
   };
 
   const handleDuplicate = () => {
-    duplicateUnit(warbandId, unit.id);
+    const newUnitId = duplicateUnit(warbandId, unit.id);
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: false,
+    });
+    setTimeout(() => {
+      document
+        .querySelectorAll(`[data-scroll-id="${newUnitId}"]`)
+        .item(0)
+        ?.scrollIntoView({
+          behavior: "smooth",
+        });
+    });
   };
 
   const handleCardClick = (e) => {

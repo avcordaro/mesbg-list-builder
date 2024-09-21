@@ -20,10 +20,18 @@ export const WarbandActions = ({
   const { palette } = useTheme();
 
   const handleCopyWarband = () => {
-    duplicateWarband(warband.id);
+    const newWarbandId = duplicateWarband(warband.id);
     updateBuilderSidebar({
       warriorSelection: false,
       heroSelection: false,
+    });
+    setTimeout(() => {
+      document
+        .querySelectorAll(`[data-scroll-id="${newWarbandId}"]`)
+        .item(0)
+        ?.scrollIntoView({
+          behavior: "smooth",
+        });
     });
   };
 
