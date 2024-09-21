@@ -25,7 +25,7 @@ export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
     const options = hero.options
       .map((option) => {
         if (option.opt_quantity === 0) return null;
-        return `    - ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}`;
+        return `    - ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}  `;
       })
       .filter((o) => !!o);
 
@@ -40,7 +40,7 @@ export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
         const options = unit.options
           .map((option) => {
             if (option.opt_quantity === 0) return null;
-            return `    - ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}`;
+            return `    - ${option.max > 1 ? option.opt_quantity + " " + option.option : option.option}  `;
           })
           .filter((o) => !!o);
         if (options.length === 0) return `${name}  `;
