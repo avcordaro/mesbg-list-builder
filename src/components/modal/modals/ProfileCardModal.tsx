@@ -31,15 +31,15 @@ export const ProfileCardModal = () => {
       <DialogContent>
         <Typography variant="body2">
           You can download a zip of all profile cards for your current army list
-          by clicking:
-          <br />
+          by clicking on the floating action button in the bottom right, and
+          selecting{" "}
           <Typography
-            variant="body1"
+            variant="body2"
             component="strong"
             fontWeight={800}
             color={palette.primary.main}
           >
-            Roster Table {">"} Profile Cards
+            Download profile cards
           </Typography>
         </Typography>
 
