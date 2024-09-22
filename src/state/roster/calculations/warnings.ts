@@ -4,6 +4,7 @@ import { FactionData } from "../../../types/faction-data.ts";
 import { Faction, Factions } from "../../../types/factions.ts";
 import { Roster } from "../../../types/roster.ts";
 import { isDefinedUnit } from "../../../types/unit.ts";
+import { Warband } from "../../../types/warband.ts";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
 import { ModelCountData } from "./models.ts";
 
@@ -176,20 +177,113 @@ function checkForFactionErrors(
   });
 }
 
+function checkDunharrowWarriorCaptains(warband: Warband) {
+  if (
+    warband.num_units < 8 &&
+    [
+      "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
+      "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+    ].includes(warband.hero.model_id)
+  ) {
+    return `Warband ${warband.num} needs to contain eight or more models before the ${warband.hero.name} is able to lead them.`;
+  } else {
+    return null;
+  }
+}
+
+function checkDenizensOfMirkwoodWarriorCaptains(warband: Warband) {
+  if (
+    warband.hero.model_id === "[dark_denizens_of_mirkwood] the_spider_queen"
+  ) {
+    return null; // Warband with spider_queen does not have extra warnings.
+  }
+
+  const types = {
+    "[dark_denizens_of_mirkwood] giant_spider": "Spider",
+    "[dark_denizens_of_mirkwood] mirkwood_spider": "Spider",
+    "[dark_denizens_of_mirkwood] fell_warg": "Warg",
+    "[dark_denizens_of_mirkwood] bat_swarm": "Bat",
+  };
+
+  const heroType = types[warband.hero.model_id.replace("_cpt", "")];
+  const typesOfWarriors = new Set([
+    heroType,
+    ...warband.units.filter(isDefinedUnit).map((unit) => types[unit.model_id]),
+  ]).size;
+
+  if (typesOfWarriors > 1 && warband.num_units < 10) {
+    return `Warband ${warband.num} that does not contain only ${heroType} models needs to contain 10 or more models before a ${warband.hero.name} is able to lead them.`;
+  }
+
+  const r = {
+    "[dark_denizens_of_mirkwood] giant_spider_cpt": 2,
+    "[dark_denizens_of_mirkwood] mirkwood_spider_cpt": 2,
+    "[dark_denizens_of_mirkwood] fell_warg_cpt": 6,
+    "[dark_denizens_of_mirkwood] bat_swarm_cpt": 10,
+  };
+
+  if (r[warband.hero.model_id] > warband.num_units) {
+    return `Warband ${warband.num} must contain at least ${r[warband.hero.model_id]} ${heroType !== "Bat" ? `${heroType} ` : ""}models before the ${warband.hero.name} is able to lead them.`;
+  }
+
+  return null;
+}
+
+function checkDruadanWarriorCaptains(warband: Warband) {
+  if (
+    warband.hero.model_id === "[wildmen_of_druadan] woses_warrior_cpt" &&
+    warband.num_units < 9
+  ) {
+    return `Warband ${warband.num} needs to contain nine or more models before the ${warband.hero.name} is able to lead them.`;
+  }
+  return null;
+}
+
+function checkRuffianWarriorCaptains(warband: Warband) {
+  if (
+    [
+      "[sharkey's_rogues] ruffian_cpt",
+      "[the_chief's_ruffians] ruffian_cpt",
+    ].includes(warband.hero.model_id) &&
+    warband.num_units < 10
+  ) {
+    return `Warband ${warband.num} needs to contain ten  or more models before the ${warband.hero.name} is able to lead them.`;
+  }
+  return null;
+}
+
 function checkWarriorCaptains(roster: Roster, alliance: AllianceLevel) {
   return roster.warbands
     .map((warband) => {
       if (!isDefinedUnit(warband.hero)) return null;
 
       if (
-        [
-          "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
-          "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
-        ].includes(warband.hero.model_id) &&
-        alliance === "Historical" &&
-        warband.num_units < 8
+        warband.hero.faction === Factions.The_Dead_of_Dunharrow &&
+        alliance === "Historical"
       ) {
-        return `Warband ${warband.num} needs to contain eight or more models before the ${warband.hero.name} is able to lead them.`;
+        return checkDunharrowWarriorCaptains(warband);
+      }
+
+      if (
+        warband.hero.faction === Factions.Dark_Denizens_of_Mirkwood &&
+        alliance === "Historical"
+      ) {
+        return checkDenizensOfMirkwoodWarriorCaptains(warband);
+      }
+
+      if (
+        warband.hero.faction === Factions.Wildmen_of_Druadan &&
+        alliance === "Historical"
+      ) {
+        return checkDruadanWarriorCaptains(warband);
+      }
+
+      if (
+        (warband.hero.faction === Factions.Sharkeys_Rogues &&
+          alliance === "Historical") ||
+        warband.hero.faction === Factions.The_Chiefs_Ruffians
+      ) {
+        return checkRuffianWarriorCaptains(warband);
       }
 
       return null;
