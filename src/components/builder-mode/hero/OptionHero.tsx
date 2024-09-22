@@ -30,7 +30,7 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
   const isLance = option.option === "Lance";
 
   const isOptionSelectable =
-    (option.min !== option.max && !isLance) || !!hasHorse;
+    option.min !== option.max && (!isLance || !!hasHorse);
 
   return (
     <>
