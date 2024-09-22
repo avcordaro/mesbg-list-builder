@@ -3,6 +3,7 @@ import {
   Cancel,
   ContentCopyOutlined,
   RemoveOutlined,
+  RestartAlt,
 } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
@@ -10,7 +11,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { useStore } from "../../../state/store.ts";
-import { Unit } from "../../../types/unit.ts";
+import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 
 export const QuantityButtons = ({
@@ -80,10 +81,35 @@ export const WarriorActions = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { setCurrentModal, deleteUnit, duplicateUnit, updateBuilderSidebar } =
-    useStore();
+  const {
+    roster,
+    factionSelection,
+    setCurrentModal,
+    deleteUnit,
+    duplicateUnit,
+    updateBuilderSidebar,
+  } = useStore();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
+
+  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warbandHasHero = isDefinedUnit(hero);
+
+  const handleReselect = () => {
+    if (!warbandHasHero) {
+      return;
+    }
+
+    const { faction_type, faction } = hero;
+
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: true,
+      warriorSelectionFocus: [warbandId, unit.id],
+      factionSelection: { ...factionSelection, [faction_type]: faction },
+      tabSelection: faction_type,
+    });
+  };
 
   const handleDelete = () => {
     deleteUnit(warbandId, unit.id);
@@ -163,6 +189,20 @@ export const WarriorActions = ({
             )}
           </>
         )}
+        <IconButton
+          onClick={handleReselect}
+          size="large"
+          sx={{
+            borderRadius: 2,
+            backgroundColor: palette.warning.main,
+            color: palette.warning.contrastText,
+            "&:hover": {
+              backgroundColor: palette.warning.light,
+            },
+          }}
+        >
+          <RestartAlt />
+        </IconButton>
         <IconButton
           onClick={handleDelete}
           size="large"

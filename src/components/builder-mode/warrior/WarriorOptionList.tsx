@@ -18,7 +18,7 @@ export const WarriorOptionList: FunctionComponent<OptionListProps> = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  if (unit.options[0].option === "None") return null;
+  if (unit.options[0].option === "None") return <Box flexGrow={1} />;
 
   return (
     <Stack direction="row" spacing={3} flexGrow={1}>
