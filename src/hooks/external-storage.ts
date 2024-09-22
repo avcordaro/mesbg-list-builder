@@ -6,7 +6,13 @@ import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { useJsonValidation } from "./json-validation.ts";
 
 export const useExternalStorage = () => {
-  const { roster, triggerAlert, setRoster } = useStore();
+  const {
+    roster,
+    triggerAlert,
+    setRoster,
+    updateBuilderSidebar,
+    factionSelection,
+  } = useStore();
   const { validateKeys } = useJsonValidation();
 
   const copyRosterToClipboard = () => {
@@ -45,7 +51,17 @@ export const useExternalStorage = () => {
     }
 
     const rehydratedRoster = rehydrateRoster(uploadedRoster);
+    const { faction, faction_type } = rehydratedRoster.warbands.find(
+      (warband) => isDefinedUnit(warband.hero),
+    )?.hero || { faction: "Minas Tirith", faction_type: "Good Army" };
     setRoster(rehydratedRoster as Roster);
+    updateBuilderSidebar({
+      factionSelection: {
+        ...factionSelection,
+        [faction_type]: faction,
+      },
+      tabSelection: faction_type,
+    });
   };
 
   return {

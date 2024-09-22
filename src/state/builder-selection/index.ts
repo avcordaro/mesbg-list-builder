@@ -17,7 +17,7 @@ type BuilderSelectionActions = {
 
 export type BuilderState = BuilderSelectionState & BuilderSelectionActions;
 
-const initialBuilderState: BuilderSelectionState = {
+export const initialBuilderState: BuilderSelectionState = {
   tabSelection: "Good Army",
   factionSelection: {
     "Good Army": Factions.Minas_Tirith,
