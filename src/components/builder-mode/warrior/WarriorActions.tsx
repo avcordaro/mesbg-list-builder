@@ -126,12 +126,13 @@ export const WarriorActions = ({
       warriorSelection: false,
     });
     setTimeout(() => {
-      document
+      const element = document
         .querySelectorAll(`[data-scroll-id="${newUnitId}"]`)
-        .item(0)
-        ?.scrollIntoView({
-          behavior: "smooth",
-        });
+        .item(0);
+      if (!element) return;
+      const { top } = element.getBoundingClientRect();
+      const y = top + window.scrollY - 70;
+      window.scrollTo({ top: y, behavior: "smooth" });
     });
   };
 
