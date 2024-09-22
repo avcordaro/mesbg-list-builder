@@ -3,6 +3,18 @@ import { FreshUnit, isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { Warband } from "../types/warband.ts";
 import { sum } from "./utils.ts";
 
+const warriorCaptains = [
+  "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
+  "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
+  "[wildmen_of_druadan] woses_warrior_cpt",
+  "[dark_denizens_of_mirkwood] bat_swarm_cpt",
+  "[dark_denizens_of_mirkwood] giant_spider_cpt",
+  "[dark_denizens_of_mirkwood] fell_warg_cpt",
+  "[dark_denizens_of_mirkwood] mirkwood_spider_cpt",
+  "[sharkey's_rogues] ruffian_cpt",
+  "[the_chief's_ruffians] ruffian_cpt",
+];
+
 const extraUnitsOnHero = (hero: Unit) => {
   if (!isDefinedUnit(hero)) return 0;
 
@@ -22,12 +34,7 @@ const extraUnitsOnHero = (hero: Unit) => {
     );
   }
 
-  if (
-    [
-      "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
-      "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
-    ].includes(hero.model_id)
-  ) {
+  if (warriorCaptains.includes(hero.model_id)) {
     return 1;
   }
 
@@ -105,10 +112,7 @@ export const calculateWarbandBowCount = (
 };
 
 const isWarriorLeadingWarband = (hero: Unit) => {
-  return [
-    "[the_dead_of_dunharrow] warrior_of_the_dead_cpt",
-    "[the_dead_of_dunharrow] rider_of_the_dead_cpt",
-  ].includes(hero.model_id);
+  return warriorCaptains.includes(hero.model_id);
 };
 
 export const calculateRosterUnitCount = (roster: Roster) =>
