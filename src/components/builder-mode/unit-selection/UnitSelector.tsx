@@ -5,12 +5,11 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useEffect } from "react";
 import { ImCross } from "react-icons/im";
-import { useMesbgData } from "../../../../hooks/mesbg-data.ts";
-import { Tabs as TabName } from "../../../../state/builder-selection";
-import { useStore } from "../../../../state/store.ts";
-import { FactionType } from "../../../../types/factions.ts";
+import { useMesbgData } from "../../../hooks/mesbg-data.ts";
+import { Tabs as TabName } from "../../../state/builder-selection";
+import { useStore } from "../../../state/store.ts";
+import { FactionType } from "../../../types/factions.ts";
 import { FactionTypeTab } from "./FactionTypeTab.tsx";
 
 const CloseUnitSelectorButton = () => {
@@ -44,14 +43,9 @@ function a11yProps(value: string) {
 
 export const UnitSelector = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const {
-    updateBuilderSidebar,
-    tabSelection,
-    factionType,
-    heroSelection,
-    warriorSelectionFocus,
-  } = useStore();
+  const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
+  const { updateBuilderSidebar, tabSelection, factionType, heroSelection } =
+    useStore();
   const { factionsGroupedByType } = useMesbgData();
 
   const tabNames = [
@@ -67,31 +61,9 @@ export const UnitSelector = () => {
     });
   };
 
-  useEffect(() => {
-    if (!isMobile) return;
-
-    window.scrollTo({
-      behavior: "smooth",
-      top: 0,
-    });
-    return () => {
-      const scrollId = heroSelection
-        ? warriorSelectionFocus[0]
-        : warriorSelectionFocus[1];
-
-      document
-        .querySelectorAll(`[data-scroll-id="${scrollId}"]`)
-        .item(0)
-        ?.scrollIntoView({
-          behavior: "smooth",
-        });
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <Stack>
-      <Stack direction={isMobile ? "column-reverse" : "row"} alignItems="end">
+      <Stack direction={isTablet ? "column-reverse" : "row"} alignItems="end">
         <Box sx={{ width: "100%" }}>
           <Tabs
             value={tabNames.indexOf(tabSelection)}

@@ -21,6 +21,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Fragment, useState } from "react";
 import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
+import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit } from "../../../types/unit.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
@@ -76,6 +77,7 @@ export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const scrollToTop = useScrollToTop();
   const {
     gameMode,
     roster,
@@ -104,7 +106,7 @@ export const Header = () => {
     }
 
     startNewGame();
-    window.scrollTo(0, 0);
+    scrollToTop();
   };
 
   // List of buttons

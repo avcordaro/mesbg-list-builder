@@ -10,6 +10,10 @@ import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import {
+  useScrollToElement,
+  useScrollToTop,
+} from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -21,8 +25,11 @@ export const QuantityButtons = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { updateUnit } = useStore();
+  const { updateUnit, roster } = useStore();
   const { palette } = useTheme();
+
+  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warbandHasHero = isDefinedUnit(hero);
 
   const handleIncrement = () => {
     updateUnit(warbandId, unit.id, {
@@ -43,7 +50,7 @@ export const QuantityButtons = ({
         <>
           <IconButton
             onClick={handleDecrement}
-            disabled={unit.quantity === 1}
+            disabled={unit.quantity === 1 || !warbandHasHero}
             sx={{
               borderRadius: 2,
               backgroundColor: palette.primary.main,
@@ -57,6 +64,7 @@ export const QuantityButtons = ({
           </IconButton>
           <IconButton
             onClick={handleIncrement}
+            disabled={!warbandHasHero}
             sx={{
               borderRadius: 2,
               backgroundColor: palette.primary.main,
@@ -91,6 +99,8 @@ export const WarriorActions = ({
   } = useStore();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
+  const scrollTo = useScrollToElement();
+  const scrollToTop = useScrollToTop("sidebar");
 
   const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
   const warbandHasHero = isDefinedUnit(hero);
@@ -109,6 +119,7 @@ export const WarriorActions = ({
       factionSelection: { ...factionSelection, [faction_type]: faction },
       tabSelection: faction_type,
     });
+    setTimeout(scrollToTop, null);
   };
 
   const handleDelete = () => {
@@ -125,15 +136,7 @@ export const WarriorActions = ({
       heroSelection: false,
       warriorSelection: false,
     });
-    setTimeout(() => {
-      const element = document
-        .querySelectorAll(`[data-scroll-id="${newUnitId}"]`)
-        .item(0);
-      if (!element) return;
-      const { top } = element.getBoundingClientRect();
-      const y = top + window.scrollY - 70;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    });
+    setTimeout(scrollTo, null, newUnitId);
   };
 
   const handleCardClick = (e) => {
@@ -176,6 +179,7 @@ export const WarriorActions = ({
               <IconButton
                 onClick={handleDuplicate}
                 size="large"
+                disabled={!warbandHasHero}
                 sx={{
                   borderRadius: 2,
                   backgroundColor: palette.info.light,
@@ -193,6 +197,7 @@ export const WarriorActions = ({
         <IconButton
           onClick={handleReselect}
           size="large"
+          disabled={!warbandHasHero}
           sx={{
             borderRadius: 2,
             backgroundColor: palette.warning.main,

@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Option, Unit } from "../../../types/unit.ts";
 import { arraysIntersect } from "../../../utils/array.ts";
-import { CustomSwitch as Switch } from "../switch/CustomSwitch.tsx";
+import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
 
 export const OptionToggle = ({
   warbandId,

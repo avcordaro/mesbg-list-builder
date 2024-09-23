@@ -6,11 +6,12 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
-import { useStore } from "../../../../../state/store.ts";
-import { Unit } from "../../../../../types/unit.ts";
-import { ModalTypes } from "../../../../modal/modals.tsx";
-import { UnitProfilePicture } from "../../../images/UnitProfilePicture.tsx";
-import { MwfBadge } from "../../../might-will-fate/MwfBadge.tsx";
+import { useScrollToElement } from "../../../../hooks/scroll-to.ts";
+import { useStore } from "../../../../state/store.ts";
+import { Unit } from "../../../../types/unit.ts";
+import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
+import { MwfBadge } from "../../../common/might-will-fate/MwfBadge.tsx";
+import { ModalTypes } from "../../../modal/modals.tsx";
 
 export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   const {
@@ -23,6 +24,7 @@ export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   } = useStore();
   const [focusedWarbandId, focusedUnitId] = warriorSelectionFocus;
   const { palette } = useTheme();
+  const scrollTo = useScrollToElement();
 
   const handleClick = () => {
     (heroSelection ? assignHeroToWarband : selectUnit)(
@@ -34,6 +36,7 @@ export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
       warriorSelection: false,
       heroSelection: false,
     });
+    scrollTo(focusedUnitId || focusedWarbandId);
   };
 
   const handleCardClick = (e) => {

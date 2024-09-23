@@ -1,13 +1,15 @@
 import { DialogActions, DialogContent, Button } from "@mui/material";
+import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store";
 
 export const BuilderModeModal = () => {
   const { setGameMode, closeModal } = useStore();
+  const scrollToTop = useScrollToTop();
 
   const handleContinue = () => {
     closeModal();
     setGameMode(false);
-    window.scrollTo(0, 0);
+    scrollToTop();
   };
 
   return (

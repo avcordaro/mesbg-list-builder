@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useStore } from "../../../state/store";
 import { isDefinedUnit, Option, Unit } from "../../../types/unit.ts";
-import { OptionCounter } from "../../common/option/OptionCounter.tsx";
-import { OptionToggle } from "../../common/option/OptionToggle.tsx";
+import { OptionCounter } from "../option/OptionCounter.tsx";
+import { OptionToggle } from "../option/OptionToggle.tsx";
 
 /* Option Warrior is the component used to display an individual gear options that each
 warrior has available. */
@@ -55,6 +55,8 @@ export const WarriorOption: FunctionComponent<OptionWarriorProps> = ({
       );
       return false;
     }
+
+    if (!isDefinedUnit(warband.hero)) return false;
 
     if (isLanceWithoutHorse()) return false;
 

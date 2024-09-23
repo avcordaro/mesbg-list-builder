@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import { v4 as uuid } from "uuid";
-import { useMesbgData } from "../../../../../hooks/mesbg-data.ts";
-import { useStore } from "../../../../../state/store.ts";
-import { Faction } from "../../../../../types/factions.ts";
+import { useMesbgData } from "../../../../hooks/mesbg-data.ts";
+import { useStore } from "../../../../state/store.ts";
+import { Faction } from "../../../../types/factions.ts";
 import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
 
 type HeroSelectionListProps = {

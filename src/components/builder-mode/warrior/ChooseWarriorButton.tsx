@@ -1,14 +1,15 @@
 import CancelIcon from "@mui/icons-material/Cancel";
+import { Paper } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import useTheme from "@mui/material/styles/useTheme";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
+import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store";
-import { isDefinedUnit, FreshUnit } from "../../../types/unit.ts";
+import { FreshUnit, isDefinedUnit } from "../../../types/unit.ts";
 
 /* Default Warrior Unit components appear inside Warbands after 'Add Unit' is selected, 
 before the user selects the warrior they would like. */
@@ -24,13 +25,13 @@ export const ChooseWarriorButton: FunctionComponent<
   const { roster, deleteUnit, updateBuilderSidebar, factionSelection } =
     useStore();
   const { palette } = useTheme();
+  const scrollToTop = useScrollToTop("sidebar");
 
   const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
   const warbandHasHero = isDefinedUnit(hero);
 
   const handleClick = () => {
     if (!warbandHasHero) {
-      deleteUnit(warbandId, unit.id);
       return;
     }
 
@@ -43,6 +44,7 @@ export const ChooseWarriorButton: FunctionComponent<
       factionSelection: { ...factionSelection, [faction_type]: faction },
       tabSelection: faction_type,
     });
+    setTimeout(scrollToTop, null);
   };
 
   const handleDelete = (e) => {
@@ -55,12 +57,25 @@ export const ChooseWarriorButton: FunctionComponent<
   };
 
   return (
-    <Button
-      variant="contained"
-      color="inherit"
+    <Paper
       onClick={handleClick}
-      fullWidth
-      disabled={!warbandHasHero}
+      elevation={3}
+      sx={
+        warbandHasHero
+          ? {
+              p: 2,
+              cursor: "pointer",
+              "&:hover": {
+                backgroundColor: palette.grey["300"],
+              },
+            }
+          : {
+              p: 2,
+              border: 1,
+              borderColor: palette.grey.A700,
+              backgroundColor: palette.grey["600"],
+            }
+      }
     >
       <Stack direction="row" spacing={3} alignItems="center" minWidth="100%">
         <Avatar
@@ -68,7 +83,10 @@ export const ChooseWarriorButton: FunctionComponent<
           src={fallbackLogo}
           sx={{ width: 100, height: 100 }}
         />
-        <Typography variant="body2" sx={{ flexGrow: 1, textAlign: "start" }}>
+        <Typography
+          variant="body1"
+          sx={{ flexGrow: 1, textAlign: "start", textTransform: "uppercase" }}
+        >
           <b>Choose a Warrior</b>
         </Typography>
         <IconButton
@@ -84,11 +102,10 @@ export const ChooseWarriorButton: FunctionComponent<
               backgroundColor: palette.error.light,
             },
           }}
-          disabled={!warbandHasHero}
         >
           <CancelIcon />
         </IconButton>
       </Stack>
-    </Button>
+    </Paper>
   );
 };

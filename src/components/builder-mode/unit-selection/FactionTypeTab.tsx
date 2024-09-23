@@ -1,7 +1,7 @@
 import Stack from "@mui/material/Stack";
-import { Tabs } from "../../../../state/builder-selection";
-import { useStore } from "../../../../state/store.ts";
-import { FactionType } from "../../../../types/factions.ts";
+import { Tabs } from "../../../state/builder-selection";
+import { useStore } from "../../../state/store.ts";
+import { FactionType } from "../../../types/factions.ts";
 import { FactionPickerDropdown } from "./FactionPickerDropdown.tsx";
 import { HeroSelectionList } from "./selection-list/HeroSelectionList.tsx";
 import { SiegeEquipmentSelectionList } from "./selection-list/SiegeEquipmentSelectionList.tsx";
