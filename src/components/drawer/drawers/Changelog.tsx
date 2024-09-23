@@ -28,35 +28,25 @@ const sectionIcons = {
   security: <SecurityIcon />,
 };
 
-export const Changelog = () => (
-  <Stack
-    spacing={2}
-    sx={{
-      pb: 10,
-    }}
-  >
-    {Object.entries(releases).map(([version, releaseNotes]) => {
-      const sections = Object.entries(releaseNotes);
-      return (
-        <Box key={version}>
-          <Typography variant="h6" fontWeight="bolder">
-            Release {version}
-          </Typography>
-          {sections.length === 0 ? (
-            <Typography
-              variant="body1"
-              sx={{
-                fontWeight: "bold",
-                display: "flex",
-                gap: 1.5,
-                mt: 1,
-              }}
-            >
-              <QuestionMarkIcon /> No changes...
-            </Typography>
-          ) : (
-            sections.map(([section, items]) => (
-              <Box key={`${version}-${section}`}>
+export const Changelog = () => {
+  return (
+    <Stack
+      spacing={2}
+      sx={{
+        pb: 10,
+      }}
+    >
+      {Object.entries(releases).map(
+        ([version, releaseNotes], _, allReleases) => {
+          const sections = Object.entries(releaseNotes);
+          return (
+            <Box key={version}>
+              <Typography variant="h6" fontWeight="bolder">
+                {version === "main"
+                  ? `Post-release ${allReleases[1][0]} updates`
+                  : `Release ${version}`}
+              </Typography>
+              {sections.length === 0 ? (
                 <Typography
                   variant="body1"
                   sx={{
@@ -66,21 +56,37 @@ export const Changelog = () => (
                     mt: 1,
                   }}
                 >
-                  {sectionIcons[section]} {section}
+                  <QuestionMarkIcon /> No changes...
                 </Typography>
-                <ul style={{ marginLeft: "1rem" }}>
-                  {items.map((item, index) => (
-                    <li
-                      key={`${version}-${section}-item-${index}`}
-                      dangerouslySetInnerHTML={{ __html: item }}
-                    />
-                  ))}
-                </ul>
-              </Box>
-            ))
-          )}
-        </Box>
-      );
-    })}
-  </Stack>
-);
+              ) : (
+                sections.map(([section, items]) => (
+                  <Box key={`${version}-${section}`}>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        fontWeight: "bold",
+                        display: "flex",
+                        gap: 1.5,
+                        mt: 1,
+                      }}
+                    >
+                      {sectionIcons[section]} {section}
+                    </Typography>
+                    <ul style={{ marginLeft: "1rem" }}>
+                      {items.map((item, index) => (
+                        <li
+                          key={`${version}-${section}-item-${index}`}
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
+                      ))}
+                    </ul>
+                  </Box>
+                ))
+              )}
+            </Box>
+          );
+        },
+      )}
+    </Stack>
+  );
+};
