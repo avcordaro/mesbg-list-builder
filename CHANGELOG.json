@@ -1,0 +1,18 @@
+{
+  "main": {},
+  "6.4": {
+    "added": [
+      "Added extra warning messages to indicate required warband sizes for heroless warbands in the following armies: Wildmen of Druadan, Dark denizens of Mirkwood & Sharkey's Rogues."
+    ],
+    "bugfixes": [
+      "Fixed a typo in the keywords of the Dernhelm and Rider of Rohan profile cards.",
+      "Fixed an issue with the unit selector after importing a roster from file/json",
+      "Fixed incorrectly deselect-able options for certain legendary legions"
+    ]
+  },
+  "6.3": {
+    "changed": [
+      "Updated the text share format to fit Reddit formatting even better"
+    ]
+  }
+}

@@ -15,6 +15,7 @@
     "lint:fix": "eslint . --fix",
     "check": "npm run prettier && npm run lint",
     "check:fix": "npm run prettier:fix && npm run lint:fix",
+    "version": "./changelog-version-update.sh $npm_package_version && npm run deploy",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
