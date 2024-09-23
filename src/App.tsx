@@ -22,6 +22,7 @@ export const App = () => {
         <main>
           <Grid2 container spacing={2}>
             <Grid2
+              data-scroll-id="sidebar"
               size={!isMobile ? 4 : 12}
               sx={
                 isMobile

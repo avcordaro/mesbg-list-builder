@@ -91,6 +91,7 @@ export const duplicateWarband =
         .filter((unit) => !unit.unique)
         .map((unit) => ({
           ...unit,
+          id: uuid(),
           options: unit.options.map((option) =>
             option.type === "special_warband_upgrade"
               ? {

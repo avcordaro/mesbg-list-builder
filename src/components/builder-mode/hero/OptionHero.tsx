@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import { useStore } from "../../../state/store";
 import { Option, Unit } from "../../../types/unit.js";
-import { OptionCounter } from "../../common/option/OptionCounter.tsx";
-import { OptionToggle } from "../../common/option/OptionToggle.tsx";
+import { OptionCounter } from "../option/OptionCounter.tsx";
+import { OptionToggle } from "../option/OptionToggle.tsx";
 
 /* Option Hero is the component used to display an individual gear options that each hero 
 has available.

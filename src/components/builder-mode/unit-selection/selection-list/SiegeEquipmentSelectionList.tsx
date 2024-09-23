@@ -4,9 +4,9 @@ import Accordion from "@mui/material/Accordion";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import siege_equipment from "../../../../../assets/data/siege_equipment.json";
-import { useStore } from "../../../../../state/store.ts";
-import { UnitProfilePicture } from "../../../images/UnitProfilePicture.tsx";
+import siege_equipment from "../../../../assets/data/siege_equipment.json";
+import { useStore } from "../../../../state/store.ts";
+import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
 
 export const SiegeEquipmentSelectionList = () => {
   const { selectUnit, warriorSelectionFocus, updateBuilderSidebar } =

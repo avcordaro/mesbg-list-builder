@@ -29,7 +29,7 @@ type RosterFunctions = {
   // Global warband functions
   addWarband: () => void;
   deleteWarband: (warbandId: string) => void;
-  duplicateWarband: (warbandId: string) => void;
+  duplicateWarband: (warbandId: string) => string;
 
   // Hero functions
   assignHeroToWarband: (warbandId: string, heroId: string, hero: Unit) => void;
@@ -42,7 +42,7 @@ type RosterFunctions = {
   selectUnit: (warbandId: string, unitId: string, unit: Unit) => void;
   updateUnit: (warbandId: string, unitId: string, unit: Partial<Unit>) => void;
   deleteUnit: (warbandId: string, unitId: string) => void;
-  duplicateUnit: (warbandId: string, unitId: string) => void;
+  duplicateUnit: (warbandId: string, unitId: string) => string;
 };
 
 export type RosterState = {
@@ -76,7 +76,7 @@ const initialState = {
   rosterBuildingWarnings: [],
 };
 
-export const rosterSlice: Slice<RosterState> = (set) => {
+export const rosterSlice: Slice<RosterState> = (set, get) => {
   const recalculate = () => updateMetaData(set);
   return {
     ...initialState,
@@ -100,9 +100,11 @@ export const rosterSlice: Slice<RosterState> = (set) => {
     },
 
     addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
-    duplicateWarband: (warbandId: string): void => {
+    duplicateWarband: (warbandId: string): string => {
       set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
       recalculate();
+      const warbands = get().roster.warbands;
+      return warbands[warbands.length - 1].id;
     },
     deleteWarband: (warbandId: string): void => {
       set(deleteWarband(warbandId), undefined, "DELETE_WARBAND");
@@ -157,9 +159,13 @@ export const rosterSlice: Slice<RosterState> = (set) => {
       set(updateUnit(warbandId, unitId, unit), undefined, "UPDATE_UNIT");
       recalculate();
     },
-    duplicateUnit: (warbandId: string, unitId: string): void => {
+    duplicateUnit: (warbandId: string, unitId: string): string => {
       set(duplicateUnit(warbandId, unitId), undefined, "DUPLICATE_UNIT");
       recalculate();
+      const warband = get().roster.warbands.find(
+        (warband) => warband.id === warbandId,
+      );
+      return !warband ? unitId : warband.units[warband.units.length - 1].id;
     },
     deleteUnit: (warbandId: string, unitId: string): void => {
       set(deleteUnit(warbandId, unitId), undefined, "DELETE_UNIT");

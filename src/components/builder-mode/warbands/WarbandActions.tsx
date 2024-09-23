@@ -4,6 +4,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import useTheme from "@mui/material/styles/useTheme";
+import { useScrollToElement } from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store.ts";
 import { Warband } from "../../../types/warband.ts";
 
@@ -18,13 +19,15 @@ export const WarbandActions = ({
 }) => {
   const { duplicateWarband, deleteWarband, updateBuilderSidebar } = useStore();
   const { palette } = useTheme();
+  const scrollTo = useScrollToElement();
 
   const handleCopyWarband = () => {
-    duplicateWarband(warband.id);
+    const newWarbandId = duplicateWarband(warband.id);
     updateBuilderSidebar({
       warriorSelection: false,
       heroSelection: false,
     });
+    setTimeout(scrollTo, null, newWarbandId);
   };
 
   const handleDeleteWarband = () => {

@@ -57,6 +57,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
     <Card
       variant="elevation"
       elevation={3}
+      data-scroll-id={warband.id}
       sx={{
         backgroundColor: theme.palette.grey.A700,
         p: 1,
@@ -69,7 +70,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
           collapsed={collapsed}
         />
 
-        <Box data-scroll-id={warband.id}>
+        <Box data-scroll-id={warband.hero?.id}>
           {!isDefinedUnit(warband.hero) ? (
             <ChooseHeroButton warbandId={warband.id} />
           ) : (

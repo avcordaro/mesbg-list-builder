@@ -3,14 +3,19 @@ import {
   Cancel,
   ContentCopyOutlined,
   RemoveOutlined,
+  RestartAlt,
 } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import {
+  useScrollToElement,
+  useScrollToTop,
+} from "../../../hooks/scroll-to.ts";
 import { useStore } from "../../../state/store.ts";
-import { Unit } from "../../../types/unit.ts";
+import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 
 export const QuantityButtons = ({
@@ -20,8 +25,11 @@ export const QuantityButtons = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { updateUnit } = useStore();
+  const { updateUnit, roster } = useStore();
   const { palette } = useTheme();
+
+  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warbandHasHero = isDefinedUnit(hero);
 
   const handleIncrement = () => {
     updateUnit(warbandId, unit.id, {
@@ -42,7 +50,7 @@ export const QuantityButtons = ({
         <>
           <IconButton
             onClick={handleDecrement}
-            disabled={unit.quantity === 1}
+            disabled={unit.quantity === 1 || !warbandHasHero}
             sx={{
               borderRadius: 2,
               backgroundColor: palette.primary.main,
@@ -56,6 +64,7 @@ export const QuantityButtons = ({
           </IconButton>
           <IconButton
             onClick={handleIncrement}
+            disabled={!warbandHasHero}
             sx={{
               borderRadius: 2,
               backgroundColor: palette.primary.main,
@@ -80,16 +89,54 @@ export const WarriorActions = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { setCurrentModal, deleteUnit, duplicateUnit } = useStore();
+  const {
+    roster,
+    factionSelection,
+    setCurrentModal,
+    deleteUnit,
+    duplicateUnit,
+    updateBuilderSidebar,
+  } = useStore();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
+  const scrollTo = useScrollToElement();
+  const scrollToTop = useScrollToTop("sidebar");
+
+  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warbandHasHero = isDefinedUnit(hero);
+
+  const handleReselect = () => {
+    if (!warbandHasHero) {
+      return;
+    }
+
+    const { faction_type, faction } = hero;
+
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: true,
+      warriorSelectionFocus: [warbandId, unit.id],
+      factionSelection: { ...factionSelection, [faction_type]: faction },
+      tabSelection: faction_type,
+    });
+    setTimeout(scrollToTop, null);
+  };
 
   const handleDelete = () => {
     deleteUnit(warbandId, unit.id);
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: false,
+    });
   };
 
   const handleDuplicate = () => {
-    duplicateUnit(warbandId, unit.id);
+    const newUnitId = duplicateUnit(warbandId, unit.id);
+    updateBuilderSidebar({
+      heroSelection: false,
+      warriorSelection: false,
+    });
+    setTimeout(scrollTo, null, newUnitId);
   };
 
   const handleCardClick = (e) => {
@@ -132,6 +179,7 @@ export const WarriorActions = ({
               <IconButton
                 onClick={handleDuplicate}
                 size="large"
+                disabled={!warbandHasHero}
                 sx={{
                   borderRadius: 2,
                   backgroundColor: palette.info.light,
@@ -146,6 +194,21 @@ export const WarriorActions = ({
             )}
           </>
         )}
+        <IconButton
+          onClick={handleReselect}
+          size="large"
+          disabled={!warbandHasHero}
+          sx={{
+            borderRadius: 2,
+            backgroundColor: palette.warning.main,
+            color: palette.warning.contrastText,
+            "&:hover": {
+              backgroundColor: palette.warning.light,
+            },
+          }}
+        >
+          <RestartAlt />
+        </IconButton>
         <IconButton
           onClick={handleDelete}
           size="large"

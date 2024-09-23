@@ -10,12 +10,12 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
-import { AllianceLevel } from "../../../../constants/alliances.ts";
-import { useMesbgData } from "../../../../hooks/mesbg-data.ts";
-import { getAllianceLevel } from "../../../../state/roster/calculations";
-import { useStore } from "../../../../state/store.ts";
-import { Faction, FactionType } from "../../../../types/factions.ts";
-import { FactionLogo } from "../../images/FactionLogo.tsx";
+import { AllianceLevel } from "../../../constants/alliances.ts";
+import { useMesbgData } from "../../../hooks/mesbg-data.ts";
+import { getAllianceLevel } from "../../../state/roster/calculations";
+import { useStore } from "../../../state/store.ts";
+import { Faction, FactionType } from "../../../types/factions.ts";
+import { FactionLogo } from "../../common/images/FactionLogo.tsx";
 
 type FactionPickerDropdownProps = {
   type: FactionType;
