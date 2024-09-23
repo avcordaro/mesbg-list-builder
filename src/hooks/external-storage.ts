@@ -80,9 +80,12 @@ function download(content: string, fileName: string, contentType: string) {
   URL.revokeObjectURL(a.href);
 }
 
-const mwfOptions = (options: Option[], rawMwf): [string | number, string][] => {
+const mwfwOptions = (
+  options: Option[],
+  rawMwf,
+): [string | number, string][] => {
   const mwfOptions = options.filter((option) =>
-    ["Might", "Will", "Fate"].includes(option.option),
+    ["Might", "Will", "Fate", "Tough Hide"].includes(option.option),
   );
   if (mwfOptions.length === 0) {
     return rawMwf;
@@ -97,9 +100,10 @@ const mwfOptions = (options: Option[], rawMwf): [string | number, string][] => {
   const am = getOpt("Might");
   const aw = getOpt("Will");
   const af = getOpt("Fate");
+  const awo = getOpt("Tough Hide");
   const [m, w, f, wo] = rawMwf[0][1].split(":").map(Number);
 
-  return [["", [m + am, w + aw, f + af, wo].join(":")]];
+  return [["", [m + am, w + aw, f + af, wo + (awo ? 2 : 0)].join(":")]];
 };
 
 function reloadDataForUnit(unit: Unit): Unit {
@@ -119,7 +123,7 @@ function reloadDataForUnit(unit: Unit): Unit {
     id: unit.id,
     quantity: unit.quantity,
     options: reloadedOptions,
-    MWFW: mwfOptions(reloadedOptions, modelData.MWFW),
+    MWFW: mwfwOptions(reloadedOptions, modelData.MWFW),
   };
 }
 
