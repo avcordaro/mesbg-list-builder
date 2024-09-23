@@ -29,14 +29,20 @@ const sectionIcons = {
 };
 
 export const Changelog = () => (
-  <Stack spacing={2}>
+  <Stack
+    spacing={2}
+    sx={{
+      pb: 10,
+    }}
+  >
     {Object.entries(releases).map(([version, releaseNotes]) => {
+      const sections = Object.entries(releaseNotes);
       return (
         <Box key={version}>
           <Typography variant="h6" fontWeight="bolder">
             Release {version}
           </Typography>
-          {Object.entries(releaseNotes).length === 0 ? (
+          {sections.length === 0 ? (
             <Typography
               variant="body1"
               sx={{
@@ -49,7 +55,7 @@ export const Changelog = () => (
               <QuestionMarkIcon /> No changes...
             </Typography>
           ) : (
-            Object.entries(releaseNotes).map(([section, items]) => (
+            sections.map(([section, items]) => (
               <Box key={`${version}-${section}`}>
                 <Typography
                   variant="body1"
@@ -64,7 +70,10 @@ export const Changelog = () => (
                 </Typography>
                 <ul style={{ marginLeft: "1rem" }}>
                   {items.map((item, index) => (
-                    <li key={`${version}-${section}-item-${index}`}>{item}</li>
+                    <li
+                      key={`${version}-${section}-item-${index}`}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
                   ))}
                 </ul>
               </Box>

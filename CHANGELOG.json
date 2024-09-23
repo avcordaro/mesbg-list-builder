@@ -1,5 +1,21 @@
 {
-  "main": {},
+  "main": {
+    "added": [
+      "This changelog drawer with information on the changes in each Major or Minor release."
+    ]
+  },
+  "6.5": {
+    "added": [
+      "Moria Dragon no longer allows you to select more than 2 options at the same time",
+      "Added button to reselect a warrior in a warband spot that is already occupied, allowing you to change a unit without having to delete and recreate a new warband warrior"
+    ],
+    "changed": [
+      "Automatic scrolling to and from the unit selection has been improved. Now scrolling directly to any duplicated warbands/warriors and between the unit selector and the warband units"
+    ],
+    "bugfixes": [
+      "Fixed issue where \"Tough Hide\" options would not increase the wounds on the model to +2"
+    ]
+  },
   "6.4": {
     "added": [
       "Added extra warning messages to indicate required warband sizes for heroless warbands in the following armies: Wildmen of Druadan, Dark denizens of Mirkwood & Sharkey's Rogues."
@@ -12,7 +28,49 @@
   },
   "6.3": {
     "changed": [
-      "Updated the text share format to fit Reddit formatting even better"
+      "Updated the text share format to fit Reddit formatting even better",
+      "Update the \"copy image\" button for mobile Firefox browser to \"download image\" as copying to clipboard is not supported",
+      "Added a bit of extra spacing between generated warnings to make them more readable",
+      "Made the sharable text from the roster summary \"Reddit safe\""
+    ],
+    "bugfixes": [
+      "Fixed issue with importing heroes that have (extra) Might Will Fate options",
+      "Fixed issue with \"swap weapon to bow\" options not counting to the bow limit correctly",
+      "Corrected the MWFW trackers for the Iron Hills Chariot with Champions of Erebor upgrade",
+      "Fixed issue when selecting a new hero/warrior after importing a roster form file/json"
     ]
+  },
+  "6.2": {
+    "added": [
+      "Added alliance colours to the faction picker in the unit selection indicating which factions are Historical, Convenient or Impossible alliance with the current roster"
+    ]
+  },
+  "6.1": {
+    "added": [
+      "Added an alert notifying about warbands without hero before going into gamemode",
+      "Added filter on Azog's extra profile cards (The White Warg & the Signal Tower) if any of those options are not chosen"
+    ],
+    "changes": [
+      "No longer count warbands without a leader to the total points, total units and bow limits.",
+      "Make the tooltips for the floating action button in the bottom right more readable against the white background"
+    ],
+    "bugfixes": [
+      "Fixed issue where you were not able to select warriors for the Buhrdur's horde Legendary Legion",
+      "Fixed issue when warband had no hero while opening the roster summary modal",
+      "Fixed issue with Azog's casualty calculation if The White Warg was not chosen as an option"
+    ]
+  },
+  "6.0": {
+    "added": [
+      "<strong>Mobile support!</strong>",
+      "Added extra warnings when a warrior or rider of dunharrow is leading a warband of less than 8 warriors",
+      "Added a floating action button with buttons that used to be in the header"
+    ],
+    "changes": [
+      "Converted the webpage to a PWA allowing it to be installed as a mobile or desktop application",
+      "Make screenshot image of the roster table have a fixed width regardless of actual screen size",
+      "Count warrior captains in heroless warbands to the units of that warband"
+    ],
+    "bugfixes": ["Allow Riders of the Dead to lead warbands"]
   }
 }
