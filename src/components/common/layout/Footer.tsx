@@ -1,7 +1,10 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { useStore } from "../../../state/store.ts";
+import { DrawerTypes } from "../../drawer/drawers.tsx";
 
 export const Footer = () => {
+  const { openSidebar } = useStore();
   return (
     <Box
       id="footer"
@@ -16,7 +19,22 @@ export const Footer = () => {
       }}
     >
       <Typography variant="body2" sx={{ display: "block", m: 1 }}>
-        Unofficial | v{BUILD_VERSION} | updated {BUILD_DATE}
+        Unofficial |{" "}
+        <Typography
+          sx={{
+            cursor: "pointer",
+            textDecoration: "underline",
+            color: "rgb(110, 168, 254)",
+          }}
+          component="span"
+          onClick={(e) => {
+            e.preventDefault();
+            openSidebar(DrawerTypes.CHANGELOG);
+          }}
+        >
+          v{BUILD_VERSION}
+        </Typography>{" "}
+        | updated {BUILD_DATE}
       </Typography>
       <Typography variant="caption">
         For any bugs and corrections, please contact:{" "}
