@@ -29,8 +29,21 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
   );
   const isLance = option.option === "Lance";
 
+  const isDragonMaxedOnOptions = () => {
+    if (unit.model_id !== "[moria] dragon") return false; // not a dragon
+    if (option.opt_quantity === 1) return false; // don't disable selected option (needs to be able to toggle off)
+
+    const selectedOptions = unit.options.filter(
+      (option) => option.opt_quantity,
+    );
+    if (selectedOptions.length < 2) return false; // not capped on options.
+    return true;
+  };
+
   const isOptionSelectable =
-    option.min !== option.max && (!isLance || !!hasHorse);
+    option.min !== option.max &&
+    (!isLance || !!hasHorse) &&
+    !isDragonMaxedOnOptions();
 
   return (
     <>
