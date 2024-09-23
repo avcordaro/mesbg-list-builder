@@ -25,6 +25,19 @@ export const OptionToggle = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
+  const updateMwfw = (
+    option: string,
+    onOff: boolean,
+  ): [string | number, string][] => {
+    if (option === "Tough Hide") {
+      const mwfw = unit.MWFW[0][1].split(":");
+      mwfw[3] = String(Number(mwfw[3]) + (onOff ? 2 : -2));
+      return [["", mwfw.join(":")]];
+    }
+
+    return unit.MWFW;
+  };
+
   const hasCommonOptionType = (optA, optB) => {
     const optATypes = optA.type.split(",").map((x) => x.trim());
     const optBTypes = optB.type.split(",").map((x) => x.trim());
@@ -58,6 +71,7 @@ export const OptionToggle = ({
           opt_quantity: o.opt_quantity === 1 ? 0 : 1,
         };
       }),
+      MWFW: updateMwfw(option.option, !option.opt_quantity),
     });
   };
 
