@@ -27,16 +27,17 @@ export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   const scrollTo = useScrollToElement();
 
   const handleClick = () => {
+    const unitId = !heroSelection ? focusedUnitId : uuid();
     (heroSelection ? assignHeroToWarband : selectUnit)(
       focusedWarbandId,
-      !heroSelection ? focusedUnitId : uuid(),
+      unitId,
       unitData,
     );
     updateBuilderSidebar({
       warriorSelection: false,
       heroSelection: false,
     });
-    scrollTo(focusedUnitId || focusedWarbandId);
+    setTimeout(() => scrollTo(unitId), null);
   };
 
   const handleCardClick = (e) => {

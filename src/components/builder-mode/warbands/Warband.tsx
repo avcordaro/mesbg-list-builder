@@ -70,7 +70,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
           collapsed={collapsed}
         />
 
-        <Box data-scroll-id={warband.id}>
+        <Box data-scroll-id={warband.hero?.id}>
           {!isDefinedUnit(warband.hero) ? (
             <ChooseHeroButton warbandId={warband.id} />
           ) : (
