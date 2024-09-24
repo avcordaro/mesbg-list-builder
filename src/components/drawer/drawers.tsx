@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Alliances } from "./drawers/Alliances.tsx";
+import { Changelog } from "./drawers/Changelog.tsx";
 import { KeywordsSearch } from "./drawers/KeywordsSearch.tsx";
 import { NewEditionNews } from "./drawers/NewEditionNews.tsx";
 
@@ -7,6 +8,7 @@ export enum DrawerTypes {
   ALLIANCE = "ALLIANCE",
   NEW_EDITION_NEWS = "NEW_EDITION_NEWS",
   KEYWORD_SEARCH = "KEYWORD_SEARCH",
+  CHANGELOG = "CHANGELOG",
 }
 
 export type DrawerProps = {
@@ -34,6 +36,13 @@ export const drawers = new Map<DrawerTypes, DrawerProps>([
     {
       title: "Keyword search",
       children: <KeywordsSearch />,
+    },
+  ],
+  [
+    DrawerTypes.CHANGELOG,
+    {
+      title: "Changelog",
+      children: <Changelog />,
     },
   ],
 ]);
