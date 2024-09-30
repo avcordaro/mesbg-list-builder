@@ -10,7 +10,7 @@ function updateGithub() {
     # Commit the files
     git commit -m "Update version to v$NEW_VERSION"
      # Create a tag for the created commit
-    git tag "$NEW_VERSION"
+    git tag "v$NEW_VERSION"
 
     echo "Created git commit & tag for v$NEW_VERSION"
 }
