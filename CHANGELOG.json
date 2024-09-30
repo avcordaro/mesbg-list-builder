@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Fixed an issue where a Captain of Carn Dum could only be added once to your army."
+    ]
+  },
   "6.6": {
     "added": [
       "This changelog drawer with information on the changes in each Major or Minor release."
