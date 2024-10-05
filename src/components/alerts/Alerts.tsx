@@ -1,4 +1,4 @@
-import { AlertColor, Slide, Snackbar } from "@mui/material";
+import { AlertColor, Portal, Slide, Snackbar } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import { useEffect } from "react";
@@ -29,20 +29,22 @@ export const Alerts = () => {
 
   const { variant, content } = alertMap.get(activeAlert);
   return (
-    <Snackbar
-      open={true}
-      anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      TransitionComponent={Slide}
-      onClose={dismissAlert}
-    >
-      <Alert
+    <Portal>
+      <Snackbar
+        open={true}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        TransitionComponent={Slide}
         onClose={dismissAlert}
-        variant="standard"
-        sx={{ width: "100%" }}
-        severity={variant as AlertColor}
       >
-        <Box sx={{ maxWidth: "72ch" }}>{content}</Box>
-      </Alert>
-    </Snackbar>
+        <Alert
+          onClose={dismissAlert}
+          variant="standard"
+          sx={{ width: "100%" }}
+          severity={variant as AlertColor}
+        >
+          <Box sx={{ maxWidth: "72ch" }}>{content}</Box>
+        </Alert>
+      </Snackbar>
+    </Portal>
   );
 };
