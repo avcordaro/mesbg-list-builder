@@ -37,6 +37,22 @@ export const ProfileCards = () => {
         }));
     }
 
+    if (hero.name === "Treebeard") {
+      // Filter Merry & Pippin's profiles if not chosen as passengers.
+      const hasMerryPippin = hero.options.find(
+        (option) =>
+          option.option === "Merry & Pippin" && option.opt_quantity === 1,
+      );
+      console.log(hasMerryPippin);
+      if (hasMerryPippin) {
+        return extraProfiles.map((profile) => ({
+          profile,
+          army: hero.profile_origin,
+        }));
+      }
+      return [];
+    }
+
     return extraProfiles.map((profile) => ({
       profile,
       army: hero.profile_origin,

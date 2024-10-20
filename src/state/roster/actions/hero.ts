@@ -5,6 +5,7 @@ import {
   handleAzog,
   handleMahudChief,
   handleSiegeEngineCaptainUpdates,
+  handleTreebeard,
 } from "../calculations";
 
 const heroCanTakeUnit = (hero: Unit, unit: Unit) => {
@@ -44,6 +45,7 @@ const getUpdatedHero = (hero: Unit, update: Partial<Unit>): Unit => {
   handleSiegeEngineCaptainUpdates(updated);
   handleMahudChief(updated);
   handleAzog(updated);
+  handleTreebeard(updated);
 
   return updated;
 };

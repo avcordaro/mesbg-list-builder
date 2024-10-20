@@ -46,6 +46,22 @@ export const handleAzog = (hero: Unit) => {
   }
 };
 
+export const handleTreebeard = (hero: Unit) => {
+  if (hero.model_id === "[fangorn] treebeard") {
+    const hasMerryPippin = hero.options.find(
+      (option) =>
+        option.option === "Merry & Pippin" && option.opt_quantity === 1,
+    );
+    hero.MWFW = hasMerryPippin
+      ? [
+          ["Treebeard", "3:6:3:3"],
+          ["Meriadoc Brandybuck", "0:0:1:1"],
+          ["Peregrin Took", "0:0:1:1"],
+        ]
+      : [["Treebeard", "3:6:3:3"]];
+  }
+};
+
 export const handleSiegeEngineCaptainUpdates = (hero: Unit) => {
   if (hero.unit_type !== "Siege Engine") {
     return;
