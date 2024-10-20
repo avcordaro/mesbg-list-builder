@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Fixed an issue where a Captain of Carn Dum could only be added once to your army.",
-      "Alerts no longer appear behind modal backdrops."
+      "Alerts no longer appear behind modal backdrops.",
+      "Merry and Pippin now correctly display in Game Mode when chosen as passengers on Treebeard."
     ]
   },
   "6.6": {
