@@ -35,14 +35,7 @@ export const useMesbgData = () => {
     ) as Unit[];
   };
 
-  const getEligibleWarbandUnits = (): Unit[] => {
-    const [focusedWarband] = warriorSelectionFocus;
-    const warbandHero: Unit | null = roster.warbands.find(
-      ({ id }) => focusedWarband === id,
-    )?.hero;
-
-    if (!isDefinedUnit(warbandHero)) return [];
-
+  function getEligibleWarbandUnitsForHero(warbandHero: Unit) {
     const validUnits =
       heroConstraintData[warbandHero.model_id][0]["valid_warband_units"];
 
@@ -51,6 +44,16 @@ export const useMesbgData = () => {
         validUnits.includes(data.model_id) &&
         !(data.unique && uniqueModels.includes(data.model_id)),
     ) as Unit[];
+  }
+
+  const getEligibleWarbandUnits = (): Unit[] => {
+    const [focusedWarband] = warriorSelectionFocus;
+    const warbandHero: Unit | null = roster.warbands.find(
+      ({ id }) => focusedWarband === id,
+    )?.hero;
+
+    if (!isDefinedUnit(warbandHero)) return [];
+    return getEligibleWarbandUnitsForHero(warbandHero);
   };
 
   return {
@@ -58,5 +61,6 @@ export const useMesbgData = () => {
     getFactionsOfType,
     getHeroesFromFaction,
     getEligibleWarbandUnits,
+    getEligibleWarbandUnitsForHero,
   };
 };

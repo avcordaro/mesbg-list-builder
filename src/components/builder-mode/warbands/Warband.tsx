@@ -1,3 +1,4 @@
+import { Draggable, Droppable } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
 import { Collapse } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -5,7 +6,8 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
+import { useMesbgData } from "../../../hooks/mesbg-data.ts";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
@@ -20,9 +22,29 @@ type WarbandProps = {
 };
 
 export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
-  const { addUnit, updateBuilderSidebar } = useStore();
+  const { addUnit, updateBuilderSidebar, draggedUnit } = useStore();
+  const { getEligibleWarbandUnitsForHero } = useMesbgData();
   const [collapsed, setCollapsed] = useState(false);
+  const [dropzoneEnabled, setDropzoneEnabled] = useState(true);
   const theme = useTheme();
+
+  useEffect(() => {
+    if (!draggedUnit || !isDefinedUnit(draggedUnit)) {
+      setDropzoneEnabled(true);
+      return;
+    }
+
+    if (!isDefinedUnit(warband.hero)) {
+      setDropzoneEnabled(true);
+      return;
+    }
+
+    setDropzoneEnabled(
+      getEligibleWarbandUnitsForHero(warband.hero)
+        .map((unit) => unit.model_id)
+        .includes(draggedUnit.model_id),
+    );
+  }, [draggedUnit, warband.hero, getEligibleWarbandUnitsForHero]);
 
   const handleNewWarrior = () => {
     addUnit(warband.id);
@@ -82,22 +104,56 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
           )}
         </Box>
 
-        {warband.units
-          // Filters 'choose a warrior buttons if the warband is collapsed
-          .filter((unit) => !collapsed || isDefinedUnit(unit))
-          .map((unit) => (
-            <Box key={unit.id} data-scroll-id={unit.id}>
-              {!isDefinedUnit(unit) ? (
-                <ChooseWarriorButton warbandId={warband.id} unit={unit} />
-              ) : (
-                <WarbandWarrior
-                  warbandId={warband.id}
-                  unit={unit}
-                  collapsed={collapsed}
-                />
-              )}
-            </Box>
-          ))}
+        <Droppable droppableId={warband.id} isDropDisabled={!dropzoneEnabled}>
+          {(provided, snapshot) => (
+            <Stack
+              ref={provided.innerRef}
+              {...provided.droppableProps}
+              spacing={1}
+              sx={
+                snapshot.isDraggingOver
+                  ? {
+                      backgroundColor: "#FFFFFF33",
+                      border: "1px dashed white",
+                      p: 1,
+                    }
+                  : {
+                      transition: "padding 0.3s ease",
+                    }
+              }
+            >
+              {warband.units
+                // Filters 'choose a warrior buttons if the warband is collapsed
+                .filter((unit) => !collapsed || isDefinedUnit(unit))
+                .map((unit, index) => (
+                  <Draggable key={unit.id} draggableId={unit.id} index={index}>
+                    {(provided) => (
+                      <Box
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        data-scroll-id={unit.id}
+                      >
+                        {!isDefinedUnit(unit) ? (
+                          <ChooseWarriorButton
+                            warbandId={warband.id}
+                            unit={unit}
+                          />
+                        ) : (
+                          <WarbandWarrior
+                            warbandId={warband.id}
+                            unit={unit}
+                            collapsed={collapsed}
+                          />
+                        )}
+                      </Box>
+                    )}
+                  </Draggable>
+                ))}
+              {provided.placeholder}
+            </Stack>
+          )}
+        </Droppable>
 
         <Collapse in={!collapsed}>
           {isHeroWhoLeads(warband.hero) && (
