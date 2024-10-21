@@ -10,6 +10,9 @@
       "Merry and Pippin now correctly display in Game Mode when chosen as passengers on Treebeard.",
       "Fix issue with importing the White Warg's MWFW tracker when switching to Game Mode after a fresh import.",
       "Fixed the 'JSON string for army list is invalid.' error when importing a roster with 'choose a warrior' buttons."
+    ],
+    "security": [
+      "Upgraded packages used for bundling the to remove 2 potential vulnerabilities"
     ]
   },
   "6.6": {
