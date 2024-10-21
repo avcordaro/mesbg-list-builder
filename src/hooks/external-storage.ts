@@ -1,3 +1,4 @@
+import { v4 as uuid } from "uuid";
 import rawData from "../assets/data/mesbg_data.json";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
 import { useStore } from "../state/store.ts";
@@ -39,14 +40,22 @@ export const useExternalStorage = () => {
       "warbands[].hero",
       "warbands[].units",
       "warbands[].units[].id",
-      "warbands[].units[].model_id",
-      "warbands[].units[].quantity",
-      "warbands[].units[].options",
-      "warbands[].units[].options[].option_id",
-      "warbands[].units[].options[].opt_quantity",
     ]);
 
-    if (!hasRequiredKeys) {
+    const allModelsCorrect = uploadedRoster.warbands
+      .flatMap((warband) => warband.units)
+      .every((unit) => {
+        if (unit.name === null) return true;
+        return validateKeys(unit, [
+          "model_id",
+          "quantity",
+          "options",
+          "options[].option_id",
+          "options[].opt_quantity",
+        ]);
+      });
+
+    if (!hasRequiredKeys || !allModelsCorrect) {
       throw Error("Imported JSON roster does not have all required keys.");
     }
 
@@ -138,11 +147,11 @@ function rehydrateRoster(roster: Partial<Roster>) {
       ...warband,
       hero: warband.hero !== null && reloadDataForUnit(warband.hero),
       units: warband.units.map((unit) => {
-        if (unit !== null && (unit as Unit)?.model_id !== null) {
+        if (unit !== null && isDefinedUnit(unit) && unit.model_id !== null) {
           return reloadDataForUnit(unit as Unit);
         } else {
           return {
-            id: unit.id,
+            id: unit?.id || uuid(),
             name: null,
           };
         }
