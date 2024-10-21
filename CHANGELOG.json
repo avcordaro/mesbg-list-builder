@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.8": {
     "added": [
       "Make it possible to drag warriors around inside or between warbands, assuming they can be part of the destination warband."
     ],
