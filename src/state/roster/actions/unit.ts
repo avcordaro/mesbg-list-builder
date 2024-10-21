@@ -80,7 +80,8 @@ export const deleteUnit =
     },
   });
 
-const isSpecialWarbandOptionEnabled = (warbandHero: Unit, option: Option) => {
+const isOptionAvailableInWarband = (warbandHero: Unit, option: Option) => {
+  if (option.type !== "special_warband_upgrade") return true;
   if (!isDefinedUnit(warbandHero)) return false;
   const heroData = hero_constraint_data[warbandHero.model_id][0];
   return heroData["special_warband_options"].includes(option.option);
@@ -102,10 +103,7 @@ export const reorderUnits =
               ...unit,
               options: unit.options.map((option) => ({
                 ...option,
-                opt_quantity: isSpecialWarbandOptionEnabled(
-                  warband.hero,
-                  option,
-                )
+                opt_quantity: isOptionAvailableInWarband(warband.hero, option)
                   ? option.opt_quantity
                   : 0,
               })),
