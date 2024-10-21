@@ -29,7 +29,11 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
   const theme = useTheme();
 
   useEffect(() => {
-    if (!draggedUnit || !isDefinedUnit(draggedUnit)) {
+    if (
+      !draggedUnit ||
+      !isDefinedUnit(draggedUnit) ||
+      draggedUnit.unit_type === "Siege"
+    ) {
       setDropzoneEnabled(true);
       return;
     }
