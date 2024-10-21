@@ -4,7 +4,7 @@
       "Make it possible to drag warriors around inside or between warbands, assuming they can be part of the destination warband."
     ],
     "security": [
-      "Upgraded packages used for bundling the to remove 2 potential vulnerabilities"
+      "Upgraded packages used for bundling the application to remove 2 potential vulnerabilities"
     ]
   },
   "6.7": {
