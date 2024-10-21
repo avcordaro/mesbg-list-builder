@@ -35,14 +35,19 @@ export const useMesbgData = () => {
     ) as Unit[];
   };
 
-  function getEligibleWarbandUnitsForHero(warbandHero: Unit) {
-    const validUnits =
-      heroConstraintData[warbandHero.model_id][0]["valid_warband_units"];
+  function getEligibleWarbandUnitsForHero(
+    warbandHero: Unit,
+    checkUnique: boolean = true,
+  ) {
+    const heroData = heroConstraintData[warbandHero.model_id];
+    if (!heroData || !heroData[0]) return [];
+    const validUnits = heroData[0]["valid_warband_units"];
 
     return rawData.filter(
       (data) =>
         validUnits.includes(data.model_id) &&
-        !(data.unique && uniqueModels.includes(data.model_id)),
+        (!checkUnique ||
+          !(data.unique && uniqueModels.includes(data.model_id))),
     ) as Unit[];
   }
 

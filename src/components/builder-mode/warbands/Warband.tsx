@@ -44,7 +44,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
     }
 
     setDropzoneEnabled(
-      getEligibleWarbandUnitsForHero(warband.hero)
+      getEligibleWarbandUnitsForHero(warband.hero, false)
         .map((unit) => unit.model_id)
         .includes(draggedUnit.model_id),
     );
@@ -120,6 +120,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
                       backgroundColor: "#FFFFFF33",
                       border: "1px dashed white",
                       p: 1,
+                      transition: "padding 0.3s ease",
                     }
                   : {
                       transition: "padding 0.3s ease",
@@ -131,25 +132,41 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
                 .filter((unit) => !collapsed || isDefinedUnit(unit))
                 .map((unit, index) => (
                   <Draggable key={unit.id} draggableId={unit.id} index={index}>
-                    {(provided) => (
+                    {(provided, snapshot) => (
                       <Box
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                         data-scroll-id={unit.id}
                       >
-                        {!isDefinedUnit(unit) ? (
-                          <ChooseWarriorButton
-                            warbandId={warband.id}
-                            unit={unit}
-                          />
-                        ) : (
-                          <WarbandWarrior
-                            warbandId={warband.id}
-                            unit={unit}
-                            collapsed={collapsed}
-                          />
-                        )}
+                        <Box
+                          sx={
+                            snapshot.isDragging
+                              ? {
+                                  transform: "rotate(1.5deg)",
+                                  boxShadow: "1rem 1rem 1rem #000000FF",
+                                  transition:
+                                    "transform 0.3s ease, boxShadow 0.3s ease",
+                                }
+                              : {
+                                  transition:
+                                    "transform 0.3s ease, boxShadow 0.3s ease",
+                                }
+                          }
+                        >
+                          {!isDefinedUnit(unit) ? (
+                            <ChooseWarriorButton
+                              warbandId={warband.id}
+                              unit={unit}
+                            />
+                          ) : (
+                            <WarbandWarrior
+                              warbandId={warband.id}
+                              unit={unit}
+                              collapsed={collapsed}
+                            />
+                          )}
+                        </Box>
                       </Box>
                     )}
                   </Draggable>
