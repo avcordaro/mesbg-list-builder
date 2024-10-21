@@ -1,5 +1,7 @@
+import { v4 as uuid } from "uuid";
 import rawData from "../assets/data/mesbg_data.json";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { handleAzog, handleTreebeard } from "../state/roster/calculations";
 import { useStore } from "../state/store.ts";
 import { Roster } from "../types/roster.ts";
 import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
@@ -39,14 +41,22 @@ export const useExternalStorage = () => {
       "warbands[].hero",
       "warbands[].units",
       "warbands[].units[].id",
-      "warbands[].units[].model_id",
-      "warbands[].units[].quantity",
-      "warbands[].units[].options",
-      "warbands[].units[].options[].option_id",
-      "warbands[].units[].options[].opt_quantity",
     ]);
 
-    if (!hasRequiredKeys) {
+    const allModelsCorrect = uploadedRoster.warbands
+      .flatMap((warband) => warband.units)
+      .every((unit) => {
+        if (unit.name === null) return true;
+        return validateKeys(unit, [
+          "model_id",
+          "quantity",
+          "options",
+          "options[].option_id",
+          "options[].opt_quantity",
+        ]);
+      });
+
+    if (!hasRequiredKeys || !allModelsCorrect) {
       throw Error("Imported JSON roster does not have all required keys.");
     }
 
@@ -118,13 +128,20 @@ function reloadDataForUnit(unit: Unit): Unit {
     opt_quantity: option.opt_quantity,
   }));
 
-  return {
+  const reloadedUnit = {
     ...modelData,
     id: unit.id,
     quantity: unit.quantity,
     options: reloadedOptions,
     MWFW: mwfwOptions(reloadedOptions, modelData.MWFW),
   };
+
+  // Functions update the reloaded unit to add 'the white warg' or
+  // 'merry & pippin' to the imported state.
+  handleAzog(reloadedUnit);
+  handleTreebeard(reloadedUnit);
+
+  return reloadedUnit;
 }
 
 function rehydrateRoster(roster: Partial<Roster>) {
@@ -138,11 +155,11 @@ function rehydrateRoster(roster: Partial<Roster>) {
       ...warband,
       hero: warband.hero !== null && reloadDataForUnit(warband.hero),
       units: warband.units.map((unit) => {
-        if (unit !== null && (unit as Unit)?.model_id !== null) {
+        if (unit !== null && isDefinedUnit(unit) && unit.model_id !== null)
           return reloadDataForUnit(unit as Unit);
-        } else {
+        else {
           return {
-            id: unit.id,
+            id: unit?.id || uuid(),
             name: null,
           };
         }

@@ -3,7 +3,9 @@
     "bugfixes": [
       "Fixed an issue where a Captain of Carn Dum could only be added once to your army.",
       "Alerts no longer appear behind modal backdrops.",
-      "Merry and Pippin now correctly display in Game Mode when chosen as passengers on Treebeard."
+      "Merry and Pippin now correctly display in Game Mode when chosen as passengers on Treebeard.",
+      "Fix issue with importing the White Warg's MWFW tracker when switching to Game Mode after a fresh import.",
+      "Fixed the 'JSON string for army list is invalid.' error when importing a roster with 'choose a warrior' buttons."
     ]
   },
   "6.6": {
