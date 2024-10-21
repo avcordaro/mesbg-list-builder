@@ -26,6 +26,14 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const optionsString = unit.options
+    .filter((o) => o.opt_quantity)
+    .map((o) => o.option)
+    .join(", ")
+    // replaces the last `,` with an &-sign
+    .replace(/,(?=[^,]*$)/, " &")
+    // surround the string with [] (if there is at least 1 option.)
+    .replace(/^(.+)$/, "[$1]");
   return (
     <Card sx={{ p: 1 }} elevation={2}>
       <Stack
@@ -83,12 +91,22 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             spacing={isMobile ? 0 : 3}
             alignItems="center"
           >
-            <Typography variant="body1" component="div" flexGrow={1}>
+            <Typography
+              variant="body1"
+              component="div"
+              flexGrow={1}
+              textAlign={isMobile ? "center" : "start"}
+            >
+              <b>{unit.name} </b>
+              {props.collapsed && !isTablet && <i>{optionsString}</i>}
               <b>
-                {unit.name}{" "}
-                {unit.unit_type === "Warrior" && "(x" + unit.quantity + ")"}
+                {unit.unit_type === "Warrior" && " (x" + unit.quantity + ")"}
               </b>
+              <Typography>
+                {props.collapsed && isTablet && <i>{optionsString}</i>}
+              </Typography>
             </Typography>
+
             <Typography sx={{ paddingRight: "10px" }}>
               Points: <b>{unit.pointsTotal}</b>
               {unit.unit_type === "Warrior" &&

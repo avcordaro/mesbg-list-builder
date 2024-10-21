@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Collapsed warriors now display the options selected for each unit."
+    ],
     "bugfixes": [
       "Fixed an issue where a Captain of Carn Dum could only be added once to your army.",
       "Alerts no longer appear behind modal backdrops.",
