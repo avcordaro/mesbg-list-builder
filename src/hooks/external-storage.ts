@@ -155,7 +155,7 @@ function rehydrateRoster(roster: Partial<Roster>) {
       ...warband,
       hero: warband.hero !== null && reloadDataForUnit(warband.hero),
       units: warband.units.map((unit) => {
-        if (unit !== null && isDefinedUnit(unit) && unit.model_id !== null)
+        if (unit && (unit as Unit).model_id)
           return reloadDataForUnit(unit as Unit);
         else {
           return {
