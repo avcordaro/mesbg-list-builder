@@ -1,7 +1,7 @@
 {
   "main": {
     "added": [
-      "The application with now ask for confirmation before unloading the page while in Game Mode"
+      "The application will now ask for confirmation before unloading the page while in Game Mode."
     ]
   },
   "6.8": {
