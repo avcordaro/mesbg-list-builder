@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.7": {
     "added": [
       "Collapsed warriors now display the options selected for each unit."
     ],
