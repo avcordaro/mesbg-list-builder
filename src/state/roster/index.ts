@@ -13,6 +13,7 @@ import {
   duplicateUnit,
   duplicateWarband,
   recalculate as updateMetaData,
+  reorderUnits,
   selectUnit,
   updateFactionData,
   updateHero,
@@ -43,6 +44,7 @@ type RosterFunctions = {
   updateUnit: (warbandId: string, unitId: string, unit: Partial<Unit>) => void;
   deleteUnit: (warbandId: string, unitId: string) => void;
   duplicateUnit: (warbandId: string, unitId: string) => string;
+  reorderUnits: (warband: string, reorderedUnits: (Unit | FreshUnit)[]) => void;
 };
 
 export type RosterState = {
@@ -169,6 +171,10 @@ export const rosterSlice: Slice<RosterState> = (set, get) => {
     },
     deleteUnit: (warbandId: string, unitId: string): void => {
       set(deleteUnit(warbandId, unitId), undefined, "DELETE_UNIT");
+      recalculate();
+    },
+    reorderUnits: (warbandId: string, reorderedUnits: (Unit | FreshUnit)[]) => {
+      set(reorderUnits(warbandId, reorderedUnits), undefined, "REORDER_UNITS");
       recalculate();
     },
   };

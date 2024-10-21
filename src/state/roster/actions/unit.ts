@@ -1,5 +1,6 @@
 import { v4 as uuid } from "uuid";
-import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
+import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
+import { FreshUnit, isDefinedUnit, Option, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 import { findAndRemoveItem } from "../../../utils/array.ts";
 
@@ -75,6 +76,40 @@ export const deleteUnit =
         findAndRemoveItem(warband.units, findUnitById(unitId));
 
         return warband;
+      }),
+    },
+  });
+
+const isOptionAvailableInWarband = (warbandHero: Unit, option: Option) => {
+  if (option.type !== "special_warband_upgrade") return true;
+  if (!isDefinedUnit(warbandHero)) return false;
+  const heroData = hero_constraint_data[warbandHero.model_id][0];
+  return heroData["special_warband_options"].includes(option.option);
+};
+
+export const reorderUnits =
+  (warbandId: string, units: (Unit | FreshUnit)[]) =>
+  ({ roster }) => ({
+    roster: {
+      ...roster,
+      warbands: roster.warbands.map((warband: Warband) => {
+        if (warband.id !== warbandId) return warband;
+
+        return {
+          ...warband,
+          units: units.map((unit) => {
+            if (!isDefinedUnit(unit)) return unit;
+            return {
+              ...unit,
+              options: unit.options.map((option) => ({
+                ...option,
+                opt_quantity: isOptionAvailableInWarband(warband.hero, option)
+                  ? option.opt_quantity
+                  : 0,
+              })),
+            };
+          }),
+        };
       }),
     },
   });
