@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useEffect } from "react";
 import { useStore } from "../../state/store.ts";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
@@ -19,6 +20,17 @@ export const GameMode = () => {
 
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
+
+  useEffect(() => {
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
   return (
     <Stack>
       <Stack
