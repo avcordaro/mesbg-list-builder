@@ -4,6 +4,7 @@ import {
   adjustPotentialArmyWideSpecialRuleOptions,
   handleAzog,
   handleMahudChief,
+  handleMultiWoundMounts,
   handleSiegeEngineCaptainUpdates,
   handleTreebeard,
 } from "../calculations";
@@ -46,6 +47,7 @@ const getUpdatedHero = (hero: Unit, update: Partial<Unit>): Unit => {
   handleMahudChief(updated);
   handleAzog(updated);
   handleTreebeard(updated);
+  handleMultiWoundMounts(updated);
 
   return updated;
 };
