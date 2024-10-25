@@ -55,6 +55,11 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
       return 0;
     }
 
+    if (["Shadowfax", "Elk", "War Boar"].includes(hero.name)) {
+      // These do not count towards casualties
+      return 0;
+    }
+
     if (
       (hero.name === "Azog" && gameState.heroes[hero_id].length > 1) ||
       hero.name === "The White Warg"

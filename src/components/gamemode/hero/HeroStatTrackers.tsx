@@ -95,6 +95,17 @@ const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
           single casualty)
         </Typography>
       )}
+
+      {["Shadowfax", "Elk", "War Boar"].includes(hero.name) && (
+        <Typography
+          variant="caption"
+          color="textSecondary"
+          sx={{ width: "44ch" }}
+          textAlign="center"
+        >
+          (Does not count towards your casualties)
+        </Typography>
+      )}
     </Stack>
   );
 };

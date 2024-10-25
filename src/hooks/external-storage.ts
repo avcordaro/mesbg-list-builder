@@ -1,7 +1,13 @@
 import { v4 as uuid } from "uuid";
 import rawData from "../assets/data/mesbg_data.json";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
-import { handleAzog, handleTreebeard } from "../state/roster/calculations";
+import {
+  handleAzog,
+  handleMahudChief,
+  handleMultiWoundMounts,
+  handleSiegeEngineCaptainUpdates,
+  handleTreebeard,
+} from "../state/roster/calculations";
 import { useStore } from "../state/store.ts";
 import { Roster } from "../types/roster.ts";
 import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
@@ -138,8 +144,11 @@ function reloadDataForUnit(unit: Unit): Unit {
 
   // Functions update the reloaded unit to add 'the white warg' or
   // 'merry & pippin' to the imported state.
+  handleSiegeEngineCaptainUpdates(reloadedUnit);
+  handleMahudChief(reloadedUnit);
   handleAzog(reloadedUnit);
   handleTreebeard(reloadedUnit);
+  handleMultiWoundMounts(reloadedUnit);
 
   return reloadedUnit;
 }

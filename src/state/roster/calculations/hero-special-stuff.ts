@@ -3,6 +3,32 @@ import mesbg_data from "../../../assets/data/mesbg_data.json";
 import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
 
+const handleMultiWoundMountOption = (
+  hero: Unit,
+  optionName: string,
+  mountStats: string,
+) => {
+  hero.MWFW = hero.options.find(
+    (option) => option.option === optionName && option.opt_quantity === 1,
+  )
+    ? [
+        [hero.name, hero.MWFW[0][1]],
+        [optionName, mountStats],
+      ]
+    : [[hero.name, hero.MWFW[0][1]]];
+};
+
+export const handleMultiWoundMounts = (hero: Unit) => {
+  if (hero.model_id === "[minas_tirith] gandalf_the_white")
+    handleMultiWoundMountOption(hero, "Shadowfax", "0:2:1:1");
+  if (hero.model_id === "[halls_of_thranduil] thranduil")
+    handleMultiWoundMountOption(hero, "Elk", "0:0:0:2");
+  if (
+    hero.model_id === "[the_iron_hills] dain_ironfoot,_lord_of_the_iron_hills"
+  )
+    handleMultiWoundMountOption(hero, "War Boar", "0:0:0:2");
+};
+
 export const handleMahudChief = (hero: Unit) => {
   if (
     hero.model_id !== "[grand_army_of_the_south] war_mumak_of_harad" &&

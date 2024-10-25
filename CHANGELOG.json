@@ -1,7 +1,8 @@
 {
   "main": {
     "added": [
-      "The application will now ask for confirmation before unloading the page while in Game Mode."
+      "The application will now ask for confirmation before unloading the page while in Game Mode.",
+      "Added Might, Will, Fate & Wound counters for Gandalf's Shadowfax, Thranduil's Elk and Dain's War Boar."
     ]
   },
   "6.8": {
