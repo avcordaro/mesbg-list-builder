@@ -20,13 +20,10 @@ import { RxCross1 } from "react-icons/rx";
 import { allianceColours } from "../../../constants/alliances.ts";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store.ts";
-import {
-  FreshUnit,
-  isDefinedUnit,
-  Unit,
-  UnitType,
-} from "../../../types/unit.ts";
+import { Roster } from "../../../types/roster.ts";
+import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
+import { getSumOfUnits } from "./totalUnits.ts";
 
 const UnitRow = ({
   unit,
@@ -66,61 +63,20 @@ const UnitRow = ({
   );
 };
 
-const RosterTotalRows = ({ units }: { units: (Unit | FreshUnit)[] }) => {
-  const totalledUnits: Unit[] = Object.values(
-    Object.create(units)
-      .filter(isDefinedUnit)
-      // clone the unit so not to update its 'quantity' by object reference in state.
-      .map(Object.create)
-      .map((unit: Unit) => {
-        const options = unit.options
-          .filter((o) => o.opt_quantity)
-          .map((o) => o.option)
-          .join(",");
-        const key = unit.name + " [" + options + "]";
-
-        return { key, unit };
-      })
-      .reduce(
-        (totals: Record<string, Unit>, { key, unit }) => {
-          if (!totals[key]) {
-            totals[key] = unit;
-          } else {
-            totals[key].quantity += unit.quantity;
-            totals[key].pointsTotal += unit.pointsTotal;
-          }
-          return totals;
-        },
-        {} as Record<string, Unit>,
-      ),
-  );
-
-  const sorting: Record<UnitType, number> = {
-    "Hero of Legend": 1,
-    "Hero of Valour": 2,
-    "Hero of Fortitude": 3,
-    "Minor Hero": 4,
-    "Independent Hero": 5,
-    Warrior: 6,
-    "Siege Engine": 7,
-  };
-
+const RosterTotalRows = ({ roster }: { roster: Roster }) => {
+  const units = getSumOfUnits(roster);
   return (
     <>
-      {totalledUnits
-        .sort((a, b) => {
-          return sorting[a.unit_type] - sorting[b.unit_type];
-        })
-        .map((unit) => (
-          <UnitRow
-            key={unit.id}
-            unit={unit}
-            rowStyle={{
-              backgroundColor: "white",
-            }}
-            forceQuantity={unit.unit_type.includes("Hero") && unit.quantity > 1}
-          />
-        ))}
+      {units.map((unit) => (
+        <UnitRow
+          key={unit.id}
+          unit={unit}
+          rowStyle={{
+            backgroundColor: "white",
+          }}
+          forceQuantity={unit.unit_type.includes("Hero") && unit.quantity > 1}
+        />
+      ))}
     </>
   );
 };
@@ -158,9 +114,11 @@ const WarbandRows = ({ warband }: { warband: Warband }) => {
 
 export function RosterTableView({
   showArmyBonus,
+  showUnitTotals,
   screenshotting = false,
 }: {
   showArmyBonus: boolean;
+  showUnitTotals: boolean;
   screenshotting?: boolean;
 }) {
   const {
@@ -172,7 +130,7 @@ export function RosterTableView({
   const factionData = useFactionData();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const displayTotals = true;
+
   return (
     <>
       <Stack
@@ -238,13 +196,8 @@ export function RosterTableView({
             </TableRow>
           </TableHead>
           <TableBody>
-            {displayTotals ? (
-              <RosterTotalRows
-                units={roster.warbands.flatMap((warband) => [
-                  warband.hero,
-                  ...warband.units,
-                ])}
-              />
+            {showUnitTotals ? (
+              <RosterTotalRows roster={roster} />
             ) : (
               <>
                 {roster.warbands.map((warband) => (

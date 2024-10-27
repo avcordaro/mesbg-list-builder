@@ -4,8 +4,17 @@ import { useState } from "react";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { getSumOfUnits } from "./totalUnits.ts";
 
-export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
+export function RosterTextView({
+  showArmyBonus,
+  showUnitTotals,
+  screenshotting = false,
+}: {
+  showArmyBonus: boolean;
+  showUnitTotals: boolean;
+  screenshotting?: boolean;
+}) {
   const {
     roster,
     allianceLevel,
@@ -36,7 +45,8 @@ export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
   const unitsToText = (units: Unit[]) => {
     return units
       .map((unit) => {
-        const name = `  ${unit.quantity}x ${unit.name} (${unit.pointsTotal} points)`;
+        const quantity = !unit.unique ? `${unit.quantity}x ` : ``;
+        const name = `  ${quantity}${unit.name} (${unit.pointsTotal} points)`;
         const options = unit.options
           .map((option) => {
             if (option.opt_quantity === 0) return null;
@@ -79,20 +89,24 @@ export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
   };
 
   const createTextView = () => {
+    const unitSections = showUnitTotals
+      ? unitsToText(getSumOfUnits(roster)) + " \n"
+      : roster.warbands
+          .map((warband) => {
+            return `----------------------------------------  
+      Warband ${warband.num} (${warband.points} points)  
+      ${heroToText(warband.hero, warband.id === roster.leader_warband_id)}
+      ${unitsToText(warband.units.filter(isDefinedUnit))}  
+      `;
+          })
+          .join("  \n");
+
     return `
     | Total Points: ${roster.points} | Total Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} |
     
     Alliance Level: ${allianceLevel}
     
-    ${roster.warbands
-      .map((warband) => {
-        return `----------------------------------------  
-      Warband ${warband.num} (${warband.points} points)  
-      ${heroToText(warband.hero, warband.id === roster.leader_warband_id)}
-      ${unitsToText(warband.units.filter(isDefinedUnit))}  
-      `;
-      })
-      .join("  \n")}
+    ${unitSections}
       ${armyBonus()}
       ${admission()}
     `;
@@ -117,7 +131,7 @@ export function RosterTextView({ showArmyBonus }: { showArmyBonus: boolean }) {
         variant="outlined"
         color="inherit"
         onClick={handleCopy}
-        sx={{ height: "2rem", p: 3 }}
+        sx={{ height: "2rem", p: 3, display: screenshotting ? "none" : "" }}
       >
         <ContentCopyIcon /> {copyLabel}
       </Button>

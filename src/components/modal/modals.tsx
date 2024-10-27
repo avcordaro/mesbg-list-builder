@@ -1,3 +1,4 @@
+import { ListAlt } from "@mui/icons-material";
 import SaveIcon from "@mui/icons-material/Save";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import { ReactNode } from "react";
@@ -77,10 +78,9 @@ export const modals = new Map<ModalTypes, ModalProps>([
   [
     ModalTypes.ROSTER_TABLE,
     {
-      icon: <></>,
-      title: "",
+      icon: <ListAlt />,
+      title: "Roster Table",
       children: <ModalRosterTable />,
-      customModalHeader: true,
     },
   ],
   [

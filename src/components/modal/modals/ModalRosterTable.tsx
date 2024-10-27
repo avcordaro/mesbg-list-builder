@@ -1,5 +1,3 @@
-import { ListAlt } from "@mui/icons-material";
-import CloseIcon from "@mui/icons-material/Close";
 import {
   Button,
   DialogActions,
@@ -7,10 +5,7 @@ import {
   FormControlLabel,
   FormGroup,
 } from "@mui/material";
-import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import html2canvas from "html2canvas";
@@ -27,15 +22,17 @@ after the user clicks the 'Roster Table' button. This component uses the full ro
 state variable (passed to it as an argument) to populate a table of the army. */
 
 export const ModalRosterTable = () => {
-  const { setCurrentModal, closeModal } = useStore();
+  const { setCurrentModal } = useStore();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [textView, setTextView] = useState(false);
   const [showArmyBonus, setShowArmyBonus] = useState(true);
+  const [showUnitTotals, setShowUnitTotals] = useState(false);
   const [screenshotting, setScreenshotting] = useState(false);
 
+  const handleTotalsToggle = () => setShowUnitTotals(!showUnitTotals);
   const handleTextToggle = () => setTextView(!textView);
   const handleBonusToggle = () => setShowArmyBonus(!showArmyBonus);
 
@@ -74,21 +71,23 @@ export const ModalRosterTable = () => {
 
   return (
     <>
-      <Box sx={{ display: "flex", alignItems: "center", p: 1 }}>
-        <Typography
-          variant="h6"
-          component="h2"
-          flexGrow={1}
+      <DialogContent id="rosterList" sx={{ minWidth: "50vw" }}>
+        <FormGroup
+          row
           sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: 1,
+            mb: 2,
+            display: screenshotting ? "none" : "flex",
+            direction: isMobile ? "column" : "row",
+            justifyContent: isMobile ? "start" : "end",
           }}
         >
-          {!isMobile && <ListAlt />}
-          <b>Roster Table</b>
-        </Typography>
-        <FormGroup aria-label="position" row>
+          <FormControlLabel
+            checked={showUnitTotals}
+            control={<Switch color="primary" />}
+            label="Show unit Totals"
+            labelPlacement="end"
+            onChange={handleTotalsToggle}
+          />
           <FormControlLabel
             checked={showArmyBonus}
             control={<Switch color="primary" />}
@@ -104,22 +103,18 @@ export const ModalRosterTable = () => {
             onChange={handleTextToggle}
           />
         </FormGroup>
-
-        <IconButton onClick={closeModal} sx={{ ml: "auto" }}>
-          <CloseIcon />
-        </IconButton>
-      </Box>
-
-      <Divider />
-
-      <DialogContent id="rosterList" sx={{ minWidth: "50vw" }}>
         {!textView ? (
           <RosterTableView
             showArmyBonus={showArmyBonus}
+            showUnitTotals={showUnitTotals}
             screenshotting={screenshotting}
           />
         ) : (
-          <RosterTextView showArmyBonus={showArmyBonus} />
+          <RosterTextView
+            showUnitTotals={showUnitTotals}
+            showArmyBonus={showArmyBonus}
+            screenshotting={screenshotting}
+          />
         )}
       </DialogContent>
 
