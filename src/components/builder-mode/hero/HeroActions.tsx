@@ -5,6 +5,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent, MouseEventHandler } from "react";
 import { BsFillPersonVcardFill } from "react-icons/bs";
+import { useAppState } from "../../../state/app";
 import { useStore } from "../../../state/store.ts";
 import { Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -18,7 +19,8 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   unit,
   warbandId,
 }) => {
-  const { setCurrentModal, deleteHero } = useStore();
+  const { deleteHero } = useStore();
+  const { setCurrentModal } = useAppState();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
 

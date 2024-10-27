@@ -13,10 +13,10 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 import { useExternalStorage } from "../../../hooks/external-storage.ts";
-import { useStore } from "../../../state/store";
+import { useAppState } from "../../../state/app";
 
 export const ImportRosterModal = () => {
-  const { closeModal } = useStore();
+  const { closeModal } = useAppState();
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

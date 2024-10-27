@@ -9,10 +9,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { useExternalStorage } from "../../../hooks/external-storage.ts";
-import { useStore } from "../../../state/store";
+import { useAppState } from "../../../state/app";
 
 export const ExportRosterModal = () => {
-  const { closeModal } = useStore();
+  const { closeModal } = useAppState();
   const { exportRoster, copyToClipboard } = useExternalStorage();
 
   const [filename, setFilename] = useState("");

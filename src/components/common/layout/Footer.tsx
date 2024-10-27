@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { useStore } from "../../../state/store.ts";
+import { useAppState } from "../../../state/app";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 
 export const Footer = () => {
-  const { openSidebar } = useStore();
+  const { openSidebar } = useAppState();
   return (
     <Box
       id="footer"

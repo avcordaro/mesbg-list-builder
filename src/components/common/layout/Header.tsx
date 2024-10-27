@@ -22,6 +22,7 @@ import { Fragment, useState } from "react";
 import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
+import { useAppState } from "../../../state/app";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit } from "../../../types/unit.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
@@ -78,14 +79,8 @@ export const Header = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const scrollToTop = useScrollToTop();
-  const {
-    gameMode,
-    roster,
-    setCurrentModal,
-    triggerAlert,
-    openSidebar,
-    startNewGame,
-  } = useStore();
+  const { gameMode, roster, startNewGame } = useStore();
+  const { setCurrentModal, triggerAlert, openSidebar } = useAppState();
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);

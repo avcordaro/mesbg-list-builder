@@ -5,11 +5,11 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
-import { useStore } from "../../state/store.ts";
+import { useAppState } from "../../state/app";
 import { drawers } from "./drawers.tsx";
 
 export const DrawerContainer = () => {
-  const state = useStore();
+  const state = useAppState();
   const { palette } = useTheme();
 
   return [...drawers.entries()].map(([type, props]) => {

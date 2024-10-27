@@ -1,5 +1,6 @@
-import { AlertTypes } from "../../components/alerts/alert-types.tsx";
-import { Slice } from "../store.ts";
+import { AlertTypes } from "../../../components/alerts/alert-types.tsx";
+import { Slice } from "../../Slice.ts";
+import { ApplicationState } from "../index.ts";
 
 export type AlertState = {
   activeAlert: AlertTypes | null;
@@ -11,7 +12,7 @@ const initialState = {
   activeAlert: null,
 };
 
-export const alertSlice: Slice<AlertState> = (set) => ({
+export const alertSlice: Slice<ApplicationState, AlertState> = (set) => ({
   ...initialState,
 
   triggerAlert: (alert) =>

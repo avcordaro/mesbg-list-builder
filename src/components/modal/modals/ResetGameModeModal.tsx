@@ -1,8 +1,8 @@
-import { DialogActions, DialogContent, Button } from "@mui/material";
-import { useStore } from "../../../state/store.ts";
+import { Button, DialogActions, DialogContent } from "@mui/material";
+import { useAppState } from "../../../state/app";
 
 export const ResetGameModeModal = () => {
-  const { modalContext, closeModal } = useStore();
+  const { modalContext, closeModal } = useAppState();
 
   const handleContinue = () => {
     modalContext.handleReset();
