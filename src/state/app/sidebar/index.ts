@@ -1,5 +1,6 @@
-import { DrawerTypes } from "../../components/drawer/drawers.tsx";
-import { Slice } from "../store.ts";
+import { DrawerTypes } from "../../../components/drawer/drawers.tsx";
+import { Slice } from "../../Slice.ts";
+import { ApplicationState } from "../index.ts";
 
 export type SidebarState = {
   currentlyOpenendSidebar: DrawerTypes | null;
@@ -11,7 +12,7 @@ const initialState = {
   currentlyOpenendSidebar: null,
 };
 
-export const sidebarSlice: Slice<SidebarState> = (set) => ({
+export const sidebarSlice: Slice<ApplicationState, SidebarState> = (set) => ({
   ...initialState,
 
   openSidebar: (sidebar) =>

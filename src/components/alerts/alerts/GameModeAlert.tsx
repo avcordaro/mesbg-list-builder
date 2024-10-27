@@ -2,10 +2,12 @@ import { Refresh } from "@mui/icons-material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Fragment } from "react";
+import { useAppState } from "../../../state/app";
 import { useStore } from "../../../state/store";
 
 export const GameModeAlert = () => {
-  const { setRoster, dismissAlert } = useStore();
+  const { setRoster } = useStore();
+  const { dismissAlert } = useAppState();
 
   const handleResetList = () => {
     setRoster({

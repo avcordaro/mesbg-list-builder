@@ -1,5 +1,6 @@
 import { Faction, Factions } from "../../types/factions.ts";
-import { Slice } from "../store.ts";
+import { Slice } from "../Slice.ts";
+import { AppState } from "../store.ts";
 
 export type Tabs = "Good Army" | "Evil Army" | "Good LL" | "Evil LL";
 
@@ -30,7 +31,7 @@ export const initialBuilderState: BuilderSelectionState = {
   warriorSelectionFocus: ["", ""],
 };
 
-export const builderSlice: Slice<BuilderState> = (set) => ({
+export const builderSlice: Slice<AppState, BuilderState> = (set) => ({
   ...initialBuilderState,
 
   updateBuilderSidebar: (update) =>

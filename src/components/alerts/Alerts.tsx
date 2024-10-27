@@ -2,11 +2,11 @@ import { AlertColor, Portal, Slide, Snackbar } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import { useEffect } from "react";
-import { useStore } from "../../state/store.ts";
+import { useAppState } from "../../state/app";
 import { alertMap } from "./alert-types.tsx";
 
 export const Alerts = () => {
-  const { activeAlert, dismissAlert } = useStore();
+  const { activeAlert, dismissAlert } = useAppState();
 
   // Auto hide of alerts, if configured
   useEffect(() => {

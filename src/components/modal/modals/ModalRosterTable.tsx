@@ -16,7 +16,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import html2canvas from "html2canvas";
 import { useState } from "react";
 import { FaImage } from "react-icons/fa6";
-import { useStore } from "../../../state/store";
+import { useAppState } from "../../../state/app";
 import { RosterTableView } from "../../common/roster/TableView.tsx";
 import { RosterTextView } from "../../common/roster/TextView.tsx";
 import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
@@ -27,7 +27,7 @@ after the user clicks the 'Roster Table' button. This component uses the full ro
 state variable (passed to it as an argument) to populate a table of the army. */
 
 export const ModalRosterTable = () => {
-  const { setCurrentModal, closeModal } = useStore();
+  const { setCurrentModal, closeModal } = useAppState();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

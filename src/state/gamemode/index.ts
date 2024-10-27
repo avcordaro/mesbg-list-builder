@@ -1,5 +1,6 @@
 import { GameModeHero } from "../../components/gamemode/types.ts";
-import { Slice } from "../store.ts";
+import { Slice } from "../Slice.ts";
+import { AppState } from "../store.ts";
 import { createGameState } from "./gamemode.ts";
 
 export type GameState = {
@@ -21,7 +22,7 @@ const initialState = {
   gameState: null,
 };
 
-export const gamemodeSlice: Slice<GamemodeState> = (set) => ({
+export const gamemodeSlice: Slice<AppState, GamemodeState> = (set) => ({
   ...initialState,
 
   setGameMode: (gameMode) => set({ gameMode }, undefined, "SET_GAME_MODE"),

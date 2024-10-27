@@ -3,7 +3,8 @@ import { AllianceLevel } from "../../constants/alliances.ts";
 import { Faction, FactionType } from "../../types/factions.ts";
 import { Roster } from "../../types/roster.ts";
 import { FreshUnit, Unit } from "../../types/unit.ts";
-import { Slice } from "../store.ts";
+import { Slice } from "../Slice.ts";
+import { AppState } from "../store.ts";
 import {
   addWarband,
   assignHero,
@@ -78,7 +79,7 @@ const initialState = {
   rosterBuildingWarnings: [],
 };
 
-export const rosterSlice: Slice<RosterState> = (set, get) => {
+export const rosterSlice: Slice<AppState, RosterState> = (set, get) => {
   const recalculate = () => updateMetaData(set);
   return {
     ...initialState,

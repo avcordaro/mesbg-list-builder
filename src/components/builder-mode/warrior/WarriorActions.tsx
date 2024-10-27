@@ -14,6 +14,7 @@ import {
   useScrollToElement,
   useScrollToTop,
 } from "../../../hooks/scroll-to.ts";
+import { useAppState } from "../../../state/app";
 import { useStore } from "../../../state/store.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -92,11 +93,12 @@ export const WarriorActions = ({
   const {
     roster,
     factionSelection,
-    setCurrentModal,
     deleteUnit,
     duplicateUnit,
     updateBuilderSidebar,
   } = useStore();
+  const { setCurrentModal } = useAppState();
+
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
   const scrollTo = useScrollToElement();

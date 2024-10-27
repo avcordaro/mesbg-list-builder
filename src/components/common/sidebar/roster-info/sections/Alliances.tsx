@@ -7,18 +7,19 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { LuSwords } from "react-icons/lu";
 import { allianceColours } from "../../../../../constants/alliances.ts";
+import { useAppState } from "../../../../../state/app";
 import { useStore } from "../../../../../state/store.ts";
 import { DrawerTypes } from "../../../../drawer/drawers.tsx";
 import { ChartsDropdown } from "./ChartsDropdown.tsx";
 
 export const Alliance = () => {
   const {
-    openSidebar,
     factions: factionList,
     allianceLevel,
     factionType,
     gameMode,
   } = useStore();
+  const { openSidebar } = useAppState();
 
   const theme = useTheme();
   const isMobileScreen = useMediaQuery(theme.breakpoints.down("sm"));

@@ -1,5 +1,6 @@
 import { FreshUnit, Unit } from "../../types/unit.ts";
-import { Slice } from "../store.ts";
+import { Slice } from "../Slice.ts";
+import { AppState } from "../store.ts";
 
 export type DragAndDropState = {
   draggedUnit: Unit | FreshUnit | null;
@@ -11,7 +12,7 @@ const initialState = {
   draggedUnit: null,
 };
 
-export const dragAndDropSlice: Slice<DragAndDropState> = (set) => ({
+export const dragAndDropSlice: Slice<AppState, DragAndDropState> = (set) => ({
   ...initialState,
 
   setDraggedUnit: (unit) =>

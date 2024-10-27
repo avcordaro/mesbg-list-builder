@@ -1,11 +1,11 @@
 import { ContentCopyOutlined, DownloadDoneOutlined } from "@mui/icons-material";
 import { Button, DialogActions, DialogContent } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { useStore } from "../../../state/store.ts";
+import { useAppState } from "../../../state/app";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 
 export const ScreenshotRosterModal = () => {
-  const { modalContext, triggerAlert, closeModal } = useStore();
+  const { modalContext, triggerAlert, closeModal } = useAppState();
 
   const supportsCopyImageToClipboard =
     navigator.clipboard && window.ClipboardItem;

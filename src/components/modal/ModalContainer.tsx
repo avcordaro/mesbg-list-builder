@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useStore } from "../../state/store.ts";
+import { useAppState } from "../../state/app";
 import { modals } from "./modals.tsx";
 
 const style = {
@@ -20,7 +20,7 @@ const style = {
 };
 
 export const ModalContainer = () => {
-  const state = useStore();
+  const state = useAppState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 

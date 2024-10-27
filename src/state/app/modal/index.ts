@@ -1,5 +1,6 @@
-import { ModalTypes } from "../../components/modal/modals.tsx";
-import { Slice } from "../store.ts";
+import { ModalTypes } from "../../../components/modal/modals.tsx";
+import { Slice } from "../../Slice.ts";
+import { ApplicationState } from "../index.ts";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ModalContext = any;
@@ -16,7 +17,7 @@ const initialModalState = {
   modalContext: null,
 };
 
-export const modalSlice: Slice<ModalState> = (set) => ({
+export const modalSlice: Slice<ApplicationState, ModalState> = (set) => ({
   ...initialModalState,
 
   setCurrentModal: (modal, context) =>

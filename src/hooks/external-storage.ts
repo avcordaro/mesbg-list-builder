@@ -1,6 +1,7 @@
 import { v4 as uuid } from "uuid";
 import rawData from "../assets/data/mesbg_data.json";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { useAppState } from "../state/app";
 import {
   handleAzog,
   handleMahudChief,
@@ -14,13 +15,9 @@ import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { useJsonValidation } from "./json-validation.ts";
 
 export const useExternalStorage = () => {
-  const {
-    roster,
-    triggerAlert,
-    setRoster,
-    updateBuilderSidebar,
-    factionSelection,
-  } = useStore();
+  const { roster, setRoster, updateBuilderSidebar, factionSelection } =
+    useStore();
+  const { triggerAlert } = useAppState();
   const { validateKeys } = useJsonValidation();
 
   const copyRosterToClipboard = () => {

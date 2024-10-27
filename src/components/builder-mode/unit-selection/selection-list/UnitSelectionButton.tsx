@@ -7,6 +7,7 @@ import { useTheme } from "@mui/material/styles";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import { useScrollToElement } from "../../../../hooks/scroll-to.ts";
+import { useAppState } from "../../../../state/app";
 import { useStore } from "../../../../state/store.ts";
 import { Unit } from "../../../../types/unit.ts";
 import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
@@ -15,13 +16,14 @@ import { ModalTypes } from "../../../modal/modals.tsx";
 
 export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   const {
-    setCurrentModal,
     selectUnit,
     warriorSelectionFocus,
     heroSelection,
     updateBuilderSidebar,
     assignHeroToWarband,
   } = useStore();
+  const { setCurrentModal } = useAppState();
+
   const [focusedWarbandId, focusedUnitId] = warriorSelectionFocus;
   const { palette } = useTheme();
   const scrollTo = useScrollToElement();
