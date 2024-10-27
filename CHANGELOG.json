@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "added": [
+      "Added a toggle to the roster summary to display unit totals instead of units per warband."
+    ]
+  },
   "6.9": {
     "added": [
       "The application will now ask for confirmation before unloading the page while in Game Mode.",
