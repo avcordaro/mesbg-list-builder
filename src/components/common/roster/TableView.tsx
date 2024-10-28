@@ -9,6 +9,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -19,28 +20,28 @@ import { RxCross1 } from "react-icons/rx";
 import { allianceColours } from "../../../constants/alliances.ts";
 import { useFactionData } from "../../../hooks/faction-data.ts";
 import { useStore } from "../../../state/store.ts";
+import { Roster } from "../../../types/roster.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
+import { getSumOfUnits } from "./totalUnits.ts";
 
 const UnitRow = ({
   unit,
-  warbandNum,
   leader,
   rowStyle,
+  forceQuantity = false,
 }: {
   unit: Unit;
-  warbandNum?: number;
   leader?: boolean;
   rowStyle: SxProps;
+  forceQuantity?: boolean;
 }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <TableRow sx={rowStyle}>
-      {!isMobile && <TableCell>{warbandNum} </TableCell>}
       <TableCell>
-        {!unit.unit_type.includes("Hero") && <>{unit.quantity}x </>}
+        {(!unit.unit_type.includes("Hero") || forceQuantity) && (
+          <>{unit.quantity}x </>
+        )}
         {unit.name}{" "}
         {leader && (
           <Typography component="span" variant="body2">
@@ -59,6 +60,24 @@ const UnitRow = ({
       </TableCell>
       <TableCell align="center">{unit.pointsTotal}</TableCell>
     </TableRow>
+  );
+};
+
+const RosterTotalRows = ({ roster }: { roster: Roster }) => {
+  const units = getSumOfUnits(roster);
+  return (
+    <>
+      {units.map((unit) => (
+        <UnitRow
+          key={unit.id}
+          unit={unit}
+          rowStyle={{
+            backgroundColor: "white",
+          }}
+          forceQuantity={unit.unit_type.includes("Hero") && unit.quantity > 1}
+        />
+      ))}
+    </>
   );
 };
 
@@ -81,7 +100,6 @@ const WarbandRows = ({ warband }: { warband: Warband }) => {
                 options: [],
               } as Unit)
         }
-        warbandNum={warband.num}
         leader={
           isDefinedUnit(warband.hero) && roster.leader_warband_id === warband.id
         }
@@ -96,9 +114,11 @@ const WarbandRows = ({ warband }: { warband: Warband }) => {
 
 export function RosterTableView({
   showArmyBonus,
+  showUnitTotals,
   screenshotting = false,
 }: {
   showArmyBonus: boolean;
+  showUnitTotals: boolean;
   screenshotting?: boolean;
 }) {
   const {
@@ -110,12 +130,16 @@ export function RosterTableView({
   const factionData = useFactionData();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <>
       <Stack
         direction={isMobile && !screenshotting ? "column" : "row"}
         spacing={isMobile && !screenshotting ? 1 : 3}
-        sx={{ mb: 2 }}
+        sx={{
+          mb: 2,
+          "& *": screenshotting ? { fontSize: "1.5rem !important" } : {},
+        }}
         alignItems={isMobile && !screenshotting ? "start" : "center"}
       >
         <Typography flexGrow={1}>
@@ -153,27 +177,40 @@ export function RosterTableView({
       </Stack>
       <TableContainer component={Paper} sx={{ mb: 2 }}>
         <Table
-          sx={{ width: "100%", border: 1, borderColor: "#AEAEAE" }}
+          sx={{
+            width: "100%",
+            border: 1,
+            borderColor: "#AEAEAE",
+            "& *": screenshotting ? { fontSize: "1.5rem !important" } : {},
+            "& th": screenshotting
+              ? { fontSize: "1.5rem !important", fontWeight: "bolder" }
+              : {},
+          }}
           size="small"
         >
           <TableHead>
             <TableRow sx={{ backgroundColor: "white" }}>
-              {!isMobile && <TableCell>Warband</TableCell>}
               <TableCell>Name</TableCell>
               <TableCell>Options</TableCell>
               <TableCell align="center">Points</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {roster.warbands.map((warband) => (
-              <WarbandRows key={warband.id} warband={warband} />
-            ))}
+            {showUnitTotals ? (
+              <RosterTotalRows roster={roster} />
+            ) : (
+              <>
+                {roster.warbands.map((warband) => (
+                  <WarbandRows key={warband.id} warband={warband} />
+                ))}
+              </>
+            )}
           </TableBody>
         </Table>
       </TableContainer>
 
       {showArmyBonus && (
-        <>
+        <Box sx={screenshotting ? { "*": { fontSize: "1.5rem" } } : {}}>
           {hasArmyBonus ? (
             <>
               <Typography variant="body1">
@@ -215,11 +252,11 @@ export function RosterTableView({
               </Typography>
             </Typography>
           )}
-        </>
+        </Box>
       )}
       <Typography
         id="admission"
-        sx={{ mt: 2, display: "none" }}
+        sx={{ mt: 2, display: "none", fontSize: "1.5rem" }}
         variant="caption"
       >
         Created with MESBG List Builder (
