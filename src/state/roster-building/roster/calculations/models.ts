@@ -1,10 +1,10 @@
-import { Faction } from "../../../types/factions.ts";
-import { isDefinedUnit, Unit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
+import { Faction } from "../../../../types/factions.ts";
+import { isDefinedUnit, Unit } from "../../../../types/unit.ts";
+import { Warband } from "../../../../types/warband.ts";
 import {
   calculateWarbandBowCount,
   calculateWarbandBowLimitModels,
-} from "../../../utils/unit-count.ts";
+} from "../../../../utils/unit-count.ts";
 
 export function getUniqueModels(warbands: Warband[]): string[] {
   if (warbands && warbands.length <= 0) {

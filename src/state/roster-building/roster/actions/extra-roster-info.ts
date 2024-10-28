@@ -1,15 +1,15 @@
-import { Roster } from "../../../types/roster.ts";
+import { Roster } from "../../../../types/roster.ts";
 import {
   calculatePointsForRoster,
   calculatePointsForUnit,
   calculatePointsForWarband,
-} from "../../../utils/points.ts";
+} from "../../../../utils/points.ts";
 import {
   calculateRosterTotalBowCount,
   calculateRosterUnitCount,
   calculateWarbandModelCount,
   calculateWarbandTotalBowCount,
-} from "../../../utils/unit-count.ts";
+} from "../../../../utils/unit-count.ts";
 import {
   calculateAllianceLevel,
   calculateModelCount,

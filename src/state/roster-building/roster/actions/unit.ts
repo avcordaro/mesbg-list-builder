@@ -1,8 +1,13 @@
 import { v4 as uuid } from "uuid";
-import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
-import { FreshUnit, isDefinedUnit, Option, Unit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
-import { findAndRemoveItem } from "../../../utils/array.ts";
+import hero_constraint_data from "../../../../assets/data/hero_constraint_data.json";
+import {
+  FreshUnit,
+  isDefinedUnit,
+  Option,
+  Unit,
+} from "../../../../types/unit.ts";
+import { Warband } from "../../../../types/warband.ts";
+import { findAndRemoveItem } from "../../../../utils/array.ts";
 
 const findUnitById = (unitId: string) => (unit: Unit | FreshUnit) =>
   unit.id === unitId;

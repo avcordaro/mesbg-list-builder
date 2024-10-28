@@ -7,10 +7,11 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { wanderers } from "../../../../../constants/wanderers.ts";
 import { useFactionData } from "../../../../../hooks/faction-data.ts";
-import { useStore } from "../../../../../state/store.ts";
+import { useRosterBuildingState } from "../../../../../state/roster-building";
 
 export const ArmyBonuses = () => {
-  const { factions: factionList, armyBonusActive: hasArmyBonus } = useStore();
+  const { factions: factionList, armyBonusActive: hasArmyBonus } =
+    useRosterBuildingState();
   const factionData = useFactionData();
   return (
     <Box sx={{ mt: 2 }}>

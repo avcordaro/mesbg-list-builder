@@ -23,14 +23,15 @@ import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useAppState } from "../../../state/app";
-import { useStore } from "../../../state/store.ts";
+import { useGameModeState } from "../../../state/gamemode";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit } from "../../../types/unit.ts";
 import { AlertTypes } from "../../alerts/alert-types.tsx";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
 
 const RosterInfoBar = () => {
-  const { roster } = useStore();
+  const { roster } = useRosterBuildingState();
   const breakPoint = Math.ceil(roster.num_units / 2);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -79,7 +80,8 @@ export const Header = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const scrollToTop = useScrollToTop();
-  const { gameMode, roster, startNewGame } = useStore();
+  const { gameMode, startNewGame } = useGameModeState();
+  const { roster } = useRosterBuildingState();
   const { setCurrentModal, triggerAlert, openSidebar } = useAppState();
 
   const handleDrawerToggle = () => {
@@ -100,7 +102,7 @@ export const Header = () => {
       return;
     }
 
-    startNewGame();
+    startNewGame(roster);
     scrollToTop();
   };
 

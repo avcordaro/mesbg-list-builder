@@ -1,5 +1,5 @@
-import rawData from "../../../assets/data/hero_constraint_data.json";
-import { Unit } from "../../../types/unit.ts";
+import rawData from "../../../../assets/data/hero_constraint_data.json";
+import { Unit } from "../../../../types/unit.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
   handleAzog,

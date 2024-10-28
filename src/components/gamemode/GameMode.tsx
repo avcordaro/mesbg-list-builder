@@ -7,14 +7,14 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect } from "react";
 import { useAppState } from "../../state/app";
-import { useStore } from "../../state/store.ts";
+import { useGameModeState } from "../../state/gamemode";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
 import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
-  const { startNewGame } = useStore();
+  const { startNewGame } = useGameModeState();
   const { setCurrentModal } = useAppState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));

@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
-import { useStore } from "../../../state/store.ts";
+import { useGameModeState } from "../../../state/gamemode";
 import { GameModeHero } from "../types.ts";
 
 type TrackedStat = "Might" | "Will" | "Fate" | "Wounds";
@@ -34,7 +34,7 @@ export const HeroStatTracker: FunctionComponent<GameModeMWFCounterProps> = ({
   hero_id,
   hero_idx,
 }) => {
-  const { gameState, updateGameState } = useStore();
+  const { gameState, updateGameState } = useGameModeState();
   const { palette } = useTheme();
 
   if (!gameState) return <></>; // If we don't have a game state, there is nothing to track.

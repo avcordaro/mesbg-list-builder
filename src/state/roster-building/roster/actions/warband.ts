@@ -1,8 +1,8 @@
 import { v4 as uuid } from "uuid";
-import { isDefinedUnit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
-import { findAndRemoveItem } from "../../../utils/array.ts";
-import { AppState } from "../../store.ts";
+import { isDefinedUnit } from "../../../../types/unit.ts";
+import { Warband } from "../../../../types/warband.ts";
+import { findAndRemoveItem } from "../../../../utils/array.ts";
+import { RosterBuildingState } from "../../index.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
   recalculateLeaderWarband,
@@ -11,7 +11,7 @@ import { RosterState } from "../index.ts";
 
 export const addWarband =
   () =>
-  ({ roster }: AppState) => {
+  ({ roster }: RosterBuildingState) => {
     roster.warbands.push({
       id: uuid(),
       num: roster.warbands.length + 1,
@@ -29,7 +29,7 @@ export const addWarband =
 
 export const deleteWarband =
   (warbandId: string) =>
-  ({ roster }: AppState): Partial<RosterState> => {
+  ({ roster }: RosterBuildingState): Partial<RosterState> => {
     const deletedWarband = findAndRemoveItem(
       roster.warbands,
       (warband) => warband.id === warbandId,
@@ -63,7 +63,7 @@ export const deleteWarband =
 
 export const duplicateWarband =
   (warbandId: string) =>
-  ({ roster }: AppState) => {
+  ({ roster }: RosterBuildingState) => {
     const warbandToDuplicate = roster.warbands.find(
       (warband) => warband.id === warbandId,
     );

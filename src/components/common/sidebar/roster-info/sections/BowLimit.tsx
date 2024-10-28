@@ -6,11 +6,11 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { wanderers } from "../../../../../constants/wanderers.ts";
 import { useFactionData } from "../../../../../hooks/faction-data.ts";
-import { useStore } from "../../../../../state/store.ts";
+import { useRosterBuildingState } from "../../../../../state/roster-building";
 import { Faction } from "../../../../../types/factions.ts";
 
 export const BowLimits = () => {
-  const { factions: factionList, factionMetaData } = useStore();
+  const { factions: factionList, factionMetaData } = useRosterBuildingState();
   const factionData = useFactionData();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

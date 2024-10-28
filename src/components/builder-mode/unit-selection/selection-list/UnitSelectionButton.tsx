@@ -8,7 +8,7 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import { useScrollToElement } from "../../../../hooks/scroll-to.ts";
 import { useAppState } from "../../../../state/app";
-import { useStore } from "../../../../state/store.ts";
+import { useRosterBuildingState } from "../../../../state/roster-building";
 import { Unit } from "../../../../types/unit.ts";
 import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../../common/might-will-fate/MwfBadge.tsx";
@@ -21,7 +21,7 @@ export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
     heroSelection,
     updateBuilderSidebar,
     assignHeroToWarband,
-  } = useStore();
+  } = useRosterBuildingState();
   const { setCurrentModal } = useAppState();
 
   const [focusedWarbandId, focusedUnitId] = warriorSelectionFocus;

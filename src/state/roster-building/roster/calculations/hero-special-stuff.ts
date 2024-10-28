@@ -1,7 +1,7 @@
-import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
-import mesbg_data from "../../../assets/data/mesbg_data.json";
-import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
+import hero_constraint_data from "../../../../assets/data/hero_constraint_data.json";
+import mesbg_data from "../../../../assets/data/mesbg_data.json";
+import { FreshUnit, isDefinedUnit, Unit } from "../../../../types/unit.ts";
+import { Warband } from "../../../../types/warband.ts";
 
 const handleMultiWoundMountOption = (
   hero: Unit,
