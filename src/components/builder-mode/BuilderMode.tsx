@@ -40,7 +40,6 @@ export const BuilderMode = () => {
       icon: <PlaylistAdd />,
       name: "Create new roster",
       callback: () => setCurrentModal(ModalTypes.CREATE_NEW_ROSTER),
-      disabled: roster.num_units === 0,
     },
     {
       icon: <SaveIcon />,
