@@ -19,7 +19,7 @@ import { GiQueenCrown } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { allianceColours } from "../../../constants/alliances.ts";
 import { useFactionData } from "../../../hooks/faction-data.ts";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { Roster } from "../../../types/roster.ts";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband } from "../../../types/warband.ts";
@@ -82,7 +82,7 @@ const RosterTotalRows = ({ roster }: { roster: Roster }) => {
 };
 
 const WarbandRows = ({ warband }: { warband: Warband }) => {
-  const { roster } = useStore();
+  const { roster } = useRosterBuildingState();
 
   const rowStyle: SxProps = {
     backgroundColor: warband.num % 2 === 0 ? "lightgrey" : "white",
@@ -126,7 +126,7 @@ export function RosterTableView({
     roster,
     armyBonusActive: hasArmyBonus,
     factions: factionList,
-  } = useStore();
+  } = useRosterBuildingState();
   const factionData = useFactionData();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));

@@ -14,7 +14,8 @@ import {
   useScrollToElement,
   useScrollToTop,
 } from "../../../hooks/scroll-to.ts";
-import { useStore } from "../../../state/store.ts";
+import { useAppState } from "../../../state/app";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
 
@@ -25,7 +26,7 @@ export const QuantityButtons = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const { updateUnit, roster } = useStore();
+  const { updateUnit, roster } = useRosterBuildingState();
   const { palette } = useTheme();
 
   const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
@@ -92,11 +93,12 @@ export const WarriorActions = ({
   const {
     roster,
     factionSelection,
-    setCurrentModal,
     deleteUnit,
     duplicateUnit,
     updateBuilderSidebar,
-  } = useStore();
+  } = useRosterBuildingState();
+  const { setCurrentModal } = useAppState();
+
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
   const scrollTo = useScrollToElement();

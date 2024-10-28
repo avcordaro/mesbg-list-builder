@@ -1,11 +1,12 @@
 import heroConstraintData from "../assets/data/hero_constraint_data.json";
 import rawData from "../assets/data/mesbg_data.json";
-import { useStore } from "../state/store.ts";
+import { useRosterBuildingState } from "../state/roster-building";
 import { Faction, FactionType } from "../types/factions.ts";
 import { isDefinedUnit, Unit } from "../types/unit.ts";
 
 export const useMesbgData = () => {
-  const { warriorSelectionFocus, roster, uniqueModels } = useStore();
+  const { warriorSelectionFocus, roster, uniqueModels } =
+    useRosterBuildingState();
 
   const factionsGroupedByType: Record<
     FactionType,

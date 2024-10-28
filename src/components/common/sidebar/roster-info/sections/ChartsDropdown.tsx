@@ -3,7 +3,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { MouseEvent, useState } from "react";
 import { GiSwordsEmblem } from "react-icons/gi";
-import { useStore } from "../../../../../state/store.ts";
+import { useAppState } from "../../../../../state/app";
 import { ModalTypes } from "../../../../modal/modals.tsx";
 
 const charts: Record<string, string> = {
@@ -23,7 +23,7 @@ const charts: Record<string, string> = {
 };
 
 export const ChartsDropdown = () => {
-  const { setCurrentModal } = useStore();
+  const { setCurrentModal } = useAppState();
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);

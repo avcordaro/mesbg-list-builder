@@ -2,12 +2,12 @@ import { saveAs } from "file-saver";
 import JSZip from "jszip";
 import { useState } from "react";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
-import { useStore } from "../state/store.ts";
+import { useRosterBuildingState } from "../state/roster-building";
 import { isDefinedUnit } from "../types/unit.ts";
 
 export const useDownload = () => {
   const [isDownloading, setDownloading] = useState(false);
-  const { roster } = useStore();
+  const { roster } = useRosterBuildingState();
 
   const downloadProfileCards = async () => {
     setDownloading(true);

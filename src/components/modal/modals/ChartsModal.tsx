@@ -1,10 +1,10 @@
 import { DialogContent } from "@mui/material";
-import { useStore } from "../../../state/store.ts";
+import { useAppState } from "../../../state/app";
 
 export function ChartsModal() {
   const {
     modalContext: { selectedChart },
-  } = useStore();
+  } = useAppState();
 
   return (
     <DialogContent>

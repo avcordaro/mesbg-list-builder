@@ -1,5 +1,6 @@
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import BugReportIcon from "@mui/icons-material/BugReport";
+import DeleteIcon from "@mui/icons-material/Delete";
 import PublishedWithChangesIcon from "@mui/icons-material/PublishedWithChanges";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import SecurityIcon from "@mui/icons-material/Security";
@@ -17,6 +18,7 @@ type ReleaseNotes = {
   changed?: string[];
   bugfixes?: string[];
   security?: string[];
+  removed?: string[];
 };
 
 const releases: Record<Version, ReleaseNotes> = changelog;
@@ -26,6 +28,7 @@ const sectionIcons = {
   changed: <PublishedWithChangesIcon />,
   bugfixes: <BugReportIcon />,
   security: <SecurityIcon />,
+  removed: <DeleteIcon />,
 };
 
 export const Changelog = () => {

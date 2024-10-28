@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent, useEffect, useState } from "react";
 import { useMesbgData } from "../../../hooks/mesbg-data.ts";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
 import { ChooseHeroButton } from "../hero/ChooseHeroButton.tsx";
@@ -22,7 +22,8 @@ type WarbandProps = {
 };
 
 export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
-  const { addUnit, updateBuilderSidebar, draggedUnit } = useStore();
+  const { addUnit, updateBuilderSidebar, draggedUnit } =
+    useRosterBuildingState();
   const { getEligibleWarbandUnitsForHero } = useMesbgData();
   const [collapsed, setCollapsed] = useState(false);
   const [dropzoneEnabled, setDropzoneEnabled] = useState(true);

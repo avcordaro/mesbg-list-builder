@@ -9,13 +9,17 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { useExternalStorage } from "../../../hooks/external-storage.ts";
-import { useStore } from "../../../state/store";
+import { useAppState } from "../../../state/app";
+import { useCurrentRosterState } from "../../../state/rosters";
 
 export const ExportRosterModal = () => {
-  const { closeModal } = useStore();
+  const { closeModal } = useAppState();
+  const { activeRoster } = useCurrentRosterState();
   const { exportRoster, copyToClipboard } = useExternalStorage();
 
-  const [filename, setFilename] = useState("");
+  const [filename, setFilename] = useState(
+    activeRoster !== "default" ? activeRoster : "",
+  );
   const [filenameValid, setFilenameValid] = useState(true);
 
   const handleExport = (e) => {

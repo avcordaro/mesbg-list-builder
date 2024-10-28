@@ -15,7 +15,7 @@ export const getSumOfUnits = (roster: Roster) => {
       .map((unit: Unit) => {
         const options = unit.options
           .filter((o) => o.opt_quantity)
-          .map((o) => o.option)
+          .map((o) => o.option + o.opt_quantity)
           .join(",");
         const key = unit.name + " [" + options + "]";
 
@@ -46,6 +46,17 @@ export const getSumOfUnits = (roster: Roster) => {
   };
 
   return totalledUnits.sort((a, b) => {
+    if (a.unit_type.includes("Hero") && a.unique) {
+      if (b.unit_type.includes("Hero") && b.unique) {
+        return sorting[a.unit_type] - sorting[b.unit_type];
+      }
+      return -1;
+    }
+
+    if (a.unit_type === "Warrior" && b.unit_type === "Warrior") {
+      return a.name.localeCompare(b.name);
+    }
+
     return sorting[a.unit_type] - sorting[b.unit_type];
   });
 };

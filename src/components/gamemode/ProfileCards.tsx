@@ -3,14 +3,14 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 import hero_constraint_data from "../../assets/data/hero_constraint_data.json";
-import { useStore } from "../../state/store.ts";
+import { useRosterBuildingState } from "../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../types/unit.ts";
 import { UnitProfileCard } from "../common/images/UnitProfileCard.tsx";
 
 export const ProfileCards = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
-  const roster = useStore((store) => store.roster);
+  const { roster } = useRosterBuildingState();
   const [showProfileCards, setShowProfileCards] = useState(false);
   const [bigCard, setBigCard] = useState(null);
 

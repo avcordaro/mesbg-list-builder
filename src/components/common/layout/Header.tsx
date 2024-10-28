@@ -21,15 +21,14 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Fragment, useState } from "react";
 import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
-import { useScrollToTop } from "../../../hooks/scroll-to.ts";
-import { useStore } from "../../../state/store.ts";
-import { isDefinedUnit } from "../../../types/unit.ts";
-import { AlertTypes } from "../../alerts/alert-types.tsx";
+import { useAppState } from "../../../state/app";
+import { useGameModeState } from "../../../state/gamemode";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
 
 const RosterInfoBar = () => {
-  const { roster } = useStore();
+  const { roster } = useRosterBuildingState();
   const breakPoint = Math.ceil(roster.num_units / 2);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -77,36 +76,35 @@ export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const scrollToTop = useScrollToTop();
-  const {
-    gameMode,
-    roster,
-    setCurrentModal,
-    triggerAlert,
-    openSidebar,
-    startNewGame,
-  } = useStore();
+  const { roster } = useRosterBuildingState();
+  const { gameMode, gameState, setGameMode, startNewGame } = useGameModeState();
+  const { setCurrentModal, openSidebar } = useAppState();
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleGameMode = () => {
-    if (parseInt(roster.version.substring(0, 1)) < 5) {
-      triggerAlert(AlertTypes.GAMEMODE_ALERT);
+  const handleStartGame = () => {
+    if (!gameState) {
+      // if there is no game present, just start a new game.
+      startNewGame(roster);
       return;
     }
 
-    const warbandsWithoutHero = roster.warbands.filter(
-      (warband) => !isDefinedUnit(warband.hero),
-    );
-    if (warbandsWithoutHero.length > 0) {
-      setCurrentModal(ModalTypes.INCOMPLETE_WARBAND_WARNING);
-      return;
-    }
+    const lastGameUpdate = new Date(gameState.lastUpdated).getTime();
+    const currentDate = new Date().getTime();
 
-    startNewGame();
-    scrollToTop();
+    const differenceInMillis = currentDate - lastGameUpdate;
+    const differenceInDays = differenceInMillis / (1000 * 60 * 60 * 24);
+
+    if (differenceInDays <= 1) {
+      // existing game was updated within the last 24h.
+      // let's ask if they like to continue their game or start a new one
+      setCurrentModal(ModalTypes.CONTINUE_GAME);
+    } else {
+      // existing is older than one day. No need to continue yesterday's game.
+      startNewGame(roster);
+    }
   };
 
   // List of buttons
@@ -114,9 +112,7 @@ export const Header = () => {
     {
       icon: gameMode ? <Handyman /> : <FortIcon />,
       label: gameMode ? "Builder" : "Game Mode",
-      onClick: gameMode
-        ? () => setCurrentModal(ModalTypes.BUILDER_MODE)
-        : handleGameMode,
+      onClick: gameMode ? () => setGameMode(false) : () => handleStartGame(),
       color: "success" as ButtonProps["color"],
     },
     {

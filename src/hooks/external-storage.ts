@@ -1,26 +1,23 @@
 import { v4 as uuid } from "uuid";
 import rawData from "../assets/data/mesbg_data.json";
 import { AlertTypes } from "../components/alerts/alert-types.tsx";
+import { useAppState } from "../state/app";
+import { useRosterBuildingState } from "../state/roster-building";
 import {
   handleAzog,
   handleMahudChief,
   handleMultiWoundMounts,
   handleSiegeEngineCaptainUpdates,
   handleTreebeard,
-} from "../state/roster/calculations";
-import { useStore } from "../state/store.ts";
+} from "../state/roster-building/roster/calculations";
 import { Roster } from "../types/roster.ts";
 import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { useJsonValidation } from "./json-validation.ts";
 
 export const useExternalStorage = () => {
-  const {
-    roster,
-    triggerAlert,
-    setRoster,
-    updateBuilderSidebar,
-    factionSelection,
-  } = useStore();
+  const { roster, setRoster, updateBuilderSidebar, factionSelection } =
+    useRosterBuildingState();
+  const { triggerAlert } = useAppState();
   const { validateKeys } = useJsonValidation();
 
   const copyRosterToClipboard = () => {

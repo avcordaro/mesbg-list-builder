@@ -1,10 +1,11 @@
-import { useStore } from "../../../state/store.ts";
-
+import { useGameModeState } from "../../../state/gamemode";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { UnitSelector } from "../../builder-mode/unit-selection/UnitSelector.tsx";
 import { RosterInformation } from "./roster-info/RosterInformation.tsx";
 
 export function Sidebar() {
-  const { gameMode, warriorSelection } = useStore();
+  const { gameMode } = useGameModeState();
+  const { warriorSelection } = useRosterBuildingState();
 
   return !gameMode && warriorSelection ? (
     <UnitSelector />

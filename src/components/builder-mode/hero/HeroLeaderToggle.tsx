@@ -2,7 +2,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent } from "react";
 import { GiQueenCrown } from "react-icons/gi";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { CustomSwitch as Switch } from "../../common/switch/CustomSwitch.tsx";
 
@@ -22,7 +22,7 @@ export const HeroLeaderToggle: FunctionComponent<HeroLeaderToggleProps> = ({
   warbandId,
   hero,
 }) => {
-  const { roster, makeLeader } = useStore();
+  const { roster, makeLeader } = useRosterBuildingState();
 
   if (!isDefinedUnit(hero)) return null;
   if (!HEROS_THAT_CAN_LEAD.includes(hero.unit_type)) return null;

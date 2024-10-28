@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { useStore } from "../../../state/store";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { Option, Unit } from "../../../types/unit.js";
 import { OptionCounter } from "../option/OptionCounter.tsx";
 import { OptionToggle } from "../option/OptionToggle.tsx";
@@ -22,7 +22,7 @@ export const OptionHero: FunctionComponent<OptionHeroProps> = ({
   unit,
   option,
 }) => {
-  const { updateHero } = useStore();
+  const { updateHero } = useRosterBuildingState();
 
   const hasHorse = unit.options.find(
     ({ type, opt_quantity }) => type === "mount" && opt_quantity === 1,

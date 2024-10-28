@@ -8,7 +8,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
-import { useStore } from "../../../state/store";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { FreshUnit, isDefinedUnit } from "../../../types/unit.ts";
 
 /* Default Warrior Unit components appear inside Warbands after 'Add Unit' is selected, 
@@ -23,7 +23,7 @@ export const ChooseWarriorButton: FunctionComponent<
   ChooseWarriorButtonProps
 > = ({ unit, warbandId }) => {
   const { roster, deleteUnit, updateBuilderSidebar, factionSelection } =
-    useStore();
+    useRosterBuildingState();
   const { palette } = useTheme();
   const scrollToTop = useScrollToTop("sidebar");
 

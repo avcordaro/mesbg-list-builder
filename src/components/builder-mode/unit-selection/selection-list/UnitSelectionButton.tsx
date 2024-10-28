@@ -7,7 +7,8 @@ import { useTheme } from "@mui/material/styles";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { v4 as uuid } from "uuid";
 import { useScrollToElement } from "../../../../hooks/scroll-to.ts";
-import { useStore } from "../../../../state/store.ts";
+import { useAppState } from "../../../../state/app";
+import { useRosterBuildingState } from "../../../../state/roster-building";
 import { Unit } from "../../../../types/unit.ts";
 import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../../common/might-will-fate/MwfBadge.tsx";
@@ -15,13 +16,14 @@ import { ModalTypes } from "../../../modal/modals.tsx";
 
 export function UnitSelectionButton({ unitData }: { unitData: Unit }) {
   const {
-    setCurrentModal,
     selectUnit,
     warriorSelectionFocus,
     heroSelection,
     updateBuilderSidebar,
     assignHeroToWarband,
-  } = useStore();
+  } = useRosterBuildingState();
+  const { setCurrentModal } = useAppState();
+
   const [focusedWarbandId, focusedUnitId] = warriorSelectionFocus;
   const { palette } = useTheme();
   const scrollTo = useScrollToElement();

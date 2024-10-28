@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import factionDataRaw from "../assets/data/faction_data.json";
-import { useStore } from "../state/store.ts";
+import { useRosterBuildingState } from "../state/roster-building";
 
 export const useFactionData = () => {
-  const { allianceLevel } = useStore();
+  const { allianceLevel } = useRosterBuildingState();
   const [factionData, setFactionData] = useState(factionDataRaw);
 
   useEffect(() => {

@@ -3,14 +3,14 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import { Fragment } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
-import { useStore } from "../../../state/store.ts";
+import { useAppState } from "../../../state/app";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfileCard } from "../../common/images/UnitProfileCard.tsx";
 
 export const ProfileCardModal = () => {
   const {
     modalContext: { unitData },
-  } = useStore();
+  } = useAppState();
   const { palette } = useTheme();
 
   const ExtraProfileCards = ({ unit }: { unit: Unit }) => {

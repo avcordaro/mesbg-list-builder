@@ -1,15 +1,16 @@
 import ConstructionIcon from "@mui/icons-material/Construction";
 import FortIcon from "@mui/icons-material/Fort";
-import { useStore } from "../../../../state/store.ts";
+import { useGameModeState } from "../../../../state/gamemode";
 import { SidebarContainer } from "../../layout/SidebarContainer.tsx";
 import { Alliance } from "./sections/Alliances.tsx";
 import { ArmyBonuses } from "./sections/ArmyBonuses.tsx";
 import { BowLimits } from "./sections/BowLimit.tsx";
 import { IsengardBreakpoint } from "./sections/IsengardBreakpoint.tsx";
 import { RosterWarnings } from "./sections/RosterWarnings.tsx";
+import { SelectRoster } from "./sections/SelectRoster.tsx";
 
 export const RosterInformation = () => {
-  const { gameMode } = useStore();
+  const { gameMode } = useGameModeState();
   return (
     <>
       {gameMode ? (
@@ -20,6 +21,7 @@ export const RosterInformation = () => {
         </SidebarContainer>
       ) : (
         <SidebarContainer title="Builder Mode" icon={<ConstructionIcon />}>
+          <SelectRoster />
           <RosterWarnings />
           <Alliance />
           <BowLimits />

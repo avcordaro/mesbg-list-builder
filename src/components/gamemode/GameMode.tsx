@@ -5,31 +5,26 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useEffect } from "react";
-import { useStore } from "../../state/store.ts";
+import { useAppState } from "../../state/app";
+import { useGameModeState } from "../../state/gamemode";
+import { useRosterBuildingState } from "../../state/roster-building";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Casualties } from "./Casualties.tsx";
 import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
-  const { startNewGame, setCurrentModal } = useStore();
+  const { startNewGame } = useGameModeState();
+  const { roster } = useRosterBuildingState();
+  const { setCurrentModal } = useAppState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const isMediumScreen = useMediaQuery(theme.breakpoints.between("lg", "xl"));
 
   const openResetGameModal = () =>
-    setCurrentModal(ModalTypes.RESET_GAME_MODE, { handleReset: startNewGame });
-
-  useEffect(() => {
-    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
-      event.preventDefault();
-    };
-    window.addEventListener("beforeunload", handleBeforeUnload);
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
+    setCurrentModal(ModalTypes.RESET_GAME_MODE, {
+      handleReset: () => startNewGame(roster),
+    });
 
   return (
     <Stack>

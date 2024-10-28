@@ -6,7 +6,7 @@ import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
-import { useStore } from "../../../state/store";
+import { useRosterBuildingState } from "../../../state/roster-building";
 
 type ChooseHeroButtonProps = {
   warbandId: string;
@@ -15,7 +15,7 @@ type ChooseHeroButtonProps = {
 export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
   warbandId,
 }) => {
-  const { updateBuilderSidebar } = useStore();
+  const { updateBuilderSidebar } = useRosterBuildingState();
   const theme = useTheme();
   const scrollToTop = useScrollToTop("sidebar");
 

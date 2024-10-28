@@ -45,7 +45,7 @@ export const SidebarContainer: FunctionComponent<
           <b>{title}</b>
         </Typography>
       </Stack>
-      <Box>{children}</Box>
+      <Box sx={{ py: 1 }}>{children}</Box>
     </Stack>
   );
 };

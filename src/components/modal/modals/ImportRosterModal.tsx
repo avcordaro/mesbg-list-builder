@@ -1,9 +1,11 @@
 import { AttachFileOutlined } from "@mui/icons-material";
 import {
   Button,
+  Checkbox,
   DialogActions,
   DialogContent,
   FormControl,
+  FormControlLabel,
   FormHelperText,
   Grid2,
   Input,
@@ -13,18 +15,36 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 import { useExternalStorage } from "../../../hooks/external-storage.ts";
-import { useStore } from "../../../state/store";
+import { useAppState } from "../../../state/app";
+import { useRosterBuildingState } from "../../../state/roster-building";
+import {
+  useCurrentRosterState,
+  useSavedRostersState,
+} from "../../../state/rosters";
 
 export const ImportRosterModal = () => {
-  const { closeModal } = useStore();
+  const { closeModal } = useAppState();
+  const { rosters, saveNewRoster, setLastOpenedRoster, deleteRoster } =
+    useSavedRostersState();
+  const { setActiveRoster, activeRoster } = useCurrentRosterState();
+
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const { importRoster } = useExternalStorage();
 
+  const [name, setName] = useState("");
   const [JSONImport, setJSONImport] = useState("");
   const [importAlert, setImportAlert] = useState(false);
+  const [nameError, setNameError] = useState(false);
+  const [overwriteRoster, setChecked] = useState(false);
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked(event.target.checked);
+    if (event.target.checked) {
+      setName("");
+    }
+  };
   const displayImportAlert = () => {
     setImportAlert(true);
     window.setTimeout(() => setImportAlert(false), 5000);
@@ -34,10 +54,35 @@ export const ImportRosterModal = () => {
     // Attempts to read the input, convert it to JSON, and assigns the JSON dictionary to the roster state variable.
     e.preventDefault();
     try {
+      if (!overwriteRoster) {
+        const rosterNameValue = name.trim();
+        const rosterNameError =
+          rosterNameValue.length === 0 || rosters.includes(rosterNameValue);
+        setNameError(rosterNameError);
+        if (rosterNameError) return;
+        saveNewRoster(rosterNameValue);
+        setLastOpenedRoster(rosterNameValue);
+        setActiveRoster(rosterNameValue);
+        useRosterBuildingState.persist.setOptions({
+          name: "mlb-builder-" + rosterNameValue.replaceAll(" ", "_"),
+        });
+      }
       importRoster(JSONImport);
       closeModal();
     } catch {
       displayImportAlert();
+
+      if (!overwriteRoster) {
+        useRosterBuildingState.persist.setOptions({
+          name: "mlb-builder-" + activeRoster.replaceAll(" ", "_"),
+        });
+        localStorage.removeItem(
+          "mlb-builder-" + name.trim().replaceAll(" ", "_"),
+        );
+        setActiveRoster(activeRoster);
+        deleteRoster(name.trim().replaceAll(" ", "_"));
+        setLastOpenedRoster(activeRoster);
+      }
     }
   };
 
@@ -78,8 +123,35 @@ export const ImportRosterModal = () => {
   return (
     <>
       <DialogContent>
-        <Grid2 container spacing={2}>
-          <Grid2 size={isMobile ? 12 : isTablet ? 7 : 9}>
+        <Grid2 container columnSpacing={1}>
+          <Grid2 size={12}>
+            <FormControl
+              error={nameError}
+              variant="standard"
+              fullWidth
+              disabled={overwriteRoster}
+            >
+              <InputLabel htmlFor="component-name-error">
+                Roster name
+              </InputLabel>
+              <Input value={name} onChange={(e) => setName(e.target.value)} />
+              <FormHelperText>
+                A new roster will be created with this name
+              </FormHelperText>
+              {nameError && (
+                <FormHelperText id="component-error-text">
+                  Roster name cannot be empty and must not already exist
+                </FormHelperText>
+              )}
+            </FormControl>
+            <FormControlLabel
+              control={
+                <Checkbox checked={overwriteRoster} onChange={handleChange} />
+              }
+              label={`Overwrite my current roster (${activeRoster})`}
+            />
+          </Grid2>
+          <Grid2 size={isMobile ? 12 : isTablet ? 7 : 8}>
             <FormControl error={importAlert} variant="standard" fullWidth>
               <InputLabel htmlFor="component-error">
                 Your army roster JSON...
@@ -102,7 +174,7 @@ export const ImportRosterModal = () => {
             </FormControl>
           </Grid2>
           <Grid2
-            size={isMobile ? 12 : isTablet ? 5 : 3}
+            size={isMobile ? 12 : isTablet ? 5 : 4}
             sx={{
               mt: 2,
               display: "flex",

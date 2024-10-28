@@ -4,7 +4,8 @@ import ShareIcon from "@mui/icons-material/Share";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useDownload } from "../../hooks/download.ts";
-import { useStore } from "../../state/store.ts";
+import { useAppState } from "../../state/app";
+import { useRosterBuildingState } from "../../state/roster-building";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Warbands } from "./warbands/Warbands.tsx";
 
@@ -12,7 +13,8 @@ export const BuilderMode = () => {
   const [fabBottom, setFabBottom] = useState("16px");
   const [fabOpen, setFabOpen] = useState(false);
   const { downloadProfileCards } = useDownload();
-  const { roster, setCurrentModal } = useStore();
+  const { roster } = useRosterBuildingState();
+  const { setCurrentModal } = useAppState();
 
   const updateFabBottom = () => {
     const footerRect = document

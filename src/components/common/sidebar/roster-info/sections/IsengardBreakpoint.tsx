@@ -1,17 +1,20 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { GiCrackedShield } from "react-icons/gi";
-import { useStore } from "../../../../../state/store.ts";
+import { useGameModeState } from "../../../../../state/gamemode";
+import { useRosterBuildingState } from "../../../../../state/roster-building";
 import { Factions } from "../../../../../types/factions.ts";
 
 export function IsengardBreakpoint() {
   const {
+    gameState: { casualties = 0, heroCasualties = 0 },
+    gameMode,
+  } = useGameModeState();
+  const {
     factions: factionList,
     armyBonusActive,
     roster,
-    gameState: { casualties = 0, heroCasualties = 0 },
-    gameMode,
-  } = useStore();
+  } = useRosterBuildingState();
 
   if (!gameMode) return null;
   if (!armyBonusActive) return null;
