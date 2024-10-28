@@ -10,12 +10,16 @@ import {
 import { useState } from "react";
 import { useExternalStorage } from "../../../hooks/external-storage.ts";
 import { useAppState } from "../../../state/app";
+import { useCurrentRosterState } from "../../../state/rosters";
 
 export const ExportRosterModal = () => {
   const { closeModal } = useAppState();
+  const { activeRoster } = useCurrentRosterState();
   const { exportRoster, copyToClipboard } = useExternalStorage();
 
-  const [filename, setFilename] = useState("");
+  const [filename, setFilename] = useState(
+    activeRoster !== "default" ? activeRoster : "",
+  );
   const [filenameValid, setFilenameValid] = useState(true);
 
   const handleExport = (e) => {
