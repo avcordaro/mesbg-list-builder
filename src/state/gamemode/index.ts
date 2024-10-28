@@ -15,7 +15,7 @@ export const useGameModeState = create<
       }),
       {
         name: "mlb-gamestate-default",
-        storage: createJSONStorage(() => sessionStorage),
+        storage: createJSONStorage(() => localStorage),
       },
     ),
   ),

@@ -1,7 +1,8 @@
-import { Container, Grid2 } from "@mui/material";
+import { Container, Grid2, Skeleton } from "@mui/material";
+import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Alerts } from "./components/alerts/Alerts";
 import { BuilderMode } from "./components/builder-mode/BuilderMode.tsx";
 import { AppContainer } from "./components/common/layout/AppContainer.tsx";
@@ -20,6 +21,7 @@ export const App = () => {
 
   const { activeRoster, setActiveRoster } = useCurrentRosterState();
   const { lastOpenedRoster } = useSavedRostersState();
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     if (activeRoster === null) {
@@ -30,6 +32,11 @@ export const App = () => {
         name: "mlb-builder-" + activeRoster.replaceAll(" ", "_"),
       });
       useRosterBuildingState.persist.rehydrate();
+      useGameModeState.persist.setOptions({
+        name: "mlb-gamestate-" + activeRoster.replaceAll(" ", "_"),
+      });
+      useGameModeState.persist.rehydrate();
+      setLoaded(true);
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -56,10 +63,31 @@ export const App = () => {
                     }
               }
             >
-              <Sidebar />
+              {loaded ? (
+                <Sidebar />
+              ) : (
+                <Skeleton
+                  variant="rectangular"
+                  height={isMobile ? "10dvh" : "70dvh"}
+                />
+              )}
             </Grid2>
             <Grid2 size={!isMobile ? 8 : 12}>
-              {gameMode ? <GameMode /> : <BuilderMode />}
+              {loaded ? (
+                gameMode ? (
+                  <GameMode />
+                ) : (
+                  <BuilderMode />
+                )
+              ) : (
+                <Stack gap={1}>
+                  <Skeleton variant="rectangular" height="5dvh" />
+                  <Skeleton variant="rectangular" height="20dvh" />
+                  <Skeleton variant="rectangular" height="20dvh" />
+                  <Skeleton variant="rectangular" height="10dvh" />
+                  <Skeleton variant="rectangular" height="12dvh" />
+                </Stack>
+              )}
             </Grid2>
           </Grid2>
         </main>
