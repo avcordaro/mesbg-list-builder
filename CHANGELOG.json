@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.11": {
     "added": [
       "Added the ability to create multiple rosters and save them to the browser storage. This allows you to create multiple rosters at the same time.",
       "Gamestate is now saved for 24 hours allowing you to continue a previous game by returning to the Game Mode screen and selecting the 'continue game' option in the dialog."
