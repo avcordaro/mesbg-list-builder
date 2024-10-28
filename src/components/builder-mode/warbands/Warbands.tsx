@@ -2,7 +2,7 @@ import { DragDropContext, DragStart, DropResult } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import { useStore } from "../../../state/store.js";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { moveItem, moveItemBetweenLists } from "../../../utils/array.ts";
 import { Warband } from "./Warband.tsx";
 
@@ -16,7 +16,7 @@ export const Warbands = () => {
     setDraggedUnit,
     clearDraggedUnit,
     reorderUnits,
-  } = useStore();
+  } = useRosterBuildingState();
 
   const handleNewWarband = () => {
     addWarband();

@@ -2,7 +2,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Button, Stack } from "@mui/material";
 import { useState } from "react";
 import { useFactionData } from "../../../hooks/faction-data.ts";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { getSumOfUnits } from "./totalUnits.ts";
 
@@ -20,7 +20,7 @@ export function RosterTextView({
     allianceLevel,
     armyBonusActive: hasArmyBonus,
     factions: factionList,
-  } = useStore();
+  } = useRosterBuildingState();
   const [copyLabel, setCopyLabel] = useState("Copy");
   const factionData = useFactionData();
 

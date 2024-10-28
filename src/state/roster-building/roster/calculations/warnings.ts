@@ -1,10 +1,10 @@
-import warning_rules_data from "../../../assets/data/warning_rules.json";
-import { AllianceLevel } from "../../../constants/alliances.ts";
-import { FactionData } from "../../../types/faction-data.ts";
-import { Faction, Factions } from "../../../types/factions.ts";
-import { Roster } from "../../../types/roster.ts";
-import { isDefinedUnit } from "../../../types/unit.ts";
-import { Warband } from "../../../types/warband.ts";
+import warning_rules_data from "../../../../assets/data/warning_rules.json";
+import { AllianceLevel } from "../../../../constants/alliances.ts";
+import { FactionData } from "../../../../types/faction-data.ts";
+import { Faction, Factions } from "../../../../types/factions.ts";
+import { Roster } from "../../../../types/roster.ts";
+import { isDefinedUnit } from "../../../../types/unit.ts";
+import { Warband } from "../../../../types/warband.ts";
 import { checkAlliance, getHighestPossibleAlliance } from "./alliance.ts";
 import { ModelCountData } from "./models.ts";
 

@@ -8,7 +8,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { LuSwords } from "react-icons/lu";
 import { allianceColours } from "../../../../../constants/alliances.ts";
 import { useAppState } from "../../../../../state/app";
-import { useStore } from "../../../../../state/store.ts";
+import { useGameModeState } from "../../../../../state/gamemode";
+import { useRosterBuildingState } from "../../../../../state/roster-building";
 import { DrawerTypes } from "../../../../drawer/drawers.tsx";
 import { ChartsDropdown } from "./ChartsDropdown.tsx";
 
@@ -17,8 +18,8 @@ export const Alliance = () => {
     factions: factionList,
     allianceLevel,
     factionType,
-    gameMode,
-  } = useStore();
+  } = useRosterBuildingState();
+  const { gameMode } = useGameModeState();
   const { openSidebar } = useAppState();
 
   const theme = useTheme();

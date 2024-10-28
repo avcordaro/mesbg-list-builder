@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import useTheme from "@mui/material/styles/useTheme";
 import { useScrollToElement } from "../../../hooks/scroll-to.ts";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { Warband } from "../../../types/warband.ts";
 
 export const WarbandActions = ({
@@ -17,7 +17,8 @@ export const WarbandActions = ({
   collapsed: boolean;
   collapse: (collapsed: boolean) => void;
 }) => {
-  const { duplicateWarband, deleteWarband, updateBuilderSidebar } = useStore();
+  const { duplicateWarband, deleteWarband, updateBuilderSidebar } =
+    useRosterBuildingState();
   const { palette } = useTheme();
   const scrollTo = useScrollToElement();
 

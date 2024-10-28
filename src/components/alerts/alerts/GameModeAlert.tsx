@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Fragment } from "react";
 import { useAppState } from "../../../state/app";
-import { useStore } from "../../../state/store";
+import { useRosterBuildingState } from "../../../state/roster-building";
 
 export const GameModeAlert = () => {
-  const { setRoster } = useStore();
+  const { setRoster } = useRosterBuildingState();
   const { dismissAlert } = useAppState();
 
   const handleResetList = () => {

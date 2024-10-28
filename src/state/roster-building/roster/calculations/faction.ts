@@ -1,5 +1,5 @@
-import { Faction, Factions, FactionType } from "../../../types/factions.ts";
-import { Warband } from "../../../types/warband.ts";
+import { Faction, Factions, FactionType } from "../../../../types/factions.ts";
+import { Warband } from "../../../../types/warband.ts";
 import { getSpecialArmyOption } from "./hero-special-stuff.ts";
 
 export function getFactionType(warbands: Warband[]): FactionType | "" {

@@ -7,13 +7,13 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ImCross } from "react-icons/im";
 import { useMesbgData } from "../../../hooks/mesbg-data.ts";
-import { Tabs as TabName } from "../../../state/builder-selection";
-import { useStore } from "../../../state/store.ts";
+import { useRosterBuildingState } from "../../../state/roster-building";
+import { Tabs as TabName } from "../../../state/roster-building/builder-selection";
 import { FactionType } from "../../../types/factions.ts";
 import { FactionTypeTab } from "./FactionTypeTab.tsx";
 
 const CloseUnitSelectorButton = () => {
-  const { updateBuilderSidebar } = useStore();
+  const { updateBuilderSidebar } = useRosterBuildingState();
 
   return (
     <IconButton
@@ -45,7 +45,7 @@ export const UnitSelector = () => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const { updateBuilderSidebar, tabSelection, factionType, heroSelection } =
-    useStore();
+    useRosterBuildingState();
   const { factionsGroupedByType } = useMesbgData();
 
   const tabNames = [

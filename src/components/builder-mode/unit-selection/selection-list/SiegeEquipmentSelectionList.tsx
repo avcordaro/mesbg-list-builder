@@ -5,12 +5,12 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import siege_equipment from "../../../../assets/data/siege_equipment.json";
-import { useStore } from "../../../../state/store.ts";
+import { useRosterBuildingState } from "../../../../state/roster-building";
 import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
 
 export const SiegeEquipmentSelectionList = () => {
   const { selectUnit, warriorSelectionFocus, updateBuilderSidebar } =
-    useStore();
+    useRosterBuildingState();
 
   const handleClick = (data) => {
     const [warband, unit] = warriorSelectionFocus;

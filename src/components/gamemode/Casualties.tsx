@@ -6,10 +6,12 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FaSkullCrossbones } from "react-icons/fa";
 import { GiCrackedShield } from "react-icons/gi";
-import { useStore } from "../../state/store.ts";
+import { useGameModeState } from "../../state/gamemode";
+import { useRosterBuildingState } from "../../state/roster-building";
 
 const Counter = () => {
-  const { roster, gameState, updateGameState } = useStore();
+  const { roster } = useRosterBuildingState();
+  const { gameState, updateGameState } = useGameModeState();
   const { palette } = useTheme();
 
   const handleIncrement = () => {
@@ -76,7 +78,8 @@ const Counter = () => {
 };
 
 export const Casualties = () => {
-  const { roster, gameState } = useStore();
+  const { roster } = useRosterBuildingState();
+  const { gameState } = useGameModeState();
   const { breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("md"));
 

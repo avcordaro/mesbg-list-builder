@@ -1,6 +1,6 @@
-import { GameModeHero } from "../../components/gamemode/types.ts";
-import { Roster } from "../../types/roster.ts";
-import { FreshUnit, isDefinedUnit, Unit } from "../../types/unit.ts";
+import { GameModeHero } from "../../../components/gamemode/types.ts";
+import { Roster } from "../../../types/roster.ts";
+import { FreshUnit, isDefinedUnit, Unit } from "../../../types/unit.ts";
 
 const convertToStats = (
   name: string | number,

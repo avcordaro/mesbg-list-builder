@@ -7,7 +7,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
 import { FaSkullCrossbones } from "react-icons/fa";
 import { GiQueenCrown } from "react-icons/gi";
-import { useStore } from "../../../state/store";
+import { useGameModeState } from "../../../state/gamemode";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { GameModeHero } from "../types";
 import { HeroStatTracker } from "./HeroStatTracker";
@@ -111,7 +111,7 @@ const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
 };
 
 export const HeroStatTrackers = () => {
-  const { gameState } = useStore();
+  const { gameState } = useGameModeState();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
 

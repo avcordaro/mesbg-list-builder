@@ -2,15 +2,17 @@ import { Button, DialogActions, DialogContent } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Typography from "@mui/material/Typography";
 import { useAppState } from "../../../state/app";
-import { useStore } from "../../../state/store.ts";
+import { useGameModeState } from "../../../state/gamemode";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit } from "../../../types/unit.ts";
 
 export const IncompleteWarbandWarningModal = () => {
-  const { roster, startNewGame } = useStore();
+  const { roster } = useRosterBuildingState();
+  const { startNewGame } = useGameModeState();
   const { closeModal } = useAppState();
 
   const continueToGameMode = () => {
-    startNewGame();
+    startNewGame(roster);
     closeModal();
   };
 

@@ -3,12 +3,12 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { useStore } from "../../../../../state/store.ts";
+import { useRosterBuildingState } from "../../../../../state/roster-building";
 
 export function RosterWarnings() {
-  const { rosterBuildingWarnings: warnings } = useStore();
+  const { rosterBuildingWarnings } = useRosterBuildingState();
 
-  if (warnings.length === 0) return null;
+  if (rosterBuildingWarnings.length === 0) return null;
 
   return (
     <Box sx={{ mt: 2 }}>
@@ -18,7 +18,7 @@ export function RosterWarnings() {
           <Typography variant="h6">Warnings</Typography>
         </Stack>
       </Divider>
-      {warnings.map((w, i) => (
+      {rosterBuildingWarnings.map((w, i) => (
         <Typography sx={{ mt: 1.5 }} key={i} color="error">
           {w}
         </Typography>

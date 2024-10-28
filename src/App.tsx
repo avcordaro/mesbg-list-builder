@@ -8,10 +8,10 @@ import { Sidebar } from "./components/common/sidebar/Sidebar.tsx";
 import { DrawerContainer } from "./components/drawer/DrawerContainer.tsx";
 import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
-import { useStore } from "./state/store";
+import { useGameModeState } from "./state/gamemode";
 
 export const App = () => {
-  const { gameMode } = useStore();
+  const { gameMode } = useGameModeState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
