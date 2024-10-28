@@ -2,10 +2,10 @@
   "main": {
     "added": [
       "Added the ability to create multiple rosters and save them to the browser storage. This allows you to create multiple rosters at the same time.",
-      "Gamestate is now saved for 24 hours allowing you to continue an previous game by returning to the Game Mode screen and selecting the 'continue game' option in the dialog."
+      "Gamestate is now saved for 24 hours allowing you to continue a previous game by returning to the Game Mode screen and selecting the 'continue game' option in the dialog."
     ],
     "changed": [
-      "Added some smartness to the sorting of models in the totals overview; moving unique heros to the top and grouping models of the same type together"
+      "Added some smartness to the sorting of models in the totals overview; moving unique heroes to the top and grouping models of the same type together"
     ],
     "bugfixes": [
       "Fixed issue where units with additional crew where merged into one row in the totals overview"
