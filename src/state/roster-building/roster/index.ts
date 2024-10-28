@@ -60,15 +60,17 @@ export type RosterState = {
   rosterBuildingWarnings: string[];
 } & RosterFunctions;
 
+export const emptyRoster = {
+  version: BUILD_VERSION,
+  num_units: 0,
+  points: 0,
+  bow_count: 0,
+  leader_warband_id: null,
+  warbands: [],
+};
+
 const initialState = {
-  roster: {
-    version: BUILD_VERSION,
-    num_units: 0,
-    points: 0,
-    bow_count: 0,
-    leader_warband_id: null,
-    warbands: [],
-  },
+  roster: emptyRoster,
   factions: [],
   factionType: "" as FactionType,
   factionMetaData: {} as ModelCountData,

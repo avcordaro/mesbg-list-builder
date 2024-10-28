@@ -1,4 +1,4 @@
-import { Download, UploadFile } from "@mui/icons-material";
+import { Download, PlaylistAdd, UploadFile } from "@mui/icons-material";
 import SaveIcon from "@mui/icons-material/Save";
 import ShareIcon from "@mui/icons-material/Share";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
@@ -36,6 +36,12 @@ export const BuilderMode = () => {
   useEffect(() => updateFabBottom());
 
   const actions = [
+    {
+      icon: <PlaylistAdd />,
+      name: "Create new roster",
+      callback: () => setCurrentModal(ModalTypes.CREATE_NEW_ROSTER),
+      disabled: roster.num_units === 0,
+    },
     {
       icon: <SaveIcon />,
       name: "Export roster",

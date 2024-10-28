@@ -19,7 +19,7 @@ export const useRosterBuildingState = create<
       }),
       {
         name: "mlb-builder-default",
-        storage: createJSONStorage(() => sessionStorage),
+        storage: createJSONStorage(() => localStorage),
       },
     ),
   ),

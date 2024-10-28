@@ -7,6 +7,7 @@ import { FaHammer, FaImage } from "react-icons/fa6";
 import { TbRefresh } from "react-icons/tb";
 import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
+import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarningModal.tsx";
@@ -22,6 +23,7 @@ export enum ModalTypes {
   RESET_GAME_MODE = "RESET_GAME_MODE",
   ROSTER_TABLE = "ROSTER_TABLE",
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
+  CREATE_NEW_ROSTER = "CREATE_NEW_ROSTER",
   EXPORT_ROSTER = "EXPORT_ROSTER",
   IMPORT_ROSTER = "IMPORT_ROSTER",
   INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
@@ -97,6 +99,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <SaveIcon />,
       title: "Export roster",
       children: <ExportRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.CREATE_NEW_ROSTER,
+    {
+      icon: <SaveIcon />,
+      title: "Create new roster",
+      children: <CreateNewRosterModal />,
     },
   ],
   [

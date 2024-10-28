@@ -7,6 +7,7 @@ import { ArmyBonuses } from "./sections/ArmyBonuses.tsx";
 import { BowLimits } from "./sections/BowLimit.tsx";
 import { IsengardBreakpoint } from "./sections/IsengardBreakpoint.tsx";
 import { RosterWarnings } from "./sections/RosterWarnings.tsx";
+import { SelectRoster } from "./sections/SelectRoster.tsx";
 
 export const RosterInformation = () => {
   const { gameMode } = useGameModeState();
@@ -20,6 +21,7 @@ export const RosterInformation = () => {
         </SidebarContainer>
       ) : (
         <SidebarContainer title="Builder Mode" icon={<ConstructionIcon />}>
+          <SelectRoster />
           <RosterWarnings />
           <Alliance />
           <BowLimits />
