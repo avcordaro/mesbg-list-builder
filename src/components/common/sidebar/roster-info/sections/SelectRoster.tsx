@@ -74,9 +74,7 @@ export const SelectRoster = () => {
                 {...props}
                 key={option}
                 secondaryAction={
-                  ["default", "create a new roster", activeRoster].includes(
-                    option,
-                  ) ? (
+                  ["default", "create a new roster"].includes(option) ? (
                     <></>
                   ) : (
                     <IconButton
@@ -100,36 +98,33 @@ export const SelectRoster = () => {
               </ListItem>
             </>
           )}
-          renderInput={(params) => {
-            console.log(params);
-            return (
-              <TextField
-                {...params}
-                label="Current roster"
-                variant="outlined"
-                size="small"
-                fullWidth
-                slotProps={{
-                  input: {
-                    ...params.InputProps,
-                    endAdornment: (
-                      <InputAdornment
-                        {...(params.InputProps.endAdornment as ReactElement)
-                          .props}
-                        style={{ position: "absolute" }}
-                      >
-                        <Tooltip title="Save the current roster with a name">
-                          <IconButton onClick={saveRosterAs}>
-                            <SaveAs />
-                          </IconButton>
-                        </Tooltip>
-                      </InputAdornment>
-                    ),
-                  },
-                }}
-              />
-            );
-          }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Current roster"
+              variant="outlined"
+              size="small"
+              fullWidth
+              slotProps={{
+                input: {
+                  ...params.InputProps,
+                  endAdornment: (
+                    <InputAdornment
+                      {...(params.InputProps.endAdornment as ReactElement)
+                        .props}
+                      style={{ position: "absolute" }}
+                    >
+                      <Tooltip title="Save the current roster with a name">
+                        <IconButton onClick={saveRosterAs}>
+                          <SaveAs />
+                        </IconButton>
+                      </Tooltip>
+                    </InputAdornment>
+                  ),
+                },
+              }}
+            />
+          )}
           disableClearable
         />
       </FormControl>
