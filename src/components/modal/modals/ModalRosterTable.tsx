@@ -84,7 +84,7 @@ export const ModalRosterTable = () => {
           <FormControlLabel
             checked={showUnitTotals}
             control={<Switch color="primary" />}
-            label="Show unit Totals"
+            label="Show unit totals"
             labelPlacement="end"
             onChange={handleTotalsToggle}
           />
