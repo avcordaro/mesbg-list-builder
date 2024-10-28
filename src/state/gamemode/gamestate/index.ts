@@ -18,6 +18,7 @@ export type GameState = {
   gameState?: Game;
   startNewGame: (roster: Roster) => void;
   updateGameState: (update: Partial<Game>) => void;
+  initializeGameState: () => void;
 };
 
 const initialState = {
@@ -53,5 +54,14 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
       }),
       undefined,
       "UPDATE_GAME_STATE",
+    ),
+
+  initializeGameState: () =>
+    set(
+      () => ({
+        ...initialState,
+      }),
+      undefined,
+      "INITIALIZE_GAMESTATE",
     ),
 });

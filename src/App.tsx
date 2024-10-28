@@ -15,7 +15,7 @@ import { useRosterBuildingState } from "./state/roster-building";
 import { useCurrentRosterState, useSavedRostersState } from "./state/rosters";
 
 export const App = () => {
-  const { gameMode } = useGameModeState();
+  const { gameMode, initializeGameState } = useGameModeState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
@@ -28,15 +28,26 @@ export const App = () => {
       setActiveRoster(lastOpenedRoster);
     }
     if (activeRoster !== null) {
+      setLoaded(false);
       useRosterBuildingState.persist.setOptions({
         name: "mlb-builder-" + activeRoster.replaceAll(" ", "_"),
       });
-      useRosterBuildingState.persist.rehydrate();
       useGameModeState.persist.setOptions({
         name: "mlb-gamestate-" + activeRoster.replaceAll(" ", "_"),
       });
-      useGameModeState.persist.rehydrate();
-      setLoaded(true);
+      Promise.all([
+        useRosterBuildingState.persist.rehydrate(),
+        useGameModeState.persist.rehydrate(),
+      ]).finally(() => {
+        const currentGameState = localStorage.getItem(
+          "mlb-gamestate-" + activeRoster.replaceAll(" ", "_"),
+        );
+        if (!currentGameState) {
+          initializeGameState();
+        }
+
+        setLoaded(true);
+      });
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
