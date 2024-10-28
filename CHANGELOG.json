@@ -1,5 +1,6 @@
 {
   "main": {},
+  "6.12": {},
   "6.11": {
     "added": [
       "Added the ability to create multiple rosters and save them to the browser storage. This allows you to create multiple rosters at the same time.",
