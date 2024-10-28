@@ -2,7 +2,12 @@
   "main": {},
   "6.10": {
     "added": [
-      "Added a toggle to the roster summary to display unit totals instead of units per warband."
+      "Added a toggle to the roster summary to display unit totals instead of units per warband.",
+      "Added the ability to create multiple rosters and save them to the browser storage. This allows you to create multiple rosters at the same time.",
+      "Gamestate is now saved for 24 hours allowing you to continue an previous game by returning to the Game Mode screen and selecting the 'continue game' option in the dialog."
+    ],
+    "removed": [
+      "Removed the confirmation dialog added in 6.9 when leaving the Game Mode screen as the state is now saved between sessions."
     ]
   },
   "6.9": {
