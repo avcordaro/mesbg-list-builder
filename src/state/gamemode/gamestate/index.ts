@@ -8,6 +8,8 @@ export type Game = {
   heroes: Record<string, GameModeHero[]>;
   casualties: number;
   heroCasualties: number;
+  started: number;
+  lastUpdated: number;
 };
 
 export type GameState = {
@@ -31,7 +33,11 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
     set(
       () => ({
         gameMode: true,
-        gameState: createGameState(roster),
+        gameState: {
+          ...createGameState(roster),
+          started: Date.now(),
+          lastUpdated: Date.now(),
+        },
       }),
       undefined,
       "START_GAME",
@@ -42,6 +48,7 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
         gameState: {
           ...gameState,
           ...gameStateUpdate,
+          lastUpdated: Date.now(),
         },
       }),
       undefined,

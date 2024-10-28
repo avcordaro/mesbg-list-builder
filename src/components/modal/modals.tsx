@@ -1,12 +1,13 @@
 import { ListAlt } from "@mui/icons-material";
+import FortIcon from "@mui/icons-material/Fort";
 import SaveIcon from "@mui/icons-material/Save";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
-import { FaHammer, FaImage } from "react-icons/fa6";
+import { FaImage } from "react-icons/fa6";
 import { TbRefresh } from "react-icons/tb";
-import { BuilderModeModal } from "./modals/BuilderModeModal.tsx";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
+import { ContinueGameModal } from "./modals/ContinueGameModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
@@ -17,7 +18,7 @@ import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
 import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
 
 export enum ModalTypes {
-  BUILDER_MODE = "BUILDER_MODE",
+  CONTINUE_GAME = "CONTINUE_GAME",
   PROFILE_CARD = "PROFILE_CARD",
   CHART = "CHART",
   RESET_GAME_MODE = "RESET_GAME_MODE",
@@ -38,11 +39,11 @@ export type ModalProps = {
 
 export const modals = new Map<ModalTypes, ModalProps>([
   [
-    ModalTypes.BUILDER_MODE,
+    ModalTypes.CONTINUE_GAME,
     {
-      icon: <FaHammer />,
-      title: "Back to Builder Mode",
-      children: <BuilderModeModal />,
+      icon: <FortIcon />,
+      title: "Continue existing game",
+      children: <ContinueGameModal />,
     },
   ],
   [

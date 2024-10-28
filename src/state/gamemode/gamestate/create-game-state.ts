@@ -49,7 +49,13 @@ const getHeroes = (roster: Roster): Record<string, GameModeHero[]> => {
     .reduce((result, hero) => ({ ...result, ...hero }), {});
 };
 
-export const createGameState = (roster: Roster) => ({
+export const createGameState = (
+  roster: Roster,
+): {
+  heroes: Record<string, GameModeHero[]>;
+  casualties: number;
+  heroCasualties: number;
+} => ({
   heroes: getHeroes(roster),
   casualties: 0,
   heroCasualties: 0,

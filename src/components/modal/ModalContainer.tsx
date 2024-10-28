@@ -40,7 +40,7 @@ export const ModalContainer = () => {
       <Box
         sx={{
           ...style,
-          minWidth: isMobile ? "90vw" : "100ch",
+          minWidth: isMobile ? "90vw" : "64ch",
           maxWidth: "90vw",
           maxHeight: "90vh",
           overflowY: "scroll",
