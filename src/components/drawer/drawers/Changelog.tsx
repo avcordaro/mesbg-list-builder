@@ -42,6 +42,7 @@ export const Changelog = () => {
       {Object.entries(releases).map(
         ([version, releaseNotes], _, allReleases) => {
           const sections = Object.entries(releaseNotes);
+          if (version === "main" && sections.length === 0) return <></>;
           return (
             <Box key={version}>
               <Typography variant="h6" fontWeight="bolder">
