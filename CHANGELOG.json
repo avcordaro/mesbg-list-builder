@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.10": {
     "added": [
       "Added a toggle to the roster summary to display unit totals instead of units per warband."
     ]
