@@ -1,4 +1,4 @@
-import { ListAlt } from "@mui/icons-material";
+import { ListAlt, SaveAs } from "@mui/icons-material";
 import FortIcon from "@mui/icons-material/Fort";
 import SaveIcon from "@mui/icons-material/Save";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
@@ -15,6 +15,7 @@ import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarning
 import { ModalRosterTable } from "./modals/ModalRosterTable";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
+import { SaveRosterAsModal } from "./modals/SaveRosterAsModal.tsx";
 import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
 
 export enum ModalTypes {
@@ -25,6 +26,7 @@ export enum ModalTypes {
   ROSTER_TABLE = "ROSTER_TABLE",
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
   CREATE_NEW_ROSTER = "CREATE_NEW_ROSTER",
+  SAVE_AS_NEW_ROSTER = "SAVE_AS_NEW_ROSTER",
   EXPORT_ROSTER = "EXPORT_ROSTER",
   IMPORT_ROSTER = "IMPORT_ROSTER",
   INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
@@ -108,6 +110,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <SaveIcon />,
       title: "Create new roster",
       children: <CreateNewRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.SAVE_AS_NEW_ROSTER,
+    {
+      icon: <SaveAs />,
+      title: "Save as new roster",
+      children: <SaveRosterAsModal />,
     },
   ],
   [

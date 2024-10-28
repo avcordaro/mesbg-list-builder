@@ -10,23 +10,22 @@ import {
 import { useState } from "react";
 import { useAppState } from "../../../state/app";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { emptyRoster } from "../../../state/roster-building/roster";
 import {
   useCurrentRosterState,
   useSavedRostersState,
 } from "../../../state/rosters";
 
-export const CreateNewRosterModal = () => {
+export const SaveRosterAsModal = () => {
   const { closeModal } = useAppState();
   const { rosters, saveNewRoster, setLastOpenedRoster } =
     useSavedRostersState();
   const { setActiveRoster } = useCurrentRosterState();
-  const { setRoster } = useRosterBuildingState();
+  const { setRoster, roster } = useRosterBuildingState();
 
   const [rosterName, setRosterName] = useState("");
   const [rosterNameValid, setRosterNameValid] = useState(true);
 
-  const handleCreateNewRoster = (e) => {
+  const handleSaveAs = (e) => {
     e.preventDefault();
     const rosterNameValue = rosterName.trim();
     const validRosterName =
@@ -39,7 +38,7 @@ export const CreateNewRosterModal = () => {
       useRosterBuildingState.persist.setOptions({
         name: "mlb-builder-" + rosterNameValue.replaceAll(" ", "_"),
       });
-      setRoster(emptyRoster);
+      setRoster(roster);
       closeModal();
     }
   };
@@ -68,10 +67,10 @@ export const CreateNewRosterModal = () => {
       <DialogActions sx={{ display: "flex", gap: 2 }}>
         <Button
           variant="contained"
-          onClick={handleCreateNewRoster}
+          onClick={handleSaveAs}
           disabled={!rosterNameValid}
         >
-          Create roster
+          Save roster as...
         </Button>
       </DialogActions>
     </>
