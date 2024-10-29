@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "changed": [
+      "Changed the auto-close behaviour of the floating action button in the builder mode. It will now open onclick and only close when the next click is registered."
+    ]
+  },
   "6.11": {
     "added": [
       "Added the ability to create multiple rosters and save them to the browser storage. This allows you to create multiple rosters at the same time.",
