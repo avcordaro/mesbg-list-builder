@@ -12,6 +12,7 @@ import { Warbands } from "./warbands/Warbands.tsx";
 
 export const BuilderMode = () => {
   const [fabBottom, setFabBottom] = useState("16px");
+  const [isBouncing, setIsBouncing] = useState(false);
   const [fabOpen, setFabOpen] = useState(false);
   const { downloadProfileCards } = useDownload();
   const { roster } = useRosterBuildingState();
@@ -63,6 +64,17 @@ export const BuilderMode = () => {
     };
   }, [fabOpen]);
 
+  /**
+   * This effect sets the bounce value to true for N seconds, this triggers
+   * the FAB to bounce up and down for this amount of time and draw attention
+   * to its existence.
+   */
+  useEffect(() => {
+    setIsBouncing(true);
+    const timer = setTimeout(() => setIsBouncing(false), 2100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const actions = [
     {
       icon: <SaveIcon />,
@@ -97,6 +109,7 @@ export const BuilderMode = () => {
         <SpeedDial
           ariaLabel="action-buttons"
           sx={{ position: "fixed", bottom: fabBottom, right: 16 }}
+          className={isBouncing ? "bounce" : ""}
           icon={<SpeedDialIcon />}
           open={fabOpen}
           onClick={() => setFabOpen((x) => !x)}
