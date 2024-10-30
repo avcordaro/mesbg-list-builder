@@ -4,7 +4,8 @@
       "Added a little bit of a bounce to the floating action button to draw attention."
     ],
     "changed": [
-      "Changed the auto-close behaviour of the floating action button in the builder mode. It will now open onclick and only close when the next click is registered."
+      "Changed the auto-close behaviour of the floating action button in the builder mode. It will now open onclick and only close when the next click is registered.",
+      "Increased with width of the profile card and roster screenshot modals on larger screens."
     ]
   },
   "6.11": {

@@ -17,19 +17,18 @@ export const NewEditionNews = () => (
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://www.warhammer-community.com/2024/08/15/the-road-goes-ever-on-and-on-the-next-edition-of-middle-earth-strategy-battle-game/"
+        href="https://www.warhammer-community.com/en-gb/articles/vozvvb0g/middle-earthtm-strategy-battle-game-the-upcoming-range-update-explained/"
       >
-        The Road Goes Ever On and On… The Next Edition of Middle-earth™
-        Strategy Battle Game
+        Middle-earth™ Strategy Battle Game - The upcoming range update,
+        explained
       </a>
     </Typography>
     <Typography>
-      You can see in the article above that a lot of profiles are being
-      reworked, along with a new array of army lists and various rule changes.
-      This is likely going to result in a very large amount of work for me once
-      it is released, particularly for profile cards. I will definitely be
-      working hard to bring you updates that support the new edition of the game
-      on this website.
+      Based on the news so far, a lot of profiles are being reworked, along with
+      a new array of army lists and various rule changes. This is likely going
+      to result in a very large amount of work for me once it is released,
+      particularly for profile cards. I will definitely be working hard to bring
+      you updates that support the new edition of the game on this website.
     </Typography>
     <Typography>
       My plan is to maintain two versions of this list builder, one for the new

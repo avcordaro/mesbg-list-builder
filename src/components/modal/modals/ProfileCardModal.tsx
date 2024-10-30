@@ -28,7 +28,7 @@ export const ProfileCardModal = () => {
 
   return (
     <>
-      <DialogContent>
+      <DialogContent sx={{ minWidth: "50vw" }}>
         <Typography variant="body2">
           You can download a zip of all profile cards for your current army list
           by clicking on the floating action button in the bottom right, and

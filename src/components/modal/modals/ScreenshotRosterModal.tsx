@@ -63,7 +63,7 @@ export const ScreenshotRosterModal = () => {
 
   return (
     <>
-      <DialogContent>
+      <DialogContent sx={{ minWidth: "50vw" }}>
         <Typography variant="subtitle2">
           The following is a screenshot image of your roster list which you can
           download, or copy to your clipboard as you wish.
