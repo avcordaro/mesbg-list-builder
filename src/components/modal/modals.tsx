@@ -1,11 +1,11 @@
 import { ListAlt, SaveAs } from "@mui/icons-material";
 import FortIcon from "@mui/icons-material/Fort";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import SaveIcon from "@mui/icons-material/Save";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import { ReactNode } from "react";
 import { FaFileImport } from "react-icons/fa";
 import { FaImage } from "react-icons/fa6";
-import { TbRefresh } from "react-icons/tb";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ContinueGameModal } from "./modals/ContinueGameModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
@@ -75,8 +75,8 @@ export const modals = new Map<ModalTypes, ModalProps>([
   [
     ModalTypes.RESET_GAME_MODE,
     {
-      icon: <TbRefresh />,
-      title: "Reset Game Mode?",
+      icon: <RestartAltIcon />,
+      title: "Game results",
       children: <ResetGameModeModal />,
     },
   ],

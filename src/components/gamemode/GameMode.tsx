@@ -1,4 +1,4 @@
-import { RefreshOutlined } from "@mui/icons-material";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { Button } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
@@ -15,7 +15,7 @@ import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
   const { startNewGame } = useGameModeState();
-  const { roster } = useRosterBuildingState();
+  const { roster, allianceLevel } = useRosterBuildingState();
   const { setCurrentModal } = useAppState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -23,7 +23,7 @@ export const GameMode = () => {
 
   const openResetGameModal = () =>
     setCurrentModal(ModalTypes.RESET_GAME_MODE, {
-      handleReset: () => startNewGame(roster),
+      handleReset: () => startNewGame(roster, allianceLevel),
     });
 
   return (
@@ -34,13 +34,13 @@ export const GameMode = () => {
       >
         <Button
           variant="contained"
-          startIcon={<RefreshOutlined />}
+          startIcon={<RestartAltIcon />}
           onClick={openResetGameModal}
           sx={{
-            minWidth: "24ch",
+            minWidth: "32ch",
           }}
         >
-          Reset All
+          End / Restart Game
         </Button>
         <Casualties />
       </Stack>

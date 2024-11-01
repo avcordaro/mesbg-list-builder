@@ -11,7 +11,7 @@ import { ModalTypes } from "../modals.tsx";
 
 export const ContinueGameModal = () => {
   const { setGameMode, startNewGame, gameState } = useGameModeState();
-  const { roster } = useRosterBuildingState();
+  const { roster, allianceLevel } = useRosterBuildingState();
   const { activeRoster } = useCurrentRosterState();
   const { closeModal, triggerAlert, setCurrentModal } = useAppState();
   const scrollToTop = useScrollToTop();
@@ -34,7 +34,7 @@ export const ContinueGameModal = () => {
       return;
     }
 
-    startNewGame(roster);
+    startNewGame(roster, allianceLevel);
     closeModal();
     scrollToTop();
   };

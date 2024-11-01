@@ -1,5 +1,9 @@
+import { getSumOfUnits } from "../../../components/common/roster/totalUnits.ts";
 import { GameModeHero } from "../../../components/gamemode/types.ts";
+import { AllianceLevel } from "../../../constants/alliances.ts";
+import { Faction } from "../../../types/factions.ts";
 import { Roster } from "../../../types/roster.ts";
+import { Unit } from "../../../types/unit.ts";
 import { Slice } from "../../Slice.ts";
 import { GameModeState } from "../index.ts";
 import { createGameState } from "./create-game-state.ts";
@@ -12,11 +16,21 @@ export type Game = {
   lastUpdated: number;
 };
 
+export type GameMetaData = {
+  factions: Faction[];
+  heroes: Pick<Unit, "name" | "unit_type" | "quantity" | "profile_origin">[];
+  alliance: AllianceLevel;
+  iGameState: Pick<Game, "heroes">;
+  points: number;
+  bows: number;
+};
+
 export type GameState = {
   gameMode: boolean;
   setGameMode: (gameMode: boolean) => void;
   gameState?: Game;
-  startNewGame: (roster: Roster) => void;
+  gameMetaData?: GameMetaData;
+  startNewGame: (roster: Roster, allianceLevel: AllianceLevel) => void;
   updateGameState: (update: Partial<Game>) => void;
   initializeGameState: () => void;
 };
@@ -24,22 +38,47 @@ export type GameState = {
 const initialState = {
   gameMode: false,
   gameState: null,
+  gameMetaData: null,
 };
 
 export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
   ...initialState,
 
   setGameMode: (gameMode) => set({ gameMode }, undefined, "SET_GAME_MODE"),
-  startNewGame: (roster: Roster) =>
+  startNewGame: (roster: Roster, allianceLevel: AllianceLevel) =>
     set(
-      () => ({
-        gameMode: true,
-        gameState: {
-          ...createGameState(roster),
-          started: Date.now(),
-          lastUpdated: Date.now(),
-        },
-      }),
+      () => {
+        const gameState = createGameState(roster);
+        return {
+          gameMode: true,
+          gameState: {
+            ...gameState,
+            started: Date.now(),
+            lastUpdated: Date.now(),
+          },
+          gameMetaData: {
+            iGameState: { heroes: gameState.heroes },
+            factions: [
+              ...new Set(
+                roster.warbands
+                  .flatMap((wb) => wb.hero?.faction)
+                  .filter((f) => !!f),
+              ),
+            ],
+            alliance: allianceLevel,
+            bows: roster.bow_count,
+            points: roster.points,
+            heroes: getSumOfUnits(roster)
+              .filter((unit) => unit.unit_type.includes("Hero"))
+              .map((hero) => ({
+                name: hero.name,
+                quantity: hero.quantity,
+                unit_type: hero.unit_type,
+                profile_origin: hero.profile_origin,
+              })),
+          } as GameMetaData,
+        };
+      },
       undefined,
       "START_GAME",
     ),

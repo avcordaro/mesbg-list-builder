@@ -76,7 +76,7 @@ export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { roster } = useRosterBuildingState();
+  const { roster, allianceLevel } = useRosterBuildingState();
   const { gameMode, gameState, setGameMode, startNewGame } = useGameModeState();
   const { setCurrentModal, openSidebar } = useAppState();
 
@@ -87,7 +87,7 @@ export const Header = () => {
   const handleStartGame = () => {
     if (!gameState) {
       // if there is no game present, just start a new game.
-      startNewGame(roster);
+      startNewGame(roster, allianceLevel);
       return;
     }
 
@@ -103,7 +103,7 @@ export const Header = () => {
       setCurrentModal(ModalTypes.CONTINUE_GAME);
     } else {
       // existing is older than one day. No need to continue yesterday's game.
-      startNewGame(roster);
+      startNewGame(roster, allianceLevel);
     }
   };
 
