@@ -20,12 +20,14 @@ export const ResetGameModeModal = () => {
   const childRef = useRef<GameResultsFormHandlers>(null);
 
   const handleSkip = () => {
+    // TODO: Based on the ant-switch, return to game- or builder-mode.
     closeModal();
   };
 
   const saveGameToState = () => {
     if (childRef.current) {
       if (childRef.current.saveToState()) {
+        // TODO: Based on the ant-switch, return to game- or builder-mode.
         closeModal();
       }
     }
@@ -46,6 +48,8 @@ export const ResetGameModeModal = () => {
         </Alert>
 
         <GameResultsForm ref={childRef} />
+
+        {/*  TODO: Add ant style switch indicating to stay in game mode or go back to builder mode */}
       </DialogContent>
       <DialogActions>
         <Stack direction="row" gap={2} sx={{ width: "100%", p: 1 }}>
