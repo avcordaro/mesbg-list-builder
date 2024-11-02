@@ -62,7 +62,7 @@ const scenarios = [
   "Clash of champions",
   "Cornered",
   "Duel of wits",
-];
+].map((s) => s.replace(/(^\w)|(\s+\w)/g, (letter) => letter.toUpperCase()));
 
 export type GameResultsFormHandlers = {
   saveToState: () => boolean;
