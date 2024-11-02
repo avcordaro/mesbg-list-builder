@@ -12,7 +12,7 @@ export type ArmyPickerProps = {
   label: string;
   placeholder?: string;
   defaultSelection?: string[];
-  onChange: (values: string[]) => void;
+  onChange: (values: Option[]) => void;
   autoFocus?: boolean;
 };
 
@@ -52,7 +52,7 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
     }
 
     // Forward the change to the parent component.
-    props.onChange(newSelection.map((o) => o.title));
+    props.onChange(newSelection);
   };
 
   useEffect(() => {
@@ -62,7 +62,8 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
       );
       onOptionSelectionChanged(defaultSelection);
     }
-  }, [props.defaultSelection]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Autocomplete

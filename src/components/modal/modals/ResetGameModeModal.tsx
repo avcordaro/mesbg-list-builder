@@ -8,6 +8,8 @@ import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useRef } from "react";
 import { useAppState } from "../../../state/app";
 import {
@@ -16,6 +18,9 @@ import {
 } from "../../common/game-results-form/GameResultsForm.tsx";
 
 export const ResetGameModeModal = () => {
+  const theme = useTheme();
+  const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const { closeModal } = useAppState();
   const childRef = useRef<GameResultsFormHandlers>(null);
 
@@ -35,7 +40,7 @@ export const ResetGameModeModal = () => {
 
   return (
     <>
-      <DialogContent sx={{ minWidth: "50vw" }}>
+      <DialogContent sx={{ minWidth: isTablet ? "80vw" : "50vw" }}>
         <Alert severity="info">
           <AlertTitle>
             <strong>Saving game results</strong>
@@ -52,18 +57,26 @@ export const ResetGameModeModal = () => {
         {/*  TODO: Add ant style switch indicating to stay in game mode or go back to builder mode */}
       </DialogContent>
       <DialogActions>
-        <Stack direction="row" gap={2} sx={{ width: "100%", p: 1 }}>
-          <Button variant="outlined" color="inherit" onClick={closeModal}>
-            Return to game
-          </Button>
-          <Box flexGrow={1} />
+        <Stack
+          direction={isMobile ? "column" : "row"}
+          gap={2}
+          sx={{ width: "100%", p: 1 }}
+        >
+          {!isMobile && (
+            <>
+              <Button variant="outlined" color="inherit" onClick={closeModal}>
+                Return to game
+              </Button>
+              <Box flexGrow={1} />
+            </>
+          )}
           <Button
             variant="text"
             color="inherit"
             onClick={handleSkip}
             sx={{ minWidth: "20ch" }}
           >
-            Skip
+            Continue without saving
           </Button>
           <Button
             variant="contained"

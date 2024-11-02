@@ -1,12 +1,14 @@
 import {
   Autocomplete,
   Box,
-  Button,
   FormHelperText,
   Grid2,
+  InputAdornment,
   TextField,
 } from "@mui/material";
 import Alert from "@mui/material/Alert";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, forwardRef, useImperativeHandle, useState } from "react";
 import { useGameModeState } from "../../../state/gamemode";
 import { ArmyPicker } from "./ArmyPicker.tsx";
@@ -18,8 +20,8 @@ interface FormValues {
   alliance: string;
   points: number;
   bows: number;
-  startTime: string;
-  duration: string;
+  gameDate: string;
+  duration: number;
   opponentArmies: string;
   opponentName: string;
   result: Result;
@@ -75,6 +77,11 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     gameMetaData: { factions, points, bows, alliance },
   } = useGameModeState();
 
+  const theme = useTheme();
+  const isSmallDesktop = useMediaQuery(theme.breakpoints.down("lg"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const gameStartTime = new Date(started);
   const gameEndTime = new Date();
   const gameDuration = gameEndTime.getTime() - gameStartTime.getTime();
@@ -84,8 +91,8 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     alliance: factions.length === 1 ? "Pure" : alliance,
     points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
     bows: bows,
-    startTime: gameStartTime.toISOString().slice(0, 10),
-    duration: Math.ceil(gameDuration / 60000) + " minutes",
+    gameDate: gameStartTime.toISOString().slice(0, 10),
+    duration: Math.ceil(gameDuration / 60000),
     opponentArmies: "",
     opponentName: "",
     result: null,
@@ -106,10 +113,10 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   };
 
   const handleChangeField = (name: keyof FormValues, value: unknown) => {
-    setFormValues({
+    setFormValues((formValues) => ({
       ...formValues,
       [name]: value,
-    });
+    }));
   };
 
   const saveToState = (): boolean => {
@@ -151,62 +158,62 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
       )}
 
       <Grid2 container spacing={2}>
-        <Grid2 size={8}>
+        <Grid2 size={isMobile ? 12 : 8}>
           <TextField
             fullWidth
-            label="Start Time"
-            name="startTime"
+            label="Date of the game"
+            name="gameDate"
             type="date"
             slotProps={{ inputLabel: { shrink: true } }}
-            value={formValues.startTime}
+            value={formValues.gameDate}
             onChange={handleChangeByEvent}
           />
         </Grid2>
-        <Grid2 size={4}>
+        <Grid2 size={isMobile ? 12 : 4}>
           <TextField
             fullWidth
             label="Duration"
             name="duration"
             value={formValues.duration}
             onChange={handleChangeByEvent}
+            slotProps={{
+              input: {
+                endAdornment: (
+                  <InputAdornment position="end">minutes</InputAdornment>
+                ),
+              },
+            }}
           />
         </Grid2>
 
-        <Grid2 size={8}>
+        <Grid2 size={12}>
           <ArmyPicker
-            label={"Armies"}
-            placeholder={"Your armies"}
-            onChange={(values) =>
-              handleChangeField("armies", values.join(", "))
-            }
+            label="Armies"
+            placeholder="Your armies"
+            onChange={(values) => {
+              handleChangeField(
+                "armies",
+                values.map((v) => v.title).join(", "),
+              );
+
+              if (values.length === 1 && values[0].type.includes("LL"))
+                // Single army roster in LL format are always considered a Legendary Legion
+                handleChangeField("alliance", "Legendary Legion");
+              else if (values.length === 1)
+                // Single army roster in outside the LL format are always considered Pure
+                handleChangeField("alliance", "Pure");
+              else if (
+                values.length > 1 &&
+                ["Pure", "Legendary Legion"].includes(formValues.alliance)
+              )
+                // Multi army rosters cannot be considered pure or Legendary Legion, and should be set to something else.
+                handleChangeField("alliance", "Historical");
+            }}
             defaultSelection={formValues.armies.split(",").map((o) => o.trim())}
           />
         </Grid2>
-        <Grid2 size={2}>
-          <TextField
-            required
-            error={missingRequiredFields.includes("Points")}
-            fullWidth
-            label="Points"
-            name="points"
-            type="number"
-            value={formValues.points}
-            onChange={handleChangeByEvent}
-          />
-        </Grid2>
-        <Grid2 size={2}>
-          <TextField
-            required
-            error={missingRequiredFields.includes("Bows")}
-            fullWidth
-            label="Bows"
-            name="bows"
-            type="number"
-            value={formValues.bows}
-            onChange={handleChangeByEvent}
-          />
-        </Grid2>
-        <Grid2 size={12}>
+
+        <Grid2 size={isSmallDesktop ? 12 : 8}>
           <Autocomplete
             options={allianceLevels}
             value={formValues.alliance}
@@ -219,6 +226,12 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
                 error={missingRequiredFields.includes("Alliance level")}
               />
             )}
+            getOptionDisabled={(option) =>
+              ["Pure", "Legendary Legion"].includes(option)
+            }
+            disabled={["Pure", "Legendary Legion"].includes(
+              formValues.alliance,
+            )}
             fullWidth
           />
           <FormHelperText sx={{ px: 1 }}>
@@ -226,8 +239,32 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             faction could be considered pure.
           </FormHelperText>
         </Grid2>
+        <Grid2 size={isSmallDesktop ? 6 : 2}>
+          <TextField
+            required
+            error={missingRequiredFields.includes("Points")}
+            fullWidth
+            label="Points"
+            name="points"
+            type="number"
+            value={formValues.points}
+            onChange={handleChangeByEvent}
+          />
+        </Grid2>
+        <Grid2 size={isSmallDesktop ? 6 : 2}>
+          <TextField
+            required
+            error={missingRequiredFields.includes("Bows")}
+            fullWidth
+            label="Bows"
+            name="bows"
+            type="number"
+            value={formValues.bows}
+            onChange={handleChangeByEvent}
+          />
+        </Grid2>
 
-        <Grid2 size={5}>
+        <Grid2 size={isTablet ? 12 : 5}>
           <TextField
             fullWidth
             label="Opponent Name"
@@ -237,18 +274,21 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             autoFocus
           />
         </Grid2>
-        <Grid2 size={7}>
+        <Grid2 size={isTablet ? 12 : 7}>
           <ArmyPicker
-            label={"Opponent Armies"}
-            placeholder={"Your opponents armies"}
+            label="Opponent Armies"
+            placeholder="Your opponents armies"
             onChange={(values) =>
-              handleChangeField("opponentArmies", values.join(", "))
+              handleChangeField(
+                "opponentArmies",
+                values.map((v) => v.title).join(", "),
+              )
             }
             autoFocus={true}
           />
         </Grid2>
 
-        <Grid2 size={9}>
+        <Grid2 size={isTablet ? 7 : 9}>
           <Autocomplete
             options={results}
             value={formValues.result}
@@ -264,7 +304,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             fullWidth
           />
         </Grid2>
-        <Grid2 size={3}>
+        <Grid2 size={isTablet ? 5 : 3}>
           <TextField
             required
             error={missingRequiredFields.includes("Victory points")}
@@ -286,19 +326,24 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             renderInput={(params) => (
               <TextField {...params} label="Scenario Played" />
             )}
+            filterOptions={(options, { inputValue }) => {
+              const filtered = options.filter((option) =>
+                option.toLowerCase().includes(inputValue.toLowerCase()),
+              );
+
+              const isExisting = options.some(
+                (option) => inputValue.toLowerCase() === option.toLowerCase(),
+              );
+              if (inputValue !== "" && !isExisting) {
+                filtered.push(`Custom: "${inputValue}"`);
+              }
+
+              return filtered;
+            }}
             fullWidth
           />
         </Grid2>
       </Grid2>
-
-      <Button
-        type="submit"
-        variant="contained"
-        color="primary"
-        sx={{ display: "none" }}
-      >
-        Submit
-      </Button>
     </Box>
   );
 });
