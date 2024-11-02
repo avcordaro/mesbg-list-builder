@@ -3,6 +3,10 @@ import {
   Button,
   DialogActions,
   DialogContent,
+  FormControl,
+  FormControlLabel,
+  Radio,
+  RadioGroup,
 } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
@@ -10,8 +14,10 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useRef } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 import { useAppState } from "../../../state/app";
+import { useGameModeState } from "../../../state/gamemode";
+import { useRecentGamesState } from "../../../state/recent-games";
 import {
   GameResultsForm,
   GameResultsFormHandlers,
@@ -22,11 +28,45 @@ export const ResetGameModeModal = () => {
   const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const { closeModal } = useAppState();
+  const {
+    setGameMode,
+    updateGameState,
+    initializeGameState,
+    gameMetaData: { iGameState },
+  } = useGameModeState();
+  const { setShowHistory } = useRecentGamesState();
   const childRef = useRef<GameResultsFormHandlers>(null);
+  const [afterCloseAction, setAfterCloseAction] = useState("restart");
 
   const handleSkip = () => {
-    // TODO: Based on the ant-switch, return to game- or builder-mode.
+    console.log(afterCloseAction);
+    switch (afterCloseAction) {
+      case "restart":
+        setGameMode(true);
+        setShowHistory(false);
+        updateGameState({ ...iGameState }); // iGameState = the initial gamestate, when the game was started.
+        break;
+      case "return-to-builder":
+        setGameMode(false);
+        setShowHistory(false);
+        // initializeGameState clears any previous state, allowing a new match te be started
+        // The previous game was ended, right? ... RIGHT?!
+        initializeGameState();
+        break;
+      case "open-recent-matches":
+        setGameMode(true);
+        setShowHistory(true);
+        // initializeGameState clears any previous state, allowing a new match te be started
+        // The previous game was ended, right? ... RIGHT?!
+        initializeGameState();
+        break;
+    }
+
     closeModal();
+  };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setAfterCloseAction((event.target as HTMLInputElement).value);
   };
 
   const saveGameToState = () => {
@@ -54,7 +94,34 @@ export const ResetGameModeModal = () => {
 
         <GameResultsForm ref={childRef} />
 
-        {/*  TODO: Add ant style switch indicating to stay in game mode or go back to builder mode */}
+        <FormControl sx={{ width: "100%" }}>
+          <RadioGroup
+            row
+            aria-labelledby="Action after submitting form"
+            name="action"
+            sx={{
+              justifyContent: "center",
+            }}
+            value={afterCloseAction}
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value="restart"
+              control={<Radio />}
+              label="Reset trackers & start new match"
+            />
+            <FormControlLabel
+              value="return-to-builder"
+              control={<Radio />}
+              label="Return to roster builder"
+            />
+            <FormControlLabel
+              value="open-recent-matches"
+              control={<Radio />}
+              label="Open your recent matches"
+            />
+          </RadioGroup>
+        </FormControl>
       </DialogContent>
       <DialogActions>
         <Stack

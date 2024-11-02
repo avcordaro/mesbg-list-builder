@@ -11,6 +11,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, forwardRef, useImperativeHandle, useState } from "react";
 import { useGameModeState } from "../../../state/gamemode";
+import { useRecentGamesState } from "../../../state/recent-games";
 import { ArmyPicker } from "./ArmyPicker.tsx";
 
 type Result = "Won" | "Lost" | "Draw";
@@ -76,6 +77,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     gameState: { started },
     gameMetaData: { factions, points, bows, alliance },
   } = useGameModeState();
+  const { addGame } = useRecentGamesState();
 
   const theme = useTheme();
   const isSmallDesktop = useMediaQuery(theme.breakpoints.down("lg"));
@@ -138,9 +140,20 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
       return false;
     }
 
-    // TODO: write the match to state.
-    console.log(formValues);
-
+    addGame({ ...formValues });
+    setFormValues({
+      armies: "",
+      alliance: "",
+      points: null,
+      bows: null,
+      gameDate: "",
+      duration: null,
+      opponentArmies: "",
+      opponentName: "",
+      result: null,
+      victoryPoints: null,
+      scenarioPlayed: null,
+    });
     return true;
   };
 

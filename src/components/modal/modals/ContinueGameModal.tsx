@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useAppState } from "../../../state/app";
 import { useGameModeState } from "../../../state/gamemode";
+import { useRecentGamesState } from "../../../state/recent-games";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { useCurrentRosterState } from "../../../state/rosters";
 import { isDefinedUnit } from "../../../types/unit.ts";
@@ -13,11 +14,13 @@ export const ContinueGameModal = () => {
   const { setGameMode, startNewGame, gameState } = useGameModeState();
   const { roster, allianceLevel } = useRosterBuildingState();
   const { activeRoster } = useCurrentRosterState();
+  const { setShowHistory } = useRecentGamesState();
   const { closeModal, triggerAlert, setCurrentModal } = useAppState();
   const scrollToTop = useScrollToTop();
 
   const handleContinue = () => {
     setGameMode(true);
+    setShowHistory(false);
     closeModal();
     scrollToTop();
   };
@@ -27,14 +30,13 @@ export const ContinueGameModal = () => {
       (warband) => !isDefinedUnit(warband.hero),
     );
 
-    console.log(warbandsWithoutHero);
-
     if (warbandsWithoutHero.length > 0) {
       setCurrentModal(ModalTypes.INCOMPLETE_WARBAND_WARNING);
       return;
     }
 
     startNewGame(roster, allianceLevel);
+    setShowHistory(false);
     closeModal();
     scrollToTop();
   };

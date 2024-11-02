@@ -1,5 +1,6 @@
 import { Container, Grid2, Skeleton } from "@mui/material";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
@@ -11,11 +12,13 @@ import { DrawerContainer } from "./components/drawer/DrawerContainer.tsx";
 import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
 import { useGameModeState } from "./state/gamemode";
+import { useRecentGamesState } from "./state/recent-games";
 import { useRosterBuildingState } from "./state/roster-building";
 import { useCurrentRosterState, useSavedRostersState } from "./state/rosters";
 
 export const App = () => {
   const { gameMode, initializeGameState } = useGameModeState();
+  const { showHistory, recentGames } = useRecentGamesState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
@@ -58,49 +61,61 @@ export const App = () => {
       <Container maxWidth={false} fixed sx={{ p: 2 }}>
         <Alerts />
         <main>
-          <Grid2 container spacing={2}>
-            <Grid2
-              data-scroll-id="sidebar"
-              size={!isMobile ? 4 : 12}
-              sx={
-                isMobile
-                  ? {}
-                  : {
-                      position: "sticky",
-                      top: 70,
-                      height: "100%",
-                      overflow: "auto",
-                      scrollbarWidth: "thin",
-                    }
-              }
+          {showHistory ? (
+            <Stack
+              justifyContent="center"
+              alignItems="center"
+              sx={{ height: "200px" }}
             >
-              {loaded ? (
-                <Sidebar />
-              ) : (
-                <Skeleton
-                  variant="rectangular"
-                  height={isMobile ? "10dvh" : "70dvh"}
-                />
-              )}
-            </Grid2>
-            <Grid2 size={!isMobile ? 8 : 12}>
-              {loaded ? (
-                gameMode ? (
-                  <GameMode />
+              <Typography variant="h4">
+                {`// TODO: Display ${recentGames.length} epic match(es) here...`}
+              </Typography>
+            </Stack>
+          ) : (
+            <Grid2 container spacing={2}>
+              <Grid2
+                data-scroll-id="sidebar"
+                size={!isMobile ? 4 : 12}
+                sx={
+                  isMobile
+                    ? {}
+                    : {
+                        position: "sticky",
+                        top: 70,
+                        height: "100%",
+                        overflow: "auto",
+                        scrollbarWidth: "thin",
+                      }
+                }
+              >
+                {loaded ? (
+                  <Sidebar />
                 ) : (
-                  <BuilderMode />
-                )
-              ) : (
-                <Stack gap={1}>
-                  <Skeleton variant="rectangular" height="5dvh" />
-                  <Skeleton variant="rectangular" height="20dvh" />
-                  <Skeleton variant="rectangular" height="20dvh" />
-                  <Skeleton variant="rectangular" height="10dvh" />
-                  <Skeleton variant="rectangular" height="12dvh" />
-                </Stack>
-              )}
+                  <Skeleton
+                    variant="rectangular"
+                    height={isMobile ? "10dvh" : "70dvh"}
+                  />
+                )}
+              </Grid2>
+              <Grid2 size={!isMobile ? 8 : 12}>
+                {loaded ? (
+                  gameMode ? (
+                    <GameMode />
+                  ) : (
+                    <BuilderMode />
+                  )
+                ) : (
+                  <Stack gap={1}>
+                    <Skeleton variant="rectangular" height="5dvh" />
+                    <Skeleton variant="rectangular" height="20dvh" />
+                    <Skeleton variant="rectangular" height="20dvh" />
+                    <Skeleton variant="rectangular" height="10dvh" />
+                    <Skeleton variant="rectangular" height="12dvh" />
+                  </Stack>
+                )}
+              </Grid2>
             </Grid2>
-          </Grid2>
+          )}
         </main>
         <aside>
           <DrawerContainer />
