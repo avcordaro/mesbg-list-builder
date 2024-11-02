@@ -38,11 +38,30 @@ const allianceLevels: string[] = [
 ];
 
 const scenarios = [
-  "Scenario 1",
-  "Scenario 2",
-  "Scenario 3",
-  "Scenario 4",
-  "Scenario 5",
+  "Domination",
+  "To the death!",
+  "Hold ground",
+  "Lords of battle",
+  "Reconnoitre",
+  "A clash by moonlight",
+  "Seize the price",
+  "Contest of champions",
+  "Capture and control",
+  "Heirloom of ages past",
+  "Fog of war",
+  "Storm the camp",
+  "Command the battlefield",
+  "Retrieval",
+  "Breakthrough",
+  "Destroy the supplies",
+  "Device & Conquer",
+  "Assassination",
+  "No escape",
+  "Total conquest",
+  "Take and hold",
+  "Clash of champions",
+  "Cornered",
+  "Duel of wits",
 ];
 
 export type GameResultsFormHandlers = {
