@@ -96,8 +96,14 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const saveToState = (): boolean => {
     const missingFields = [];
     if (!formValues.armies) missingFields.push("Armies");
-    if (formValues.points !== null) missingFields.push("Points");
-    if (formValues.bows !== null) missingFields.push("Bows");
+    if (
+      formValues.points === null ||
+      formValues.points === undefined ||
+      formValues.points === 0
+    )
+      missingFields.push("Points");
+    if (formValues.bows === null || formValues.bows === undefined)
+      missingFields.push("Bows");
     if (!formValues.alliance) missingFields.push("Alliance level");
     if (!formValues.result) missingFields.push("Match result");
     if (!formValues.victoryPoints) missingFields.push("Victory points");
