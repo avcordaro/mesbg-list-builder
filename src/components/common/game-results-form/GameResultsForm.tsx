@@ -7,14 +7,9 @@ import {
   TextField,
 } from "@mui/material";
 import Alert from "@mui/material/Alert";
-import {
-  ChangeEvent,
-  forwardRef,
-  SyntheticEvent,
-  useImperativeHandle,
-  useState,
-} from "react";
+import { ChangeEvent, forwardRef, useImperativeHandle, useState } from "react";
 import { useGameModeState } from "../../../state/gamemode";
+import { ArmyPicker } from "./ArmyPicker.tsx";
 
 type Result = "Won" | "Lost" | "Draw";
 
@@ -23,7 +18,6 @@ interface FormValues {
   alliance: string;
   points: number;
   bows: number;
-  heroes: string;
   startTime: string;
   duration: string;
   opponentArmies: string;
@@ -59,7 +53,7 @@ export type GameResultsFormHandlers = {
 export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const {
     gameState: { started },
-    gameMetaData: { factions, points, bows, heroes, alliance },
+    gameMetaData: { factions, points, bows, alliance },
   } = useGameModeState();
 
   const gameStartTime = new Date(started);
@@ -71,9 +65,6 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     alliance: factions.length === 1 ? "Pure" : alliance,
     points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
     bows: bows,
-    heroes: heroes
-      .map((h) => (h.quantity > 1 ? `${h.quantity}x ${h.name}` : h.name))
-      .join(", "),
     startTime: gameStartTime.toISOString().slice(0, 10),
     duration: Math.ceil(gameDuration / 60000) + " minutes",
     opponentArmies: "",
@@ -87,7 +78,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     [],
   );
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeByEvent = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormValues({
       ...formValues,
@@ -95,32 +86,18 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
     });
   };
 
-  const handleAllianceChange = (_: SyntheticEvent, newValue: string | null) => {
-    setFormValues((prevValues) => ({
-      ...prevValues,
-      alliance: newValue,
-    }));
-  };
-
-  const handleResultChange = (_: SyntheticEvent, newValue: Result | null) => {
-    setFormValues((prevValues) => ({
-      ...prevValues,
-      result: newValue,
-    }));
-  };
-
-  const handleScenarioChange = (_: SyntheticEvent, newValue: string | null) => {
-    setFormValues((prevValues) => ({
-      ...prevValues,
-      scenarioPlayed: newValue,
-    }));
+  const handleChangeField = (name: keyof FormValues, value: unknown) => {
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
   };
 
   const saveToState = (): boolean => {
     const missingFields = [];
     if (!formValues.armies) missingFields.push("Armies");
-    if (!formValues.points) missingFields.push("Points");
-    if (!formValues.bows) missingFields.push("Bows");
+    if (formValues.points !== null) missingFields.push("Points");
+    if (formValues.bows !== null) missingFields.push("Bows");
     if (!formValues.alliance) missingFields.push("Alliance level");
     if (!formValues.result) missingFields.push("Match result");
     if (!formValues.victoryPoints) missingFields.push("Victory points");
@@ -147,6 +124,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
           {missingRequiredFields.join(", ").replace(/,([^,]*)$/, " & $1")}
         </Alert>
       )}
+
       <Grid2 container spacing={2}>
         <Grid2 size={8}>
           <TextField
@@ -156,7 +134,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             type="date"
             slotProps={{ inputLabel: { shrink: true } }}
             value={formValues.startTime}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
           />
         </Grid2>
         <Grid2 size={4}>
@@ -165,23 +143,19 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             label="Duration"
             name="duration"
             value={formValues.duration}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
           />
         </Grid2>
 
         <Grid2 size={8}>
-          <TextField
-            required
-            error={missingRequiredFields.includes("Armies")}
-            fullWidth
-            label="Armies"
-            name="armies"
-            value={formValues.armies}
-            onChange={handleChange}
+          <ArmyPicker
+            label={"Armies"}
+            placeholder={"Your armies"}
+            onChange={(values) =>
+              handleChangeField("armies", values.join(", "))
+            }
+            defaultSelection={formValues.armies.split(",").map((o) => o.trim())}
           />
-          <FormHelperText sx={{ px: 1 }}>
-            A comma separated list of the armies you played.
-          </FormHelperText>
         </Grid2>
         <Grid2 size={2}>
           <TextField
@@ -192,7 +166,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             name="points"
             type="number"
             value={formValues.points}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
           />
         </Grid2>
         <Grid2 size={2}>
@@ -204,14 +178,14 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             name="bows"
             type="number"
             value={formValues.bows}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
           />
         </Grid2>
         <Grid2 size={12}>
           <Autocomplete
             options={allianceLevels}
             value={formValues.alliance}
-            onChange={handleAllianceChange}
+            onChange={(_, newValue) => handleChangeField("alliance", newValue)}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -227,46 +201,33 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             faction could be considered pure.
           </FormHelperText>
         </Grid2>
-        <Grid2 size={12}>
-          <TextField
-            fullWidth
-            label="Heroes"
-            name="heroes"
-            value={formValues.heroes}
-            onChange={handleChange}
-          />
-          <FormHelperText sx={{ px: 1 }}>
-            A comma separated list of the heroes you used.
-          </FormHelperText>
-        </Grid2>
 
-        <Grid2 size={7}>
-          <TextField
-            fullWidth
-            label="Opponent Armies"
-            name="opponentArmies"
-            value={formValues.opponentArmies}
-            onChange={handleChange}
-            autoFocus
-          />
-          <FormHelperText sx={{ px: 1 }}>
-            A comma separated list of the armies your opponent played.
-          </FormHelperText>
-        </Grid2>
         <Grid2 size={5}>
           <TextField
             fullWidth
             label="Opponent Name"
             name="opponentName"
             value={formValues.opponentName}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
+            autoFocus
           />
         </Grid2>
+        <Grid2 size={7}>
+          <ArmyPicker
+            label={"Opponent Armies"}
+            placeholder={"Your opponents armies"}
+            onChange={(values) =>
+              handleChangeField("opponentArmies", values.join(", "))
+            }
+            autoFocus={true}
+          />
+        </Grid2>
+
         <Grid2 size={9}>
           <Autocomplete
             options={results}
             value={formValues.result}
-            onChange={handleResultChange}
+            onChange={(_, newValue) => handleChangeField("result", newValue)}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -287,14 +248,16 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             name="victoryPoints"
             type="number"
             value={formValues.victoryPoints}
-            onChange={handleChange}
+            onChange={handleChangeByEvent}
           />
         </Grid2>
         <Grid2 size={12}>
           <Autocomplete
             options={scenarios}
             value={formValues.scenarioPlayed}
-            onChange={handleScenarioChange}
+            onChange={(_, newValue) =>
+              handleChangeField("scenarioPlayed", newValue)
+            }
             renderInput={(params) => (
               <TextField {...params} label="Scenario Played" />
             )}
