@@ -81,6 +81,7 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
           {...params}
           label={props.label}
           placeholder={props.placeholder}
+          size="small"
         />
       )}
       autoFocus={props.autoFocus}

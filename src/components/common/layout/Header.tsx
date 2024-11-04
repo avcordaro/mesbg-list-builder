@@ -79,7 +79,7 @@ export const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { roster, allianceLevel } = useRosterBuildingState();
   const { gameMode, gameState, setGameMode, startNewGame } = useGameModeState();
-  const { showHistory, setShowHistory } = useRecentGamesState();
+  const { showHistory, setShowHistory, recentGames } = useRecentGamesState();
   const { setCurrentModal, openSidebar } = useAppState();
 
   const handleDrawerToggle = () => {
@@ -148,7 +148,7 @@ export const Header = () => {
       onClick: () => switchScreen("history"),
       outlined: true,
       color: "inherit" as ButtonProps["color"],
-      visible: true,
+      visible: recentGames.length > 0,
     },
     {
       icon: <SearchIcon />,

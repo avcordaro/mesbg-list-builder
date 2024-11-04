@@ -1,6 +1,5 @@
 import { Container, Grid2, Skeleton } from "@mui/material";
 import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
@@ -9,6 +8,7 @@ import { BuilderMode } from "./components/builder-mode/BuilderMode.tsx";
 import { AppContainer } from "./components/common/layout/AppContainer.tsx";
 import { Sidebar } from "./components/common/sidebar/Sidebar.tsx";
 import { DrawerContainer } from "./components/drawer/DrawerContainer.tsx";
+import { SavedGameResults } from "./components/game-history/SavedGameResults.tsx";
 import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
 import { useGameModeState } from "./state/gamemode";
@@ -18,7 +18,7 @@ import { useCurrentRosterState, useSavedRostersState } from "./state/rosters";
 
 export const App = () => {
   const { gameMode, initializeGameState } = useGameModeState();
-  const { showHistory, recentGames } = useRecentGamesState();
+  const { showHistory } = useRecentGamesState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
@@ -62,15 +62,7 @@ export const App = () => {
         <Alerts />
         <main>
           {showHistory ? (
-            <Stack
-              justifyContent="center"
-              alignItems="center"
-              sx={{ height: "200px" }}
-            >
-              <Typography variant="h4">
-                {`// TODO: Display ${recentGames.length} epic match(es) here...`}
-              </Typography>
-            </Stack>
+            <SavedGameResults />
           ) : (
             <Grid2 container spacing={2}>
               <Grid2
