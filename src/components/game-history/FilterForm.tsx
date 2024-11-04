@@ -2,7 +2,7 @@ import { Autocomplete, TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { FunctionComponent, useState } from "react";
-import { useRecentGamesState } from "../../../state/recent-games";
+import { useRecentGamesState } from "../../state/recent-games";
 
 export type Filters = {
   army: string;
@@ -25,9 +25,9 @@ export const FilterForm: FunctionComponent<FilterFormProps> = ({
   const [filters, setFilters] = useState<Filters>({
     army: "",
     scenario: "",
+    opponent: "",
     opponentArmy: "",
     result: "",
-    scenario: "",
     tag: "",
   });
 

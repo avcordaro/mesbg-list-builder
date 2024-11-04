@@ -17,7 +17,7 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { ChangeEvent, FunctionComponent, useMemo, useState } from "react";
-import { PastGame } from "../../../state/recent-games/history";
+import { PastGame } from "../../state/recent-games/history";
 
 const resultColours = {
   Won: "success",

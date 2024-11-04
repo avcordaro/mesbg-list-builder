@@ -1,9 +1,9 @@
 import Stack from "@mui/material/Stack";
 import { useState } from "react";
 import { useRecentGamesState } from "../../state/recent-games";
-import { Charts } from "./charts/charts.tsx";
-import { FilterForm, Filters } from "./filter/filter-form.tsx";
-import { GamesTable } from "./table/games-table.tsx";
+import { Charts } from "./Charts.tsx";
+import { FilterForm, Filters } from "./FilterForm.tsx";
+import { GamesTable } from "./GamesTable.tsx";
 
 export const SavedGameResults = () => {
   const { recentGames } = useRecentGamesState();

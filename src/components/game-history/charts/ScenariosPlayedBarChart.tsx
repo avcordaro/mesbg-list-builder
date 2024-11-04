@@ -6,7 +6,7 @@ interface ScenariosPlayedProps {
   data: PastGame[];
 }
 
-export const ScenariosPlayed = ({ data }: ScenariosPlayedProps) => {
+export const ScenariosPlayedBarChart = ({ data }: ScenariosPlayedProps) => {
   const { palette } = useTheme();
 
   const barColors = [

@@ -6,7 +6,9 @@ interface VictoryPointsWonLostProps {
   data: PastGame[];
 }
 
-export const VictoryPointsWonLost = ({ data }: VictoryPointsWonLostProps) => {
+export const VictoryPointsSpreadPieChart = ({
+  data,
+}: VictoryPointsWonLostProps) => {
   const { palette } = useTheme();
 
   const victoryPoints = data

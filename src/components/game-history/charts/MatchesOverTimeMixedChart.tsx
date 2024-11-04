@@ -78,7 +78,7 @@ function generateInitialEmptyDataSet(data: PastGame[]) {
     .reduce((acc, currentValue) => ({ ...acc, ...currentValue }), {});
 }
 
-export const MatchesOverTime = ({ data }: MatchesOverTimeProps) => {
+export const MatchesOverTimeMixedChart = ({ data }: MatchesOverTimeProps) => {
   const { palette } = useTheme();
 
   const barColors = [

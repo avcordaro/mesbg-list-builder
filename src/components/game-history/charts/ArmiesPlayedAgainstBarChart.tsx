@@ -6,7 +6,7 @@ interface ArmiesPlayedProps {
   data: PastGame[];
 }
 
-export const ArmiesPlayed = ({ data }: ArmiesPlayedProps) => {
+export const ArmiesPlayedAgainstBarChart = ({ data }: ArmiesPlayedProps) => {
   const { palette } = useTheme();
 
   const barColors = [
@@ -19,8 +19,9 @@ export const ArmiesPlayed = ({ data }: ArmiesPlayedProps) => {
     string,
     { won: number; lost: number; draw: number }
   > = data
+    .filter((game) => !!game.opponentArmies)
     .flatMap((game) => ({
-      armies: game.armies.split(",").map((a) => a.trim()),
+      armies: game.opponentArmies.split(",").map((a) => a.trim()),
       result: game.result.toLowerCase(),
     }))
     .reduce((acc, { armies, result }) => {
@@ -52,7 +53,7 @@ export const ArmiesPlayed = ({ data }: ArmiesPlayedProps) => {
           legend: { position: "top" },
           title: {
             display: true,
-            text: "Armies played (with WLD)",
+            text: "Armies played against (with WLD)",
           },
         },
         scales: {

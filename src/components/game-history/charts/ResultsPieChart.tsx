@@ -2,44 +2,34 @@ import { useTheme } from "@mui/material/styles";
 import { Pie } from "react-chartjs-2";
 import { PastGame } from "../../../state/recent-games/history";
 
-interface AllianceLevelsProps {
+interface ResultsProps {
   data: PastGame[];
 }
 
-export const AllianceLevels = ({ data }: AllianceLevelsProps) => {
+export const ResultsPieChart = ({ data }: ResultsProps) => {
   const { palette } = useTheme();
 
-  const alliances = data.reduce(
+  const results = data.reduce(
     (acc: { [key: string]: number }, game) => {
-      acc[game.alliance] = (acc[game.alliance] || 0) + 1;
+      acc[game.result] = (acc[game.result] || 0) + 1;
       return acc;
     },
     {
-      Pure: 0,
-      Historical: 0,
-      Convenient: 0,
-      Impossible: 0,
-      "Legendary Legion": 0,
+      Won: 0,
+      Draw: 0,
+      Lost: 0,
     },
   );
 
-  const allianceData = {
-    labels: [
-      "Pure",
-      "Historical",
-      "Convenient",
-      "Impossible",
-      "Legendary Legion",
-    ],
+  const resultData = {
+    labels: ["Won", "Draw", "Lost"],
     datasets: [
       {
-        data: Object.values(alliances),
+        data: Object.values(results),
         backgroundColor: [
-          palette.primary.light,
           palette.success.light,
           palette.warning.light,
           palette.error.light,
-          palette.info.light,
         ],
       },
     ],
@@ -47,14 +37,14 @@ export const AllianceLevels = ({ data }: AllianceLevelsProps) => {
 
   return (
     <Pie
-      data={allianceData}
+      data={resultData}
       options={{
         responsive: true,
         plugins: {
           legend: { position: "bottom" },
           title: {
             display: true,
-            text: "Alliance Variations",
+            text: "WLD Ratio",
           },
         },
       }}
