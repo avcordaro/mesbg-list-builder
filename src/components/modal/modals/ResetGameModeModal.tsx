@@ -39,7 +39,6 @@ export const ResetGameModeModal = () => {
   const [afterCloseAction, setAfterCloseAction] = useState("restart");
 
   const handleSkip = () => {
-    console.log(afterCloseAction);
     switch (afterCloseAction) {
       case "restart":
         setGameMode(true);
@@ -54,7 +53,7 @@ export const ResetGameModeModal = () => {
         initializeGameState();
         break;
       case "open-recent-matches":
-        setGameMode(true);
+        setGameMode(false);
         setShowHistory(true);
         // initializeGameState clears any previous state, allowing a new match te be started
         // The previous game was ended, right? ... RIGHT?!
@@ -96,11 +95,12 @@ export const ResetGameModeModal = () => {
 
         <FormControl sx={{ width: "100%" }}>
           <RadioGroup
-            row
+            row={!isMobile}
             aria-labelledby="Action after submitting form"
             name="action"
             sx={{
               justifyContent: "center",
+              alignItems: "center",
             }}
             value={afterCloseAction}
             onChange={handleChange}
