@@ -65,7 +65,7 @@ export type GameResultsFormHandlers = {
 // eslint-disable-next-line react/display-name
 export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const { modalContext } = useAppState();
-  const { addGame } = useRecentGamesState();
+  const { addGame, editGame } = useRecentGamesState();
 
   const theme = useTheme();
   const isSmallDesktop = useMediaQuery(theme.breakpoints.down("lg"));
@@ -166,7 +166,17 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
       return false;
     }
 
-    addGame({ ...formValues });
+    switch (modalContext.mode) {
+      case "edit":
+        editGame({ ...formValues });
+        break;
+      case "create":
+        addGame({ ...formValues });
+        break;
+      default:
+        console.error("Unknown mode ", modalContext.mode);
+    }
+
     setFormValues({
       id: v4(),
       gameDate: "",

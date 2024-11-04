@@ -1,6 +1,7 @@
 import { Add, UploadFile } from "@mui/icons-material";
 import SaveIcon from "@mui/icons-material/Save";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { useEffect, useRef, useState } from "react";
@@ -121,8 +122,29 @@ export const SavedGameResults = () => {
   return (
     <Stack sx={{ py: 1 }} gap={3}>
       <FilterForm onChange={onFilterChanged} />
-      <GamesTable games={filteredGames} />
-      <Charts games={filteredGames} />
+      {recentGames.length > 0 ? (
+        <>
+          {filteredGames.length > 0 ? (
+            <>
+              <GamesTable games={filteredGames} />
+              <Charts games={filteredGames} />
+            </>
+          ) : (
+            <Alert severity="warning">
+              Your current filter combination resulted in 0 games. Please adjust
+              the filters.
+            </Alert>
+          )}
+        </>
+      ) : (
+        <Alert severity="info">
+          You have 0 games on record. Play a match using the{" "}
+          <em>&quot;Game Mode&quot;</em> from the roster builder or{" "}
+          <em>create/import</em> games using the Floating button in the bottom
+          right.
+        </Alert>
+      )}
+
       <Box ref={speedDialRef}>
         <SpeedDial
           ariaLabel="action-buttons"

@@ -29,6 +29,7 @@ export type GameHistoryState = {
 
   recentGames: PastGame[];
   addGame: (game: PastGame) => void;
+  editGame: (game: PastGame) => void;
   deleteGame: (gameId: string) => void;
 };
 
@@ -50,6 +51,16 @@ export const historySlice: Slice<RecentGamesState, GameHistoryState> = (
       ({ recentGames }) => ({ recentGames: [...recentGames, game] }),
       undefined,
       "ADD_GAME_RESULTS",
+    ),
+  editGame: (game) =>
+    set(
+      ({ recentGames }) => ({
+        recentGames: recentGames.map((eGame) =>
+          game.id === eGame.id ? game : eGame,
+        ),
+      }),
+      undefined,
+      "EDIT_GAME_RESULTS",
     ),
 
   deleteGame: (gameId) =>
