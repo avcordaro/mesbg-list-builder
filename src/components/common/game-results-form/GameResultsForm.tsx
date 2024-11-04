@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, forwardRef, useImperativeHandle, useState } from "react";
+import { v4 } from "uuid";
 import { useGameModeState } from "../../../state/gamemode";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { PastGame } from "../../../state/recent-games/history";
@@ -79,6 +80,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const gameDuration = gameEndTime.getTime() - gameStartTime.getTime();
 
   const [formValues, setFormValues] = useState<PastGame>({
+    id: v4(),
     gameDate: gameStartTime.toISOString().slice(0, 10),
     duration: Math.ceil(gameDuration / 60000),
     points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
@@ -186,6 +188,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
 
     addGame({ ...formValues });
     setFormValues({
+      id: v4(),
       gameDate: "",
       duration: 0,
       tags: [],

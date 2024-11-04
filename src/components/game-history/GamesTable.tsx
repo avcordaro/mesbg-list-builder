@@ -1,7 +1,9 @@
+import { Delete, Edit, MoreVert } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import {
   Collapse,
+  ListItemIcon,
   Paper,
   Table,
   TableBody,
@@ -14,9 +16,19 @@ import {
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 import IconButton from "@mui/material/IconButton";
+import ListItemText from "@mui/material/ListItemText";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { ChangeEvent, FunctionComponent, useMemo, useState } from "react";
+import {
+  ChangeEvent,
+  FunctionComponent,
+  MouseEvent,
+  useMemo,
+  useState,
+} from "react";
+import { useRecentGamesState } from "../../state/recent-games";
 import { PastGame } from "../../state/recent-games/history";
 
 const resultColours = {
@@ -26,7 +38,28 @@ const resultColours = {
 };
 
 const MatchRow: FunctionComponent<{ row: PastGame }> = ({ row }) => {
+  const { deleteGame } = useRecentGamesState();
   const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  const handleMenuOpen = (event: MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+    setMenuOpen(true);
+  };
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setMenuOpen(false);
+  };
+  const handleEdit = () => {
+    // Open edit dialog for the selected row
+    console.log(`Edit row with id: ${row.id}`);
+    handleMenuClose();
+  };
+  const handleDelete = () => {
+    deleteGame(row.id);
+    handleMenuClose();
+  };
 
   return (
     <>
@@ -66,9 +99,28 @@ const MatchRow: FunctionComponent<{ row: PastGame }> = ({ row }) => {
             {row.victoryPoints}/{row.opponentVictoryPoints || "-"}
           </Typography>
         </TableCell>
+        <TableCell align="right">
+          <IconButton onClick={(event) => handleMenuOpen(event)}>
+            <MoreVert />
+          </IconButton>
+          <Menu anchorEl={anchorEl} open={menuOpen} onClose={handleMenuClose}>
+            <MenuItem onClick={() => handleEdit()}>
+              <ListItemIcon>
+                <Edit fontSize="small" />
+              </ListItemIcon>
+              <ListItemText> Edit</ListItemText>
+            </MenuItem>
+            <MenuItem onClick={() => handleDelete()}>
+              <ListItemIcon>
+                <Delete fontSize="small" />
+              </ListItemIcon>
+              <ListItemText> Delete</ListItemText>
+            </MenuItem>
+          </Menu>
+        </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={8}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Stack sx={{ margin: 1 }} gap={1}>
               {row.tags?.length > 0 && (
@@ -179,13 +231,14 @@ export const GamesTable = ({ games }: GamesTableProps) => {
           </Typography>
           <TableHead>
             <TableRow>
-              <TableCell />
+              <TableCell sx={{ minWidth: "70px" }} />
               <TableCell>Game date</TableCell>
               <TableCell>Armies played</TableCell>
               <TableCell>Points</TableCell>
               <TableCell>Opponent</TableCell>
               <TableCell>Result</TableCell>
               <TableCell>Victory Points</TableCell>
+              <TableCell sx={{ minWidth: "70px" }} />
             </TableRow>
           </TableHead>
           <TableBody>

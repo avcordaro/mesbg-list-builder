@@ -2,6 +2,7 @@ import { Slice } from "../../Slice.ts";
 import { RecentGamesState } from "../index.ts";
 
 export type PastGame = {
+  id: string;
   // Game Meta Data
   gameDate?: string;
   duration?: number;
@@ -28,6 +29,7 @@ export type GameHistoryState = {
 
   recentGames: PastGame[];
   addGame: (game: PastGame) => void;
+  deleteGame: (gameId: string) => void;
 };
 
 const initialState = {
@@ -48,5 +50,14 @@ export const historySlice: Slice<RecentGamesState, GameHistoryState> = (
       ({ recentGames }) => ({ recentGames: [...recentGames, game] }),
       undefined,
       "ADD_GAME_RESULTS",
+    ),
+
+  deleteGame: (gameId) =>
+    set(
+      ({ recentGames }) => ({
+        recentGames: recentGames.filter((game) => game.id !== gameId),
+      }),
+      undefined,
+      "DELETE_GAME_RESULTS",
     ),
 });
