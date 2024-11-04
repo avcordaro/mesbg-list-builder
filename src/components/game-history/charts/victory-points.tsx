@@ -1,47 +1,50 @@
-import {
-  ArcElement,
-  BarElement,
-  CategoryScale,
-  Chart as ChartJS,
-  Legend,
-  LinearScale,
-  Title,
-  Tooltip,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
-import { useRecentGamesState } from "../../../state/recent-games";
+import { useTheme } from "@mui/material/styles";
+import { Pie } from "react-chartjs-2";
+import { PastGame } from "../../../state/recent-games/history";
 
-// Register the components we need from Chart.js
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  ArcElement,
-);
+interface VictoryPointsWonLostProps {
+  data: PastGame[];
+}
 
-export const VictoryPoints = () => {
-  const { recentGames: data } = useRecentGamesState();
+export const VictoryPointsWonLost = ({ data }: VictoryPointsWonLostProps) => {
+  const { palette } = useTheme();
 
-  const victoryPointsData = {
-    labels: data.map((game) => game.gameDate),
+  const victoryPoints = data
+    .map((game) => [
+      Number(game.victoryPoints),
+      Number(game.opponentVictoryPoints ?? 0),
+    ])
+    .reduce(
+      ([totalWon, totalLost], [won, lost]) => [
+        totalWon + won,
+        totalLost + lost,
+      ],
+      [0, 0],
+    );
+
+  const victoryPointData = {
+    labels: ["Earned by you", "Lost to Opponents"],
     datasets: [
       {
-        label: "Victory Points",
-        data: data.map((game) => game.victoryPoints),
-        backgroundColor: "rgba(75, 192, 192, 0.5)",
-        borderColor: "rgba(75, 192, 192, 1)",
-        borderWidth: 1,
+        data: victoryPoints,
+        backgroundColor: [palette.success.light, palette.error.light],
       },
     ],
   };
 
   return (
-    <Bar
-      data={victoryPointsData}
-      options={{ responsive: true, plugins: { legend: { position: "top" } } }}
+    <Pie
+      data={victoryPointData}
+      options={{
+        responsive: true,
+        plugins: {
+          legend: { position: "bottom" },
+          title: {
+            display: true,
+            text: "Victory Points Spread",
+          },
+        },
+      }}
     />
   );
 };

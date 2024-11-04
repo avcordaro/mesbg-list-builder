@@ -1,30 +1,12 @@
 import { useTheme } from "@mui/material/styles";
-import {
-  ArcElement,
-  BarElement,
-  CategoryScale,
-  Chart as ChartJS,
-  Legend,
-  LinearScale,
-  Title,
-  Tooltip,
-} from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { useRecentGamesState } from "../../../state/recent-games";
+import { PastGame } from "../../../state/recent-games/history";
 
-// Register the components we need from Chart.js
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  ArcElement,
-);
+interface ResultsProps {
+  data: PastGame[];
+}
 
-export const Results = () => {
-  const { recentGames: data } = useRecentGamesState();
+export const Results = ({ data }: ResultsProps) => {
   const { palette } = useTheme();
 
   const results = data.reduce(
@@ -58,7 +40,13 @@ export const Results = () => {
       data={resultData}
       options={{
         responsive: true,
-        plugins: { legend: { position: "bottom" } },
+        plugins: {
+          legend: { position: "bottom" },
+          title: {
+            display: true,
+            text: "WLD Ratio",
+          },
+        },
       }}
     />
   );

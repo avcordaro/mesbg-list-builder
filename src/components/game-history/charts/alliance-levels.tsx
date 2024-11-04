@@ -1,30 +1,12 @@
 import { useTheme } from "@mui/material/styles";
-import {
-  ArcElement,
-  BarElement,
-  CategoryScale,
-  Chart as ChartJS,
-  Legend,
-  LinearScale,
-  Title,
-  Tooltip,
-} from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { useRecentGamesState } from "../../../state/recent-games";
+import { PastGame } from "../../../state/recent-games/history";
 
-// Register the components we need from Chart.js
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  ArcElement,
-);
+interface AllianceLevelsProps {
+  data: PastGame[];
+}
 
-export const AllianceLevels = () => {
-  const { recentGames: data } = useRecentGamesState();
+export const AllianceLevels = ({ data }: AllianceLevelsProps) => {
   const { palette } = useTheme();
 
   const alliances = data.reduce(
@@ -66,7 +48,16 @@ export const AllianceLevels = () => {
   return (
     <Pie
       data={allianceData}
-      options={{ responsive: true, plugins: { legend: { position: "left" } } }}
+      options={{
+        responsive: true,
+        plugins: {
+          legend: { position: "bottom" },
+          title: {
+            display: true,
+            text: "Alliance Variations",
+          },
+        },
+      }}
     />
   );
 };

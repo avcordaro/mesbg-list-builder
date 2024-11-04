@@ -71,8 +71,7 @@ export const ResetGameModeModal = () => {
   const saveGameToState = () => {
     if (childRef.current) {
       if (childRef.current.saveToState()) {
-        // TODO: Based on the ant-switch, return to game- or builder-mode.
-        closeModal();
+        handleSkip();
       }
     }
   };
