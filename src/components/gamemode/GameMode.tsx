@@ -27,24 +27,27 @@ export const GameMode = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const isMediumScreen = useMediaQuery(theme.breakpoints.between("lg", "xl"));
 
-  const openResetGameModal = () => {
+  const openEndGameModal = () => {
     const gameStartTime = new Date(started);
     const gameEndTime = new Date();
     const gameDuration = gameEndTime.getTime() - gameStartTime.getTime();
     setCurrentModal(ModalTypes.RESET_GAME_MODE, {
-      gameDate: gameStartTime.toISOString().slice(0, 10),
-      duration: Math.ceil(gameDuration / 60000),
-      points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
-      result: "Won",
-      scenarioPlayed: null,
-      tags: [],
-      armies: factions.join(", "),
-      alliance: factions.length === 1 ? "Pure" : allianceLevel,
-      bows: bow_count,
-      victoryPoints: "" as unknown as number,
-      opponentArmies: "",
-      opponentName: "",
-      opponentVictoryPoints: "" as unknown as number,
+      mode: "create",
+      formValues: {
+        gameDate: gameStartTime.toISOString().slice(0, 10),
+        duration: Math.ceil(gameDuration / 60000),
+        points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
+        result: "Won",
+        scenarioPlayed: null,
+        tags: [],
+        armies: factions.join(", "),
+        alliance: factions.length === 1 ? "Pure" : allianceLevel,
+        bows: bow_count,
+        victoryPoints: "" as unknown as number,
+        opponentArmies: "",
+        opponentName: "",
+        opponentVictoryPoints: "" as unknown as number,
+      },
     });
   };
 
@@ -57,7 +60,7 @@ export const GameMode = () => {
         <Button
           variant="contained"
           startIcon={<RestartAltIcon />}
-          onClick={openResetGameModal}
+          onClick={openEndGameModal}
           sx={{
             minWidth: "32ch",
           }}
