@@ -1,4 +1,5 @@
 import { ListAlt, SaveAs } from "@mui/icons-material";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import FortIcon from "@mui/icons-material/Fort";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import SaveIcon from "@mui/icons-material/Save";
@@ -8,13 +9,14 @@ import { FaFileImport } from "react-icons/fa";
 import { FaImage } from "react-icons/fa6";
 import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ContinueGameModal } from "./modals/ContinueGameModal.tsx";
+import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
+import { EndGameResultModal } from "./modals/EndGameResultModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarningModal.tsx";
 import { ModalRosterTable } from "./modals/ModalRosterTable";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
-import { ResetGameModeModal } from "./modals/ResetGameModeModal.tsx";
 import { SaveRosterAsModal } from "./modals/SaveRosterAsModal.tsx";
 import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
 
@@ -23,6 +25,7 @@ export enum ModalTypes {
   PROFILE_CARD = "PROFILE_CARD",
   CHART = "CHART",
   RESET_GAME_MODE = "RESET_GAME_MODE",
+  CREATE_GAME_RESULT = "CREATE_GAME_RESULT",
   ROSTER_TABLE = "ROSTER_TABLE",
   ROSTER_SCREENSHOT = "ROSTER_SCREENSHOT",
   CREATE_NEW_ROSTER = "CREATE_NEW_ROSTER",
@@ -77,7 +80,15 @@ export const modals = new Map<ModalTypes, ModalProps>([
     {
       icon: <RestartAltIcon />,
       title: "Game results",
-      children: <ResetGameModeModal />,
+      children: <EndGameResultModal />,
+    },
+  ],
+  [
+    ModalTypes.CREATE_GAME_RESULT,
+    {
+      icon: <EmojiEventsIcon />,
+      title: "Game results",
+      children: <CreateGameResultModal />,
     },
   ],
   [

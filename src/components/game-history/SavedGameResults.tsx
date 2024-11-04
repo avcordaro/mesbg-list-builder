@@ -4,8 +4,10 @@ import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { useEffect, useRef, useState } from "react";
+import { useAppState } from "../../state/app";
 import { useRecentGamesState } from "../../state/recent-games";
 import { PastGame } from "../../state/recent-games/history";
+import { ModalTypes } from "../modal/modals.tsx";
 import { Charts } from "./Charts.tsx";
 import { FilterForm, Filters } from "./FilterForm.tsx";
 import { GamesTable } from "./GamesTable.tsx";
@@ -24,13 +26,31 @@ export const SavedGameResults = () => {
     result: "",
     tag: "",
   });
-  // const { setCurrentModal } = useAppState();
+  const { setCurrentModal } = useAppState();
 
   const actions = [
     {
       icon: <Add />,
       name: "Add game manually",
-      callback: () => console.log("Add game manually"),
+      callback: () =>
+        setCurrentModal(ModalTypes.CREATE_GAME_RESULT, {
+          mode: "create",
+          formValues: {
+            gameDate: new Date().toISOString().slice(0, 10),
+            duration: "",
+            points: "", // rounds to the nearest full 50.
+            result: "Won",
+            scenarioPlayed: null,
+            tags: [],
+            armies: "",
+            alliance: "",
+            bows: "" as unknown as number,
+            victoryPoints: "" as unknown as number,
+            opponentArmies: "",
+            opponentName: "",
+            opponentVictoryPoints: "" as unknown as number,
+          },
+        }),
       disabled: false,
     },
     {

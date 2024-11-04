@@ -28,8 +28,10 @@ import {
   useMemo,
   useState,
 } from "react";
+import { useAppState } from "../../state/app";
 import { useRecentGamesState } from "../../state/recent-games";
 import { PastGame } from "../../state/recent-games/history";
+import { ModalTypes } from "../modal/modals.tsx";
 
 const resultColours = {
   Won: "success",
@@ -38,6 +40,7 @@ const resultColours = {
 };
 
 const MatchRow: FunctionComponent<{ row: PastGame }> = ({ row }) => {
+  const { setCurrentModal } = useAppState();
   const { deleteGame } = useRecentGamesState();
   const [open, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,7 +56,10 @@ const MatchRow: FunctionComponent<{ row: PastGame }> = ({ row }) => {
   };
   const handleEdit = () => {
     // Open edit dialog for the selected row
-    console.log(`Edit row with id: ${row.id}`);
+    setCurrentModal(ModalTypes.CREATE_GAME_RESULT, {
+      mode: "edit",
+      formValues: row,
+    });
     handleMenuClose();
   };
   const handleDelete = () => {

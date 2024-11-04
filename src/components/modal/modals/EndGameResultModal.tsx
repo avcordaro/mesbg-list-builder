@@ -23,7 +23,7 @@ import {
   GameResultsFormHandlers,
 } from "../../common/game-results-form/GameResultsForm.tsx";
 
-export const ResetGameModeModal = () => {
+export const EndGameResultModal = () => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));

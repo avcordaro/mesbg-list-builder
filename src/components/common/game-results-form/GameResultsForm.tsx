@@ -13,7 +13,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, forwardRef, useImperativeHandle, useState } from "react";
 import { v4 } from "uuid";
-import { useGameModeState } from "../../../state/gamemode";
+import { useAppState } from "../../../state/app";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { PastGame } from "../../../state/recent-games/history";
 import { ArmyPicker } from "./ArmyPicker.tsx";
@@ -64,10 +64,7 @@ export type GameResultsFormHandlers = {
 
 // eslint-disable-next-line react/display-name
 export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
-  const {
-    gameState: { started },
-    gameMetaData: { factions, points, bows, alliance },
-  } = useGameModeState();
+  const { modalContext } = useAppState();
   const { addGame } = useRecentGamesState();
 
   const theme = useTheme();
@@ -75,25 +72,9 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const gameStartTime = new Date(started);
-  const gameEndTime = new Date();
-  const gameDuration = gameEndTime.getTime() - gameStartTime.getTime();
-
   const [formValues, setFormValues] = useState<PastGame>({
     id: v4(),
-    gameDate: gameStartTime.toISOString().slice(0, 10),
-    duration: Math.ceil(gameDuration / 60000),
-    points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
-    result: "Won",
-    scenarioPlayed: null,
-    tags: [],
-    armies: factions.join(", "),
-    alliance: factions.length === 1 ? "Pure" : alliance,
-    bows: bows,
-    victoryPoints: "" as unknown as number,
-    opponentArmies: "",
-    opponentName: "",
-    opponentVictoryPoints: "" as unknown as number,
+    ...modalContext.formValues,
   });
 
   const [missingRequiredFields, setMissingRequiredFields] = useState<string[]>(
@@ -117,7 +98,6 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
       return originalResult;
     }
 
-    console.log({ vp, ovp, originalResult });
     const resultList: Record<Result, boolean> = {
       Won: vp > ovp,
       Draw: vp === ovp,
@@ -478,6 +458,9 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
                   values.map((v) => v.title).join(", "),
                 )
               }
+              defaultSelection={formValues.opponentArmies
+                .split(",")
+                .map((o) => o.trim())}
             />
           </Grid2>
         </Grid2>
