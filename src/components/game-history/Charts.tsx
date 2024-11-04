@@ -16,6 +16,7 @@ import { AllianceLevelsPieChart } from "./charts/AllianceLevelsPieChart.tsx";
 import { ArmiesPlayedAgainstBarChart } from "./charts/ArmiesPlayedAgainstBarChart.tsx";
 import { ArmiesPlayedBarChart } from "./charts/ArmiesPlayedBarChart.tsx";
 import { MatchesOverTimeMixedChart } from "./charts/MatchesOverTimeMixedChart.tsx";
+import { OpponentsVictoryPointsBarChart } from "./charts/OpponentVictoryPointsBarChart.tsx";
 import { OpponentsPlayedBarChart } from "./charts/OpponentsPlayedBarChart.tsx";
 import { ResultsPieChart } from "./charts/ResultsPieChart.tsx";
 import { ScenariosPlayedBarChart } from "./charts/ScenariosPlayedBarChart.tsx";
@@ -54,16 +55,19 @@ export const Charts = ({ games }: ChartsProps) => {
         <AllianceLevelsPieChart data={games} />
       </Grid2>
       <Grid2 size={{ xs: 12, lg: 6 }}>
-        <ArmiesPlayedBarChart data={games} />
-      </Grid2>
-      <Grid2 size={{ xs: 12, lg: 6 }}>
-        <ArmiesPlayedAgainstBarChart data={games} />
-      </Grid2>
-      <Grid2 size={{ xs: 12, lg: 6 }}>
         <ScenariosPlayedBarChart data={games} />
       </Grid2>
       <Grid2 size={{ xs: 12, lg: 6 }}>
+        <ArmiesPlayedBarChart data={games} />
+      </Grid2>
+      <Grid2 size={{ xs: 12, lg: 4 }}>
         <OpponentsPlayedBarChart data={games} />
+      </Grid2>
+      <Grid2 size={{ xs: 12, lg: 4 }}>
+        <OpponentsVictoryPointsBarChart data={games} />
+      </Grid2>
+      <Grid2 size={{ xs: 12, lg: 4 }}>
+        <ArmiesPlayedAgainstBarChart data={games} />
       </Grid2>
     </Grid2>
   );

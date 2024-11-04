@@ -30,7 +30,7 @@ export const EndGameResultModal = () => {
   const { closeModal } = useAppState();
   const {
     setGameMode,
-    updateGameState,
+    restartGame,
     initializeGameState,
     gameMetaData: { iGameState },
   } = useGameModeState();
@@ -43,7 +43,8 @@ export const EndGameResultModal = () => {
       case "restart":
         setGameMode(true);
         setShowHistory(false);
-        updateGameState({ ...iGameState }); // iGameState = the initial gamestate, when the game was started.
+        restartGame();
+        console.log("restart!", iGameState);
         break;
       case "return-to-builder":
         setGameMode(false);

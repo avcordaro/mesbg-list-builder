@@ -31,6 +31,7 @@ export type GameState = {
   gameState?: Game;
   gameMetaData?: GameMetaData;
   startNewGame: (roster: Roster, allianceLevel: AllianceLevel) => void;
+  restartGame: () => void;
   updateGameState: (update: Partial<Game>) => void;
   initializeGameState: () => void;
 };
@@ -48,16 +49,15 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
   startNewGame: (roster: Roster, allianceLevel: AllianceLevel) =>
     set(
       () => {
-        const gameState = createGameState(roster);
         return {
           gameMode: true,
           gameState: {
-            ...gameState,
+            ...createGameState(roster),
             started: Date.now(),
             lastUpdated: Date.now(),
           },
           gameMetaData: {
-            iGameState: { heroes: gameState.heroes },
+            iGameState: createGameState(roster),
             factions: [
               ...new Set(
                 roster.warbands
@@ -81,6 +81,22 @@ export const gameStateSlice: Slice<GameModeState, GameState> = (set) => ({
       },
       undefined,
       "START_GAME",
+    ),
+  restartGame: () =>
+    set(
+      ({ gameMetaData: { iGameState } }) => {
+        return {
+          gameMode: true,
+          gameState: {
+            // Small hack to remove memory reference to original object.
+            ...JSON.parse(JSON.stringify(iGameState)),
+            started: Date.now(),
+            lastUpdated: Date.now(),
+          },
+        };
+      },
+      undefined,
+      "RESTART_GAME",
     ),
   updateGameState: (gameStateUpdate) =>
     set(
