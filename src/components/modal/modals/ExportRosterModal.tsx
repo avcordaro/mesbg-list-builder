@@ -51,6 +51,7 @@ export const ExportRosterModal = () => {
               const validFilename = filename.length > 0;
               setFilenameValid(validFilename);
             }}
+            endAdornment=".json"
           />
           {!filenameValid && (
             <FormHelperText id="component-error-text">

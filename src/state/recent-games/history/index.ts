@@ -1,3 +1,4 @@
+import { v4 } from "uuid";
 import { Slice } from "../../Slice.ts";
 import { RecentGamesState } from "../index.ts";
 
@@ -29,6 +30,10 @@ export type GameHistoryState = {
 
   recentGames: PastGame[];
   addGame: (game: PastGame) => void;
+  importGames: (
+    games: PastGame[],
+    onDuplicate: "overwrite" | "ignore" | "create-new",
+  ) => void;
   editGame: (game: PastGame) => void;
   deleteGame: (gameId: string) => void;
 };
@@ -37,6 +42,44 @@ const initialState = {
   showHistory: false,
   recentGames: [],
 };
+
+function overwriteExistingGames(games: PastGame[], recentGames: PastGame[]) {
+  const importedGameIds = games.map((game) => game.id);
+  return {
+    recentGames: [
+      // filter existing games where id also exists in the import
+      ...recentGames.filter((game) => !importedGameIds.includes(game.id)),
+      ...games,
+    ],
+  };
+}
+
+function ignoreExistingGamesInImport(
+  recentGames: PastGame[],
+  games: PastGame[],
+) {
+  const existingGameIds = recentGames.map((game) => game.id);
+  return {
+    recentGames: [
+      ...recentGames,
+      // filter new games where id already exists in the state
+      ...games.filter((game) => !existingGameIds.includes(game.id)),
+    ],
+  };
+}
+
+function generateNewIdsOnImportedGames(
+  recentGames: PastGame[],
+  games: PastGame[],
+) {
+  return {
+    recentGames: [
+      ...recentGames,
+      // generate a new id for each game to make sure they never overlap with existing games.
+      ...games.map((game) => ({ ...game, id: v4() })),
+    ],
+  };
+}
 
 export const historySlice: Slice<RecentGamesState, GameHistoryState> = (
   set,
@@ -51,6 +94,21 @@ export const historySlice: Slice<RecentGamesState, GameHistoryState> = (
       ({ recentGames }) => ({ recentGames: [...recentGames, game] }),
       undefined,
       "ADD_GAME_RESULTS",
+    ),
+  importGames: (games, onDuplicate) =>
+    set(
+      ({ recentGames }) => {
+        switch (onDuplicate) {
+          case "overwrite": // take imported games over the existing ones.
+            return overwriteExistingGames(games, recentGames);
+          case "ignore": // take existing games over the new ones.
+            return ignoreExistingGamesInImport(recentGames, games);
+          case "create-new": // Create a new game for all the imported games, risk of duplicate games!
+            return generateNewIdsOnImportedGames(recentGames, games);
+        }
+      },
+      undefined,
+      "IMPORT_GAME_RESULTS",
     ),
   editGame: (game) =>
     set(

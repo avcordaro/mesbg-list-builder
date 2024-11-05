@@ -57,13 +57,13 @@ export const SavedGameResults = () => {
     {
       icon: <SaveIcon />,
       name: "Export history",
-      callback: () => console.log("Export game history"),
+      callback: () => setCurrentModal(ModalTypes.EXPORT_GAMES),
       disabled: recentGames.length === 0,
     },
     {
       icon: <UploadFile />,
       name: "Import history",
-      callback: () => console.log("Import game history"),
+      callback: () => setCurrentModal(ModalTypes.IMPORT_GAMES),
       disabled: false,
     },
   ];

@@ -12,7 +12,9 @@ import { ContinueGameModal } from "./modals/ContinueGameModal.tsx";
 import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
 import { EndGameResultModal } from "./modals/EndGameResultModal.tsx";
+import { ExportHistoryModal } from "./modals/ExportHistoryModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
+import { ImportGameHistoryModal } from "./modals/ImportHistoryModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarningModal.tsx";
 import { ModalRosterTable } from "./modals/ModalRosterTable";
@@ -32,6 +34,8 @@ export enum ModalTypes {
   SAVE_AS_NEW_ROSTER = "SAVE_AS_NEW_ROSTER",
   EXPORT_ROSTER = "EXPORT_ROSTER",
   IMPORT_ROSTER = "IMPORT_ROSTER",
+  EXPORT_GAMES = "EXPORT_GAMES",
+  IMPORT_GAMES = "IMPORT_GAMES",
   INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
 }
 
@@ -57,6 +61,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <FaFileImport />,
       title: "Import roster",
       children: <ImportRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.IMPORT_GAMES,
+    {
+      icon: <FaFileImport />,
+      title: "Import game history",
+      children: <ImportGameHistoryModal />,
     },
   ],
   [
@@ -113,6 +125,14 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <SaveIcon />,
       title: "Export roster",
       children: <ExportRosterModal />,
+    },
+  ],
+  [
+    ModalTypes.EXPORT_GAMES,
+    {
+      icon: <SaveIcon />,
+      title: "Export history",
+      children: <ExportHistoryModal />,
     },
   ],
   [
