@@ -1,5 +1,5 @@
 import { TextField, Chip, Box } from "@mui/material";
-import { useState, KeyboardEvent, FunctionComponent } from "react";
+import { useState, KeyboardEvent, FunctionComponent, FormEvent } from "react";
 
 type AdditionalTagsInputProps = {
   values: string[];
@@ -12,10 +12,21 @@ export const AdditionalTagsInput: FunctionComponent<
   const [input, setInput] = useState("");
 
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
-    if (["Enter", ",", ";", "Tab"].includes(e.key) && input.trim() !== "") {
+    if (["Enter", "Tab"].includes(e.key) && input.trim() !== "") {
       e.preventDefault();
       onChange([...tags, input.trim()]);
       setInput("");
+    }
+  };
+
+  const handleOnInput = (e: FormEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const value: string = e.target["value"];
+    const lastChar = value[value.length - 1];
+    if ([",", ";"].includes(lastChar)) {
+      onChange([...tags, input.trim()]);
+      // Set timeout allows us to wait for 1 javascript event cycle and update the state directly after.
+      setTimeout(() => setInput(() => ""));
     }
   };
 
@@ -39,9 +50,10 @@ export const AdditionalTagsInput: FunctionComponent<
       )}
       <TextField
         variant="outlined"
-        placeholder="Add additional tags"
+        placeholder="Comma sperated tags"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onInput={handleOnInput}
         onKeyDown={handleKeyDown}
         sx={{ mt: 1 }}
         size="small"
