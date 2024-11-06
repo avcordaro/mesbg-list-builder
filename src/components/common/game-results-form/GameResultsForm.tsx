@@ -48,7 +48,7 @@ const scenarios = [
   "Retrieval",
   "Breakthrough",
   "Destroy the supplies",
-  "Device & Conquer",
+  "Divide & Conquer",
   "Assassination",
   "No escape",
   "Total conquest",
