@@ -14,6 +14,8 @@ export type ArmyPickerProps = {
   defaultSelection?: string[];
   onChange: (values: Option[]) => void;
   autoFocus?: boolean;
+  required?: boolean;
+  error?: boolean;
 };
 
 export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
@@ -82,6 +84,8 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
           label={props.label}
           placeholder={props.placeholder}
           size="small"
+          required={props.required}
+          error={props.error}
         />
       )}
       autoFocus={props.autoFocus}

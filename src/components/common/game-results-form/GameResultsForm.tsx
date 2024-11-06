@@ -334,6 +334,8 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
             <ArmyPicker
               label="Armies"
               placeholder="Your armies"
+              required
+              error={missingRequiredFields.includes("Armies")}
               onChange={(values) => {
                 handleChangeField(
                   "armies",
