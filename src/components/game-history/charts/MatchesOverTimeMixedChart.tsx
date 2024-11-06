@@ -20,7 +20,7 @@ function getMonthRange(
     "Jun",
     "Jul",
     "Aug",
-    "Sep",
+    "Sept",
     "Oct",
     "Nov",
     "Dec",
@@ -126,6 +126,8 @@ export const MatchesOverTimeMixedChart = ({ data }: MatchesOverTimeProps) => {
         backgroundColor: palette.info.light,
         borderColor: palette.info.main,
         tension: 0.25,
+        pointRadius: 5,
+        pointBorderWidth: 2,
       },
       ...["won", "draw", "lost"].map((key, index) => {
         return {
