@@ -233,6 +233,7 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
               label="Duration"
               name="duration"
               value={formValues.duration}
+              autoFocus={!formValues.duration}
               onChange={handleChangeByEvent}
               slotProps={{
                 input: {
@@ -266,7 +267,11 @@ export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
                 handleChangeField("scenarioPlayed", newValue)
               }
               renderInput={(params) => (
-                <TextField {...params} label="Scenario Played" autoFocus />
+                <TextField
+                  {...params}
+                  label="Scenario Played"
+                  autoFocus={!!formValues.duration}
+                />
               )}
               filterOptions={(options, { inputValue }) => {
                 const filtered = options.filter((option) =>
