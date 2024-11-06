@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
+    ]
+  },
   "6.12": {
     "added": [
       "Added a little bit of a bounce to the floating action button to draw attention.",
