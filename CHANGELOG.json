@@ -2,7 +2,8 @@
   "main": {
     "bugfixes": [
       "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
-    ]
+    ],
+    "changed": ["Added Eowyn and Merry's individual profile cards to Dernhelm."]
   },
   "6.12": {
     "added": [
