@@ -1,4 +1,4 @@
-import { RefreshOutlined } from "@mui/icons-material";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { Button } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
@@ -14,17 +14,42 @@ import { ProfileCards } from "./ProfileCards.tsx";
 import { HeroStatTrackers } from "./hero/HeroStatTrackers";
 
 export const GameMode = () => {
-  const { startNewGame } = useGameModeState();
-  const { roster } = useRosterBuildingState();
+  const {
+    gameState: { started },
+  } = useGameModeState();
+  const {
+    factions,
+    allianceLevel,
+    roster: { bow_count, points },
+  } = useRosterBuildingState();
   const { setCurrentModal } = useAppState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const isMediumScreen = useMediaQuery(theme.breakpoints.between("lg", "xl"));
 
-  const openResetGameModal = () =>
+  const openEndGameModal = () => {
+    const gameStartTime = new Date(started);
+    const gameEndTime = new Date();
+    const gameDuration = gameEndTime.getTime() - gameStartTime.getTime();
     setCurrentModal(ModalTypes.RESET_GAME_MODE, {
-      handleReset: () => startNewGame(roster),
+      mode: "create",
+      formValues: {
+        gameDate: gameStartTime.toISOString().slice(0, 10),
+        duration: Math.ceil(gameDuration / 60000),
+        points: Math.ceil(points / 50) * 50, // rounds to the nearest full 50.
+        result: "Won",
+        scenarioPlayed: null,
+        tags: [],
+        armies: factions.join(", "),
+        alliance: factions.length === 1 ? "Pure" : allianceLevel,
+        bows: bow_count,
+        victoryPoints: "" as unknown as number,
+        opponentArmies: "",
+        opponentName: "",
+        opponentVictoryPoints: "" as unknown as number,
+      },
     });
+  };
 
   return (
     <Stack>
@@ -34,13 +59,13 @@ export const GameMode = () => {
       >
         <Button
           variant="contained"
-          startIcon={<RefreshOutlined />}
-          onClick={openResetGameModal}
+          startIcon={<RestartAltIcon />}
+          onClick={openEndGameModal}
           sx={{
-            minWidth: "24ch",
+            minWidth: "32ch",
           }}
         >
-          Reset All
+          End / Restart Game
         </Button>
         <Casualties />
       </Stack>

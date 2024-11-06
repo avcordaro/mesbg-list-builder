@@ -7,12 +7,12 @@ import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit } from "../../../types/unit.ts";
 
 export const IncompleteWarbandWarningModal = () => {
-  const { roster } = useRosterBuildingState();
+  const { roster, allianceLevel } = useRosterBuildingState();
   const { startNewGame } = useGameModeState();
   const { closeModal } = useAppState();
 
   const continueToGameMode = () => {
-    startNewGame(roster);
+    startNewGame(roster, allianceLevel);
     closeModal();
   };
 

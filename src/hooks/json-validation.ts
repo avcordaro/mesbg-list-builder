@@ -1,6 +1,6 @@
 export const useJsonValidation = () => {
   // Function to check if all required keys exist in the JSON object
-  function validateKeys(obj, requiredKeys) {
+  function validateKeys(obj: unknown, requiredKeys: string[]) {
     return requiredKeys.every((key) => hasKey(obj, key.split(".")));
   }
 

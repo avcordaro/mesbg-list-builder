@@ -36,6 +36,7 @@ export const ModalContainer = () => {
       open={true} // handled by the modal container, so this should always be true
       onClose={onClose ? onClose : () => state.closeModal()}
       scroll="paper"
+      disableRestoreFocus
     >
       <Box
         sx={{

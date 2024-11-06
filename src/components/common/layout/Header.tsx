@@ -1,4 +1,4 @@
-import { Handyman } from "@mui/icons-material";
+import { Handyman, History } from "@mui/icons-material";
 import FortIcon from "@mui/icons-material/Fort";
 import MenuIcon from "@mui/icons-material/Menu";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
@@ -23,6 +23,7 @@ import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useAppState } from "../../../state/app";
 import { useGameModeState } from "../../../state/gamemode";
+import { useRecentGamesState } from "../../../state/recent-games";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -76,8 +77,9 @@ export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { roster } = useRosterBuildingState();
+  const { roster, allianceLevel } = useRosterBuildingState();
   const { gameMode, gameState, setGameMode, startNewGame } = useGameModeState();
+  const { showHistory, setShowHistory } = useRecentGamesState();
   const { setCurrentModal, openSidebar } = useAppState();
 
   const handleDrawerToggle = () => {
@@ -87,7 +89,8 @@ export const Header = () => {
   const handleStartGame = () => {
     if (!gameState) {
       // if there is no game present, just start a new game.
-      startNewGame(roster);
+      startNewGame(roster, allianceLevel);
+      setShowHistory(false);
       return;
     }
 
@@ -103,17 +106,49 @@ export const Header = () => {
       setCurrentModal(ModalTypes.CONTINUE_GAME);
     } else {
       // existing is older than one day. No need to continue yesterday's game.
-      startNewGame(roster);
+      startNewGame(roster, allianceLevel);
+      setShowHistory(false);
+    }
+  };
+
+  const switchScreen = (screen: "builder" | "game" | "history") => {
+    switch (screen) {
+      case "builder":
+        setGameMode(false);
+        setShowHistory(false);
+        break;
+      case "game":
+        handleStartGame();
+        break;
+      case "history":
+        setShowHistory(true);
+        break;
     }
   };
 
   // List of buttons
   const buttons = [
     {
-      icon: gameMode ? <Handyman /> : <FortIcon />,
-      label: gameMode ? "Builder" : "Game Mode",
-      onClick: gameMode ? () => setGameMode(false) : () => handleStartGame(),
+      icon: <Handyman />,
+      label: "Builder",
+      onClick: () => switchScreen("builder"),
       color: "success" as ButtonProps["color"],
+      visible: showHistory || gameMode,
+    },
+    {
+      icon: <FortIcon />,
+      label: "Game Mode",
+      onClick: () => switchScreen("game"),
+      color: "success" as ButtonProps["color"],
+      visible: !showHistory && !gameMode,
+    },
+    {
+      icon: <History />,
+      label: "Matches",
+      onClick: () => switchScreen("history"),
+      outlined: true,
+      color: "inherit" as ButtonProps["color"],
+      visible: true,
     },
     {
       icon: <SearchIcon />,
@@ -121,6 +156,7 @@ export const Header = () => {
       onClick: () => openSidebar(DrawerTypes.KEYWORD_SEARCH),
       outlined: true,
       color: "inherit" as ButtonProps["color"],
+      visible: true,
     },
     {
       icon: <QuestionMarkIcon />,
@@ -128,6 +164,7 @@ export const Header = () => {
       onClick: () => openSidebar(DrawerTypes.NEW_EDITION_NEWS),
       outlined: true,
       color: "inherit" as ButtonProps["color"],
+      visible: true,
     },
   ];
 
@@ -150,19 +187,21 @@ export const Header = () => {
           {/* Right side buttons (hide in mobile) */}
           {!isMobile && (
             <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-              {buttons.map((button, index) => (
-                <Button
-                  key={index}
-                  sx={{ p: 1, pt: 1, pb: 1, m: 1, minWidth: "144px" }}
-                  variant={button.outlined ? "outlined" : "contained"}
-                  color={button.color ? button.color : "primary"}
-                  onClick={button.onClick}
-                  size="small"
-                  startIcon={button.icon}
-                >
-                  {button.label}
-                </Button>
-              ))}
+              {buttons
+                .filter((button) => button.visible)
+                .map((button, index) => (
+                  <Button
+                    key={index}
+                    sx={{ p: 1, pt: 1, pb: 1, m: 1, minWidth: "144px" }}
+                    variant={button.outlined ? "outlined" : "contained"}
+                    color={button.color ? button.color : "primary"}
+                    onClick={button.onClick}
+                    size="small"
+                    startIcon={button.icon}
+                  >
+                    {button.label}
+                  </Button>
+                ))}
             </Box>
           )}
 
@@ -179,7 +218,7 @@ export const Header = () => {
           )}
         </Toolbar>
       </AppBar>
-      <RosterInfoBar />
+      {!showHistory && <RosterInfoBar />}
 
       {/* Drawer for mobile menu */}
       <Drawer
