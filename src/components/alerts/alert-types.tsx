@@ -1,11 +1,13 @@
 import { AlertColor } from "@mui/material";
 import { ReactNode } from "react";
 import { ExportAlert } from "./alerts/ExportAlert.tsx";
+import { ExportHistoryAlert } from "./alerts/ExportHistoryAlert.tsx";
 import { GameModeAlert } from "./alerts/GameModeAlert.tsx";
 import { ScreenshotCopiedAlert } from "./alerts/ScreenshotCopiedAlert.tsx";
 
 export enum AlertTypes {
   EXPORT_ALERT = "EXPORT_ALERT",
+  EXPORT_HISTORY_ALERT = "EXPORT_HISTORY_ALERT",
   SCREENSHOT_COPIED_ALERT = "SCREENSHOT_COPIED_ALERT",
   GAMEMODE_ALERT = "GAMEMODE_ALERT",
 }
@@ -36,6 +38,16 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
     {
       variant: "success",
       content: <ExportAlert />,
+      options: {
+        autoHideAfter: 5000,
+      },
+    },
+  ],
+  [
+    AlertTypes.EXPORT_HISTORY_ALERT,
+    {
+      variant: "success",
+      content: <ExportHistoryAlert />,
       options: {
         autoHideAfter: 5000,
       },

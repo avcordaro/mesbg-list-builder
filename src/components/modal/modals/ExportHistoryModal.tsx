@@ -54,7 +54,7 @@ export const ExportHistoryModal = () => {
         ? JSON.stringify(recentGames)
         : objectToCSV(recentGames);
     window.navigator.clipboard.writeText(content);
-    triggerAlert(AlertTypes.EXPORT_ALERT);
+    triggerAlert(AlertTypes.EXPORT_HISTORY_ALERT);
     closeModal();
   };
 
