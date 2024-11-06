@@ -43,7 +43,7 @@ const initialState = {
   recentGames: [],
 };
 
-function overwriteExistingGames(games: PastGame[], recentGames: PastGame[]) {
+function overwriteExistingGames(recentGames: PastGame[], games: PastGame[]) {
   const importedGameIds = games.map((game) => game.id);
   return {
     recentGames: [
@@ -100,7 +100,7 @@ export const historySlice: Slice<RecentGamesState, GameHistoryState> = (
       ({ recentGames }) => {
         switch (onDuplicate) {
           case "overwrite": // take imported games over the existing ones.
-            return overwriteExistingGames(games, recentGames);
+            return overwriteExistingGames(recentGames, games);
           case "ignore": // take existing games over the new ones.
             return ignoreExistingGamesInImport(recentGames, games);
           case "create-new": // Create a new game for all the imported games, risk of duplicate games!

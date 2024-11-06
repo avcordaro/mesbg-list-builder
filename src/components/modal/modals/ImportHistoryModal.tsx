@@ -96,7 +96,14 @@ export const ImportGameHistoryModal = () => {
       }
     }
 
-    importGames(history, onDuplicate);
+    importGames(
+      history.map((game) => ({
+        ...game,
+        // make sure the tags is an array and not just a string.
+        tags: typeof game.tags === "string" ? [game.tags] : game.tags,
+      })),
+      onDuplicate,
+    );
     closeModal();
   };
 
@@ -198,7 +205,7 @@ export const ImportGameHistoryModal = () => {
           <Grid2 size={12}>
             <FormControl>
               <FormLabel id="demo-controlled-radio-buttons-group">
-                Import format
+                What is the format of the data you are importing?
               </FormLabel>
               <RadioGroup
                 row
@@ -221,7 +228,8 @@ export const ImportGameHistoryModal = () => {
             <Grid2 size={12}>
               <FormControl>
                 <FormLabel id="demo-controlled-radio-buttons-group">
-                  Action on duplicate id
+                  What action should be taken for duplicated games found between
+                  current match history and the imported data?
                 </FormLabel>
                 <RadioGroup
                   row
@@ -232,17 +240,17 @@ export const ImportGameHistoryModal = () => {
                   <FormControlLabel
                     value="create-new"
                     control={<Radio />}
-                    label="Create as new game"
+                    label="Insert duplicated games as new games (risking duplicated data)"
                   />
                   <FormControlLabel
                     value="overwrite"
                     control={<Radio />}
-                    label="Overwrite existing game"
+                    label="Overwrite the existing game and keep the data as is in the import"
                   />
                   <FormControlLabel
                     value="ignore"
                     control={<Radio />}
-                    label="Keep existing game"
+                    label="Keep existing game and ignore the duplicated values in the import"
                   />
                 </RadioGroup>
               </FormControl>
