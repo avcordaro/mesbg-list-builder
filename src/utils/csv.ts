@@ -28,7 +28,7 @@ export function objectToCSV<T extends Record<string, unknown>>(
 }
 
 export function csvToObject<T = Record<string, unknown>>(csv: string): T[] {
-  const lines = csv.trim().split("\n");
+  const lines = csv.trim().split(/\r?\n/);
   const headers = lines[0].split(",");
 
   return lines.slice(1).map((line) => {

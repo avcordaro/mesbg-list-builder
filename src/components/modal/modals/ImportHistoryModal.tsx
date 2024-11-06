@@ -50,7 +50,7 @@ export const ImportGameHistoryModal = () => {
   const [importAlert, setImportAlert] = useState(false);
   const [onDuplicate, setOnDuplicate] = useState<
     "overwrite" | "ignore" | "create-new"
-  >("create-new");
+  >("overwrite");
 
   const handleChangeOnDuplicate = (event: ChangeEvent<HTMLInputElement>) => {
     setOnDuplicate(
@@ -238,11 +238,6 @@ export const ImportGameHistoryModal = () => {
                   onChange={handleChangeOnDuplicate}
                 >
                   <FormControlLabel
-                    value="create-new"
-                    control={<Radio />}
-                    label="Insert duplicated games as new games (risking duplicated data)"
-                  />
-                  <FormControlLabel
                     value="overwrite"
                     control={<Radio />}
                     label="Overwrite the existing game and keep the data as is in the import"
@@ -251,6 +246,11 @@ export const ImportGameHistoryModal = () => {
                     value="ignore"
                     control={<Radio />}
                     label="Keep existing game and ignore the duplicated values in the import"
+                  />
+                  <FormControlLabel
+                    value="create-new"
+                    control={<Radio />}
+                    label="Insert duplicated games as new games (risking duplicated data)"
                   />
                 </RadioGroup>
               </FormControl>
