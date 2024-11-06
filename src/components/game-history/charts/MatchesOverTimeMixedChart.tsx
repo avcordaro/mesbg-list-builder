@@ -146,6 +146,14 @@ export const MatchesOverTimeMixedChart = ({ data }: MatchesOverTimeProps) => {
       // @ts-expect-error The react-chartjs-2 has no type support for mixed charts... it does still work though.
       data={victoryPointsData}
       options={{
+        responsive: true,
+        plugins: {
+          legend: { position: "top" },
+          title: {
+            display: true,
+            text: "Matches played over time",
+          },
+        },
         scales: {
           y: {
             type: "linear",
@@ -154,10 +162,7 @@ export const MatchesOverTimeMixedChart = ({ data }: MatchesOverTimeProps) => {
           },
           y1: {
             max: Math.max(...matchesPerDay),
-            type: "linear",
-            display: true,
-            ticks: { count: 1 },
-            position: "center",
+            display: false,
             beginAtZero: true,
           },
         },
