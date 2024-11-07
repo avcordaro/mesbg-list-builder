@@ -2,10 +2,11 @@ import { DragDropContext, DragStart, DropResult } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { createRef, useEffect, useRef } from "react";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { moveItem, moveItemBetweenLists } from "../../../utils/array.ts";
-import { Warband } from "./Warband.tsx";
+import { Warband, WarbandActions } from "./Warband.tsx";
 
 /* Displays the list of all warbands, and also defines how each warband card looks. */
 
@@ -19,6 +20,15 @@ export const Warbands = () => {
     reorderUnits,
   } = useRosterBuildingState();
   const scrollToTop = useScrollToTop("sidebar");
+
+  const refs = useRef(roster.warbands.map(() => createRef<WarbandActions>()));
+
+  useEffect(() => {
+    // Adjust the refs array when the warbands get updated.
+    refs.current = roster.warbands.map(
+      (_, i) => refs.current[i] || createRef<WarbandActions>(),
+    );
+  }, [roster.warbands]);
 
   const handleNewWarband = () => {
     const createdWarbandId = addWarband();
@@ -80,11 +90,22 @@ export const Warbands = () => {
     clearDraggedUnit();
   };
 
+  const collapseAll = (collapsed: boolean) => {
+    refs.current.forEach((ref) => {
+      ref.current.collapseAll(collapsed);
+    });
+  };
+
   return (
     <Stack spacing={1} sx={{ pb: 16 }}>
       <DragDropContext onDragEnd={updateRoster} onDragStart={onDragStart}>
-        {roster.warbands.map((warband) => (
-          <Warband key={warband.id} warband={warband} />
+        {roster.warbands.map((warband, index) => (
+          <Warband
+            key={warband.id}
+            warband={warband}
+            ref={refs.current[index]}
+            collapseAll={collapseAll}
+          />
         ))}
       </DragDropContext>
       <Button
