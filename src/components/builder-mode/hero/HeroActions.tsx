@@ -6,6 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent, MouseEventHandler } from "react";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { useAppState } from "../../../state/app";
+import { useUserPreferences } from "../../../state/preference";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -23,6 +24,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
   const { setCurrentModal } = useAppState();
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
+  const { useDenseMode } = useUserPreferences();
 
   const handleDelete = () => deleteHero(warbandId, unit.id);
 
@@ -35,6 +37,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
     });
   };
 
+  const iconSize = isMobile && useDenseMode ? "0.8rem" : "1.5rem";
   return (
     <Stack direction="column" justifyContent={isMobile ? "end" : "end"}>
       <Stack
@@ -49,6 +52,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
             borderRadius: 2,
             p: 1.5,
             color: "white",
+            fontSize: iconSize,
             backgroundColor: palette.grey.A700,
             "&:hover": {
               backgroundColor: palette.grey["900"],
@@ -71,7 +75,7 @@ export const HeroActions: FunctionComponent<HeroActionsProps> = ({
             },
           }}
         >
-          <CancelIcon />
+          <CancelIcon sx={{ fontSize: iconSize }} />
         </IconButton>
       </Stack>
     </Stack>

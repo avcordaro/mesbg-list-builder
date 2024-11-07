@@ -15,6 +15,7 @@ import {
   useScrollToTop,
 } from "../../../hooks/scroll-to.ts";
 import { useAppState } from "../../../state/app";
+import { useUserPreferences } from "../../../state/preference";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { ModalTypes } from "../../modal/modals.tsx";
@@ -27,7 +28,10 @@ export const QuantityButtons = ({
   warbandId: string;
 }) => {
   const { updateUnit, roster } = useRosterBuildingState();
-  const { palette } = useTheme();
+  const { useDenseMode } = useUserPreferences();
+
+  const { palette, breakpoints } = useTheme();
+  const isMobile = useMediaQuery(breakpoints.down("sm"));
 
   const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
   const warbandHasHero = isDefinedUnit(hero);
@@ -45,6 +49,7 @@ export const QuantityButtons = ({
     });
   };
 
+  const iconSize = isMobile && useDenseMode ? "1rem" : "1.5rem";
   return (
     <>
       {unit.unit_type == "Warrior" && (
@@ -61,7 +66,7 @@ export const QuantityButtons = ({
               },
             }}
           >
-            <RemoveOutlined />
+            <RemoveOutlined sx={{ fontSize: iconSize }} />
           </IconButton>
           <IconButton
             onClick={handleIncrement}
@@ -75,7 +80,7 @@ export const QuantityButtons = ({
               },
             }}
           >
-            <AddOutlined />
+            <AddOutlined sx={{ fontSize: iconSize }} />
           </IconButton>
         </>
       )}
@@ -98,6 +103,7 @@ export const WarriorActions = ({
     updateBuilderSidebar,
   } = useRosterBuildingState();
   const { setCurrentModal } = useAppState();
+  const { useDenseMode } = useUserPreferences();
 
   const { palette, breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down("sm"));
@@ -150,6 +156,7 @@ export const WarriorActions = ({
     });
   };
 
+  const iconSize = isMobile && useDenseMode ? "0.8rem" : "1.5rem";
   return (
     <Stack justifyContent="end">
       <Stack
@@ -166,6 +173,7 @@ export const WarriorActions = ({
               p: 1.5,
               color: "white",
               backgroundColor: palette.grey.A700,
+              fontSize: iconSize,
               "&:hover": {
                 backgroundColor: palette.grey["900"],
               },
@@ -191,7 +199,7 @@ export const WarriorActions = ({
                   },
                 }}
               >
-                <ContentCopyOutlined />
+                <ContentCopyOutlined sx={{ fontSize: iconSize }} />
               </IconButton>
             )}
           </>
@@ -209,7 +217,7 @@ export const WarriorActions = ({
             },
           }}
         >
-          <RestartAlt />
+          <RestartAlt sx={{ fontSize: iconSize }} />
         </IconButton>
         <IconButton
           onClick={handleDelete}
@@ -223,7 +231,7 @@ export const WarriorActions = ({
             },
           }}
         >
-          <Cancel />
+          <Cancel sx={{ fontSize: iconSize }} />
         </IconButton>
       </Stack>
     </Stack>

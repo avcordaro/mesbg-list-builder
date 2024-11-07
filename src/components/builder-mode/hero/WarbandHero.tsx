@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
+import { useUserPreferences } from "../../../state/preference";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
@@ -27,12 +28,13 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const { useDenseMode } = useUserPreferences();
   return (
     <Card sx={{ p: 1 }} elevation={2}>
       <Stack
         direction={isMobile ? "column" : "row"}
         alignItems="start"
-        spacing={2}
+        spacing={isMobile && useDenseMode ? 0 : 2}
       >
         <Collapse
           in={!collapsed}
@@ -42,10 +44,12 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
         >
           {isMobile ? (
             <Stack alignItems="center" sx={{ width: "100%" }}>
-              <UnitProfilePicture
-                army={unit.profile_origin}
-                profile={unit.name}
-              />
+              {!useDenseMode && (
+                <UnitProfilePicture
+                  army={unit.profile_origin}
+                  profile={unit.name}
+                />
+              )}
             </Stack>
           ) : (
             <UnitProfilePicture
@@ -55,7 +59,11 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
           )}
         </Collapse>
 
-        <Stack spacing={!collapsed ? 1 : 0} flexGrow={1} sx={{ width: "100%" }}>
+        <Stack
+          spacing={!collapsed && !(isMobile && useDenseMode) ? 1 : 0}
+          flexGrow={1}
+          sx={{ width: "100%" }}
+        >
           <Stack
             direction={isMobile ? "column" : "row"}
             spacing={isMobile ? 0 : 3}
@@ -77,22 +85,24 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
             </Typography>
           </Stack>
           <Collapse in={!collapsed}>
-            <Stack
-              direction={isMobile ? "column" : "row"}
-              spacing={1}
-              alignItems="center"
-            >
-              <Chip
-                label={unit.unit_type}
-                size="small"
-                sx={{
-                  backgroundColor: "black",
-                  color: "white",
-                  fontWeight: "bold",
-                }}
-              />
-              <MwfBadge unit={unit} />
-            </Stack>
+            {(!isMobile || !useDenseMode) && (
+              <Stack
+                direction={isMobile ? "column" : "row"}
+                spacing={1}
+                alignItems="center"
+              >
+                <Chip
+                  label={unit.unit_type}
+                  size="small"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
+                />
+                <MwfBadge unit={unit} />
+              </Stack>
+            )}
             <Stack
               direction={isTablet ? "column" : "row"}
               spacing={3}
