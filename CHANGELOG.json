@@ -1,6 +1,9 @@
 {
   "main": {
-    "added": ["Added the sum of might for all heros in the roster info bar"],
+    "added": [
+      "Added a filter on the unit selector to search for the model you want to add",
+      "Added the sum of might for all heros in the roster info bar"
+    ],
     "bugfixes": [
       "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
     ],

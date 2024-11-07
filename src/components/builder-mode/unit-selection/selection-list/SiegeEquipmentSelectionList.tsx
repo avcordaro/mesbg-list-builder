@@ -4,11 +4,18 @@ import Accordion from "@mui/material/Accordion";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { FunctionComponent } from "react";
 import siege_equipment from "../../../../assets/data/siege_equipment.json";
 import { useRosterBuildingState } from "../../../../state/roster-building";
 import { UnitProfilePicture } from "../../../common/images/UnitProfilePicture.tsx";
 
-export const SiegeEquipmentSelectionList = () => {
+type SiegeEquipmentSelectionListProps = {
+  filter: string;
+};
+
+export const SiegeEquipmentSelectionList: FunctionComponent<
+  SiegeEquipmentSelectionListProps
+> = ({ filter }) => {
   const { selectUnit, warriorSelectionFocus, updateBuilderSidebar } =
     useRosterBuildingState();
 
@@ -21,7 +28,11 @@ export const SiegeEquipmentSelectionList = () => {
     });
   };
 
-  return (
+  const equipment = siege_equipment.filter((equipment) =>
+    equipment.name.includes(filter),
+  );
+
+  return equipment.length > 0 ? (
     <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
@@ -36,7 +47,7 @@ export const SiegeEquipmentSelectionList = () => {
           the &apos;Sieges&apos; section of the main rulebook and the War in
           Rohan supplement book.
         </Typography>
-        {siege_equipment.map((data) => (
+        {equipment.map((data) => (
           <Button
             key={data.model_id}
             variant="outlined"
@@ -72,5 +83,7 @@ export const SiegeEquipmentSelectionList = () => {
         ))}
       </AccordionDetails>
     </Accordion>
+  ) : (
+    <></>
   );
 };
