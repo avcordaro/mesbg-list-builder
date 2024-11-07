@@ -2,6 +2,7 @@ import { DragDropContext, DragStart, DropResult } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { moveItem, moveItemBetweenLists } from "../../../utils/array.ts";
 import { Warband } from "./Warband.tsx";
@@ -17,12 +18,16 @@ export const Warbands = () => {
     clearDraggedUnit,
     reorderUnits,
   } = useRosterBuildingState();
+  const scrollToTop = useScrollToTop("sidebar");
 
   const handleNewWarband = () => {
-    addWarband();
+    const createdWarbandId = addWarband();
     updateBuilderSidebar({
-      warriorSelection: false,
+      warriorSelection: true,
+      heroSelection: true,
+      warriorSelectionFocus: [createdWarbandId, null],
     });
+    setTimeout(scrollToTop, null);
   };
 
   const onDragStart = (x: DragStart) => {

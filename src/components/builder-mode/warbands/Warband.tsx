@@ -8,6 +8,7 @@ import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import { FunctionComponent, useEffect, useState } from "react";
 import { useMesbgData } from "../../../hooks/mesbg-data.ts";
+import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
@@ -28,6 +29,7 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
   const [collapsed, setCollapsed] = useState(false);
   const [dropzoneEnabled, setDropzoneEnabled] = useState(true);
   const theme = useTheme();
+  const scrollToTop = useScrollToTop("sidebar");
 
   useEffect(() => {
     if (
@@ -52,11 +54,13 @@ export const Warband: FunctionComponent<WarbandProps> = ({ warband }) => {
   }, [draggedUnit, warband.hero, getEligibleWarbandUnitsForHero]);
 
   const handleNewWarrior = () => {
-    addUnit(warband.id);
+    const createdUnitId = addUnit(warband.id);
     updateBuilderSidebar({
       heroSelection: false,
-      warriorSelection: false,
+      warriorSelection: true,
+      warriorSelectionFocus: [warband.id, createdUnitId],
     });
+    setTimeout(scrollToTop, null);
   };
 
   const isHeroWhoLeads = (hero: Unit): boolean => {

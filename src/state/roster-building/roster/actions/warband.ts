@@ -10,10 +10,10 @@ import {
 import { RosterState } from "../index.ts";
 
 export const addWarband =
-  () =>
+  (newWarbandId: string) =>
   ({ roster }: RosterBuildingState) => {
     roster.warbands.push({
-      id: uuid(),
+      id: newWarbandId,
       num: roster.warbands.length + 1,
       points: 0,
       num_units: 0,

@@ -4,7 +4,11 @@
     "bugfixes": [
       "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
     ],
-    "changed": ["Added Eowyn and Merry's individual profile cards to Dernhelm."]
+    "changed": [
+      "Added Eowyn and Merry's individual profile cards to Dernhelm.",
+      "Now opens the unit selector when a new warband is created to select the hero leading that warband",
+      "Now opens the unit selector when a new unit is added to immediately allow selecting the unit"
+    ]
   },
   "6.12": {
     "added": [
