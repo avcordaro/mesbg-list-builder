@@ -1,7 +1,9 @@
 import hero_constraint_data from "../../../../assets/data/hero_constraint_data.json";
 import mesbg_data from "../../../../assets/data/mesbg_data.json";
+import { Roster } from "../../../../types/roster.ts";
 import { FreshUnit, isDefinedUnit, Unit } from "../../../../types/unit.ts";
 import { Warband } from "../../../../types/warband.ts";
+import { sum } from "../../../../utils/utils.ts";
 
 const handleMultiWoundMountOption = (
   hero: Unit,
@@ -172,3 +174,14 @@ export const getSpecialArmyOption = (hero: Unit): string =>
   hasSpecialArmyOption(hero)
     ? hero_constraint_data[hero.model_id][0]["special_army_option"]
     : null;
+
+export const calculateRosterMightTotal = (roster: Roster) => {
+  return roster.warbands
+    .flatMap((warband) => [warband.hero, ...warband.units])
+    .filter(isDefinedUnit)
+    .filter((unit) => unit.MWFW.length > 0)
+    .flatMap((unit) => unit.MWFW)
+    .map((mwfw) => mwfw[1].split(":")[0])
+    .map(Number)
+    .reduce(sum, 0);
+};
