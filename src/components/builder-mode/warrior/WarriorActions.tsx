@@ -29,8 +29,10 @@ export const QuantityButtons = ({
   const { updateUnit, roster } = useRosterBuildingState();
   const { palette } = useTheme();
 
-  const hero = roster.warbands.find(({ id }) => warbandId === id)?.hero;
+  const warband = roster.warbands.find(({ id }) => warbandId === id);
+  const hero = warband?.hero;
   const warbandHasHero = isDefinedUnit(hero);
+  const warbandIsCappedOnUnits = warband.num_units >= Number(warband.max_units);
 
   const handleIncrement = () => {
     updateUnit(warbandId, unit.id, {
@@ -65,7 +67,7 @@ export const QuantityButtons = ({
           </IconButton>
           <IconButton
             onClick={handleIncrement}
-            disabled={!warbandHasHero}
+            disabled={!warbandHasHero || warbandIsCappedOnUnits}
             sx={{
               borderRadius: 2,
               backgroundColor: palette.primary.main,
