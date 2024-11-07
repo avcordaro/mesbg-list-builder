@@ -85,7 +85,7 @@ export const OptionToggle = ({
           disabled={!selectable}
           onChange={handleToggle}
           name={option.option}
-          sx={{ my: isMobile ? 0 : -2 }}
+          sx={{ my: isMobile ? -0.5 : -2 }}
         />
       }
       label={option.option + " (" + option.points + " points)"}
