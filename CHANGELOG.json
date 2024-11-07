@@ -1,5 +1,12 @@
 {
-  "main": {},
+  "main": {
+    "added": [
+      "Added an option to switch between normal and dense ui, removing images and reducing padding and spacing"
+    ],
+    "changed": [
+      "Removed the autoscroll behaviour for desktop and removed the smooth scrolling for mobile"
+    ]
+  },
   "6.13": {
     "added": [
       "Added a filter on the unit selector to search for the model you want to add",

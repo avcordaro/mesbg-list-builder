@@ -14,6 +14,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Stack from "@mui/material/Stack";
+import Switch from "@mui/material/Switch";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -23,12 +24,11 @@ import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useAppState } from "../../../state/app";
 import { useGameModeState } from "../../../state/gamemode";
+import { useUserPreferences } from "../../../state/preference";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
-import Switch from "@mui/material/Switch";
-import { useUserPreferences } from "../../../state/preference";
 
 const RosterInfoBar = () => {
   const { roster } = useRosterBuildingState();
@@ -263,7 +263,7 @@ export const Header = () => {
                 }}
               />
             }
-            label={"Use dense UI mode"}
+            label="Use dense UI mode"
           />
         )}
       </AppBar>
