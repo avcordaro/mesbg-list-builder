@@ -3,7 +3,7 @@ import FortIcon from "@mui/icons-material/Fort";
 import MenuIcon from "@mui/icons-material/Menu";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import SearchIcon from "@mui/icons-material/Search";
-import { ListItemButton, ListItemIcon } from "@mui/material";
+import { FormControlLabel, ListItemButton, ListItemIcon } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button, { ButtonProps } from "@mui/material/Button";
@@ -14,6 +14,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Stack from "@mui/material/Stack";
+import Switch from "@mui/material/Switch";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
@@ -23,6 +24,7 @@ import logo from "../../../assets/images/logo.svg";
 import title from "../../../assets/images/title.png";
 import { useAppState } from "../../../state/app";
 import { useGameModeState } from "../../../state/gamemode";
+import { useUserPreferences } from "../../../state/preference";
 import { useRecentGamesState } from "../../../state/recent-games";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
@@ -96,12 +98,14 @@ const RosterInfoBar = () => {
 
 export const Header = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("lg"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { roster, allianceLevel } = useRosterBuildingState();
   const { gameMode, gameState, setGameMode, startNewGame } = useGameModeState();
   const { showHistory, setShowHistory } = useRecentGamesState();
   const { setCurrentModal, openSidebar } = useAppState();
+  const { useDenseMode, setDenseMode } = useUserPreferences();
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -206,7 +210,7 @@ export const Header = () => {
           <Box sx={{ flexGrow: 1 }} />
 
           {/* Right side buttons (hide in mobile) */}
-          {!isMobile && (
+          {!isTablet && (
             <Box sx={{ display: { xs: "none", sm: "flex" } }}>
               {buttons
                 .filter((button) => button.visible)
@@ -227,17 +231,41 @@ export const Header = () => {
           )}
 
           {/* Hamburger Menu for Mobile */}
-          {isMobile && (
-            <IconButton
-              edge="end"
-              color="inherit"
-              aria-label="menu"
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </IconButton>
+          {isTablet && (
+            <>
+              <IconButton
+                edge="end"
+                color="inherit"
+                aria-label="menu"
+                onClick={handleDrawerToggle}
+              >
+                <MenuIcon />
+              </IconButton>
+            </>
           )}
         </Toolbar>
+        {isMobile && !showHistory && !gameMode && (
+          <FormControlLabel
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            control={
+              <Switch
+                name="Dense UI"
+                checked={useDenseMode}
+                onChange={(value) => setDenseMode(value.target.checked)}
+                sx={{
+                  "& .MuiSwitch-track": {
+                    backgroundColor: "lightgrey", // background color of the track in unchecked state
+                  },
+                }}
+              />
+            }
+            label="Use dense UI mode"
+          />
+        )}
       </AppBar>
       {!showHistory && <RosterInfoBar />}
 

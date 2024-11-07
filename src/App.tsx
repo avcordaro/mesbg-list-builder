@@ -14,6 +14,7 @@ import { SavedGameResults } from "./components/game-history/SavedGameResults.tsx
 import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
 import { useGameModeState } from "./state/gamemode";
+import { useUserPreferences } from "./state/preference";
 import { useRecentGamesState } from "./state/recent-games";
 import { useRosterBuildingState } from "./state/roster-building";
 import { useCurrentRosterState, useSavedRostersState } from "./state/rosters";
@@ -24,12 +25,8 @@ export const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
-  const {
-    activeRoster,
-    setActiveRoster,
-    storageNoticeActive,
-    dismissStorageNotice,
-  } = useCurrentRosterState();
+  const { activeRoster, setActiveRoster } = useCurrentRosterState();
+  const { storageNoticeActive, dismissStorageNotice } = useUserPreferences();
   const { lastOpenedRoster } = useSavedRostersState();
   const [loaded, setLoaded] = useState(false);
 
@@ -63,12 +60,13 @@ export const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeRoster]);
 
+  const _30DaysAgo = 30 * 24 * 60 * 60 * 1000;
   return (
     <AppContainer>
       <Container maxWidth={false} fixed sx={{ p: 2 }}>
         <Alerts />
         <main>
-          {storageNoticeActive && (
+          {Date.now() - storageNoticeActive >= _30DaysAgo && (
             <Alert
               severity="warning"
               sx={{ m: "0 auto 1rem", maxWidth: "100ch" }}

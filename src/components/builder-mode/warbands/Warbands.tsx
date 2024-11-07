@@ -2,6 +2,8 @@ import { DragDropContext, DragStart, DropResult } from "@hello-pangea/dnd";
 import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { createRef, useEffect, useRef } from "react";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
@@ -18,8 +20,11 @@ export const Warbands = () => {
     setDraggedUnit,
     clearDraggedUnit,
     reorderUnits,
+    warriorSelection,
   } = useRosterBuildingState();
   const scrollToTop = useScrollToTop("sidebar");
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   const refs = useRef(roster.warbands.map(() => createRef<WarbandActions>()));
 
@@ -96,7 +101,9 @@ export const Warbands = () => {
     });
   };
 
-  return (
+  return isMobile && warriorSelection ? (
+    <></>
+  ) : (
     <Stack spacing={1} sx={{ pb: 16 }}>
       <DragDropContext onDragEnd={updateRoster} onDragStart={onDragStart}>
         {roster.warbands.map((warband, index) => (

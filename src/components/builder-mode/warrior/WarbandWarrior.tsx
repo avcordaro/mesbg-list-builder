@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
+import { useUserPreferences } from "../../../state/preference";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
@@ -26,6 +27,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const { useDenseMode } = useUserPreferences();
   const optionsString = unit.options
     .filter((o) => o.opt_quantity)
     .map((o) => o.option)
@@ -53,13 +55,17 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
               alignItems="center"
               sx={{ width: "100%" }}
             >
-              <UnitProfilePicture
-                army={unit.profile_origin}
-                profile={unit.name}
-              />
-              <Stack direction="row" spacing={3} sx={{ mt: 1 }}>
-                <QuantityButtons unit={unit} warbandId={props.warbandId} />
-              </Stack>
+              {!useDenseMode && (
+                <>
+                  <UnitProfilePicture
+                    army={unit.profile_origin}
+                    profile={unit.name}
+                  />
+                  <Stack direction="row" spacing={3} sx={{ mt: 1 }}>
+                    <QuantityButtons unit={unit} warbandId={props.warbandId} />
+                  </Stack>
+                </>
+              )}
             </Stack>
           ) : (
             <Stack direction="column">
@@ -80,7 +86,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
 
         <Stack
           id="oyollasd"
-          spacing={!props.collapsed ? 2 : 0}
+          spacing={!props.collapsed && (!isMobile || !useDenseMode) ? 2 : 0}
           flexGrow={1}
           justifyContent="stretch"
           sx={{ width: "100%", mt: !props.collapsed ? "auto" : "0 !important" }}
@@ -112,28 +118,42 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
               {unit.unit_type === "Warrior" &&
                 " (per unit: " + unit.pointsPerUnit + ")"}
             </Typography>
+
+            {isMobile && useDenseMode && (
+              <Stack
+                direction="row"
+                justifyContent="space-around"
+                sx={{ mt: 1 }}
+                gap={3}
+              >
+                <QuantityButtons unit={unit} warbandId={props.warbandId} />
+              </Stack>
+            )}
           </Stack>
 
           <Collapse in={!props.collapsed}>
             {/* Unit type & MWF */}
-            {unit.unit_type !== "Warrior" && unit.unit_type !== "Siege" && (
-              <Stack
-                direction={isMobile ? "column" : "row"}
-                spacing={1}
-                alignItems="center"
-              >
-                <Chip
-                  label={unit.unit_type}
-                  size="small"
-                  sx={{
-                    backgroundColor: "black",
-                    color: "white",
-                    fontWeight: "bold",
-                  }}
-                />
-                <MwfBadge unit={unit} />
-              </Stack>
-            )}
+            {unit.unit_type !== "Warrior" &&
+              unit.unit_type !== "Siege" &&
+              !isMobile &&
+              useDenseMode && (
+                <Stack
+                  direction={isMobile ? "column" : "row"}
+                  spacing={1}
+                  alignItems="center"
+                >
+                  <Chip
+                    label={unit.unit_type}
+                    size="small"
+                    sx={{
+                      backgroundColor: "black",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <MwfBadge unit={unit} />
+                </Stack>
+              )}
 
             {/* Options and increment buttons*/}
             <Stack

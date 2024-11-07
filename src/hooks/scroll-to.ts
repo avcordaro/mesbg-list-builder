@@ -1,5 +1,12 @@
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 export const useScrollToElement = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+
   return function (scrollId: string, offset: number = 70) {
+    if (!isMobile) return;
     const element = document
       .querySelectorAll(`[data-scroll-id="${scrollId}"]`)
       .item(0);
@@ -9,7 +16,7 @@ export const useScrollToElement = () => {
     }
     const { top } = element.getBoundingClientRect();
     const y = top + window.scrollY - offset;
-    window.scrollTo({ top: y, behavior: "smooth" });
+    window.scrollTo({ top: y, behavior: "instant" });
   };
 };
 
@@ -20,7 +27,7 @@ export const useScrollToTop = (topOf: "sidebar" | "page" = "page") => {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: "smooth",
+        behavior: "instant",
       });
     } else {
       scrollToElement("sidebar");
