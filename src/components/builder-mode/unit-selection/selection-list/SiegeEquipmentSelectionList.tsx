@@ -28,8 +28,8 @@ export const SiegeEquipmentSelectionList: FunctionComponent<
     });
   };
 
-  const equipment = siege_equipment.filter((equipment) =>
-    equipment.name.includes(filter),
+  const equipment = siege_equipment.filter((unit) =>
+    unit.name.toLowerCase().includes(filter?.toLowerCase()),
   );
 
   return equipment.length > 0 ? (

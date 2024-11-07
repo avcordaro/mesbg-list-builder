@@ -15,7 +15,9 @@ export const WarriorSelectionList: FunctionComponent<
   return (
     <>
       {getEligibleWarbandUnits()
-        .filter((unit) => unit.name.includes(filter))
+        .filter((unit) =>
+          unit.name.toLowerCase().includes(filter?.toLowerCase()),
+        )
         .map((row) => (
           <UnitSelectionButton key={uuid()} unitData={row} />
         ))}

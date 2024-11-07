@@ -23,7 +23,9 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
         .filter(
           (hero) => !(hero.unique && uniqueModels.includes(hero.model_id)),
         )
-        .filter((hero) => hero.name.includes(filter))
+        .filter((unit) =>
+          unit.name.toLowerCase().includes(filter?.toLowerCase()),
+        )
         .map((hero) => (
           <UnitSelectionButton key={uuid()} unitData={hero} />
         ))}
