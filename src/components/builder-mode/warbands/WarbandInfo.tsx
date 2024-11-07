@@ -11,10 +11,12 @@ const MobileWarbandInfo = ({
   warband,
   collapsed,
   collapse,
+  collapseAll,
 }: {
   warband: Warband;
   collapsed: boolean;
   collapse: (collapsed: boolean) => void;
+  collapseAll: (collapsed: boolean) => void;
 }) => {
   return (
     <Stack direction="column" alignItems="center" spacing={2}>
@@ -32,6 +34,7 @@ const MobileWarbandInfo = ({
         <WarbandActions
           warband={warband}
           collapse={collapse}
+          collapseAll={collapseAll}
           collapsed={collapsed}
         />
       </Stack>
@@ -60,10 +63,12 @@ export const WarbandInfo = ({
   warband,
   collapsed,
   collapse,
+  collapseAll,
 }: {
   warband: Warband;
   collapsed: boolean;
   collapse: (collapsed: boolean) => void;
+  collapseAll?: (collapsed: boolean) => void;
 }) => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
@@ -72,6 +77,7 @@ export const WarbandInfo = ({
     <MobileWarbandInfo
       warband={warband}
       collapse={collapse}
+      collapseAll={collapseAll}
       collapsed={collapsed}
     />
   ) : (
@@ -127,6 +133,7 @@ export const WarbandInfo = ({
       <WarbandActions
         warband={warband}
         collapse={collapse}
+        collapseAll={collapseAll}
         collapsed={collapsed}
       />
     </Stack>

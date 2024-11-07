@@ -44,5 +44,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-curly-brace-presence": "warn",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
   },
 };

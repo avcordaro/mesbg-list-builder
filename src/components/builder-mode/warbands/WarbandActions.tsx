@@ -1,4 +1,9 @@
-import { UnfoldLess, UnfoldMore } from "@mui/icons-material";
+import {
+  UnfoldLess,
+  UnfoldLessDouble,
+  UnfoldMore,
+  UnfoldMoreDouble,
+} from "@mui/icons-material";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IconButton from "@mui/material/IconButton";
@@ -12,10 +17,12 @@ export const WarbandActions = ({
   warband,
   collapsed,
   collapse,
+  collapseAll,
 }: {
   warband: Warband;
   collapsed: boolean;
   collapse: (collapsed: boolean) => void;
+  collapseAll: (collapsed: boolean) => void;
 }) => {
   const { duplicateWarband, deleteWarband, updateBuilderSidebar } =
     useRosterBuildingState();
@@ -83,6 +90,20 @@ export const WarbandActions = ({
         }}
       >
         {collapsed ? <UnfoldMore /> : <UnfoldLess />}
+      </IconButton>
+      <IconButton
+        onClick={() => collapseAll(!collapsed)}
+        aria-label="colapseAll"
+        sx={{
+          borderRadius: 2,
+          color: "white",
+          backgroundColor: palette.grey.A400,
+          "&:hover": {
+            backgroundColor: palette.grey.A700,
+          },
+        }}
+      >
+        {collapsed ? <UnfoldMoreDouble /> : <UnfoldLessDouble />}
       </IconButton>
     </Stack>
   );

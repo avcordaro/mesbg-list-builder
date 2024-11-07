@@ -7,10 +7,12 @@ import { UnitSelectionButton } from "./UnitSelectionButton.tsx";
 
 type HeroSelectionListProps = {
   faction: Faction;
+  filter: string;
 };
 
 export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
   faction,
+  filter,
 }) => {
   const { getHeroesFromFaction } = useMesbgData();
   const { uniqueModels } = useRosterBuildingState();
@@ -20,6 +22,9 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
       {getHeroesFromFaction(faction)
         .filter(
           (hero) => !(hero.unique && uniqueModels.includes(hero.model_id)),
+        )
+        .filter((unit) =>
+          unit.name.toLowerCase().includes(filter?.toLowerCase()),
         )
         .map((hero) => (
           <UnitSelectionButton key={uuid()} unitData={hero} />

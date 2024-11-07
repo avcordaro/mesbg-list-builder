@@ -1,4 +1,8 @@
+import ClearIcon from "@mui/icons-material/Clear";
+import { InputAdornment, TextField } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { Tabs } from "../../../state/roster-building/builder-selection";
 import { FactionType } from "../../../types/factions.ts";
@@ -15,6 +19,16 @@ export function FactionTypeTab({
   activeTab: Tabs;
 }) {
   const { heroSelection, factionSelection } = useRosterBuildingState();
+  const [filterValue, setFilterValue] = useState("");
+
+  useEffect(() => {
+    setFilterValue("");
+  }, [heroSelection, factionSelection]);
+
+  const handleClear = () => {
+    setFilterValue("");
+  };
+
   return (
     <div
       role="tabpanel"
@@ -24,12 +38,35 @@ export function FactionTypeTab({
     >
       <Stack spacing={1} sx={{ mt: 1 }}>
         <FactionPickerDropdown type={type} />
+        <TextField
+          id="selection-filter"
+          label="Filter"
+          size="small"
+          value={filterValue}
+          onChange={(event: ChangeEvent<HTMLInputElement>) => {
+            setFilterValue(event.target.value);
+          }}
+          slotProps={{
+            input: {
+              endAdornment: filterValue && (
+                <InputAdornment position="end">
+                  <IconButton onClick={handleClear} edge="end">
+                    <ClearIcon />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            },
+          }}
+        />
         {heroSelection ? (
-          <HeroSelectionList faction={factionSelection[type]} />
+          <HeroSelectionList
+            faction={factionSelection[type]}
+            filter={filterValue}
+          />
         ) : (
           <>
-            <WarriorSelectionList />
-            <SiegeEquipmentSelectionList />
+            <WarriorSelectionList filter={filterValue} />
+            <SiegeEquipmentSelectionList filter={filterValue} />
           </>
         )}
       </Stack>

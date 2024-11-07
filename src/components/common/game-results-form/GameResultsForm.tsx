@@ -62,7 +62,6 @@ export type GameResultsFormHandlers = {
   saveToState: () => boolean;
 };
 
-// eslint-disable-next-line react/display-name
 export const GameResultsForm = forwardRef<GameResultsFormHandlers>((_, ref) => {
   const { modalContext } = useAppState();
   const { addGame, editGame } = useRecentGamesState();

@@ -1,10 +1,18 @@
 {
   "main": {
-    "added": ["Added the sum of might for all heros in the roster info bar"],
+    "added": [
+      "Added a filter on the unit selector to search for the model you want to add",
+      "Added the total Might points for all heroes in the roster info bar",
+      "Added a collapse-all button to the warbands"
+    ],
     "bugfixes": [
       "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
     ],
-    "changed": ["Added Eowyn and Merry's individual profile cards to Dernhelm."]
+    "changed": [
+      "Added Eowyn and Merry's individual profile cards to Dernhelm.",
+      "Now opens the unit selector when a new warband is created to select the hero leading that warband",
+      "Now opens the unit selector when a new unit is added to immediately allow selecting the unit"
+    ]
   },
   "6.12": {
     "added": [

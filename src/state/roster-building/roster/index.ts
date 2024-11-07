@@ -29,7 +29,7 @@ type RosterFunctions = {
   setRoster: (roster: Roster) => void;
 
   // Global warband functions
-  addWarband: () => void;
+  addWarband: () => string;
   deleteWarband: (warbandId: string) => void;
   duplicateWarband: (warbandId: string) => string;
 
@@ -40,7 +40,7 @@ type RosterFunctions = {
   makeLeader: (warbandId: string) => void;
 
   // Unit functions
-  addUnit: (warbandId: string) => void;
+  addUnit: (warbandId: string) => string;
   selectUnit: (warbandId: string, unitId: string, unit: Unit) => void;
   updateUnit: (warbandId: string, unitId: string, unit: Partial<Unit>) => void;
   deleteUnit: (warbandId: string, unitId: string) => void;
@@ -108,7 +108,11 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       recalculate();
     },
 
-    addWarband: (): void => set(addWarband(), undefined, "ADD_WARBAND"),
+    addWarband: (): string => {
+      const newWarbandId = uuid();
+      set(addWarband(newWarbandId), undefined, "ADD_WARBAND");
+      return newWarbandId;
+    },
     duplicateWarband: (warbandId: string): string => {
       set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
       recalculate();
@@ -144,18 +148,21 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       recalculate();
     },
 
-    addUnit: (warbandId: string): void =>
+    addUnit: (warbandId: string): string => {
+      const newUnitId = uuid();
       set(
         ({ roster }) => {
           const warband = roster.warbands.find(({ id }) => id === warbandId);
-          warband.units.push({ id: uuid(), name: null } as FreshUnit);
+          warband.units.push({ id: newUnitId, name: null } as FreshUnit);
           return {
             roster,
           };
         },
         undefined,
         "ADD_UNIT",
-      ),
+      );
+      return newUnitId;
+    },
     selectUnit: (warbandId: string, unitId: string, unit: Unit): void => {
       set(selectUnit(warbandId, unitId, unit), undefined, "SELECT_UNIT");
       recalculate();
