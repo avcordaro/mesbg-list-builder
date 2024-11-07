@@ -1,5 +1,6 @@
 {
   "main": {
+    "added": ["Added the sum of might for all heros in the roster info bar"],
     "bugfixes": [
       "Fix issue with enter or tab keys not triggering match tag creation on mobile browsers"
     ]

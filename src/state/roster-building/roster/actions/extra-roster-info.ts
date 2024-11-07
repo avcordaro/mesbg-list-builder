@@ -13,6 +13,7 @@ import {
 import {
   calculateAllianceLevel,
   calculateModelCount,
+  calculateRosterMightTotal,
   getFactionList,
   getFactionSpecialRules,
   getFactionType,
@@ -85,6 +86,7 @@ export const updateUnitCount = (roster: Roster) => {
     ...roster,
     num_units: calculateRosterUnitCount(roster),
     bow_count: calculateRosterTotalBowCount(roster),
+    might_total: calculateRosterMightTotal(roster),
     warbands: roster.warbands.map((warband) => ({
       ...warband,
       num_units: calculateWarbandModelCount(warband),

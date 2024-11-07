@@ -6,5 +6,6 @@ export type Roster = {
   leader_warband_id: string | null;
   num_units: number;
   bow_count: number;
+  might_total: number;
   points: number;
 };

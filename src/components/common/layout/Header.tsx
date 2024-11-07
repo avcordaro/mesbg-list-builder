@@ -64,11 +64,32 @@ const RosterInfoBar = () => {
           Break Point: <b>{breakPoint}</b>
         </Typography>
         {!isMobile && (
+          <>
+            <Typography variant="body1" component="div">
+              Bows: <b>{roster.bow_count}</b>
+            </Typography>
+            <Typography variant="body1" component="div">
+              Might: <b>{roster.might_total ?? "N/A"}</b>
+            </Typography>
+          </>
+        )}
+      </Stack>
+      {isMobile && (
+        <Stack
+          direction="row"
+          spacing={isMobile ? 2 : 4}
+          justifyContent="center"
+          textAlign="center"
+          flexWrap="wrap"
+        >
           <Typography variant="body1" component="div">
             Bows: <b>{roster.bow_count}</b>
           </Typography>
-        )}
-      </Stack>
+          <Typography variant="body1" component="div">
+            Might: <b>{roster.might_total ?? "N/A"}</b>
+          </Typography>
+        </Stack>
+      )}
     </Box>
   );
 };
@@ -246,21 +267,23 @@ export const Header = () => {
               />
             </ListItem>
             <Divider sx={{ m: 2 }} />
-            {buttons.map((button, index) => (
-              <Fragment key={index}>
-                <ListItemButton onClick={button.onClick}>
-                  {button.icon && (
-                    <ListItemIcon sx={{ color: "white" }}>
-                      {button.icon}
-                    </ListItemIcon>
-                  )}
-                  <ListItemText
-                    primaryTypographyProps={{ fontSize: "1.4rem" }}
-                    primary={button.label}
-                  />
-                </ListItemButton>
-              </Fragment>
-            ))}
+            {buttons
+              .filter((button) => button.visible)
+              .map((button, index) => (
+                <Fragment key={index}>
+                  <ListItemButton onClick={button.onClick}>
+                    {button.icon && (
+                      <ListItemIcon sx={{ color: "white" }}>
+                        {button.icon}
+                      </ListItemIcon>
+                    )}
+                    <ListItemText
+                      primaryTypographyProps={{ fontSize: "1.4rem" }}
+                      primary={button.label}
+                    />
+                  </ListItemButton>
+                </Fragment>
+              ))}
           </List>
         </Box>
       </Drawer>

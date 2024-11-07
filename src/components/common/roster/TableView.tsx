@@ -143,7 +143,13 @@ export function RosterTableView({
         alignItems={isMobile && !screenshotting ? "start" : "center"}
       >
         <Typography flexGrow={1}>
-          Alliance level:
+          <Typography
+            sx={{
+              wordBreak: "keep-all",
+            }}
+          >
+            Alliance level:
+          </Typography>
           <Typography
             variant="body2"
             component="span"
@@ -169,10 +175,13 @@ export function RosterTableView({
           Total Units: <b>{roster.num_units}</b>
         </Typography>
         <Typography>
+          Break Point: <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
+        </Typography>
+        <Typography>
           Total Bows: <b>{roster.bow_count}</b>
         </Typography>
         <Typography>
-          Break Point: <b>{Math.round(0.5 * roster.num_units * 100) / 100}</b>
+          Total Might: <b>{roster.might_total ?? "N/A"}</b>
         </Typography>
       </Stack>
       <TableContainer component={Paper} sx={{ mb: 2 }}>
