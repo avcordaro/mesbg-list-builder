@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.13": {
     "added": [
       "Added a filter on the unit selector to search for the model you want to add",
       "Added the total Might points for all heroes in the roster info bar",
