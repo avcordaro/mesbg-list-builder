@@ -244,7 +244,7 @@ export const Header = () => {
             </>
           )}
         </Toolbar>
-        {isMobile && (
+        {isMobile && !showHistory && !gameMode && (
           <FormControlLabel
             sx={{
               display: "flex",
