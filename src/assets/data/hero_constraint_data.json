@@ -2938,7 +2938,6 @@
         "[defenders_of_the_shire] hobbit_archer",
         "[defenders_of_the_shire] hobbit_militia",
         "[defenders_of_the_shire] hobbit_shirriff",
-        "[defenders_of_the_shire] grip,_fang_and_wolf",
         "[defenders_of_the_shire] rosie_cotton"
       ],
       "special_warband_options":[
@@ -2946,7 +2945,7 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-
+        "Grip, Fang and Wolf"
       ]
     }
   ],
@@ -8913,7 +8912,8 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-        "Royal Palanquin"
+        "Royal Palanquin",
+        "Easterling Warrior"
       ]
     }
   ],
@@ -9472,7 +9472,8 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-        "Royal Palanquin"
+        "Royal Palanquin",
+        "Easterling Warrior"
       ]
     }
   ],
@@ -10546,7 +10547,6 @@
   "[the_shire] farmer_maggot":[
     {
       "valid_warband_units":[
-        "[the_shire] grip,_fang_and_wolf",
         "[the_shire] hobbit_archer",
         "[the_shire] hobbit_militia",
         "[the_shire] rosie_cotton",
@@ -10557,7 +10557,7 @@
       ],
       "special_army_option":"",
       "extra_profiles":[
-
+        "Grip, Fang and Wolf"
       ]
     }
   ],

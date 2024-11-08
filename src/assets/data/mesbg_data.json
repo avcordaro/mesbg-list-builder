@@ -11610,7 +11610,7 @@
     "unique":true,
     "inc_bow_count":false,
     "bow_limit":false,
-    "siege_crew":0,
+    "siege_crew":4,
     "MWFW":[
       [
         "",
@@ -12269,38 +12269,6 @@
         "option_id":"OPT0243",
         "option":"Swap Weapon",
         "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[defenders_of_the_shire] grip,_fang_and_wolf",
-    "faction_type":"Good LL",
-    "faction":"Defenders of the Shire",
-    "profile_origin":"The Shire",
-    "name":"Grip, Fang and Wolf",
-    "unit_type":"Warrior",
-    "base_points":0,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":true,
-    "siege_crew":3,
-    "MWFW":[
-
-    ],
-    "quantity":1,
-    "pointsPerUnit":0,
-    "pointsTotal":0,
-    "warband_size":0,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,
@@ -40091,7 +40059,7 @@
     "unique":true,
     "inc_bow_count":false,
     "bow_limit":false,
-    "siege_crew":0,
+    "siege_crew":4,
     "MWFW":[
       [
         "",
@@ -40791,38 +40759,6 @@
         "option_id":"OPT1221",
         "option":"Swap Weapon",
         "points":1.0,
-        "type":null,
-        "min":0.0,
-        "max":1.0,
-        "opt_quantity":0.0
-      }
-    ]
-  },
-  {
-    "model_id":"[the_shire] grip,_fang_and_wolf",
-    "faction_type":"Good Army",
-    "faction":"The Shire",
-    "profile_origin":"The Shire",
-    "name":"Grip, Fang and Wolf",
-    "unit_type":"Warrior",
-    "base_points":0,
-    "default_bow":false,
-    "unique":true,
-    "inc_bow_count":false,
-    "bow_limit":true,
-    "siege_crew":3,
-    "MWFW":[
-
-    ],
-    "quantity":1,
-    "pointsPerUnit":0,
-    "pointsTotal":0,
-    "warband_size":0,
-    "options":[
-      {
-        "option_id":"None",
-        "option":"None",
-        "points":"None",
         "type":null,
         "min":0.0,
         "max":1.0,

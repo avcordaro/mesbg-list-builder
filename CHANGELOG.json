@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "changed": [
+      "Farmer Maggot now automatically includes 3 extra models to your roster counts when selecting him. Grip, Fang and Wolf no longer need to be selected as a warrior in the warband, and their profile card is now provided alongside Farmer Maggot."
+    ]
+  },
   "6.14": {
     "added": [
       "Added an option to switch between normal and dense UI mode on mobile, removing images and reducing padding and spacing"
