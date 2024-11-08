@@ -135,8 +135,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             {/* Unit type & MWF */}
             {unit.unit_type !== "Warrior" &&
               unit.unit_type !== "Siege" &&
-              !isMobile &&
-              useDenseMode && (
+              !(isMobile && useDenseMode) && (
                 <Stack
                   direction={isMobile ? "column" : "row"}
                   spacing={1}
