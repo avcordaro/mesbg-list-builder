@@ -2,6 +2,10 @@
   "main": {
     "changed": [
       "Farmer Maggot now automatically includes 3 extra models to your roster counts when selecting him. Grip, Fang and Wolf no longer need to be selected as a warrior in the warband, and their profile card is now provided alongside Farmer Maggot."
+    ],
+    "Fixed": [
+      "Fixed the Arnor keyword that appears on the profile cards for Rangers of Arnor.",
+      "Fixed the missing Shield option for Heralds of the Dead, in The Return of the King LL."
     ]
   },
   "6.14": {
