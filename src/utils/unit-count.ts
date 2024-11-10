@@ -64,6 +64,10 @@ export const calculateWarbandBowLimitModels = (warband: Warband) => {
     count += warband.hero.siege_crew - 1;
   }
 
+  if (warband.hero.model_id.includes("farmer_maggot")) {
+    count += 3; // Grip, Fang and Wolf
+  }
+
   if (warband.hero.unit_type === "Siege Engine") {
     count += warband.hero.siege_crew - 1;
     count +=
