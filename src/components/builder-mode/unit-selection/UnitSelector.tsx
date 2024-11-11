@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { FactionPicker } from "./FactionPicker.tsx";
 import { HeroSelectionList } from "./selection-list/HeroSelectionList.tsx";
@@ -40,7 +40,28 @@ export const UnitSelector = () => {
   const { updateBuilderSidebar, heroSelection, selectedFaction, factionType } =
     useRosterBuildingState();
 
+  const listRef = useRef<HTMLDivElement>();
+  const [listHeight, setListHeight] = useState("");
   const [filterValue, setFilterValue] = useState("");
+
+  const updateListHeight = () => {
+    const listRect = listRef.current?.getBoundingClientRect();
+    if (listRect.top > 0) {
+      const height = `calc(100svh - ${listRect.top}px)`;
+      setListHeight(height);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateListHeight);
+    window.addEventListener("scroll", updateListHeight);
+    return () => {
+      window.removeEventListener("resize", updateListHeight);
+      window.removeEventListener("scroll", updateListHeight);
+    };
+  }, []);
+
+  useEffect(() => updateListHeight());
 
   useEffect(() => {
     setFilterValue("");
@@ -70,15 +91,15 @@ export const UnitSelector = () => {
           <CloseUnitSelectorButton />
         </Box>
       </Stack>
-      <Stack spacing={1} sx={{ mt: 1 }}>
+      <Stack spacing={1} sx={{ mt: 1, position: "relative" }}>
         <TextField
           id="selection-filter"
           placeholder={
             heroSelection
               ? factionType.includes("LL")
-                ? `Search for any hero inside ${selectedFaction}`
+                ? `Search for any hero from ${selectedFaction}`
                 : `Search for any hero ${factionType ? "from the forces of " + factionType.split(" ")[0].toLowerCase() : ""}`
-              : `Search for a unit in ${selectedFaction}`
+              : `Search for any unit from ${selectedFaction}`
           }
           size="small"
           value={filterValue}
@@ -97,7 +118,17 @@ export const UnitSelector = () => {
             },
           }}
         />
-        <Stack spacing={1} sx={{ mt: 1 }}>
+        <Stack
+          ref={listRef}
+          spacing={1}
+          sx={{
+            mt: 1,
+            position: "sticky",
+            height: listHeight,
+            overflowY: "scroll",
+            scrollbarWidth: 0,
+          }}
+        >
           {heroSelection ? (
             <HeroSelectionList faction={selectedFaction} filter={filterValue} />
           ) : (
