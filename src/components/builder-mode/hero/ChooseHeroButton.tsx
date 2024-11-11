@@ -2,7 +2,6 @@ import { Paper } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
 import { FunctionComponent } from "react";
 import fallbackLogo from "../../../assets/images/default.png";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
@@ -15,8 +14,8 @@ type ChooseHeroButtonProps = {
 export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
   warbandId,
 }) => {
-  const { updateBuilderSidebar } = useRosterBuildingState();
-  const theme = useTheme();
+  const { updateBuilderSidebar, warriorSelectionFocus } =
+    useRosterBuildingState();
   const scrollToTop = useScrollToTop("sidebar");
 
   const handleClick = () => {
@@ -35,8 +34,13 @@ export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
       sx={{
         p: 2,
         cursor: "pointer",
+        backgroundColor:
+          warriorSelectionFocus[0] === warbandId &&
+          warriorSelectionFocus[1] === ""
+            ? "lightblue"
+            : "",
         "&:hover": {
-          backgroundColor: theme.palette.grey["300"],
+          filter: "brightness(75%)",
         },
       }}
     >

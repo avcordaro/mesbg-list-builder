@@ -97,14 +97,16 @@ export const UnitSelector = () => {
             },
           }}
         />
-        {heroSelection ? (
-          <HeroSelectionList faction={selectedFaction} filter={filterValue} />
-        ) : (
-          <>
-            <WarriorSelectionList filter={filterValue} />
-            <SiegeEquipmentSelectionList filter={filterValue} />
-          </>
-        )}
+        <Stack spacing={1} sx={{ mt: 1 }}>
+          {heroSelection ? (
+            <HeroSelectionList faction={selectedFaction} filter={filterValue} />
+          ) : (
+            <>
+              <WarriorSelectionList filter={filterValue} />
+              <SiegeEquipmentSelectionList filter={filterValue} />
+            </>
+          )}
+        </Stack>
       </Stack>
     </Stack>
   );
