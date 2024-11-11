@@ -11,8 +11,6 @@ export const MwfBadge = ({ unit }: { unit: Unit }) => {
   return (
     <Stack
       direction="row"
-      justifyContent="center"
-      alignItems="center"
       component="div"
       sx={{
         m: 0,

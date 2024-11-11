@@ -112,6 +112,7 @@ export const SelectRoster = () => {
                     <InputAdornment
                       {...(params.InputProps.endAdornment as ReactElement)
                         .props}
+                      position="end"
                       style={{ position: "absolute" }}
                     >
                       <Tooltip title="Save the current roster with a name">

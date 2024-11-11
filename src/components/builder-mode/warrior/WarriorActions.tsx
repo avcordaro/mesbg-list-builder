@@ -95,13 +95,8 @@ export const WarriorActions = ({
   unit: Unit;
   warbandId: string;
 }) => {
-  const {
-    roster,
-    factionSelection,
-    deleteUnit,
-    duplicateUnit,
-    updateBuilderSidebar,
-  } = useRosterBuildingState();
+  const { roster, deleteUnit, duplicateUnit, updateBuilderSidebar } =
+    useRosterBuildingState();
   const { setCurrentModal } = useAppState();
   const { useDenseMode } = useUserPreferences();
 
@@ -118,14 +113,13 @@ export const WarriorActions = ({
       return;
     }
 
-    const { faction_type, faction } = hero;
+    const { faction } = hero;
 
     updateBuilderSidebar({
       heroSelection: false,
       warriorSelection: true,
       warriorSelectionFocus: [warbandId, unit.id],
-      factionSelection: { ...factionSelection, [faction_type]: faction },
-      tabSelection: faction_type,
+      selectedFaction: faction,
     });
     setTimeout(scrollToTop, null);
   };

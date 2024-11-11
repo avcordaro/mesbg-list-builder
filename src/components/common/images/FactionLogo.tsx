@@ -17,6 +17,10 @@ export const FactionLogo: FunctionComponent<FactionLogoProps> = ({
       height: 24,
       display: "inline-block",
       backgroundColor: "transparent",
+      "& .image": {
+        filter:
+          "invert(1) sepia(1) saturate(1000%) hue-rotate(200deg) brightness(0.8)",
+      },
     }}
   >
     <Avatar

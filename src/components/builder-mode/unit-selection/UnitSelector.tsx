@@ -1,16 +1,17 @@
+import { Close } from "@mui/icons-material";
+import ClearIcon from "@mui/icons-material/Clear";
+import { InputAdornment, TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
-import Tab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { ImCross } from "react-icons/im";
-import { useMesbgData } from "../../../hooks/mesbg-data.ts";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { Tabs as TabName } from "../../../state/roster-building/builder-selection";
-import { FactionType } from "../../../types/factions.ts";
-import { FactionTypeTab } from "./FactionTypeTab.tsx";
+import { FactionPicker } from "./FactionPicker.tsx";
+import { HeroSelectionList } from "./selection-list/HeroSelectionList.tsx";
+import { SiegeEquipmentSelectionList } from "./selection-list/SiegeEquipmentSelectionList.tsx";
+import { WarriorSelectionList } from "./selection-list/WarriorSelectionList.tsx";
 
 const CloseUnitSelectorButton = () => {
   const { updateBuilderSidebar } = useRosterBuildingState();
@@ -23,76 +24,88 @@ const CloseUnitSelectorButton = () => {
         })
       }
       sx={{
-        border: 1,
         borderRadius: 2,
         backgroundColor: "inherit",
         color: "grey",
       }}
     >
-      <ImCross />
+      <Close />
     </IconButton>
   );
 };
 
-function a11yProps(value: string) {
-  return {
-    id: `${value}-tab`,
-    "aria-controls": `tabpanel-${value}`,
-  };
-}
-
 export const UnitSelector = () => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
-  const { updateBuilderSidebar, tabSelection, factionType, heroSelection } =
+  const { updateBuilderSidebar, heroSelection, selectedFaction, factionType } =
     useRosterBuildingState();
-  const { factionsGroupedByType } = useMesbgData();
 
-  const tabNames = [
-    "Good Army",
-    "Evil Army",
-    "Good LL",
-    "Evil LL",
-  ] as TabName[];
+  const [filterValue, setFilterValue] = useState("");
 
-  const setTabSelection = (tab: number) => {
-    updateBuilderSidebar({
-      tabSelection: tabNames[tab],
-    });
+  useEffect(() => {
+    setFilterValue("");
+  }, [heroSelection, selectedFaction]);
+
+  const handleClear = () => {
+    setFilterValue("");
   };
 
   return (
-    <Stack>
-      <Stack direction={isTablet ? "column-reverse" : "row"} alignItems="end">
+    <Stack sx={{ width: "calc(100% - 1px)" }}>
+      <Stack
+        direction={isTablet ? "column-reverse" : "row"}
+        alignItems="end"
+        spacing={1}
+      >
         <Box sx={{ width: "100%" }}>
-          <Tabs
-            value={tabNames.indexOf(tabSelection)}
-            onChange={(_, tab) => setTabSelection(tab)}
-            variant="scrollable"
-            scrollButtons="auto"
-            allowScrollButtonsMobile
-          >
-            {Object.keys(factionsGroupedByType).map((type: FactionType) => (
-              <Tab
-                key={type}
-                label={type}
-                disabled={
-                  !heroSelection || (factionType !== "" && factionType !== type)
-                }
-                {...a11yProps(type)}
-              />
-            ))}
-          </Tabs>
+          <FactionPicker
+            onChange={(v) =>
+              updateBuilderSidebar({
+                selectedFaction: v.title,
+              })
+            }
+          />
         </Box>
         <Box>
           <CloseUnitSelectorButton />
         </Box>
       </Stack>
-      <Box>
-        {Object.keys(factionsGroupedByType).map((type: FactionType) => (
-          <FactionTypeTab key={type} type={type} activeTab={tabSelection} />
-        ))}
-      </Box>
+      <Stack spacing={1} sx={{ mt: 1 }}>
+        <TextField
+          id="selection-filter"
+          placeholder={
+            heroSelection
+              ? factionType.includes("LL")
+                ? `Search for any hero inside ${selectedFaction}`
+                : `Search for any hero ${factionType ? "from the forces of " + factionType.split(" ")[0].toLowerCase() : ""}`
+              : `Search for a unit in ${selectedFaction}`
+          }
+          size="small"
+          value={filterValue}
+          onChange={(event: ChangeEvent<HTMLInputElement>) => {
+            setFilterValue(event.target.value);
+          }}
+          slotProps={{
+            input: {
+              endAdornment: filterValue && (
+                <InputAdornment position="end">
+                  <IconButton onClick={handleClear} edge="end">
+                    <ClearIcon />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            },
+          }}
+        />
+        {heroSelection ? (
+          <HeroSelectionList faction={selectedFaction} filter={filterValue} />
+        ) : (
+          <>
+            <WarriorSelectionList filter={filterValue} />
+            <SiegeEquipmentSelectionList filter={filterValue} />
+          </>
+        )}
+      </Stack>
     </Stack>
   );
 };
