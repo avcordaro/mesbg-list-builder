@@ -1,7 +1,11 @@
-import { Autocomplete, TextField } from "@mui/material";
+import { Autocomplete, ListItemIcon, TextField } from "@mui/material";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
 import { FunctionComponent, useEffect, useState } from "react";
 import { useMesbgData } from "../../../hooks/mesbg-data.ts";
 import { Faction, FactionType } from "../../../types/factions.ts";
+import { FactionLogo } from "../images/FactionLogo.tsx";
 
 type Option = {
   title: Faction;
@@ -72,6 +76,18 @@ export const ArmyPicker: FunctionComponent<ArmyPickerProps> = (props) => {
       multiple
       options={options}
       getOptionLabel={(option) => option.title}
+      renderOption={(props, option) => {
+        return (
+          <ListItem {...props}>
+            <ListItemIcon>
+              <FactionLogo faction={option.title} />
+            </ListItemIcon>
+            <ListItemText>
+              <Typography>{option.title}</Typography>
+            </ListItemText>
+          </ListItem>
+        );
+      }}
       groupBy={(option) => option.type}
       value={value}
       onChange={(_, newValue) => {

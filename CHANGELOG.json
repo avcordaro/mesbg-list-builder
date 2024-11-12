@@ -1,11 +1,23 @@
 {
   "main": {
-    "changed": [
-      "Farmer Maggot now automatically includes 3 extra models to your roster counts when selecting him. Grip, Fang and Wolf no longer need to be selected as a warrior in the warband, and their profile card is now provided alongside Farmer Maggot."
+    "added": [
+      "Revamped the faction selection and unit filters, now allowing you to search directly for heroes outside your current roster and switching the faction selection accordingly.",
+      "Desktop: Added a small blueish highlight to the cards you are currently (re)selecting a unit for in the unit selector",
+      "Mobile: Added an textual indicator  at the top of the screen indicating for which warband you are (re)selecting a unit for when the unit selector is active.",
+      "Added a scrollbar to the unit selector to allow selection of heroes or warriors that are at the bottom of the list without having to scroll the entire roster first.",
+      "Added the return to unit card functionality to the close button of the unit selector",
+      "Added a border to the hero cards in the roster giving a small indication of which units are heroic. "
     ],
-    "Fixed": [
+    "changed": [
+      "Farmer Maggot now automatically includes 3 extra models to your roster counts when selecting him. Grip, Fang and Wolf no longer need to be selected as a warrior in the warband, and their profile card is now provided alongside Farmer Maggot.",
+      "The armies selection dropdown in the game result dialog now also includes the faction icons."
+    ],
+    "bugfixes": [
       "Fixed the Arnor keyword that appears on the profile cards for Rangers of Arnor.",
-      "Fixed the missing Shield option for Heralds of the Dead, in The Return of the King LL."
+      "Fixed the missing Shield option for Heralds of the Dead, in The Return of the King LL.",
+      "Fixed the missing MWF badge on independent heros taken as warrior when using the normal UI mode.",
+      "Fixed an issue with 'choose a warrior' buttons not being removed when reselecting the warband hero into an Independent Hero.",
+      "Fixed a couple of typos on the profile cards for Rutabi and the Wild Man of Dunland."
     ]
   },
   "6.14": {

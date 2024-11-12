@@ -36,6 +36,12 @@ export const useMesbgData = () => {
     ) as Unit[];
   };
 
+  const getHeroesRaw = (): Unit[] => {
+    return rawData.filter(
+      (data) => !["Independent Hero*", "Warrior"].includes(data.unit_type),
+    ) as Unit[];
+  };
+
   function getEligibleWarbandUnitsForHero(
     warbandHero: Unit,
     checkUnique: boolean = true,
@@ -66,6 +72,7 @@ export const useMesbgData = () => {
     factionsGroupedByType,
     getFactionsOfType,
     getHeroesFromFaction,
+    getHeroesRaw,
     getEligibleWarbandUnits,
     getEligibleWarbandUnitsForHero,
   };

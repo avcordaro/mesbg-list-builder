@@ -15,8 +15,7 @@ import { isDefinedUnit, Option, Unit } from "../types/unit.ts";
 import { useJsonValidation } from "./json-validation.ts";
 
 export const useExternalStorage = () => {
-  const { roster, setRoster, updateBuilderSidebar, factionSelection } =
-    useRosterBuildingState();
+  const { roster, setRoster, updateBuilderSidebar } = useRosterBuildingState();
   const { triggerAlert } = useAppState();
   const { validateKeys } = useJsonValidation();
 
@@ -64,16 +63,12 @@ export const useExternalStorage = () => {
     }
 
     const rehydratedRoster = rehydrateRoster(uploadedRoster);
-    const { faction, faction_type } = rehydratedRoster.warbands.find(
-      (warband) => isDefinedUnit(warband.hero),
-    )?.hero || { faction: "Minas Tirith", faction_type: "Good Army" };
+    const { faction } = rehydratedRoster.warbands.find((warband) =>
+      isDefinedUnit(warband.hero),
+    )?.hero || { faction: null };
     setRoster(rehydratedRoster as Roster);
     updateBuilderSidebar({
-      factionSelection: {
-        ...factionSelection,
-        [faction_type]: faction,
-      },
-      tabSelection: faction_type,
+      selectedFaction: faction,
     });
   };
 

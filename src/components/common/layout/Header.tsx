@@ -30,10 +30,61 @@ import { useRosterBuildingState } from "../../../state/roster-building";
 import { DrawerTypes } from "../../drawer/drawers.tsx";
 import { ModalTypes } from "../../modal/modals.tsx";
 
+const UnitSelectionFocus = () => {
+  const {
+    roster,
+    warriorSelection,
+    heroSelection,
+    warriorSelectionFocus: [warbandId, warriorId],
+  } = useRosterBuildingState();
+
+  if (!warriorSelection) return <></>;
+
+  const warbandIndex = roster.warbands.findIndex(
+    (warband) => warband.id === warbandId,
+  );
+  const warband = roster.warbands.find((warband) => warband.id === warbandId);
+  const heroName = warband?.hero?.name
+    ? warband.hero.name.split(/[,|\\(]/)[0]?.trim()
+    : null;
+
+  const warrior = warband?.units.find((warrior) => warrior.id === warriorId);
+  const warriorName = warrior?.name
+    ? warrior.name.split(/[,|\\(]/)[0]?.trim()
+    : null;
+
+  return (
+    <Box sx={{ pt: 1 }}>
+      {heroSelection ? (
+        <>
+          <Typography>Selecting Hero for warband {warbandIndex}</Typography>
+        </>
+      ) : warriorName ? (
+        <>
+          <Typography>
+            {!heroName
+              ? `Selecting replacement for ${warriorName} in warband ${warbandIndex}.`
+              : `Selecting replacement for ${warriorName} in ${heroName}'s warband.`}
+          </Typography>
+        </>
+      ) : (
+        <>
+          <Typography>
+            {!heroName
+              ? `Selecting unit for warband ${warbandIndex}.`
+              : `Selecting unit for ${heroName}'s warband.`}
+          </Typography>
+        </>
+      )}
+    </Box>
+  );
+};
+
 const RosterInfoBar = () => {
   const { roster } = useRosterBuildingState();
   const breakPoint = Math.ceil(roster.num_units / 2);
   const theme = useTheme();
+  const isTablet = useMediaQuery(theme.breakpoints.down("lg"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
@@ -92,6 +143,7 @@ const RosterInfoBar = () => {
           </Typography>
         </Stack>
       )}
+      {isTablet && <UnitSelectionFocus />}
     </Box>
   );
 };

@@ -7,6 +7,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
 import { useUserPreferences } from "../../../state/preference";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
@@ -29,12 +30,28 @@ export const WarbandHero: FunctionComponent<WarbandHeroProps> = ({
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const { useDenseMode } = useUserPreferences();
+  const { roster } = useRosterBuildingState();
+
+  // color & saturation for the hero indicator
+  const isLeader = roster.leader_warband_id === warbandId;
+
   return (
-    <Card sx={{ p: 1 }} elevation={2}>
+    <Card
+      sx={{
+        p: 0.5,
+      }}
+      elevation={2}
+    >
       <Stack
         direction={isMobile ? "column" : "row"}
         alignItems="start"
         spacing={isMobile && useDenseMode ? 0 : 2}
+        sx={{
+          p: 0.5,
+          border: ({ palette: { success, grey } }) =>
+            "3px " +
+            (isLeader ? "solid " + success.light : "dashed " + grey.A400),
+        }}
       >
         <Collapse
           in={!collapsed}

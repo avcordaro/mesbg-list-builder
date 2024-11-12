@@ -7,6 +7,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FunctionComponent } from "react";
 import { useUserPreferences } from "../../../state/preference";
+import { useRosterBuildingState } from "../../../state/roster-building";
 import { Unit } from "../../../types/unit.ts";
 import { UnitProfilePicture } from "../../common/images/UnitProfilePicture.tsx";
 import { MwfBadge } from "../../common/might-will-fate/MwfBadge.tsx";
@@ -28,6 +29,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const { useDenseMode } = useUserPreferences();
+  const { warriorSelectionFocus, warriorSelection } = useRosterBuildingState();
   const optionsString = unit.options
     .filter((o) => o.opt_quantity)
     .map((o) => o.option)
@@ -37,10 +39,26 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
     // surround the string with [] (if there is at least 1 option.)
     .replace(/^(.+)$/, "[$1]");
   return (
-    <Card sx={{ p: 1 }} elevation={2}>
+    <Card
+      sx={{
+        p: 0.5,
+        background: () => {
+          const active =
+            warriorSelection && warriorSelectionFocus[1] === unit.id ? 90 : 100;
+          return `hsl(195, 100%, ${active}%)`;
+        },
+      }}
+      elevation={2}
+    >
       <Stack
         direction={isMobile ? "column" : "row"}
         alignItems="stretch"
+        sx={{
+          p: 0.5,
+          border: ({ palette: { grey } }) =>
+            "3px dashed " +
+            (unit.unit_type.includes("Hero") ? grey.A400 : "transparent"),
+        }}
         spacing={2}
       >
         <Collapse
@@ -135,8 +153,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
             {/* Unit type & MWF */}
             {unit.unit_type !== "Warrior" &&
               unit.unit_type !== "Siege" &&
-              !isMobile &&
-              useDenseMode && (
+              !(isMobile && useDenseMode) && (
                 <Stack
                   direction={isMobile ? "column" : "row"}
                   spacing={1}

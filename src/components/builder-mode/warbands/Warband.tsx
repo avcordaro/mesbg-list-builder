@@ -10,8 +10,9 @@ import { forwardRef, useEffect, useImperativeHandle, useState } from "react";
 import { useMesbgData } from "../../../hooks/mesbg-data.ts";
 import { useScrollToTop } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
-import { isDefinedUnit, Unit } from "../../../types/unit.ts";
+import { isDefinedUnit } from "../../../types/unit.ts";
 import { Warband as WarbandType } from "../../../types/warband.ts";
+import { isHeroWhoLeads } from "../../../utils/hero.ts";
 import { ChooseHeroButton } from "../hero/ChooseHeroButton.tsx";
 import { WarbandHero } from "../hero/WarbandHero.tsx";
 import { ChooseWarriorButton } from "../warrior/ChooseWarriorButton.tsx";
@@ -67,27 +68,6 @@ export const Warband = forwardRef<WarbandActions, WarbandProps>(
         warriorSelectionFocus: [warband.id, createdUnitId],
       });
       setTimeout(scrollToTop, null);
-    };
-
-    const isHeroWhoLeads = (hero: Unit): boolean => {
-      if (!isDefinedUnit(hero)) return false;
-
-      if (
-        ["Independent Hero", "Independent Hero*", "Siege Engine"].includes(
-          hero.unit_type,
-        )
-      )
-        return false;
-
-      if (
-        [
-          "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)",
-          "[desolator_of_the_north] smaug",
-        ].includes(hero.model_id)
-      )
-        return false;
-
-      return true;
     };
 
     useImperativeHandle(ref, () => ({
