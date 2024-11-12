@@ -99,7 +99,7 @@ export const FactionPicker: FunctionComponent<FactionPickerProps> = (props) => {
         !heroSelection
           ? "You can only select an army when selecting an hero"
           : factionType.includes("LL")
-            ? "Legendary legions cannot ally therefor you cannot select a second army."
+            ? "Legendary legions cannot ally therefore you cannot select a second army."
             : ""
       }
     >

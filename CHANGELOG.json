@@ -16,7 +16,8 @@
       "Fixed the Arnor keyword that appears on the profile cards for Rangers of Arnor.",
       "Fixed the missing Shield option for Heralds of the Dead, in The Return of the King LL.",
       "Fixed the missing MWF badge on independent heros taken as warrior when using the normal UI mode.",
-      "Fixed an issue with 'choose a warrior' buttons not being removed when reselecting the warband hero into an Independent Hero."
+      "Fixed an issue with 'choose a warrior' buttons not being removed when reselecting the warband hero into an Independent Hero.",
+      "Fixed a couple of typos on the profile cards for Rutabi and the Wild Man of Dunland."
     ]
   },
   "6.14": {
