@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
+import { useScrollToElement } from "../../../hooks/scroll-to.ts";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { FactionPicker } from "./FactionPicker.tsx";
 import { HeroSelectionList } from "./selection-list/HeroSelectionList.tsx";
@@ -12,15 +13,21 @@ import { SiegeEquipmentSelectionList } from "./selection-list/SiegeEquipmentSele
 import { WarriorSelectionList } from "./selection-list/WarriorSelectionList.tsx";
 
 const CloseUnitSelectorButton = () => {
-  const { updateBuilderSidebar } = useRosterBuildingState();
+  const { updateBuilderSidebar, warriorSelectionFocus } =
+    useRosterBuildingState();
+  const scrollTo = useScrollToElement();
 
   return (
     <IconButton
-      onClick={() =>
+      onClick={() => {
         updateBuilderSidebar({
           warriorSelection: false,
-        })
-      }
+        });
+        setTimeout(() => {
+          const unitId = warriorSelectionFocus[1] || warriorSelectionFocus[0];
+          scrollTo(unitId);
+        }, null);
+      }}
       sx={{
         borderRadius: 2,
         backgroundColor: "inherit",

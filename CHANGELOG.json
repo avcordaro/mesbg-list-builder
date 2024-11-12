@@ -4,7 +4,8 @@
       "Revamped the faction selection and unit filters, now allowing you to search directly for heroes outside your current roster and switching the faction selection accordingly.",
       "Desktop: Added a small blueish highlight to the cards you are currently (re)selecting a unit for in the unit selector",
       "Mobile: Added an textual indicator  at the top of the screen indicating for which warband you are (re)selecting a unit for when the unit selector is active.",
-      "Added a scrollbar to the unit selector to allow selection of heroes or warriors that are at the bottom of the list without having to scroll the entire roster first."
+      "Added a scrollbar to the unit selector to allow selection of heroes or warriors that are at the bottom of the list without having to scroll the entire roster first.",
+      "Added the return to unit card functionality to the close button of the unit selector"
     ],
     "changed": [
       "Farmer Maggot now automatically includes 3 extra models to your roster counts when selecting him. Grip, Fang and Wolf no longer need to be selected as a warrior in the warband, and their profile card is now provided alongside Farmer Maggot.",
