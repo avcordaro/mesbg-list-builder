@@ -11,7 +11,7 @@ type HeroSelectionListProps = {
   filter: string;
 };
 
-const ForgeinHeroList: FunctionComponent<HeroSelectionListProps> = ({
+const ForeignHeroList: FunctionComponent<HeroSelectionListProps> = ({
   filter,
   faction,
 }) => {
@@ -31,13 +31,7 @@ const ForgeinHeroList: FunctionComponent<HeroSelectionListProps> = ({
             You are looking at heroes outside of {faction}!
           </Alert>
           {foreignHeroes.map((hero) => (
-            <>
-              <UnitSelectionButton
-                key={uuid()}
-                unitData={hero}
-                foreign={true}
-              />
-            </>
+            <UnitSelectionButton key={uuid()} unitData={hero} foreign={true} />
           ))}
         </>
       ) : (
@@ -67,7 +61,7 @@ export const HeroSelectionList: FunctionComponent<HeroSelectionListProps> = ({
           <UnitSelectionButton key={uuid()} unitData={hero} />
         ))}
       {filteredHeroes.length === 0 && !factionType.includes("LL") && (
-        <ForgeinHeroList faction={faction} filter={filter} />
+        <ForeignHeroList faction={faction} filter={filter} />
       )}
       {filteredHeroes.length === 0 && factionType.includes("LL") && (
         <Alert severity="warning">
