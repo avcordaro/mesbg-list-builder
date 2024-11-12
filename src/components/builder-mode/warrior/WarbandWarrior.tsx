@@ -29,7 +29,7 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const { useDenseMode } = useUserPreferences();
-  const { warriorSelectionFocus } = useRosterBuildingState();
+  const { warriorSelectionFocus, warriorSelection } = useRosterBuildingState();
   const optionsString = unit.options
     .filter((o) => o.opt_quantity)
     .map((o) => o.option)
@@ -43,7 +43,9 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
       sx={{
         p: 1,
         backgroundColor:
-          warriorSelectionFocus[1] === unit.id ? "lightblue" : "",
+          warriorSelection && warriorSelectionFocus[1] === unit.id
+            ? "lightblue"
+            : "",
       }}
       elevation={2}
     >

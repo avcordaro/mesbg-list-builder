@@ -14,7 +14,7 @@ type ChooseHeroButtonProps = {
 export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
   warbandId,
 }) => {
-  const { updateBuilderSidebar, warriorSelectionFocus } =
+  const { updateBuilderSidebar, warriorSelectionFocus, warriorSelection } =
     useRosterBuildingState();
   const scrollToTop = useScrollToTop("sidebar");
 
@@ -35,6 +35,7 @@ export const ChooseHeroButton: FunctionComponent<ChooseHeroButtonProps> = ({
         p: 2,
         cursor: "pointer",
         backgroundColor:
+          warriorSelection &&
           warriorSelectionFocus[0] === warbandId &&
           warriorSelectionFocus[1] === ""
             ? "lightblue"

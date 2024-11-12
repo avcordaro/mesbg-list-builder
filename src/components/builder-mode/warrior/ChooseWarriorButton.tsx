@@ -22,8 +22,13 @@ type ChooseWarriorButtonProps = {
 export const ChooseWarriorButton: FunctionComponent<
   ChooseWarriorButtonProps
 > = ({ unit, warbandId }) => {
-  const { roster, deleteUnit, updateBuilderSidebar, warriorSelectionFocus } =
-    useRosterBuildingState();
+  const {
+    roster,
+    deleteUnit,
+    updateBuilderSidebar,
+    warriorSelectionFocus,
+    warriorSelection,
+  } = useRosterBuildingState();
   const { palette } = useTheme();
   const scrollToTop = useScrollToTop("sidebar");
 
@@ -65,7 +70,9 @@ export const ChooseWarriorButton: FunctionComponent<
               p: 2,
               cursor: "pointer",
               backgroundColor:
-                warriorSelectionFocus[1] === unit.id ? "lightblue" : "",
+                warriorSelection && warriorSelectionFocus[1] === unit.id
+                  ? "lightblue"
+                  : "",
               "&:hover": {
                 filter: "brightness(75%)",
               },
