@@ -69,7 +69,7 @@ export const UnitSelector = () => {
 
   return (
     <Stack sx={{ width: "calc(100% - 1px)" }}>
-      <Stack direction={"row"} alignItems="end" spacing={1}>
+      <Stack direction="row" alignItems="end" spacing={1}>
         <Box sx={{ width: "100%" }}>
           <FactionPicker
             onChange={(v) =>

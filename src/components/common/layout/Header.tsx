@@ -44,11 +44,11 @@ const UnitSelectionFocus = () => {
     (warband) => warband.id === warbandId,
   );
   const warband = roster.warbands.find((warband) => warband.id === warbandId);
-  const heroName = warband.hero?.name
+  const heroName = warband?.hero?.name
     ? warband.hero.name.split(/[,|\\(]/)[0]?.trim()
     : null;
 
-  const warrior = warband.units.find((warrior) => warrior.id === warriorId);
+  const warrior = warband?.units.find((warrior) => warrior.id === warriorId);
   const warriorName = warrior?.name
     ? warrior.name.split(/[,|\\(]/)[0]?.trim()
     : null;

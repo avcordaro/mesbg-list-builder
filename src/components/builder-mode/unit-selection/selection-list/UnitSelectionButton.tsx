@@ -127,7 +127,7 @@ export function UnitSelectionButton({
             </Box>
           </Stack>
 
-          <Stack gap={1} direction="row" sx={{ mt: 1 }}>
+          <Stack gap={1} direction="row" flexWrap="wrap" sx={{ mt: 1 }}>
             {unitData.unit_type !== "Warrior" && (
               <Chip
                 label={unitData.unit_type}
@@ -147,6 +147,9 @@ export function UnitSelectionButton({
                   backgroundColor: getFactionColor(unitData.faction),
                   color: "white",
                   fontWeight: "bold",
+                  maxWidth: "24ch",
+                  whiteSpace: "nowrap",
+                  textOverflow: "ellipsis",
                 }}
               />
             )}

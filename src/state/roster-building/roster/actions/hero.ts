@@ -1,5 +1,6 @@
 import rawData from "../../../../assets/data/hero_constraint_data.json";
 import { Unit } from "../../../../types/unit.ts";
+import { isHeroWhoLeads } from "../../../../utils/hero.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
   handleAzog,
@@ -32,9 +33,13 @@ export const assignHero =
             ...hero,
             id: heroId,
           },
-          units: warband.units.map((unit) =>
-            heroCanTakeUnit(hero, unit) ? unit : { id: unit.id, name: null },
-          ),
+          units: isHeroWhoLeads(hero)
+            ? warband.units.map((unit) =>
+                heroCanTakeUnit(hero, unit)
+                  ? unit
+                  : { id: unit.id, name: null },
+              )
+            : [],
         };
       }),
     },
