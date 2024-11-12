@@ -130,6 +130,7 @@ export const FactionPicker: FunctionComponent<FactionPickerProps> = (props) => {
           onOptionSelectionChanged(newValue);
         }}
         filterSelectedOptions
+        blurOnSelect={true}
         renderInput={(params) => (
           <TextField {...params} placeholder="Army" size="small" />
         )}
