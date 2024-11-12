@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.15": {
     "added": [
       "Revamped the faction selection and unit filters, now allowing you to search directly for heroes outside your current roster and switching the faction selection accordingly.",
       "Desktop: Added a small blueish highlight to the cards you are currently (re)selecting a unit for in the unit selector",
