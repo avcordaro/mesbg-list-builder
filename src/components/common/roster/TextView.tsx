@@ -102,7 +102,7 @@ export function RosterTextView({
           .join("  \n");
 
     return `
-    | Total Points: ${roster.points} | Total Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} | Total Bows ${roster.bow_count} | Total Might ${roster.might_total} |
+    | Points: ${roster.points} | Units: ${roster.num_units} | Break Point: ${Math.round(0.5 * roster.num_units * 100) / 100} | Bows ${roster.bow_count} | Might ${roster.might_total} |
     
     Alliance Level: ${allianceLevel}
     
