@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Fixed the alliance level shown on the roster screenshot view to prevent it from wrapping."
+    ]
+  },
   "6.15": {
     "added": [
       "Revamped the faction selection and unit filters, now allowing you to search directly for heroes outside your current roster and switching the faction selection accordingly.",
