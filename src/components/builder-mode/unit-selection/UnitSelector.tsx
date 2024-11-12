@@ -4,8 +4,6 @@ import { InputAdornment, TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { FactionPicker } from "./FactionPicker.tsx";
@@ -35,8 +33,6 @@ const CloseUnitSelectorButton = () => {
 };
 
 export const UnitSelector = () => {
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("xl"));
   const { updateBuilderSidebar, heroSelection, selectedFaction, factionType } =
     useRosterBuildingState();
 
@@ -73,11 +69,7 @@ export const UnitSelector = () => {
 
   return (
     <Stack sx={{ width: "calc(100% - 1px)" }}>
-      <Stack
-        direction={isTablet ? "column-reverse" : "row"}
-        alignItems="end"
-        spacing={1}
-      >
+      <Stack direction={"row"} alignItems="end" spacing={1}>
         <Box sx={{ width: "100%" }}>
           <FactionPicker
             onChange={(v) =>
