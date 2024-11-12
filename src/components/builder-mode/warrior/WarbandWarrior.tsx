@@ -41,17 +41,24 @@ export const WarbandWarrior: FunctionComponent<WarbandWarriorProps> = (
   return (
     <Card
       sx={{
-        p: 1,
-        backgroundColor:
-          warriorSelection && warriorSelectionFocus[1] === unit.id
-            ? "lightblue"
-            : "",
+        p: 0.5,
+        background: () => {
+          const active =
+            warriorSelection && warriorSelectionFocus[1] === unit.id ? 90 : 100;
+          return `hsl(195, 100%, ${active}%)`;
+        },
       }}
       elevation={2}
     >
       <Stack
         direction={isMobile ? "column" : "row"}
         alignItems="stretch"
+        sx={{
+          p: 0.5,
+          border: ({ palette: { grey } }) =>
+            "3px dashed " +
+            (unit.unit_type.includes("Hero") ? grey.A400 : "transparent"),
+        }}
         spacing={2}
       >
         <Collapse
