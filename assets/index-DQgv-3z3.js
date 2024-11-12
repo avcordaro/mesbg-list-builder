@@ -277,7 +277,7 @@ ${B.join(`
       ${p(w.units.filter(Ie))}  
       `).join(`  
 `);return`
-    | Total Points: ${n.points} | Total Units: ${n.num_units} | Break Point: ${Math.round(.5*n.num_units*100)/100} | Total Bows ${n.bow_count} | Total Might ${n.might_total} |
+    | Points: ${n.points} | Units: ${n.num_units} | Break Point: ${Math.round(.5*n.num_units*100)/100} | Bows ${n.bow_count} | Might ${n.might_total} |
     
     Alliance Level: ${i}
     
