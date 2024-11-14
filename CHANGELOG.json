@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Fixed the alliance level shown on the roster screenshot view to prevent it from wrapping."
+      "Fixed the alliance level shown on the roster screenshot view to prevent it from wrapping.",
+      "Fixed the missing Orc Drummer from the Army of Gothmog LL when adding warriors to a warband."
     ]
   },
   "6.15": {

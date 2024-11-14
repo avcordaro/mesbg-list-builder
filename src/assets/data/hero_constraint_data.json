@@ -8334,6 +8334,7 @@
   "[the_army_of_gothmog] goroth":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8350,6 +8351,7 @@
   "[the_army_of_gothmog] gothmog":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8366,6 +8368,7 @@
   "[the_army_of_gothmog] gothmog's_enforcer":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8382,6 +8385,7 @@
   "[the_army_of_gothmog] guritz":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8398,6 +8402,7 @@
   "[the_army_of_gothmog] morannon_orc_captain":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8428,6 +8433,7 @@
   "[the_army_of_gothmog] orc_shaman":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8444,6 +8450,7 @@
   "[the_army_of_gothmog] orc_taskmaster":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
@@ -8460,6 +8467,7 @@
   "[the_army_of_gothmog] zagdush":[
     {
       "valid_warband_units":[
+        "[the_army_of_gothmog] orc_drummer",
         "[the_army_of_gothmog] mordor_troll",
         "[the_army_of_gothmog] morannon_orc",
         "[the_army_of_gothmog] orc_warrior"
