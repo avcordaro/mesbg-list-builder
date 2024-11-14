@@ -1,7 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { isDefinedUnit } from "../../../../types/unit.ts";
 import { Warband } from "../../../../types/warband.ts";
-import { findAndRemoveItem } from "../../../../utils/array.ts";
 import { RosterBuildingState } from "../../index.ts";
 import {
   adjustPotentialArmyWideSpecialRuleOptions,
@@ -30,8 +29,7 @@ export const addWarband =
 export const deleteWarband =
   (warbandId: string) =>
   ({ roster }: RosterBuildingState): Partial<RosterState> => {
-    const deletedWarband = findAndRemoveItem(
-      roster.warbands,
+    const deletedWarband = roster.warbands.find(
       (warband) => warband.id === warbandId,
     );
 
@@ -53,10 +51,12 @@ export const deleteWarband =
           deletedWarband,
           roster.leader_warband_id,
         ),
-        warbands: roster.warbands.map((warband, index) => ({
-          ...warband,
-          num: index + 1,
-        })),
+        warbands: roster.warbands
+          .filter((warband) => warband.id !== warbandId)
+          .map((warband, index) => ({
+            ...warband,
+            num: index + 1,
+          })),
       },
     };
   };

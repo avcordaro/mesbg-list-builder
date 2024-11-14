@@ -3,10 +3,14 @@ import SaveIcon from "@mui/icons-material/Save";
 import ShareIcon from "@mui/icons-material/Share";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import { useEffect, useRef, useState } from "react";
 import { useDownload } from "../../hooks/download.ts";
 import { useAppState } from "../../state/app";
-import { useRosterBuildingState } from "../../state/roster-building";
+import {
+  useRosterBuildingState,
+  useTemporalRosterBuildingState,
+} from "../../state/roster-building";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Warbands } from "./warbands/Warbands.tsx";
 
@@ -16,6 +20,8 @@ export const BuilderMode = () => {
   const [fabOpen, setFabOpen] = useState(false);
   const { downloadProfileCards } = useDownload();
   const { roster } = useRosterBuildingState();
+  const { undo, redo, pastStates, futureStates } =
+    useTemporalRosterBuildingState((state) => state);
   const { setCurrentModal } = useAppState();
   const speedDialRef = useRef<HTMLDivElement | null>(null);
 
@@ -26,6 +32,19 @@ export const BuilderMode = () => {
 
     setFabBottom(`${Math.max(16, window.innerHeight - footerRect.top + 16)}px`);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!event.ctrlKey) return;
+
+      if (event.key === "z" && !event.shiftKey) undo();
+      else if (event.key === "y" || (event.shiftKey && event.key === "z"))
+        redo();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [undo, redo]);
 
   useEffect(() => {
     window.addEventListener("resize", updateFabBottom);
@@ -104,6 +123,11 @@ export const BuilderMode = () => {
 
   return (
     <>
+      <center>
+        <Typography variant="overline">
+          [ history: {pastStates.length} / future: {futureStates.length} ]
+        </Typography>
+      </center>
       <Warbands />
       <Box ref={speedDialRef}>
         <SpeedDial

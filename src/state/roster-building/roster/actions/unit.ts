@@ -7,7 +7,6 @@ import {
   Unit,
 } from "../../../../types/unit.ts";
 import { Warband } from "../../../../types/warband.ts";
-import { findAndRemoveItem } from "../../../../utils/array.ts";
 
 const findUnitById = (unitId: string) => (unit: Unit | FreshUnit) =>
   unit.id === unitId;
@@ -60,12 +59,16 @@ export const duplicateUnit =
         if (!isDefinedUnit(unitToDuplicate)) return warband;
         if (unitToDuplicate.unique) return warband;
 
-        warband.units.push({
-          ...unitToDuplicate,
-          id: uuid(),
-        });
-
-        return warband;
+        return {
+          ...warband,
+          units: [
+            ...warband.units,
+            {
+              ...unitToDuplicate,
+              id: uuid(),
+            },
+          ],
+        };
       }),
     },
   });
@@ -78,9 +81,10 @@ export const deleteUnit =
       warbands: roster.warbands.map((warband: Warband) => {
         if (warband.id !== warbandId) return warband;
 
-        findAndRemoveItem(warband.units, findUnitById(unitId));
-
-        return warband;
+        return {
+          ...warband,
+          units: warband.units.filter((unit) => unit.id !== unitId),
+        };
       }),
     },
   });

@@ -52,6 +52,7 @@ export const App = () => {
         if (!currentGameState) {
           initializeGameState();
         }
+        useRosterBuildingState.temporal.getState().clear();
 
         setLoaded(true);
       });

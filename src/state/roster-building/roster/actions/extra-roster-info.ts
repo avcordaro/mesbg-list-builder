@@ -21,45 +21,26 @@ import {
   getWarningsForCreatedRoster,
   makeAllianceSpecificRosterAjustments,
 } from "../calculations";
+import { RosterState } from "../index.ts";
 
-export const recalculate = (set) => {
-  set(
-    ({ roster }) => ({ ...updateFactionData(roster) }),
-    undefined,
-    "UPDATE_FACTION_DATA",
+export const recalculate = (state: RosterState) => {
+  state = { ...state, ...updateFactionData(state.roster) };
+  const adjustedRoster = recalculatePoints(
+    updateUnitCount(
+      makeAllianceSpecificRosterAjustments(
+        state.factions,
+        state.allianceLevel,
+        state.roster,
+        state.uniqueModels,
+      ),
+    ),
   );
-  set(
-    ({ roster, allianceLevel, factions, uniqueModels }) => {
-      const adjustedRoster = makeAllianceSpecificRosterAjustments(
-        factions,
-        allianceLevel,
-        roster,
-        uniqueModels,
-      );
-      return {
-        roster: adjustedRoster,
-        ...updateFactionData(adjustedRoster),
-      };
-    },
-    undefined,
-    "ADJUST_ROSTER_WITH_SPECIAL_RULES",
-  );
-  set(
-    ({ roster }) => ({
-      roster: updateUnitCount(roster),
-      ...updateFactionData(roster),
-    }),
-    undefined,
-    "RECALCULATE_UNIT_COUNT",
-  );
-  set(
-    ({ roster }) => ({
-      roster: recalculatePoints(roster),
-      ...updateFactionData(roster),
-    }),
-    undefined,
-    "RECALCULATE_POINTS",
-  );
+
+  return {
+    ...state,
+    ...updateFactionData(adjustedRoster),
+    roster: adjustedRoster,
+  };
 };
 
 export const recalculatePoints = (roster: Roster): Roster => {
@@ -81,7 +62,7 @@ export const recalculatePoints = (roster: Roster): Roster => {
   };
 };
 
-export const updateUnitCount = (roster: Roster) => {
+export const updateUnitCount = (roster: Roster): Roster => {
   return {
     ...roster,
     num_units: calculateRosterUnitCount(roster),
