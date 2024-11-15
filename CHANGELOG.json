@@ -1,5 +1,9 @@
 {
-  "main": {},
+  "main": {
+    "bugfixes": [
+      "Fixed state not being persisted properly after undo and redo actions resulting in loss of data on refresh in certain cases."
+    ]
+  },
   "6.16": {
     "added": [
       "Added undo and redo capabilities to the roster builder to help with accidental misclicks."
