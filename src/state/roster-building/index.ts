@@ -13,38 +13,38 @@ export const useRosterBuildingState = create<
   RosterBuildingState,
   [
     ["zustand/devtools", unknown],
-    ["temporal", StoreApi<TemporalState<Partial<RosterBuildingState>>>],
     ["zustand/persist", unknown],
+    ["temporal", StoreApi<TemporalState<Partial<RosterBuildingState>>>],
   ]
 >(
   devtools(
-    temporal(
-      persist(
+    persist(
+      temporal(
         (...args) => ({
           ...rosterSlice(...args),
           ...builderSlice(...args),
           ...dragAndDropSlice(...args),
         }),
         {
-          name: "mlb-builder-default",
-          storage: createJSONStorage(() => localStorage),
+          partialize: (state) => ({
+            roster: state.roster,
+            factions: state.factions,
+            factionType: state.factionType,
+            factionMetaData: state.factionMetaData,
+            factionEnabledSpecialRules: state.factionEnabledSpecialRules,
+            allianceLevel: state.allianceLevel,
+            armyBonusActive: state.armyBonusActive,
+            uniqueModels: state.uniqueModels,
+            rosterBuildingWarnings: state.rosterBuildingWarnings,
+          }),
+          equality: (pastState, currentState) =>
+            deepEqual(pastState, currentState),
+          limit: 20,
         },
       ),
       {
-        partialize: (state) => ({
-          roster: state.roster,
-          factions: state.factions,
-          factionType: state.factionType,
-          factionMetaData: state.factionMetaData,
-          factionEnabledSpecialRules: state.factionEnabledSpecialRules,
-          allianceLevel: state.allianceLevel,
-          armyBonusActive: state.armyBonusActive,
-          uniqueModels: state.uniqueModels,
-          rosterBuildingWarnings: state.rosterBuildingWarnings,
-        }),
-        equality: (pastState, currentState) =>
-          deepEqual(pastState, currentState),
-        limit: 20,
+        name: "mlb-builder-default",
+        storage: createJSONStorage(() => localStorage),
       },
     ),
   ),
