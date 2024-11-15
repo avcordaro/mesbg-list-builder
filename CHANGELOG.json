@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.16": {
     "added": [
       "Added undo and redo capabilities to the roster builder to help with accidental misclicks."
     ],
