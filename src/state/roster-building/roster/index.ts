@@ -86,26 +86,23 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
   set,
   get,
 ) => {
-  const recalculate = () => updateMetaData(set);
+  const recalculate = (state: RosterState): RosterState =>
+    updateMetaData(state);
+
   return {
     ...initialState,
 
     setRoster: (newRoster) => {
       set(
-        {
-          ...updateFactionData(newRoster),
-        },
-        undefined,
-        "UPDATE_ROSTER_META_DATA",
-      );
-      set(
-        {
-          ...updateRoster(newRoster),
-        },
+        (state) =>
+          recalculate({
+            ...state,
+            ...updateFactionData(newRoster),
+            ...updateRoster(newRoster),
+          }),
         undefined,
         "SET_ROSTER",
       );
-      recalculate();
     },
 
     addWarband: (): string => {
@@ -114,14 +111,23 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       return newWarbandId;
     },
     duplicateWarband: (warbandId: string): string => {
-      set(duplicateWarband(warbandId), undefined, "DUPLICATE_WARBAND");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({ ...state, ...duplicateWarband(warbandId)(state) }),
+        undefined,
+        "DUPLICATE_WARBAND",
+      );
       const warbands = get().roster.warbands;
       return warbands[warbands.length - 1].id;
     },
     deleteWarband: (warbandId: string): void => {
-      set(deleteWarband(warbandId), undefined, "DELETE_WARBAND");
-      recalculate();
+      console.log(warbandId);
+      set(
+        (state) =>
+          recalculate({ ...state, ...deleteWarband(warbandId)(state) }),
+        undefined,
+        "DELETE_WARBAND",
+      );
     },
 
     assignHeroToWarband: (
@@ -129,33 +135,60 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       heroId: string,
       hero: Unit,
     ): void => {
-      set(assignHero(warbandId, heroId, hero), undefined, "ASSIGN_HERO");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({
+            ...state,
+            ...assignHero(warbandId, heroId, hero)(state),
+          }),
+        undefined,
+        "ASSIGN_HERO",
+      );
     },
     updateHero: (
       warbandId: string,
       heroId: string,
       hero: Partial<Unit>,
     ): void => {
-      set(updateHero(warbandId, heroId, hero), undefined, "UPDATE_HERO");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({
+            ...state,
+            ...updateHero(warbandId, heroId, hero)(state),
+          }),
+        undefined,
+        "UPDATE_HERO",
+      );
     },
     makeLeader: (warbandId: string): void => {
       set(updateLeadingHero(warbandId), undefined, "UPDATE_ARMY_LEADER");
     },
     deleteHero: (warbandId: string, heroId: string): void => {
-      set(deleteHero(warbandId, heroId), undefined, "DELETE_HERO");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({ ...state, ...deleteHero(warbandId, heroId)(state) }),
+        undefined,
+        "DELETE_HERO",
+      );
     },
 
     addUnit: (warbandId: string): string => {
       const newUnitId = uuid();
       set(
         ({ roster }) => {
-          const warband = roster.warbands.find(({ id }) => id === warbandId);
-          warband.units.push({ id: newUnitId, name: null } as FreshUnit);
           return {
-            roster,
+            roster: {
+              ...roster,
+              warbands: roster.warbands.map((warband) => {
+                if (warband.id !== warbandId) {
+                  return warband;
+                }
+                return {
+                  ...warband,
+                  units: [...warband.units, { id: newUnitId, name: null }],
+                };
+              }),
+            },
           };
         },
         undefined,
@@ -164,32 +197,61 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       return newUnitId;
     },
     selectUnit: (warbandId: string, unitId: string, unit: Unit): void => {
-      set(selectUnit(warbandId, unitId, unit), undefined, "SELECT_UNIT");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({
+            ...state,
+            ...selectUnit(warbandId, unitId, unit)(state),
+          }),
+        undefined,
+        "SELECT_UNIT",
+      );
     },
     updateUnit: (
       warbandId: string,
       unitId: string,
       unit: Partial<Unit>,
     ): void => {
-      set(updateUnit(warbandId, unitId, unit), undefined, "UPDATE_UNIT");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({
+            ...state,
+            ...updateUnit(warbandId, unitId, unit)(state),
+          }),
+        undefined,
+        "UPDATE_UNIT",
+      );
     },
     duplicateUnit: (warbandId: string, unitId: string): string => {
-      set(duplicateUnit(warbandId, unitId), undefined, "DUPLICATE_UNIT");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({ ...state, ...duplicateUnit(warbandId, unitId)(state) }),
+        undefined,
+        "DUPLICATE_UNIT",
+      );
       const warband = get().roster.warbands.find(
         (warband) => warband.id === warbandId,
       );
       return !warband ? unitId : warband.units[warband.units.length - 1].id;
     },
     deleteUnit: (warbandId: string, unitId: string): void => {
-      set(deleteUnit(warbandId, unitId), undefined, "DELETE_UNIT");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({ ...state, ...deleteUnit(warbandId, unitId)(state) }),
+        undefined,
+        "DELETE_UNIT",
+      );
     },
     reorderUnits: (warbandId: string, reorderedUnits: (Unit | FreshUnit)[]) => {
-      set(reorderUnits(warbandId, reorderedUnits), undefined, "REORDER_UNITS");
-      recalculate();
+      set(
+        (state) =>
+          recalculate({
+            ...state,
+            ...reorderUnits(warbandId, reorderedUnits)(state),
+          }),
+        undefined,
+        "REORDER_UNITS",
+      );
     },
   };
 };
