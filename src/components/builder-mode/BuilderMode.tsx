@@ -24,13 +24,12 @@ import {
   useRosterBuildingState,
   useTemporalRosterBuildingState,
 } from "../../state/roster-building";
-import { FloatingUndoButtons } from "../common/undo/FloatingUndoButtons.tsx";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Warbands } from "./warbands/Warbands.tsx";
 
 export const BuilderMode = () => {
   const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("lg"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const [fabBottom, setFabBottom] = useState("16px");
   const [isBouncing, setIsBouncing] = useState(false);
   const [fabOpen, setFabOpen] = useState(false);
@@ -141,7 +140,6 @@ export const BuilderMode = () => {
   return (
     <Box sx={{ position: "relative" }}>
       <Warbands />
-      <FloatingUndoButtons bottom={fabBottom} />
       <Box ref={speedDialRef}>
         <SpeedDial
           ariaLabel="action-buttons"
@@ -171,87 +169,89 @@ export const BuilderMode = () => {
           ))}
         </SpeedDial>
 
-        {!isTablet && (
-          <SpeedDial
-            ariaLabel="action-buttons"
-            sx={{
-              position: "fixed",
-              bottom: `calc(${fabBottom} + 64px)`,
-              right: 16,
-            }}
-            className={isBouncing ? "bounce" : ""}
-            icon={<SpeedDialIcon icon={<History />} openIcon={<Close />} />}
-            open={redoOpen}
-            onClick={() => setRedoOpen((x) => !x)}
-            hidden={
-              fabOpen || (pastStates.length === 0 && futureStates.length === 0)
-            }
-            FabProps={{
-              sx: {
-                color: "black",
+        <SpeedDial
+          ariaLabel="action-buttons"
+          sx={{
+            position: "fixed",
+            bottom: `calc(${fabBottom} + 64px)`,
+            right: 16,
+          }}
+          className={isBouncing ? "bounce" : ""}
+          icon={<SpeedDialIcon icon={<History />} openIcon={<Close />} />}
+          open={redoOpen}
+          onClick={() => setRedoOpen((x) => !x)}
+          hidden={
+            fabOpen || (pastStates.length === 0 && futureStates.length === 0)
+          }
+          FabProps={{
+            sx: {
+              color: "black",
+              bgcolor: "background.default",
+              "&:hover": {
                 bgcolor: "background.default",
-                "&:hover": {
-                  bgcolor: "background.default",
-                },
               },
+            },
+          }}
+        >
+          <SpeedDialAction
+            icon={
+              <Badge
+                badgeContent={pastStates.length}
+                color="primary"
+                sx={{
+                  p: 1,
+                }}
+              >
+                <Undo />
+              </Badge>
+            }
+            onClick={(e) => {
+              e.stopPropagation();
+              if (pastStates.length > 0) undo();
             }}
-          >
-            <SpeedDialAction
-              icon={
-                <Badge
-                  badgeContent={pastStates.length}
-                  color="primary"
-                  sx={{
-                    p: 1,
-                  }}
-                >
-                  <Undo />
-                </Badge>
-              }
-              onClick={(e) => {
-                e.stopPropagation();
-                if (pastStates.length > 0) undo();
-              }}
-              FabProps={{ disabled: pastStates.length === 0 }}
-              tooltipTitle={
-                <span style={{ whiteSpace: "nowrap" }}>
-                  Undo{" "}
+            FabProps={{ disabled: pastStates.length === 0 }}
+            tooltipTitle={
+              <span style={{ whiteSpace: "nowrap" }}>
+                Undo{" "}
+                {!isTablet && (
                   <small>
                     <i>[Ctrl + Z]</i>
                   </small>
-                </span>
-              }
-              tooltipOpen
-            />
-            <SpeedDialAction
-              icon={
-                <Badge
-                  badgeContent={futureStates.length}
-                  color="primary"
-                  sx={{
-                    p: 1,
-                  }}
-                >
-                  <Redo />
-                </Badge>
-              }
-              onClick={(e) => {
-                e.stopPropagation();
-                if (futureStates.length > 0) redo();
-              }}
-              FabProps={{ disabled: futureStates.length === 0 }}
-              tooltipTitle={
-                <span style={{ whiteSpace: "nowrap" }}>
-                  Redo{" "}
+                )}
+              </span>
+            }
+            tooltipOpen
+          />
+          <SpeedDialAction
+            icon={
+              <Badge
+                badgeContent={futureStates.length}
+                color="primary"
+                sx={{
+                  p: 1,
+                }}
+              >
+                <Redo />
+              </Badge>
+            }
+            onClick={(e) => {
+              e.stopPropagation();
+              if (futureStates.length > 0) redo();
+            }}
+            FabProps={{ disabled: futureStates.length === 0 }}
+            tooltipTitle={
+              <span style={{ whiteSpace: "nowrap" }}>
+                Redo{" "}
+                {!isTablet && (
                   <small>
                     <i>[Ctrl + Y]</i>
                   </small>
-                </span>
-              }
-              tooltipOpen
-            />
-          </SpeedDial>
-        )}
+                )}
+              </span>
+            }
+            tooltipOpen
+          />
+        </SpeedDial>
       </Box>
     </Box>
   );
