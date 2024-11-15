@@ -1,7 +1,7 @@
 {
   "main": {
     "added": [
-      "Added undo and redo capabilities to the roster builder to help with accidental miss clicks."
+      "Added undo and redo capabilities to the roster builder to help with accidental misclicks."
     ],
     "bugfixes": [
       "Fixed the alliance level shown on the roster screenshot view to prevent it from wrapping.",
