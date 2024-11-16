@@ -1,4 +1,5 @@
 import { saveAs } from "file-saver";
+import { HTMLOptions, jsPDF } from "jspdf";
 import JSZip from "jszip";
 import { useState } from "react";
 import hero_constraint_data from "../assets/data/hero_constraint_data.json";
@@ -64,8 +65,49 @@ export const useDownload = () => {
     setDownloading(false);
   };
 
+  const downloadPDF = () => {
+    const pdf = new jsPDF("p", "mm", "a4"); // 'p' for portrait, 'mm' for millimeters, 'a4' for size
+
+    const pdfOptions: HTMLOptions = {
+      margin: 10,
+      width: 190, // (A4 is 210mm wide with margins)
+      html2canvas: {
+        scale: 0.275, // Scale down the content so it fits on the pages
+      },
+      autoPaging: "slice",
+    };
+
+    // Array of HTML elements you want to include in the PDF
+    const elements = [
+      document.getElementById("pdf-quick-ref"),
+      document.getElementById("pdf-army"),
+      document.getElementById("pdf-profiles"),
+      document.getElementById("pdf-rules"),
+      document.getElementById("pdf-magic"),
+    ];
+
+    const addPage = (htmlElement: HTMLElement) => {
+      const noOfPages = pdf.internal.pages.length - 1;
+      const y = (pdf.internal.pageSize.height - 20) * noOfPages; // sub margins
+      pdf.addPage();
+      return pdf.html(htmlElement, {
+        y: y,
+        ...pdfOptions,
+      });
+    };
+
+    pdf
+      .html(elements[0], pdfOptions)
+      .then(() => addPage(elements[1]))
+      .then(() => addPage(elements[2]))
+      .then(() => addPage(elements[3]))
+      .then(() => addPage(elements[4]))
+      .then(() => pdf.save("mesbg-list-builder"));
+  };
+
   return {
     downloadProfileCards,
+    downloadPDF,
     isDownloading,
   };
 };

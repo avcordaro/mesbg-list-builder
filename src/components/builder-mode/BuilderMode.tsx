@@ -24,6 +24,7 @@ import {
   useRosterBuildingState,
   useTemporalRosterBuildingState,
 } from "../../state/roster-building";
+import { PdfView } from "../common/roster/PdfView.tsx";
 import { ModalTypes } from "../modal/modals.tsx";
 import { Warbands } from "./warbands/Warbands.tsx";
 
@@ -34,7 +35,7 @@ export const BuilderMode = () => {
   const [isBouncing, setIsBouncing] = useState(false);
   const [fabOpen, setFabOpen] = useState(false);
   const [redoOpen, setRedoOpen] = useState(false);
-  const { downloadProfileCards } = useDownload();
+  const { downloadProfileCards, downloadPDF } = useDownload();
   const { roster } = useRosterBuildingState();
   const { undo, redo, pastStates, futureStates } =
     useTemporalRosterBuildingState((state) => state);
@@ -130,6 +131,12 @@ export const BuilderMode = () => {
       disabled: roster.num_units === 0,
     },
     {
+      icon: <Download />,
+      name: "Download Printable PDF",
+      callback: downloadPDF,
+      disabled: roster.num_units === 0,
+    },
+    {
       icon: <ShareIcon />,
       name: "Roster summary & sharing",
       callback: () => setCurrentModal(ModalTypes.ROSTER_TABLE),
@@ -139,6 +146,7 @@ export const BuilderMode = () => {
 
   return (
     <Box sx={{ position: "relative" }}>
+      <PdfView />
       <Warbands />
       <Box ref={speedDialRef}>
         <SpeedDial
