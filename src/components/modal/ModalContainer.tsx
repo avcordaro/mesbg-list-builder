@@ -44,7 +44,7 @@ export const ModalContainer = () => {
           minWidth: isMobile ? "90vw" : "64ch",
           maxWidth: "90vw",
           maxHeight: "90vh",
-          overflowY: "scroll",
+          overflowY: currentModal.overflow ?? "scroll",
         }}
       >
         {!currentModal.customModalHeader && (

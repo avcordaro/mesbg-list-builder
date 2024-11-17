@@ -48,6 +48,7 @@ export type ModalProps = {
   icon: ReactNode;
   title: string;
   customModalHeader?: boolean;
+  overflow?: string;
 };
 
 export const modals = new Map<ModalTypes, ModalProps>([
@@ -169,6 +170,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <Download />,
       title: "Download profile cards",
       children: <DownloadProfileCardModal />,
+      overflow: "none",
     },
   ],
   [
@@ -177,6 +179,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <Download />,
       title: "Download PDF",
       children: <DownloadPdfModal />,
+      overflow: "none",
     },
   ],
 ]);
