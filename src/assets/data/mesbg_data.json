@@ -36148,8 +36148,16 @@
     "siege_crew":3,
     "MWFW":[
       [
-        "",
+        "King's Champion",
         "2:1:1:2"
+      ],
+      [
+        "Herald",
+        "0:1:2:1"
+      ],
+      [
+        "Herald",
+        "0:1:2:1"
       ]
     ],
     "quantity":1,
@@ -36794,8 +36802,16 @@
     "siege_crew":3,
     "MWFW":[
       [
-        "",
+        "King's Champion",
         "2:1:1:2"
+      ],
+      [
+        "Herald",
+        "0:1:2:1"
+      ],
+      [
+        "Herald",
+        "0:1:2:1"
       ]
     ],
     "quantity":1,

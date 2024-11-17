@@ -2,787 +2,656 @@
   {
     "name":"Accurate",
     "type":"special_rule",
-    "active_passive": null,
     "description":"This siege weapon will only scatter 3\" rather than 6\"."
   },
   {
     "name":"Ancient Enemies",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model with this special rule re-rolls 1s To Wound when fighting in combat against models with the keywords listed in the brackets in its profile. For example, a modle that has the Ancient Enemies (Elf) special rule will get to re-roll 1s To Wound against all Elf models"
   },
   {
     "name":"Ancient Evil",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"An enemy model within 18\" of this model suffers a -1 penalty to its Courage. Note, this is not cumulative with other similar penalties such as those provided by Goblin Drums, The Harbinger of Evil special rule and so on."
   },
   {
     "name":"Armour",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model upgraded to wear armour adds 1 to their Defence."
   },
   {
     "name":"Aura of Command",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Exhaustion\n\nThis power targets the caster themselves. While this power is in effect, the caster and all friendly models within 6\" automatically pass any Courage tests they are required to make.\n\n<b>Channelled<\/b>: The range of this power is increased to 12\"."
   },
   {
     "name":"Aura of Dismay",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Exhaustion\n\nThis power targets the caster themself. While this power is in effect, the caster and all friendly models within 6\" cause Terror.\n\n<b>Channelled<\/b>: The range of this power is increased to 12\"."
   },
   {
     "name":"Backstabbers",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"This model receives +1 to their To Wound rolls when making Strikes against a Trapped model. This bonus is cumulative with other bonuses, such as using a two-handed weapon."
   },
   {
     "name":"Bane of Kings",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"This model must re-roll all failed To Wound rolls when making Strikes in close combat."
   },
   {
     "name":"Bane Weapons",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Bane weapons cause D3 Wounds rather than 1, per successful Strike, on specific races \u2013 the race in question will be presented as Xbane, where X is the race in question. For example, a model with the Orcbane special rule will cause D3 Wounds per successful Strike against models with the Orc keyword."
   },
   {
     "name":"Banishment",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. This power only affects Spirit models. The target model automatically suffers 1 Wound, exactly as if it had been wounded in combat. If the target is a Cavalry model, the caster must choose whether the rider or the mount suffers the effects.\n\n<b>Channelled<\/b>: The target suffers D3 Wounds rather than 1."
   },
   {
     "name":"Banner",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A banner provides a single re-roll to friendly models who are involved in a Fight within 3\". Any model carrying a banner is encumbered by its weight, and suffers a -1 penalty to their Duel rolls."
   },
   {
     "name":"Bash",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model armed with a mace, maul or hammer may opt to Bash. If the bashing model\u2019s side wins the Duel roll, they may attempt to knock a single opponent (of their choice) Prone instead of making Strikes. Both models roll a further D6 and add their Strength value. The basher adds a further 1 to this total if the hammer, mace or maul is two-handed. If the bashing model\u2019s total is equal to or higher than their opponent\u2019s total, that opponent is immediately knocked Prone. In a multiple combat, it is often a good idea to do the Bash first, as if successful, other friendly models within the multiple combat may benefit from the enemy being knocked Prone if the Bash is successful."
   },
   {
     "name":"Black Dart",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target immediately suffers one Strength 9 hit. Do not roll To Hit or for In The Way tests. If the target is a Cavalry model then the Attacker must choose whether the rider or the mount is hit. This power can still be used on a target that is Engaged in combat.\n\n<b>Channelled<\/b>: A wounding hit will cause D3 Wounds rather than 1."
   },
   {
     "name":"Blades of the Dead",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"When determining what number models with this special rule need To Wound their opponents,  use their opponent's Courage rather than its Defence on the Wound chart. Models with this special rule cannot use Special Strikes."
   },
   {
     "name":"Bladewrath",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one friendly model within range. In the Fight phase, all Strikes made by the target model are resolved at Strength 6, regardless of other modifiers.\n\n<b>Channelled<\/b>: All Strikes are instead resolved at Strength 10."
   },
   {
     "name":"Blessing of the Valar",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one friendly model within range. They immediately recover a Fate point spent earlier in the battle. This may not take a model\u2019s Fate beyond its starting level. If the target is a Cavalry model, the caster must choose whether the rider or the mount recovers the Fate point.\n\n<b>Channelled<\/b>: The target instead recovers D3 Fate."
   },
   {
     "name":"Blinding Light",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets the caster themselves. While this power is in effect, any shooting attacks directed at the caster, or a friendly model within 6\" of them, will only hit on a To Hit roll of a 6. Additionally, an area within a 12\" radius around the caster is illuminated as if it were daylight (perfect when you are fighting underground!).\n\n<b>Channelled<\/b>: The duration becomes Exhaustion"
   },
   {
     "name":"Blood and Glory",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"If this model kills an enemy Hero model in a Fight, they immediately regain a single point of Might spent earlier in the battle."
   },
   {
     "name":"Blowpipe",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Benefits from the Poisoned Weapons special rule (re-roll 1s to wound). "
   },
   {
     "name":"Bodyguard",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"All Warrior and Hero models from the same army list with this special rule will automatically Bodyguard the Hero from the same army list with the highest Heroic Tier. If there is more than one Hero with the highest Heroic Tier, the controlling player may choose. As long as the bodyguarded model is alive on the battlefield, this model passes all Courage tests."
   },
   {
     "name":"Bow with poisoned arrows",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model with the Poisoned Arrows special rule will re-roll To Wound rolls of a 1 when firing their bow."
   },
   {
     "name":"Breathe Fire",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Each time a Dragon Breathes Fire, it expense a point of Will. Treat the Dragon's fiery breath as a bow with a range of 12\". If the shot hits, the target and all models (friends and foe) within 2\" suffer a Strength 10 hit. Any model that suffers an unsaved wound (Fate may still bge taken) from a Dragon's Breathe Fire is automatically slain."
   },
   {
     "name":"Burly",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"When fighting with a two-handed weapon, a model with this special rule does not suffer the -1 penalty to their Duel roll.  Additionally, Burly models may carry a Heavy Object and move their full distance."
   },
   {
     "name":"Call Winds",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target is blown D6\" directly away from the caster in a straight line. If the model comes into contact with another model or terrain such as an Obstacle like a hedge, house or large rock, then it will stop 1\" away from it. In either case the target model is knocked Prone. If the target is in combat, the effect is the same as described above, but every other model in the combat is also knocked Prone.\n\n<b>Channelled<\/b>: The target is instead blown 2D6\" away."
   },
   {
     "name":"Cave Dweller",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model with this special rule adds 1 to all Jump, Leap and Climb tests. They also suffer no penalties for fighting in the dark."
   },
   {
     "name":"Chill Soul",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target model suffers a Wound, exactly as if it had been wounded in combat. If cast on a Cavalry model, the Attacker decides whether the rider or the mount suffers the Wound. This power may be cast on a model Engaged in close combat.\n\n<b>Channelled<\/b>: The range of this Magical Power is increased by 6\"."
   },
   {
     "name":"Collapse Rocks",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. This power may only be cast on a model that is within a ruin, stone or brick building, cave, rock pile or another similar piece of terrain where a Wizard could crack rocks either underfoot or overhead. The target suffers one Strength 5 hit.\n\n<b>Channelled<\/b>: All models (friend and foe) within 2\" of the target also suffer one Strength 5 hit."
   },
   {
     "name":"Command",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one enemy model within range. The caster may move the target model up to half of its maximum Move distance. They can do this even if the model has already moved this turn. The move cannot force the target to jump, leap, climb, dismount or lie down, but can take them into difficultterrain, and even make them Charge an enemy. No Courage test is required to Charge Terror-causing foes (see page 107). It can even force an unengaged victim to drop an object (but not wargear) that it is holding or to put on The One Ring (if they carry it). Once the target has finished the move, it may move no further that turn for any reason. Finally, the target suffers the effect of the Immobilise\/Transfix magical power (see page 98).\n\n<b>Channelled<\/b>: Additionally, while this power is in effect, the target will halve their Fight and Attacks characteristics (rounding up), and may not Strike if they win a Duel."
   },
   {
     "name":"Compel",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one enemy model within range. The caster may move the target model up to half of its maximum Move distance. They can do this even if the model has already moved this turn. The move cannot force the target to jump, leap, climb, dismount or lie down, but can take them into difficultterrain, and even make them Charge an enemy. No Courage test is required to Charge Terror-causing foes (see page 107). It can even force an unengaged victim to drop an object (but not wargear) that it is holding or to put on The One Ring (if they carry it). Once the target has finished the move, it may move no further that turn for any reason. Finally, the target suffers the effect of the Immobilise\/Transfix magical power (see page 98).\n\n<b>Channelled<\/b>: Additionally, while this power is in effect, the target will halve their Fight and Attacks characteristics (rounding up), and may not Strike if they win a Duel."
   },
   {
     "name":"Crossbow",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model with a crossbow may not fire in the same turn that it has moved."
   },
   {
     "name":"Cumbersome",
     "type":"special_rule",
-    "active_passive": null,
     "description":"If a model uses a hand-and-a-half weapon as a two-handed weapon whilst carrying a shield, it will lose the +1 bonus to their defence for the duration of the fight. A model armed with a bow, crossbow, two-handed weapon or pike may carry a shield; however, they do not receive the +1 bonus to their Defence characteristic."
   },
   {
     "name":"Curse",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target model immediately loses 1 Fate point. If the target is a Cavalry model, the caster must choose whether the rider or the mount loses the Fate point.\n\n<b>Channelled<\/b>: The target model immediately loses all remaining Fate points."
   },
   {
     "name":"Drain Courage",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target immediately reduces their Courage characteristic by 1 for the remainder of the battle, to a minimum of 1. This power can take effect multiple times over the course of a battle, reducing the target\u2019s Courage each time. If the target is a Cavalry model, the caster must choose whether the rider or the mount reduces their Courage value.\n\n<b>Channelled<\/b>: The target's Courage is instead reduced by D3."
   },
   {
     "name":"Dwarf Armour",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model who is upgraded to wear heavy armour or Dwarf armour adds 2 to their Defence, unless they are already wearing armour, in which case they add 1."
   },
   {
     "name":"Elven Cloak",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model wearing an Elven cloak has the Stalk Unseen special rule (If a model with this special rule is partially concealed from view by a piece of terrain, they cannot be seen at all at distances of more than 6\" \u2013 they appear to melt into the background. This means that enemies cannot Charge, Shoot or target them with Magical Powers or special rules at ranges of greater than 6\", unless they have a completely clear view of the target. If the model is riding a mount, Stalk Unseen has no effect.)"
   },
   {
     "name":"Elven-made Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Models using an Elven-made weapon are more likely to win the dice roll to see who wins a Drawn Combat. A Good model using an Elven-made weapon will win the roll-off on a 3-6 instead of a 4-6. Should an Evil model be using an Elven-made weapon (an odd situation, granted), they will win the roll on a 1-4. If both sides are using Elven-made weapons, neither receives an advantage."
   },
   {
     "name":"Enchanted Blades",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one friendly model within range. In the Fight phase, the target may re-roll all failed To Wound rolls.\n\n<b>Channelled<\/b>: Additionally, the target may add 1 to all To Wound rolls. This is cumulative with using a two-handed weapon."
   },
   {
     "name":"Engineer Captain",
     "type":"special_rule",
-    "active_passive": null,
     "description":"If you choose this option, replace the Siege Veteran with a Captain from the relevant army list. You should use a suitable model for this. Engineer Captains have all the usual weapons that a Captain would have, and may even be upgraded to carry any equipment that a Captain could take, with the exception that they can never be mounted. They will also have the Hero keyword and be counted as a Hero of Fortitude. Unlike other Hero models, Engineer Captains may use their Might to influence To Hit, To Wound and Scatter rolls for the Siege Engine. Only a single Engineer Captain may be attached to each Siege Engine."
   },
   {
     "name":"Enrage Beast",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one friendly model within range. This power can be used against a single Bat, (unridden) Warg or Spider model within range. If successful, the target\u2019s Fight, Attacks, Strength and Courage are increased by 2 until the End phase. During the End phase, the target suffers one Strength 10 hit.\n\n<b>Channelled<\/b>: The target's Fight, Attacks, Strength and Courage are instead increased by 3."
   },
   {
     "name":"Expert Rider",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Whilst mounted, an Expert Rider may re-roll the dice when making Jump,  Swim and Thrown Rider tests. While mounted, a model carrying both a shield and a bow will still receive the +1 Defence bonus for being armed with a shield. If the model dismounts, they will lose this bonus. Additionally, an Expert Rider can pick up Light Objects without having to dismount"
   },
   {
     "name":"Expert Shot",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model with this special rule may fire twice in the Shoot phase. These shots are resolved one at a time, meaning that the shooter can target the same model twice or two different models, once each, if they wish."
   },
   {
     "name":"Fearless",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"This model automatically passes any Courage test it is required to make."
   },
   {
     "name":"Feint",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model armed with a dagger or sword, who has an equal to or higher Fight value at the start of the fight than their opponent (including any Supporting models), may opt to Feint. If they do so, they reduce their Fight value by D3 when working out who wins the Fight. If the feinting model\u2019s side wins the Duel roll, however, they may re-roll any To Wound rolls of a 1.\n\nA model armed with a dagger or sword, who has a lower Fight value at the start of the fight than their opponent (including any Supporting models), may opt to Stab. If they do so, they may re-roll 1s To Wound if their side wins the Duel roll. However, due to the reckless abandon with which a stabbing model tends to throws themselves at their enemy, if their side loses the Duel roll, they will suffer one Strength 2 hit immediately after the Fight has been resolved."
   },
   {
     "name":"Fell Sight",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"A model with this special rule does not need Line of Sight to be able to Charge. Additionally, they may target models with the Stalk Unseen special rule with no penalty."
   },
   {
     "name":"Flameburst",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target immediately suffers one Strength 6 hit.\n\n<b>Channelled<\/b>: The target instead suffers the effects of the Set Ablaze special rule."
   },
   {
     "name":"Flaming Ammunition",
     "type":"special_rule",
-    "active_passive": null,
     "description":"If this Siege Engine hits a Siege Target, the firing player may re-roll any To Wound rolls of a 1."
   },
   {
     "name":"Fleetfoot",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model that has this special rule, and the Woodland Creature special rule, will also apply the effects of Woodland Creature to their mount, so the whole model treats woodland terrain as clear terrain for the purposes of movement."
   },
   {
     "name":"Fly",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"This model may ignore all intervening models and terrain as it moves - flying over buildings, woods and so on. The model may not end its movement within woods or upon any terrain that its base will not safely balance upon (flatrocks, hills and the like are fine, but don't try to perch your model precariously upon trees, sloped roofs, and so on). When flying, a model may move up to 12\". A model with this special rule may still choose to use their normal Move value if they wish, however, they will gain none of the benefits of the Fly special rule if they move in this way. If a model with the Fly special rule walks into a wood, they cannot use the Fly special rule again until they have fully left the wood. Furthermore, a model with this special rule may pass 'over' enemy Control Zones without charging the model - as long as they end their move outside of the Control Zone."
   },
   {
     "name":"Fortify Spirit",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Exhaustion\n\nThis power may target one friendly model within range. While this power is in effect, the target rolls two extra dice when making Resist tests. These extra dice do not reduce the target\u2019s store of Will and can even be rolled if the target has no Will points remaining or chooses not to expend any Will.\n\n<b>Channelled<\/b>: The target also adds 1 to their highest dice score when resisting magic."
   },
   {
     "name":"Foul Temperament",
     "type":"special_rule",
-    "active_passive": null,
     "description":"The Mumak has its Attacks increased to 4, however, it will suffer a -1 penalty to all Courage tests when rolling to see whether or not it will Stampede."
   },
   {
     "name":"Fury",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Exhaustion\n\nEvery model with this Magical Power will have a bracket after Fury denoting the models that will be affected by the power (e.g., Fury (Goblin)). This power targets all friendly models within 6\" that are included in the bracket. Note that if there is more than one keyword within the brackets, then a model must have all the keywords to benefit from Fury. Whilst this power is in effect, all targets will automatically pass any Courage tests they are required to make. In the case of Cavalry models, a degree of common sense is required when applying this effect. For example, if a Mordor Orc Shaman casts Fury (Mordor Orc) and a Warg Rider is within range of the Magical Power, only the Orc rider will feel the benefits as only the rider is a Mordor Orc.\n\n<b>Channelled<\/b>: Additionally, each time a target suffers a Wound whilst within range of at least one friendly model that has cast Fury, roll a D6. On the roll of a 6, the target ignores the Wound exactly as if a point of Fate had been spent. This roll is taken immediately after the Wound has been suffered, can be taken before Fate rolls are made and Might may be used to influence it."
   },
   {
     "name":"Gnarled Hide",
     "type":"special_rule",
-    "active_passive": null,
     "description":"The Mumak has Defence 8 rather than 7."
   },
   {
     "name":"Hand-and-a-half Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A hand-and-a-half weapon can be used as either a single-handed weapon or a two-handed weapon. Whenever a model armed with a hand-and-a-half weapon is involved in a Fight, the controlling player must decide at the start of the Fight whether they will be using their weapon as a single-handed weapon or a two-handed weapon."
   },
   {
     "name":"Harbinger of Evil",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"An enemy model within 12\" of this model suffers a -1 penalty to its Courage. Note, this is not cumulative with other similar penalties such as those provided by Goblin Drums, the Ancient Evil special rule, and so on."
   },
   {
     "name":"Hatred",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model with this special rule adds 1 to their To Wound rolls when fighting in combat against the models with the keyword listed in the brackets in its profile."
   },
   {
     "name":"Heavy Armour",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model who is upgraded to wear heavy armour or Dwarf armour adds 2 to their Defence, unless they are already wearing armour, in which case they add 1."
   },
   {
     "name":"Heavy Dwarf Armour",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model who is upgraded to wear heavy Dwarf armour adds 3 to their Defence, unless they are already wearing armour, in which case they add 2. If they are already wearing heavy armour or Dwarf armour, they instead add 1."
   },
   {
     "name":"Heroic Accuracy",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"Heroic Accuracy enables a Hero model to re-roll failed In The Way rolls when shooting in that Shoot phase. A Hero cannot perform a Heroic Accuracy if they are Engaged in combat. A Hero does not need to have a missile weapon to declare a Heroic Accuracy.\n\n<b>Take Aim!<\/b> - If a Hero performing a Heroic Accuracy wishes, they may shout \u201cTake Aim!\u201d to their comrades, allowing all friendly models within 6\" to also re-roll failed In The Way rolls when shooting in that Shoot phase.\n\nModels benefitting from Heroic Accuracy or Take Aim! need not target the same enemy model \u2013 they may each choose targets viable to them."
   },
   {
     "name":"Heroic Challenge",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Hero that is in base contact with an enemy Hero, of the same Heroic Tier (see page 132) or higher, may declare a Heroic Challenge.\n\nIf the enemy Hero accepts the Heroic Challenge, all other models that are part of the same combat, including supporting models, may not roll dice for the Duel roll, provide their Fight value to the fight or makes Strikes if their side wins the fight. From this point on, both Hero models involved in a Heroic Challenge must Charge each other if able to do so until one of them has been slain. Other models may not Charge either of the Hero models involved in the Heroic Challenge. Whichever Hero is successful in slaying their opponent (they must be the one to cause the final blow) will immediately gain D3 Might points; this can take them above their starting level.\n\nIf the Challenge is declined, then any Heroic Actions called by the declining Hero will not affect other friendly models until the Hero who issued the Challenge is slain."
   },
   {
     "name":"Heroic Channelling",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Hero model who uses Heroic Channelling uses the Channelled versions of any Magical Powers that they cast this turn (see page 95)."
   },
   {
     "name":"Heroic Combat",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"When a Hero model declares a Heroic Combat, the Fight that they are involved in is resolved first. In addition, if all the enemies in the Fight are slain, the Hero, and any models from their force Engaged in the same Fight (not those joining in with a spear or pike) may move again before proceeding with the Fight phase. This additional move can be a Charge into new enemies, if you wish, in which case the models will fight again in the ordinary sequence. A model may only benefit from one Heroic Combat in each turn; so if a model that was involved in a Heroic Combat moves into a combat where another friendly Hero model has also called a Heroic Combat, they may not move again if that Heroic Combat is also successful.\n\nIf any of the models involved in the Heroic Combat Charge into new enemies, the way that the Fights are divided may be altered. Once all Heroic Combats have been resolved, rematch any Fights that must now change. The player with Priority decides how combatants are matched."
   },
   {
     "name":"Heroic Defence",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Hero model that declares a Heroic Defence will only suffer a Wound on the roll of a natural 6 in the ensuing Fight phase, regardless of any modifiers or Brutal Power Attacks. If the Hero would usually have been wounded on a 6\/4+, 6\/5+ or 6\/6, then they will only be wounded if both rolls are natural rolls (see page 16). Note that a Hero model\u2019s mount is not affected by Heroic Defence."
   },
   {
     "name":"Heroic March",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Heroic March enables a Hero to swiftly cover a greater distance \u2013 ignoring the chaos around them to rush into position. A Hero model who uses a Heroic March adds 3\" to their maximum Move distance if they are Infantry, or 5\" to their mount\u2019s maximum Move distance if they are Cavalry, or if the Hero has the Fly special rule. Models who utilise a Heroic March may not Charge in the same Move phase.\n\nIf a Hero declares that they will attempt a Heroic March, but is charged before they can perform it, the Heroic March is cancelled and the Might point spent to attempt it is lost.\n\n<b>At The Double!<\/b> - A Hero model who is conducting a Heroic March may choose to shout \u201cAt The Double!\u201d as they move, to enable their friends to keep pace with them. In this case, note their starting position before moving any affected models. Any friendly models within 6\" of that point, who have not yet moved, also add 3\" to their maximum move distance if they are Infantry and 5\" to their mounts\u2019 maximum Move distance if they are Cavalry, or they have the Fly special rule. Once the Hero has completed their move, those affected models may also move, so long as they end their move within 6\" of the Hero. A Hero can utilise their Heroic March and call At the Double! without actually moving themselves; they are simply goading their friends into action. These models may not Charge as part of the At The Double! move.\n\nAny model in range of the Heroic March that does not move, cannot choose to move later on in that phase."
   },
   {
     "name":"Heroic Move",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Heroic Move enables a Hero model to move before other models \u2013 essentially defying the usual Priority system. The Hero can then move, jump, climb, Charge and even use their Stand Fast! (see page 55) in the usual manner.\n\nThis Heroic Action can prove extremely valuable, so when a Heroic Move is declared by the player without Priority, the opposing player will often choose to also declare a Heroic Move in an attempt to keep the initiative.\n\nIf a Hero declares that they will attempt a Heroic Move, but is charged before they can perform it, the Heroic Move is cancelled and the Might point spent to attempt it is lost.\n\n<b>With Me!<\/b> - A Hero model performing a Heroic Move may choose to shout \u201cWith Me!\u201d In this case, note their starting position before moving them. Any friendly models within 6\" of that point may also move, so long as they end their move within 6\" of the Hero (if they are not able to end within 6\" of the Hero then they may not move at all this phase). Any model in range of the Heroic Move that chooses not to move as part of the Heroic Move, will forgo their movement, and cannot act any further during that Move phase. The Hero calling the With Me! must fully complete their move before any friendly models can start their move as part of the With Me!\n\nNote that a Hero model can utilise their Heroic Move and call With Me! without actually moving themselves, even if they fail a Courage test as a result of the Terror special rule, they are simply goading those around them into action. However, should a Hero call With Me! and then subsequently flee the board as a result of their force being Broken, their Heroic Move will automatically be cancelled."
   },
   {
     "name":"Heroic Resolve",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"Unlike other Heroic Actions, when a Hero declares a Heroic Resolve, the effects of the Heroic Action take place immediately. Friendly models that are within 6\" of a Hero model that declared a Heroic Resolve, including the Hero themselves, receive one free additional dice to any Resist tests they make for the remainder of the turn. Note that in the case of Warrior models, and Hero models with no Will points remaining, this allows them to make a Resist test on one dice rather than none (one for Heroic Resolve, and one for Resistant to Magic). If a model that has the Resistant to Magic special rule is subject to a Heroic Resolve, they may roll two dice for their Resist test. A Hero who declares a Heroic Resolve cannot move in the same turn (they are too busy trying to steel their allies against unfriendly magics), however they may still do anything else that they would usually be able to do, such as cast Magical Powers."
   },
   {
     "name":"Heroic Shoot",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"Heroic Shoot enables a Hero model to shoot before other models get a chance. A Hero cannot perform a Heroic Shoot if they are Engaged in combat.\n\n<b>Loose!<\/b> - A Hero performing a Heroic Shoot may shout \u201cLoose!\u201d if they wish, enabling all friendly models within 6\" to shoot with them. A Hero does not need to have a missile weapon to call Loose! and does not need to shoot first. Models benefitting from a Heroic Shoot or Loose! do not need to target the same enemy model \u2013 they may each choose any target viable to them (see page 36). Any model in range of a Heroic Shoot\/Loose! that does not Shoot cannot choose to Shoot later on in that phase."
   },
   {
     "name":"Heroic Strength",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Hero model who declares they are using Heroic Strength adds D3 to their Strength characteristic for the duration of the Fight phase. This cannot increase a Hero model\u2019s Strength above 10. Note that this bonus is applied before other effects that affect a model\u2019s Strength, such as the Wither Magical Power."
   },
   {
     "name":"Heroic Strike",
     "type":"heroic_action",
-    "active_passive": null,
     "description":"A Hero model who declares they are using Heroic Strike adds D6 to their Fight value for the duration of the Fight phase. This is rolled for at the start of the model\u2019s Duel roll and lasts until the end of the turn. This cannot increase a Hero model\u2019s Fight value above 10. Note that this bonus is applied before other effects are taken into account. Thus, a Hero who is Engaged in a Fight with a Bat Swarm would add D6 to their Fight value (to a maximum of 10) and then halve the total due to the Bat Swarm\u2019s Blinding Swarm special rule."
   },
   {
     "name":"Horse Lord",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"Whilst this model is mounted, they may choose to expend their own Fate points to prevent Wounds caused to their mount."
   },
   {
     "name":"Immobilise",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one enemy model within range. While this power is in effect, the target model may not move (except to Back Away should they lose a Fight), shoot, cast Magical Powers, declare Heroic Actions, call a Stand Fast! or use Active abilities and may not Strike if they win a Duel.\n\n<b>Channelled<\/b>: Additionally, while this power is in effect, the target will halve their Fight and Attacks characteristics (rounding up)."
   },
   {
     "name":"Instill Fear",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets all enemy models within range. Each affected model must take a Courage test, in an order chosen by the caster; if the test is failed then the model must move its maximum Move distance directly away from the caster. If the model comes into contact with another model, or impassable terrain, then it will stop so it is not in base contact with it. If a model comes into base contact with the edge of the board, they will immediately stop moving; this will not allow or force models to leave the board in Scenarios where models may leave the board. Models that fail a Courage test due to the effects of this Magical Power may then move no further that turn, for any reason.\n\n<b>Channelled<\/b>: Courage tests caused by this Magical Power are taken on 3D6, discarding the highest result."
   },
   {
     "name":"Lance",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A Cavalry model using a lance receives a bonus when making Strikes in a turn that they have Charged; add 1 to their roll To Wound - thus, a score of 2 becomes 3, 4 becomes 5 and so on. Note, in cases where two rolls are required (e.g., 6\/4+), this will affect both rolls. A Cavalry model using a lance even gets this bonus against other Cavalry models, as long as it has Charged, although not if it is within difficult terrain. If a Cavalry model with a lance dismounts, or their steed is slain, they will ordinarily abandon their lance, resorting to using another hand weapon."
   },
   {
     "name":"Master of Battle",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Whenever an enemy Hero attempts a Heroic Action within 6\" of a model with this special rule, this model may call the same Heroic Action without spending Might, even if they would not usually have access to it. Sometimes a model with this special rule will have a number after the rule in brackets, e.g., Master of Battle (5+). In this situation, whenever an enemy Hero attempts a Heroic Action within 6\" of a model with this special rule, roll a D6. If the dice score equals or beats the number after the special rule, this model may call the same Heroic Action without spending Might \u2013 even if they would not normally be able to call the same Heroic Action."
   },
   {
     "name":"Master-Forged Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Models using a Master-Forged weapon do not suffer the -1 penalty to the Duel roll for using a two-handed weapon."
   },
   {
     "name":"Mighty Blow",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"For each Strike that succesesfully Wounds in close combat, this model inflicts 2 Wounds rather than 1."
   },
   {
     "name":"Mighty Hero",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"A model with this special rule may expend 1 point of Might each turn without reducing their own store of Might."
   },
   {
     "name":"Monstrous Charge",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"If a model with this special rule charges into combat, it will gain the Knock to the Ground and Extra Attack bonuses (see page 62) as if it were Cavalry, with a couple of exceptions: This model will Knock to the Ground any model that it Charges, including Cavalry or Monster models, with a lower Strength value than it, even if the charged model has a Strength of 6 or higher. The rider of a Cavalry model will automatically suffer the Knocked Flying result for its Thrown Rider test. Additionally, this model will still get the Extra Attack bonus if it Charges, or is subsequently charged by, Cavalry or another model with this special rule. If a model with this special rule is a Cavalry model, the mount will count as being In The Way of its rider, except that the rider will only be hit on a 5-6; a roll of 1-4 will hit the mount."
   },
   {
     "name":"Mountain Dweller",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Mountain Dwellers may re-roll any Jump, Leap and Climb tests. In addition, they may move through rocky areas that are classified as difficult terrain as if they were open ground."
   },
   {
     "name":"Nature's Wrath",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets all enemy models within range. All enemy models within 3\" of the caster are knocked Prone. Cavalry models are automatically treated as having suffered a Knocked Flying result on the Thrown Rider table (see page 61) \u2013 both rider and mount are then knocked Prone.\n\n<b>Channelled<\/b>: All enemy models suffer one Strength 2 hit after being knocked prone."
   },
   {
     "name":"Panic Steed",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. This power may only target Cavalry models. The rider is immediately thrown and the mount instantly flees. Remove the mount from play and roll on the Thrown Rider table to determine the effect on the rider.\n\n<b>Channelled<\/b>: This power also targets all enemy models wtihin 3\" of the initial target."
   },
   {
     "name":"Paralyse",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target is immediately paralysed. It is knocked Prone and may do nothing until it recovers, including using Active special rules (see page 103). The target may make no Duel rolls and will automatically lose any Duels it takes part in unless joined by a friendly model. During the End phase, the controlling player must roll a D6 for each of their Paralysed models. On a 6, the model recovers and stands up. Friendly models who spend the Fight phase in contact with a Paralysed model, and do nothing else, may also attempt to revive the victim. Roll an additional D6 for the Paralysed model for each such friend. Might points can be used to modify this roll.\n\n<b>Channelled<\/b>: At the end of each turn that the target remains Paralysed, they suffer one Strength 5 hit."
   },
   {
     "name":"Piercing Strike",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model armed with an axe or pick can opt to make a Piercing Strike. If their side wins the Fight, increase the model\u2019s Strength by 1 when they Strike. If their side loses the Fight, reduce the model\u2019s Defence by D3 when Strikes are made against it."
   },
   {
     "name":"Pikes",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Pikes require two hands to use. Otherwise, the rules for pikes are the same as those for spears (see previous page) with the following exceptions. A pike-armed model can Support a friend Engaged in close combat by being in base contact with another pike-armed model that is already doing so (note they must both be pikes; neither can be a spear), so two pike-armed models can Support one comrade. Just as with a spear-armed model, this creates an exception to the ordinary Fight rules, in that the bearer does not need to be in base contact with an enemy model. Due to the fact that a pike requires the use of two hands to use effectively, a model armed with a pike that is also equipped with a shield, bow or a crossbow suffers a -1 penalty to its Duel rolls.\n\nAs models with pikes can effectively fight in battlelines three models deep, it can be very easy for them to trap their own models as only one model may Back Away, not two. This is a serious hazard of supporting in such depth."
   },
   {
     "name":"Poisoned Weapons",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Poisoned weapons must re-roll To Wound rolls of a 1 when that weapon is being used. The weapon that is coated in poison, and therefore benefits from this rule, will be listed in the model\u2019s profile. For example, a model with the Poisoned Sword special rule will re-roll all To Wound rolls of 1 when using their sword. A model with the Poisoned Arrows special rule will re-roll To Wound rolls of a 1 when firing their bow."
   },
   {
     "name":"Protection of the Valar",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power may target the caster or a single friendly model within 3\". The target may not be targeted by an enemy\u2019s Magical Powers or special rules (e.g., The Golden King\u2019s Riches Beyond Renown or a Dead Marsh Spectre\u2019s A Fell Light is in Them).\n\n<b>Channelled<\/b>: This power will affect all friendly models within 3\"."
   },
   {
     "name":"Refreshing Song",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one friendly model within range. The target immediately recovers a single lost Wound, as well as a single lost Might, Will and Fate point spent earlier in the battle. The target also immediately recovers from the effects of any Magical Power they wish.\n\n<b>Channelled<\/b>: The target instead recovers all lost Wounds rather than just one, in addition to all other effects."
   },
   {
     "name":"Renew",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets a single friendly model within range. The target immediately regains a single Wound lost earlier in the battle. If the target is a Cavalry model, the caster must choose whether the rider or the mount regains the Wound.\n\n<b>Channelled<\/b>: The target instead regains D3 lost Wounds."
   },
   {
     "name":"Resistant to Magic",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"If this model is targeted by a Magical Power, it may use an additional \u2018free\u2019 dice when it makes a Resist test, even if it has no Will remaining or decides not to use any Will points from its store."
   },
   {
     "name":"Sap Will",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target immediately loses D3 Will points. If the target is a Cavalry model, the caster must choose whether the rider or the mount loses the Will.\n\n<b>Channelled<\/b>: The target loses D6 Will points."
   },
   {
     "name":"Set Ablaze",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"A model may be set ablaze through a number of means. When this happens, the model immediately suffers one Strength 9 hit. If the model survives, it will suffer a further one Strength 5 Hit in each End phase until the blaze is extinguished.\n\nTo extinguish the blaze, the model must either lie down and then crawl 1\", or enter a water feature, at which point the blaze is immediately put out."
   },
   {
     "name":"Severed Heads",
     "type":"special_rule",
-    "active_passive": null,
     "description":"The Siege Engine may choose to either fire in the normal way, or to fire a collection of severed heads at the enemy. If Severed Heads are fired at a Battlefield Target, ignore the normal Strength of the Siege Engine; instead, the initial target and all models within 2\" suffer one Strength 3 hit. This shot will not knock models Prone and will only ever inflict one Wound. Any enemy models hit must immediately pass a Courage test or be removed from play."
   },
   {
     "name":"Shatter",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. Pick a single piece of wargear on the target model. The selected item is immediately destroyed and cannot be used for the remainder of the game. All special rules associated with the selected item are lost. If, after destroying a weapon, the target model has no other weapons remaining then they are considered to be unarmed for the remainder of the game. Note that wargear such as mounts, living creatures or those directly attached to the model (such as claws and teeth, etc.), Staffs of Power, or The One Ring, cannot be shattered.\n\n<b>Channelled<\/b>: The target additionally suffers one Strength 6 hit."
   },
   {
     "name":"Shield",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A shield increases the Defence characteristic of its bearer by 1. Shields also have the following rules:\n\n<b>Cumbersome<\/b>: If a model uses a hand-and-a-half weapon as a two-handed weapon whilst carrying a shield, it will lose the +1 bonus to their defence for the duration of the fight. A model armed with a bow, crossbow, two-handed weapon or pike may carry a shield; however, they do not receive the +1 bonus to their Defence characteristic.\n\n<b>Shielding<\/b>: Prior to either player rolling any dice in a Duel roll, a shield-armed model who is involved in the Fight may declare that they are Shielding. A model that is Shielding doubles their Attacks when making the Duel roll to see who wins the Fight. Thus, a Shielding model with 1 Attack would roll two dice. If the Shielding model wins the Fight, however, they make no Strikes against the enemy, having put all of their effort into surviving."
   },
   {
     "name":"Shielding",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Prior to either player rolling any dice in a Duel roll, a shield-armed model who is involved in the Fight may declare that they are Shielding. A model that is Shielding doubles their Attacks when making the Duel roll to see who wins the Fight. Thus, a Shielding model with 1 Attack would roll two dice. If the Shielding model wins the Fight, however, they make no Strikes against the enemy, having put all of their effort into surviving."
   },
   {
     "name":"Shieldwall",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"If this model is armed with a shield, whilst in base contact with two or more non-Prone models with this special rule that are armed with a shield, this model gains a bonus of +1 to its Defence. This bonus is only available whilst on foot."
   },
   {
     "name":"Shroud of Shadows",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets a friendly model within range. The target is considered to be invisible until the End phase. They cannot be targeted by enemy models\u2019 Magical Powers, special rules or shooting attacks (and do not count as In The Way). They have no Control Zone while invisible and enemy models may even move \u2018through\u2019 them. An enemy model may not end its movement on the space the target is taking up. If an enemy wishes to Charge the target, it must pass a Courage test, applying a penalty of -1 to the roll for every full 1\" that the target is away from the foe.\n\n<b>Channelled<\/b>: Additionally, during the Fight phase, any enemy model Engaged in combat with the target halves its Fight value for the duration of the Duel."
   },
   {
     "name":"Slingshot",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model armed with a slingshot can shoot twice if they have remained stationary, or once if they move up to half of their maximum Move distance. If they move more than half of their maximum Move distance, they may not fire the slingshot at all in this phase."
   },
   {
     "name":"Sorcerous Blast",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target is blasted D6\" directly away from the caster and knocked Prone. If the target comes into contact with another model that is Strength 5 or less, it will immediately stop and both models will be knocked Prone. If the target, or one of the models that is knocked Prone, is Engaged in combat, then all the models (friend and foe) in the same Fight are also knocked Prone. The target model suffers one Strength 5 hit, and any other model knocked Prone suffers one Strength 3 hit. Cavalry models are treated as having rolled the Knocked Flying result on the Thrown Rider chart. Additionally, If the target comes into contact with a piece of terrain, such as an Obstacle like a hedge, house or large rock, or a model that is Strength 6 or higher, then it will immediately stop and be knocked Prone, however the Strength 6 model will not be knocked Prone. Both the target and the Obstacle or model (if it has a Defence value) will suffer one Strength 3 hit. Note: Even Transfixed\/Compelled or otherwise immobilised models will be blasted by this power.\n\n<b>Channelled<\/b>: The initial hit is instead Strength 6 and every other modeel suffers instead one Strength 4 hit."
   },
   {
     "name":"Spears",
     "type":"special_rule",
-    "active_passive": null,
     "description":"An Infantry model that is armed with a spear may assist a friendly model, with the same base size or smaller, in a Fight in a special way. If an unengaged model armed with a spear is in base contact with a friendly model, then it may contribute a single Attack to the Fight using its own Fight value and Strength. Models that are assisting another model in this way are not considered to be part of the Fight and so cannot be targeted by Strikes, benefit from a Heroic Combat, be knocked Prone by a charging Cavalry model or be knocked Prone if the combat is itself knocked Prone for some other reason. They may, however, benefit from the effects of a friendly banner.\n\nA model armed with a spear may use it as a hand weapon in the Fight phase, although they may not make Special Strikes when using it. A model that fires a missile weapon during the Shoot phase may not support during the Fight phase. If the model using a spear is a Hero, they may still use Might points to improve a Duel roll and when rolling To Wound, but may not declare Heroic Actions in the Fight phase if they chose to support.\n\nIn a multiple combat, the model using a spear may choose to Strike a different target to the model they are Supporting.\n\nA model can only gain Support from one spear-armed model at a time, and a spear-armed model may only Support a single model during each turn. A speararmed model can even Support a friendly model that is Prone or armed with a two-handed weapon.\n\nA spear-armed model may Make Way for their ally if they lose a Fight. This counts as the one model who is allowed to Make Way for a friend."
   },
   {
     "name":"Staff of Power",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A Staff of Power is a hand-and-a-half staff, and may use the Stun Special Strike like all other staffs. In addition, the bearer can expend 1 point of Will each turn without reducing their own Will store."
   },
   {
     "name":"Stalk Unseen",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"If a model with this special rule is partially concealed from view by a piece of terrain, they cannot be seen at all at distances of more than 6\" - they appear to melt into the background. This means that enemies cannot Charge, Shoot or target them with Magical Powers or special rules at ranges of greater than 6\", unless they have a completely clear view of the target. If the model is riding a mount, Stalk Unseen has no effect."
   },
   {
     "name":"Stand Fast!",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Warrior models do not have to take their Courage test for their force being Broken if there is a visible friendly Hero model within 6\" who has already taken and passed their Courage test that turn (including those Hero models that pass this test automatically because of a Magical Power or special rule). For a Warrior model to benefit from this rule, a Hero model must test and move before testing for the Warrior model. Remember that other Hero models are not affected by this rule, and must therefore take a test even if a Hero model within 6\" has already passed their test.\n\nHero models that are Engaged in combat do not test on their Courage, so they cannot use the Stand Fast! rule (they are too busy defending themselves to rally the troops around them)."
   },
   {
     "name":"Strengthen Will",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one friendly model within range. The caster can use this spell to give 1 Will point to a friendly Hero within range. The target\u2019s Will can be increased past their starting amount, and this power can be used even if they started the game without any Will points. If the target is a Cavalry model, the caster must choose whether the rider or the mount regains the Will point.\n\n<b>Channelled<\/b>: The target instead receives D3 Will points."
   },
   {
     "name":"Stun",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model with a club or staff may opt to Stun their opponent. If the model\u2019s side wins the Fight, rather than striking normally, choose one opponent and roll a D6. On a 5+ (or a 6 if the target is a Monster), the victim is reduced to a Fight value and Attacks value of 1, and Shoot value of 6+, until the end of the following turn. You may wish to place a marker next to the stunned model as a reminder."
   },
   {
     "name":"Survival Instinct",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Each time a model with this special rule suffers a Wound, it must take a Courage test. If the test is failed then the model flees the battlefield and counts as a casualty. This is an exception to the usual rules for taking multiple Courage tests in a turn."
   },
   {
     "name":"Swap Weapon",
     "type":"special_rule",
-    "active_passive": null,
     "description":"Although all of our models come with specific weapon types listed in their profile, this has not always been the case, and there may be instances where you may have changed the weapon on your models (either for aesthetic reasons or to give one of your warriors an \u2018edge\u2019 in battle).\n\nIf a Warrior model or an unnamed Hero model has one of the following weapons modelled onto it, then it may exchange that type of weapon for another type from the same list, at the extra cost of 1 point for a Warrior and a cost of 5 points for a Hero:\n\nAxe, club, dagger, flail, hammer, mace, maul, pick, staff or sword.\n\nNote: You may only swap a weapon for one of the same class, ie, a singlehanded sword for a single-handed mace, and not a hand-and-a-half or a two-handed weapon.\n\nFor example, a Warrior of Minas Tirith is listed as being armed with a sword and costs 7 points \u2013 a Warrior of Minas Tirith that has been modelled with a flail will instead cost 8 points.\n\nA High Elf Warrior is listed as being armed with an Elven-made hand-and-a-half sword and costs 9 points \u2013 a High Elf Warrior that has been modelled with an axe will instead cost 10 points.\n\nModels that have been converted to wield more than one different type of weapon must decide which type they will be using before the game starts."
   },
   {
     "name":"Swift Movement",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"A model with this special rule can climb on any surface, regardless of angle. They can therefore move at full speed over any type of difficult terrain and ignore all obstacles except for water features and gaps such as chasms, ditches and other spaces, which they have to jump as normal. The model must be able to balance safely upon wherever it finishes its movement - no spiders finishing upside down, for example!"
   },
   {
     "name":"Swift Reload",
     "type":"special_rule",
-    "active_passive": null,
     "description":"When firing a Siege Engine with this upgrade, the firing player rolls two D6 rather than one, choosing the highest result, when determining the number of shots fired."
   },
   {
     "name":"Sworn Protector",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"Whilst the listed model is alive and on the battlefield, this model passes all Courage tests."
   },
   {
     "name":"Terrifying Aura",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Exhaustion\n\nThis power targets the caster themselves. While this power is in effect, the caster causes Terror (see page 107).\n\n<b>Channelled<\/b>: Models wishing to Charge the caster whilst this power is in effect must take their Courage test on 3D6, discarding the highest dice."
   },
   {
     "name":"Terror",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"Should a model wish to Charge this model, it must first take a Courage test before it moves. If the test is passed, the model may Charge as normal. If the test is failed, the model does not Charge and may not move at all this turn. Sometimes, a model will only cause Terror in certain enemies. In these instances, the creatures that are affected are clearly listed, and only those models need to make a Courage test before charging this model. For example, a model with the Terror (Orc) will cause Terror in all Orc models."
   },
   {
     "name":"Throw Stones",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"If this model does not move at all during the Move phase, then in the Shoot phase it may make a shooting attack with the Strength and range listed in the brackets."
   },
   {
     "name":"Throwing Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model with a throwing weapon can shoot with it in the Shoot phase, even if they have moved more than half of their maximum Move distance. A model cannot fight with a throwing weapon in the Fight phase.\n\nA throwing weapon can be used as its bearer Charges into combat. The player moves the model as if it were going to Charge the enemy, but instead of moving into base contact with their foe, they stop 1\" away. They then throw the weapon at the enemy they are about to Charge. This shot is resolved using the rules for shooting, even though it takes place in the Move phase. Throwing weapons thrown as a model Charges into combat do not suffer the -1 penalty for moving and shooting.\n\nIf the target is not slain, the charger then moves into base contact with the same enemy model. If the original target is slain, the charger may complete their move in any way the controlling player wishes \u2013 stopping straight away, charging another target or anything in between.\n\nThrowing Weapons do not count towards an army\u2019s bow limit. Throwing spears follow the rules for throwing weapons, but have a slightly different profile (see the Missile Weapon chart)."
   },
   {
     "name":"Tough Hide",
     "type":"special_rule",
-    "active_passive": null,
     "description":"The Dragon increases its wounds and defence to 9, rather than 7."
   },
   {
     "name":"Transfix",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets one enemy model within range. While this power is in effect, the target model may not move (except to Back Away should they lose a Fight), shoot, cast Magical Powers, declare Heroic Actions, call a Stand Fast! or use Active abilities and may not Strike if they win a Duel.\n\n<b>Channelled<\/b>: Additionally, while this power is in effect, the target will halve their Fight and Attacks characteristics (rounding up)."
   },
   {
     "name":"Tremor",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range, and any model that falls under the line. Draw a straight line, 1mm wide, that extends D6\" from the target in the direction directly away from the caster. All models (both friend and foe) touched are knocked Prone and suffer one Strength 6 hit. Cavalry models are treated as having rolled the Knocked Flying result on the Thrown Rider chart. If a model is in combat then all models in combat are hit by this Magical Power. One affected model may attempt to Resist this power in the usual manner.\n\n<b>Channelled<\/b>: The line instead extends out 2D6."
   },
   {
     "name":"Tusk Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A Mumak with Tusk Weapons will inflict four Strength 9 hits when it Tramples, rather than three."
   },
   {
     "name":"Two-Handed Weapons",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model using a two-handed weapon in combat may not use a shield at the same time (not enough hands!), although they may still carry other items. A model using a two-handed  weapon in close combat suffers a -1 penalty to Duel rolls. When a model makes Strikes with a two-handed, add 1 to its To Wound roll. Thus, a roll To Wound of a 3 becomes a 4, a 4 becomes a 5,  and so on. Note, in cases where two rolls are required (e.g., 6\/4+), this will affect both rolls."
   },
   {
     "name":"Unyielding Combat Stance",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"If a model with this special rule is knocked Prone, roll a D6. On a 4+, this model keeps their footing and is not knocked Prone. If this model was mounted when knocked Prone, and passes the roll to keep their footing, they will stay on their feet but they will still be separated from their mount. This model may still make this roll even it it automatically suffers the Knocked Flying result and, if the roll is successful, will not suffer any of its effects."
   },
   {
     "name":"Venom",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"This model must re-roll all failed To Wound rolls when making Strikes in close combat."
   },
   {
     "name":"War Drum",
     "type":"special_rule",
-    "active_passive": null,
     "description":"At the start of the Move phase, a model with a war drum may declare they are sounding the advance. When this occurs, all models with the same keyword as the one shown in brackets, within 12\" of the drummer, add 3\" to their Movement value if they have the Infantry keyword, and 5\" to their movement they have the Cavalry keyword or the Fly special rule for the remainder of the turn. Models that are affected by a war drum may not Charge in that turn."
   },
   {
     "name":"War Horn",
     "type":"special_rule",
-    "active_passive": null,
     "description":"If you have one or more war horns on the battlefield, all models in your force have +1 Courage."
   },
   {
     "name":"War Spears",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A war spear follows the rules for spears when wielded by an Infantry model and follows the rules for lances whilst wielded by a Cavalry model."
   },
   {
     "name":"Weapon Master",
     "type":"special_rule",
-    "active_passive": null,
     "description":"This model is never considered unarmed, and never suffers the usual -1 penalty to the Duel roll for fighting with a two-handed weapon."
   },
   {
     "name":"Whip",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A whip counts as a throwing weapon with a range of 2\" and Strength 1."
   },
   {
     "name":"Whirl",
     "type":"special_rule",
-    "active_passive": null,
     "description":"A model with a flail, whip or scourge may opt to Whirl. A model that Whirls reduces their Fight value to 1, after all other modifiers, for the duration of the Fight. Should a model that Whirled win the Fight, they do not Strike as normal. Instead, they make a single Strike against every enemy model Engaged in the Fight."
   },
   {
     "name":"Will of Evil",
     "type":"special_rule",
-    "active_passive": "Passive",
     "description":"This model must give up 1 point of Will at the end of the Fight phase if it has been involved in one or more Fights that turn. Note that if a model is in base contact with an enemy model then it must fight \u2013 it cannot choose not to fight! Once the model is reduced to 0 Will points, it is banished and therefore removed as a casualty. If a model with this special rule uses their last Will points to cast a Magical Power with the Instant duration, the effects of the Magical Power will be resolved before the model is removed as a casualty. Additionally, a Hero wearing The One Ring is not invisible to this model as they are to others. Furthermore, this model does not need to give up a point of Will if they are fighting a model wearing the Ring \u2013 not even if other enemy models are included as part of a Multiple Combat."
   },
   {
     "name":"Wither",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range. The target\u2019s Strength is reduced by 1 (to a minimum of 1) for the remainder of the game. If the target is a Cavalry model, the caster must choose whether the rider or the mount has their Strength reduced.\n\n<b>Channelled<\/b>: The target's Strength is instead reduced by D3."
   },
   {
     "name":"Woodland Creature",
     "type":"special_rule",
-    "active_passive": "Active",
     "description":"An Infantry model with this special rule may move through woods and forests that are classified as difficult terrain as if they are open ground. Note that this doesn't mean they can automatically climb terrain in those areas, nor move through tree trunks or jump fallen obstacles."
   },
   {
     "name":"Wrath of Bruinen",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets all enemy models within range. All enemy models within 3\" of the caster are knocked Prone. Cavalry models are automatically treated as having suffered a Knocked Flying result on the Thrown Rider table (see page 61) \u2013 both rider and mount are then knocked Prone. All affected models additionally suffer one Strength 2 hit, or one Strength 8 hit if they are in a stream, river or other similar water terrain feature.\n\n<b>Channelled<\/b>: All enemy models instead suffer one Strength 3 hit after being knocked Prone or one Strength 9 hit if they are in a stream, river or similar water terrain feature."
   },
   {
     "name":"Your Staff is Broken",
     "type":"magical_power",
-    "active_passive": null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range, so long as they have a staff. This power destroys the staff of the target model. All the advantages associated with the staff are immediately lost (including the hand-and-a-half weapon bonus).\n\n<b>Channelled<\/b>: The target additionally suffers a Strength 7 hit."
   }
 ]

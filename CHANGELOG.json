@@ -1,7 +1,8 @@
 {
   "main": {
     "bugfixes": [
-      "Fixed state not being persisted properly after undo and redo actions resulting in loss of data on refresh in certain cases."
+      "Fixed state not being persisted properly after undo and redo actions resulting in loss of data on refresh in certain cases.",
+      "The Heralds for the King's Champion will are now correctly displayed in the MWFW tracking of Game Mode."
     ]
   },
   "6.16": {
