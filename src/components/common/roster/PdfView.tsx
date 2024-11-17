@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import profiles from "../../../assets/data/profile_data.json";
 import { useRosterBuildingState } from "../../../state/roster-building";
@@ -101,20 +100,13 @@ export const PdfView = () => {
     .filter(duplicateProfiles);
 
   return (
-    <Box
-      sx={{
-        // position: "absolute", // comment this line to make the list appear in the browser
-        left: "-300vw",
-      }}
-    >
-      <Stack gap={1} sx={{ mb: 2, maxWidth: "180mm" }}>
-        <QuickReferenceTable profiles={units} />
-        <ArmyComposition />
-        <UnitProfileList units={units} />
-        <SpecialRuleList profiles={units} />
-        <MagicalPowerList profiles={units} />
-        <StatTrackers />
-      </Stack>
-    </Box>
+    <Stack gap={4}>
+      <QuickReferenceTable profiles={units} />
+      <ArmyComposition />
+      <UnitProfileList units={units} />
+      <SpecialRuleList profiles={units} />
+      <MagicalPowerList profiles={units} />
+      <StatTrackers />
+    </Stack>
   );
 };

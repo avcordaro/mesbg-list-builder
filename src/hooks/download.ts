@@ -72,7 +72,7 @@ export const useDownload = () => {
       margin: 10,
       width: 190, // (A4 is 210mm wide with margins)
       html2canvas: {
-        scale: 0.275, // Scale down the content so it fits on the pages
+        scale: 0.325, // Scale down the content so it fits on the pages
       },
       autoPaging: "slice",
     };
@@ -97,7 +97,7 @@ export const useDownload = () => {
       });
     };
 
-    pdf
+    return pdf
       .html(elements[0], pdfOptions)
       .then(() => addPage(elements[1]))
       .then(() => addPage(elements[2]))

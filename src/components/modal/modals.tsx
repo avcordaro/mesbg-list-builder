@@ -1,4 +1,4 @@
-import { ListAlt, SaveAs } from "@mui/icons-material";
+import { Download, ListAlt, SaveAs } from "@mui/icons-material";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import FortIcon from "@mui/icons-material/Fort";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
@@ -11,6 +11,8 @@ import { ChartsModal } from "./modals/ChartsModal.tsx";
 import { ContinueGameModal } from "./modals/ContinueGameModal.tsx";
 import { CreateGameResultModal } from "./modals/CreateGameResultModal.tsx";
 import { CreateNewRosterModal } from "./modals/CreateNewRosterModal.tsx";
+import { DownloadPdfModal } from "./modals/DownloadPdfModal.tsx";
+import { DownloadProfileCardModal } from "./modals/DownloadProfileCardModal.tsx";
 import { EndGameResultModal } from "./modals/EndGameResultModal.tsx";
 import { ExportHistoryModal } from "./modals/ExportHistoryModal.tsx";
 import { ExportRosterModal } from "./modals/ExportRosterModal.tsx";
@@ -37,6 +39,8 @@ export enum ModalTypes {
   EXPORT_GAMES = "EXPORT_GAMES",
   IMPORT_GAMES = "IMPORT_GAMES",
   INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
+  DOWNLOAD_PROFILE_CARDS = "DOWNLOAD_PROFILE_CARDS",
+  DOWNLOAD_PDF = "DOWNLOAD_PDF",
 }
 
 export type ModalProps = {
@@ -157,6 +161,22 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <WarningAmberRoundedIcon />,
       title: "Incomplete warband",
       children: <IncompleteWarbandWarningModal />,
+    },
+  ],
+  [
+    ModalTypes.DOWNLOAD_PROFILE_CARDS,
+    {
+      icon: <Download />,
+      title: "Download profile cards",
+      children: <DownloadProfileCardModal />,
+    },
+  ],
+  [
+    ModalTypes.DOWNLOAD_PDF,
+    {
+      icon: <Download />,
+      title: "Download PDF",
+      children: <DownloadPdfModal />,
     },
   ],
 ]);

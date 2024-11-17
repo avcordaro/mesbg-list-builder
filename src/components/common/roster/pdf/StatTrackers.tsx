@@ -64,17 +64,17 @@ export const StatTrackers = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell size={"small"} sx={cellStyling} />
-              <TableCell size={"small"} align="center" sx={cellStyling}>
+              <TableCell size="small" sx={cellStyling} />
+              <TableCell size="small" align="center" sx={cellStyling}>
                 Might
               </TableCell>
-              <TableCell size={"small"} align="center" sx={cellStyling}>
+              <TableCell size="small" align="center" sx={cellStyling}>
                 Will
               </TableCell>
-              <TableCell size={"small"} align="center" sx={cellStyling}>
+              <TableCell size="small" align="center" sx={cellStyling}>
                 Fate
               </TableCell>
-              <TableCell size={"small"} align="center" sx={cellStyling}>
+              <TableCell size="small" align="center" sx={cellStyling}>
                 Wounds
               </TableCell>
             </TableRow>

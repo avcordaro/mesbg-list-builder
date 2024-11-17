@@ -43,7 +43,6 @@ export const ProfileCards = () => {
         (option) =>
           option.option === "Merry & Pippin" && option.opt_quantity === 1,
       );
-      console.log(hasMerryPippin);
       if (hasMerryPippin) {
         return extraProfiles.map((profile) => ({
           profile,
