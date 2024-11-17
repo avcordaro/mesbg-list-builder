@@ -28,11 +28,20 @@ const ListItem = ({ profile }: { profile: Profile }) => {
         <Typography variant="h6">
           <b>{profile.name}</b>
         </Typography>
-
+        {profile.additional_text && (
+          <Typography sx={{ mb: 2 }} variant="body2">
+            {profile.additional_text.map((text, index) => (
+              <Typography sx={{ my: 0.5 }} key={index}>
+                <i>{text}</i>
+              </Typography>
+            ))}
+          </Typography>
+        )}
         <TableContainer component="div">
           <Table size="small">
             <TableHead>
               <TableRow>
+                {profile.additional_stats && <TableCell />}
                 <TableCell>Mv</TableCell>
                 <TableCell>F</TableCell>
                 <TableCell>S</TableCell>
@@ -51,6 +60,9 @@ const ListItem = ({ profile }: { profile: Profile }) => {
             </TableHead>
             <TableBody>
               <TableRow>
+                {profile.additional_stats && (
+                  <TableCell>{profile.name}</TableCell>
+                )}
                 <TableCell>{profile.Mv}</TableCell>
                 <TableCell>{profile.F}</TableCell>
                 <TableCell>{profile.S}</TableCell>
@@ -66,6 +78,30 @@ const ListItem = ({ profile }: { profile: Profile }) => {
                   </>
                 )}
               </TableRow>
+              {profile.additional_stats?.map((stats, index) => (
+                <TableRow key={index}>
+                  <TableCell>{stats.name}</TableCell>
+                  <TableCell>{stats.Mv}</TableCell>
+                  <TableCell>{stats.F}</TableCell>
+                  <TableCell>{stats.S}</TableCell>
+                  <TableCell>{stats.D}</TableCell>
+                  <TableCell>{stats.A}</TableCell>
+                  <TableCell>{stats.W}</TableCell>
+                  <TableCell>{stats.C}</TableCell>
+                  {(stats.HM ||
+                    stats.HW ||
+                    stats.HF ||
+                    profile.HM ||
+                    profile.HW ||
+                    profile.HF) && (
+                    <>
+                      <TableCell>{stats.HF ?? "-"}</TableCell>
+                      <TableCell>{stats.HM ?? "-"}</TableCell>
+                      <TableCell>{stats.HW ?? "-"}</TableCell>
+                    </>
+                  )}
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </TableContainer>

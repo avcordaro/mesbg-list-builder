@@ -10,6 +10,8 @@ export type Profile = {
   Mv: string;
   S: string;
   W: string;
+  additional_stats: Omit<Profile, "magic_powers">[];
+  additional_text: string[];
   heroic_actions: string[];
   special_rules: string[];
   active_or_passive_rules: {
@@ -18,4 +20,5 @@ export type Profile = {
     description: string;
   }[];
   magic_powers: { name: string; range: string; cast: string }[];
+  wargear: string[];
 };

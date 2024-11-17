@@ -84,6 +84,7 @@ export const useDownload = () => {
       document.getElementById("pdf-profiles"),
       document.getElementById("pdf-rules"),
       document.getElementById("pdf-magic"),
+      document.getElementById("pdf-stat-trackers"),
     ];
 
     const addPage = (htmlElement: HTMLElement) => {
@@ -102,6 +103,7 @@ export const useDownload = () => {
       .then(() => addPage(elements[2]))
       .then(() => addPage(elements[3]))
       .then(() => addPage(elements[4]))
+      .then(() => addPage(elements[5]))
       .then(() => pdf.save("mesbg-list-builder"));
   };
 

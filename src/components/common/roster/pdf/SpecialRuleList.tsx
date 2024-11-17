@@ -22,7 +22,10 @@ function duplicates(item: SpecialRule, index: number, self: SpecialRule[]) {
 export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   const specialRules: SpecialRule[] = profiles
     .flatMap((profile) => [
-      ...profile.active_or_passive_rules,
+      ...profile.active_or_passive_rules.map((rule) => ({
+        ...rule,
+        type: rule.type || "Passive",
+      })),
       ...profile.special_rules.map((sr) => {
         const rule = keywords.find(
           (keyword) => keyword.name === sr.split("(")[0].trim(),

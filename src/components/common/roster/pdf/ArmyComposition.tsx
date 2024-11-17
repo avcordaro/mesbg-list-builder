@@ -16,7 +16,9 @@ function UnitRow({ unit }: { unit: Unit }) {
   if (!isDefinedUnit(unit)) {
     return (
       <TableRow>
-        <TableCell colSpan={2}>No Hero selected</TableCell>
+        <TableCell size="small" colSpan={2}>
+          No Hero selected
+        </TableCell>
       </TableRow>
     );
   }
@@ -25,8 +27,10 @@ function UnitRow({ unit }: { unit: Unit }) {
     unit?.options?.filter((option) => option.opt_quantity > 0) || [];
   return (
     <TableRow>
-      <TableCell width={12}>{unit.quantity}x</TableCell>
-      <TableCell>
+      <TableCell size="small" width={12}>
+        {unit.quantity}x
+      </TableCell>
+      <TableCell size="small">
         {unit.name}{" "}
         {options.length > 0 && (
           <>

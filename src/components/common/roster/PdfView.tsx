@@ -7,6 +7,7 @@ import { ArmyComposition } from "./pdf/ArmyComposition.tsx";
 import { MagicalPowerList } from "./pdf/MagicalPowers.tsx";
 import { QuickReferenceTable } from "./pdf/QuickReferenceTable.tsx";
 import { SpecialRuleList } from "./pdf/SpecialRuleList.tsx";
+import { StatTrackers } from "./pdf/StatTrackers.tsx";
 import { UnitProfileList } from "./pdf/UnitProfileList.tsx";
 import { Profile } from "./pdf/profile.type.ts";
 
@@ -35,7 +36,7 @@ function byHeroicTier(a: Unit, b: Unit) {
   return sorting[a.unit_type] - sorting[b.unit_type];
 }
 
-function duplicates(item: Unit, index: number, self: Unit[]) {
+function duplicateUnits(item: Unit, index: number, self: Unit[]) {
   return (
     index ===
     self.findIndex(
@@ -44,6 +45,10 @@ function duplicates(item: Unit, index: number, self: Unit[]) {
         other.name === item.name,
     )
   );
+}
+
+function duplicateProfiles(item: Profile, index: number, self: Profile[]) {
+  return index === self.findIndex((other) => other.name === item.name);
 }
 
 function getMightWillAndFate(unit: Unit) {
@@ -55,12 +60,25 @@ function getMightWillAndFate(unit: Unit) {
   }
 }
 
+function unusedAdditionalStats(
+  unit: Unit,
+): (stats: Omit<Profile, "magic_powers">) => boolean {
+  return (stats) => {
+    if (unit.unit_type === "Siege Engine" && stats.name.includes("Captain")) {
+      return !!unit.options.find(
+        (option) => option.type === "engineer_cpt" && option.opt_quantity > 0,
+      );
+    }
+    return true;
+  };
+}
+
 export const PdfView = () => {
   const { roster } = useRosterBuildingState();
   const units: Profile[] = roster.warbands
     .flatMap((wb) => [wb.hero, ...wb.units])
     .filter(isDefinedUnit)
-    .filter(duplicates)
+    .filter(duplicateUnits)
     .sort(byHeroicTier)
     .map((unit) => {
       const army = profiles[unit.profile_origin];
@@ -68,22 +86,34 @@ export const PdfView = () => {
 
       const profile = army[unit.name];
       if (!profile) return null;
+
+      const additional_stats =
+        profile?.additional_stats?.filter(unusedAdditionalStats(unit)) || [];
+
       return {
         name: unit.name,
         ...profile,
         ...getMightWillAndFate(unit),
+        additional_stats,
       };
     })
-    .filter((v) => !!v);
+    .filter((v) => !!v)
+    .filter(duplicateProfiles);
 
   return (
-    <Box sx={{ position: "absolute", left: "-100vw" }}>
+    <Box
+      sx={{
+        // position: "absolute", // comment this line to make the list appear in the browser
+        left: "-300vw",
+      }}
+    >
       <Stack gap={1} sx={{ mb: 2, maxWidth: "180mm" }}>
         <QuickReferenceTable profiles={units} />
         <ArmyComposition />
         <UnitProfileList units={units} />
         <SpecialRuleList profiles={units} />
         <MagicalPowerList profiles={units} />
+        <StatTrackers />
       </Stack>
     </Box>
   );

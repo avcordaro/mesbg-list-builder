@@ -7,11 +7,37 @@ import {
   TableRow,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import { Fragment } from "react";
 import { Profile } from "./profile.type.ts";
 
 interface QuickReferenceTableProps {
   profiles: Profile[];
 }
+
+const ReferenceRow = ({
+  row,
+}: {
+  row: Pick<
+    Profile,
+    "name" | "Mv" | "F" | "S" | "D" | "A" | "W" | "C" | "HM" | "HW" | "HF"
+  >;
+}) => {
+  return (
+    <TableRow>
+      <TableCell>{row.name}</TableCell>
+      <TableCell>{row.Mv}</TableCell>
+      <TableCell>{row.F}</TableCell>
+      <TableCell>{row.S}</TableCell>
+      <TableCell>{row.D}</TableCell>
+      <TableCell>{row.A}</TableCell>
+      <TableCell>{row.W}</TableCell>
+      <TableCell>{row.C}</TableCell>
+      <TableCell>{row.HM ?? "-"}</TableCell>
+      <TableCell>{row.HW ?? "-"}</TableCell>
+      <TableCell>{row.HF ?? "-"}</TableCell>
+    </TableRow>
+  );
+};
 
 export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
   return (
@@ -36,19 +62,12 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
           </TableHead>
           <TableBody>
             {profiles.map((row, index) => (
-              <TableRow key={index}>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>{row.Mv}</TableCell>
-                <TableCell>{row.F}</TableCell>
-                <TableCell>{row.S}</TableCell>
-                <TableCell>{row.D}</TableCell>
-                <TableCell>{row.A}</TableCell>
-                <TableCell>{row.W}</TableCell>
-                <TableCell>{row.C}</TableCell>
-                <TableCell>{row.HF ?? "-"}</TableCell>
-                <TableCell>{row.HM ?? "-"}</TableCell>
-                <TableCell>{row.HW ?? "-"}</TableCell>
-              </TableRow>
+              <Fragment key={index}>
+                <ReferenceRow row={row} />
+                {row.additional_stats.map((additionalRow, aIndex) => (
+                  <ReferenceRow row={additionalRow} key={aIndex} />
+                ))}
+              </Fragment>
             ))}
           </TableBody>
         </Table>
