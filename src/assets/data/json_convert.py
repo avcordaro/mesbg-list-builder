@@ -43,6 +43,9 @@ df_merged['points'].fillna("None", inplace=True)
 df_merged['min'].fillna(0, inplace=True)
 df_merged['max'].fillna(1, inplace=True)
 df_merged['opt_quantity'].fillna(0, inplace=True)
+df_merged['min'] = df_merged['min'].astype(int)
+df_merged['max'] = df_merged['max'].astype(int)
+df_merged['opt_quantity'] = df_merged['opt_quantity'].astype(int)
 df_merged_options = df_merged.groupby([
   'model_id', 
   'faction_type', 
