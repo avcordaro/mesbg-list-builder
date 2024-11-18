@@ -64,7 +64,7 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
             {profiles.map((row, index) => (
               <Fragment key={index}>
                 <ReferenceRow row={row} />
-                {row.additional_stats.map((additionalRow, aIndex) => (
+                {row.additional_stats?.map((additionalRow, aIndex) => (
                   <ReferenceRow row={additionalRow} key={aIndex} />
                 ))}
               </Fragment>

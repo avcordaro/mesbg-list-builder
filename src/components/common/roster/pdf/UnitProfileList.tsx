@@ -95,9 +95,9 @@ const ListItem = ({ profile }: { profile: Profile }) => {
                     profile.HW ||
                     profile.HF) && (
                     <>
-                      <TableCell>{stats.HF ?? "-"}</TableCell>
                       <TableCell>{stats.HM ?? "-"}</TableCell>
                       <TableCell>{stats.HW ?? "-"}</TableCell>
+                      <TableCell>{stats.HF ?? "-"}</TableCell>
                     </>
                   )}
                 </TableRow>

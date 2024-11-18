@@ -120,15 +120,13 @@ export const rosterSlice: Slice<RosterBuildingState, RosterState> = (
       const warbands = get().roster.warbands;
       return warbands[warbands.length - 1].id;
     },
-    deleteWarband: (warbandId: string): void => {
-      console.log(warbandId);
+    deleteWarband: (warbandId: string): void =>
       set(
         (state) =>
           recalculate({ ...state, ...deleteWarband(warbandId)(state) }),
         undefined,
         "DELETE_WARBAND",
-      );
-    },
+      ),
 
     assignHeroToWarband: (
       warbandId: string,
