@@ -106,7 +106,11 @@ export const useDownload = () => {
       .then(() => addPage(elements[3]))
       .then(() => addPage(elements[4]))
       .then(() => addPage(elements[5]))
-      .then(() => pdf.save("mesbg-list-builder"));
+      .then(() => {
+        const date = new Date();
+        const ts = date.toISOString().substring(0, 19);
+        return pdf.save(`mesbg-list-builder-${ts}`);
+      });
   };
 
   return {
