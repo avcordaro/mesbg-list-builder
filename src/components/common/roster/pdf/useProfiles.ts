@@ -101,7 +101,13 @@ export const useProfiles = () => {
 
           if (name === "Signal Tower") {
             return [
-              ...profile.additional_stats,
+              ...profile.additional_stats.map((stats) => ({
+                ...stats,
+                name: stats.name,
+                HM: 1,
+                HW: 1,
+                HF: 1,
+              })),
               {
                 name,
                 ...profile,

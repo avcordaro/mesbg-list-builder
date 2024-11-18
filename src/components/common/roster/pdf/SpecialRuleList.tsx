@@ -25,7 +25,7 @@ function mapSpecialRule(sr: string) {
   );
   return {
     name: rule?.name || sr,
-    type: null,
+    type: rule.active_passive,
     description: rule?.description,
   };
 }
@@ -63,7 +63,7 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
             <Box key={rule.name}>
               <Typography variant="body1">
                 <b>
-                  {rule.name} ({rule.type})
+                  {rule.name} {rule.type && <>({rule.type})</>}
                 </b>
               </Typography>
               <Typography variant="body2">{rule.description}</Typography>

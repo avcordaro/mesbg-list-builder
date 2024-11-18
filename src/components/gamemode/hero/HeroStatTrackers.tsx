@@ -40,9 +40,10 @@ const HeroStats: FunctionComponent<HeroStatsProps> = ({
 type HeroNameProps = {
   hero: GameModeHero;
   alive: boolean;
+  index?: number;
 };
 
-const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
+const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive, index }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -53,7 +54,7 @@ const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
     >
       {alive ? (
         <Typography variant="h6" flexGrow={1}>
-          <b>{hero.name}</b>
+          <b>{hero.name}</b> {!!index && <>( {index} )</>}
           {hero.leader && (
             <Typography component="span" color="success" sx={{ mx: 1 }}>
               <GiQueenCrown />
@@ -63,7 +64,7 @@ const HeroName: FunctionComponent<HeroNameProps> = ({ hero, alive }) => {
       ) : (
         <Typography variant="h6" color="textDisabled" flexGrow={1}>
           <s>
-            <b>{hero.name}</b>
+            <b>{hero.name}</b> {!!index && <>( {index} )</>}
           </s>
           {hero.leader && (
             <Typography component="span" color="success" sx={{ mx: 1 }}>
@@ -125,7 +126,7 @@ export const HeroStatTrackers = () => {
             index,
           })),
         )
-        .map(({ heroId, hero, index }) => {
+        .map(({ heroId, hero, index }, _, self) => {
           const alive = hero["xMWFW"].split(":")[3] !== "0";
           return (
             <Card
@@ -152,7 +153,17 @@ export const HeroStatTrackers = () => {
                   />
                 )}
                 <Stack spacing={1} flexGrow={1}>
-                  <HeroName hero={hero} alive={alive} />
+                  <HeroName
+                    hero={hero}
+                    alive={alive}
+                    index={
+                      hero.name === "Azog's Lieutenant"
+                        ? index -
+                          self.findIndex((h) => h.hero.name === hero.name) +
+                          1
+                        : null
+                    }
+                  />
                   <HeroStats hero_id={heroId} hero_idx={index} />
                 </Stack>
               </Stack>

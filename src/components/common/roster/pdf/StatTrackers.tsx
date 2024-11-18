@@ -82,7 +82,12 @@ export const StatTrackers = () => {
           <TableBody>
             {rows.map((row, index) => (
               <TableRow key={index}>
-                <TableCell sx={cellStyling}>{row.name}</TableCell>
+                <TableCell sx={cellStyling}>
+                  {row.name === "Azog's Lieutenant"
+                    ? row.name +
+                      ` ( ${index + 1 - rows.findIndex(({ name }) => name === row.name)} )`
+                    : row.name}
+                </TableCell>
                 <TableCell sx={cellStyling}>
                   <CheckboxList amount={row.might} />
                 </TableCell>
