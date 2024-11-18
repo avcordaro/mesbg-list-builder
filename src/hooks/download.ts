@@ -74,7 +74,7 @@ export const useDownload = () => {
       html2canvas: {
         scale: 0.25, // Scale down the content so it fits on the pages
       },
-      autoPaging: "slice",
+      autoPaging: "text",
     };
 
     // Array of HTML elements you want to include in the PDF
