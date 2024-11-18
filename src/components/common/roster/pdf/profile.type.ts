@@ -10,7 +10,7 @@ export type Profile = {
   Mv: string;
   S: string;
   W: string;
-  additional_stats: Omit<Profile, "magic_powers">[];
+  additional_stats: Profile[];
   additional_text: string[];
   heroic_actions: string[];
   special_rules: string[];

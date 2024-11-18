@@ -19,23 +19,37 @@ function duplicates(item: SpecialRule, index: number, self: SpecialRule[]) {
   return index === self.findIndex((other) => other.name === item.name);
 }
 
+function mapSpecialRule(sr: string) {
+  const rule = keywords.find(
+    (keyword) => keyword.name === sr.split("(")[0].trim(),
+  );
+  return {
+    name: rule?.name || sr,
+    type: null,
+    description: rule?.description,
+  };
+}
+
+function mapAopRule(rule: {
+  name: string;
+  type: "Active" | "Passive";
+  description: string;
+}) {
+  return {
+    ...rule,
+    type: rule.type || "Passive",
+  };
+}
+
 export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   const specialRules: SpecialRule[] = profiles
     .flatMap((profile) => [
-      ...profile.active_or_passive_rules.map((rule) => ({
-        ...rule,
-        type: rule.type || "Passive",
-      })),
-      ...profile.special_rules.map((sr) => {
-        const rule = keywords.find(
-          (keyword) => keyword.name === sr.split("(")[0].trim(),
-        );
-        return {
-          name: sr,
-          type: "unknown",
-          description: rule?.description,
-        };
-      }),
+      ...profile.active_or_passive_rules.map(mapAopRule),
+      ...profile.special_rules.map(mapSpecialRule),
+      ...(profile.additional_stats?.flatMap((additionalProfile) => [
+        ...additionalProfile.active_or_passive_rules.map(mapAopRule),
+        ...additionalProfile.special_rules.map(mapSpecialRule),
+      ]) || []),
     ])
     .filter(duplicates)
     .sort((a, b) => a.name.localeCompare(b.name));

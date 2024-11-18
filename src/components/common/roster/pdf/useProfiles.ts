@@ -95,18 +95,28 @@ export const useProfiles = () => {
 
           return true;
         })
-        .map((name: string) => {
+        .flatMap((name: string) => {
           const profile = profile_data[unit.profile_origin][name];
           if (!profile) return insertMissingProfile({ name } as Unit);
+
+          if (name === "Signal Tower") {
+            return [
+              ...profile.additional_stats,
+              {
+                name,
+                ...profile,
+              },
+            ];
+          }
 
           const extraProfileMWFW = unit.MWFW.find(([mwfName]) =>
             String(mwfName).includes(name),
           );
           if (extraProfileMWFW) {
             const [HM, HW, HF] = extraProfileMWFW[1].split(":");
-            return { ...profile, name, HM, HW, HF };
+            return [{ ...profile, name, HM, HW, HF }];
           }
-          return { ...profile, name };
+          return [{ ...profile, name }];
         })
         .filter((v) => !!v);
 
