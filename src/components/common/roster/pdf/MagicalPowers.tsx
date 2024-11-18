@@ -47,7 +47,13 @@ export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
                 </Typography>
                 <Typography
                   dangerouslySetInnerHTML={{
-                    __html: rule.description?.replaceAll("\n\n", "<br />"),
+                    __html: rule.description
+                      ?.replaceAll("\n\n", "<br />")
+                      ?.replaceAll(
+                        "<b>",
+                        "<h4 style='margin-top: 8px; display: inline-block'>",
+                      )
+                      ?.replaceAll("</b>:", ":</h4>"),
                   }}
                 />
               </Box>
