@@ -1,4 +1,8 @@
+import { AlertTitle } from "@mui/material";
+import Alert from "@mui/material/Alert";
+import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import profiles from "../../../assets/data/profile_data.json";
 import { useRosterBuildingState } from "../../../state/roster-building";
 import { isDefinedUnit, Unit, UnitType } from "../../../types/unit.ts";
@@ -74,17 +78,23 @@ function unusedAdditionalStats(
 
 export const PdfView = () => {
   const { roster } = useRosterBuildingState();
+  const missingProfiles = [];
+
+  const insertMissingProfile = (unit: Unit): undefined => {
+    missingProfiles.push(unit.name);
+  };
+
   const units: Profile[] = roster.warbands
     .flatMap((wb) => [wb.hero, ...wb.units])
     .filter(isDefinedUnit)
     .filter(duplicateUnits)
     .sort(byHeroicTier)
-    .map((unit) => {
+    .map((unit): Profile | undefined => {
       const army = profiles[unit.profile_origin];
-      if (!army) return null;
+      if (!army) return insertMissingProfile(unit);
 
       const profile = army[unit.name];
-      if (!profile) return null;
+      if (!profile) return insertMissingProfile(unit);
 
       const additional_stats =
         profile?.additional_stats?.filter(unusedAdditionalStats(unit)) || [];
@@ -100,13 +110,43 @@ export const PdfView = () => {
     .filter(duplicateProfiles);
 
   return (
-    <Stack gap={4}>
-      <QuickReferenceTable profiles={units} />
-      <ArmyComposition />
-      <UnitProfileList units={units} />
-      <SpecialRuleList profiles={units} />
-      <MagicalPowerList profiles={units} />
-      <StatTrackers />
-    </Stack>
+    <>
+      {missingProfiles.length > 0 && (
+        <Alert icon={false} severity="error" sx={{ mb: 1 }}>
+          <AlertTitle>
+            <b>Some selected units are missing profile data</b>
+          </AlertTitle>
+          <Typography>
+            Some of the units selected in your roster have no registered profile
+            data. If you see this message, please let us know via{" "}
+            <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
+              avcordaro@gmail.com
+            </a>
+            .
+          </Typography>
+          <Typography sx={{ mt: 1 }}>
+            The following units have no profile data:
+          </Typography>
+          <Typography sx={{ mt: 1 }} variant="body2">
+            <i>{JSON.stringify(missingProfiles)}</i>
+          </Typography>
+        </Alert>
+      )}
+      <Alert severity="info" sx={{ mb: 2 }}>
+        Below is a preview of the PDF that is going to be downloaded
+      </Alert>
+      <Box sx={{ maxHeight: "50svh" }}>
+        <Box sx={{ border: 1, p: 3 }}>
+          <Stack gap={4}>
+            <QuickReferenceTable profiles={units} />
+            <ArmyComposition />
+            <UnitProfileList units={units} />
+            <SpecialRuleList profiles={units} />
+            <MagicalPowerList profiles={units} />
+            <StatTrackers />
+          </Stack>
+        </Box>
+      </Box>
+    </>
   );
 };
