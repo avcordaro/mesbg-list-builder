@@ -15486,25 +15486,341 @@
     }
   },
   "Mounts": {
-    "Horse": {},
-    "Armoured Horse": {},
-    "Warg": {},
-    "Fell Warg": {},
-    "Fell Beast": {},
-    "Armoured Fell Beast": {},
-    "War Goat": {},
-    "Elk": {},
-    "Shadowfax": {},
+    "Horse": {
+      "Mv": "10\"",
+      "F": "3/6+",
+      "S": "3",
+      "D": "4",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Armoured horse": {
+      "Mv": "10\"",
+      "F": "3/6+",
+      "S": "3",
+      "D": "5",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Warg": {
+      "Mv": "10\"",
+      "F": "3/6+",
+      "S": "4",
+      "D": "4",
+      "A": "1",
+      "W": "1",
+      "C": "2",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Fell Warg": {
+      "Mv": "10\"",
+      "F": "3/0+",
+      "S": "4",
+      "D": "4",
+      "A": "1",
+      "W": "1",
+      "C": "2",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Fell Sight"
+      ],
+      "wargear": []
+    },
+    "Fell beast": {
+      "Mv": "3\"",
+      "F": "5/5+",
+      "S": "6",
+      "D": "6",
+      "A": "2",
+      "W": "3",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Fly",
+        "Monstrous Charge",
+        "Terror",
+        "Feral"
+      ],
+      "wargear": []
+    },
+    "Armoured Fell beast": {
+      "Mv": "3\"",
+      "F": "5/5+",
+      "S": "6",
+      "D": "7",
+      "A": "2",
+      "W": "3",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Fly",
+        "Monstrous Charge",
+        "Terror",
+        "Feral"
+      ],
+      "wargear": []
+    },
+    "War Goat": {
+      "Mv": "8\"",
+      "F": "2/6+",
+      "S": "4",
+      "D": "5",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Devastating Charge",
+          "type": "Active",
+          "description": "When this model Charges into combat against one or more Man-sized (or smaller) models, roll a D6 for each. Ona5+, that model is immediately Knocked to the Ground."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Mountain Dweller"
+      ],
+      "wargear": []
+    },
+    "War Boar": {
+      "Mv": "8\"",
+      "F": "4/5+",
+      "S": "4",
+      "D": "6",
+      "A": "0",
+      "W": "2",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Elk": {
+      "Mv": "10\"",
+      "F": "4/5+",
+      "S": "4",
+      "D": "5",
+      "A": "0",
+      "W": "2",
+      "C": "4",
+      "active_or_passive_rules": [
+        {
+          "name": "Thranduil's Elk",
+          "type": "Active",
+          "description": "If Thranduil Charges into combat whilst riding his Elk, Thranduil’s Strikes are resolved at Strength 5."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Shadowfax": {
+      "Mv": "12\"",
+      "F": "0/0+",
+      "S": "4",
+      "D": "5",
+      "A": "0",
+      "W": "1",
+      "C": "5",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
     "Royal War Mumak": {},
     "Windlance": {},
-    "Asfaloth": {},
-    "Sleigh": {},
-    "Great Eagle": {},
-    "Spectral Steed": {},
-    "Pony": {},
-    "Khandish Chariot": {},
-    "War Camel": {},
-    "Felarof": {},
-    "Cart": {}
+    "Asfaloth": {
+      "Mv": "12\"",
+      "F": "3/6+",
+      "S": "3",
+      "D": "4",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Fleetfoot"
+      ],
+      "wargear": []
+    },
+    "Sleigh": {
+      "Mv": "10\"",
+      "F": "3/6+",
+      "S": "2",
+      "D": "3",
+      "A": "4",
+      "W": "4",
+      "C": "2",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Woodland Creature",
+        "Fleetfoot"
+      ],
+      "wargear": []
+    },
+    "Great Eagle": {
+      "Mv": "3\"",
+      "F": "7/4+",
+      "S": "6",
+      "D": "8",
+      "A": "2",
+      "W": "3",
+      "C": "6",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [
+        "Fly",
+        "Monstrous Charge",
+        "Terror"
+      ],
+      "wargear": []
+    },
+    "Spectral Steed": {
+      "Mv": "10\"",
+      "F": "3/6+",
+      "S": "3",
+      "D": "6",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Spectral Steed",
+          "type": "Passive",
+          "description": "This is a horse that is a Spirit model and has a Defence of 6."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Pony": {
+      "Mv": "8\"",
+      "F": "2/6+",
+      "S": "2",
+      "D": "3",
+      "A": "0",
+      "W": "1",
+      "C": "2",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Khandish Chariot": {
+      "Mv": "10\"",
+      "F": "0/0+",
+      "S": "3",
+      "D": "7",
+      "A": "0",
+      "W": "3",
+      "C": "3",
+      "active_or_passive_rules": [
+        {
+          "name": "Defensive Bulwark",
+          "type": "Active",
+          "description": "When an enemy model makes an In The Way roll to see if they hit either the rider or the mount, they will hit the Chariot on a 1-4 and the rider on a 5+. Additionally, when in combat, any model that wishes to Strike the rider must roll a 06. On a 1-4, the model must Strike the Chariot. On a 5+, they may Strike the rider."
+        },
+        {
+          "name": "The Chariot and Magic",
+          "type": "Passive",
+          "description": "Models with Magical Powers can use them on the Chariot, selecting either the Chariot itself or one of the crew members as the target. Magical Powers that affect multiple targets will automatically affect both the Chariot and its crew if in range of the model. Only by affecting the Driver will a Magical Power such as Transfix or Compel impede the Chariot's movement (thereby causing it to remain stationary or take a move as described by the Magical Power). Finally, Magical Powers such as Sorcerous Blast, Nature's Wrath and Call Winds will not move the Chariot or Knock it Prone, although they will still inflict any damage as detailed in the Magical Power's description. "
+        },
+        {
+          "name": "Stable Platform",
+          "type": "Active",
+          "description": "A model riding a Chariot can still fire a bow after moving its full distance."
+        },
+        {
+          "name": "Chariot Charge",
+          "type": "Passive",
+          "description": "A Khandish Chariot has the Monstrous Charge special rule. Additionally, a Khandish Chariot moves in a particular way as described in The Armies of LOTR on page 189."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "War Camel": {
+      "Mv": "10\"",
+      "F": "0/0+",
+      "S": "4",
+      "D": "4",
+      "A": "0",
+      "W": "1",
+      "C": "2",
+      "active_or_passive_rules": [
+        {
+          "name": "Impaler",
+          "type": "Active",
+          "description": "Whenever a war camel charges into combat, it will inflict one Strength 4 hit upon one model it has charged (Cavalry models suffer the hits  on both the mount and the rider). If after these hits the Raider is unengaged and has movement remaining, the Raider may complete its move in any way the controlling player wishes; stopping straight away, charging another target or anything in between. "
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Felarof": {
+      "Mv": "12\"",
+      "F": "3/6+",
+      "S": "3",
+      "D": "5",
+      "A": "0",
+      "W": "1",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Cart": {
+      "Mv": "8\"",
+      "F": "0/0+",
+      "S": "3",
+      "D": "5",
+      "A": "0",
+      "W": "3",
+      "C": "3",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    }
   }
 }

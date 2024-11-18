@@ -40,6 +40,15 @@ const ReferenceRow = ({
 };
 
 export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
+  const mounts = profiles
+    .flatMap(
+      (profile) =>
+        profile.additional_stats?.filter((stat) => stat.type === "mount") || [],
+    )
+    .filter(function (item: Profile, index: number, self: Profile[]) {
+      return index === self.findIndex((other) => other.name === item.name);
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
   return (
     <>
       <TableContainer id="pdf-quick-ref" component="div">
@@ -64,10 +73,15 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
             {profiles.map((row, index) => (
               <Fragment key={index}>
                 <ReferenceRow row={row} />
-                {row.additional_stats?.map((additionalRow, aIndex) => (
-                  <ReferenceRow row={additionalRow} key={aIndex} />
-                ))}
+                {row.additional_stats
+                  ?.filter((stat) => stat.type !== "mount")
+                  ?.map((additionalRow, aIndex) => (
+                    <ReferenceRow row={additionalRow} key={aIndex} />
+                  ))}
               </Fragment>
+            ))}
+            {mounts.map((additionalRow, aIndex) => (
+              <ReferenceRow row={additionalRow} key={aIndex} />
             ))}
           </TableBody>
         </Table>

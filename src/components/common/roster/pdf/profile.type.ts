@@ -21,4 +21,5 @@ export type Profile = {
   }[];
   magic_powers: { name: string; range: string; cast: string }[];
   wargear: string[];
+  type?: string;
 };

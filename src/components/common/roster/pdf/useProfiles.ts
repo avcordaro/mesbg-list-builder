@@ -138,6 +138,16 @@ export const useProfiles = () => {
       additionalStats.push(...extraProfiles);
     }
 
+    const mountProfiles =
+      unit.options
+        ?.filter((option) => option.type === "mount" && option.opt_quantity > 0)
+        ?.map((mount) => ({
+          ...profile_data.Mounts[mount.option],
+          name: mount.option,
+          type: "mount",
+        })) || [];
+    additionalStats.push(...mountProfiles);
+
     return additionalStats;
   }
 

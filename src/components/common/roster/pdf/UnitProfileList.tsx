@@ -204,7 +204,9 @@ const ListItem = ({ profile }: { profile: Profile }) => {
         <SpecialRules profile={profile} />
         <HeroicActions profile={profile} />
         <MagicalPowers profile={profile} />
-        <AdditionalProfiles additionalProfiles={profile.additional_stats} />
+        <AdditionalProfiles
+          additionalProfiles={profile?.additional_stats || []}
+        />
       </Box>
     </>
   );
