@@ -11556,6 +11556,11 @@
           "name": "Helm of the Dragon Emperor",
           "type": "Passive",
           "description": "The Emperor is Resistant to Magic."
+        },
+        {
+          "name": "Phalanx",
+          "type": "Active",
+          "description": "Easterlings can use pike and shield without penalty. If an Easterling model loses a duel roll on foot, up to two other models that also have the Phalanx rule can Make Way, instead of one."
         }
       ],
       "magic_powers": [],
@@ -11565,9 +11570,7 @@
         "Heroic Strength",
         "Heroic Defence"
       ],
-      "special_rules": [
-        "Phalanx"
-      ],
+      "special_rules": [],
       "wargear": [
         "Heavy armour",
         "The Emperor's Glaive",
@@ -15481,5 +15484,27 @@
         "poisoned blowpipe"
       ]
     }
+  },
+  "Mounts": {
+    "Horse": {},
+    "Armoured Horse": {},
+    "Warg": {},
+    "Fell Warg": {},
+    "Fell Beast": {},
+    "Armoured Fell Beast": {},
+    "War Goat": {},
+    "Elk": {},
+    "Shadowfax": {},
+    "Royal War Mumak": {},
+    "Windlance": {},
+    "Asfaloth": {},
+    "Sleigh": {},
+    "Great Eagle": {},
+    "Spectral Steed": {},
+    "Pony": {},
+    "Khandish Chariot": {},
+    "War Camel": {},
+    "Felarof": {},
+    "Cart": {}
   }
 }
