@@ -6,6 +6,8 @@ import {
   ImageListItem,
 } from "@mui/material";
 import Alert from "@mui/material/Alert";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
 import hero_constraint_data from "../../../assets/data/hero_constraint_data.json";
 import { useDownload } from "../../../hooks/download.ts";
@@ -20,6 +22,11 @@ export const DownloadProfileCardModal = () => {
   const { closeModal, triggerAlert } = useAppState();
   const { downloadProfileCards } = useDownload();
   const [profileCards, setProfileCards] = useState<string[]>([]);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.down("lg"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   useEffect(() => {
     const profileCards: string[] = [];
@@ -58,11 +65,11 @@ export const DownloadProfileCardModal = () => {
 
   return (
     <>
-      <DialogContent sx={{ minWidth: "50vw", maxHeight: "50svh" }}>
+      <DialogContent sx={{ minWidth: "70vw", maxHeight: "50svh" }}>
         <Alert severity="info">
           The following profile cards will be downloaded (in high resolution).
         </Alert>
-        <ImageList cols={3}>
+        <ImageList cols={isMobile ? 1 : isTablet ? 2 : isDesktop ? 3 : 4}>
           {profileCards
             .map((profile) => profile.split("|"))
             .map(([army, profile], index) => (

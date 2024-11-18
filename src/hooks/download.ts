@@ -72,7 +72,7 @@ export const useDownload = () => {
       margin: 10,
       width: 190, // (A4 is 210mm wide with margins)
       html2canvas: {
-        scale: 0.325, // Scale down the content so it fits on the pages
+        scale: 0.25, // Scale down the content so it fits on the pages
       },
       autoPaging: "slice",
     };
@@ -88,6 +88,8 @@ export const useDownload = () => {
     ];
 
     const addPage = (htmlElement: HTMLElement) => {
+      if (!htmlElement) return Promise.resolve();
+
       const noOfPages = pdf.internal.pages.length - 1;
       const y = (pdf.internal.pageSize.height - 20) * noOfPages; // sub margins
       pdf.addPage();

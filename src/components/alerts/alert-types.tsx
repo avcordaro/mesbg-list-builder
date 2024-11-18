@@ -66,7 +66,7 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
     },
   ],
   [
-    AlertTypes.SCREENSHOT_COPIED_ALERT,
+    AlertTypes.DOWNLOAD_FAILED,
     {
       variant: "error",
       content: <DownloadFailed />,

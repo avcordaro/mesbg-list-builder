@@ -135,7 +135,7 @@ export const PdfView = () => {
       <Alert severity="info" sx={{ mb: 2 }}>
         Below is a preview of the PDF that is going to be downloaded
       </Alert>
-      <Box sx={{ maxHeight: "50svh" }}>
+      <Box sx={{ maxHeight: "50svh", width: "210mm" }}>
         <Box sx={{ border: 1, p: 3 }}>
           <Stack gap={4}>
             <QuickReferenceTable profiles={units} />

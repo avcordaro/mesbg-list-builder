@@ -19,7 +19,7 @@ function duplicates(item: MagicalPower, index: number, self: MagicalPower[]) {
 }
 
 export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
-  const specialRules: MagicalPower[] = profiles
+  const magicalPowers: MagicalPower[] = profiles
     .flatMap((profile) =>
       profile.magic_powers.map(({ name }) => {
         const power = keywords.find((keyword) => keyword.name === name);
@@ -34,23 +34,25 @@ export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
 
   return (
     <>
-      <Box id="pdf-magic">
-        <Typography variant="h5">Magical Powers</Typography>
-        <Stack gap={1} sx={{ py: 1 }}>
-          {specialRules.map((rule) => (
-            <Box key={rule.name}>
-              <Typography variant="h6">
-                <b>{rule.name}</b>
-              </Typography>
-              <Typography
-                dangerouslySetInnerHTML={{
-                  __html: rule.description?.replaceAll("\n\n", "<br />"),
-                }}
-              />
-            </Box>
-          ))}
-        </Stack>
-      </Box>
+      {magicalPowers.length > 0 && (
+        <Box id="pdf-magic">
+          <Typography variant="h5">Magical Powers</Typography>
+          <Stack gap={1} sx={{ py: 1 }}>
+            {magicalPowers.map((rule) => (
+              <Box key={rule.name}>
+                <Typography variant="h6">
+                  <b>{rule.name}</b>
+                </Typography>
+                <Typography
+                  dangerouslySetInnerHTML={{
+                    __html: rule.description?.replaceAll("\n\n", "<br />"),
+                  }}
+                />
+              </Box>
+            ))}
+          </Stack>
+        </Box>
+      )}
     </>
   );
 };
