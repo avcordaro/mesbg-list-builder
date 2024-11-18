@@ -8712,7 +8712,7 @@
       ],
       "special_rules": [
         "Cave Dweller",
-        "Hated (Dwarf)"
+        "Hatred (Dwarf)"
       ],
       "wargear": [
         "Heavy armour",
@@ -15449,10 +15449,11 @@
       ],
       "special_rules": [
         "Hatred (Goblin)",
-        "Hated (Orc)",
+        "Hatred (Orc)",
         "Hatred (Uruk-hai)",
         "Stalk Unseen",
-        "Woodland Creature"
+        "Woodland Creature",
+        "Poisoned Blowpipe"
       ],
       "wargear": [
         "Dagger",
@@ -15473,10 +15474,11 @@
       "heroic_actions": [],
       "special_rules": [
         "Hatred (Goblin)",
-        "Hated (Orc)",
+        "Hatred (Orc)",
         "Hatred (Uruk-hai)",
         "Stalk Unseen",
-        "Woodland Creature"
+        "Woodland Creature",
+        "Poisoned Blowpipe"
       ],
       "wargear": [
         "Dagger",

@@ -23,6 +23,25 @@ function duplicates(item: SpecialRule, index: number, self: SpecialRule[]) {
 }
 
 function mapSpecialRule(sr: string) {
+  if (
+    [
+      "Poisoned Sword",
+      "Poisoned Spear",
+      "Poisoned War Spear",
+      "Poisoned Blowpipe",
+      "Poisoned Fangs",
+    ].includes(sr)
+  ) {
+    const rule = keywords.find(
+      (keyword) => keyword.name === "Poisoned Weapons",
+    );
+    return {
+      name: sr,
+      type: rule?.active_passive,
+      description: rule?.description,
+    };
+  }
+
   const rule = keywords.find(
     (keyword) => keyword.name === sr.split("(")[0].trim(),
   );
