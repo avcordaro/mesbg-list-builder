@@ -181,7 +181,6 @@ export const useProfiles = () => {
             String(mwfName).includes(name),
           ) || ["", "-:-:-:-"];
           const [HM, HW, HF] = mountMwfw[1].split(":");
-          console.log(profile_data.Mounts[name]);
           return {
             ...profile_data.Mounts[name],
             name: name,
