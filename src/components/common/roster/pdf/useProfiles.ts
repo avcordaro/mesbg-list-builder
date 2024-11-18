@@ -33,24 +33,16 @@ export const useProfiles = () => {
     return sorting[a.unit_type] - sorting[b.unit_type];
   }
 
-  function duplicateUnits(item: Unit, index: number, self: Unit[]) {
-    return (
-      index ===
-      self.findIndex(
-        (other) =>
-          other.profile_origin === item.profile_origin &&
-          other.name === item.name,
-      )
-    );
-  }
-
   function duplicateProfiles(item: Profile, index: number, self: Profile[]) {
     return index === self.findIndex((other) => other.name === item.name);
   }
 
   function getMightWillAndFate(unit: Unit) {
     const specialCases = ["[rohan] dernhelm"];
-    if (specialCases.includes(unit.model_id))
+    if (
+      specialCases.includes(unit.model_id) ||
+      unit.unit_type === "Siege Engine"
+    )
       return { HM: "-", HW: "-", HF: "-" };
     if (unit.MWFW && unit.MWFW[0]) {
       const [HM, HW, HF] = unit.MWFW[0][1].split(":");
@@ -88,7 +80,49 @@ export const useProfiles = () => {
 
   function getAdditionalStats(unit: Unit, profile: Profile) {
     const additionalStats =
-      profile?.additional_stats?.filter(unusedAdditionalStats(unit)) || [];
+      profile?.additional_stats
+        ?.filter(unusedAdditionalStats(unit))
+        ?.map((profile) => {
+          if (
+            unit.unit_type === "Siege Engine" &&
+            profile.name.includes("Engineer Captain")
+          ) {
+            const engineerMWFW = unit.MWFW.find(([name]) =>
+              String(name).includes("Engineer Captain"),
+            );
+            if (engineerMWFW) {
+              const [HM, HW, HF] = engineerMWFW[1].split(":");
+              return { ...profile, HM, HW, HF };
+            }
+          }
+
+          return { ...profile };
+        }) || [];
+
+    if (unit.unit_type === "Siege Engine") {
+      const hasEngineerCpt = unit.options.find(
+        (option) => option.type === "engineer_cpt" && option.opt_quantity > 0,
+      );
+      if (!hasEngineerCpt) {
+        const siegeVetStats = profile.additional_stats.find(
+          (stat) => stat.name === "Crew",
+        );
+        const veteranMWFW = unit.MWFW.find(([name]) =>
+          String(name).includes("Siege Veteran"),
+        );
+        if (siegeVetStats && veteranMWFW) {
+          const [HM, HW, HF] = veteranMWFW[1].split(":");
+
+          additionalStats.push({
+            ...siegeVetStats,
+            name: "Siege Veteran",
+            HM,
+            HW,
+            HF,
+          });
+        }
+      }
+    }
 
     const extraConstraints = hero_constraint_data[unit.model_id];
     if (extraConstraints) {
@@ -141,11 +175,22 @@ export const useProfiles = () => {
     const mountProfiles =
       unit.options
         ?.filter((option) => option.type === "mount" && option.opt_quantity > 0)
-        ?.map((mount) => ({
-          ...profile_data.Mounts[mount.option],
-          name: mount.option,
-          type: "mount",
-        })) || [];
+        ?.map((mount) => {
+          const name = mount.option;
+          const mountMwfw = unit.MWFW.find(([mwfName]) =>
+            String(mwfName).includes(name),
+          ) || ["", "-:-:-:-"];
+          const [HM, HW, HF] = mountMwfw[1].split(":");
+          console.log(profile_data.Mounts[name]);
+          return {
+            ...profile_data.Mounts[name],
+            name: name,
+            type: "mount",
+            HM,
+            HW,
+            HF,
+          };
+        }) || [];
     additionalStats.push(...mountProfiles);
 
     if (profile.wargear && profile.wargear.length > 0) {
@@ -162,13 +207,12 @@ export const useProfiles = () => {
       additionalStats.push(...defaultMountProfiles);
     }
 
-    return additionalStats;
+    return additionalStats.filter(duplicateProfiles);
   }
 
   const profiles: Profile[] = roster.warbands
     .flatMap((wb) => [wb.hero, ...wb.units])
     .filter(isDefinedUnit)
-    .filter(duplicateUnits)
     .sort(byHeroicTier)
     .flatMap((unit): Profile[] | undefined => {
       const army = profile_data[unit.profile_origin];
@@ -197,6 +241,18 @@ export const useProfiles = () => {
       ];
     })
     .filter((v) => !!v)
+    .map((profile, index, self) => {
+      const firstIndex = self.findIndex((other) => other.name === profile.name);
+      if (index === firstIndex) return profile;
+
+      const firstOccurrence = self[firstIndex];
+      const combined = [
+        ...firstOccurrence.additional_stats,
+        ...profile.additional_stats,
+      ];
+      firstOccurrence.additional_stats = combined.filter(duplicateProfiles);
+      return profile;
+    })
     .filter(duplicateProfiles);
 
   return {

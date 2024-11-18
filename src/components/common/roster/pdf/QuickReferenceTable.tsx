@@ -16,15 +16,17 @@ interface QuickReferenceTableProps {
 
 const ReferenceRow = ({
   row,
+  indent,
 }: {
   row: Pick<
     Profile,
     "name" | "Mv" | "F" | "S" | "D" | "A" | "W" | "C" | "HM" | "HW" | "HF"
   >;
+  indent?: boolean;
 }) => {
   return (
     <TableRow>
-      <TableCell>{row.name}</TableCell>
+      <TableCell sx={{ pl: indent ? 6 : 0 }}>{row.name}</TableCell>
       <TableCell>{row.Mv}</TableCell>
       <TableCell>{row.F}</TableCell>
       <TableCell>{row.S}</TableCell>
@@ -76,7 +78,11 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
                 {row.additional_stats
                   ?.filter((stat) => stat.type !== "mount")
                   ?.map((additionalRow, aIndex) => (
-                    <ReferenceRow row={additionalRow} key={aIndex} />
+                    <ReferenceRow
+                      row={additionalRow}
+                      key={aIndex}
+                      indent={true}
+                    />
                   ))}
               </Fragment>
             ))}

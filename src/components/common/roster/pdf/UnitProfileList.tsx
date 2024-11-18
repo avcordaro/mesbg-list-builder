@@ -104,6 +104,8 @@ const AdditionalText = ({ profile }: { profile: Profile }) => {
 };
 
 const SpecialRules = ({ profile }: { profile: Profile }) => {
+  console.log(profile.name, profile.active_or_passive_rules);
+
   const specialRules: string[] = [
     ...profile.active_or_passive_rules.map((rule) => rule.name),
     ...profile.special_rules,
