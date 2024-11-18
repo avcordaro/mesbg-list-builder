@@ -1160,7 +1160,7 @@
         "sword",
         "shield",
         "war spear",
-        "horse"
+        "Horse"
       ]
     },
     "Arvedui, Last King of Arnor": {
@@ -1233,7 +1233,7 @@
         "sword",
         "shield",
         "war spear",
-        "horse"
+        "Horse"
       ]
     },
     "Malbeth the Seer": {
@@ -4367,7 +4367,7 @@
         "Armour",
         "club",
         "shield",
-        "war camel"
+        "War Camel"
       ]
     },
     "Mahud Tribesmaster": {
@@ -5136,7 +5136,7 @@
       "wargear": [
         "Heavy armour",
         "Elven-made hand-and-a-half sword",
-        "horse"
+        "Horse"
       ]
     },
     "Mirkwood Elf": {
@@ -5420,7 +5420,7 @@
       "wargear": [
         "Armour",
         "shield",
-        "horse",
+        "Horse",
         "axe",
         "dagger"
       ]
@@ -7279,7 +7279,7 @@
         "Heavy armour",
         "sword",
         "lance",
-        "horse"
+        "Horse"
       ]
     },
     "Knight of the White Tower": {
@@ -9855,7 +9855,7 @@
         "lance",
         "Elven-made Hand-and-a-half sword",
         "Elf bow",
-        "horse"
+        "Horse"
       ]
     }
   },
@@ -9973,7 +9973,7 @@
         "Armour",
         "shield",
         "sword",
-        "horse"
+        "Horse"
       ],
       "additional_text": [
         "Whilst Merry remains a passenger, Dernhelm gains the Resistant to Magic special rule, and Merry may use his own Might points to affect Dernhelm's rolls or declare Heroic Actions."
@@ -10352,7 +10352,7 @@
         "sword or axe",
         "shield",
         "bow",
-        "horse"
+        "Horse"
       ]
     },
     "Rohan Outrider": {
@@ -11089,7 +11089,7 @@
         "Armour",
         "sword",
         "shield",
-        "spectral steed"
+        "Spectral Steed"
       ]
     },
     "The King of the Dead": {
@@ -13250,7 +13250,7 @@
       "wargear": [
         "Armour",
         "dagger",
-        "horse"
+        "Horse"
       ]
     },
     "Haradrim Taskmaster": {
@@ -13391,7 +13391,7 @@
       "wargear": [
         "Armour",
         "war spear",
-        "horse"
+        "Horse"
       ]
     },
     "Suladan": {
@@ -13622,7 +13622,7 @@
       ],
       "wargear": [
         "Club",
-        "horse"
+        "Horse"
       ]
     },
     "Bilbo Baggins": {
@@ -15035,7 +15035,7 @@
         "hand-and-a-half axe",
         "bow",
         "dagger",
-        "horse"
+        "Horse"
       ],
       "additional_text": [
         "If a Horseman is dismounted, they drop either their bow or hand-and-a-half axe, chosen by the controlling player."
@@ -15652,8 +15652,45 @@
       "special_rules": [],
       "wargear": []
     },
-    "Royal War Mumak": {},
-    "Windlance": {},
+    "Royal War Mumak": {
+      "Mv": "8\"",
+      "F": "5/5+",
+      "S": "9",
+      "D": "8",
+      "A": "3",
+      "W": "10",
+      "C": "2",
+      "active_or_passive_rules": [],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "wargear": []
+    },
+    "Windlance": {
+      "Mv": "-",
+      "F": "-",
+      "S": "10",
+      "D": "10",
+      "A": "-",
+      "W": "3",
+      "C": "-",
+      "active_or_passive_rules": [
+        {
+          "name": "Accurate",
+          "type": "Passive",
+          "description": "A Windlance will only scatter 3\" rather than 6\"."
+        },
+        {
+          "name": "Superior Construction",
+          "type": "Passive",
+          "description": "Maximum range increased by 12\"."
+        }
+      ],
+      "magic_powers": [],
+      "heroic_actions": [],
+      "special_rules": [],
+      "additional_text": []
+    },
     "Asfaloth": {
       "Mv": "12\"",
       "F": "3/6+",

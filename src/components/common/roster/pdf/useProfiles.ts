@@ -148,6 +148,20 @@ export const useProfiles = () => {
         })) || [];
     additionalStats.push(...mountProfiles);
 
+    if (profile.wargear && profile.wargear.length > 0) {
+      const defaultMountProfiles =
+        profile.wargear
+          .filter((wargear) =>
+            Object.keys(profile_data.Mounts).includes(wargear),
+          )
+          .map((mount) => ({
+            ...profile_data.Mounts[mount],
+            name: mount,
+            type: "mount",
+          })) || [];
+      additionalStats.push(...defaultMountProfiles);
+    }
+
     return additionalStats;
   }
 
