@@ -130,7 +130,7 @@ export const HeroStatTrackers = () => {
           const alive = hero["xMWFW"].split(":")[3] !== "0";
           return (
             <Card
-              key={`${heroId}_${hero.name}`}
+              key={`${heroId}_${hero.name}_${index}`}
               elevation={4}
               sx={{
                 p: 1,
