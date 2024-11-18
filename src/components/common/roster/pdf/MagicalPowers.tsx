@@ -21,13 +21,15 @@ function duplicates(item: MagicalPower, index: number, self: MagicalPower[]) {
 export const MagicalPowerList = ({ profiles }: MagicalPowerListProps) => {
   const magicalPowers: MagicalPower[] = profiles
     .flatMap((profile) =>
-      profile.magic_powers.map(({ name }) => {
-        const power = keywords.find((keyword) => keyword.name === name);
-        return {
-          name,
-          description: power?.description,
-        };
-      }),
+      profile.magic_powers
+        .map(({ name }) => name.split("(")[0].trim())
+        .map((name) => {
+          const power = keywords.find((keyword) => keyword.name === name);
+          return {
+            name,
+            description: power?.description,
+          };
+        }),
     )
     .filter(duplicates)
     .sort((a, b) => a.name.localeCompare(b.name));
