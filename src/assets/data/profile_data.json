@@ -4460,6 +4460,10 @@
       "A": "3",
       "W": "10",
       "C": "2",
+      "additional_text": [
+        "A War Mumak of Far Harad uses the same profile as the War Mumak of Harad in every way (see page 194), with the exception that it always has the Mahud Beastmaster Chieftain upgrade (see page 195).",
+        "A War Mumak of Far Harad is comprised of a Mahud Beastmaster Chieftain with armour and a club as the warband's captain and the Mumak itself. "
+      ],
       "active_or_passive_rules": [
         {
           "name": "Awesome Presence",
@@ -4488,11 +4492,13 @@
           "S": "-",
           "D": "9",
           "A": "-",
-          "W": "-",
-          "C": "4",
+          "W": "5",
+          "C": "-",
           "active_or_passive_rules": [],
           "special_rules": [],
-          "additional_text": ""
+          "additional_text": [
+            "A War Mumak of Far Harad' s Howdah has a capacity of 12 models. The only models that may ride within the Howdah are Mahud Warriors and HalfTrolls."
+          ]
         },
         {
           "name": "Mahud Beastmaster Chieftain",
@@ -13461,6 +13467,10 @@
       "A": "3",
       "W": "10",
       "C": "2",
+      "additional_text": [
+        "A War Mumak of Harad is comprised of a Haradrim Commander with armour and a war spear as the warband's captain, and the Mumak itself.",
+        "See page 194 of Armies of LOTR for additional special rules."
+      ],
       "active_or_passive_rules": [
         {
           "name": "Awesome Presence",
@@ -13489,11 +13499,13 @@
           "S": "-",
           "D": "9",
           "A": "-",
-          "W": "-",
-          "C": "4",
+          "W": "5",
+          "C": "-",
           "active_or_passive_rules": [],
           "special_rules": [],
-          "additional_text": ""
+          "additional_text": [
+            "A War Mumak of Harad's Howdah has a capacity of 12 models, in addition to the commander. The only models that may ride within the Howdah are Haradrim Warriors, Serpent Guard and Watchers of Kama."
+          ]
         },
         {
           "name": "Haradrim Commander",
@@ -13504,6 +13516,19 @@
           "A": "2",
           "W": "2",
           "C": "4",
+          "active_or_passive_rules": [],
+          "special_rules": [],
+          "additional_text": ""
+        },
+        {
+          "name": "Mahud Beastmaster Chieftain",
+          "Mv": "6\"",
+          "F": "4/3+",
+          "S": "5",
+          "D": "5",
+          "A": "2",
+          "W": "2",
+          "C": "5",
           "active_or_passive_rules": [],
           "special_rules": [],
           "additional_text": ""

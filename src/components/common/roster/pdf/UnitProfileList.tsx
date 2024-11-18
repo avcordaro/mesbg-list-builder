@@ -159,7 +159,7 @@ const MagicalPowers = ({ profile }: { profile: Profile }) => {
 const HeroicActions = ({ profile }: { profile: Profile }) => {
   return (
     <>
-      {profile.heroic_actions.length > 0 && (
+      {profile.heroic_actions && profile.heroic_actions.length > 0 && (
         <Typography sx={{ mt: 0.5 }}>
           <b>Heroic actions:</b> {profile.heroic_actions.join(", ")}{" "}
         </Typography>

@@ -3,6 +3,9 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import keywords from "../../../../assets/data/keywords.json";
 
+import { wanderers } from "../../../../constants/wanderers.ts";
+import { useFactionData } from "../../../../hooks/faction-data.ts";
+import { useRosterBuildingState } from "../../../../state/roster-building";
 import { Profile } from "./profile.type.ts";
 
 interface SpecialRuleListProps {
@@ -42,6 +45,8 @@ function mapAopRule(rule: {
 }
 
 export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
+  const { factions, armyBonusActive } = useRosterBuildingState();
+  const factionData = useFactionData();
   const specialRules: SpecialRule[] = profiles
     .flatMap((profile) => [
       ...profile.active_or_passive_rules.map(mapAopRule),
@@ -57,10 +62,30 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
   return (
     <>
       <Box id="pdf-rules">
+        {armyBonusActive && (
+          <Box sx={{ mb: 2 }}>
+            <Typography variant="h5" sx={{ mb: 1 }}>
+              Army bonuses
+            </Typography>
+            {factions
+              .filter((f) => !wanderers.includes(f))
+              .map((f) => (
+                <Typography
+                  key={f}
+                  variant="body1"
+                  component="div"
+                  dangerouslySetInnerHTML={{
+                    __html: factionData[f]["armyBonus"],
+                  }}
+                />
+              ))}
+          </Box>
+        )}
+
         <Typography variant="h5">Special rules</Typography>
         <Stack gap={1} sx={{ py: 1 }}>
           {specialRules.map((rule) => (
-            <Box key={rule.name}>
+            <Box key={rule.name} sx={{ py: 0.8 }}>
               <Typography variant="body1">
                 <b>
                   {rule.name} {rule.type && <>({rule.type})</>}

@@ -60,14 +60,23 @@ export const useProfiles = () => {
     }
   }
 
-  function unusedAdditionalStats(
-    unit: Unit,
-  ): (stats: Omit<Profile, "magic_powers">) => boolean {
+  function unusedAdditionalStats(unit: Unit): (stats: Profile) => boolean {
     return (stats) => {
       if (unit.unit_type === "Siege Engine" && stats.name.includes("Captain")) {
         return !!unit.options.find(
           (option) => option.type === "engineer_cpt" && option.opt_quantity > 0,
         );
+      }
+
+      if (
+        unit.model_id === "[the_serpent_horde] war_mumak_of_harad" ||
+        unit.model_id === "[grand_army_of_the_south] war_mumak_of_harad"
+      ) {
+        const hasChief = !!unit.options.find(
+          (option) => option.type === "mahud_chief" && option.opt_quantity > 0,
+        );
+        if (stats.name === "Mahud Beastmaster Chieftain") return hasChief;
+        if (stats.name === "Haradrim Commander") return !hasChief;
       }
       return true;
     };
