@@ -11015,7 +11015,18 @@
           "A": "1",
           "W": "1",
           "C": "3",
-          "active_or_passive_rules": [],
+          "active_or_passive_rules": [
+            {
+              "name": "Da! Down Here!",
+              "type": "Passive",
+              "description": "Bard and Bain gain +1 Fight if they are within 6\" of Sigrid or Tilda. If Bard or Bain are within 6\" of both girls, then Bard and/or Bain also gain a free Heroic Combat each turn."
+            },
+            {
+              "name": "Something to Fight for",
+              "type": "Passive",
+              "description": "If Sigrid or Tilda are slain, Bard automatically passes all Courage tests. He must also Charge the model that killed her if possible. If not possible, he must move as close to that model as he can. Once he kills the model, he must always move/Charge towards"
+            }
+          ],
           "magic_powers": [],
           "heroic_actions": [],
           "special_rules": [],
