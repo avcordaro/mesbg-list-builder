@@ -510,6 +510,12 @@
     "description":"<b>Duration<\/b>: Temporary\n\nThis power may target the caster or a single friendly model within 3\". The target may not be targeted by an enemy\u2019s Magical Powers or special rules (e.g., The Golden King\u2019s Riches Beyond Renown or a Dead Marsh Spectre\u2019s A Fell Light is in Them).\n\n<b>Channelled<\/b>: This power will affect all friendly models within 3\"."
   },
   {
+    "name":"Rappelling Lines",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"Models in the Howdah may attempt to dismount from the M\u00fbmak during the Move phase, after the M\u00fbmak has moved. Roll a D6 for each model that is attempting to dismount. On a 1, the rope has snapped and the unfortunate model suffers falling damage as normal. On a 2+, the model successfully dismounts, place it in base contact with the M\u00fbmak. Models that dismount may still Charge as normal, although they may not make shooting attacks."
+  },
+  {
     "name":"Refreshing Song",
     "type":"magical_power",
     "active_passive":null,
@@ -526,6 +532,12 @@
     "type":"special_rule",
     "active_passive":"Passive",
     "description":"If this model is targeted by a Magical Power, it may use an additional \u2018free\u2019 dice when it makes a Resist test, even if it has no Will remaining or decides not to use any Will points from its store."
+  },
+  {
+    "name":"Rocks",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"If they do not move, models in the Howdah may make a Shooting attack with a range of 8\" and a Strength of 6."
   },
   {
     "name":"Sap Will",
@@ -576,6 +588,12 @@
     "description":"<b>Duration<\/b>: Temporary\n\nThis power targets a friendly model within range. The target is considered to be invisible until the End phase. They cannot be targeted by enemy models\u2019 Magical Powers, special rules or shooting attacks (and do not count as In The Way). They have no Control Zone while invisible and enemy models may even move \u2018through\u2019 them. An enemy model may not end its movement on the space the target is taking up. If an enemy wishes to Charge the target, it must pass a Courage test, applying a penalty of -1 to the roll for every full 1\" that the target is away from the foe.\n\n<b>Channelled<\/b>: Additionally, during the Fight phase, any enemy model Engaged in combat with the target halves its Fight value for the duration of the Duel."
   },
   {
+    "name":"Sigils of Defiance",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"Models in the Howdah gain the Resistant to Magic special rule. Additionally, every time a model in the Howdah suffers a Wound, roll a D6. On a 6, the Wound is ignored exactly as if a point of Fate had been expended."
+  },
+  {
     "name":"Slingshot",
     "type":"special_rule",
     "active_passive":null,
@@ -622,6 +640,12 @@
     "type":"special_rule",
     "active_passive":null,
     "description":"A model with a club or staff may opt to Stun their opponent. If the model\u2019s side wins the Fight, rather than striking normally, choose one opponent and roll a D6. On a 5+ (or a 6 if the target is a Monster), the victim is reduced to a Fight value and Attacks value of 1, and Shoot value of 6+, until the end of the following turn. You may wish to place a marker next to the stunned model as a reminder."
+  },
+  {
+    "name":"Superior Construction",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"This Siege Engine is an impressive feat of engineering, allowing it to fire even further. The Siege Engine model's maximum range is increased by 12\"."
   },
   {
     "name":"Survival Instinct",
@@ -694,6 +718,12 @@
     "type":"magical_power",
     "active_passive":null,
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets one enemy model within range, and any model that falls under the line. Draw a straight line, 1mm wide, that extends D6\" from the target in the direction directly away from the caster. All models (both friend and foe) touched are knocked Prone and suffer one Strength 6 hit. Cavalry models are treated as having rolled the Knocked Flying result on the Thrown Rider chart. If a model is in combat then all models in combat are hit by this Magical Power. One affected model may attempt to Resist this power in the usual manner.\n\n<b>Channelled<\/b>: The line instead extends out 2D6."
+  },
+  {
+    "name":"Troll",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"A Siege Engine that has a Troll crew member may re-roll the To Hit roll and the roll on the Scatter chart, providing that the Troll is in base contact with the Siege Engine and not Engaged in combat. The Troll does not count towards the minimum number of crew required, so you must have at least two other crew members to operate the Siege Engine. The Troll follows the profile for the relevant Troll from the same army list but may not take any additional upgrades. Only a single Troll may be attached to each Siege Engine."
   },
   {
     "name":"Tusk Weapons",

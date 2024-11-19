@@ -2128,7 +2128,9 @@
       ],
       "magic_powers": [],
       "heroic_actions": [],
-      "special_rules": [],
+      "special_rules": [
+        "Troll"
+      ],
       "additional_stats": [
         {
           "name": "Crew",
@@ -4462,7 +4464,8 @@
       "C": "2",
       "additional_text": [
         "A War Mumak of Far Harad uses the same profile as the War Mumak of Harad in every way (see page 194), with the exception that it always has the Mahud Beastmaster Chieftain upgrade (see page 195).",
-        "A War Mumak of Far Harad is comprised of a Mahud Beastmaster Chieftain with armour and a club as the warband's captain and the Mumak itself. "
+        "A War Mumak of Far Harad is comprised of a Mahud Beastmaster Chieftain with armour and a club as the warband's captain and the Mumak itself. ",
+        "See page 194 of Armies of LOTR for additional special rules."
       ],
       "active_or_passive_rules": [
         {
@@ -4497,7 +4500,7 @@
           "active_or_passive_rules": [],
           "special_rules": [],
           "additional_text": [
-            "A War Mumak of Far Harad' s Howdah has a capacity of 12 models. The only models that may ride within the Howdah are Mahud Warriors and HalfTrolls."
+            "A War Mumak of Far Harad' s Howdah has a capacity of 12 models. The only models that may ride within the Howdah are Mahud Warriors and Half Trolls."
           ]
         },
         {
@@ -9071,7 +9074,7 @@
         "Claws and teeth"
       ],
       "additional_text": [
-        "Whilst the Goblin with a sheild is still alive, the entire model gains +1 Defence."
+        "Whilst the Goblin with a shield is still alive, the entire model gains +1 Defence."
       ],
       "additional_stats": [
         {
@@ -12595,7 +12598,7 @@
         "Heavy armour",
         "sword",
         "war spear",
-        "War goat"
+        "War Goat"
       ]
     }
   },
@@ -12990,34 +12993,48 @@
       ]
     },
     "Vault Warden Team": {
-      "Mv": "5\"",
-      "F": "4/4+",
-      "S": "4",
-      "D": "9",
-      "A": "1",
-      "W": "1",
-      "C": "4",
-      "active_or_passive_rules": [
-        {
-          "name": "Iron Shield",
-          "type": "Passive",
-          "description": "Cannot be barged or Hurled, and unaffected by Rend Brutal Power Attack."
-        },
-        {
-          "name": "Spear & Shield",
-          "type": "Passive",
-          "description": "Unless supported by a Foe Spear, suffers -1 to Duel roll."
-        }
-      ],
+      "Mv": "-",
+      "F": "-",
+      "S": "-",
+      "D": "-",
+      "A": "-",
+      "W": "-",
+      "C": "-",
+      "active_or_passive_rules": [],
       "magic_powers": [],
       "heroic_actions": [],
       "special_rules": [],
-      "wargear": [
-        "Heavy Dwarf armour",
-        "axe",
-        "Iron Shield"
-      ],
+      "wargear": [],
       "additional_stats": [
+        {
+          "name": "Iron Shield",
+          "Mv": "5\"",
+          "F": "4/4+",
+          "S": "4",
+          "D": "9",
+          "A": "1",
+          "W": "1",
+          "C": "4",
+          "active_or_passive_rules": [
+            {
+              "name": "Iron Shield",
+              "type": "Passive",
+              "description": "Cannot be barged or Hurled, and unaffected by Rend Brutal Power Attack."
+            },
+            {
+              "name": "Spear & Shield",
+              "type": "Passive",
+              "description": "Unless supported by a Foe Spear, suffers -1 to Duel roll."
+            }
+          ],
+          "special_rules": [],
+          "additional_text": "",
+          "wargear": [
+            "Heavy Dwarf armour",
+            "axe",
+            "Iron Shield"
+          ]
+        },
         {
           "name": "Foe Spear",
           "Mv": "5\"",
@@ -15557,7 +15574,7 @@
       ],
       "wargear": []
     },
-    "Fell beast": {
+    "Fell Beast": {
       "Mv": "3\"",
       "F": "5/5+",
       "S": "6",
@@ -15565,18 +15582,23 @@
       "A": "2",
       "W": "3",
       "C": "3",
-      "active_or_passive_rules": [],
+      "active_or_passive_rules": [
+        {
+          "name": "Feral",
+          "type": "Passive",
+          "description": "If the Ringwraith riding a Fell Beast is slain or dismounts, the creature automatically fails its Courage test and flees the battlefield."
+        }
+      ],
       "magic_powers": [],
       "heroic_actions": [],
       "special_rules": [
         "Fly",
         "Monstrous Charge",
-        "Terror",
-        "Feral"
+        "Terror"
       ],
       "wargear": []
     },
-    "Armoured Fell beast": {
+    "Armoured Fell Beast": {
       "Mv": "3\"",
       "F": "5/5+",
       "S": "6",
@@ -15584,14 +15606,19 @@
       "A": "2",
       "W": "3",
       "C": "3",
-      "active_or_passive_rules": [],
+      "active_or_passive_rules": [
+        {
+          "name": "Feral",
+          "type": "Passive",
+          "description": "If the Ringwraith riding a Fell Beast is slain or dismounts, the creature automatically fails its Courage test and flees the battlefield."
+        }
+      ],
       "magic_powers": [],
       "heroic_actions": [],
       "special_rules": [
         "Fly",
         "Monstrous Charge",
-        "Terror",
-        "Feral"
+        "Terror"
       ],
       "wargear": []
     },
@@ -15607,7 +15634,7 @@
         {
           "name": "Devastating Charge",
           "type": "Active",
-          "description": "When this model Charges into combat against one or more Man-sized (or smaller) models, roll a D6 for each. Ona5+, that model is immediately Knocked to the Ground."
+          "description": "When this model Charges into combat against one or more Man-sized (or smaller) models, roll a D6 for each. On a 5+, that model is immediately Knocked to the Ground."
         }
       ],
       "magic_powers": [],
@@ -15801,7 +15828,7 @@
         {
           "name": "Defensive Bulwark",
           "type": "Active",
-          "description": "When an enemy model makes an In The Way roll to see if they hit either the rider or the mount, they will hit the Chariot on a 1-4 and the rider on a 5+. Additionally, when in combat, any model that wishes to Strike the rider must roll a 06. On a 1-4, the model must Strike the Chariot. On a 5+, they may Strike the rider."
+          "description": "When an enemy model makes an In The Way roll to see if they hit either the rider or the mount, they will hit the Chariot on a 1-4 and the rider on a 5+. Additionally, when in combat, any model that wishes to Strike the rider must roll a 6. On a 1-4, the model must Strike the Chariot. On a 5+, they may Strike the rider."
         },
         {
           "name": "The Chariot and Magic",
