@@ -810,6 +810,12 @@
     "description":"<b>Duration<\/b>: Instant\n\nThis power targets all enemy models within range. All enemy models within 3\" of the caster are knocked Prone. Cavalry models are automatically treated as having suffered a Knocked Flying result on the Thrown Rider table (see page 61) \u2013 both rider and mount are then knocked Prone. All affected models additionally suffer one Strength 2 hit, or one Strength 8 hit if they are in a stream, river or other similar water terrain feature.\n\n<b>Channelled<\/b>: All enemy models instead suffer one Strength 3 hit after being knocked Prone or one Strength 9 hit if they are in a stream, river or similar water terrain feature."
   },
   {
+    "name":"Wyrmtongue",
+    "type":"special_rule",
+    "active_passive":null,
+    "description":"A Dragon with this ability can spend a single Will point each turn without reducing its own store of Will, so long as the Will point is used to cast one of the following Magical Powers. The controlling player may still spend extra Will points to increase the number of dice in the usual way:\n\n- Transfix (range 12\", casting 3+)\n- Compel (range 12\", casting 4+)"
+  },
+  {
     "name":"Your Staff is Broken",
     "type":"magical_power",
     "active_passive":null,
