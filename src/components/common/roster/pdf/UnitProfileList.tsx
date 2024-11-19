@@ -51,9 +51,9 @@ const Stats = ({ profile }: { profile: Profile }) => {
             <TableCell>{profile.C}</TableCell>
             {(profile.HM || profile.HW || profile.HF) && (
               <>
-                <TableCell>{profile.HF ?? "-"}</TableCell>
                 <TableCell>{profile.HM ?? "-"}</TableCell>
                 <TableCell>{profile.HW ?? "-"}</TableCell>
+                <TableCell>{profile.HF ?? "-"}</TableCell>
               </>
             )}
           </TableRow>

@@ -38,12 +38,22 @@ export const useProfiles = () => {
   }
 
   function getMightWillAndFate(unit: Unit) {
-    const specialCases = ["[rohan] dernhelm"];
+    const specialCases = [
+      "[rohan] dernhelm",
+      "[far_harad] war_mumak_of_far_harad",
+      "[grand_army_of_the_south] war_mumak_of_far_harad",
+      "[grand_army_of_the_south] war_mumak_of_harad",
+      "[the_serpent_horde] war_mumak_of_harad",
+      "[mordor] great_beast_of_gorgoroth",
+      "[the_iron_hills] iron_hills_chariot_(captain)",
+      "[erebor_reclaimed_(king_thorin)] iron_hills_chariot_(champions_of_erebor)",
+    ];
     if (
       specialCases.includes(unit.model_id) ||
       unit.unit_type === "Siege Engine"
     )
       return { HM: "-", HW: "-", HF: "-" };
+
     if (unit.MWFW && unit.MWFW[0]) {
       const [HM, HW, HF] = unit.MWFW[0][1].split(":");
       return { HM, HW, HF };
@@ -94,6 +104,25 @@ export const useProfiles = () => {
               const [HM, HW, HF] = engineerMWFW[1].split(":");
               return { ...profile, HM, HW, HF };
             }
+          }
+
+          if (
+            unit.name.includes("War Mumak of ") ||
+            unit.name === "Great Beast of Gorgoroth"
+          ) {
+            const riderMwf = unit.MWFW.find(([name]) =>
+              String(name).includes(profile.name),
+            ) || ["", "-:-:-:-"];
+            const [HM, HW, HF] = riderMwf[1].split(":");
+            return { ...profile, HM, HW, HF };
+          }
+
+          if (
+            unit.name === "Iron Hills Chariot (Captain)" &&
+            profile.name === "Iron Hills Captain"
+          ) {
+            const [HM, HW, HF] = unit.MWFW[0][1].split(":");
+            return { ...profile, HM, HW, HF };
           }
 
           return { ...profile };
@@ -176,7 +205,9 @@ export const useProfiles = () => {
       unit.options
         ?.filter((option) => option.type === "mount" && option.opt_quantity > 0)
         ?.map((mount) => {
-          const name = mount.option;
+          const name = mount.option.includes("Great Eagle")
+            ? "Great Eagle"
+            : mount.option;
           const mountMwfw = unit.MWFW.find(([mwfName]) =>
             String(mwfName).includes(name),
           ) || ["", "-:-:-:-"];
@@ -220,7 +251,7 @@ export const useProfiles = () => {
       const profile = army[unit.name];
       if (!profile) return insertMissingProfile(unit);
 
-      if (unit.name.includes("&")) {
+      if (unit.name.includes("&") || unit.name === "Sharkey and Worm") {
         return profile.additional_stats.map((stats) => {
           const MWFW = unit.MWFW.find(([hName]) => hName === stats.name);
           const [HM, HW, HF] = MWFW[1].split(":");
