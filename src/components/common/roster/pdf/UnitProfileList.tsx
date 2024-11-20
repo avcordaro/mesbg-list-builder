@@ -17,7 +17,10 @@ interface UnitListProps {
 }
 
 const Stats = ({ profile }: { profile: Profile }) => {
-  const skippedParentRow = ["Vault Warden Team"].includes(profile.name);
+  const skippedParentRow = [
+    "Vault Warden Team",
+    "Uruk-Hai Demolition Team",
+  ].includes(profile.name);
   return (
     <TableContainer component="div" sx={{ mb: 2 }}>
       <Table size="small">
