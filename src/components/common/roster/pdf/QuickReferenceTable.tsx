@@ -17,16 +17,15 @@ interface QuickReferenceTableProps {
 const ReferenceRow = ({
   row,
   indent,
+  prefix,
 }: {
   row: Pick<
     Profile,
     "name" | "Mv" | "F" | "S" | "D" | "A" | "W" | "C" | "HM" | "HW" | "HF"
   >;
   indent?: boolean;
+  prefix?: string;
 }) => {
-  const prefix = ["Iron Shield", "Foe Spear"].includes(row.name)
-    ? "Vault Warden - "
-    : "";
   return (
     <TableRow>
       <TableCell sx={{ pl: indent ? 6 : 0 }}>
@@ -79,17 +78,31 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
           </TableHead>
           <TableBody>
             {profiles.map((row, index) => {
-              const skippedParentRow = ["Vault Warden Team"].includes(row.name);
+              const skippedParentRow = [
+                "Vault Warden Team",
+                "Uruk-Hai Demolition Team",
+              ].includes(row.name);
+              const prefixes = {
+                "Iron Shield": "Vault Warden - ",
+                "Foe Spear": "Vault Warden - ",
+              };
               return (
                 <Fragment key={index}>
                   {!skippedParentRow && <ReferenceRow row={row} />}
                   {row.additional_stats
                     ?.filter((stat) => stat.type !== "mount")
+                    ?.filter(
+                      (stat) =>
+                        !profiles.find((profile) => profile.name === stat.name),
+                    )
                     ?.map((additionalRow, aIndex) => (
                       <ReferenceRow
                         row={additionalRow}
                         key={aIndex}
                         indent={!skippedParentRow}
+                        prefix={
+                          skippedParentRow ? prefixes[additionalRow.name] : ""
+                        }
                       />
                     ))}
                 </Fragment>
