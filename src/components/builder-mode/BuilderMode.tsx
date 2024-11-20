@@ -18,7 +18,6 @@ import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useRef, useState } from "react";
-import { useDownload } from "../../hooks/download.ts";
 import { useAppState } from "../../state/app";
 import {
   useRosterBuildingState,
@@ -34,7 +33,6 @@ export const BuilderMode = () => {
   const [isBouncing, setIsBouncing] = useState(false);
   const [fabOpen, setFabOpen] = useState(false);
   const [redoOpen, setRedoOpen] = useState(false);
-  const { downloadProfileCards } = useDownload();
   const { roster } = useRosterBuildingState();
   const { undo, redo, pastStates, futureStates } =
     useTemporalRosterBuildingState((state) => state);
@@ -126,7 +124,13 @@ export const BuilderMode = () => {
     {
       icon: <Download />,
       name: "Download profile cards",
-      callback: downloadProfileCards,
+      callback: () => setCurrentModal(ModalTypes.DOWNLOAD_PROFILE_CARDS),
+      disabled: roster.num_units === 0,
+    },
+    {
+      icon: <Download />,
+      name: "Download Printable PDF",
+      callback: () => setCurrentModal(ModalTypes.DOWNLOAD_PDF),
       disabled: roster.num_units === 0,
     },
     {

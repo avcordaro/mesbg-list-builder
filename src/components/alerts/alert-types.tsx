@@ -1,5 +1,6 @@
 import { AlertColor } from "@mui/material";
 import { ReactNode } from "react";
+import { DownloadFailed } from "./alerts/DownloadFailed.tsx";
 import { ExportAlert } from "./alerts/ExportAlert.tsx";
 import { ExportHistoryAlert } from "./alerts/ExportHistoryAlert.tsx";
 import { GameModeAlert } from "./alerts/GameModeAlert.tsx";
@@ -10,6 +11,7 @@ export enum AlertTypes {
   EXPORT_HISTORY_ALERT = "EXPORT_HISTORY_ALERT",
   SCREENSHOT_COPIED_ALERT = "SCREENSHOT_COPIED_ALERT",
   GAMEMODE_ALERT = "GAMEMODE_ALERT",
+  DOWNLOAD_FAILED = "DOWNLOAD_FAILED",
 }
 
 type AlertOptions = {
@@ -60,6 +62,16 @@ export const alertMap = new Map<AlertTypes, AlertProps>([
       content: <ScreenshotCopiedAlert />,
       options: {
         autoHideAfter: 5000,
+      },
+    },
+  ],
+  [
+    AlertTypes.DOWNLOAD_FAILED,
+    {
+      variant: "error",
+      content: <DownloadFailed />,
+      options: {
+        // autoHideAfter: 5000,
       },
     },
   ],
