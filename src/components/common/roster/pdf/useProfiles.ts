@@ -80,6 +80,7 @@ export const useProfiles = () => {
         if (stats.name === "Mahud Beastmaster Chieftain") return hasChief;
         if (stats.name === "Haradrim Commander") return !hasChief;
       }
+
       return true;
     };
   }
@@ -157,12 +158,20 @@ export const useProfiles = () => {
     if (extraConstraints) {
       const extraProfiles = extraConstraints
         .flatMap((c) => c.extra_profiles)
-        .filter(() => {
+        .filter((profile) => {
           if (unit.model_id === "[fangorn] treebeard") {
             return (
               unit.options.find(({ type }) => type === "treebeard_m&p")
                 ?.opt_quantity === 1
             );
+          }
+          if (unit.name === "Azog") {
+            if (["The White Warg", "Signal Tower"].includes(profile)) {
+              return (
+                unit.options.find(({ option }) => option === profile)
+                  ?.opt_quantity === 1
+              );
+            }
           }
 
           return true;
