@@ -1,10 +1,10 @@
 {
   "main": {
     "changes": [
-      "Deduplicate the quick reference when nested profiles were also includes as a standalone profile."
+      "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile."
     ],
     "bugfixes": [
-      "Fixed a data formatting error on the Demolition Team causing the page to crash"
+      "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash."
     ]
   },
   "6.17": {
