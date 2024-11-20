@@ -12915,14 +12915,14 @@
           "A": "1",
           "W": "1",
           "C": "4",
-          "active_or_passive_rules": [],
-          "special_rules": [
+          "active_or_passive_rules": [
             {
               "name": "The Life Guard",
               "type": "Active",
               "description": "If the King's Champion is wounded, a Herald may spend his own Fate point, as long as he is in base contact with the Champion."
             }
           ],
+          "special_rules": [],
           "additional_text": "",
           "wargear": [
             "Heavy Dwarf armour",
