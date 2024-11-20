@@ -1,5 +1,8 @@
 {
   "main": {
+    "added": [
+      "Added new PDF download feature, so that you can save your roster to a PDF file with all the profile stats, special rules, magical powers, MWFW trackers you'll need for your game, ready to be printed off."
+    ],
     "bugfixes": [
       "Fixed state not being persisted properly after undo and redo actions resulting in loss of data on refresh in certain cases.",
       "The Heralds for the King's Champion will are now correctly displayed in the MWFW tracking of Game Mode."
