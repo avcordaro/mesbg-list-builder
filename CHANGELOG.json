@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.17": {
     "added": [
       "Added new PDF download feature, so that you can save your roster to a PDF file with all the profile stats, special rules, magical powers, MWFW trackers you'll need for your game, ready to be printed off."
     ],
