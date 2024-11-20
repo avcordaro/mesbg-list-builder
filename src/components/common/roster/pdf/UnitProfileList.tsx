@@ -17,6 +17,7 @@ interface UnitListProps {
 }
 
 const Stats = ({ profile }: { profile: Profile }) => {
+  const skippedParentRow = ["Vault Warden Team"].includes(profile.name);
   return (
     <TableContainer component="div" sx={{ mb: 2 }}>
       <Table size="small">
@@ -40,23 +41,27 @@ const Stats = ({ profile }: { profile: Profile }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow>
-            {profile.additional_stats && <TableCell>{profile.name}</TableCell>}
-            <TableCell>{profile.Mv}</TableCell>
-            <TableCell>{profile.F}</TableCell>
-            <TableCell>{profile.S}</TableCell>
-            <TableCell>{profile.D}</TableCell>
-            <TableCell>{profile.A}</TableCell>
-            <TableCell>{profile.W}</TableCell>
-            <TableCell>{profile.C}</TableCell>
-            {(profile.HM || profile.HW || profile.HF) && (
-              <>
-                <TableCell>{profile.HM ?? "-"}</TableCell>
-                <TableCell>{profile.HW ?? "-"}</TableCell>
-                <TableCell>{profile.HF ?? "-"}</TableCell>
-              </>
-            )}
-          </TableRow>
+          {!skippedParentRow && (
+            <TableRow>
+              {profile.additional_stats && (
+                <TableCell>{profile.name}</TableCell>
+              )}
+              <TableCell>{profile.Mv}</TableCell>
+              <TableCell>{profile.F}</TableCell>
+              <TableCell>{profile.S}</TableCell>
+              <TableCell>{profile.D}</TableCell>
+              <TableCell>{profile.A}</TableCell>
+              <TableCell>{profile.W}</TableCell>
+              <TableCell>{profile.C}</TableCell>
+              {(profile.HM || profile.HW || profile.HF) && (
+                <>
+                  <TableCell>{profile.HM ?? "-"}</TableCell>
+                  <TableCell>{profile.HW ?? "-"}</TableCell>
+                  <TableCell>{profile.HF ?? "-"}</TableCell>
+                </>
+              )}
+            </TableRow>
+          )}
           {profile.additional_stats?.map((stats, index) => (
             <TableRow key={index}>
               <TableCell>{stats.name}</TableCell>

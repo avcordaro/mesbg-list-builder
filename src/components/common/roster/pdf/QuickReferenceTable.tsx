@@ -24,9 +24,15 @@ const ReferenceRow = ({
   >;
   indent?: boolean;
 }) => {
+  const prefix = ["Iron Shield", "Foe Spear"].includes(row.name)
+    ? "Vault Warden - "
+    : "";
   return (
     <TableRow>
-      <TableCell sx={{ pl: indent ? 6 : 0 }}>{row.name}</TableCell>
+      <TableCell sx={{ pl: indent ? 6 : 0 }}>
+        {prefix}
+        {row.name}
+      </TableCell>
       <TableCell>{row.Mv}</TableCell>
       <TableCell>{row.F}</TableCell>
       <TableCell>{row.S}</TableCell>
@@ -72,20 +78,23 @@ export const QuickReferenceTable = ({ profiles }: QuickReferenceTableProps) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {profiles.map((row, index) => (
-              <Fragment key={index}>
-                <ReferenceRow row={row} />
-                {row.additional_stats
-                  ?.filter((stat) => stat.type !== "mount")
-                  ?.map((additionalRow, aIndex) => (
-                    <ReferenceRow
-                      row={additionalRow}
-                      key={aIndex}
-                      indent={true}
-                    />
-                  ))}
-              </Fragment>
-            ))}
+            {profiles.map((row, index) => {
+              const skippedParentRow = ["Vault Warden Team"].includes(row.name);
+              return (
+                <Fragment key={index}>
+                  {!skippedParentRow && <ReferenceRow row={row} />}
+                  {row.additional_stats
+                    ?.filter((stat) => stat.type !== "mount")
+                    ?.map((additionalRow, aIndex) => (
+                      <ReferenceRow
+                        row={additionalRow}
+                        key={aIndex}
+                        indent={!skippedParentRow}
+                      />
+                    ))}
+                </Fragment>
+              );
+            })}
             {mounts.map((additionalRow, aIndex) => (
               <ReferenceRow row={additionalRow} key={aIndex} />
             ))}
