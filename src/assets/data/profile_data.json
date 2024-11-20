@@ -5988,46 +5988,46 @@
       ],
       "additional_stats": [
         {
-          "Uruk-Hai Berserker": {
-            "Mv": "6\"",
-            "F": "4/4+",
-            "S": "4",
-            "D": "5",
-            "A": "2",
-            "W": "1",
-            "C": "7",
-            "active_or_passive_rules": [
-              {
-                "name": "Berserker Blade",
-                "type": "Active",
-                "description": "A hand-and-a-half sword. If using as a two-handed weapon, the berserker can do one Strength 4 at +1 To Wound on every model in base contact, friend or foe."
-              },
-              {
-                "name": "Oblivious to Pain",
-                "type": "Passive",
-                "description": "When the berserker suffers a wound, roll a D6. On a 6, the wound is ignored."
-              },
-              {
-                "name": "Impervious to Bow-fire",
-                "type": "Passive",
-                "description": "The berserkers Defence is 6 against enemy shooting attacks"
-              }
-            ],
-            "heroic_actions": [],
-            "special_rules": []
-          },
-          "Uruk-Hai Warrior": {
-            "Mv": "6\"",
-            "F": "4/4+",
-            "S": "4",
-            "D": "5",
-            "A": "1",
-            "W": "1",
-            "C": "3",
-            "active_or_passive_rules": [],
-            "heroic_actions": [],
-            "special_rules": []
-          }
+          "name": "Uruk-Hai Berserker",
+          "Mv": "6\"",
+          "F": "4/4+",
+          "S": "4",
+          "D": "5",
+          "A": "2",
+          "W": "1",
+          "C": "7",
+          "active_or_passive_rules": [
+            {
+              "name": "Berserker Blade",
+              "type": "Active",
+              "description": "A hand-and-a-half sword. If using as a two-handed weapon, the berserker can do one Strength 4 at +1 To Wound on every model in base contact, friend or foe."
+            },
+            {
+              "name": "Oblivious to Pain",
+              "type": "Passive",
+              "description": "When the berserker suffers a wound, roll a D6. On a 6, the wound is ignored."
+            },
+            {
+              "name": "Impervious to Bow-fire",
+              "type": "Passive",
+              "description": "The berserkers Defence is 6 against enemy shooting attacks"
+            }
+          ],
+          "heroic_actions": [],
+          "special_rules": []
+        },
+        {
+          "name": "Uruk-Hai Warrior",
+          "Mv": "6\"",
+          "F": "4/4+",
+          "S": "4",
+          "D": "5",
+          "A": "1",
+          "W": "1",
+          "C": "3",
+          "active_or_passive_rules": [],
+          "heroic_actions": [],
+          "special_rules": []
         }
       ]
     },
