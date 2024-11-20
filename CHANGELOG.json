@@ -4,7 +4,8 @@
       "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile."
     ],
     "bugfixes": [
-      "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash."
+      "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash.",
+      "Corrected the name of Moria Goblin to Moria Goblin Warrior, for Warg Marauders on the PDF printout."
     ]
   },
   "6.17": {
