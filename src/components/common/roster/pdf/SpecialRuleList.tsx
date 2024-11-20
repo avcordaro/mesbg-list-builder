@@ -110,7 +110,12 @@ export const SpecialRuleList = ({ profiles }: SpecialRuleListProps) => {
                   {rule.name} {rule.type && <>({rule.type})</>}
                 </b>
               </Typography>
-              <Typography variant="body2">{rule.description}</Typography>
+              <Typography
+                variant="body2"
+                dangerouslySetInnerHTML={{
+                  __html: rule.description?.replaceAll("\n\n", "<br />"),
+                }}
+              />
             </Box>
           ))}
         </Stack>

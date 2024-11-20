@@ -813,7 +813,7 @@
     "name":"Wyrmtongue",
     "type":"special_rule",
     "active_passive":null,
-    "description":"A Dragon with this ability can spend a single Will point each turn without reducing its own store of Will, so long as the Will point is used to cast one of the following Magical Powers. The controlling player may still spend extra Will points to increase the number of dice in the usual way:\n\n- Transfix (range 12\", casting 3+)\n- Compel (range 12\", casting 4+)"
+    "description":"A Dragon with this ability can spend a single Will point each turn without reducing its own store of Will, so long as the Will point is used to cast one of the following Magical Powers. The controlling player may still spend extra Will points to increase the number of dice in the usual way:\n\n- Transfix (range 12\", casting 3+)\n\n- Compel (range 12\", casting 4+)"
   },
   {
     "name":"Your Staff is Broken",
