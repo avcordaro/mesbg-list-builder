@@ -37,6 +37,19 @@ export const useProfiles = () => {
     return index === self.findIndex((other) => other.name === item.name);
   }
 
+  function combineProfiles(item: Profile, index: number, self: Profile[]) {
+    const firstIndex = self.findIndex((other) => other.name === item.name);
+    if (index === firstIndex) return item;
+
+    const firstOccurrence = self[firstIndex];
+    const combined = [
+      ...firstOccurrence.additional_stats,
+      ...item.additional_stats,
+    ];
+    firstOccurrence.additional_stats = combined.filter(duplicateProfiles);
+    return item;
+  }
+
   function getMightWillAndFate(unit: Unit) {
     const specialCases = [
       "[rohan] dernhelm",
@@ -89,7 +102,103 @@ export const useProfiles = () => {
     missingProfiles.push(unit.name);
   }
 
-  function getAdditionalStats(unit: Unit, profile: Profile) {
+  function getMountProfiles(unit: Unit): Profile[] {
+    return (
+      unit.options
+        ?.filter((option) => option.type === "mount" && option.opt_quantity > 0)
+        ?.map((mount) => {
+          const name = mount.option.includes("Great Eagle")
+            ? "Great Eagle"
+            : mount.option;
+          const mountMwfw = unit.MWFW.find(([mwfName]) =>
+            String(mwfName).includes(name),
+          ) || ["", "-:-:-:-"];
+          const [HM, HW, HF] = mountMwfw[1].split(":");
+          return {
+            ...profile_data.Mounts[name],
+            name: name,
+            type: "mount",
+            HM,
+            HW,
+            HF,
+          };
+        }) || []
+    );
+  }
+
+  function getAdditionalProfilesFromConstraintsData(unit: Unit): Profile[] {
+    const extraConstraints = hero_constraint_data[unit.model_id];
+    if (!extraConstraints) return [];
+
+    return extraConstraints
+      .flatMap((c) => c.extra_profiles)
+      .filter((profile) => {
+        if (unit.model_id === "[fangorn] treebeard") {
+          return (
+            unit.options.find(({ type }) => type === "treebeard_m&p")
+              ?.opt_quantity === 1
+          );
+        }
+        if (unit.name === "Azog") {
+          if (["The White Warg", "Signal Tower"].includes(profile)) {
+            return (
+              unit.options.find(({ option }) => option === profile)
+                ?.opt_quantity === 1
+            );
+          }
+        }
+
+        return true;
+      })
+      .flatMap((name: string) => {
+        const profile = profile_data[unit.profile_origin][name];
+        if (!profile) return insertMissingProfile({ name } as Unit);
+
+        if (name === "Signal Tower") {
+          return [
+            ...profile.additional_stats.map((stats) => ({
+              ...stats,
+              name: stats.name,
+              HM: 1,
+              HW: 1,
+              HF: 1,
+            })),
+            {
+              name,
+              ...profile,
+            },
+          ];
+        }
+
+        const extraProfileMWFW = unit.MWFW.find(([mwfName]) =>
+          String(mwfName).includes(name),
+        );
+        if (extraProfileMWFW) {
+          const [HM, HW, HF] = extraProfileMWFW[1].split(":");
+          return [{ ...profile, name, HM, HW, HF }];
+        }
+        return [{ ...profile, name }];
+      })
+      .filter((v) => !!v);
+  }
+
+  function getInitialWargearMountProfiles(profile: Profile): Profile[] {
+    if (!profile.wargear || profile.wargear.length === 0) {
+      return [];
+    }
+
+    return (
+      profile.wargear
+        .filter((wargear) => Object.keys(profile_data.Mounts).includes(wargear))
+        .map((mount) => ({
+          ...profile_data.Mounts[mount],
+          name: mount,
+          type: "mount",
+        })) || []
+    );
+  }
+
+  function getAdditionalStats(unit: Unit, profile: Profile): Profile[] {
     const additionalStats =
       profile?.additional_stats
         ?.filter(unusedAdditionalStats(unit))
@@ -129,6 +238,7 @@ export const useProfiles = () => {
           return { ...profile };
         }) || [];
 
+    // Insert Siege Veteran profile on Siege Engine without an engineer_cpt.
     if (unit.unit_type === "Siege Engine") {
       const hasEngineerCpt = unit.options.find(
         (option) => option.type === "engineer_cpt" && option.opt_quantity > 0,
@@ -154,144 +264,77 @@ export const useProfiles = () => {
       }
     }
 
-    const extraConstraints = hero_constraint_data[unit.model_id];
-    if (extraConstraints) {
-      const extraProfiles = extraConstraints
-        .flatMap((c) => c.extra_profiles)
-        .filter((profile) => {
-          if (unit.model_id === "[fangorn] treebeard") {
-            return (
-              unit.options.find(({ type }) => type === "treebeard_m&p")
-                ?.opt_quantity === 1
-            );
-          }
-          if (unit.name === "Azog") {
-            if (["The White Warg", "Signal Tower"].includes(profile)) {
-              return (
-                unit.options.find(({ option }) => option === profile)
-                  ?.opt_quantity === 1
-              );
-            }
-          }
-
-          return true;
-        })
-        .flatMap((name: string) => {
-          const profile = profile_data[unit.profile_origin][name];
-          if (!profile) return insertMissingProfile({ name } as Unit);
-
-          if (name === "Signal Tower") {
-            return [
-              ...profile.additional_stats.map((stats) => ({
-                ...stats,
-                name: stats.name,
-                HM: 1,
-                HW: 1,
-                HF: 1,
-              })),
-              {
-                name,
-                ...profile,
-              },
-            ];
-          }
-
-          const extraProfileMWFW = unit.MWFW.find(([mwfName]) =>
-            String(mwfName).includes(name),
-          );
-          if (extraProfileMWFW) {
-            const [HM, HW, HF] = extraProfileMWFW[1].split(":");
-            return [{ ...profile, name, HM, HW, HF }];
-          }
-          return [{ ...profile, name }];
-        })
-        .filter((v) => !!v);
-
-      additionalStats.push(...extraProfiles);
-    }
-
-    const mountProfiles =
-      unit.options
-        ?.filter((option) => option.type === "mount" && option.opt_quantity > 0)
-        ?.map((mount) => {
-          const name = mount.option.includes("Great Eagle")
-            ? "Great Eagle"
-            : mount.option;
-          const mountMwfw = unit.MWFW.find(([mwfName]) =>
-            String(mwfName).includes(name),
-          ) || ["", "-:-:-:-"];
-          const [HM, HW, HF] = mountMwfw[1].split(":");
-          return {
-            ...profile_data.Mounts[name],
-            name: name,
-            type: "mount",
-            HM,
-            HW,
-            HF,
-          };
-        }) || [];
-    additionalStats.push(...mountProfiles);
-
-    if (profile.wargear && profile.wargear.length > 0) {
-      const defaultMountProfiles =
-        profile.wargear
-          .filter((wargear) =>
-            Object.keys(profile_data.Mounts).includes(wargear),
-          )
-          .map((mount) => ({
-            ...profile_data.Mounts[mount],
-            name: mount,
-            type: "mount",
-          })) || [];
-      additionalStats.push(...defaultMountProfiles);
-    }
+    additionalStats.push(...getAdditionalProfilesFromConstraintsData(unit));
+    additionalStats.push(...getMountProfiles(unit));
+    additionalStats.push(...getInitialWargearMountProfiles(profile));
 
     return additionalStats.filter(duplicateProfiles);
+  }
+
+  function getAdditionalSpecialRules(unit: Unit) {
+    if (unit.model_id === "[moria] dragon") {
+      return unit.options
+        .filter(({ opt_quantity }) => opt_quantity)
+        .map(({ option }) => option);
+    }
+    if (unit.name.includes("War Mumak of ")) {
+      return unit.options
+        .filter(({ opt_quantity }) => opt_quantity)
+        .filter(({ type }) => type !== "mahud_chief")
+        .map(({ option }) => option);
+    }
+    if (unit.unit_type === "Siege Engine") {
+      const siegeEngineUpgrades = [
+        "Flaming Ammunition",
+        "Swift Reload",
+        "Superior Construction",
+        "Severed Heads",
+      ];
+      return unit.options
+        .filter(({ opt_quantity }) => opt_quantity)
+        .filter(({ option }) => siegeEngineUpgrades.includes(option))
+        .map(({ option }) => option);
+    }
+
+    return [];
+  }
+
+  function convertToProfileData(unit): Profile[] | undefined {
+    const army = profile_data[unit.profile_origin];
+    if (!army) return insertMissingProfile(unit);
+
+    const profile = army[unit.name];
+    if (!profile) return insertMissingProfile(unit);
+
+    if (unit.name.includes("&") || unit.name === "Sharkey and Worm") {
+      return profile.additional_stats.map((stats) => {
+        const MWFW = unit.MWFW.find(([hName]) => hName === stats.name);
+        const [HM, HW, HF] = MWFW[1].split(":");
+        return { ...stats, HM, HW, HF };
+      });
+    }
+
+    const additional_stats = getAdditionalStats(unit, profile);
+    const additional_special_rules = getAdditionalSpecialRules(unit);
+
+    return [
+      {
+        name: unit.name,
+        ...profile,
+        ...getMightWillAndFate(unit),
+        additional_stats,
+        special_rules: [...profile.special_rules, ...additional_special_rules],
+      },
+    ];
   }
 
   const profiles: Profile[] = roster.warbands
     .flatMap((wb) => [wb.hero, ...wb.units])
     .filter(isDefinedUnit)
     .sort(byHeroicTier)
-    .flatMap((unit): Profile[] | undefined => {
-      const army = profile_data[unit.profile_origin];
-      if (!army) return insertMissingProfile(unit);
-
-      const profile = army[unit.name];
-      if (!profile) return insertMissingProfile(unit);
-
-      if (unit.name.includes("&") || unit.name === "Sharkey and Worm") {
-        return profile.additional_stats.map((stats) => {
-          const MWFW = unit.MWFW.find(([hName]) => hName === stats.name);
-          const [HM, HW, HF] = MWFW[1].split(":");
-          return { ...stats, HM, HW, HF };
-        });
-      }
-
-      const additional_stats = getAdditionalStats(unit, profile);
-
-      return [
-        {
-          name: unit.name,
-          ...profile,
-          ...getMightWillAndFate(unit),
-          additional_stats,
-        },
-      ];
-    })
+    .flatMap(convertToProfileData)
     .filter((v) => !!v)
-    .map((profile, index, self) => {
-      const firstIndex = self.findIndex((other) => other.name === profile.name);
-      if (index === firstIndex) return profile;
-
-      const firstOccurrence = self[firstIndex];
-      const combined = [
-        ...firstOccurrence.additional_stats,
-        ...profile.additional_stats,
-      ];
-      firstOccurrence.additional_stats = combined.filter(duplicateProfiles);
-      return profile;
-    })
+    .map(combineProfiles)
     .filter(duplicateProfiles);
 
   return {
