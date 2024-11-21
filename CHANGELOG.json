@@ -5,7 +5,8 @@
     ],
     "bugfixes": [
       "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash.",
-      "Corrected the name of Moria Goblin to Moria Goblin Warrior, for Warg Marauders on the PDF printout."
+      "Corrected the name of Moria Goblin to Moria Goblin Warrior, for Warg Marauders on the PDF printout.",
+      "Added missing Expert Shot special rule to Drar in the Murin & Drar profile"
     ]
   },
   "6.17": {

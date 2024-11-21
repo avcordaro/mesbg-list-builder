@@ -15368,7 +15368,9 @@
           "heroic_actions": [
             "Heroic Accuracy"
           ],
-          "special_rules": [],
+          "special_rules": [
+            "Expert Shot"
+          ],
           "wargear": [
             "Dwarf armour",
             "Dwarf bow",
