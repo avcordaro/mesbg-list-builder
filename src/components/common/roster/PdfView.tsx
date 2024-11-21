@@ -48,7 +48,7 @@ export const PdfView = () => {
             <UnitProfileList units={profiles} />
             <SpecialRuleList profiles={profiles} />
             <MagicalPowerList profiles={profiles} />
-            <StatTrackers />
+            <StatTrackers profiles={profiles} />
           </Stack>
         </Box>
       </Box>

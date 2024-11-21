@@ -15706,7 +15706,24 @@
       "magic_powers": [],
       "heroic_actions": [],
       "special_rules": [],
-      "wargear": []
+      "wargear": [],
+      "additional_stats": [
+        {
+          "name": "Howdah",
+          "Mv": "-",
+          "F": "-",
+          "S": "-",
+          "D": "9",
+          "A": "-",
+          "W": "5",
+          "C": "-",
+          "active_or_passive_rules": [],
+          "special_rules": [],
+          "additional_text": [
+            "A War Mumak of Far Harad' s Howdah has a capacity of 12 models. The only models that may ride within the Howdah are Mahud Warriors and Half Trolls."
+          ]
+        }
+      ]
     },
     "Windlance": {
       "Mv": "-",

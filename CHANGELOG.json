@@ -1,7 +1,9 @@
 {
   "main": {
     "changes": [
-      "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile."
+      "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile.",
+      "PDF tracker now also shows multi wound models like trolls, catapults, ect.",
+      "Improved wrapping of the checkboxes in the tracker so that rows are more evenly distributed."
     ],
     "bugfixes": [
       "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash.",

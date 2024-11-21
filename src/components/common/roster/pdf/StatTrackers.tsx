@@ -13,28 +13,151 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { createGameState } from "../../../../state/gamemode/gamestate/create-game-state.ts";
 import { useRosterBuildingState } from "../../../../state/roster-building";
+import { isDefinedUnit } from "../../../../types/unit.ts";
+import { Profile } from "./profile.type.ts";
+
+interface StatTrackersProps {
+  profiles: Profile[];
+}
+
+const getAdditionalProfiles = (profile: Profile): Profile[] => {
+  if (!profile.additional_stats || profile.additional_stats.length === 0) {
+    return [];
+  }
+
+  return profile.additional_stats.flatMap((additionalProfile) => [
+    additionalProfile,
+    ...getAdditionalProfiles(additionalProfile),
+  ]);
+};
+
+function modelsWithTrackableData({ wounds, might, will, fate }) {
+  return (
+    Number(wounds) > 1 ||
+    Number(might) > 0 ||
+    Number(will) > 0 ||
+    Number(fate) > 0
+  );
+}
+
+function modelThatAreAlreadyListed(
+  rows: {
+    fate: string;
+    wounds: string;
+    will: string;
+    might: string;
+    name: string;
+  }[],
+) {
+  return ({ name }) => !rows.find((row) => row.name === name);
+}
+
+function splitNumber(num: number, maxSegment: number): number[] {
+  const segments = Math.ceil(num / maxSegment); // Number of segments needed
+  const baseValue = Math.floor(num / segments); // Base value for each segment
+  const remainder = num % segments; // Remaining value to distribute
+
+  // Create an array with `segments` elements all starting as `baseValue`
+  const result = Array(segments).fill(baseValue);
+
+  // Distribute the remainder across the first few segments
+  for (let i = 0; i < remainder; i++) {
+    result[i]++;
+  }
+
+  return result;
+}
 
 const CheckboxList = ({ amount }: { amount: string }) => {
+  const length = Number(amount) || 0;
+  const rows = splitNumber(length, 5);
+
   return (
-    <Stack direction="row" gap={1} flexWrap="wrap" justifyContent="center">
-      {Array.from({ length: Number(amount) }).map((_, index) => (
-        <div
+    <Stack direction="column" gap={1} justifyContent="center">
+      {rows.map((rowLength, index) => (
+        <Stack
           key={index}
-          style={{
-            width: "20px",
-            height: "20px",
-            border: "1px solid black",
-            borderRadius: "20px",
-          }}
-        ></div>
+          direction="row"
+          gap={1}
+          flexWrap="nowrap"
+          justifyContent="center"
+        >
+          {Array.from({ length: rowLength }).map((_, index) => (
+            <div
+              key={index}
+              style={{
+                width: "20px",
+                height: "20px",
+                border: "1px solid black",
+                borderRadius: "20px",
+              }}
+            ></div>
+          ))}
+        </Stack>
       ))}
     </Stack>
   );
 };
 
-export const StatTrackers = () => {
+const labelDuplicateRows = (
+  data: {
+    name: string;
+    might: string;
+    will: string;
+    fate: string;
+    wounds: string;
+  }[],
+) => {
+  const nameCounts = data.reduce((acc, item) => {
+    acc[item.name] = (acc[item.name] || 0) + 1;
+    return acc;
+  }, {});
+
+  const counters = {};
+
+  return data.map((item) => {
+    const name = item.name;
+    if (nameCounts[name] > 1) {
+      counters[item.name] = (counters[item.name] || 0) + 1;
+      return {
+        ...item,
+        name: `${name} ( ${counters[item.name]} )`,
+      };
+    }
+    return { ...item };
+  });
+};
+
+export const StatTrackers = ({ profiles }: StatTrackersProps) => {
   const { roster } = useRosterBuildingState();
   const { heroes } = createGameState(roster);
+
+  const units = roster.warbands
+    .flatMap((warband) => [warband.hero, ...warband.units])
+    .filter(isDefinedUnit)
+    .map(({ name, quantity, options }) => ({ name, quantity, options }))
+    .reduce((units, unit) => {
+      units[unit.name] = (units[unit.name] || 0) + unit.quantity;
+      if (
+        unit.name.includes("War Mumak") ||
+        unit.name === "The Mumak War Leader"
+      ) {
+        units["Howdah"] = (units["Howdah"] || 0) + unit.quantity;
+      }
+      if (unit.name === "Mordor War Catapult") {
+        units["Troll"] = (units["Troll"] || 0) + unit.quantity;
+      }
+
+      const mount = unit.options.find(
+        (option) => option.type === "mount" && option.opt_quantity > 0,
+      );
+      if (mount) {
+        const mountName = `${mount.option}`;
+        units[mountName] = (units[mountName] || 0) + mount.opt_quantity;
+      }
+
+      return units;
+    }, {});
 
   const rows = Object.entries(heroes)
     .flatMap(([, hero]) => hero)
@@ -48,6 +171,25 @@ export const StatTrackers = () => {
         wounds,
       };
     });
+
+  const additionalRows = profiles
+    .flatMap((profile) => [profile, ...getAdditionalProfiles(profile)])
+    .map(({ name, W, HM, HW, HF }) => ({
+      name: name,
+      wounds: W,
+      might: HM,
+      will: HW,
+      fate: HF,
+    }))
+    .filter(modelsWithTrackableData)
+    .filter(modelThatAreAlreadyListed(rows))
+    .filter(
+      (item, index, self) =>
+        self.findIndex((other) => item.name === other.name) === index,
+    )
+    .flatMap((row) => Array.from({ length: units[row.name] }).map(() => row));
+
+  const allRows = labelDuplicateRows([...rows, ...additionalRows]);
 
   const cellStyling: SxProps<Theme> = {
     border: 0,
@@ -80,7 +222,7 @@ export const StatTrackers = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row, index) => (
+            {allRows.map((row, index) => (
               <TableRow key={index}>
                 <TableCell sx={cellStyling}>
                   {row.name === "Azog's Lieutenant"
