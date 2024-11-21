@@ -62,17 +62,19 @@ export const handleAzog = (hero: Unit) => {
   }
 
   if (hero.model_id.includes("] azog")) {
-    const hasTheWhiteWargs =
-      hero.options.find(({ option }) => option === "The White Warg")
-        .opt_quantity === 1;
-    const hasTheTower =
-      hero.options.find(({ option }) => option === "Signal Tower")
-        .opt_quantity === 1;
+    const hasTheWhiteWargs = !!hero.options.find(
+      ({ option, opt_quantity }) =>
+        option === "The White Warg" && opt_quantity === 1,
+    );
+
+    const hasTheTower = !!hero.options.find(
+      ({ option, opt_quantity }) =>
+        option === "Signal Tower" && opt_quantity === 1,
+    );
 
     const lieutenants: [string | number, string][] = hasTheTower
       ? [...Array(7).keys()].map(() => [`Azog's Lieutenant`, "1:1:1:1"])
       : [];
-    console.log(lieutenants);
     hero.MWFW = hasTheWhiteWargs
       ? [["Azog", "3:3:1:3"], ["The White Warg", "3:1:1:2"], ...lieutenants]
       : [["Azog", "3:3:1:3"], ...lieutenants];
