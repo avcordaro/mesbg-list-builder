@@ -16,6 +16,14 @@ import { useRosterBuildingState } from "../../../../state/roster-building";
 import { isDefinedUnit } from "../../../../types/unit.ts";
 import { Profile } from "./profile.type.ts";
 
+const cellStyling: SxProps<Theme> = {
+  border: 0,
+  borderRight: 1,
+  borderBottom: 1,
+  borderColor: (theme) => theme.palette.grey["300"],
+  borderStyle: "solid",
+};
+
 interface StatTrackersProps {
   profiles: Profile[];
 }
@@ -99,35 +107,6 @@ const CheckboxList = ({ amount }: { amount: string }) => {
   );
 };
 
-const labelDuplicateRows = (
-  data: {
-    name: string;
-    might: string;
-    will: string;
-    fate: string;
-    wounds: string;
-  }[],
-) => {
-  const nameCounts = data.reduce((acc, item) => {
-    acc[item.name] = (acc[item.name] || 0) + 1;
-    return acc;
-  }, {});
-
-  const counters = {};
-
-  return data.map((item) => {
-    const name = item.name;
-    if (nameCounts[name] > 1) {
-      counters[item.name] = (counters[item.name] || 0) + 1;
-      return {
-        ...item,
-        name: `${name} ( ${counters[item.name]} )`,
-      };
-    }
-    return { ...item };
-  });
-};
-
 export const StatTrackers = ({ profiles }: StatTrackersProps) => {
   const { roster } = useRosterBuildingState();
   const { heroes } = createGameState(roster);
@@ -189,15 +168,7 @@ export const StatTrackers = ({ profiles }: StatTrackersProps) => {
     )
     .flatMap((row) => Array.from({ length: units[row.name] }).map(() => row));
 
-  const allRows = labelDuplicateRows([...rows, ...additionalRows]);
-
-  const cellStyling: SxProps<Theme> = {
-    border: 0,
-    borderRight: 1,
-    borderBottom: 1,
-    borderColor: (theme) => theme.palette.grey["300"],
-    borderStyle: "solid",
-  };
+  const allRows = [...rows, ...additionalRows];
 
   return (
     <Box id="pdf-stat-trackers">

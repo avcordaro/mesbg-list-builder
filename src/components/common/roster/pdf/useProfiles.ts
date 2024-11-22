@@ -37,16 +37,50 @@ export const useProfiles = () => {
     return index === self.findIndex((other) => other.name === item.name);
   }
 
+  const formatMwfwRange = (input1, input2) => {
+    console.log(input1, input2);
+
+    if (typeof input1 === "string" && input1.includes("-")) {
+      // Handle case with an existing range string
+      const [lower, higher] = input1.split("-").map(Number);
+      const newNumber = Number(input2);
+      const newLower = Math.min(lower, newNumber);
+      const newHigher = Math.max(higher, newNumber);
+      return newLower === newHigher
+        ? `${newLower}`
+        : `${newLower} - ${newHigher}`;
+    } else {
+      // Handle initial two-number input (string or number)
+      const num1 = Number(input1);
+      const num2 = Number(input2);
+      const lower = Math.min(num1, num2);
+      const higher = Math.max(num1, num2);
+      return lower === higher ? `${lower}` : `${lower} - ${higher}`;
+    }
+  };
+
   function combineProfiles(item: Profile, index: number, self: Profile[]) {
     const firstIndex = self.findIndex((other) => other.name === item.name);
     if (index === firstIndex) return item;
 
     const firstOccurrence = self[firstIndex];
-    const combined = [
+
+    const combinedStats = [
       ...firstOccurrence.additional_stats,
       ...item.additional_stats,
     ];
-    firstOccurrence.additional_stats = combined.filter(duplicateProfiles);
+    firstOccurrence.additional_stats = combinedStats.filter(duplicateProfiles);
+    firstOccurrence.special_rules = [
+      ...new Set([...firstOccurrence.special_rules, ...item.special_rules]),
+    ];
+
+    ["HM", "HW", "HF"].forEach((stat) => {
+      firstOccurrence[stat] = formatMwfwRange(
+        firstOccurrence[stat],
+        item[stat],
+      );
+    });
+
     return item;
   }
 
