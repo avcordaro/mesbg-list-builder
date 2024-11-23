@@ -2406,7 +2406,7 @@
           "description": "Must be your army's leader."
         },
         {
-          "name": "*The Lord of the Rings*",
+          "name": "*The Lord of the Rings",
           "type": "Passive",
           "description": "Free point of Will each turn."
         },
@@ -2851,12 +2851,12 @@
         {
           "name": "Broodling",
           "Mv": "10\"",
-          "F": "6/6+",
-          "S": "6",
-          "D": "4",
-          "A": "2",
-          "W": "3",
-          "C": "4",
+          "F": "2/6+",
+          "S": "3",
+          "D": "3",
+          "A": "1",
+          "W": "1",
+          "C": "2",
           "active_or_passive_rules": [],
           "special_rules": [],
           "additional_text": ""
