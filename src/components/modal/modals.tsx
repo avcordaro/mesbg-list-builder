@@ -188,7 +188,7 @@ export const modals = new Map<ModalTypes, ModalProps>([
     ModalTypes.DOMAIN_MESSAGE,
     {
       icon: <LocalShipping />,
-      title: "Domain relocation",
+      title: "We've Moved!",
       children: <MovingMessageModal />,
       overflow: "none",
     },
