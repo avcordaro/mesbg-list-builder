@@ -34,7 +34,14 @@ export const ModalContainer = () => {
   return (
     <Dialog
       open={true} // handled by the modal container, so this should always be true
-      onClose={onClose ? onClose : () => state.closeModal()}
+      onClose={
+        onClose
+          ? onClose
+          : (_, reason) => {
+              if (reason === "backdropClick") return;
+              state.closeModal();
+            }
+      }
       scroll="paper"
       disableRestoreFocus
     >
