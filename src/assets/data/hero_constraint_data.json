@@ -8053,6 +8053,20 @@
       ]
     }
   ],
+  "[sharkey's_rogues] bill_ferny":[
+    {
+      "valid_warband_units":[
+        "[sharkey's_rogues] ruffian"
+      ],
+      "special_warband_options":[
+
+      ],
+      "special_army_option":"",
+      "extra_profiles":[
+
+      ]
+    }
+  ],
   "[sharkey's_rogues] harry_goatleaf":[
     {
       "valid_warband_units":[
