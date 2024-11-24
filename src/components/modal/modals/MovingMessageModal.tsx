@@ -31,7 +31,7 @@ export const MovingMessageModal = () => {
 
           <Typography>
             The journey is one of progress, and we welcome you to walk it with
-            us. The Builders of the List
+            us.
           </Typography>
           <Typography textAlign="right">
             <i>~ Your MESBG List Builder Team</i>
