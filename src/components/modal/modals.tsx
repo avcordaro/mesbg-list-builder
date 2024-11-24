@@ -1,4 +1,4 @@
-import { Download, ListAlt, SaveAs } from "@mui/icons-material";
+import { Download, ListAlt, LocalShipping, SaveAs } from "@mui/icons-material";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import FortIcon from "@mui/icons-material/Fort";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
@@ -20,6 +20,7 @@ import { ImportGameHistoryModal } from "./modals/ImportHistoryModal.tsx";
 import { ImportRosterModal } from "./modals/ImportRosterModal.tsx";
 import { IncompleteWarbandWarningModal } from "./modals/IncompleteWarbandWarningModal.tsx";
 import { ModalRosterTable } from "./modals/ModalRosterTable";
+import { MovingMessageModal } from "./modals/MovingMessageModal.tsx";
 import { ProfileCardModal } from "./modals/ProfileCardModal.tsx";
 import { SaveRosterAsModal } from "./modals/SaveRosterAsModal.tsx";
 import { ScreenshotRosterModal } from "./modals/ScreenshotRosterModal.tsx";
@@ -41,6 +42,7 @@ export enum ModalTypes {
   INCOMPLETE_WARBAND_WARNING = "INCOMPLETE_WARBAND_WARNING",
   DOWNLOAD_PROFILE_CARDS = "DOWNLOAD_PROFILE_CARDS",
   DOWNLOAD_PDF = "DOWNLOAD_PDF",
+  DOMAIN_MESSAGE = "DOMAIN_MESSAGE",
 }
 
 export type ModalProps = {
@@ -179,6 +181,15 @@ export const modals = new Map<ModalTypes, ModalProps>([
       icon: <Download />,
       title: "Download PDF",
       children: <DownloadPdfModal />,
+      overflow: "none",
+    },
+  ],
+  [
+    ModalTypes.DOMAIN_MESSAGE,
+    {
+      icon: <LocalShipping />,
+      title: "Domain relocation",
+      children: <MovingMessageModal />,
       overflow: "none",
     },
   ],

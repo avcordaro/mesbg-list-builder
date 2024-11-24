@@ -13,6 +13,8 @@ import { DrawerContainer } from "./components/drawer/DrawerContainer.tsx";
 import { SavedGameResults } from "./components/game-history/SavedGameResults.tsx";
 import { GameMode } from "./components/gamemode/GameMode.tsx";
 import { ModalContainer } from "./components/modal/ModalContainer";
+import { ModalTypes } from "./components/modal/modals.tsx";
+import { useAppState } from "./state/app";
 import { useGameModeState } from "./state/gamemode";
 import { useUserPreferences } from "./state/preference";
 import { useRecentGamesState } from "./state/recent-games";
@@ -24,6 +26,7 @@ export const App = () => {
   const { showHistory } = useRecentGamesState();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const { setCurrentModal } = useAppState();
 
   const { activeRoster, setActiveRoster } = useCurrentRosterState();
   const { storageNoticeActive, dismissStorageNotice } = useUserPreferences();
@@ -60,6 +63,11 @@ export const App = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeRoster]);
+
+  useEffect(() => {
+    setCurrentModal(ModalTypes.DOMAIN_MESSAGE);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const _30DaysAgo = 30 * 24 * 60 * 60 * 1000;
   return (
