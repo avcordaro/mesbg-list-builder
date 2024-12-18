@@ -1,7 +1,7 @@
 import { Handyman, History } from "@mui/icons-material";
 import FortIcon from "@mui/icons-material/Fort";
 import MenuIcon from "@mui/icons-material/Menu";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import SearchIcon from "@mui/icons-material/Search";
 import { FormControlLabel, ListItemButton, ListItemIcon } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -236,9 +236,10 @@ export const Header = () => {
       visible: true,
     },
     {
-      icon: <QuestionMarkIcon />,
-      label: "New Edition",
-      onClick: () => openSidebar(DrawerTypes.NEW_EDITION_NEWS),
+      icon: <OpenInNewIcon />,
+      label: "2024 Edition",
+      onClick: () =>
+        window.open("https://v2024.mesbg-list-builder.com/rosters", "_blank"),
       outlined: true,
       color: "inherit" as ButtonProps["color"],
       visible: true,

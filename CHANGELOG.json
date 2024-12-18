@@ -1,7 +1,8 @@
 {
   "main": {
     "changes": [
-      "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile."
+      "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile.",
+      "Updated the New Edition button to link to our new 2024 Edition website."
     ],
     "bugfixes": [
       "Fixed a data formatting error on the Uruk-Hai Demolition Team, causing the PDF page to crash.",

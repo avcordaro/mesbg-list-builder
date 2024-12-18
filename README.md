@@ -4,8 +4,8 @@ A simple and intuitive tool for building your army lists in Middle-Earth Strateg
 
 Due to the release of a new edition for MESBG, the 2018 edition of the MESBG List Builder has moved to a new home:
 
-* New repostory: https://github.com/avcordaro/mesbg-list-builder-v2018.
-* New website link: https://v2018.mesbg-list-builder.com/
+- New repostory: https://github.com/avcordaro/mesbg-list-builder-v2018.
+- New website link: https://v2018.mesbg-list-builder.com/
 
 ### Acknowledgements
 
