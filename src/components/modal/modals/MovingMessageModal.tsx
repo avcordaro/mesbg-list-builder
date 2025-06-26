@@ -2,10 +2,11 @@ import { Button, DialogActions, DialogContent } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { useAppState } from "../../../state/app";
 
 export const MovingMessageModal = () => {
-  const { closeModal } = useAppState();
+  const navigateToNewBuilder = () => {
+    window.location.replace("https://mesbg-list-builder.com/");
+  };
   return (
     <>
       <DialogContent>
@@ -39,8 +40,8 @@ export const MovingMessageModal = () => {
         </Stack>
       </DialogContent>
       <DialogActions>
-        <Button variant="contained" onClick={closeModal}>
-          Acknowledge
+        <Button variant="contained" onClick={navigateToNewBuilder}>
+          Go to the new builder
         </Button>
       </DialogActions>
     </>
