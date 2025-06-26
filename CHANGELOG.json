@@ -1,5 +1,6 @@
 {
-  "main": {
+  "main": {},
+  "6.18": {
     "changes": [
       "Deduplicated the PDF quick reference section for when nested profiles are also included as a standalone profile.",
       "Updated the New Edition button to link to our new 2024 Edition website."
